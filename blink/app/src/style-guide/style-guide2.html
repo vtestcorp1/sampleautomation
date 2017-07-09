@@ -1,0 +1,378 @@
+<div class="sg-body">
+<div class="sg-left-panel bg-black font-white-default pam br-orange-top">
+    <h1>{{strings.ThoughtSpot_Style}}</h1>
+
+    <div class="">{{strings.CSS_classname}}</div>
+    <div class="">
+        <div>{{strings.Layouts_templates}}</div>
+        <div>{{strings.Positioning}}</div>
+        <div>{{strings.Display}}</div>
+        <div>{{strings.Floats}}</div>
+    </div>
+    <div class="">{{strings.CSS_templates}}</div>
+</div>
+<div class="sg-right-panel">
+<div class="mhl pvm br-bottom-gray">
+    <h2 class="font-primary-default mbm">{{strings.CSS_classname}}</h2>
+
+    <div class="font-default font-primary-default">
+        <span class="font-family-bold">{{strings.Style_class}}</span>
+{{strings.No_prefix_required}}
+</div>
+    <div class="font-default font-primary-default">
+        <span class="font-family-bold">{{strings.Javascript_class}}</span>
+{{strings.Add_js_prefix}}
+</div>
+    <div class="font-default font-primary-default">
+        <span class="font-family-bold">{{strings.E2E_and_Unit}}</span>
+{{strings.Add_test_prefix}}
+</div>
+</div>
+<div class="mhl pvm br-bottom-gray">
+    <h2 class="font-primary-default mbm">{{strings.Layouts_templates}}</h2>
+    <h5 class="font-primary-default font-uppercase">{{strings.Positioning2}}</h5>
+
+    <div>
+        <div class="font-family-bold">{{strings.Static}}</div>
+{{strings.By_default_all}}
+</div>
+    <div>
+        <div class="font-family-bold">{{strings.Relative}}</div>
+        <div class="">{{strings.Class_name}}<span class="font-family-bold">pr</span></div>
+{{strings.Used_when_we}}
+</div>
+    <div>
+        <div class="font-family-bold">{{strings.Absolute}}</div>
+        <div class="">{{strings.Class_name}}<span class="font-family-bold">pa</span></div>
+{{strings.Used_when_we2}}
+</div>
+    <div>
+        <div class="font-family-bold">{{strings.Fixed}}</div>
+        <div class="">{{strings.Class_name}}<span class="font-family-bold">pf</span></div>
+{{strings.Its_positioned_relative}}
+</div>
+    <div class="mvm pam br-blue">
+{{strings.Tip_In}}<span class="font-family-bold">pa</span> {{strings.is_used}}<span
+            class="font-family-bold">{{strings.child}}</span>
+{{strings.element_when}}<span class="font-family-bold">{{strings.parent}}</span> {{strings.has}}<span class="font-family-bold">pr</span>.
+        <div class="mts">
+            &lt;div class="pr"&gt;Relatively positioned element
+            <div class="mll">&lt;div class="pa"&gt;</div>
+            <div class="mlxl">{{strings.Absolutely_positioned}}</div>
+            <div class="mll">&lt;/div&gt;</div>
+            <div>&lt;/div&gt;</div>
+        </div>
+    </div>
+
+    <h5 class="font-uppercase">{{strings.Display}}</h5>
+
+    <div>
+        <div class="font-family-bold">{{strings.None}}</div>
+        <div class="">{{strings.Class_name}}<span class="font-family-bold">{{strings.dn}}</span></div>
+{{strings.Totally_removes_the}}
+</div>
+    <div>
+        <div class="font-family-bold">{{strings.Block}}</div>
+        <div class="">{{strings.Class_name}}<span class="font-family-bold">{{strings.db}}</span></div>
+        By default (without setting a width) they take up as much horizontal space as they can and adds a break at the
+        end.
+        Elements like &lt;div&gt;, &lt;ul&gt;, &lt;p&gt;, &lt;section&gt; are block elements by default.
+    </div>
+    <div>
+        <div class="font-family-bold">{{strings.Inline}}</div>
+        <div class="">{{strings.Class_name}}<span class="font-family-bold">{{strings.di}}</span></div>
+        Elements like &lt;span&gt;, &lt;em&gt;, &lt;b&gt; are block elements by default. Wrapping text in those elements
+        within a string of text doesn't break the flow of the text. An inline element will accept margin and padding but
+        ignore height and width. Margin and padding will only push the elements horizontally away.
+    </div>
+    <div>
+        <div class="font-family-bold">{{strings.Inline_block}}</div>
+        <div class="">{{strings.Class_name}}<span class="font-family-bold">{{strings.dib}}</span></div>
+{{strings.Similar_to_inline}}
+</div>
+    <div>
+        <div class="font-family-bold">{{strings.Table}}</div>
+        <div class="">{{strings.Class_name}}<span class="font-family-bold">{{strings.dn}}</span></div>
+{{strings.Totally_removes_the}}
+</div>
+    <div>
+        <div class="font-family-bold">{{strings.Flex}}</div>
+        <div class="">{{strings.Class_name}}<span class="font-family-bold">{{strings.dn}}</span></div>
+{{strings.Totally_removes_the}}
+</div>
+    <h5 class="font-uppercase">{{strings.Floats}}</h5>
+{{strings.Float_is_a}}
+<div>
+        <div class="font-family-bold">{{strings.Left}}</div>
+        <div class="">{{strings.Class_name}}<span class="font-family-bold">fl</span></div>
+{{strings.Floats_the_element}}
+</div>
+    <div>
+        <div class="font-family-bold">{{strings.Right}}</div>
+        <div class="">{{strings.Class_name}}<span class="font-family-bold">fr</span></div>
+{{strings.Floats_the_element2}}
+</div>
+    <div>
+        <div class="font-family-bold">{{strings.Clearfix}}</div>
+        <div class="">{{strings.Class_name}}<span class="font-family-bold">{{strings.clearfix}}</span></div>
+{{strings.Applied_on_the}}
+</div>
+
+    <div class="mvm pam br-blue">
+{{strings.Example2}}
+<div class="mts">
+            &lt;div class="clearfix"&gt;
+            <div class="mll">&lt;div class="fl"&gt;</div>
+            <div class="mlxl">{{strings.Float_left}}</div>
+            <div class="mll">&lt;/div&gt;</div>
+            <div class="mll">&lt;div class="fr"&gt;</div>
+            <div class="mlxl">{{strings.Float_right}}</div>
+            <div class="mll">&lt;/div&gt;</div>
+            <div>&lt;/div&gt;</div>
+        </div>
+    </div>
+</div>
+<div class="mhl pvm br-bottom-gray">
+    <h2 class="font-primary-default mbm">{{strings.How_to_structure}}</h2>
+
+    <div>{{strings.We_try_to}}
+</div>
+    <div class="mbm">
+        <h6 class="font-family-bold">{{strings.CSS}}</h6>
+
+        <div class="font-secondary-default">// First way is to use the default css element and apply it directly on html
+            or from JS
+        </div>
+        <div>.font-red-default {</div>
+        <div class="mll">{{strings.colorreddefault}}</div>
+        }
+        <div class="font-secondary-default">// Second way is to use the default css element directly in the css as a
+            mixin.
+        </div>
+        <div>.left-panel-content {</div>
+        <div class="mll">.font-red-default; <span class="font-green-default">// Correct</span></div>
+        <div class="mll">color: @red-default; <span class="font-red-default">// Wrong</span></div>
+        }
+        <h6 class="font-family-bold">{{strings.HTML}}</h6>
+
+        <div class="mts">
+            <div>&lt;div class="left-panel-content"&gt;</div>
+            <div class="mll">{{strings.This_content_will}}</div>
+            <div>&lt;/div&gt;</div>
+
+            <div>&lt;div class="font-red-default"&gt;</div>
+            <div class="mll">{{strings.This_content_will2}}
+</div>
+            <div>&lt;/div&gt;</div>
+        </div>
+    </div>
+
+    <!--<div class="font-secondary-default">// First way is to use the default css element and apply it directly on html or-->
+        <!--from JS-->
+    <!--</div>-->
+    <!--<div>.font-red-default {</div>-->
+    <!--<div class="mll">color:@red-default</div>-->
+    <!--}-->
+    <!--<div class="font-secondary-default">// Second way is to use the default css element directly in the css as a-->
+        <!--mixin.-->
+    <!--</div>-->
+    <!--<div>.left-panel-content {</div>-->
+    <!--<div class="mll">.font-red-default; <span class="font-green-default">// Correct</span></div>-->
+    <!--<div class="mll">color: @red-default; <span class="font-red-default">// Wrong</span></div>-->
+    <!--}-->
+
+    <h6 class="font-family-bold font-uppercase">{{strings.Grouping_of}}</h6>
+
+    <div>{{strings.While_implementing_the}}
+</div>
+    <div class="font-family-bold">{{strings.Example2}}</div>
+    <div>{{strings.selector}}</div>
+    <div class="mll">
+        <div class="font-secondary-default">{{strings.Positioning3}}</div>
+{{strings.pa2}}<br/>
+{{strings.zindex_10}}<br/>
+{{strings.top_0}}<br/>
+{{strings.right_0}}<br/><br/>
+
+        <div class="font-secondary-default">{{strings.Display2}}</div>
+{{strings.dib2}}<br/>
+{{strings.ofhidden}}<br/>
+        width: 100px;<br/>
+        height: 100px;<br/>
+{{strings.pam}}<br/>
+{{strings.mam}}<br/>
+        border: 1px solid #333;<br/>
+        box-sizing: border-box;<br/><br/>
+
+
+        <div class="font-secondary-default">{{strings.Color}}</div>
+        .bg-white;<br/>
+        .font-white-default;<br/><br/>
+
+        <div class="font-secondary-default">{{strings.Text}}</div>
+        font-family: sans-serif;<br/>
+        font-size: 16px;<br/>
+        line-height: 1.4;<br/>
+        text-align: right;<br/><br/>
+{{strings.Other}}<br/>
+{{strings.cursor_pointer}}<br/>
+    </div>
+    }
+    <h5 class="font-uppercase">{{strings.Other_tips}}</h5>
+
+    <div><b>-</b> {{strings.important_important_overrides}}
+<span class="font-family-bold">{{strings.never}}</span> {{strings.want_to}}
+</div>
+    <div><b>-</b> {{strings.Maintain_the_order}}</div>
+</div>
+
+<h2 class="font-primary-default mhl">{{strings.CSS_templates}}</h2>
+
+<h3 class="font-primary-default mvm mhl">{{strings.Headings}}</h3>
+
+<div class="mll">
+    <h1>Heading 1</h1>
+
+    <h2>Heading 2</h2>
+
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+</div>
+
+<h3 class="font-primary-default mvm mhl">{{strings.Text_sizing}}</h3>
+
+<div class="mll">
+    <div class="font-smaller">font-smaller</div>
+    <div class="font-small">font-small</div>
+    <div class="font-default">font-default</div>
+    <div class="font-medium">font-medium</div>
+    <div class="font-large">font-larger</div>
+    <div class="font-extra-large">font-extra-large</div>
+</div>
+
+<h3 class="font-primary-default mvm mhl">{{strings.Text_transformation}}</h3>
+
+<div class="mll">
+    <div class="font-capitalize">font-capitalize</div>
+    <div class="font-uppercase">font-uppercase</div>
+    <div class="font-lowercase">font-lowercase</div>
+</div>
+<h3 class="font-primary-default mvm mhl">{{strings.Text_colors}}</h3>
+
+<div class="font-extra-large font-family-bold mll">
+    <div class="font-red-default">font-red-default</div>
+    <div class="font-red-transparent">font-red-transparent</div>
+    <div class="font-red-darker">font-red-darker</div>
+    <div class="sg-red font-red-default mbm">font-red-hover</div>
+
+    <div class="font-orange-default">font-orange-default</div>
+    <div class="font-orange-darker">font-orange-darker</div>
+    <div class="sg-orange font-orange-default mbm">font-orange-hover</div>
+
+    <div class="font-blue-default">font-blue-default</div>
+    <div class="font-blue-darker">font-blue-darker</div>
+    <div class="sg-blue font-blue-default mbm">font-blue-hover</div>
+
+    <div class="font-green-default">font-green-default</div>
+    <div class="font-green-darker">font-green-darker</div>
+    <div class="sg-green font-green-default mbm">font-green-hover</div>
+
+    <div class="font-purple-default">font-purple-default</div>
+    <div class="font-purple-darker">font-purple-darker</div>
+    <div class="sg-purple font-purple-default mbm">font-purple-hover</div>
+
+    <div class="font-yellow-default">font-yellow-default</div>
+    <div class="font-yellow-darker">font-yellow-darker</div>
+    <div class="sg-yellow font-yellow-default mbm">font-yellow-hover</div>
+
+    <div class="font-pink-default mbm">font-pink-default</div>
+
+    <div class="font-turquoise-default mbm">font-turquoise-default</div>
+
+    <div class="font-dark-blue-default mbm">font-dark-blue-default</div>
+
+    <div class="bg-black-lighter font-white-default mbm">font-white-default</div>
+
+    <div class="font-primary-default">font-primary-default</div>
+    <div class="font-primary-light">font-primary-light</div>
+    <div class="sg-primary font-primary-default mbm">font-primary-hover</div>
+
+    <div class="font-secondary-default">font-secondary-default</div>
+    <div class="sg-secondary font-secondary-default mbl">font-secondary-hover</div>
+</div>
+
+<h3 class="font-primary-default mvm mhl">{{strings.Background_colors}}</h3>
+
+<div class="mam pam bg-red">
+    <span class="font-white-default font-family-semibold">bg-red + font-white-default + mam + pam</span>
+</div>
+<div class="mam pam bg-orange">
+    <span class="font-white-default font-family-semibold">bg-orange + font-white-default + mam + pam</span>
+</div>
+<div class="mam pam bg-blue">
+    <span class="font-white-default font-family-semibold">bg-blue + font-white-default + mam + pam</span>
+</div>
+<div class="mam pam bg-green">
+    <span class="font-white-default font-family-semibold">bg-green + font-white-default + mam + pam</span>
+</div>
+<div class="mam pam bg-purple">
+    <span class="font-white-default font-family-semibold">bg-purple + font-white-default + mam + pam</span>
+</div>
+<div class="mam pam bg-yellow">
+    <span class="font-white-default font-family-semibold">bg-yellow + font-white-default + mam + pam</span>
+</div>
+<div class="mam pam bg-white">
+    <span class="font-primary-default font-family-semibold">bg-white + font-primary-default + mam + pam</span>
+</div>
+<div class="mam pam bg-white-transparent">
+    <span class="font-primary-default font-family-semibold">bg-white-transparent + font-primary-default + mam + pam</span>
+</div>
+<div class="mam pam bg-black">
+    <span class="font-white-default font-family-semibold">bg-black + font-white-default + mam + pam</span>
+</div>
+<div class="mam pam bg-black-lighter">
+    <span class="font-white-default font-family-semibold">bg-black-lighter + font-white-default + mam + pam</span>
+</div>
+<div class="mam pam bg-gray">
+    <span class="font-primary-default font-family-semibold">bg-gray + font-primary-default + mam + pam</span>
+</div>
+<div class="mam pam bg-overlay">
+    <span class="font-white-default font-family-semibold">bg-overlay + font-white-default + mam + pam</span>
+</div>
+<div class="mam pam bg-overlay-faint">
+    <span class="font-primary-default font-family-semibold">bg-overlay-faint + font-white-default + mam + pam</span>
+</div>
+<div class="mam pam bg-overlay-white">
+    <span class="font-primary-default font-family-semibold">bg-overlay-white + font-primary-default + mam + pam</span>
+</div>
+<h3 class="font-primary-default mvm mhl">{{strings.Buttons}}</h3>
+
+<div class="mvm mlm clearfix">
+    <div class="bk-btn fl mhm">bk-btn</div>
+    <div class="bk-btn-orange fl mhm">bk-btn-orange</div>
+    <div class="bk-btn-yellow fl mhm">bk-btn-yellow</div>
+    <div class="bk-btn-purple fl mhm">bk-btn-purple</div>
+    <div class="bk-btn-blue fl mhm">bk-btn-blue</div>
+    <div class="bk-btn-green fl mhm">bk-btn-green</div>
+</div>
+<div class="mvm mlm clearfix">
+    <div class="bk-btn bk-disabled bk-btn-full-width mhm">bk-btn + bk-disabled + bk-btn-full-width</div>
+    <div class="bk-btn-orange bk-disabled bk-btn-full-width mam">bk-btn-orange + bk-disabled + bk-btn-full-width</div>
+    <div class="bk-btn-yellow bk-disabled bk-btn-full-width mam">bk-btn-yellow + bk-disabled + bk-btn-full-width</div>
+    <div class="bk-btn-purple bk-disabled bk-btn-full-width mam">bk-btn-purple + bk-disabled + bk-btn-full-width</div>
+    <div class="bk-btn-blue bk-disabled bk-btn-full-width mam">bk-btn-blue + bk-disabled + bk-btn-full-width</div>
+    <div class="bk-btn-green bk-disabled bk-btn-full-width mam">bk-btn-green + bk-disabled + bk-btn-full-width</div>
+</div>
+
+<h3 class="font-primary-default mvm mhl">{{strings.Border}}</h3>
+
+<div class="mam pam br-gray">br-gray + pam + mam</div>
+<div class="mam pam br-green">br-green + pam + mam</div>
+<div class="mam pam br-red">br-red + pam + mam</div>
+<div class="mam pam br-yellow">br-yellow + pam + mam</div>
+<div class="mam pam br-blue">br-blue + pam + mam</div>
+<div class="mam pam br-purple">br-purple + pam + mam</div>
+</div>
+</div>

@@ -1,0 +1,232 @@
+@import '/resources/css/import.less';
+
+.variable-auto-text-width {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.bk-leaf-level-data-dialog {
+    .modal-body {
+        max-height: none;
+    }
+}
+
+.bk-leaf-level-data {
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    @HEIGHT_PER_ROW: 23px;
+    // This is the base top for table container. Actual top depends on number of rows
+    @TABLE_BASE_TOP: 94px;
+    // This is the base top for menu container. Actual top depends on number of rows
+    @MENU_BASE_TOP: 111px;
+    .num-rows(@num-rows) {
+        .bk-summary-columns-container {
+            height: @num-rows * @HEIGHT_PER_ROW + 2px;
+        }
+
+        .bk-leaf-data-table-container {
+            top: @TABLE_BASE_TOP + @num-rows * @HEIGHT_PER_ROW;
+        }
+
+        .bk-menu-content-container {
+            top: @MENU_BASE_TOP + @num-rows * @HEIGHT_PER_ROW;
+        }
+    }
+
+    // We have to make special case when summary is absent.
+    &.num-rows-0 {
+        .bk-summary-container {
+            display: none;
+        }
+
+        .bk-leaf-data-table-container {
+            top: 40px;
+        }
+
+        .bk-menu-content-container {
+            top: 56px;
+        }
+    }
+
+    &.num-rows-1 {
+        .num-rows(1);
+    }
+
+    &.num-rows-2 {
+        .num-rows(2);
+    }
+
+    &.num-rows-3 {
+        .num-rows(3);
+    }
+
+    &.num-rows-4 {
+        .num-rows(4);
+    }
+
+    .section-heading {
+        padding-bottom: 5px;
+        .font-family-semibold;
+        .text-size-larger;
+    }
+
+    .bk-summary-container {
+        padding: 15px 20px 13px 20px;
+        background-color: @gray-bg;
+        .font-family-regular();
+        border-bottom: 1px solid @gray-border;
+        .box-shadow(0 1px 1px @separator-on-dark-shadow);
+
+        .bk-summary-columns-container {
+            overflow-y: auto;
+
+            .column-info {
+                .flex-inline(row);
+                .flex-flow(nowrap);
+                margin-right: 10px;
+                margin-top: 3px;
+                width: 31%;
+                height: 20px;
+                .color-grey8;
+
+                .column-name {
+                    .variable-auto-text-width;
+                    .font-family-semibold;
+                    .text-size-default;
+                }
+
+                .column-value {
+                    .variable-auto-text-width;
+                    .text-size-default;
+                    .bk-margin-left-5;
+                }
+            }
+        }
+    }
+
+    .bk-leaf-data-table-container {
+        .position-absolute(0px, 0px, 0px, 0px);
+        padding: 20px;
+        .flex(column);
+
+        .bk-leaf-data-table {
+            .bk-vertical-flex-container-sized;
+        }
+    }
+
+    .bk-mid-section-container {
+        position: relative;
+        height: 40px;
+
+        .section-heading {
+            float: left;
+            margin: 20px 20px 0 20px;
+        }
+
+        .add-columns-btn {
+            float: right;
+            margin: 15px 20px 0 20px;
+        }
+
+        .download-btn {
+            float: right;
+            margin: 15px 0 0 20px;
+            padding-bottom: 6px;
+        }
+    }
+
+    .bk-menu-content-container {
+        z-index: @leaf-data-menu-z-index;
+        position: absolute;
+        right: 19px;
+        padding: 10px;
+        min-height: 100px;
+        width: 300px;
+        font-size: 12px;
+        .box-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+        .font-family-regular();
+        .bg-white1;
+        .br-radius-5;
+        .br-grey5;
+        .bk-menu-content {
+            max-height: 320px;
+        }
+
+        &:before {
+            position: absolute;
+            top: -20px;
+            left: 250px;
+            border: 10px solid transparent;
+            content: '';
+            border-bottom-color: @black-bg-transparent;
+        }
+
+        .bk-column-search {
+            height: 26px;
+            .box-sizing(border-box);
+            width: 100%;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            font-size: 12px;
+
+            &::-webkit-input-placeholder {
+                .font-family-bold();
+            }
+            &:-moz-placeholder {
+                .font-family-bold();
+            }
+            &::-moz-placeholder {
+                .font-family-bold();
+            }
+            &:-ms-input-placeholder {
+                .font-family-bold();
+            }
+        }
+
+        .bk-menu-content {
+            //position: relative;
+            margin-bottom: 15px;
+            min-height: 45px;
+            overflow-y: auto;
+
+            .name-container {
+                .flex(row);
+                &:hover {
+                    cursor: pointer;
+                    .bg-grey1;
+                }
+
+                .bk-src-arrow, .bk-col-arrow {
+                    .bk-margin-top-5;
+                    .bk-margin-right-3;
+                }
+                .bk-col-arrow {
+                    // To ensure that expand button doesn't further shift the checkbox
+                    // rightward.
+                    margin-left: -13px;
+                }
+                .bk-source-checkbox {
+                    .font-family-bold();
+                }
+                .bk-source-checkbox, .bk-join-path-checkbox, .bk-column-checkbox {
+                    .flex-grow(1);
+                }
+            }
+
+            .bk-source-columns-container {
+                margin-left: 28px;
+                .bk-column-container {
+                    margin: 4px 0 4px 0;
+
+                    .bk-join-paths-container {
+                        .name-container {
+                            padding-left: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

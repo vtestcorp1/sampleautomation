@@ -1,0 +1,47 @@
+/**
+ * Copyright: ThoughtSpot Inc. 2012-2015
+ * Author: Shashank Singh (sunny@thoughtspot.com)
+ *
+ * @fileoverview A guide on how to use icu4js, an emscripten port of icu4c
+ */
+
+ Javascript
+ ==========
+
+ 1. Generate javascript files as described in the build documentation.
+ 2. Include all the javascript files in your HTML page
+
+
+ Resources/Data
+ ==============
+
+ 1. Run `make data-packager` to build a data-packager binary utility to create locale dependent data packages
+ 2. Run `bin/data-packager -t pack`  to generate the resource files common to all locales (in build/res/)
+ 3. Run `bin/data-packager -t pack-locale -l en_US` to generate locale specific resources (in build/res/)
+ 4. Run `cp -r lib/icu4c-emscripten-built/data/icudt57l/ $ICU4JS_RESOURCE_ROOT/$ICU4JS_RESOURCE_FILES_DIR_NAME/` where
+    $ICU4JS_RESOURCE_ROOT is the root directory where your app can dynamically load icu4js resource files from and
+    $ICU4JS_RESOURCE_FILES_DIR_NAME is the name of the child directory of $ICU4JS_RESOURCE_ROOT where you want to keep
+    all the individual resource files.
+ 5. Run `cp build/res/*` $ICU4JS_RESOURCE_ROOT
+ 6. Before using any icu4js functionality in your app you need to load all the resource files needed for the current
+    locale. Call icu4js.load(callback, $ICU4JS_RESOURCE_ROOT, $ICU4JS_RESOURCE_FILES_DIR_NAME) and wait for
+    the callback to be called.
+
+        icu4js.load(
+            function(error){
+                if (!!error) {
+                    // there was an error in initializing icu4js
+                }
+            },
+            $ICU4JS_RESOURCE_ROOT,
+            $ICU4JS_RESOURCE_FILES_DIR_NAME
+        );
+
+    On load, icu4js will try to load $ICU4JS_RESOURCE_ROOT/icu4js.dat and $ICU4JS_RESOURCE_ROOT/<locale-name>.dat. If
+    <locale-name>.dat is not found it will try to load $ICU4JS_RESOURCE_ROOT/icu4js-lazy-load.mf. From the .mf file
+    icu4js will get the list of individual resource files it needs to load for the current locale and will try to load
+    them from $ICU4JS_RESOURCE_ROOT/$ICU4JS_RESOURCE_FILES_DIR_NAME/<resource_file_path> for each individual resource
+    file needed for the current locale.
+
+    It is recommended to have a pre-packaged <locale-name>.dat for every locale that you expect to support as
+    downloading a single .dat file is usually faster than downloading multiple individual resource files separately.

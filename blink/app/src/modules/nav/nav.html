@@ -1,0 +1,95 @@
+<div class="bk-primary-nav"
+     ng-hide="navState == 'login'">
+    <div class="bk-primary-nav-logo">
+        <a href="#/home" class="bk-primary-nav-home-logo bk-logo-customizable"></a>
+    </div>
+    <div class="bk-primary-nav-menu"
+         ng-class="{'bk-nav-menu-expanded': isExpanded}"
+         blink-overlay="closeNavExpansion()"
+         ignore-click-selector="['.bk-primary-nav-expand']"
+         ng-click="toggleNavExpansion()">
+        <a href="#/answer/"
+           class="bk-primary-nav-search"
+           ng-class="{ 'bk-selected-nav-item': (navState == 'answer') }">
+            <div>{{ strings.SEARCH }}</div>
+        </a>
+        <a ng-if="showAnswerTab()"
+           href="#/answers"
+           class="bk-primary-nav-answers"
+           ng-class="{ 'bk-selected-nav-item': (navState == 'answers') }">
+            <div>{{ strings.ANSWERS }}</div>
+        </a>
+        <a href="#/pinboards"
+           class="bk-primary-nav-pinboards"
+           ng-class="{ 'bk-selected-nav-item': (navState == 'pinboards' || navState == 'pinboard') }">
+            <div>{{ strings.PINBOARDS }}</div>
+        </a>
+        <a ng-if="showInsights()"
+           href="#/insights"
+           class="bk-primary-nav-insights"
+           ng-class="{ 'bk-selected-nav-item': (navState == 'insights' || navState == 'insight') }">
+            <div>{{ strings.INSIGHTS }}</div>
+        </a>
+        <a href="#/data"
+           class="bk-primary-nav-manage-data"
+           ng-class="{ 'bk-selected-nav-item': (navState == 'data') }">
+            <div>{{ strings.MANAGE_DATA }}</div>
+        </a>
+        <a href="#/admin"
+           ng-if="showAdminTab"
+           class="bk-primary-nav-admin"
+           ng-class="{ 'bk-selected-nav-item': (navState == 'admin') }">
+            <div>{{ strings.ADMIN }}</div>
+        </a>
+    </div>
+
+    <!-- test capture button, will not be shown in production -->
+    <div class="bk-answer-capture-btn bk-blue-capture-btn"
+         ng-click="testCapture.captureAndDownload()"
+         ng-show="canShowCaptureButton()">v
+    </div>
+
+    <a
+       class="bk-primary-nav-expand"
+       ng-click="toggleNavExpansion()">
+        <div class="bk-style-icon-hamburger"></div>
+    </a>
+
+    <div class="bk-help-menu">
+        <bk-action-button-dropdown
+                menu="actionMenuConfig"
+                only-icon="true"
+                icon="bk-style-icon-help-grey"
+                custom-button="true">
+        </bk-action-button-dropdown>
+    </div>
+
+    <div class="bk-user-menu">
+        <blink-current-user-profile-pic
+                ng-click="onClickUserMenuButton()"
+                class="bk-user-profile-pic"
+                ng-mouseenter="mouseOutsideMenu = false"
+                ng-mouseleave="mouseOutsideMenu = true"
+                blink-on-escape="showUserMenu = false"
+                on-global-click="mouseOutsideMenu && (showUserMenu = false)"></blink-current-user-profile-pic>
+        <div class="bk-user-menu-panel" ng-hide="!showUserMenu">
+            <div class="bk-user-name">
+                {{ $root.sessionService.getUserDisplayName() }}
+            </div>
+            <a href="#/user-preference" class="bk-user-profile">
+                <span class="bk-style-icon-login"></span>
+                {{ strings.userMenu.PROFILE }}
+            </a>
+            <a ng-hide="disableSignOut()"
+               class="bk-sign-out" ng-click="logout()">
+                <span class="bk-style-icon-logout"></span>
+                {{ strings.userMenu.SIGN_OUT }}
+            </a>
+        </div>
+    </div>
+</div>
+
+<div ng-if="helpWidget.isHelpOpen">
+    <help-widget on-close="helpWidget.isHelpOpen = false; helpWidget.pagePath = ''"
+                 page-path="helpWidget.pagePath"></help-widget>
+</div>

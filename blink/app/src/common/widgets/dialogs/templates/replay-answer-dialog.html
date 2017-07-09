@@ -1,0 +1,63 @@
+<div class="bk-dialog">
+    <div class="info-item">
+        <div class="bk-dialog-field">
+            <span class="label">
+                {{ $ctrl.data.customData.nameLabel }}
+            </span>
+        </div>
+
+        <div class="bk-dialog-field">
+            <span class="info">
+                {{ $ctrl.data.customData.name }}
+            </span>
+        </div>
+    </div>
+
+    <div class="info-item">
+        <div class="bk-dialog-field">
+            <span class="label">
+                {{ $ctrl.data.customData.descriptionLabel }}
+            </span>
+        </div>
+
+        <div class="bk-dialog-field">
+            <span class="info">
+                {{ $ctrl.data.customData.description }}
+            </span>
+        </div>
+    </div>
+
+    <div class="info-item">
+        <div class="bk-dialog-field">
+            <span class="label">
+                {{ $ctrl.data.customData.lastModifiedLabel }}
+            </span>
+        </div>
+
+        <div class="bk-dialog-field">
+            <span class="info">
+                {{ $ctrl.data.customData.lastModifiedTime }}
+            </span>
+        </div>
+    </div>
+
+    <div class="info-item">
+        <div class="bk-dialog-field">
+            <span class="label">
+                {{ $ctrl.data.customData.authorLabel }}
+            </span>
+        </div>
+
+            <blink-profile-pic
+                class="bk-profile-pic"
+                user-id="$ctrl.data.customData.userId"
+                user-display-name="$ctrl.data.customData.author">
+            </blink-profile-pic>
+
+        <div class="bk-dialog-field">
+            <span class="info">
+                {{ $ctrl.data.customData.author }}
+            </span>
+        </div>
+    </div>
+</div>

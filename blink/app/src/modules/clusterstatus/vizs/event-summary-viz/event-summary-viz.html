@@ -1,0 +1,11 @@
+<div class="event-summary-viz">
+    <div class="event-box" ng-repeat="event in viz.getModel().getRecentEvents()">
+        <div class="clearfix">
+            <div class="event-title fl">{{event.getEventCategory()}}</div>
+            <div class="event-timestamp fr">{{event.getTimeAgoString()}}</div>
+        </div>
+        <div class="event-message"
+             blink-tooltip="{{event.getEventSummary()}}"
+             auto-tooltip-style="bootstrap">{{event.getEventSummary()}}</div>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="bk-tab-control">
+    <ul class="bk-tab-header {{headerClass}}">
+        <li ng-repeat="tab in tabs"
+            class="bk-clickable tab-header-item"
+            ng-class="{'bk-tab-header-item-selected': isCurrentTab(tab)}"
+            ng-click="onTabSelected(tab)">
+            <span>{{tab.tabName}}</span>
+        </li>
+    </ul>
+    <div class="bk-tab-body" ng-transclude></div>
+</div>

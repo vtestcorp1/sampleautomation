@@ -1,0 +1,14 @@
+<div class="bk-big-popup bk-viz-context" blink-on-escape="$ctrl.close()">
+    <div class="bk-context-dialog">
+        <div class="popup-header">
+            <span class="bk-header-title"> {{ $ctrl.title }}</span>
+            <a type="button" class="bk-close" ng-click="$ctrl.close()">&times;</a>
+        </div>
+        <div class="popup-content">
+            <div class="bk-vertical-flex-container-sized">
+                <schema-viewer bk-ctrl="$ctrl.contentCtrl" class="bk-vertical-flex-container-sized">
+                </schema-viewer>
+            </div>
+        </div>
+    </div>
+</div>

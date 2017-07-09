@@ -1,0 +1,170 @@
+<div class="bk-related-link-editor">
+
+    <div class="bk-related-link-header">
+        <div class="bk-related-link-header-name">
+            <div class="bk-related-link-title">{{strings.relatedLink.relatedLinkName}}</div>
+            <div class="bk-document-title bk-editable-title bk-related-link-title">
+                <div blink-content-editable
+                     ng-model="$ctrl.relatedLink.name"
+                     description="$ctrl.relatedLink.description">
+                </div>
+            </div>
+        </div>
+        <div class=bk-related-link-source">
+            <div class="bk-select-box">
+                <div class="bk-related-link-title" >{{strings.metadataListPage.captions.SOURCE}}</div>
+                <div>{{strings.Type}} {{$ctrl.getSourceType()}}</div>
+                <div>{{strings.Name}} {{$ctrl.getSourceBookName()}}</div>
+                <div>{{strings.embed.embeddedObjectType.VISUALIZATION}}: {{$ctrl.getSourceVizTitle()}}
+                </div>
+            </div>
+        </div>
+        <div class="bk-link-ui" ng-class="{'bk-success': $ctrl.isValidRelatedLink()}">
+            <div class="bk-link-left"></div>
+            <div class="bk-link-icon-container">
+                <div class="bk-link-icon"></div>
+            </div>
+            <div class="bk-link-right"></div>
+        </div>
+        <div class=bk-related-link-target">
+             <div class="bk-select-box">
+                <div class="bk-related-link-title">{{strings.relatedLink.destination}}</div>
+                <ui-select ng-model="$ctrl.destinationBookType"
+                           on-select="$ctrl.destinationBookTypeSelected()"
+                           theme="select2"
+                           class="bk-select-destination-table">
+                    <ui-select-match placeholder={{strings.relatedLink.destinationType}}>
+                        {{$ctrl.destinationBookTypeEnum[$select.selected]}}
+                    </ui-select-match>
+                    <ui-select-choices repeat="type in $ctrl.destinationBookTypeOptions">
+                        <div blink-tooltip="{{getTooltipHtml(table)}}"
+                             data-html="true"
+                             data-delay='{"show":"250"}'
+                             data-placement="right">
+                            {{$ctrl.destinationBookTypeEnum[type]}}
+                        </div>
+                    </ui-select-choices>
+                </ui-select>
+                <bk-pinboard-selector ng-if="$ctrl.destinationBookType === $ctrl.destinationBookTypeEnum.Pinboard"
+                                      bk-ctrl="$ctrl.pinboardSelector"
+                                      class="bk-select-destination-table">
+                </bk-pinboard-selector>
+                <bk-answer-selector ng-if="$ctrl.destinationBookType === $ctrl.destinationBookTypeEnum.Answer"
+                                    bk-ctrl="$ctrl.answerSelector">
+                </bk-answer-selector>
+                <ui-select ng-model="$ctrl.dstVizModel"
+                           ng-if="$ctrl.vizModels.length > 0"
+                           theme="select2"
+                           class="bk-select-destination-table">
+                    <ui-select-match placeholder="{{strings.relatedLink.selectVisualization}}">
+                        {{$ctrl.getDstVizTitle()}}
+                    </ui-select-match>
+                    <ui-select-choices repeat="viz in $ctrl.getDestinationVizChoices()">
+                        {{$ctrl.getVizTitle(viz)}}
+                    </ui-select-choices>
+                </ui-select>
+             </div>
+        </div>
+    </div>
+
+    <div ng-if="!!$ctrl.dstVizModel"
+         blink-tooltip="{{$ctrl.getDestinationToolTip()}}"
+         data-delay='{"show":"250"}'
+         data-html="true">
+        {{strings.relatedLink.selectedVisualization}}{{$ctrl.getDstVizId()}}
+    </div>
+
+    <div class="bk-related-link-create-mapping">
+        <div class="bk-select-box">
+            <ui-select ng-model="$ctrl.newSourceColumn"
+                       theme="select2"
+                       class="bk-select-source-column">
+                <ui-select-match placeholder="{{strings.relatedLink.sourceColumn}}">
+                    {{$select.selected.getUnderlyingColumnName()}}
+                </ui-select-match>
+                <ui-select-choices repeat="column in $ctrl.srcVizModel.getVizColumns() | filter: $select.search">
+                    {{column.getUnderlyingColumnName()}}
+                </ui-select-choices>
+            </ui-select>
+        </div>
+        <div class="bk-select-box">
+            <ui-select ng-model="$ctrl.newOperator"
+                       theme="select2"
+                       class="bk-select-destination-operator">
+                <ui-select-match placeholder="{{strings.relatedLink.operator}}">{{$select.selected}}</ui-select-match>
+                <ui-select-choices repeat="filter in $ctrl.supportedOperators">
+                    {{filter}}
+                </ui-select-choices>
+            </ui-select>
+        </div>
+        <div class="bk-select-box">
+            <div ng-if="$ctrl.getDestinationVizColumns().length > 0">
+                <ui-select ng-model="$ctrl.newDestinationColumn"
+                           theme="select2"
+                           class="bk-select-destination-column">
+                    <ui-select-match placeholder="{{strings.relatedLink.destinationColumn}}">
+                        {{$select.selected.getUnderlyingColumnName()}}
+                    </ui-select-match>
+                    <ui-select-choices
+                            repeat="column in $ctrl.getDestinationVizColumns() | filter: $select.search">
+                        {{column.getUnderlyingColumnName()}}
+                    </ui-select-choices>
+                </ui-select>
+            </div>
+        </div>
+    </div>
+
+    <div class="bk-related-link-show-mapping"
+         ng-if="$ctrl.relatedLink.content.relationships.length > 0 ">
+        <table class="table table-bordered related-link-mapping-filters">
+            <div class="bk-relationship-name-header">
+                <caption>{{strings.relatedLink.mappings}}</caption>
+            </div>
+            <tr class="bk-related-list-table-row-header">
+                <th>{{strings.relatedLink.sourceColumn}}</th>
+                <th>{{strings.relatedLink.operator}}</th>
+                <th>{{strings.relatedLink.destinationColumn}}</th>
+                <th>{{strings.relatedLink.action}}</th>
+            </tr>
+            <tr class="bk-related-list-table-row-data"
+                ng-repeat="relation in $ctrl.relatedLink.content.relationships track by $index">
+                <td>{{relation.sourceColumnName}}</td>
+                <td>{{relation.operator}}</td>
+                <td>{{relation.destinationColumnName}}</td>
+                <td>
+                    <bk-secondary-button text="{{strings.DELETE}}"
+                                         ng-click="$ctrl.removeRelationColumn($index)"
+                                         class="bk-add-related-link-mapping-button">
+                    </bk-secondary-button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="buttons">
+            <bk-secondary-button text="{{strings.relatedLink.addMapping}}"
+                                 icon="bk-style-icon-small-plus"
+                                 is-disabled="!$ctrl.isValidRelationship()"
+                                 ng-click="$ctrl.addRelationship()"
+                                 class="bk-add-relationship-button">
+            </bk-secondary-button>
+            <bk-primary-button text="{{strings.CREATE}}"
+                                 is-disabled="!$ctrl.isValidRelatedLink()"
+                                 ng-if="!$ctrl.isExistingRelation"
+                                 ng-click="$ctrl.createRelatedLink()"
+                                 class="bk-add-relationship-button">
+            </bk-primary-button>
+            <bk-primary-button text="{{strings.SAVE}}"
+                                 icon="bk-style-icon-save"
+                                 is-disabled="!$ctrl.isValidRelatedLink()"
+                                 ng-if="$ctrl.isExistingRelation"
+                                 ng-click="$ctrl.updateRelatedLink()"
+                                 class="bk-add-relationship-button">
+            </bk-primary-button>
+            <bk-secondary-button text="{{strings.CANCEL}}"
+                                 ng-click="$ctrl.cancel()"
+                                 class="bk-add-relationship-button">
+            </bk-secondary-button>
+    </div>
+
+</div>

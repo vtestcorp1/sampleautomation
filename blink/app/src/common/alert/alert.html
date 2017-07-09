@@ -1,0 +1,31 @@
+<div class="bk-alert alert" ng-class="['bk-alert-' + type]" ng-show="!hidden">
+    <button type="button" ng-show="canClose()" class="bk-close close" ng-click="onCloseAlertAction()">&times;</button>
+    <span class="bk-preamble-text">
+        <span class="bk-icon bk-success" ng-if="type=='success'"></span>
+        <span class="bk-icon bk-problem" ng-if="type=='problem'"></span>
+        <span class="bk-icon bk-error" ng-if="type=='error'"></span>
+    </span>
+    <span class="bk-text" ng-show="formattedMessageUrl" ng-include="formattedMessageUrl"></span>
+    <span class="bk-text" ng-hide="formattedMessageUrl">{{message}}</span>
+    <a class="bk-text bk-action-link"
+       ng-click="handleAction()"
+       href="{{action.link}}"
+       ng-if="shouldShowActionMessageLink()">
+       {{action.message}}
+    </a>
+
+    <span class="bk-text bk-link"
+          ng-click="handleAction()"
+          ng-if="shouldShowActionMessage()">
+      {{action.message}}
+    </span>
+
+    <div class="bk-link" ng-if="hasDetails()" ng-click="toggleDetails()">
+        {{ strings.alerts.WHAT_HAPPENED }}
+    </div>
+
+    <div ng-show="showDetails" class="bk-details">
+        <div ng-if="!!customUrl" ng-include="customUrl"></div>
+        <div ng-if="!!details" class="bk-detail-header">{{details}}</div>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+<ul class="bk-clause-template">
+    <li>
+        <span ng-repeat="groupingColumn in query.groupingColumns">
+            <span ng-switch on="$index == maxListColumnsToShow - 1">
+                <span ng-switch-when="true">
+                    {{ strings.columnMeasures.assign({
+                                length: query.groupingColumns.length - maxListColumnsToShow + 1
+                            })
+                        }}
+</span>
+                <span ng-switch-when="false" ng-switch on="$index > maxListColumnsToShow - 1">
+                    <span ng-switch-when="false">
+                        {{ getSequenceSymbol($index, query.groupingColumns) }}
+                        <span class="bk-grouping-column bk-text-{{getColumnColor(groupingColumn.column)}}" blink-tooltip="{{ groupingColumn.column.table.name }}">{{ groupingColumn.column.name.pluralize() }}</span>
+                    </span>
+                </span>
+            </span>
+        </span>
+    </li>
+</ul>

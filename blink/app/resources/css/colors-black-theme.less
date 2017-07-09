@@ -1,0 +1,232 @@
+// Copyright ThoughtSpot Inc. 2013-2014
+// Author: Jonathan Moreira (jonathan@thoughtspot.com)
+//
+// BLACK THEME
+//
+// For guidelines on how to use the colors check the colors.less file.
+
+
+/******************** [1] COLORS HUES *********************
+ * Main colors listed below. These colors are the base of
+ * our app design. They are used in the COLORS LIBRARY
+ * below. To create a new theme we only need to make change
+ * to these colors. They will automatically apply across
+ * all our COLORS LIBRARY below and so all our app.
+/*********************************************************/
+
+// Main colorful hues
+@h-red: #f5615d;
+@h-red-dark: #b94646;
+@h-green: #35bb58;
+@h-green-dark: #2d9e4a;
+@h-blue: #5c9df5;
+@h-purple: #b37ef5;
+@h-orange: #f76b4c;
+
+// Secondary colorful hues
+@h-pink: #f55d9a;
+@h-yellow: #feb960;
+@h-dark-blue: #4c54eb;
+@h-turquoise: #5bbdea;
+@h-caribbean-green: #4bcb9f;
+
+// Help/info  colors
+@h-braun: #c19a57;
+@h-pale-yellow: #FEF9DB;
+
+@h-black-bg: #202127;
+@h-black-bg-transparent: #202127;
+@h-divs-bg: #2f323a;
+@h-btns-bg: #3e424c;
+@h-nav-bg: #3e424c;
+@h-inner-shadow: rgba(255, 255, 255, 0.15);
+@h-drop-shadow: rgba(0, 0, 0, 0.9);
+
+@h-white-text: #fff;
+@h-secondary-text: #8a90a3;
+@h-label-text: #d1d3d8;
+@h-dark-text: #000;
+
+@h-white-bg: #ffffff;
+@h-white-bg-transparent: rgba(255, 255, 255, 0.9);
+@h-white-bg-transparent-2: rgba(255, 255, 255, 0.2);
+
+
+
+/******************** [2] COLORS LIBRARY *********************
+ * List of all the colors use accross the app. They are based
+ * on the COLORS HUES above. If you need a color to use in
+ * other .less files, you should pick it from this list.
+ * If it doesn't exist or you need a new specific color
+ * variable, simply add it here by picking a color from the
+ * COLORS HUES above (just make sure to follow the guidelines
+ * above).
+ * There's two sections:
+ * - A) COMMON elements colors: list of colors used for several
+     elements
+ * - B) SPECIFIC elements colors: list of colors variables used for
+     specific elements
+/************************************************************/
+
+
+/******** [A] COMMON/REUSABLE ELEMENTS COLORS *********/
+
+// Used for Admin section, alert banner and headlines
+@red-default: @h-red;
+@red-hover: lighten(@h-red, 5%);
+@red-border: transparent;
+@red-darker: @h-red-dark;
+@red-transparent: rgba(245, 97, 93, 0.1);
+
+// Used for Home section and headlines
+@orange-default: @h-orange;
+@orange-hover: lighten(@h-orange, 5%);
+@orange-darker: transparent;
+
+// Used for Answer section and headlines
+@blue-default: @h-blue;
+@blue-hover: lighten(@h-blue, 5%);
+@blue-darker: transparent;
+
+// Used for Pinboard section, success messages and headlines
+@green-default: @h-green;
+@green-hover: lighten(@h-green, 5%);
+@green-border: transparent;
+@green-darker: @h-green-dark;
+
+// Used for Data section and headlines
+@purple-default: @h-purple;
+@purple-hover: lighten(@h-purple, 5%);
+@purple-darker: transparent;
+
+// Used for Sage warning and headlines
+@yellow-default: @h-yellow;
+@yellow-darker: transparent;
+
+// Used for headlines
+@pink-default: @h-pink;
+@turquoise-default: @h-turquoise;
+@dark-blue-default: @h-dark-blue;
+
+// Used for Simple mode
+@simple-mode: @h-caribbean-green;
+@simple-mode-bg: lighten(@h-caribbean-green,42%);
+@simple-mode-hover: transparent;
+
+// Used for Advance mode
+@advance-mode: @h-turquoise;
+@advance-mode-bg: lighten(@h-turquoise,42%);
+@advance-mode-hover: transparent;
+
+// Used for style white elements (divs, spans, etc.)
+@white-bg: @h-divs-bg;
+@white-border: transparent;
+
+// Used to style black elements (divs, spans, etc.)
+@black-bg: @h-white-bg;
+@black-border: transparent;
+@black-bg-lighter: @h-divs-bg;
+@black-bg-transparent: @h-white-bg-transparent;
+
+// Used to style gray elements (divs, spans, etc.)
+@gray-bg: @h-btns-bg;
+@gray-hover: transparent;
+@gray-hover-light: transparent;
+@gray-border: @h-black-bg;
+@gray-border-hover: transparent;
+@gray-border-faint: transparent;
+
+// Text colors
+@white-text: @h-white-text;
+@gray-ghost-text: @h-secondary-text;
+@gray-label-text: @h-secondary-text;
+@gray-secondary-text: @h-secondary-text;
+@gray-main-title: @h-white-text;
+@gray-main-text: @h-white-text;
+@gray-text-hover: @h-secondary-text;
+
+// Shadows colors
+@text-shadow: transparent;
+@bg-shadow: @h-drop-shadow;
+@bg-shadow-faint: transparent;
+@bg-shadow-faint-1: transparent;
+@inner-shadow: @h-inner-shadow;
+@inner-shadow-faint: transparent;
+@inner-shadow-faint-1: transparent;
+@inner-gray-shadow: @h-drop-shadow;
+@dialog-shadow: @h-drop-shadow;
+
+// Overlay bg color
+@overlay-bg: @h-black-bg-transparent;
+@overlay-bg-faint: @h-black-bg-transparent;
+
+// Inputs styling
+@input-bg: @h-white-bg;
+@input-border: transparent;
+@input-inner-shadow: transparent;
+@input-dark-bg: @h-white-bg;
+@input-dark-border: transparent;
+@input-dark-inner-shadow: transparent;
+
+
+/******** B) CUSTOM/SPECIFIC ELEMENTS COLORS *********/
+
+// Used as the color of the body
+@body-bg: @h-black-bg;
+@body-bg-transparent: transparent;
+
+// Used for info banner, container, button, ...
+@info-bg: @h-pale-yellow;
+@info-border: darken(@h-pale-yellow, 18%);
+@info-text: @h-braun;
+
+// Navigation element styling colors
+@nav-bg: @h-nav-bg;
+@nav-text: @h-secondary-text;
+
+// Cancel button
+@cancel-btn: @h-divs-bg;
+@cancel-btn-border: transparent;
+@cancel-btn-hover: lighten(@h-divs-bg, 10%);
+
+// Sage bar colors
+@sage-bg: @h-white-bg;
+@sage-border: transparent;
+@sage-inner-shadow: transparent;
+@sage-shadow: transparent;
+@sage-text: @h-dark-text;
+@sage-ghost-text: @h-label-text;
+@sage-lineage-text: @h-secondary-text;
+@sage-label-text: @h-label-text;
+@sage-hover-light: @h-secondary-text;
+@sage-home-shadow: transparent;
+@sage-home-inner-shadow: transparent;
+
+// No content placeholders
+@no-content-label: @h-divs-bg;
+@no-content-bg: transparent;
+@no-content-border: @h-divs-bg;
+
+// Separators on bright background
+@separator: @h-black-bg;
+@separator-bright: @h-white-bg;
+
+// Separators on dark background
+@separator-on-dark: @h-black-bg;
+@separator-on-dark-shadow: @h-white-bg-transparent-2;
+
+// Viz tiles colors
+@viz-border: transparent;
+@viz-bg: @h-divs-bg;
+@viz-shadow: transparent;
+@viz-inner-shadow: @h-inner-shadow;
+
+// BETA label color
+@beta-label: @h-white-bg-transparent-2;
+
+// Table colors
+@table-row-bg: @black-bg-lighter;
+@table-row-bg-hover: @black-bg;
+@table-text-color: @h-secondary-text;
+@table-text-color-hover: @h-white-text;
+

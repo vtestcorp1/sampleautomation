@@ -1,0 +1,96 @@
+// Copyright ThoughtSpot Inc. 2012-2016
+// Author: Priyanshi Deshwal (priyanshi@thoughtspot.com)
+// Original author: Jonathan Moreira (jonathan@thoughtspot.com)
+//
+// LESS parameters
+// @fileoverview variables used globally through our LESS files.
+
+/* Content:
+
+=Dimension variables
+=z-index variables
+=url variables
+
+*/
+
+/* =Dimension variables
+*************************************************************/
+@nav-height: 53px;
+@sage-dropdown-width: 259px;
+@sage-language-dropdown-width: 165px;
+@sage-language-dropdown-header-height: 20px;
+@sage-dropdown-height: 314px;
+@sage-data-explorer-link-height: 23px;
+@loading-indicator-width: 140px;
+@loading-indicator-height: 49px;
+@height-top-bar: 70px;
+@no-content-width: 300px;
+@no-content-height: 145px;
+@menu-height: 48px;
+@menu-min-height: 517px;
+@opacity-disabled: 0.5;
+@sage-height: 40px;
+@sage-bar-margin: 20px;
+@sage-bar-margin-top: @sage-bar-margin;
+@answer-header-height: 122px;
+@list-title-margin-left: 192px;
+@titles-margin-top: 25px;
+
+/* =z-index variables
+*************************************************************/
+@max-zindex: 2147483647;
+
+@bk-select-dropdown-z-index: 530;
+@dialog-z-index: 520;
+@loading-indicator-z-index: 510;
+
+@overlay-zindex: 501;
+@help-widget-zindex: 500;
+@ie-browser-alert-zindex: 500;
+@alerts-zindex: 502;
+@guided-tour-zindex: 300;
+@left-panel-movable-components-zindex: 210;
+@guided-tour-zindex: 200;
+@nav-z-index: 190;
+@data-explorer-zindex: 185;
+@add-user-btn-z-index: 170;
+@sage-bubble-zindex: 160;
+@viz-thumbnail-zindex: 151;
+@info-card-zindex: 150;
+@sage-data-container-z-index: 145;
+@sage-data-columns-z-index: 2;
+// Always keep the filter z-index above overlay z-index.
+@sage-data-filter-z-index:  @overlay-zindex + 1;
+@no-sources-overlay-z-index: 140;
+@bk-extracted-chosen-drop-down-z-index: 1051;
+// TODO (Shikhar/Jonathan): remove the following variable and clean up old sage bar CSS
+@sage-bar-browse-data-z-index: 140;
+@info-card-help-btn-z-index: 132;
+@advanced-basic-button-z-index: 131;
+@formula-assistant-zindex: @sage-bar-z-index + 1;
+@sage-bar-z-index: 130;
+@control-panel-z-index: 120;
+@data-explorer-pagination-z-index: 110;
+@nav-bar-z-index: 100;
+@viz-menu-z-index: 90;
+@title-zindex: 80;
+@wizard-z-index: 70;
+@leaf-data-menu-z-index: 7;
+@upload-file-arrow-zindex:6;
+@chart-info-z-index: 5;
+@headline-internal-z-index: 4;
+@viz-dragged-zindex:3;
+@control-panel-menu-zindex: 100;
+@comment-panel-z-index: 4;
+@viz-zindex: 1;
+@sharable-item-zindex: -1;
+@error-popup-zindex: 1;
+@label-menu-zindex: 200;
+@selected-label-zindex: 300;
+
+@max-z-index: 10000;
+
+/* =url variables
+*************************************************************/
+
+@icon-menu-sprite-url: '/resources/img/icons-menu.png';

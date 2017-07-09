@@ -1,0 +1,16 @@
+<div class="bk-replay-controls">
+    <div class="bk-replay-paused"
+       ng-show="isPaused()">
+       <div class="container">
+        <div class="bk-viz-btn-icon bk-style-icon-pause"></div>
+            <h2>{{strings.Press_escape_to}}</h2>
+        </div>
+    </div>
+
+    <div class="bk-replay-played"
+        ng-show="!isPaused()">
+        <div class="container">
+            <div class="bk-viz-btn-icon bk-style-icon-play"></div>
+        </div>
+    </div>
+</div>

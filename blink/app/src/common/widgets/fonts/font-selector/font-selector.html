@@ -1,0 +1,29 @@
+<div class="bk-font-selector">
+    <span class="bk-font-selector-select">
+        <ui-select ng-model="$ctrl.selectedFontFace"
+                   search-enabled="false"
+                   allow-clear="false"
+                   on-select="$ctrl.handleFontFaceSelection($item)"
+                   theme="select2">
+            <ui-select-match placeholder="{{ $ctrl.getPlaceholderText() }}">
+                <bk-font-preview class="bk-font-selector-select-selected-preview"
+                                 bk-ctrl="$ctrl.getSelectedFontFacePreviewComponent()"></bk-font-preview>
+            </ui-select-match>
+            <ui-select-choices
+                    repeat="fontFace in $ctrl.getFontFaces()">
+                <bk-font-preview bk-ctrl="$ctrl.getFontFacePreviewComponent(fontFace)"></bk-font-preview>
+            </ui-select-choices>
+        </ui-select>
+    </span>
+    <bk-icon-button class="bk-font-selector-edit-button"
+                    ng-if="$ctrl.isSelectedFontFaceEditable()"
+                    icon="bk-style-icon-edit"
+                    tooltip="$ctrl.getEditFontActionText()"
+                    ng-click="$ctrl.showSelectedFontEditorComponent()">
+    </bk-icon-button>
+    <bk-icon-button class="bk-font-selector-create-button"
+                    icon="bk-style-icon-small-plus"
+                    tooltip="$ctrl.getAddFontActionText()"
+                    ng-click="$ctrl.showNewFontEditorComponent()">
+    </bk-icon-button>
+</div>

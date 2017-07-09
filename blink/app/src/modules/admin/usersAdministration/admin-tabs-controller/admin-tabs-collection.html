@@ -1,0 +1,12 @@
+<tab-control>
+    <tab-control-tab  ng-repeat="tab in $ctrl.tabModels track by tab.tabId"
+                      tab-name="{{tab.tabName}}"
+                      tab-id="{{tab.tabId}}">
+        <div class="form-row">
+            <div class="label comment">
+                {{tab.countItem()}}
+            </div>
+        </div>
+        <blink-smart-checkbox-collection bk-ctrl="tab.adminListController"></blink-smart-checkbox-collection>
+    </tab-control-tab>
+</tab-control>

@@ -1,0 +1,68 @@
+<div class="bk-font-editor">
+    <bk-blob-uploader class="bk-font-editor-font-uploader"
+                      bk-ctrl="$ctrl.getFontUploaderComponent()">
+        <bk-font-preview bk-ctrl="$ctrl.getFontPreviewComponent()"></bk-font-preview>
+    </bk-blob-uploader>
+    <div class="bk-font-editor-properties-list"
+         ng-if="$ctrl.isCustomFontFace()">
+        <ul>
+            <li class="bk-font-editor-property-family">
+                <span class="bk-font-editor-prop-name">{{ $ctrl.getFontFamilyPropertyName()}}</span>
+                <input type="text"
+                       class="bk-font-editor-prop-field"
+                       ng-model="$ctrl.fontFamily">
+            </li>
+            <li class="bk-font-editor-property-color">
+                <span class="bk-font-editor-prop-name">{{ $ctrl.getFontColorPropertyName()}}</span>
+                <bk-color-configurator class="bk-font-editor-color-configurator"
+                                       bk-ctrl="$ctrl.getColorConfiguratorComponent()">
+                </bk-color-configurator>
+            </li>
+            <li class="bk-font-editor-property-weight">
+                <span class="bk-font-editor-prop-name">{{ $ctrl.getFontWeightPropertyName()}}</span>
+                <span class="bk-font-editor-property-weight-selector">
+                    <ui-select ng-model="$ctrl.fontWeight"
+                               search-enabled="false"
+                               allow-clear="false"
+                               theme="select2">
+                        <ui-select-match>
+                            {{ $ctrl.convertFontFaceWeightToLabel($ctrl.fontWeight) }}
+                        </ui-select-match>
+                        <ui-select-choices
+                                repeat="fontFaceWeight in $ctrl.getFontFaceWeights()">
+                            {{ $ctrl.convertFontFaceWeightToLabel(fontFaceWeight) }}
+                        </ui-select-choices>
+                    </ui-select>
+                </span>
+            </li>
+            <li class="bk-font-editor-property-style">
+                <span class="bk-font-editor-prop-name">{{ $ctrl.getFontStylePropertyName()}}</span>
+                <span class="bk-font-editor-property-style-selector">
+                    <ui-select ng-model="$ctrl.fontStyle"
+                               search-enabled="false"
+                               allow-clear="false"
+                               theme="select2">
+                        <ui-select-match>
+                            {{ $ctrl.convertFontFaceStyleToLabel($ctrl.fontStyle) }}
+                        </ui-select-match>
+                        <ui-select-choices
+                                repeat="fontFaceStyle in $ctrl.getFontFaceStyles()">
+                            {{ $ctrl.convertFontFaceStyleToLabel(fontFaceStyle) }}
+                        </ui-select-choices>
+                    </ui-select>
+                </span>
+            </li>
+        </ul>
+    </div>
+    <div class="bk-font-editor-footer">
+        <bk-secondary-button
+                class="bk-font-editor-cancel-button"
+                text="{{ $ctrl.getCancelButtonLabel()}}"
+                ng-click="$ctrl.handleCancel()"></bk-secondary-button>
+        <bk-primary-button
+                class="bk-font-editor-save-button"
+                text="{{ $ctrl.getSaveButtonLabel()}}"
+                is-disabled="!$ctrl.isCustomFontFace()"
+                ng-click="$ctrl.handleSave()"></bk-primary-button>
+    </div>
+</div>

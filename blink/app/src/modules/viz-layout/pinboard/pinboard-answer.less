@@ -1,0 +1,66 @@
+@viz-content-margin: 12px;
+@insight-viz-height: 100%;
+@insight-viz-chart-height: 65%;
+
+.bk-pinboard-answer {
+
+    .bk-vertical-flex-content-sized;
+    // In case when the add filter is opened then we dont want to rerender the vizs.
+    // instead we choose to show a scroll.
+
+    .sharable-item-panel {
+        color: @h-black3;
+    }
+
+    .bk-answer-canvas {
+        .bk-vertical-flex-content-sized;
+        width: 100%;
+        .bg-grey1;
+
+        &.bk-ready {
+            .bk-viz {
+                -webkit-transition-duration: 0.6s;
+                -webkit-transition-property: left, top, width, height;
+            }
+        }
+
+        &.bk-narrow-margin {
+            .tile-container {
+                @media @bk-desktop, @bk-widescreen {
+                    margin: 10px 142px !important;
+                }
+            }
+        }
+
+        .bk-pinboard-tile {
+            background-color: @white1;
+            .br-gray;
+
+            .bk-pinboard-viz-card-container {
+                .flex(column);
+                position: absolute;
+                top:0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+
+                .bk-data-viz {
+                    border: none;
+                }
+            }
+        }
+    }
+
+    /* Draggabilly adds is-dragging */
+    .bk-viz.is-dragging {
+        .box-shadow(8px 8px 16px @bg-shadow-medium);
+        z-index: 3; /* keep dragged item on top */
+    }
+
+    .packery-drop-placeholder {
+        outline: 3px dashed #DFE2EB;
+        outline-offset: -6px;
+        -webkit-transition: -webkit-transform 0.2s;
+        transition: transform 0.2s;
+    }
+}

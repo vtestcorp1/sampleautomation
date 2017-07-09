@@ -1,0 +1,23 @@
+<div class="bk-high-indexed-column-numbers-analyzer bk-analyzer">
+    <div class="bk-analyzer-body">
+        <div class="bk-analyzer-description">
+            {{strings.analyze.highColumnNumbersAnalyzer.indexedColumnsDescription1}}
+            {{$ctrl.recommendedColumnsNumber}}
+            {{strings.analyze.highColumnNumbersAnalyzer.indexedColumnsDescription2}}
+            <a href="{{strings.analyze.highColumnNumbersAnalyzer.indexTypeUrl}}"
+               target="_blank">
+                {{strings.analyze.highColumnNumbersAnalyzer.indexType}}
+            </a>
+            {{strings.analyze.highColumnNumbersAnalyzer.indexedColumnsDescription3}}
+
+            <div class="high-indexed-columns">
+                <div class="bk-analyzer-status">
+                    <div class="bk-analyzer-status-{{$ctrl.columnStatus}}">
+                        {{$ctrl.columnsNumber}}/{{$ctrl.recommendedColumnsNumber}}
+                        {{strings.analyze.highColumnNumbersAnalyzer.indexedColumns}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

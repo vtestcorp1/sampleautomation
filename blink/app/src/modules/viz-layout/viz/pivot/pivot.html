@@ -1,0 +1,33 @@
+<div class="pivot-table">
+    <div class="pivot-content">
+        <div class="pivot-inner"
+             dx-pivot-grid="$ctrl.options"></div>
+    </div>
+</div>
+
+<script type="text/ng-template" id="column-menu-btn">
+    <div class="pivot-header-item">
+        <div class="pivot-header-name" blink-tooltip="{{item.getName()}}">
+            {{item.getName()}}
+        </div>
+        <div class="bk-options"
+            uib-popover-template="'column-control'"
+            popover-placement="right"
+            popover-class="bk-column-control-popover"
+            popover-trigger="outsideClick"
+            popover-close-callback-name="onCloseColumnControl"
+            popover-append-to-body="true">
+        </div>
+    </div>
+</script>
+
+<script type="text/ng-template" id="column-control">
+    <div class="column-control">
+        <column-control
+                        viz-model="$ctrl.model"
+                        viz-column="item"
+                        sage-client="$ctrl.sageClient"
+                        close-column-control="onCloseColumnControl()"
+        </column-control>
+    </div>
+</script>

@@ -1,0 +1,33 @@
+<div class="bk-a3-job-detail">
+    <tab-control class="bk-a3-job-detail-tab-container"
+                 on-tab-activated="$ctrl.onTabActivated(activeTab)">
+        <tab-control-tab class="bk-a3-job-run-tab"
+                         tab-name="Job Runs"
+                         tab-id="jobs">
+            <bk-a3-runs-viewer class="bk-a3-runs-viewer-container"
+                               bk-ctrl="$ctrl.a3RunsViewerComponent">
+            </bk-a3-runs-viewer>
+        </tab-control-tab>
+        <tab-control-tab class="bk-a3-job-schedule-container"
+                         tab-name="Job Schedule"
+                         tab-id="schedule">
+            <bk-a3-job-schedule-configurator class="bk-a3-job-schedule-configurator-container"
+                                             bk-ctrl="$ctrl.a3JobScheduleConfiguratorComponent">
+            </bk-a3-job-schedule-configurator>
+        </tab-control-tab>
+        <tab-control-tab class="bk-a3-job-customization-container"
+                         tab-name="Customize"
+                         tab-id="customize">
+            <bk-a3-analysis-customizer
+                    class="bk-a3-analysis-customizer-container"
+                    bk-ctrl="$ctrl.a3AnalysisCustomizerComponent"
+                    ng-show="!!$ctrl.a3AnalysisCustomizerComponent">
+            </bk-a3-analysis-customizer>
+            <bk-a3-table-analysis-customizer
+                    class="bk-a3-table-analysis-customizer-container"
+                    bk-ctrl="$ctrl.a3TableAnalysisCustomizerComponent"
+                    ng-show="!!$ctrl.a3TableAnalysisCustomizerComponent">
+            </bk-a3-table-analysis-customizer>
+        </tab-control-tab>
+    </tab-control>
+</div>

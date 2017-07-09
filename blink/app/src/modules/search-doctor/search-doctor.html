@@ -1,0 +1,12 @@
+<div class="bk-bad-search-header" ng-bind-html="getHeaderMessage()"></div>
+<div class="bk-bad-search-container" ng-class="{'layout1': isLayoutClass('layout1'), 'layout2': isLayoutClass('layout2')}">
+    <div class="bk-completions-container">
+        <query-completions ng-show="!!queryCompletions && !!queryCompletions.length"
+                           query-completions="queryCompletions" on-click="onClickQueryCompletion"></query-completions>
+        <object-list title="objectResultsTitle" ng-show="!!objectResults && !!objectResults.length" objects="objectResults"></object-list>
+    </div>
+    <div class="bk-help-container"
+         ng-if="!isSearchHelpRestricted()">
+        <blink-carousel model="carousel"></blink-carousel>
+    </div>
+</div>

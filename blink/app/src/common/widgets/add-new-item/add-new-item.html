@@ -1,0 +1,19 @@
+ <div class="bk-add-new-item" ng-switch="currentState" class="size4of5">
+     <div ng-switch-when="SHOW_SPINNER" class="bk-spinner">
+         <div class="bk-indicator bk-loading"></div>
+     </div>
+     <a ng-switch-when="SHOW_ADD_BTN" class="bk-add-label" ng-click="onAddBtnClick()" ng-transclude></a>
+     <div ng-switch-when="SHOW_NAME_INPUT">
+         <input type="text"
+            class="bk-input"
+            ng-class="{'bk-input-error': !!inputError}"
+            ng-model="newItem.name"
+            ng-change="onTextChange()"
+            blink-on-tab="onComplete()"
+            blink-on-escape="moveStateTo('SHOW_ADD_BTN')"
+            blink-on-enter="onComplete()"/>
+         <div ng-show="!!inputError" class="bk-error-message">
+             {{inputError}}
+         </div>
+     </div>
+ </div>

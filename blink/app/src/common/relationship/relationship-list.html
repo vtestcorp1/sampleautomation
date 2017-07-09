@@ -1,0 +1,30 @@
+<div class="bk-relationship-list" ng-class="{'bk-loading': isLoading}">
+    <div ng-if="!!tableModel">
+        <relationship-editor ng-if="!!inAddRelationshipMode"
+                             source-table-model="tableModel"
+                             source-ids="sourceIds"
+                             is-ad-hoc-relationship-builder="isAdHocRelationshipBuilder"
+                             should-own-target="shouldOwnTarget"
+                             sage-context="sageContext">
+        </relationship-editor>
+        <relationship-viewer ng-if="!inAddRelationshipMode"
+                             ng-repeat="relationship in relationships"
+                             relationship="relationship"
+                             destination-table-model="relationship.destinationTableModel"
+                             source-table-model="tableModel"
+                             is-read-only="isReadOnlyRelationship(relationship)"
+                             is-ad-hoc-relationship-builder="isAdHocRelationshipBuilder"
+                             sage-context="sageContext">
+        </relationship-viewer>
+        <bk-secondary-button text="{{ addRelationshipMessage }}"
+                             ng-if="showAddRelationshipBtn()"
+                             ng-click="setRelationshipEditMode(true)"
+                             class="bk-add-mode-btn"></bk-secondary-button>
+    </div>
+    <div ng-if="showIsEmpty()" class="bk-no-content">
+        <div class="bk-no-content-icon"></div>
+        <div class="bk-no-content-label">
+            {{ emptyMessage }}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<div ng-switch="$ctrl.isHeadlineVizType">
+    <bk-icon-button ng-switch-when="true"
+                    icon="bk-style-icon-pin"
+                    class="bk-add-to-pinboard"
+                    blink-tooltip="{{$ctrl.strings.ADD_TO_PINBOARD}}"
+                    ng-click="$ctrl.launchPinningWorkflow()">
+    </bk-icon-button>
+    <div ng-switch-when="false"
+         class="bk-add-to-pinboard"
+         blink-tooltip="{{$ctrl.strings.ADD_TO_PINBOARD}}"
+         ng-click="$ctrl.launchPinningWorkflow()">
+        <img src="resources/img/pin_icon_24.svg">
+    </div>
+</div>

@@ -1,0 +1,198 @@
+.bk-related-link-popup {
+  height: auto;
+  width: auto;
+  .bk-big-popup {
+    overflow: auto;
+    width: 80%;
+
+    .bk-related-link-viewer-component {
+      width: 100%;
+    }
+
+    .bk-related-link-viewer {
+      .bk-add-related-link-button {
+        padding-top: 8px;
+        padding-left: 4px;
+      }
+
+      .bk-related-link-list {
+        .bk-actionable-list {
+          height: 500px;
+          overflow: auto;
+        }
+        .bk-related-list {
+          font-size: 11px;
+          .bk-related-list-table-row-header {
+
+          }
+          .bk-related-list-table-row-data {
+
+          }
+          width: auto;
+          margin-top: 14px;
+          border: 1px solid @gray-border;
+          border-radius: 2px;
+          text-align: left;
+
+          .bk-column-cell {
+            padding: 5px 15px;
+            .font-family-regular;
+            font-size: 12px;
+            color: @gray-secondary-text;
+
+            &:not(:last-child) {
+              border-bottom: 1px solid @gray-border;
+            }
+
+            &.bk-hovered {
+              background-color: @h-gray1-transparent;
+              .transition(~"background-color 200ms ease-in");
+            }
+          }
+        }
+      }
+    }
+
+    .bk-related-link-editor {
+      height: 500px;
+      overflow: auto;
+      text-align: left;
+      padding: 20px;
+
+      &.bk-loading {
+        opacity: 0.3;
+      }
+
+      .bk-add-mode-btn {
+        margin: 15px;
+      }
+
+      // Customization of the select box
+      .chosen-container-single {
+        height: 34px;
+        width: 250px;
+        text-align: left;
+
+        .chosen-single {
+          height: 32px;
+          font-size: 14px;
+          line-height: 32px;
+          padding-left: 12px;
+          padding-top: 2px;
+          background-color: @h-gray;
+          .box-shadow(inset 0px 1px 0px @inner-shadow);
+          .font-family-regular();
+
+          &:hover {
+            background-color: @white-bg;
+          }
+
+          // Arrow positioning
+          b:before {
+            right: 11px;
+          }
+        }
+
+        // When dropdown opened
+        &.chosen-with-drop .chosen-single {
+          background-color: @white-bg;
+        }
+
+        .chosen-drop .chosen-results li {
+          padding: 5px 8px;
+        }
+      }
+
+      .bk-select-box {
+        display: inline-block;
+        text-align: left;
+        width: 260px;
+        padding-right: 10px;
+
+        .bk-select-source-column,
+        .bk-select-destination-table,
+        .bk-select-destination-operator,
+        .bk-select-destination-column,
+        .ui-select-container {
+          width: 100%;
+        }
+      }
+
+
+      .bk-related-link-title {
+        margin: 0 100px 0 0;
+        font-size: 16px;
+        width: 220px;
+        min-width: 220px;
+      }
+
+        .bk-related-link-header {
+        z-index: 2;
+        font-size: 14px;
+        display: flex;
+
+        .bk-related-link-header-name {
+          display: inline-block;
+          text-align: left;
+          width: 250px;
+
+          .bk-description-edit-dropdown {
+            &.bk-visible {
+              margin-top: 0px;
+            }
+            padding-top: 8px;
+          }
+        }
+
+        .bk-related-link-source {
+          text-align: left;
+          .flex-grow(2);
+          margin: auto;
+        }
+
+        .bk-link-ui {
+          margin-right: 15px;
+
+          .bk-link-left {
+            width: 50px;
+          }
+
+          .bk-link-right {
+            width: 50px;
+          }
+          .bk-link-icon-container {
+            margin: auto;
+          }
+        }
+
+        .bk-related-link-target {
+          text-align: left;
+          .flex-grow(2);
+          margin: auto;
+        }
+      }
+
+      .bk-related-link-create-mapping {
+        z-index: 2;
+        font-size: 16px;
+        display: flex;
+        padding-top: 20px;
+        padding-bottom: 60px;
+      }
+
+      .bk-related-link-show-mapping {
+        font-size: 12px;
+        padding-bottom: 15px;
+        .related-link-mapping-filters {
+          width: auto;
+          overflow: scroll;
+        }
+      }
+
+      .bk-add-key-button,
+      .bk-add-relationship-button {
+        .bk-padding-right-20;
+      }
+    }
+  }
+}

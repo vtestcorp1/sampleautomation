@@ -1,0 +1,12 @@
+<metadata-list-page bk-ctrl="ctrl"
+                    class="bk-table-list"></metadata-list-page>
+<blink-data-explorer class="data-explorer"
+                     ng-if="shouldShowExplorer"
+                     permissions="ctrl.permissions"
+                     selected-table-id="selectedTableId"
+                     hide-explorer="hideExplorer"
+                     hide-table-list="true"
+                     data="ctrl.getData()"
+                     mode="mode"
+                     on-save="updateSelectedTableProps(name, description)">
+</blink-data-explorer>

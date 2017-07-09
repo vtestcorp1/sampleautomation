@@ -1,0 +1,16 @@
+<div class="alert-summary-viz">
+    <div class="alert-box" ng-repeat="alert in viz.getModel().getRecentAlerts()">
+        <div class="alert-title">
+            <div class="alert-type"
+                  ng-class="{'alert-type-warning': alert.isWarning(),
+                            'alert-type-critical': alert.isCritical()}">
+                <span class="alert-icon"
+                      ng-class="{'bk-style-icon-circled-information': alert.isWarning(),
+                            'bk-style-icon-circled-warning': alert.isCritical()}"></span>
+                <span>{{alert.getAlertTitle()}}</span>
+            </div>
+            <div class="alert-timestamp">{{alert.getTimeAgoString()}}</div>
+        </div>
+        <div class="alert-message">{{alert.getAlertMessage()}}</div>
+    </div>
+</div>

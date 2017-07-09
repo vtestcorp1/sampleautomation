@@ -1,0 +1,25 @@
+<div class="bk-runtime-filter-panel">
+    <div class="bk-filter-panel"
+         ng-class="{'bk-read-only': $ctrl.isReadOnly}">
+        <ul class="bk-filter-list-items">
+            <li class="bk-filter-list-item"
+                ng-repeat="filter in $ctrl.runtimeFilterList">
+                <div popover-append-to-body="true"
+                     popover-placement="bottom-left"
+                     class="bk-filter-container"
+                     popover-class="bk-filter-panel-popover">
+                    <div class="filter-title-text"
+                         blink-tooltip="{{ filter.name }}"
+                         auto-tooltip-style="bootstrap">
+                        {{ filter.name }}
+                    </div>
+                    <div class="filter-value-text"
+                         blink-tooltip="{{ filter.value }}"
+                         auto-tooltip-style="bootstrap">
+                        {{ filter.value }}
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

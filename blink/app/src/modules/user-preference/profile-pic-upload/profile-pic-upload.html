@@ -1,0 +1,12 @@
+<form class="bk-profile-pic-upload">
+    <fieldset>
+        <blink-current-user-profile-pic></blink-current-user-profile-pic>
+        <label for="bk-profile-pic-file-input">
+            <span class="bk-file-upload-btn bk-btn-orange">{{strings.Upload_Picture}}</span>
+        </label>
+        <span class="bk-file-upload-toobig-message" ng-show="fileTooBig">{{alertTooBigMessage}}</span>
+        <input class="bk-user-id" type="text" name="id" value="{{ currentUserId }}" />
+        <input type="file" id="bk-profile-pic-file-input" name="content" />
+    </fieldset>
+    <div class="bk-upload-instruction">{{uploadInstructions}}</div>
+</form>

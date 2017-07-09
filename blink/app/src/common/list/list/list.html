@@ -1,0 +1,44 @@
+<div class="bk-list">
+    <!--Header -->
+    <div class="bk-list-header" ng-show="!!model.isHeaderEnabled()">
+        <div class="bk-select-all-checkbox" ng-show="model.isSelectionEnabled()">
+            <bk-checkbox bk-ctrl="selectAllCheckbox"></bk-checkbox>
+        </div>
+        <div class="{{ column.class}} bk-column-title"
+             ng-repeat="column in model.getColumns()"
+             ng-show="!column.hidden"
+             ng-class="{'bk-clickable': !!column.sortBy}"
+             ng-click="setSortingColumn(column, $index)">
+            <div class="bk-column-title-text">
+                {{ column.label }}
+            </div>
+            <div class="bk-sort-indicator"
+                 ng-if="sortColIdx == $index"
+                 ng-class="{'slick-sort-indicator-desc': model.isSortedReverse(), 'slick-sort-indicator-asc': !model.isSortedReverse()}">
+            </div>
+        </div>
+    </div>
+
+    <div class="bk-list-content" vs-repeat="55">
+        <!-- List items -->
+        <li ng-repeat="row in model.getFilteredData() | orderBy:sortBy:sortReverse"
+            ng-class="{'bk-row-selected-bg' : row._selected}"
+            post-repeat="onRenderComplete">
+            <div ng-if='model.isGrouped() && model.showGroupMarker($index)'>
+                <div ng-include='model.groupMarkerTemplate'></div>
+            </div>
+            <div class='bk-row-flex'>
+                <div ng-show="model.isSelectionEnabled()" class="bk-item-selector-checkbox">
+                    <bk-checkbox bk-ctrl="getItemCheckboxCtrl(row)"></bk-checkbox>
+                </div>
+                <div class="{{column.class}} bk-column"
+                     ng-repeat="column in model.getColumns()"
+                     ng-click="onColumnClick(column, row, $event)"
+                     ng-show="!column.hidden">
+                    <div ng-include="column.templateUrl" ng-if="!!column.templateUrl" include-replace></div>
+                    <div blink-bind-and-compile="column.template" ng-if="!!column.template"></div>
+                </div>
+            </div>
+        </li>
+    </div>
+</div>

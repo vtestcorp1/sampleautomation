@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #FFFFFF;">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>filter-shape-narrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="filter-shape-copy-2" fill="#333333">
+            <path d="M13,1 L1,1 L1,3 L4.64975,7.45765448 C5.43491667,8.23088214 6,10.0108032 6,10.3538823 L6,13 L8,13 L8,10.3538823 C8,10.0084229 8.64733333,8.20270072 9.42375,7.43064729 L13,3 L13,1 Z" id="filter-shape"></path>
+        </g>
+    </g>
+</svg>

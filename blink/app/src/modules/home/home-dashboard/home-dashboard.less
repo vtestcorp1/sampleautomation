@@ -1,0 +1,92 @@
+@import '/resources/css/import.less';
+@import '/resources/css/ui-styles.less';
+
+.bk-home-dashboard {
+    position: relative;
+    .bk-vertical-flex-container-sized;
+    .bg-grey1;
+
+    .bk-homepage-pinboard-title-bar {
+        .flex-grow-shrink-basis(0, 0, 34px);
+        .bk-margin-vertical-15;
+        .bk-margin-horizontal-20;
+        .bk-padding-horizontal-20;
+        .flex(row);
+        .flex-align(center);
+
+        .bk-homepage-pinboard-title {
+            .flex-grow-shrink-basis(0, 0, auto);
+        }
+
+        .bk-pinboard-picker-drop-down  {
+            .flex-grow-shrink-basis(0, 0, auto);
+            min-width: 250px;
+            .bk-margin-left-10;
+            // Apply the select box common UI
+            .bk-select-box();
+            // Customization of the select box
+            .ui-select-container {
+                width: 100%;
+            }
+            .select2-container {
+                &:not(.select2-dropdown-open){
+                    .select2-choice {
+                        border-color: transparent;
+                        border-radius: 0;
+                        border-bottom: 1px solid @grey8;
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+
+        .bk-home-activity-container {
+            .flex-grow-shrink-basis(1, 1, auto);
+            .flex(row);
+            .flex-justify(flex-end);
+            .flex-align(center);
+        }
+    }
+
+    .bk-dashboard-answer {
+        .bk-vertical-flex-content-sized;
+
+        .bk-sharable-item {
+            .bk-sharable-item-container {
+                .ribbon-item {
+                    margin: 10px 40px;
+                    .bk-padding-vertical-10;
+                    .bk-padding-horizontal-20;
+                    .bg-white;
+                    .br-grey3;
+                    .br-radius-3;
+                }
+                .bk-pinboard-answer, .bk-answer-canvas {
+                    .bk-vertical-flex-content-sized;
+                }
+                .bk-sharable-item-content-container, .content-container,
+                .sharable-item-content, .bk-pinboard-content, .bk-pinboard-container,
+                .bk-pinboard-answer-container {
+                    .bk-vertical-flex-content-sized;
+                }
+            }
+        }
+    }
+
+    .bk-no-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 300px;
+        margin-top: -122px;   // 1/2 the height of the placeholder
+        margin-left: -150px;  // 1/2 the width of the placeholder
+        padding-bottom: 30px;
+        text-align: center;
+
+        .bk-no-content-message {
+            color: @gray-secondary-text;
+            margin-top: 10px;
+            padding: 0 20px;
+        }
+    }
+}

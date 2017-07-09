@@ -1,0 +1,11 @@
+<div  data-html="true"
+      data-placement="right"
+      blink-tooltip = "{{ row.item.getTooltip()}}">
+    <a ng-href="#/schema-viewer/table/{{row.id}}">
+        <span class="name"> {{row.item.getDisplayName()}} </span>
+        <span class="data-type">{{row.item.getDisplayType()}}</span>
+    </a>
+    <tagged-labels tags="row.values.tags"
+                   labels-registry="$ctrl.labelsRegistry"
+                   deletable="false"></tagged-labels>
+</div>

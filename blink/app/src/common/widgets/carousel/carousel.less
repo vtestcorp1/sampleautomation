@@ -1,0 +1,115 @@
+.carousel {
+    background-color: white;
+    margin: 0;
+
+    .slider-indicator {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin: 1px;
+        text-indent: -999px;
+        cursor: pointer;
+        background-color: #eae9e2;
+        border-radius: 10px;
+
+        &.active{
+            background-color: @blue-default;
+            display: inline-block;
+        }
+    }
+
+    &.help-tip {
+        width: 100%;
+        background-color: #fffef6;
+        border-radius: 4px;
+        position: relative;
+
+        .carousel-indicators{
+            position: absolute;
+            top: 20px;
+            right: 60px;
+            z-index: 5; //investigate more about this, might have potential issues based on usage.
+        }
+
+        .title {
+            font-size: 20px;
+            .font-family-regular;
+            margin: 0 0 20px;
+        }
+
+        .content {
+            font-size: 14px;
+            line-height: 20px;
+            margin: 0 0 20px;
+            width: 230px;
+        }
+
+        .deck {
+            padding: 20px;
+            background-origin: border-box;
+
+            .all-tip {
+                cursor: pointer;
+            }
+
+            &.know-your-data {
+                background-image:url('/resources/img/carousel/help-tip/bg-know-your-data.png');
+                background-repeat:no-repeat;
+                background-position: bottom right;
+                background-size: 250px 220px
+            }
+
+            &.advanced-search {
+                background-image:url('/resources/img/carousel/help-tip/bg-advanced-search.png');
+                background-repeat:no-repeat;
+                background-position: bottom right;
+                background-size: 250px 220px;
+            }
+
+            &.search-video {
+                .content {
+                    width: 410px;
+                    iframe {
+                        margin-top: 20px;
+                    }
+                }
+            }
+            &.choose-sources {
+                .content {
+                    width: 410px;
+                }
+            }
+        }
+
+        .bk-btn-blue {
+            margin: 20px 15px 0 0;
+        }
+
+        .bk-style-icon-arrow-left:before, .bk-style-icon-arrow-right:before {
+            font-size: 14px;
+        }
+
+        .right, .left {
+            height: 14px;
+            width: 14px;
+            background-color: #ffffff;
+            border: 1px solid @gray-border;
+            .font-family-regular;
+            color: #333333;
+            cursor: pointer;
+        }
+
+        .arrowRight {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 5;
+        }
+        .arrowLeft {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            z-index: 5;
+        }
+    }
+}

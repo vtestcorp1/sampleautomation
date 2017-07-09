@@ -1,0 +1,64 @@
+<div class="bk-relationship-viewer">
+
+    <div class="bk-relationship-header">
+        <div class="key-value-pair">
+            <span class="key">{{strings.Relationship_Name}}</span>
+            <span ng-show="isAdHocRelationshipBuilder || !canChangeRelationshipName()" class="value">{{relationship.getName()}}</span>
+            <div ng-show="!isAdHocRelationshipBuilder && canChangeRelationshipName()"
+                 class="bk-relationship-title-container">
+                <div class="bk-document-title bk-editable-title bk-relationship-title">
+                    <div blink-content-editable
+                         fullspan
+                         ng-model="relationshipName"
+                         description="relationshipDesc">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="key-value-pair">
+            <span class="key">{{strings.Destination_Table}}</span>
+            <span class="value">{{destinationTableModel.getName()}}</span>
+        </div>
+    </div>
+
+    <div class="bk-column-relationships">
+        <div class="bk-source">
+            <div class="title">{{strings.SOURCE_COLUMN}}</div>
+
+            <ul class="bk-column-list">
+                <li class="bk-column-cell"
+                    ng-repeat="row in relationship.getSourceColumnIds() track by $index"
+                    ng-mouseenter="relationship.currentHighlightedIndex = $index"
+                    ng-mouseleave="relationship.currentHighlightedIndex = -1"
+                    ng-class="{'bk-hovered': (relationship.currentHighlightedIndex === $index)}">
+                    {{getSourceColumnName(row)}}
+                </li>
+            </ul>
+        </div>
+
+        <div class="bk-target">
+            <div class="title">{{strings.DESTINATION_COLUMN}}</div>
+            <ul class="bk-column-list">
+                <li class="bk-column-cell"
+                    ng-repeat="row in relationship.getDestinationColumnIds() track by $index"
+                    ng-mouseenter="relationship.currentHighlightedIndex = $index"
+                    ng-mouseleave="relationship.currentHighlightedIndex = -1"
+                    ng-class="{'bk-hovered': (relationship.currentHighlightedIndex === $index)}">
+                    {{getDestinationColumnName(row)}}
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="bk-actions-relationship">
+        <bk-secondary-button text="{{ strings.DELETE }}"
+                             ng-if="!isReadOnly && canChangeRelationshipName()"
+                             ng-click="deleteRelationship()"
+                             class="bk-delete-relationship-btn"></bk-secondary-button>
+        <bk-secondary-button text="{{ strings.UPDATE }}"
+                             is-disabled="!hasRelationshipNameChanged()"
+                             ng-if="!isAdHocRelationshipBuilder && canChangeRelationshipName()"
+                             ng-click="updateRelationshipName()"
+                             class="bk-update-relationship-btn"></bk-secondary-button>
+    </div>
+</div>

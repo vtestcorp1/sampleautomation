@@ -1,0 +1,54 @@
+<div class="bk-style-customizer">
+    <bk-multi-section-list>
+        <bk-multi-section-list-item class="bk-style-customizer-app-logo-section"
+                                    bk-ctrl="$ctrl.getAppLogoSelectorListItem()">
+            <bk-image-blob-editor
+                    bk-ctrl="$ctrl.getAppLogoSelectorListItem().getItemContentComponent()">
+            </bk-image-blob-editor>
+        </bk-multi-section-list-item>
+        <bk-multi-section-list-item class="bk-style-customizer-wide-app-logo-section"
+                                    bk-ctrl="$ctrl.getWideAppLogoSelectorListItem()">
+            <bk-image-blob-editor
+                    bk-ctrl="$ctrl.getWideAppLogoSelectorListItem().getItemContentComponent()">
+            </bk-image-blob-editor>
+        </bk-multi-section-list-item>
+        <bk-multi-section-list-item class="bk-style-customizer-chart-font-section"
+                                    bk-ctrl="$ctrl.getChartFontSelectorListItem()"
+                                    ng-if="$ctrl.isFontCustomizationEnabled()">
+            <bk-multi-font-selector class="bk-style-customizer-chart-font-selector"
+                                    bk-ctrl="$ctrl.getChartFontSelectorListItem().getItemContentComponent()">
+            </bk-multi-font-selector>
+        </bk-multi-section-list-item>
+        <bk-multi-section-list-item class="bk-style-customizer-table-font-section"
+                                    bk-ctrl="$ctrl.getTableFontSelectorListItem()"
+                                    ng-if="$ctrl.isFontCustomizationEnabled()">
+            <bk-multi-font-selector
+                    bk-ctrl="$ctrl.getTableFontSelectorListItem().getItemContentComponent()">
+            </bk-multi-font-selector>
+        </bk-multi-section-list-item>
+        <bk-multi-section-list-item class="bk-style-customizer-app-background-section"
+                                    bk-ctrl="$ctrl.getAppBackgroundSelectorListItem()">
+            <bk-background-configurator class="bk-style-customizer-app-background-color-configurator"
+                                        bk-ctrl="$ctrl.getAppBackgroundSelectorListItem().getItemContentComponent()">
+            </bk-background-configurator>
+        </bk-multi-section-list-item>
+        <bk-multi-section-list-item class="bk-style-customizer-chart-color-section"
+                                    bk-ctrl="$ctrl.getChartColorPalettesEditorListItem()">
+            <bk-color-palette-list-editor class="bk-style-customizer-chart-color-palette-list-editor"
+                                          bk-ctrl="$ctrl.getChartColorPalettesEditorListItem().getItemContentComponent()">
+            </bk-color-palette-list-editor>
+        </bk-multi-section-list-item>
+        <bk-multi-section-list-item class="bk-style-customizer-footer-section"
+                                    bk-ctrl="$ctrl.getFooterTextListItem()">
+            <bk-text-box-configurator
+                    bk-ctrl="$ctrl.getFooterTextListItem().getItemContentComponent()">
+            </bk-text-box-configurator>
+        </bk-multi-section-list-item>
+        <bk-multi-section-list-item class="bk-style-page-title-section"
+                                    bk-ctrl="$ctrl.getPageTitleListItem()">
+            <bk-text-box-configurator
+                    bk-ctrl="$ctrl.getPageTitleListItem().getItemContentComponent()">
+            </bk-text-box-configurator>
+        </bk-multi-section-list-item>
+    </bk-multi-section-list>
+</div>

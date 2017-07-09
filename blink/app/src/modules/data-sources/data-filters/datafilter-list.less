@@ -1,0 +1,111 @@
+@import '/resources/css/import.less';
+@import '/resources/css/ui-styles.less';
+
+@list-header-height: @height-top-bar;
+@left-menu-margin: 30px;
+@table-margin: 20px;
+@list-height: 55px;
+@list-table-header-height: 45px;
+@action-item-width: 50px;
+@action-item-height: 46px;
+
+.bk-add-data-filter-btn {
+    .bk-margin-right-10;
+}
+
+.bk-datafilter-list, .bk-wizard-workflow {
+  @list-sidebar-width: 150px;
+  .flex(row);
+  .flex-grow-shrink-basis(1,1,auto);
+
+  // For tables section the table takes all the screen width, because there's no left menu
+  &.bk-tables:not(.bk-with-label) .bk-content .bk-list-container-2 { left: @left-menu-margin; }
+
+  .bk-content {
+    overflow:hidden;
+    position: relative;
+    height: 100%;
+    .box-shadow(0px 1px 1px @inner-gray-shadow inset);
+
+    .bk-list-container {
+      margin: 0;
+      .calcHeight(~'100% - 2*@{table-margin}');
+
+      .bk-name {
+        position: absolute;
+        padding-left: 15px;
+        left: 45px;
+        width: 22%;
+
+        .bk-name-content {
+          width: 100%;
+          color: @gray-main-text;
+          font-size: 13px;
+          .font-family-semibold();
+        }
+      }
+
+      .bk-df-table {
+        position: absolute;
+        padding-left: 15px;
+        left: 45px;
+        width: 12%;
+
+        .bk-df-table-content {
+          width: 100%;
+          color: @gray-secondary-text;
+          font-size: 13px;
+          .font-family-regular();
+        }
+      }
+
+      .bk-df-col {
+        position: absolute;
+        padding-left: 5%;
+        height : 100%;
+        left: 25%;
+        width: 12%;
+
+        .bk-df-col-content {
+          width: 100%;
+          height : 100%;
+          color: @gray-secondary-text;
+          font-size: 13px;
+          .font-family-regular();
+        }
+      }
+
+      .bk-df-condition {
+        position: absolute;
+        top: 0px;
+        left: 55%;
+        width: 10%;
+        padding-left: 1%;
+
+        .bk-df-condition-content {
+          width: 100%;
+          height : 100%;
+          color: @gray-secondary-text;
+          font-size: 13px;
+          .font-family-regular();
+        }
+      }
+
+      .bk-df-text {
+        position: absolute;
+        padding-left: 5%;
+        height : 100%;
+        left: 75%;
+        width: 15%;
+
+        .bk-df-text-content {
+          width: 100%;
+          height : 100%;
+          color: @gray-secondary-text;
+          font-size: 13px;
+          .font-family-regular();
+        }
+      }
+    }
+  }
+}

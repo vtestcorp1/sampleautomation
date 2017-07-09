@@ -1,0 +1,30 @@
+.bk-currency-editor-dialog {
+
+    .bk-currency-item {
+        height: 40px;
+        .flex(row);
+        .bk-currency-radio {
+            .flex-grow-shrink-basis(0, 0, 150px);
+        }
+        .bk-select-box {
+            .flex-grow-shrink-basis(0, 0, 170px);
+            .select2-container {
+                width: 100%;
+                .select2-choice {
+                    height: 30px;
+                    .select2-chosen {
+                        .color-grey8;
+                        .font-family-regular;
+                    }
+                }
+                &.select2-container-disabled {
+                    .select2-choice {
+                        .select2-chosen {
+                            .color-grey5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,267 @@
+@import '/resources/css/import.less';
+
+.bk-viz-chart {
+    position: relative;
+    .bk-vertical-flex-container-sized;
+    &.bk-fade-in-animation {
+        .animation-duration(0.5s);
+        .animation-fill-mode(both);
+        .animation-name(fade-in-entry);
+    }
+
+    .chart-container {
+        z-index: 1;
+        .bk-vertical-flex-container-sized;
+
+        &.bk-vertical-layout {
+            .bk-horizontal-flex-container-sized;
+
+            .bk-chart {
+                .bk-horizontal-flex-container-sized;
+            }
+        }
+
+        &.bk-horizontal-layout {
+              .bk-vertical-flex-container-sized;
+
+            .bk-chart {
+                .bk-vertical-flex-container-sized;
+            }
+        }
+    }
+
+    .bk-chart {
+        .bk-vertical-flex-container-sized;
+
+        &.bk-zoom-mode {
+            .highcharts-container {
+                cursor: crosshair !important;
+            }
+        }
+
+        &.bk-pan-mode {
+            .highcharts-container {
+                cursor: url('/resources/img/openhand_8_8.cur'), move !important;
+            }
+
+            &.bk-mouse-down {
+                .highcharts-container {
+                    cursor: url('/resources/img/closedhand_8_8.cur'), move !important;
+                }
+            }
+        }
+
+        .bk-axis-label-container {
+            display: inline-block;
+            margin: 0 5px;
+            // We add axes controls after the axis titles are rendered by highcharts.
+            // Rendered title is replaced by a compiled element. There is momentary empty title div
+            // in this process where highcharts tries to position it again.
+            // And, we get jumpy titles.
+            // Putting a dummy height/width on the rendered title div,
+            // so that it does not jump around.
+            height: 20px;
+            min-width: 120px;
+
+
+            .bk-axis-label {
+                .flex-important(row);
+                cursor: pointer;
+                line-height: 20px;
+
+                .bk-axis-label-control {
+                    .flex-important(row);
+                    cursor: pointer;
+                    line-height: 20px;
+
+                    .bk-axis-label-title {
+                        .retina-mp-medium-12-grey8;
+                    }
+
+                    .bk-icon-arrow-down {
+                        margin: 5px 3px;
+                    }
+                }
+
+                .bk-sort-indicator {
+                    width: 15px;
+                    height: 15px;
+                    background-image: url("/resources/img/glyphicons-halflings.png");
+                    background-repeat: no-repeat;
+
+                    &.up {
+                        display: block;
+                        background-position: -287px -144px;
+                    }
+
+                    &.down {
+                        display: block;
+                        background-position: -310px -144px;
+                    }
+
+                    &.left {
+                        display: block;
+                        background-position: -263px -144px;
+                    }
+
+                    &.right {
+                        display: block;
+                        background-position: -240px -144px;
+                    }
+                }
+            }
+        }
+    }
+
+    .bk-chart-pagination {
+        position: relative;
+        display: inline-block;
+        padding-left: 5px;
+        padding-right: 15px;
+        border-right: 1px solid @gray-hover-light;
+
+        .bk-page-num {
+            display: inline-block;
+            text-align: right;
+            .font-family-regular;
+            font-size: 9px;
+            text-transform: uppercase;
+            color: @gray-secondary-text;
+        }
+
+        .bk-control {
+            display: inline-block;
+            width: 13px;
+            height: 13px;
+            vertical-align: middle;
+            text-align: left;
+            font-size: 20px;
+            background: url('/resources/img/icons-viz-actions-2.png');
+            background-position: -70px  0px;
+
+            &.bk-inactive {
+                opacity: 0.2;
+            }
+
+            &.bk-prev {
+                background-position: -70px  0px;
+                &:hover:not(.bk-inactive) {
+                    background-position: -70px -13px;
+                }
+            }
+
+            &.bk-next {
+                background-position: -56px  0px;
+                &:hover:not(.bk-inactive) {
+                  background-position: -56px -13px;
+                }
+            }
+        }
+    }
+
+    .bk-info-container {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        z-index: @chart-info-z-index;
+
+        .bk-info {
+            position: relative;
+            width: 100%;
+            padding: 10px;
+            line-height: 14px;
+            border-radius: 0px;
+            border-bottom-left-radius: 4px !important;
+            border-bottom-right-radius: 4px !important;
+            border-bottom: 0px;
+            border-left: 0px;
+            border-right: 0px;
+
+            .bk-info-icon {
+                position:absolute;
+                top: 7px;
+                left: 7px;
+                height: 16px;
+                width: 16px;
+                background-image: url('/resources/img/icons-alerts.png');
+                background-repeat: no-repeat;
+                background-position: -18px -34px;
+            }
+
+            .bk-info-text, .bk-info-action {
+                display: inline-block;
+                padding-right: 30px;
+                padding-left: 20px;
+            }
+
+            .bk-info-action {
+                font-size: 12px;
+                font-family: @font-family-bold;
+                color: @orange-default;
+                text-decoration: underline;
+                cursor: pointer;
+
+                &:hover {
+                    color: @gray-main-title;
+                }
+            }
+
+            .bk-close {
+                position: absolute;
+                right: 20px;
+                top: 12px;
+                width: 14px;
+                height: 14px;
+                .font-family-bold();
+                font-size: 14px;
+                color: @info-text;
+                cursor: pointer;
+
+                &:hover {
+                    color: @info-text;
+                }
+            }
+        }
+    }
+
+    .highcharts-tooltip {
+        font-size: 12px;
+        pointer-events: none;
+        z-index: 9999;
+
+        .chart-tooltip-block {
+            padding-top: 15px;
+        }
+
+        .custom-tooltip {
+            padding: 5px 15px 15px 15px;
+            background-color: @h-white-transparent-5;
+            border-radius: 4px;
+        }
+
+        & > span {
+            box-shadow: 0 2px 8px -4px @h-black-transparent-6;
+        }
+
+        span {
+            min-width: 120px;
+            max-width: 320px;
+            overflow: auto;
+            white-space: normal !important;
+
+            & > .chart-tooltip-block:last-of-type {
+                margin-bottom: 0px;
+            }
+        }
+
+        .chart-tooltip-key {
+            .retina-mp-light-12-grey8;
+            display:block;
+        }
+
+        .chart-tooltip-value {
+            .retina-mp-medium-15;
+            display:block;
+        }
+    }
+}

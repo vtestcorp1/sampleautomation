@@ -1,0 +1,36 @@
+.bk-multi-section-list {
+    .bk-multi-section-list-item {
+        position: relative;
+        margin-bottom: 30px;
+        padding: 10px 20px 15px 20px;
+        border-radius: 1px;
+        border: 1px solid @gray-border;
+        background-color: @gray-bg;
+
+        .bk-multi-section-list-item-action {
+            position: absolute;
+            right: 15px;
+            top: 10px;
+
+            opacity: 0;
+            .transition(~"all 200ms ease-out");
+        }
+        &:hover {
+            .bk-multi-section-list-item-action {
+                opacity: 1;
+            }
+        }
+
+
+        .bk-multi-section-list-item-name {
+            margin-bottom: 16px;
+            font-weight: bold;
+        }
+
+        .bk-multi-section-list-item-subtext {
+            margin-top: 10px;
+            font-size: 0.8em;
+            color: @grey5;
+        }
+    }
+}

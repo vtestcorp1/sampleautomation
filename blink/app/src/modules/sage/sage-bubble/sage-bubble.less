@@ -1,0 +1,94 @@
+@import '/resources/css/import.less';
+
+.bk-sage-bubble-wrapper {
+    height: 16px;
+    position: relative;
+    font-size: 18px;
+
+    @sage-bubble-height: 18px;
+    .bk-sage-bubble {
+        z-index: @sage-bubble-zindex;
+        display: none;
+        position: absolute;
+        top: -19px;
+        left: 0;
+        right: 0;
+        height: @sage-bubble-height;
+        min-width: 20px;
+        color: @white-text;
+        .animation-duration(0.2s);
+        .animation-fill-mode(both);
+        .animation-name(fade-in);
+        border-top-right-radius: 3px;
+        border-top-left-radius: 3px;
+
+        .bk-sage-bubble-content {
+            margin-left: 10px;
+            padding-right: 10px;
+            line-height: 15px;
+            font-size: 11px;
+
+            .bk-tooltip {
+                display: inline;
+                margin-right: 20px;
+
+                .bk-tooltip-key {
+                    color: @h-gray5;
+                    font-size: 10px;
+                    .font-family-semibold();
+                }
+
+                .bk-tooltip-value {
+                    color: @h-gray6;
+                    font-size: 12px;
+                    margin-right: 10px;
+                    .font-family-regular();
+                }
+            }
+        }
+
+        .bk-sage-bubble-close {
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 5px 8px;
+            width: 7px;
+            height: 10px;
+            line-height: 8px;
+            cursor: pointer;
+            border-radius: 2px;
+            font-size: 20px;
+            .font-family-bold();
+
+            &:hover {
+                color: @white-text;
+            }
+        }
+        &.bk-sticky {
+            padding-right: 10px;
+
+            .bk-sage-bubble-close {
+                display: inline-block;
+            }
+        }
+
+        &.bk-error {
+            .bubble-content(@h-gray6, @red-default);
+        }
+        &.bk-warning {
+            .bubble-content(@h-gray6, @yellow-default);
+        }
+        &.bk-suggestion {
+            .bubble-content(@h-gray6, @blue-default);
+        }
+    }
+}
+
+.bubble-content(@color, @titleColor) {
+    background-color: @color;
+    .box-shadow(0 1px 5px @bg-shadow-faint);
+    .bk-sage-bubble-title {
+        background-color: @titleColor
+    }
+}

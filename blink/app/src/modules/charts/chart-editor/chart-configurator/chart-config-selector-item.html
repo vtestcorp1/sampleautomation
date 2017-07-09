@@ -1,0 +1,14 @@
+<ui-select class="bk-chart-config-selector"
+           ng-model="$ctrl.selectedOption"
+           theme="select2"
+           ng-disabled="$ctrl.isDisabled"
+           search-enabled="false"
+           on-select="$ctrl.onSelectionChange($item)">
+    <ui-select-match
+            placeholder="{{$ctrl.placeholder}}">
+        {{ $select.selected}}
+    </ui-select-match>
+    <ui-select-choices repeat="selectOption in $ctrl.selectOptions">
+        {{ selectOption }}
+    </ui-select-choices>
+</ui-select>

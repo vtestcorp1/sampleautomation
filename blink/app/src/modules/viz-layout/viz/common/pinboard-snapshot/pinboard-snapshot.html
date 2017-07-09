@@ -1,0 +1,53 @@
+<div class="bk-viz-pinner-modal">
+    <div class="bk-search" ng-show="snapshots.length > 6">
+        <input type="text" class="bk-search-input" placeholder="{{strings.SEARCH_PLACEHOLDER}}"
+               ng-model="searchFilter.name">
+    </div>
+    <ul class="bk-snapshot-list" ng-class="{
+            'bk-loading' : shouldShowLoadingIndicator()
+        }">
+        <li class="bk-create-snapshot-row">
+                <span class="bk-show-create-snapshot-btn"
+                      ng-hide="showNewSnapshotInput"
+                      ng-click="onShowCreateSnapshotClick()">
+                    <span class="bk-snapshot-icon"></span>
+                    <span class="bk-label">{{strings.CREATE_NEW_SNAPSHOT}}</span>
+                </span>
+                <span class="bk-new-snapshot-input" ng-show="showNewSnapshotInput">
+                    <span class="bk-snapshot-icon"></span>
+                    <input type="text" class="bk-input"
+                           placeholder="{{strings.NEW_SNAPSHOT_NAME_PLACEHOLDER}}"
+                           ng-model="newSnapshotName"
+                           ng-enter="takeSnapshot()">
+                    <input type="text" class="bk-input"
+                           placeholder="{{strings.NEW_SNAPSHOT_DESCRIPTION_PLACEHOLDER}}"
+                           ng-model="newSnapshotDescription"
+                           ng-enter="takeSnapshot()">
+                    <a class="bk-btn bk-create-snapshot-btn" ng-click="takeSnapshot()"
+                       ng-class="{ 'bk-disabled': !newSnapshotInputIsValid || updatingSnapshotList }">
+                        {{strings.TAKE_SNAPSHOT}}
+                    </a>
+                </span>
+        </li>
+        <li ng-repeat="snapshot in snapshots | filter:searchFilter"
+            class="bk-snapshot-row bk-overflow-ellipsis"
+            ng-class="{ 'bk-selected': snapshot.selected }"
+            blink-tooltip="{{ snapshot.tooltip }}"
+            data-html="true"
+            data-placement="left">
+          <span class="bk-delete-icon"
+                      ng-show="!snapshotsWithActiveVizAddition[snapshot.id]"
+                      ng-click="onDeleteSnapshot(snapshot)">
+                    <span></span>
+                </span>
+            <span class="bk-snapshot-name"
+                  ng-bind-html="snapshot.name | searchResultHighlight:searchFilter.name"
+                  ng-click="onNavigateToSnapshot(snapshot)">
+            </span>
+            <span class="bk-snapshot-timestamp"
+                  ng-bind-html="formatSnapshotTimestamp(snapshot) | searchResultHighlight:searchFilter.name"
+                  ng-click="onNavigateToSnapshot(snapshot)">
+            </span>
+        </li>
+    </ul>
+</div>

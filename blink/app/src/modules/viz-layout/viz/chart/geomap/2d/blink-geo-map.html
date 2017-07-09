@@ -1,0 +1,22 @@
+<div class="bk-geomap-ol-container"></div>
+
+<bk-color-scale ng-if="!!$ctrl.colorScaleCtrl" bk-ctrl="$ctrl.colorScaleCtrl">
+</bk-color-scale>
+
+<div popover-class="bk-geo-map-tooltip"
+     uib-popover-template="'geo-map-tooltip.html'"
+     popover-is-open="$ctrl.tooltip.shown"
+     popover-append-to-body="true"
+     popover-trigger="none"
+     popover-placement="auto bottom-left"
+     ng-style="{position: 'fixed', top: $ctrl.tooltip.top, left: $ctrl.tooltip.left}">
+</div>
+
+<script type="text/ng-template" id="geo-map-tooltip.html">
+    <ul>
+        <li class="bk-geo-map-tooltip-row" ng-repeat="(key, value) in $ctrl.tooltip.content">
+            <span class="bk-key">{{key}}:</span>
+            <span class="bk-value">{{value}}</span>
+        </li>
+    </ul>
+</script>

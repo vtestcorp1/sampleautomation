@@ -1,0 +1,36 @@
+<div class="bk-pattern-library">
+    <div class="bk-style-guide-header">
+        <img src="resources/img/logo/TS-logo-login.png"/>
+        <div class="bk-logo-heading">Pattern Library</div>
+    </div>
+
+    <tab-control on-tab-activated="onTabActivated(activeTab)" class="bk-pattern-library-tab-control">
+        <tab-control-tab tab-name="Overview" tab-id="overview">
+            <div ng-include="'src/style-guide/overview.html'"></div>
+        </tab-control-tab>
+        <tab-control-tab tab-name="Dev guide" tab-id="dev-guide">
+            <div ng-include="'src/style-guide/dev-guide.html'"></div>
+        </tab-control-tab>
+        <tab-control-tab tab-name="Typography" tab-id="typography">
+            <div ng-include="'src/style-guide/typography.html'"></div>
+        </tab-control-tab>
+        <tab-control-tab tab-name="Colors" tab-id="colors">
+            <div ng-include="'src/style-guide/color.html'"></div>
+        </tab-control-tab>
+        <tab-control-tab tab-name="Icons" tab-id="icons">
+            <div ng-include="'src/style-guide/icons.html'"></div>
+        </tab-control-tab>
+        <tab-control-tab tab-name="Buttons" tab-id="buttons">
+            <div ng-include="'src/style-guide/buttons.html'"></div>
+        </tab-control-tab>
+        <tab-control-tab tab-name="Widgets" tab-id="widgets">
+            <bk-widgets-browser bk-ctrl="widgetBrowserCtrl"></bk-widgets-browser>
+        </tab-control-tab>
+        <tab-control-tab tab-name="Layout" tab-id="layout">
+            <div ng-include="'src/style-guide/layout.html'"></div>
+        </tab-control-tab>
+        <tab-control-tab tab-name="Box Model" tab-id="box-model">
+            <div ng-include="'src/style-guide/box-model.html'"></div>
+        </tab-control-tab>
+    </tab-control>
+</div>

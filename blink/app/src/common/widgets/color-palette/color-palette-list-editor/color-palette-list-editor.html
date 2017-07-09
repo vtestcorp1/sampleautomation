@@ -1,0 +1,11 @@
+<div class="bk-color-palette-list-editor">
+    <ul class="bk-color-palette-list-editor-list">
+        <li ng-repeat="removableItem in $ctrl.getRemovableItems()"
+            class="bk-color-palette-list-editor-list-item">
+            <bk-removable bk-ctrl="removableItem">
+                <bk-color-palette-editor
+                        bk-ctrl="removableItem.getContainedComponent()"></bk-color-palette-editor>
+            </bk-removable>
+        </li>
+    </ul>
+</div>

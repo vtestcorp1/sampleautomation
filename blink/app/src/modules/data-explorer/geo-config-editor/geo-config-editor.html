@@ -1,0 +1,44 @@
+<ul class="bk-geo-config-option-list">
+    <li ng-repeat="ctrl in $ctrl.rootLevelOptionsControllers">
+        <bk-radio-button class="bk-top-level-radio" bk-ctrl="ctrl">
+        </bk-radio-button>
+    </li>
+    <li>
+        <bk-radio-button class="bk-top-level-radio" bk-ctrl="$ctrl.subNationRadioController">
+        </bk-radio-button>
+        <div class="bk-geo-config-sub-nation" ng-if="$ctrl.showSubNationConfig()">
+            <div class="bk-sub-nation-country">
+                <div class="bk-country-label">Country:</div>
+                <bk-select bk-ctrl="$ctrl.countrySelectorCtrl"></bk-select>
+            </div>
+            <div class="bk-sub-nation-options">
+                <div class="bk-sub-nation-option" ng-repeat="ctrl in $ctrl.subNationOptionsControllers">
+                    <bk-radio-button class="bk-sub-nation-radio" bk-ctrl="ctrl">
+                    </bk-radio-button>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li ng-if="$ctrl.customRegionEnabled">
+        <bk-radio-button class="bk-top-level-radio" bk-ctrl="$ctrl.customRegionRadioController">
+        </bk-radio-button>
+        <div class="bk-geo-config-custom-region" ng-if="$ctrl.customRegionRadioController.isSelected()">
+            <div class="bk-custom-region-name" ng-switch="$ctrl.customRegionLoading">
+                <div ng-switch-when="true">
+                    <blink-loading-indicator>
+                    </blink-loading-indicator>
+                </div>
+                <div ng-switch-when="false"
+                     class="bk-custom-region-def-name"
+                     blink-tooltip="{{$ctrl.getCustomRegionName()}}"
+                     ng-class="{'bk-no-def-selected': !$ctrl.customRegion}">
+                    {{$ctrl.getCustomRegionName()}}
+                </div>
+            </div>
+            <div class="bk-custom-region-uploader">
+                <bk-custom-region-uploader bk-ctrl="$ctrl.customRegionUploader">
+                </bk-custom-region-uploader>
+            </div>
+        </div>
+    </li>
+</ul>

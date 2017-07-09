@@ -1,0 +1,11 @@
+<div class="bk-sage-bubble-wrapper">
+    <div class="bk-sage-bubble" ng-class="{ 'bk-sticky': bubbleData.isSticky,
+                                            'bk-error': isErrorMessage(),
+                                            'bk-warning': isWarningMessage(),
+                                            'bk-suggestion': isSuggestionMessage()}">
+        <div class="bk-sage-bubble-content">
+            <div ng-bind-html="bubbleData.content"></div>
+        </div>
+        <div class="bk-sage-bubble-close" ng-click="dismissSageBubble()">&times;</div>
+    </div>
+</div>

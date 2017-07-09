@@ -1,0 +1,10 @@
+{
+    "sampleBooleanFlag": true,
+    "sampleNumberFlag": 200,
+    "sampleStringFlag": "overrideSampleValue",
+    "enableObjectSearch": true,
+    "enableHelp": true,
+    "enableOutOfScopeMatches": true,
+    "enableTableColumnHeaderMenu": true,
+    "suppress_NA_Headlines": true
+}

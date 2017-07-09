@@ -1,0 +1,15 @@
+<div class="bk-tab-control">
+    <ul class="bk-tab-header {{$ctrl.headerClass}}">
+        <li ng-repeat="tab in $ctrl.tabs"
+            class="tab-header-item"
+            ng-class="{ 'bk-clickable': !$ctrl.isTabDisabled(tab),
+                        'bk-tab-header-item-selected': $ctrl.isCurrentTab(tab),
+                        'bk-disabed-tab': $ctrl.isTabDisabled(tab)
+                        }"
+            blink-tooltip="{{$ctrl.getToolTipText(tab)}}"
+            ng-click="$ctrl.onTabSelected(tab)">
+            <span>{{tab.tabName}}</span>
+        </li>
+    </ul>
+    <div class="bk-tab-body" ng-transclude></div>
+</div>

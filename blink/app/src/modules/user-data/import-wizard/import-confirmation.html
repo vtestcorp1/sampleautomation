@@ -1,0 +1,25 @@
+<div class="bk-import-success">
+    <h1 class="bk-import-success-text">
+        <div class="bk-success-icon"></div>
+{{strings.Congratulations}}
+</h1>
+    <div class="bk-imported-rows-number" ng-show="userSchema.getNumValidRows() > 0">
+        {{ userSchema.getNumValidRows() }}
+    </div>
+    <div class="bk-imported-rows-text">
+{{strings.rows_have}}
+</div>
+    <div class="bk-imported-rows-text-secondary" ng-show="userSchema.getNumErrorRows() > 0">
+        We skipped {{ userSchema.getNumErrorRows() }} <span>{{strings.rows_while}}</span>
+</div>
+    <div class="bk-import-action-buttons">
+        <bk-secondary-button text="{{ strings.importData.LINK_TO_EXISTING_DATA }}"
+                             icon="bk-style-icon-link"
+                             ng-click="goToLinkingView()"
+                             class="bk-link-existing-data"></bk-secondary-button>
+        <bk-primary-button text="{{ strings.importData.ASK_A_QUESTION }}"
+                             icon="bk-style-icon-search"
+                             ng-click="selectSourceAndGoToAnswer()"
+                             class="bk-ask-a-question"></bk-primary-button>
+    </div>
+</div>

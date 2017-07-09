@@ -1,0 +1,193 @@
+
+@import '/resources/css/import.less';
+
+@alert-width: 450px;
+
+.bk-alert {
+    position:absolute;
+    z-index: @alerts-zindex;
+    opacity: 0;
+    top: 0px;
+    left: 50%;
+    padding: 11px 35px 8px 13px;
+    margin-left: -( @alert-width / 2 );
+    width: @alert-width - 10px;
+    .font-family-regular();
+    font-size: 12px;
+    box-shadow: 0 1px 3px @bg-shadow-faint-1;
+    text-shadow: none;
+    border-radius: 5px;
+    .box-shadow-inset(0 1px 7px @bg-shadow-faint-1, inset 0 1px 0 @inner-shadow-faint);
+    pointer-events: none;
+    .transition(~"opacity 0.2s ease-out, top 0.2s ease-out, width 0.2s ease-out");
+    border: 0;
+
+    .bk-action-link {
+        .bk-link;
+        color: @white-text;
+    }
+
+    &.bk-alert-open-animation {
+        top: 0px;
+        margin-left: -( @alert-width / 2 );
+        width: @alert-width;
+        opacity: 0.98;
+        pointer-events: auto;
+    }
+
+    &.bk-alert-success {
+        background-color: @green-default;
+        color: @white-text;
+        border: none;
+        border-bottom: 1px solid @green-border;
+
+        .bk-close {
+            color: @green-darker;
+            text-shadow: 0 1px 0 @inner-shadow-faint;
+
+            &:hover {
+                color: @white-text;
+                text-shadow: 0 1px 0 transparent;
+            }
+        }
+    }
+
+    &.bk-alert-error {
+        position: absolute;
+        background-color: @red-default;
+        color: @white-text;
+        border: none;
+        border-bottom: 1px solid @red-border;
+
+        .bk-close {
+            color: @red-darker;
+            text-shadow: 0 1px 0 @inner-shadow-faint;
+
+            &:hover {
+                color: @white-text;
+                text-shadow: 0 1px 0 transparent;
+            }
+        }
+
+    }
+
+    &.bk-alert-problem {
+        .bk-close {
+            color: @gray-main-text;
+        }
+    }
+
+    .bk-preamble-text {
+        font-weight: bold;
+
+        .bk-text-bold {
+            float: left;
+        }
+    }
+
+    .bk-icon {
+        float: left;
+        margin-top: 1px;
+        width: 25px;
+        height: 16px;
+        line-height: 16px;
+        text-align: center;
+        background-image: url('/resources/img/icons-alerts.png');
+        background-repeat: no-repeat;
+        .font-family-semibold();
+
+        &.bk-error {
+            background-position: 0px 0px;
+        }
+
+        &.bk-problem {
+            background-position: -18px -34px;
+        }
+
+        &.bk-success {
+            background-position: 0px -17px;
+        }
+    }
+
+    .bk-text-bold {
+        margin-left: 10px;
+        .font-family-bold;
+    }
+
+    .bk-text {
+        .font-family-semibold;
+    }
+
+    .bk-link {
+        text-decoration: underline;
+        margin-left: 2px;
+    }
+
+    .bk-close {
+        top: 5px;
+    }
+
+    .bk-details {
+        overflow: auto;
+        padding: 6px 10px 6px 10px;
+        max-height: 200px;
+        margin-top: 10px;
+        width: 100%;
+        background-color: @white-bg;
+        color: @black-bg;
+        font-size: 13px;
+        border: none;
+        border-radius: 5px;
+
+        .bk-detail-header {
+            font-size: 12px;
+            padding-bottom: 5px;
+            padding-top: 5px;
+        }
+
+        .bk-detail-footer {
+            font-size: 12px;
+        }
+
+        .bk-details-left-column {
+            display: inline-block;
+        }
+
+        .bk-details-key-value {
+            .bk-details-key {
+                .font-family-semibold();
+                font-size: 12px;
+            }
+
+            .bk-details-value {
+                font-size: 10px;
+            }
+        }
+
+        .bk-detail-content {
+            max-height: 116px;
+            overflow-y: auto;
+
+            .bk-detail-block {
+                padding: 5px;
+
+                .bk-name {
+                    padding-bottom: 2px;
+                    line-height: 13px;
+                    .font-family-semibold();
+                    font-size: 11px;
+                }
+
+                .bk-key {
+                    .font-family-semibold();
+                    font-size: 10px;
+                }
+
+                .bk-value {
+                    font-size: 10px;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}

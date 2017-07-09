@@ -1,0 +1,35 @@
+<div class="bk-dropdown-list-header" ng-switch="list.type" ng-click="$event.stopPropagation()">
+    <div ng-switch-when="ErrorQueryCompletion">
+        <div class="header-text">
+            <span>{{strings.I_didnt_get}}</span>
+        </div>
+    </div>
+    <div ng-switch-when="OutOfScopeCompletion">
+        <div class="header-text out-of-scope">
+            <span class="bk-style-icon-circled-information"></span>
+            <span ng-if="hasDataSources" class="bk-message-text">{{strings.No_suggestions_from}}</span>
+            <span ng-if="!hasDataSources" class="bk-message-text">{{strings.No_sources}}</span>
+        </div>
+        <hr/>
+        <div class="header-text">
+            {{ strings.suggestions.ADDITIONAL_SOURCES }}
+        </div>
+    </div>
+    <div ng-switch-when="SynonymCompletion">
+        <div class="header-text">
+            {{ strings.suggestions.SYNONYMS }}
+        </div>
+    </div>
+    <div ng-switch-when="SearchHistoryCompletion">
+        <div class="header-text">
+            {{ strings.suggestions.SEARCH_HISTORY }}
+        </div>
+    </div>
+    <div ng-switch-when="WarnQueryCompletion">
+        <div class="header-text">{{strings.Multiple_matches}}</div>
+    </div>
+    <div ng-switch-when="EditJoinPath" class="header-edit-join-path">
+        <a ng-click="list.misc && list.misc.requestJoinPathEdit()"><span>{{strings.See_other}}</span>{{list.misc.tokenForEditMapping.getTokenTextLowerCase()}}<span>{{strings.types}}</span></a>
+    </div>
+    <div ng-switch-when="ObjectResult" class="header-object-results"></div>
+</div>

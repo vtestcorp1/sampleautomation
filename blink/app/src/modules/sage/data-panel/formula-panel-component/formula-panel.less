@@ -1,0 +1,65 @@
+.bk-formulae-container {
+    .bk-formula-list {
+        .bk-vertical-flex-container-sized;
+
+        .bk-title-header {
+            .flex-grow-shrink-basis(0, 0, 60px);
+            .clearfix;
+            .bk-section-title {
+                display: inline-block;
+                .font-family-semibold;
+                padding: 15px 0 0 15px;
+            }
+            .header-add-button {
+                float: right;
+                padding: 15px 15px 0 0;
+            }
+        }
+
+        .bk-formulae {
+            .flex-grow-shrink-basis(1, 1, 0);
+            padding: 0 20px 0 25px;
+            overflow-y: auto;
+            overflow-x: hidden;
+
+            .bk-formula-list {
+                .bk-formula-list-item {
+                    .text-size-default;
+                    .font-family-regular;
+                    white-space: nowrap;
+                    margin: 3px 0;
+                    padding-left: 5px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    cursor: pointer;
+
+                    .bk-formula-list-item-content {
+                        display: flex;
+                        &:hover {
+                            background-color: @h-gray1;
+                            .bk-actionable-icon {
+                                visibility: visible;
+                            }
+                        }
+                        .bk-column-name {
+                            margin: 0 5px;
+                        }
+                        .bk-actionable-icon {
+                            visibility: hidden;
+                        }
+                        .bk-style-icon-edit:before, .bk-style-icon-x:before {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+
+            &.bk-read-only .bk-formula-list-item {
+                cursor: default;
+                &:hover {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}

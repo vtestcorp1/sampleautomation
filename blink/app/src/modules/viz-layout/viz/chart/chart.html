@@ -1,0 +1,42 @@
+<div ng-if="viz.isEmpty()" class="bk-no-content-placeholder">{{ 'No data to display' | l10n }}</div>
+<div ng-if="viz.isPendingDataLoad()" class="bk-no-content-placeholder">{{ 'Loading data...' | l10n }}</div>
+<div ng-if="viz.dataError" class="alert alert-error">{{ 'Invalid data' | l10n }}</div>
+<div ng-if="isDataNotSupported()" class="chartDataNotSupported">{{ getDataDisabledChartExplanation() | l10n }}</div>
+
+<div class="chart-container"
+     ng-class="{ 'bk-vertical-layout': isLegendVertical(),
+     'bk-horizontal-layout': isLegendHorizontal() }">
+
+     <div class="bk-chart" chart-type="{{getChartType()}}"
+          ng-hide="isChartHidden()"
+          ng-style="{'visibility': markChartInvisible() ?'hidden':'visible'}"
+          ng-mousedown="chartMouseDown = true" ng-mouseup="chartMouseDown = false"
+          ng-class="{ 'bk-zoom-mode' : !isInPanMode(),
+          'bk-pan-mode': isInPanMode() && isZoomedIn(),
+          'bk-mouse-down': chartMouseDown }"></div>
+
+     <div chart-legend
+          ng-init="render()"
+          viz-model="viz.getModel()"
+          chart="chart"
+          chart-type="{{getChartType()}}"
+          available-height="getAvailableLegendHeight()"
+          ng-if="!legendDisabled && !isChartHidden()"
+          class="bk-chart-legend"
+          ng-class="{'bk-legend-vertical': isLegendVertical(),
+          'bk-legend-horizontal': isLegendHorizontal()}"></div>
+</div>
+
+<script type="text/ng-template" id="chart-axis.html">
+    <axis-label class="bk-axis-label"
+                viz-model="vizModel"
+                viz-column="vizColumn"
+                sage-client="sageClient"
+                is-axis-vertical="isAxisVertical"
+                is-column-control-opened="isColumnControlOpened"
+                axis-relative-position="axisRelativePosition"
+                blink-tooltip="{{tooltip}}"
+                data-html="true"
+                data-placement="{{tooltipPlacement}}">
+    </axis-label>
+</script>

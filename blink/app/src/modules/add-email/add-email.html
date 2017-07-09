@@ -1,0 +1,12 @@
+<div class="bk-add-email">
+    <div class="label">{{strings.Emails}}</div>
+    <input class="input-box" type="text" ng-model="$ctrl.emails" spellcheck="false"/>
+    <div class="bk-add-users-buttons">
+        <bk-primary-button text="{{strings.Add}}"
+                           is-disabled="$ctrl.isAddEmailDisabled()"
+                           ng-click="$ctrl.addClicked()"
+                           class="bk-add-permissions-btn">
+
+        </bk-primary-button>
+    </div>
+</div>

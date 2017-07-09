@@ -1,0 +1,39 @@
+<div class="bk-home-dashboard"
+     ng-switch="homeDashboardState === 'NO_PINBOARDS'">
+    <div ng-switch-when="true" class="bk-no-content">
+        <div class="bk-no-content-icon"></div>
+        <div class="bk-no-content-label">
+            {{strings.No_Pinboards}}
+        </div>
+        <div class="bk-no-content-message">{{strings.Create_a_pinboard}}</div>
+    </div>
+    <div ng-switch-when="false" class="bk-vertical-flex-container-sized">
+        <div class="bk-homepage-pinboard-title-bar">
+            <div class="bk-homepage-pinboard-title">{{ strings.PINBOARD }}:</div>
+            <bk-pinboard-selector
+                    class="bk-pinboard-picker-drop-down"
+                    bk-ctrl="pinboardSelectorComponent">
+            </bk-pinboard-selector>
+            <div blink-home-activity></div>
+        </div>
+        <div ng-show="homeDashboardState === HomeDashboardStates.EMPTY_PINBOARD"
+             class="bk-no-content">
+            <div class="bk-no-content-icon"></div>
+            <div class="bk-no-content-label">
+                {{strings.Empty_Pinboard}}
+            </div>
+            <div class="bk-no-content-message">{{strings.Add_charts_or}}</div>
+        </div>
+        <div class="bk-dashboard-answer"
+             ng-show="homeDashboardState !== HomeDashboardStates.EMPTY_PINBOARD">
+            <pinboard-page class="bk-vertical-flex-container-sized"
+                           hide-panel="true"
+                           dont-watch-url="true"
+                           pinboard-page-config="pinboardPageConfig"
+                           on-model-update-success="onPinboardModelUpdateSuccess(newModel, oldModel)"
+                           on-model-update-failure="onPinboardModelUpdateFailure(error)"
+                           id="getSelectedPinboardId()">
+            </pinboard-page>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,34 @@
+<div class="bk-pinboard-data-viz">
+    <div class="bk-pinboard-viz-header">
+        <bk-name-description class="bk-pinboard-viz-name"
+                             bk-ctrl="$ctrl.nameDescriptionComponent">
+        </bk-name-description>
+        <bk-action-button-dropdown class="bk-pinboard-data-viz-action-menu"
+                                   menu="$ctrl.actionMenuConfig"
+                                   only-icon="true"
+                                   icon="bk-style-icon-table-column-options"
+                                   ng-if="!$ctrl.config.hideActions && !!$ctrl.actionMenuConfig">
+        </bk-action-button-dropdown>
+    </div>
+    <blink-loading-indicator ng-if="$ctrl.showLoading">
+    </blink-loading-indicator>
+    <bk-data-viz class="bk-pinboard-viz-content"
+                 ng-if="!$ctrl.showLoading"
+                 bk-ctrl="$ctrl.dataVizComponent">
+    </bk-data-viz>
+    <div ng-include=" 'transformed-viz-marker.html' "></div>
+</div>
+<script type="text/ng-template" id="transformed-viz-marker.html">
+    <img ng-src="/resources/img/drilldown-icon.png"
+         class="bk-transformed-marker"
+         ng-if="$ctrl.isTransformed()"
+         blink-tooltip="{{$ctrl.getTransformedQuestion()}}"
+         data-html="true"
+         ng-click="$ctrl.resetTransformation()"
+         data-placement="bottom"/>
+</script>
+<script type="text/ng-template" id="transformation-marker-tooltip.html">
+    <div>{questionText}</div>
+    <div class="bk-separator"></div>
+    <div>{resetLabel}</div>
+</script>

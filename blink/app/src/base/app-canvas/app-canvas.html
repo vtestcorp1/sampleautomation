@@ -1,0 +1,57 @@
+<div class="bk-page bk-page-app-canvas bk-canvas-state-{{ canvasState }}">
+
+    <div blink-alert></div>
+    <div class="bk-vertical-flex-container-sized"
+         ng-switch="canvasState">
+        <bk-a3-dashboard ng-switch-when="insights"
+                         bk-ctrl="innerCtrl"
+                         class="bk-vertical-flex-container-sized"></bk-a3-dashboard>
+        <bk-answer ng-switch-when="answer"
+                bk-ctrl="innerCtrl"
+                class="bk-vertical-flex-container-sized"></bk-answer>
+        <bk-saved-answer ng-switch-when="saved-answer"
+                      bk-ctrl="innerCtrl"
+                      class="bk-vertical-flex-container-sized"></bk-saved-answer>
+        <bk-aggregated-worksheet-editor ng-switch-when="aggregated-worksheet"
+                                     bk-ctrl="innerCtrl"
+                                     class="bk-vertical-flex-container-sized"></bk-aggregated-worksheet-editor>
+        <bk-answer-replay ng-switch-when="answer-replay"
+                       bk-ctrl="innerCtrl"
+                       class="bk-vertical-flex-container-sized"></bk-answer-replay>
+        <bk-home ng-switch-when="home"
+                       bk-ctrl="innerCtrl"
+                       class="bk-vertical-flex-container-sized"></bk-home>
+        <bk-pinboard-reports-list bk-ctrl="innerCtrl"
+                               ng-switch-when="schedules"
+                               class="bk-vertical-flex-container-sized">
+        </bk-pinboard-reports-list>
+        <bk-schedule-report bk-ctrl="innerCtrl"
+                            ng-switch-when="schedule"
+                            class="bk-vertical-flex-container-sized">
+        </bk-schedule-report>
+        <bk-slack-register class="bk-vertical-flex-container-sized"
+                        bk-ctrl="innerCtrl"
+                        ng-switch-when="slack-register">
+        </bk-slack-register>
+        <bk-related-link class="bk-vertical-flex-container-sized"
+                      bk-ctrl="innerCtrl"
+                      ng-switch-when="related-link">
+        </bk-related-link>
+        <bk-user-preference class="bk-vertical-flex-container-sized"
+                               bk-ctrl="innerCtrl"
+                               ng-switch-when="user-preference">
+        </bk-user-preference>
+
+        <div ng-switch-default class="bk-vertical-flex-container-sized">
+            <div class="bk-vertical-flex-container-sized"
+                 ng-include="canvasUrl[canvasState]"></div>
+        </div>
+    </div>
+    <div ng-show="showDebugModeBanner && !forceHideDebugBanner" class="bk-debug-banner">
+        <div class="bk-text-red">{{strings.Version_info}}</div>
+        <div class="bk-text-white"><span>{{strings.gitcommit}}</span>{{ debugInfo.commitId }}</div>
+        <div class="bk-text-white"><span>{{strings.gitbranch}}</span>{{ debugInfo.gitBranch }}</div>
+        <div class="bk-text-white"><span>{{strings.built_on}}</span>{{ debugInfo.timestamp }}</div>
+        <div class="bk-close" ng-click="forceHideDebugBanner = true">&times;</div>
+    </div>
+</div>

@@ -1,0 +1,191 @@
+@import '/resources/css/import.less';
+
+.bk-slickgrid-table {
+    .bk-vertical-flex-container-sized;
+
+    background-color: @white-bg;
+    .bk-table-container {
+        .bk-vertical-flex-container-sized;
+        border: 1px solid @gray-border;
+        border-radius: 3px;
+
+        .slick-header {
+            z-index: @viz-zindex;
+            background-color: @white-bg;
+            border-bottom: 1px solid @gray-border;
+            border-top:0px;
+            box-shadow: 0 1px 3px @bg-shadow-faint-1;
+            .font-family-semibold;
+        }
+
+        .slick-header-column {
+            padding-left: 8px;
+            padding-right: 8px;
+            height: 30px;
+            line-height: 30px;
+            .text-size-small;
+            .font-family-semibold;
+            color: @gray-main-text;
+            border: none;
+            background-color: @white-bg;
+            cursor: pointer;
+            text-align: left;
+
+            &.bk-numeric-column {
+                text-align: right;
+            }
+
+            &.bk-numeric-column-header {
+                text-align: center;
+            }
+
+            &.bk-identical-column-names {
+                .bk-editable:not(.bk-in-edit-mode) {
+                    border: 1px solid @red-border !important;
+                }
+            }
+
+            &:last-child {
+                border-right-color: @gray-border;
+            }
+
+            .slick-sort-indicator {
+                width: 8px;
+                height: 30px;
+                margin-right: 10px;
+                margin-left: 8px;
+                background-position: 0 12px;
+                background-repeat: no-repeat;
+            }
+
+            .slick-column-name {
+                display: inline-block;
+                vertical-align: top;
+                height: 100%;
+
+                .slick-editable-title-container {
+                    height: 100%;
+                }
+            }
+
+            &.slick-editable-header-column {
+                .slick-column-name, .slick-sort-indicator {
+                    float: right;
+                }
+                .slick-sort-indicator {
+                    margin-left: 0;
+                }
+            }
+
+            .slick-resizable-handle {
+                border-right: 1px solid @h-gray1;
+                padding-left: 7px;
+            }
+
+            &.bk-table-column-selectable {
+                .slick-column-name {
+                    margin-left: 7px;
+                }
+
+                input[type=radio] {
+                    vertical-align: top;
+                    margin-top: 8px;
+                    display: inline-block;
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .slick-header-column-sorted {
+            font-style: normal;
+            color: @blue-default;
+        }
+
+        .slick-row:hover {
+            background-color: @table-row-bg-hover;
+
+            &.even {
+                background-color: @table-row-bg-hover !important;
+            }
+
+            .slick-cell {
+                .transition(~"background-color .5s ease-in");
+                background-color: @table-row-bg-hover;
+                color: @table-text-color-hover;
+            }
+        }
+
+        .slick-row {
+            background: none;
+
+            .slick-cell {
+                .font-family-regular;
+                color: @table-text-color;
+                &.bk-numeric-column {
+                    text-align: right;
+                }
+            }
+        }
+
+        &.selected {
+            background-color: @blue-default;
+        }
+
+        .slick-cell {
+            padding-left: 16px;
+            padding-right: 10px;
+            line-height: 33px;
+            background: none;
+            color: @gray-main-text;
+            border: none;
+            font-size: 14px;
+
+            // SCAL-8677
+            .unselectable();
+
+            &.measure {
+                padding-right: 50px;
+                text-align: right;
+            }
+
+            a {
+                &:not(.linkified) {
+                    color: @h-blue;
+                    text-decoration: underline;
+                }
+
+                &.linkified {
+                    .font-family-regular;
+                }
+            }
+        }
+    }
+
+    .bk-disabled-slick-column {
+        color: @h-gray6 !important;
+        opacity: 0.5 !important;
+    }
+}
+
+.slick-cell-editor {
+    &.select2-container {
+        width: 100%;
+
+        .select2-choice {
+            width: auto;
+        }
+
+        .select2-dropdown-open {
+            .select2-choice {
+                width: auto;
+            }
+        }
+    }
+}
+
+// ad-hoc fix for IE 11, frozen-column add -ms-overflow-x: scroll as an inline style
+.ie {
+    .slick-viewport.slick-viewport-top.slick-viewport-left {
+        -ms-overflow-x: auto !important;
+    }
+}

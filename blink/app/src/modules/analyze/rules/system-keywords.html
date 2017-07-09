@@ -1,0 +1,39 @@
+<div class="bk-system-keywords-analyzer bk-analyzer">
+    <div class="bk-analyzer-body">
+        <div class="bk-analyzer-description">
+            {{strings.analyze.systemKeywords.description1}}
+            <a href="{{strings.analyze.systemKeywords.description2Url}}"
+               target="_blank">
+                {{strings.analyze.systemKeywords.description2}}
+            </a>
+            {{strings.analyze.systemKeywords.description3}}
+        </div>
+        <div class="bk-analyzer-content">
+            <div class="bk-system-keywords"
+                 ng-repeat="column in $ctrl.systemKeywordsColumns">
+                <div class="bk-system-keywords-column">
+                    <div class="bk-analyzer-input">
+                        <input type="text"
+                               id="system-keyword-name-{{column.originalName}}"
+                               class="bk-input"
+                               value="column.newName"
+                               ng-model="column.newName"
+                               ng-change="$ctrl.onChange(column)"/>
+                        <div class="bk-system-keywords-footer">
+                            {{strings.analyze.systemKeywords.keywordsFound}}
+                            <span class="bk-system-keywords-value">
+                                {{column.keywordsString}}
+                            </span>
+                        </div>
+                    </div>
+                    <div class="bk-analyzer-status">
+                        <div class="bk-analyzer-status-{{column.status}}">
+                            {{column.keywords.length}}
+                            {{strings.analyze.systemKeywords.keywordsMatched}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+<form name="form" class="bk-dialog-field bk-admin-item-dialog">
+    <div class="flex-two-columns-container"
+         ng-class="{collapsed: $ctrl.shouldCollapseFormPanel}">
+        <div class="bk-admin-left-panel" ng-if="!$ctrl.shouldCollapseFormPanel">
+            <admin-form bk-ctrl="$ctrl.formController"></admin-form>
+            <div class="form-row" ng-if="!!$ctrl.privilegesListController">
+                <div class="label"> {{$ctrl.strings.privilegesLabel}} </div>
+                <div class="bk-privileges-list">
+                    <blink-checkbox-collection bk-ctrl='$ctrl.privilegesListController'>
+                    </blink-checkbox-collection>
+                </div>
+            </div>
+            <div class="bk-non-matching-passwords-message"
+                 ng-if="$ctrl.shouldShowErrors"
+                 ng-show="form.email.$error.email">
+                {{$ctrl.strings.errors.emailNotValid}}
+            </div>
+            <div ng-show="!$ctrl.editedItem.matchingPasswords"
+                 ng-if="$ctrl.shouldShowErrors"
+                 class="bk-non-matching-passwords-message">
+                {{$ctrl.strings.errors.passwordNotMatching}}
+            </div>
+        </div>
+        <div ng-if="!$ctrl.shouldCollapseFormPanel" class="borderLeft"></div>
+        <div class="bk-admin-right-panel">
+            <admin-tabs-collection bk-ctrl="$ctrl.tabsController"></admin-tabs-collection>
+        </div>
+    </div>
+</form>

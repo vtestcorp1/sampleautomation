@@ -1,0 +1,85 @@
+.bk-admin {
+    .pr;
+    height: 100%;
+
+    .bk-add-user-button,
+    .bk-add-role-button,
+    .bk-add-group-button {
+        .pa;
+        top: 44px;
+        right: 30px;
+    }
+
+    .bk-name-text {
+        a {
+            color: #5c9df5;
+            text-decoration: underline;
+        }
+    }
+
+    .tab-navigation {
+        .bk-vertical-flex-container-sized;
+        tab-control {
+            .bk-vertical-flex-container-sized;
+        }
+        .bk-tab-control {
+            .bk-vertical-flex-container-sized;
+            .bk-tab-body {
+                .bk-vertical-flex-container-sized;
+                tab-control-tab {
+                    .bk-vertical-flex-container-sized;
+                    &:empty {
+                        display: none;
+                    }
+                    .bk-tab-control-tab {
+                        .bk-vertical-flex-container-sized;
+                    }
+                }
+            }
+            //TODO(CHAB) make ADD-USER Button flex
+            .bk-tab-header {
+                margin: 0px;
+                padding: 10px 20px 10px 20px;
+                &.primary-nav {
+                    border-bottom: 1px solid @h-gray2;
+                }
+                .tab-header-item {
+                    padding-right: 20px;
+
+                    &.bk-tab-header-item-selected {
+                        border-bottom: none;
+                    }
+                }
+            }
+
+            .bk-table-list {
+                .bk-vertical-flex-container-sized;
+            }
+            .bk-metadata-list-header {
+                display: none;
+            }
+            .tab-content {
+                .bk-vertical-flex-container-sized;
+            }
+
+            .larger-content .tab-content {
+                margin: 0;
+            }
+        }
+    }
+
+    .bk-health-management-overview-pinboard,
+    .bk-health-management-data-pinboard,
+    .bk-health-management-cluster-pinboard,
+    .bk-health-management-alert-pinboard {
+        .bk-vertical-flex-container-sized;
+    }
+
+    .bk-answer.bk-pinboard-type {
+        .bk-viz .bk-viz-inner .bk-viz-controls {
+            display: none;
+        }
+    }
+}
+
+

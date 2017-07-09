@@ -1,0 +1,21 @@
+
+@import '/resources/css/import.less';
+@import '/resources/css/ui-styles.less';
+
+@home-sage-input-left-padding: 45px;
+@home-widget-header-height: 40px;
+
+.bk-home {
+    .bk-vertical-flex-container-sized;
+
+    &.bk-home-fade-out {
+        .bk-home-widget, .bk-home-sage-separator {
+            opacity: 0;
+        }
+    }
+
+    .bk-home-content {
+        .bk-vertical-flex-container-sized;
+        overflow: auto;
+    }
+}

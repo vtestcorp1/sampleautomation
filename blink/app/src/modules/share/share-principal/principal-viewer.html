@@ -1,0 +1,16 @@
+<div class="bk-principal-viewer" ng-switch="$ctrl.principalType">
+     <span class="bk-group-icon" ng-switch-when="1 ">
+        <span class="bk-style-icon-users"></span>
+    </span>
+    <span ng-switch-when="2">
+        <blink-profile-pic user-id="$ctrl.id"></blink-profile-pic>
+    </span>
+    <span class="bk-group-icon" ng-switch-when="3">
+        <span class="bk-style-icon-user"></span>
+    </span>
+    <div class="bk-permission-principal">
+        <span class="bk-name" ng-if="$ctrl.principalType == 1 || $ctrl.principalType == 2">{{ $ctrl.name }}</span>
+        <span class="bk-email" ng-if="$ctrl.principalType == 3">{{ $ctrl.name }}</span>
+        <small ng-if='$ctrl.principalType != 3' class="bk-display-name">{{ $ctrl.displayName }}</small>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+<div class="bk-data-management">
+    <div class="bk-workflow-pane">
+        <div class="bk-type-search">
+            <input type="text"
+                   class="bk-search-input"
+                   placeholder="Search by name"
+                   ng-model="searchText"/>
+        </div>
+        <div class="bk-image-containers">
+            <div class="bk-show-case-image-container"
+                 ng-repeat="dsDisplayName in displayNames | filter: searchText | orderBy : dsDisplayName">
+                <div class="bk-image-text">
+                    <div class="bk-image-container"
+                         ng-click="selectSourceType(dsDisplayName)"
+                         ng-class="{'bk-selected': isSelected(dsDisplayName)}"
+                         blink-tooltip="{{getShowCaseImageTooltip(dsDisplayName)}}">
+
+                        <img ng-src="{{getImageSource(dsDisplayName)}}" class="bk-show-cased-data-source-img"
+                             alt="{{ dsDisplayName }}"/>
+                    </div>
+                    <div class="bk-image-label">
+                        {{dsDisplayName}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

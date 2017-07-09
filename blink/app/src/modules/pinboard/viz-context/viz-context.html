@@ -1,0 +1,18 @@
+<div class="bk-viz-context bk-big-popup" blink-on-escape="$ctrl.close()">
+    <div class="bk-context-dialog">
+        <div class="popup-header">
+            <span ng-bind-html="$ctrl.headerTitle"></span>
+            <a type="button" class="bk-close" ng-click="$ctrl.close()">&times;</a>
+        </div>
+        <div class="popup-content">
+            <div class="bk-content">
+                <blink-loading-indicator ng-if="$ctrl.showLoading">
+                </blink-loading-indicator>
+                <bk-answer-document class="bk-viz-context-answer-document-container"
+                                 ng-if="!!$ctrl.answerDocumentComponent"
+                                 bk-ctrl="$ctrl.answerDocumentComponent">
+                </bk-answer-document>
+            </div>
+        </div>
+    </div>
+</div>

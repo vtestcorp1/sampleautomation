@@ -1,0 +1,106 @@
+<div class="bk-dialog-overlay" blink-on-escape="$ctrl.onEscape()">
+    <div class="bk-dialog modal bk-share-dialog" ng-class="{ 'bk-sidebar-dialog-layout': $ctrl.showColumnPermissions }">
+        <div class="modal-header">
+            <a class="bk-close" ng-click="$ctrl.clear()" ng-show="!$ctrl.unsavedChanges">&times;</a>
+            <h3>{{ $ctrl.panelStrings.TITLE }}</h3>
+        </div>
+        <div class="bk-body"
+             ng-class="{
+                'bk-loading' : $ctrl.isLoading && !$ctrl.showColumnPermissions,
+                'bk-loading-sidebar' : $ctrl.isLoading && $ctrl.showColumnPermissions
+                }">
+            <div class="bk-sidebar"
+                 ng-show="$ctrl.showColumnPermissions"
+                 ng-class="{ 'bk-disabled': $ctrl.unsavedChanges }">
+                <!-- Radio buttons allowing user to pick whether to share the entire table of specific columns -->
+                <div class="bk-table-sharing-options">
+                    <label class="bk-column-option">
+                        <input type="radio"
+                               ng-disabled="$ctrl.unsavedChanges"
+                               ng-model="$ctrl.tableSharingMode"
+                               ng-change="$ctrl.onTableOptionRadioClick()"
+                               value="share-table">
+                        <span>{{ $ctrl.panelStrings.ENTIRE_TABLE }}</span>
+                    </label>
+                    <label class="bk-column-option">
+                        <input type="radio"
+                               ng-disabled="$ctrl.unsavedChanges"
+                               ng-model="$ctrl.tableSharingMode"
+                               ng-change="$ctrl.onTableOptionRadioClick()"
+                               value="share-columns">
+                        <span>{{ $ctrl.panelStrings.SPECIFIC_COLUMN }}</span>
+                    </label>
+                </div>
+                <!-- List of columns in the table -->
+                <ul ng-show="$ctrl.tableSharingMode == 'share-columns'" class="bk-share-columns">
+                    <li ng-repeat="column in $ctrl.columns"
+                        ng-click="$ctrl.selectTableColumn(column)"
+                        ng-class="{ 'bk-selected': $ctrl.column._selected }">
+                        {{ column.header.name }}
+                    </li>
+                </ul>
+            </div>
+            <div class="bk-dialog-permission-view">
+                <!-- List of all users and groups that have permissions for the current shared object -->
+                <div class="bk-permission-list">
+
+                    <div ng-switch on="$ctrl.isLoading">
+                        <h2 ng-switch-when="false">{{ $ctrl.panelStrings.WHO_ACCESS }}
+                            <span ng-show="!$ctrl.bulkMode">
+                                <span>{{$ctrl.strings.to}}&nbsp;</span>
+                                {{ $ctrl.sharedObject.typeLabel }} "{{ $ctrl.sharedObject.name }}"
+                            </span>
+                        </h2>
+                        <h2 ng-switch-when="true">{{ $ctrl.panelStrings.FETCHING_PERMISSIONS }}</h2>
+                    </div>
+                    <ul>
+                        <!-- First row displays the owner -->
+                        <li class="bk-user-list" ng-show="author">
+                            <div class="bk-permission-viewer">
+                                <bk-principal-viewer bk-ctrl="$ctrl.author" class="bk-principal-container">
+                                </bk-principal-viewer>
+                                <span class="bk-is-owner-label">{{ $ctrl.panelStrings.IS_OWNER }}</span>
+                            </div>
+                        </li>
+                        <!-- List of individual or group permissions -->
+                        <bk-permissions-list bk-ctrl="$ctrl.permissionsListComponent">
+                        </bk-permissions-list>
+                    </ul>
+                </div>
+                <!-- The add user section can be expanded or collapsed and is used to give permissions to new users / groups -->
+                <div class="bk-add-users"
+                     ng-class="{ 'bk-expanded': $ctrl.addUserSectionExpanded }"
+                     ng-click="$ctrl.expandAddUserSection()"
+                     ng-show="!$ctrl.isLoading && !$ctrl.unsavedChanges">
+                    <div class="bk-add-users-header">
+                        <span class="bk-plus-icon bk-style-icon-small-plus"></span>
+                        <span class="bk-add-users-title">{{ $ctrl.panelStrings.ADD_USERS_OR_GROUPS }}</span>
+                    </div>
+                   <div class="alert warning" ng-if="$ctrl.principalSelectorComponent.hasNoPrincipals()">
+                       {{$ctrl.panelStrings.USER_HAS_NO_PRINCIPALS}}
+                   </div>
+                    <div class="bk-add-users-body" ng-click="$event.stopPropagation();">
+                       <bk-add-principal bk-ctrl="$ctrl.addPrincipalComponent"></bk-add-principal>
+                    </div>
+                </div>
+                <!-- Message that appears when user has unsaved changes -->
+                <div class="bk-unsaved-changes-message alert warning" ng-show="$ctrl.unsavedChanges">
+                    <bk-primary-button text="{{ $ctrl.strings.SAVE }}"
+                                       ng-click="$ctrl.savePermissions()"
+                                       class="bk-save-btn"></bk-primary-button>
+                    <bk-secondary-button text="{{ $ctrl.strings.CANCEL }}"
+                                       ng-click="$ctrl.discardUnsavedChanges()"
+                                       class="bk-cancel-button"></bk-secondary-button>
+                    <span>{{ $ctrl.panelStrings.CLICK_TO_SAVE }}</span>
+                </div>
+            </div>
+            <div class="bk-clear"></div>
+        </div>
+        <div class="modal-footer" ng-show="!$ctrl.unsavedChanges && !$ctrl.addUserSectionExpanded">
+            <bk-primary-button text="{{ $ctrl.strings.DONE }}"
+                               ng-click="$ctrl.clear()"
+                               class="bk-done-btn">
+            </bk-primary-button>
+        </div>
+    </div>
+</div>

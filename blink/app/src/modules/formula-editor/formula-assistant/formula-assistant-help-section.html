@@ -1,0 +1,39 @@
+<div ng-switch="!!selectedItem">
+    <div ng-switch-when="false" class="bk-no-example-item-selected-view">
+        <div class="bk-no-examples-selected-message">{{strings.Select_an_entity}}</div>
+    </div>
+    <div ng-switch-when="true" class="bk-formula-examples">
+        <div class="bk-title">{{ selectedItem.value }}</div>
+        <div class="bk-help-text">
+            <span ng-bind-html="exampleData.helpText"></span>
+        </div>
+        <div class="bk-examples">
+            <ul>
+                <li ng-show="!!exampleData.fixedExample">
+                        <span ng-repeat="token in exampleData.fixedExample"
+                              ng-class="{'attribute': (token.type == 'attribute'),
+                                         'measure': (token.type == 'measure'),
+                                         'operator': (token.type == 'operator'),
+                                         'function-name': (token.type == 'function-name')}">
+                            <span>{{ token.value }}</span>
+                            <span ng-switch="!!token.spaceAfter">
+                                <span ng-switch-when="true">&nbsp;</span>
+                            </span>
+                        </span>
+                </li>
+                <li ng-show="!!exampleData.queryExample">
+                        <span ng-repeat="token in exampleData.queryExample"
+                              ng-class="{'attribute': (token.type == 'attribute'),
+                                         'measure': (token.type == 'measure'),
+                                         'operator': (token.type == 'operator'),
+                                         'function-name': (token.type == 'function-name')}">
+                            <span>{{ token.value }}</span>
+                            <span ng-switch="!!token.spaceAfter">
+                                <span ng-switch-when="true">&nbsp;</span>
+                            </span>
+                        </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

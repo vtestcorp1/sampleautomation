@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="53px" height="47px" viewBox="0 0 53 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>CFP Logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Basic-+-Extras" transform="translate(-1177.000000, -453.000000)">
+            <g id="Complex-File-Processor" transform="translate(1130.000000, 415.000000)">
+                <g id="CFP-Logo" transform="translate(47.000000, 38.000000)">
+                    <rect id="Rectangle-4-Copy-6" fill="#0DAC44" x="0" y="0" width="53" height="47" rx="4"></rect>
+                    <text id="CFP" font-family="GothamNarrow-Bold, Gotham Narrow" font-size="16" font-style="condensed" font-weight="bold" letter-spacing="0.342857152" fill="#FFFFFF">
+                        <tspan x="12.4297143" y="29">CFP</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

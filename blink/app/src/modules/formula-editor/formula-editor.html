@@ -1,0 +1,107 @@
+<div class="bk-formula-editor">
+    <div class="bk-editor-body">
+        <div blink-content-editable
+             fullspan
+             disallow-empty
+             ng-model="formulaEditorModel.formulaName"
+             on-change="updateFormulaName()"
+             placeholder="'Enter formula name'"
+             class="bk-formula-name"></div>
+
+        <div class="bk-formula-assistant-link" ng-click="openFormulaAssistant()">
+            <span class="bk-style-icon-formulae-assistant bk-icon"></span>
+            <span>{{strings.Formula_Assistant}}</span>
+        </div>
+
+        <div class="bk-basic-settings-panel">
+            <expression-editor
+                            expression-editor-model="::formulaEditorModel.expressionEditorModel"
+                            on-valid-expression="syncModelWithCallosum(expressionEditorModel)"
+                            on-invalid-expression="setCurrentFormulaInvalid()">
+            </expression-editor>
+            <div ng-switch="isFormulaAssistantOpen">
+                <formula-assistant
+                        title="strings.formulaEditor.FORMULA_ASSISTANT"
+                        data="examplesTreeData"
+                        on-close="closeFormulaAssistant()"
+                        blink-draggable
+                        blink-draggable-handle=".bk-formula-assistant-header"
+                        class="bk-formula-assistant-container"
+                        ng-switch-when="true"></formula-assistant>
+            </div>
+        </div>
+        <div class="bk-advanced-settings-panel">
+            <div class="bk-advanced-settings-header" ng-click="advancedSettingsPanelShowing = !advancedSettingsPanelShowing">
+                <div class="bk-header-content">
+                    <span class="bk-style-icon-settings bk-icon"></span>
+                    <span class="bk-header-text">{{strings.Advanced_settings}}</span>
+                </div>
+            </div>
+            <div class="bk-advanced-settings-content" ng-show="advancedSettingsPanelShowing">
+                <div>
+                    <div class="bk-advanced-settings-option bk-data-type-selector">
+                        <div class="bk-option-name">{{strings.Data_type}}</div>
+                        <div class="bk-select-box">
+                            <select ng-model="types.dataType"
+                                    ng-options="typeLabel for (typeLabel, typeValue) in typeOptions.dataType"
+                                    ng-change="onTypeOptionChange()"
+                                    chosen
+                                    disabled
+                                    disable-search="true"
+                                    data-width="178">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="bk-advanced-settings-option bk-measure-attribute-selector">
+                        <div class="bk-option-name">
+                            <span>{{strings.Measure_or}}</span>
+                            <span class="bk-description-question-mark" data-html="true"
+                                  blink-tooltip="<div class='bk-left-aligned'><b>{{strings.attribute}}</b> {{strings.a_property}}
+<br><b>{{strings.measure}}</b> {{strings.a_numeric}}
+</div>">?</span>
+                        </div>
+                        <div class="bk-select-box">
+                            <select ng-model="types.type"
+                                    ng-options="typeOption for typeOption in typeOptions.type"
+                                    ng-change="onTypeOptionChange()"
+                                    chosen
+                                    disable-search="true"
+                                    blink-disabled-options="disabledTypeOptions.type"
+                                    data-width="178">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="bk-advanced-settings-option bk-default-aggregation-selector">
+                        <div class="bk-option-name">{{strings.Aggregation}}</div>
+                        <div class="bk-select-box">
+                            <select ng-model="types.aggrType"
+                                    ng-options="typeLabel for (typeLabel, typeValue) in typeOptions.aggrType"
+                                    ng-change="onTypeOptionChange()"
+                                    blink-attr="disabled: !isAggregationEditingAllowed()"
+                                    chosen
+                                    disable-search="true"
+                                    blink-disabled-options="disabledTypeOptions.aggrType"
+                                    data-width="178">
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="bk-editor-footer">
+        <div class="busy-indicator" ng-show="addingFormulaToDocument && !lastSaveError">
+            <div blink-loading-indicator></div>
+        </div>
+        <div class="error-message" ng-show="!!lastSaveError" ng-bind-html="lastSaveError"></div>
+
+        <bk-secondary-button text="{{ strings.CANCEL }}"
+                             ng-click="cancelFormulaEditing(); cancel()"
+                             class="bk-formula-edit-cancel"></bk-secondary-button>
+        <bk-primary-button text="{{ initFormulaColumn && strings.UPDATE || strings.SAVE }}"
+                           is-disabled="!isCurrentFormulaValid"
+                           ng-click="addFormulaToDocument()"
+                           class="bk-confirm-btn"></bk-primary-button>
+    </div>
+</div>

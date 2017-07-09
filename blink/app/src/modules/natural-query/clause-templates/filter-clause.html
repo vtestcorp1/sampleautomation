@@ -1,0 +1,30 @@
+<ul class="bk-clause-template">
+    <span ng-repeat="(type, userFilters) in userFiltersValues">
+        <!-- Uncomment the following if you want separate sections for including and excluding-->
+        <!--span ng-switch on="type">
+        <span class="bk-filter-include" ng-switch-when="INCLUDING">Including: </span>
+        <span class="bk-filter-include" ng-switch-when="EXCLUDING">Excluding: </span>
+        </span-->
+	    <span ng-repeat="(columnId, colData) in userFilters">
+            <li>
+                <span class="bk-aggr-label">{{ aggregationTranslation[colData.havingFilterPredicate] }}</span>
+                <span class="bk-filter-column bk-text-{{getColumnColor(colData.column)}}"
+                      blink-tooltip="{{ colData.column.table.name }}">
+                    {{ colData.column.name }}
+                </span>
+                <span ng-repeat="(i, operatorAndValues) in colData.opAndVal">
+                    <span>{{ getSequenceSymbol(i, colData.opAndVal) }}</span>
+                    <span>
+                        {{ filterOperatorDescription[operatorAndValues.operator][0] }}
+                        <span ng-repeat="(j, value) in operatorAndValues.effectiveValues">
+                            {{ getSequenceSymbol(j, operatorAndValues.effectiveValues) }}
+                            <span class="bk-filter-value bk-text-{{getColumnColor(colData.column)}}">
+                                {{ truncateLongString(value) }}
+                            </span>
+                        </span>
+                    </span>
+                </span>
+            </li>
+        </span>
+    </span>
+</ul>

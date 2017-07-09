@@ -1,0 +1,28 @@
+<div class="bk-app-canvas-module-inner">
+    <div class="bk-metadata-list bk-debug">
+        <div class="bk-header clearfix">
+            <div class="bk-page-title fl">{{strings.Debug}}</div>
+        </div>
+
+        <div class="tab-navigation">
+            <tab-control on-tab-activated="onTabActivated(activeTab)">
+                <tab-control-tab tab-name="Loggers" tab-id="loggers">
+                    <div class="tab-content">
+                        <blink-loggers-management></blink-loggers-management>
+                    </div>
+                </tab-control-tab>
+                <tab-control-tab tab-name="Memcache" tab-id="memcache">
+                    <div class="bk-debug-content-inner tab-content">
+                        <blink-memcache-management></blink-memcache-management>
+                    </div>
+                </tab-control-tab>
+                <tab-control-tab tab-name="Metadata" tab-id="metadata">
+                    <div class="tab-content">
+                        <blink-metadata-management></blink-metadata-management>
+                    </div>
+                </tab-control-tab>
+            </tab-control>
+        </div>
+
+    </div>
+</div>

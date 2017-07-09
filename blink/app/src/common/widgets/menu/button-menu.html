@@ -1,0 +1,39 @@
+<div class="bk-menu-btn-group {{ menu.className }}"
+     ng-mouseenter="mouseOutsideMenuGroup = false"
+     ng-mouseleave="mouseOutsideMenuGroup = true"
+     blink-on-escape="menuBtnPressed = false"
+     on-global-click="mouseOutsideMenuGroup && (menuBtnPressed = false)">
+    <div class="bk-button-menu clearfix">
+        <div class="bk-menu-btn fl bk-btn {{ menu.btnClass }}"
+             ng-class="{'bk-pressed': menuBtnPressed, 'bk-disabled': menu.inactive, 'btn-with-dropdown': menu.submenus.length > 0}"
+             ng-click="onMenuItemClick(menu.primaryMenu.event, menu.inactive)">
+            <div class="bk-menu-primary" ng-switch="!!isBusy()">
+                <div ng-switch-when="true">
+                    <div class="bk-in-progress">
+                        <div class="bk-dot dot1"></div>
+                        <div class="bk-dot dot2"></div>
+                        <div class="bk-dot dot3"></div>
+                        <div class="bk-dot dot4"></div>
+                    </div>
+                </div>
+                <div ng-switch-when="false">
+                    <span class="bk-submenu-item-label">{{menu.primaryMenu.label}}</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="fl dropdownButton {{ menu.dropdownBtnClass }}" ng-show="menu.submenus.length > 0"
+             ng-click="!isBusy() && (menuBtnPressed = !menuBtnPressed)" ng-class="{ 'dropdown-open': menuBtnPressed }">
+            <div class="bk-icon-arrow-down {{menu.btnArrowClass}}"></div>
+            <div class="bk-menu-body" ng-hide="!menuBtnPressed"
+                 ng-click="menu.keepMenuOpenOnSelect && (menuBtnPressed = false)">
+                <div ng-repeat="submenu in menu.submenus" class="bk-menu-submenu">
+                    <div ng-repeat="item in submenu"
+                         class="bk-submenu-item" ng-click="onMenuItemClick(item.event)">
+                        <span class="bk-submenu-item-label">{{item.label}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

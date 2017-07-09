@@ -1,0 +1,50 @@
+<div class="bk-import-status">
+    <div class="bk-dialog-field">
+        <div class="label">
+            {{ data.customData.stringConstants.IMPORT_FILE }}
+        </div>
+        <input ng-disabled="data.customData.disableFilePathField"
+               type="text"
+               ng-model="data.customData.filePath"
+               spellcheck="false"
+               blink-auto-focus
+               required/>
+    </div>
+    <div class="bk-dialog-field"
+         ng-show="data.customData.showStatusMsg">
+        <div class="label">
+            {{ data.customData.stringConstants.SUMMARY_LABEL }}
+        </div>
+        <div class="label-content">
+            <div class="bk-import-msg">
+                {{ data.customData.summary }}
+            </div>
+        </div>
+        <div class="label">
+            {{ data.customData.stringConstants.IMPORTED_LABEL }}
+        </div>
+        <div class="label-content">
+            <div class="bk-import-msg">
+                <div ng-repeat="importedObj in data.customData.importedObjectNames">
+                    {{ importedObj }}
+                </div>
+            </div>
+            <div ng-show="!data.customData.importedObjectNames.length">
+                {{ data.customData.stringConstants.NONE_LABEL }}
+            </div>
+        </div>
+        <div class="label">
+            {{ data.customData.stringConstants.UNIMPORTED_LABEL }}
+        </div>
+        <div class="label-content">
+            <div class="bk-import-msg">
+                <div ng-repeat="unimportedObj in data.customData.unimportedObjectNames">
+                    {{ unimportedObj }}
+                </div>
+            </div>
+            <div ng-show="!data.customData.unimportedObjectNames.length">
+                {{ data.customData.stringConstants.NONE_LABEL }}
+            </div>
+        </div>
+    </div>
+</div>

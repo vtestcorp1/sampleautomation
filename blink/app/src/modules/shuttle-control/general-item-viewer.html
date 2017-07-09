@@ -1,0 +1,36 @@
+<ul class="bk-general-item-viewer">
+    <li ng-repeat="item in items" ng-class="{'bk-row-selected-bg': !isItemUnchecked(item)}">
+        <div class="bk-general-item bk-overflow-ellipsis">
+            <span class="bk-working" ng-show="isUpdating(item)"></span>
+            <span class="bk-expand-btn-light-bg"
+                  ng-hide="isUpdating(item)"
+                  ng-click="onItemExpanded(item); expanded = !expanded;"
+                  ng-class="{'bk-arrow-collapsed': !expanded, 'bk-arrow-expanded': !!expanded}"></span>
+            <div class="bk-checkbox-container"
+                 ng-click="toggleItemSelection(item)">
+                <div class="bk-checkbox"
+                     ng-show="config.selectionAllowed && !item.disallowDeselection"
+                     ng-class="{'bk-checked': isItemChecked(item),
+                                                    'bk-indeterminate': isItemPartiallyChecked(item)}"></div>
+                <div class="bk-checkbox-title">{{item.name}}</div>
+            </div>
+        </div>
+
+        <ul ng-show="!!expanded" class="bk-subitems">
+            <li ng-repeat="subItem in item.subItems">
+                <div class="subitem-name bk-overflow-ellipsis"
+                     blink-tooltip="{{getTooltip(subItem)}}"
+                     data-placement="right"
+                     ng-click="toggleSubItemSelection(item, subItem)"
+                     ng-class="{disabled: subItem.isDisabled}">
+                    <div class="bk-checkbox-container">
+                        <div class="bk-checkbox"
+                             ng-show="config.selectionAllowed"
+                             ng-class="{'bk-checked': subItem.isChecked}"></div>
+                        <div class="bk-checkbox-title">{{subItem.name}}</div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </li>
+</ul>

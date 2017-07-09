@@ -1,0 +1,33 @@
+<div>
+    <div class="bk-dialog-field">
+        <div class="label">{{ data.customData.stringConstants.EXPORT_URL }}</div>
+        <input ng-disabled="data.customData.disableURLField"
+               type="url"
+               ng-model="data.customData.exportURL"
+               spellcheck="false"
+               blink-auto-focus
+               required/>
+    </div>
+    <div class="bk-dialog-field"
+         ng-show="data.customData.showImportSteps">
+        <div class="label">{{ data.customData.stringConstants.STEP.ONE }}</div>
+        <div class="label">
+            {{ data.customData.stringConstants.STEP_INFO.ONE }}
+            <a href="{{ data.customData.importURL }}" target="_blank">
+                {{ data.customData.stringConstants.IMPORT_URL_MSG }}
+            </a>
+        </div>
+    </div>
+    <div class="bk-dialog-field"
+         ng-show="data.customData.showImportSteps">
+        <div class="label">{{ data.customData.stringConstants.STEP.TWO }}</div>
+        <div class="label">{{ data.customData.stringConstants.STEP_INFO.TWO }}</div>
+    </div>
+    <div class="bk-dialog-field"
+         ng-show="data.customData.showImportSteps">
+        <div class="label">{{ data.customData.stringConstants.STEP.THREE }}</div>
+        <div class="label">
+            {{ data.customData.stringConstants.STEP_INFO.THREE + data.customData.filePath }}
+        </div>
+    </div>
+</div>

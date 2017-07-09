@@ -1,0 +1,49 @@
+.bk-tree-menu {
+  height: 100%;
+  .bk-tree-levels {
+    height: 100%;
+    .bk-tree-level {
+      display: inline-block;
+      position: relative;
+      float: left;
+      height: 100%;
+      box-sizing: border-box;
+      padding: 15px;
+      font-size: 12px;
+      .font-family-regular();
+
+      &:not(:last-child) {
+        border-right: 1px solid @gray-border;
+        .bk-tree-item {
+          cursor: pointer;
+        }
+      }
+
+      .bk-tree-item {
+        .bk-tree-item-value {
+          display: inline-block;
+        }
+
+      }
+
+      &:not(:last-child) .bk-tree-item-value.selected {
+        .font-family-bold();
+      }
+
+      .bk-tree-level-selection-indicator {
+        display: inline-block;
+        position: absolute;
+        right: -2px;
+        font-size: 1.4em;
+        color: #dedfe3;
+        font-weight: bold;
+        line-height: 0.5em;
+        background-color: transparent;
+      }
+
+      &:last-child .bk-tree-level-selection-indicator {
+        display: none;
+      }
+    }
+  }
+}

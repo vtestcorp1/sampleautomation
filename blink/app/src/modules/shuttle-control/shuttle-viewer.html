@@ -1,0 +1,33 @@
+<div class="shuttle-viewer-container" ng-show="shuttleModel.showShuttle">
+    <div class="left-shuttle">
+        <span class="shuttle-title">{{shuttleModel.leftName}}</span>
+        <div class="bk-list-search">
+            <input type="text"
+                   class="bk-search-input"
+                   blink-on-enter="onEnterCallback()"
+                   placeholder="search by name"
+                   ng-model="shuttleModel.searchText"/>
+        </div>
+        <general-item-viewer config="itemSelectorConfig"
+                              items="shuttleModel.availableItems"
+                              disabled-tip="disabledTip"
+                              get-sub-items="getSubItems">
+        </general-item-viewer>
+    </div>
+    <div class="center-col" align="center">
+        <div class="buttons-mid">
+            <div class="bk-btn" ng-click="moveRight()">&nbsp&gt&nbsp</div>
+            <div class="bk-btn" ng-click="moveAllRight()">&gt&gt</div>
+            <div class="bk-btn" ng-click="moveLeft()">&nbsp&lt&nbsp</div>
+            <div class="bk-btn" ng-click="moveAllLeft()">&lt&lt</div>
+        </div>
+    </div>
+    <div class="right-shuttle">
+        <span class="shuttle-title">{{shuttleModel.rightName}}</span>
+        <general-item-viewer config="itemSelectorConfig"
+                              items="shuttleModel.selectedItems"
+                              disabled-tip="disabledTip"
+                              get-sub-items="getSubItems">
+        </general-item-viewer>
+    </div>
+</div>

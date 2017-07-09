@@ -1,0 +1,32 @@
+<div ng-switch on="getEffectivePage()"
+     class="bk-app-content bk-app-background-customizable"
+     ng-class="{ 'bk-content-login': isLoginPage(),
+                 'bk-embedded': isEmbedPage()}">
+
+    <div ng-switch-when="login" class="bk-page-wrapper">
+        <bk-login bk-ctrl="loginComponent"></bk-login>
+    </div>
+
+    <div ng-switch-when="embed" class="bk-embed-page">
+        <blink-embed class="bk-vertical-flex-container-sized"></blink-embed>
+    </div>
+
+    <div ng-switch-when="print" class="bk-print-page" ng-if="!!printViewComponent">
+        <bk-print-view bk-ctrl="printViewComponent"></bk-print-view>
+    </div>
+
+    <div ng-switch-when="app-canvas" ng-hide="$root.waitForRefresh"
+         class="bk-page-wrapper">
+        <!--Primary nav-->
+        <div blink-nav
+             ng-if="canShowNavBar()"
+             class="bk-primary-nav-container"></div>
+
+        <!--App content-->
+        <div blink-app-canvas></div>
+
+        <bk-powered-footer class="bk-powered-by-ts-ribbon"
+                        ng-if="showPoweredByRibbon()"
+                        bk-ctrl="poweredFooterComponent"></bk-powered-footer>
+    </div>
+</div>

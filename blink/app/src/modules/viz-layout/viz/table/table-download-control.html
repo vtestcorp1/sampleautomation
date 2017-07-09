@@ -1,0 +1,5 @@
+<div class="bk-viz-excel-download-btn" ng-click="viz.onVizDownloadBtnClick($event)" >
+    <div class="bk-viz-btn-icon bk-style-icon-download"
+         ng-class="{'bk-viz-btn-disabled' : !viz.isDownloadButtonEnabled()}"
+         blink-tooltip="{{viz.getDownloadTooltip()}}"></div>
+</div>

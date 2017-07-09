@@ -1,0 +1,41 @@
+<div class="database-summary-viz">
+    <div class="falcon-status">
+        <div class="falcon-summary-last-update">
+            <span class="lastUpdate">{{ databaseSummaryViz.LAST_DATA_UPDATE }} </span>
+            {{viz.getModel().getLastUpdateTime()}}
+        </div>
+    </div>
+
+    <div class="falcon-stats">
+        <div class="falcon-summary">
+            <div class="content">
+                <div class="summary-block">
+                    <div class="summary-number">{{ tablesLoaded }}</div>
+                    <div class="summary-title">{{ contentTitle.TABLES_LOADED }}</div>
+                </div>
+                <div class="summary-block">
+                    <div class="summary-number">
+                        {{viz.getModel().getNumStaleTables()}} <span>{{strings.of}}</span>{{ tablesLoaded }}
+                    </div>
+                    <div class="summary-title">{{ contentTitle.TABLES_BEING_UPDATED }}</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="falcon-summary">
+            <div class="content">
+                <div class="summary-block">
+                    <div class="summary-number">{{viz.getModel().getNumInProgressTables()}}</div>
+                    <div class="summary-title">{{ contentTitle.NEW_TABLES_BEING_LOADED }}</div>
+                </div>
+                <div class="summary-block">
+                    <div class="summary-number"
+                         blink-tooltip="{{ numRowsTooltip }}">
+                        {{ numRows }}
+                    </div>
+                    <div class="summary-title">{{ contentTitle.ROWS }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

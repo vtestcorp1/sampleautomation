@@ -1,0 +1,96 @@
+<div class="transformation-editor-container">
+  <form name="expressionEditorForm">
+      <div class="bk-editor-header">
+          <div class="transformation-table-selector-row">
+              <span class="bk-select-box">
+                  <ui-select ng-model="transformationModel.table"
+                             ng-disabled="transformationModel.isExisting"
+                             on-select="updateColumnNames()"
+                             theme="select2"
+                             search-enabled="true">
+                      <ui-select-match placeholder="{{strings.transformationEditor.SELECT_TABLE}}">
+                          {{$select.selected.name}}
+                      </ui-select-match>
+                      <ui-select-choices repeat="table in tables | filter: $select.search">
+                          {{table.name}}
+                      </ui-select-choices>
+                  </ui-select>
+              </span>
+              <a class="bk-transformation-assistant-link"
+                 target="_blank"
+                 ng-href="{{getTransformationAssistantLink()}}">
+                  <span class="bk-style-icon-formulae-assistant bk-icon"></span>
+                  <span>{{ strings.transformationEditor.TRANSFORM_ASSISTANT }}</span>
+              </a>
+          </div>
+          <div class="transformation-column-selector-row">
+              <span class="bk-select-box">
+                  <ui-select ng-model="props.selectedColumnName"
+                             ng-if="!transformationModel.isExisting"
+                             on-select="updateTargetName($item)"
+                             theme="select2"
+                             search-enabled="true">
+                      <ui-select-match
+                              placeholder="{{strings.transformationEditor.SELECT_COLUMN}}">
+                          {{getColumnDropdownValue($select.selected)}}
+                      </ui-select-match>
+                      <ui-select-choices
+                              repeat="column.name as column in columns | filter: $select.search">
+                          {{getColumnDropdownValue(column)}}
+                      </ui-select-choices>
+                  </ui-select>
+              </span>
+              <input class="bk-transformation-name"
+                     type="text"
+                     name="newColumnName"
+                     ng-if="showNameEditor()"
+                     disallow-empty
+                     ng-model="transformationModel.name"
+                     ng-pattern="getValidator()"
+                     ng-class="{'bk-validation-failed': expressionEditorForm.newColumnName.$error.pattern }"
+                     not-editable="transformationModel.isExisting"
+                     placeholder="'Enter new column name'"
+                     class="bk-transformation-name"/>
+          </div>
+      </div>
+  </form>
+    <div class="bk-editor-body">
+
+
+
+        <div class="transformation-editable"
+             ng-model="transformationModel.expression"
+             ui-ace="{
+                        useWrapMode : true,
+                        theme: 'sqlserver',
+                        mode: 'transformations',
+                        require: ['ace/ext/language_tools'],
+                        workerPath: 'app/lib/min/ace',
+                        advanced: {
+                            enableBasicAutocompletion: true,
+                            enableLiveAutocompletion: true
+                        },
+                        onLoad : onEditorLoaded
+                }">
+        </div>
+    </div>
+    <div class="bk-editor-footer">
+        <div class="error-message" ng-show="!!error">{{ error.message }}
+            <a ng-if="!!error.customData.traceId"
+               ng-click="error.customData.downloadTrace(traceId)">{{strings.DOWNLOAD_TRACE}}</a>
+        </div>
+        <div class="validation-message" ng-show="!error  && !!footerMessage" >{{ footerMessage }}</div>
+
+        <a class="bk-btn bk-btn-cancel" ng-click="cancelTransformationEditing()">{{strings.CANCEL}}</a>
+        <a class="bk-btn bk-btn-primary bk-confirm-btn"
+           ng-class="{'bk-btn-blue':canAddTransformationToDocument(),
+            'bk-btn-disabled': !canAddTransformationToDocument()}"
+           blink-tooltip="{{ getSaveBtnTooltip() }}"
+           ng-click="onTransformationAdded()">{{ strings.transformationEditor.ADD_COLUMN }}</a>
+        <a class="bk-btn bk-btn-primary bk-confirm-btn"
+           ng-class="{'bk-btn-blue':canAddTransformationToDocument(),
+            'bk-btn-disabled': !canAddTransformationToDocument()}"
+           blink-tooltip="{{ getSaveBtnTooltip() }}"
+           ng-click="onValidateTransformation()">{{ strings.transformationEditor.VALIDATE_COLUMN }}</a>
+    </div>
+</div>

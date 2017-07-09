@@ -1,0 +1,26 @@
+<div class="bk-header">
+    <label><b>{{dataFilterConstantTexts.DATA_FILTERS}}</b></label>
+    <bk-secondary-button class="bk-add-data-filter-btn"
+                         text="{{dataFilterConstantTexts.ADD_FILTER}}"
+                         icon="bk-style-icon-small-plus"
+                         ng-click="showDataFilterPopup()">
+    </bk-secondary-button>
+</div>
+<div ng-if="isFilterNotDefined()" class="bk-data-row">
+    <label>{{dataFilterConstantTexts.CREATE_FILTER_TEXT}}</label>
+</div>
+<div class="bk-datafilter-list">
+    <actionable-list ng-if="!isFilterNotDefined()"
+                     on-row-click="onRowClick"
+                     list-model="listModel"
+                     action-items="actionItems">
+    </actionable-list>
+</div>
+
+<script type="text/ng-template" id="metadata-list-content-format.html">
+    <div class="bk-overflow-ellipsis bk-name-text"
+         blink-tooltip="{{column.format(row)}}"
+         auto-tooltip-style="bootstrap">
+        {{column.format(row)}}
+    </div>
+</script>

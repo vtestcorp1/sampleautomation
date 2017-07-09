@@ -1,0 +1,6 @@
+<div class="bk-dialog-field">
+    <div >{{$ctrl.data.customData.message}}</div>
+    <div  ng-if="!!$ctrl.data.customData.tables" ng-repeat="table in $ctrl.data.customData.tables">
+        <div ng-bind-html="$ctrl.data.customData.listFunction($index, table)"></div>
+    </div>
+</div>

@@ -1,0 +1,106 @@
+<div class="bk-metadata-management">
+    <div class='bk-metadata-schema-version'>
+        <div class='row-fluid'>
+            <div class='span2'>
+                <small>{{strings.Logical_version}}</small>{{schemaVersion.logicalVersion}}
+            </div>
+            <div class='span2'>
+                <small>{{strings.Physical_version}}</small>{{schemaVersion.physicalVersion}}
+            </div>
+            <div class='span2'>
+                <small>{{strings.Installed_version}}</small>{{schemaVersion.installedMetadataSchemaVersion}}
+            </div>
+            <div class='span3'>
+                <small>{{strings.Current_version}}</small>{{schemaVersion.metadataSchemaVersion}}
+            </div>
+            <div class='span3'>
+                <a href="/callosum/v1/admin/debug/sagemetadata" target="_blank">{{strings.download_sage}}</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="bk-metadata-search bk-row-margin" ng-show="!showingDetails">
+        <!-- Show regular filters -->
+        <div class='row-fluid' ng-show='!showingDependencies'>
+            <form class='form-inline'>
+                <div class='span4'>
+                    <div class='bk-select-box'>
+                        <select ng-model='currentSearch.objectType'
+                                ng-options='type for type in currentSearch.objectTypes'
+                                ng-change='refreshSearchResults()'
+                                chosen>
+                        </select>
+                    </div>
+                </div>
+
+                <div class='span4'>
+                    <input type='text'
+                           class='form-control bk-filter-control'
+                           ng-model='currentSearch.id'
+                           ng-change='applyClientFilters()'
+                           placeholder='Filter by ID'>
+                </div>
+
+                <div class='span2'>
+                    <input type='checkbox'
+                           ng-model='currentSearch.showHidden'
+                           ng-change='refreshSearchResults()'/>
+                    <label>{{strings.Show_hidden}}</label>
+                </div>
+
+                <div class='span2'>
+                    <input type='checkbox'
+                           ng-model='currentSearch.incompleteOnly'
+                           ng-change='applyClientFilters()'/>
+                    <label>{{strings.Incomplete_only}}</label>
+                </div>
+
+            </form>
+        </div>
+
+        <!-- Show list of objects for which we're resolving dependencies -->
+        <div class='row-fluid' ng-show='showingDependencies'>
+            <div class='span1'>
+                <div class='bk-btn' ng-click='clearDependencies()'><span>{{strings.Back}}</span></div>
+            </div>
+            <div class='bk-token-layer span11'>
+                <div class='bk-token'
+                     ng-repeat='item in showingDependenciesFor track by item.id'>
+                 {{item.name}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <actionable-list action-items="listActions"
+                list-model="searchResultsModel"
+                class='bk-row-margin bk-metadata-list'
+                ng-show='!isLoading && !showingDetails'>
+    </actionable-list>
+
+    <div ng-show='showingDetails && !isLoading'
+         class='bk-row-margin bk-metadata-details-list'>
+        <a ng-click='closeDetails()' class='bk-back-link'>{{strings.Back2}}</a>
+        <div ng-repeat='item in detailsData track by item.header.id'>
+            <div class='bk-metadata-header'>
+                    <div class='header-id'>
+                        {{item.header.id}}
+                    </div>
+                    <div class='header-type'>
+                        {{item.type}}
+                    </div>
+                    <div class='header-name'>
+                        {{item.header.name}}
+                    </div>
+                    <div class='header-status'>
+                        <span class='complete' ng-show="item.complete">{{strings.complete}}</span>
+                        <span class='incomplete' ng-show="!item.complete">{{strings.incomplete}}</span>
+                    </div>
+            </div>
+            <div class='bk-metadata-details'>
+                <json-formatter json="item" open="1"></json-formatter>
+            </div>
+        </div>
+    </div>
+    <blink-loading-indicator ng-show='isLoading'></blink-loading-indicator>
+</div>

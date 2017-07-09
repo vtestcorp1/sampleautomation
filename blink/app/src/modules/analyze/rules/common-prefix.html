@@ -1,0 +1,37 @@
+<div class="bk-common-prefix-analyzer bk-analyzer">
+    <div class="bk-analyzer-body">
+        <div class="bk-analyzer-description">
+            {{strings.analyze.commonPrefix.description}}
+        </div>
+        <div class="bk-analyzer-content">
+            <div class="bk-common-prefix"
+                 ng-repeat="prefixGroup in $ctrl.commonPrefixGroups">
+                <div class="bk-common-prefix-set">
+                    <div class="bk-analyzer-input">
+                        <div class="bk-common-prefix-set-columns"
+                             ng-repeat="column in prefixGroup.columns">
+                            <input type="text"
+                                   id="common-prefix-name-{{column.originalName}}"
+                                   class="bk-input"
+                                   value="column.newName"
+                                   ng-model="column.newName"
+                                   ng-change="$ctrl.onChange(prefixGroup)"/>
+                        </div>
+                    </div>
+                    <div class="bk-analyzer-status bk-common-prefix-status">
+                        <div class="bk-analyzer-status-{{prefixGroup.status}}">
+                            {{prefixGroup.commonPrefix.length}}/{{$ctrl.recommendedLength}}
+                            {{strings.analyze.commonPrefix.identicalChars}}
+                        </div>
+                    </div>
+                </div>
+                <div class="bk-common-prefix-footer">
+                    {{strings.analyze.commonPrefix.identicalStrings}}
+                    <span class="bk-common-prefix-value">
+                        {{prefixGroup.commonPrefix}}
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

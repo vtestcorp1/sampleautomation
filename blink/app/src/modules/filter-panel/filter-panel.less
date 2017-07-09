@@ -1,0 +1,106 @@
+@import '/resources/css/import.less';
+@import '/resources/css/ui-styles.less';
+
+.bk-filter-list-item-boxed-state {
+    .br-grey5;
+    .br-radius-3;
+}
+
+.bk-filter-panel {
+    position: relative;
+    padding: 0 20px 0 1px;
+    background-color: #ffffff;
+
+    .bk-filter-list-item {
+        position: relative;
+        .flex-inline();
+        padding: 5px 0;
+        margin-left: 10px;
+        .bk-cursor-pointer;
+        border: 1px solid transparent;
+        .bk-filter-container {
+            .flex(row);
+            .filter-title-text {
+                .bk-overflow-ellipsis;
+                max-width: 100px;
+                margin: 0 6px;
+                color: @grey6;
+                .font-family-regular;
+            }
+
+            .filter-value-text {
+                .bk-overflow-ellipsis;
+                max-width: 300px;
+                padding-left: 5px;
+                .font-family-semibold;
+                color: @grey7;
+            }
+
+            .bk-filter-dropdown-icon {
+                padding: 0 5px;
+                position: relative;
+                bottom: 1px;
+                .color-grey7;
+                .bk-style-icon-triangle-solid {
+                    &:before {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+
+        .close-icon {
+            position: absolute;
+            top: -10px;
+            right: -8px;
+            left: auto;
+
+            visibility: hidden;
+            .flex-inline();
+
+            &:hover {
+                .bk-background:before {
+                    color: @orange2;
+                }
+            }
+        }
+
+        &:hover {
+            .bk-filter-list-item-boxed-state;
+
+            .close-icon {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+
+        &.selected {
+            .bk-filter-list-item-boxed-state;
+        }
+    }
+
+    &.bk-read-only {
+        .close-icon {
+            display: none;
+        }
+    }
+
+    .bk-filters-list {
+        overflow-x: auto;
+    }
+}
+
+.bk-filter-panel-popover {
+    width: auto;
+    .bk-filter-list-item-boxed-state;
+    &.popover {
+        .bk-padding-all-0;
+    }
+
+    .arrow {
+        .dn;
+    }
+    .popover-content {
+        .bk-padding-all-0;
+    }
+}

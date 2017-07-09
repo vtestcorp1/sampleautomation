@@ -1,0 +1,30 @@
+.bk-status-viewer {
+  .status-viewer-header {
+    .bk-job-title {
+      .flex-grow-shrink-basis(1, 0, 0);
+      padding-left: 15px;
+      padding-top: 3px;
+    }
+  }
+}
+
+.bk-admin, .bk-report-list {
+  .status-viewer {
+    .flex-grow-shrink-basis(1, 0, 0);
+    right: 300px;
+    background-color: @white-bg;
+    .bk-list-search {
+      display: none;
+    }
+    .bk-checkbox {
+      display: none;
+    }
+    .bk-status-details {
+      overflow: auto;
+      .flex-grow-shrink-basis(3, 0, 0);
+      padding: 20px;
+      font-family: @font-family-regular;
+      margin: 0;
+    }
+  }
+}

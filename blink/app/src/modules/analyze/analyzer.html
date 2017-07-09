@@ -1,0 +1,106 @@
+<div class="bk-analyze"
+     ng-if="!!$ctrl.isReady">
+    <div class="bk-analyze-header">
+        <div class="bk-analyze-header-title">
+            <div class="bk-analyze-header-suggestion">
+                {{strings.analyze.suggestions}}
+            </div>
+            <div class="bk-analyze-save-btn">
+                <bk-primary-button
+                        ng-if="$ctrl.showSaveBtn && $ctrl.totalViolationsCount > 0"
+                        text="{{strings.SAVE}}"
+                        blink-tooltip="{{strings.analyze.saveHelp}}"
+                        ng-click="$ctrl.saveTable()"
+                        is-disabled="!!$ctrl.isSaveDisabled()"
+                        is-busy="$ctrl.isSaving">
+                </bk-primary-button>
+            </div>
+        </div>
+        <div class="bk-analyze-header-description">
+                <span ng-if="$ctrl.showSaveBtn && $ctrl.totalViolationsCount > 0">
+                    {{strings.analyze.suggestionDescription}}
+                </span>
+            <span ng-if="$ctrl.totalViolationsCount <= 0">
+                    {{strings.analyze.noSuggestions}}
+                </span>
+        </div>
+    </div>
+
+    <div class="bk-analyze-body"
+         ng-if="$ctrl.totalViolationsCount > 0">
+        <bk-accordion-list bk-ctrl="$ctrl.accordionListComponent">
+
+            <!-- Long Table Name Accordion -->
+            <bk-accordion-item ng-if="!!$ctrl.longTableNameAnalyzer"
+                            bk-ctrl="$ctrl.longTableNameAnalyzer.accordionItem">
+                <div class='bk-accordion-item-content-template'
+                     ng-class="{expand: $ctrl.longTableNameAnalyzer.accordionItem.isExpanded()}">
+                    <bk-long-table-name-analyzer bk-ctrl="$ctrl.longTableNameAnalyzer">
+                    </bk-long-table-name-analyzer>
+                </div>
+            </bk-accordion-item>
+
+            <!-- Long Column Names Accordion  -->
+            <bk-accordion-item ng-if="!!$ctrl.longColumnNamesAnalyzer"
+                            bk-ctrl="$ctrl.longColumnNamesAnalyzer.accordionItem">
+                <div class='bk-accordion-item-content-template'
+                     ng-class="{expand: $ctrl.longColumnNamesAnalyzer.accordionItem.isExpanded()}">
+                    <bk-long-column-names-analyzer bk-ctrl="$ctrl.longColumnNamesAnalyzer">
+                    </bk-long-column-names-analyzer>
+                </div>
+            </bk-accordion-item>
+
+            <!-- Chasm Trap Accordion -->
+            <bk-accordion-item ng-if="!!$ctrl.chasmTrapAnalyzer"
+                            bk-ctrl="$ctrl.chasmTrapAnalyzer.accordionItem">
+                <div class='bk-accordion-item-content-template'
+                     ng-class="{expand: $ctrl.chasmTrapAnalyzer.accordionItem.isExpanded()}">
+                    <bk-chasm-trap-analyzer bk-ctrl="$ctrl.chasmTrapAnalyzer">
+                    </bk-chasm-trap-analyzer>
+                </div>
+            </bk-accordion-item>
+
+            <!-- System keywords Accordion -->
+            <bk-accordion-item ng-if="!!$ctrl.systemKeywordsAnalyzer"
+                            bk-ctrl="$ctrl.systemKeywordsAnalyzer.accordionItem">
+                <div class='bk-accordion-item-content-template'
+                     ng-class="{expand: $ctrl.systemKeywordsAnalyzer.accordionItem.isExpanded()}">
+                    <bk-system-keywords-analyzer bk-ctrl="$ctrl.systemKeywordsAnalyzer">
+                    </bk-system-keywords-analyzer>
+                </div>
+            </bk-accordion-item>
+
+            <!-- Common prefix Accordion -->
+            <bk-accordion-item ng-if="!!$ctrl.commonPrefixAnalyzer"
+                            bk-ctrl="$ctrl.commonPrefixAnalyzer.accordionItem">
+                <div class='bk-accordion-item-content-template'
+                     ng-class="{expand: $ctrl.commonPrefixAnalyzer.accordionItem.isExpanded()}">
+                    <bk-common-prefix-analyzer bk-ctrl="$ctrl.commonPrefixAnalyzer">
+                    </bk-common-prefix-analyzer>
+                </div>
+            </bk-accordion-item>
+
+            <!-- High columns Accordion -->
+            <bk-accordion-item ng-if="!!$ctrl.highColumnNumbersAnalyzer"
+                            bk-ctrl="$ctrl.highColumnNumbersAnalyzer.accordionItem">
+                <div class='bk-accordion-item-content-template'
+                     ng-class="{expand: $ctrl.highColumnNumbersAnalyzer.accordionItem.isExpanded()}">
+                    <bk-high-column-numbers-analyzer bk-ctrl="$ctrl.highColumnNumbersAnalyzer">
+                    </bk-high-column-numbers-analyzer>
+                </div>
+            </bk-accordion-item>
+
+            <!-- High indexed columns Accordion -->
+            <bk-accordion-item ng-if="!!$ctrl.highIndexedColumnNumbersAnalyzer"
+                            bk-ctrl="$ctrl.highIndexedColumnNumbersAnalyzer.accordionItem">
+                <div class='bk-accordion-item-content-template'
+                     ng-class="{expand: $ctrl.highIndexedColumnNumbersAnalyzer.accordionItem.isExpanded()}">
+                    <bk-high-indexed-column-numbers-analyzer bk-ctrl="$ctrl.highIndexedColumnNumbersAnalyzer">
+                    </bk-high-indexed-column-numbers-analyzer>
+                </div>
+            </bk-accordion-item>
+
+
+        </bk-accordion-list>
+    </div>
+</div>

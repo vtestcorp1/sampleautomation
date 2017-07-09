@@ -1,0 +1,49 @@
+@header-height: 59px;
+@edit-modal-height: 195px;
+@add-user-modal-height: 250px;
+
+.bk-admin-item-dialog {
+  .bk-tab-control-tab {
+    .bk-checkbox-collections {
+      overflow: auto;
+      height: @edit-modal-height;
+    }
+  }
+
+  .bk-privileges-list {
+    float: right;
+    width: 53%;
+    border: 1px solid @gray-border;
+    border-radius: 3px;
+    padding: 10px 14px;
+    background-color: @gray-bg;
+  }
+
+  .bk-checkbox-container {
+    margin: 5px;
+  }
+
+  .bk-readonly-checkboxes {
+    color: #b3b3b3;
+  }
+
+  .bk-smart-checkbox-collection {
+    min-height: @edit-modal-height + @header-height;
+  }
+}
+
+.bk-selected-checkboxes {
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid @gray-border;
+}
+
+.bk-add-user-dialog {
+  .bk-checkbox-collections {
+    overflow: auto;
+    height: @add-user-modal-height;
+  }
+  .bk-smart-checkbox-collection {
+    min-height: @add-user-modal-height + @header-height;
+  }
+}

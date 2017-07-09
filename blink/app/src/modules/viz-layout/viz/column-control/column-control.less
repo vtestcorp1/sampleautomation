@@ -1,0 +1,49 @@
+.column-control {
+    min-width: 170px;
+
+    .bk-menu-body {
+        background-color: @white-default;
+
+        .font-family-semibold();
+        font-size: 10px;
+        color: @gray-main-text;
+
+        .bk-separator {
+            width: auto;
+            background-color: #d3d3d3;
+            height: 1px;
+        }
+
+        .bk-aggregates, .bk-time-buckets, .bk-sort, .bk-filter, .bk-metrics{
+            cursor: pointer;
+            padding: 0 20px;
+
+            &.bk-style-icon-checkmark{
+                display: block;
+
+                &:before {
+                    position: absolute;
+                    left: 5px;
+                    font-size: 10px;
+                }
+            }
+
+            &:hover {
+                background-color: #d3d3d3;
+            }
+        }
+
+        .bk-menu-metrics {
+            padding: 0 10px;
+
+            .bk-menu-metrics-header {
+                margin-left: 8px;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+.bk-column-control-popover {
+    width: auto;
+}

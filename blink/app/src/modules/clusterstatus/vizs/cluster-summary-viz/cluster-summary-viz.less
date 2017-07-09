@@ -1,0 +1,22 @@
+.cluster-summary-viz {
+    height: 100%;
+    .flex(column);
+    .flex-justify(space-around);
+
+    .cluster-summary {
+        text-align: center;
+        .summary-title {
+            font-size: 12px;
+            color: @h-gray5;
+        }
+
+        .summary-content {
+            .font-family-semibold;
+            &.truncate {
+                padding: 0 5px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}

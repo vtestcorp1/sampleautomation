@@ -1,0 +1,29 @@
+<div class="bk-viz-filter"
+     ng-switch="loadingFilter">
+    <div class="bk-filter-loading-indicator"
+         ng-switch-when="true">
+    </div>
+    <div ng-switch-when="false">
+        <div ng-switch="filterModel.isSupportedByUI()">
+            <div ng-switch-when="false">
+                 <div ng-include="'src/modules/viz-layout/viz/filter/empty-filter.html'"></div>
+            </div>
+            <div ng-switch-when="true">
+                <div ng-if="isReadOnly" class="bk-filter-read-only">
+                    {{readOnlyFilterMessage}}
+                </div>
+                <div class="bk-filter-content" ng-switch="getFilterType()">
+                    <blink-numeric-range-select ng-switch-when="RangeFilter"
+                                                ctrl="rangeFilterController">
+                    </blink-numeric-range-select>
+                    <bk-attribute-filter ng-switch-when="AttributeFilter"
+                                      bk-ctrl="attributeFilterComponent">
+                    </bk-attribute-filter>
+                    <blink-date-range-select ng-switch-when="DateFilter"
+                                             ctrl="dateFilterController">
+                    </blink-date-range-select>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

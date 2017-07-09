@@ -1,0 +1,31 @@
+<div ng-switch="list.smallMode">
+    <div ng-switch-when="true">
+        <div class="item-text search-result">
+            <span blink-tooltip="{{ getCompletionTooltip()(match) }}" data-placement="auto right" data-html="true" data-additional-classes="bk-sage-suggestion-tooltip">
+                <span ng-class="{'token-error': list.type === 'ErrorQueryCompletion',
+                             'token-warn': list.type === 'WarnQueryCompletions'}"
+                      ng-bind-html="match.getNewTokensQueryString() | blinkHighlight:match.getSearchText():'matched-substring'"></span>
+            <span class="lineage" ng-bind-html="getLineageDropdown()(match, true, list)"></span>
+            </span>
+
+        </div>
+    </div>
+    <div ng-switch-default>
+        <div class="bk-icon bk-style-icon-search"></div>
+        <div class="item-text search-result">
+            <span>
+                <span class="prefix-token">{{ match.getPrefixTokensQueryString() }}</span>
+                <span ng-class="{'token-error': list.type === 'ErrorQueryCompletion',
+                                 'token-warn': list.type === 'WarnQueryCompletion',
+                                 'suffix-token': !match.getSearchText(),
+                                 'new-token': !!match.getSearchText()}"
+                      ng-bind-html="match.getNewTokensQueryString() | blinkHighlight:match.getSearchText():'matched-substring'">
+                </span>
+                <span class="lineage" ng-bind-html="getLineageDropdown()(match, false, list)"></span>
+            </span>
+
+            <!-- We do not show big dropdown when there is suffix string, so commenting this out. Uncomment this if you want to show -->
+            <!--span> {{ match.getSuffixTokensQueryString() }} </span-->
+        </div>
+    </div>
+</div>

@@ -1,0 +1,51 @@
+.bk-answer-visualization-viewer {
+    .bk-vertical-flex-container-sized;
+
+    .bk-answer-visualizations {
+        .bk-vertical-flex-container-sized;
+
+        .bk-answer-table-mode-vizs {
+            .bk-vertical-flex-container-sized;
+
+            .bk-answer-table-viz-container {
+                .bk-vertical-flex-container-sized;
+                .flex-order(1);
+                min-height: 300px;
+                .bk-viz-header {
+                    display: none;
+                }
+            }
+
+            .bk-headline-container {
+                .flex-grow-shrink-basis(0, 0, auto);
+                .flex(row);
+                .flex-order(2);
+                overflow-x: auto;
+
+                .bk-answer-headline-viz-container {
+                    .flex(column);
+                    height: 86px;
+
+                    .bk-viz-title-section {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .bk-answer-chart-mode-vizs {
+            .bk-vertical-flex-container-sized();
+            .bk-answer-chart-viz-container {
+                .bk-vertical-flex-container-sized;
+                .flex-order(1);
+                min-height: 300px;
+                .bk-viz-header {
+                    display: none;
+                }
+                .bk-viz-inner {
+                    border: 0;
+                }
+            }
+        }
+    }
+}

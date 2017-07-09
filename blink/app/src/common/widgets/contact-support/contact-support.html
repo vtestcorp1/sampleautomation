@@ -1,0 +1,16 @@
+<span class="bk-support-info"
+      ng-click="toggleSupportPopup()"
+      uib-popover-template="'contact-support-info.html'"
+      popover-is-open="showSupportPopup"
+      popover-append-to-body="true"
+      popover-placement="bottom"
+      popover-class="bk-support-popover">
+    {{getTitleText()}}
+</span>
+
+<script type="text/ng-template" id="contact-support-info.html">
+    <div>
+        {{strings.Email}} <a href="mailto:{{getAdminEmail()}}">{{getAdminEmail()}}</a>
+    </div>
+    <div>{{strings.Call}} {{getAdminPhoneNumber()}}</div>
+</script>

@@ -1,0 +1,26 @@
+<div class="bk-menu-body bk-column-control"
+     blink-overlay="removeColumnControl()"
+     ignore-click-selector="['.datepicker.datepicker-dropdown']">
+    <div ng-if="!shouldShowMetricsUI() && !isFilterModelAvailable">
+        <div ng-if="shouldShowAggregates()"
+             class="bk-aggregates"
+             ng-repeat="(label, aggr) in aggregates"
+             ng-click="onAggregationClick(aggr)"
+             ng-class="{'bk-style-icon-checkmark': vizColumn.getEffectiveAggregateType() === aggr}">
+            {{label}}
+        </div>
+        <div ng-if="shouldShowTimeBuckets()"
+             class="bk-time-buckets"
+             ng-repeat="bucketing in timeBuckets"
+             ng-click="onTimeBucketingClick(bucketing)"
+             ng-class="{'bk-style-icon-checkmark': vizColumn.getTimeBucket() === bucketing}">
+            {{ timeBucketFormat(bucketing) }}
+        </div>
+        <div class="bk-separator" ng-if="shouldShowAggregates() || shouldShowTimeBuckets()"></div>
+        <div ng-if="shouldShowFiltersOption()" class="bk-filter" ng-click="onFilterClick($event)">{{strings.FILTER}}</div>
+        <div ng-if="shouldShowFiltersOption()" class="bk-separator"></div>
+        <div ng-if="shouldShowMetricsOption()" class="bk-metrics" ng-click="onMetricsClick()">{{strings.Conditional_Formatting}}</div>
+        <div ng-if="shouldShowMetricsOption()" class="bk-separator"></div>
+        <div ng-if="isEditable" class="bk-sort" ng-click="onSortClick()">{{strings.SORT}}</div>
+    </div>
+</div>

@@ -1,0 +1,62 @@
+@import '/resources/css/import.less';
+
+.bk-join-disambiguation {
+    min-height: 100px;
+    max-height: 500px;
+    margin-top: 10px;
+
+    .bk-heading {
+        margin-bottom: 10px;
+        color: @gray-main-text;
+        font-size: 15px;
+        .font-family-bold();
+    }
+    .bk-mjp-options {
+        max-height: 440px;
+        overflow-y: auto;
+    }
+
+    .bk-mjp-previous-list {
+        margin-bottom: 6px;
+        margin-right: 50px;
+        padding: 2px 6px;
+
+        .bk-label {
+            color: @gray-main-text;
+            font-size: 13px;
+        }
+
+        &:hover {
+            .bk-label {
+                color: @blue-default;
+                font-size: 13px;
+            }
+        }
+
+        &.bk-selected {
+            background-color: @gray-hover-light;
+            border-radius: 3px;
+
+            &:after {
+                position: absolute;
+                right: 40px;
+                content: "";
+                border-top: 10px inset transparent;
+                border-bottom: 10px inset transparent;
+                border-left: 10px solid @gray-hover-light;
+            }
+        }
+    }
+
+    .bk-icon {
+        margin-right: 7px;
+
+        &:before {
+            font-size: 10px;
+        }
+    }
+
+    .bk-mjp-question {
+        height: 100%;
+    }
+}

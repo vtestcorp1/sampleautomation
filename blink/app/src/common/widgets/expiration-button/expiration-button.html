@@ -1,0 +1,21 @@
+<div class="bk-expiration-button">
+    <div ng-switch="$ctrl.isDisabled">
+        <div ng-switch-when="false">
+            <div class="bk-expiration-timer">
+                {{ $ctrl.remainingTimeDisplay }}
+            </div>
+            <div class="bk-button bk-grey-outline-button"
+                 ng-click="$ctrl.handleClick()">
+                <div class="button-text">
+                    {{ $ctrl.strings.expirationButton.SAVE }}
+                </div>
+            </div>
+        </div>
+        <div ng-switch-when="true">
+            <div class="saved-text"
+                 ng-if="$ctrl.savedDialogActive">
+                 {{ $ctrl.strings.expirationButton.SAVED }}
+            </div>
+        </div>
+    </div>
+</div>

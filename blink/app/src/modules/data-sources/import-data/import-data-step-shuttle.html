@@ -1,0 +1,43 @@
+<div class="import-data import-step-shuttle">
+    <div class="bk-select-connection-dropdown">
+        <span class="bk-select-box">
+            <ui-select ng-model="dsMetaData.selectedConnection"
+                       on-select="getTables()"
+                       class="bk-conn-select"
+                       search-enabled="!isEditMode()"
+                       theme="select2"">
+                <ui-select-match placeholder="Select a connection">{{$select.selected.name}}</ui-select-match>
+                <ui-select-choices repeat="connection.id as connection in connectionList
+                        | filter: filterByConnectionName($select.search)"
+                        class="bk-conn-item-holder">
+                    <span class="bk-conn-name"
+                          ng-bind-html="connection.name | highlight: $select.search">
+                    </span>
+                    <div class="bk-conn-delete-icon"
+                         data-tip-animate="fade-in"
+                         ng-hide="isEditMode()"
+                         blink-tooltip="{{ strings.DELETE_CONN }}"
+                         ng-click="deleteConnection($event, connection)">   </div>
+                    <div class="bk-conn-edit-icon"
+                         data-tip-animate="fade-in"
+                         blink-tooltip="{{ strings.EDIT_CONN }}"
+                         ng-click="editConnection($event, connection)"></div>
+                </ui-select-choices>
+            </ui-select>
+        </span>
+        <span ng-if="shouldAllowNewConnection()"
+             class="bk-btn-create-conn"
+             blink-tooltip="{{ strings.CREATE_CONN }}"
+             data-tip-animate="fade-in"
+             ng-click="createNewConnection()">
+            <div class="bk-style-icon-small-plus"></div>
+        </span>
+    </div>
+    <div class="table-viewer-container">
+        <shuttle-viewer
+            shuttle-model="shuttleModel"
+            disabled-tip="strings.DATATYPE_NOT_SUPPORTED_TIP"
+            get-sub-items="getTableColumns">
+        </shuttle-viewer>
+    </div>
+</div>

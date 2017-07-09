@@ -1,0 +1,29 @@
+<div class="bk-pb-cluster-viz">
+    <div class="bk-pinboard-viz-header">
+        <bk-name-description class="bk-pinboard-viz-name"
+                             bk-ctrl="$ctrl.nameDescriptionComponent">
+        </bk-name-description>
+    </div>
+    <div class="bk-pinboard-viz-content"
+         uib-carousel
+         active="$ctrl.activeVizIndex"
+         on-active-slide-change="$ctrl.onActiveSlideChangeCallback"
+         interval="-1"
+         no-pause="true"
+         no-transition="true">
+        <div class="bk-viz-cluster-viz"
+             uib-slide
+             ng-repeat="dataVisualization in $ctrl.dataVisualizations"
+             index="$index">
+            <div ng-if="!!$ctrl.dataVisualizations &&
+            $ctrl.dataVisualizations.length > 0 &&
+            $ctrl.activeVizIndex >= 0"
+                 class="bk-viz-details-title-info">
+                ( {{strings.a3.SHOWING_INSIGHT}} {{$ctrl.activeVizIndex + 1}} {{strings.of}} {{$ctrl.dataVisualizations.length}} )
+            </div>
+            <bk-pinboard-data-viz class="bk-data-viz-container"
+                                  bk-ctrl="dataVisualization">
+            </bk-pinboard-data-viz>
+        </div>
+    </div>
+</div>

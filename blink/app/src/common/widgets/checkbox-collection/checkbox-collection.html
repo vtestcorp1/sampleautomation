@@ -1,0 +1,10 @@
+<div class="bk-checkbox-collection">
+    <bk-checkbox class="select-all-checkbox"
+                    ng-if="$ctrl.allowSelectAll"
+                    bk-ctrl="$ctrl.selectAllCBCtrl">
+    </bk-checkbox>
+    <div ng-repeat="checkboxItemCtrl in $ctrl.checkboxItemCtrls">
+        <bk-checkbox bk-ctrl="checkboxItemCtrl">
+        </bk-checkbox>
+    </div>
+</div>

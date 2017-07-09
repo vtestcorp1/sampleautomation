@@ -1,0 +1,10 @@
+<div class="bk-profile-pic-container"
+     ng-switch="!!userAvatar"
+     blink-tooltip="{{getTooltip()}}">
+    <span ng-switch-when="false" class="bk-profile-content">
+            <img ng-src="{{picUrl}}"/>
+    </span>
+    <div ng-switch-when="true" ng-style="{'background-color' : userAvatar.userColor}">
+        <div class="bk-profile-content">{{userAvatar.userIcon}}</div>
+    </div>
+</div>

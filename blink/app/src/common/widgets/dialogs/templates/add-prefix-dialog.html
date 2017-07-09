@@ -1,0 +1,15 @@
+<div ng-hide="$ctrl.data.customData.isPrefixForExistingColumns">
+{{strings.Some_columns_names}}
+</div>
+
+<div ng-show="$ctrl.data.customData.isPrefixForExistingColumns">
+{{strings.Add_a_prefix}}
+</div>
+
+<div style="margin: 15px 40px 10px 0">
+    <input style="width: 100%" blink-auto-sele type="text" ng-model="$ctrl.data.customData.prefixLabel" spellcheck="false" placeholder="Enter prefix">
+</div>
+<div ng-hide="$ctrl.data.customData.isPrefixForExistingColumns">
+    <input type="checkbox" ng-model="$ctrl.data.customData.shouldPrefixOnlyConflictColumns">
+    <span>{{strings.Only_add_prefix}}</span>
+</div>

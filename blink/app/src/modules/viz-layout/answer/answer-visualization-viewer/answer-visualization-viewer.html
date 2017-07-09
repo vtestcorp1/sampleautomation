@@ -1,0 +1,26 @@
+<div class="bk-answer-visualization-viewer"
+     ng-switch="$ctrl.loadingData">
+    <blink-loading-indicator ng-switch-when="true" loading-text="$ctrl.strings.LOADING_MSG">
+    </blink-loading-indicator>
+    <div class="bk-answer-visualizations"
+         ng-switch-when="false">
+        <div class="bk-answer-table-mode-vizs"
+             ng-lazy-show="$ctrl.isTableMode()">
+            <bk-data-viz class="bk-answer-table-viz-container"
+                         bk-ctrl="$ctrl.tableVizComponent">
+            </bk-data-viz>
+            <div class="bk-headline-container">
+                <bk-data-viz class="bk-answer-headline-viz-container"
+                             ng-repeat="headlineVizComponent in $ctrl.headlineVizComponents"
+                             bk-ctrl="headlineVizComponent">
+                </bk-data-viz>
+            </div>
+        </div>
+        <div class="bk-answer-chart-mode-vizs"
+             ng-lazy-show="!$ctrl.isTableMode()">
+            <bk-data-viz class="bk-answer-chart-viz-container"
+                         bk-ctrl="$ctrl.chartVizComponent">
+            </bk-data-viz>
+        </div>
+    </div>
+</div>

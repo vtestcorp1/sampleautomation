@@ -1,0 +1,35 @@
+.list-wrapper {
+  .schema-navigation-row {
+    .bk-vertical-flex-content-sized;
+    .transition(~"all 200ms ease-out");
+    &:hover {
+      background-color: @gray-hover-light;
+      .transition(~"all 200ms ease-out");
+    }
+    margin-right: 20px;
+    .bk-column-incomplete {
+      color: @red-default;
+    }
+  }
+  .bk-selected {
+    background-color: @gray-hover;
+  }
+  .bk-wk-item {
+    display: inline-block;
+  }
+  .bk-formula-column
+  {
+    background: url('/resources/img/canvasSchema/formulaColumn.png') no-repeat right center;
+    background-size: 13px;
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 20px;
+  }
+  .bk-tagged-labels {
+    display: inline-block;
+    width: auto;
+    margin-top: 0px;
+  }
+}

@@ -1,0 +1,32 @@
+<div class="bk-axis-label"
+     uib-popover-template="columnControlTemplateUrl"
+     popover-trigger="none"
+     popover-is-open="isColumnControlOpened"
+     popover-append-to-body="true"
+     popover-placement="{{getColumnControlPopoverDirection()}}"
+     popover-class="bk-column-control-popover">
+    <div class="bk-axis-label-control"
+         ng-click="openColumnControls()">
+        <div class="bk-axis-label-title">{{vizColumn.getName()}}</div>
+        <div class="bk-icon-arrow-down"
+             ng-show="areAxisOperationsAllowed()">
+        </div>
+    </div>
+    <div class="bk-sort-indicator {{getDirectionClass()}}"
+         ng-click="onSortClick()"
+         ng-show="areAxisOperationsAllowed() && isSortedByColumn()">
+    </div>
+</div>
+
+<script type="text/ng-template" id="column-control.html">
+    <div class="column-control"
+         blink-overlay="closeColumnControls()"
+         ignore-click-selector="['.filter-text', '.datepicker.datepicker-dropdown']">
+        <column-control viz-model="vizModel"
+                        viz-column="vizColumn"
+                        close-column-control="closeColumnControls()"
+                        on-chart-redraw-needed="onChartRedrawNeeded()"
+                        sage-client="sageClient">
+        </column-control>
+    </div>
+</script>

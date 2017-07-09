@@ -1,0 +1,64 @@
+.bk-status-viewer {
+    .bk-vertical-flex-container-sized;
+    background-color: @white-bg;
+    .status-viewer-header {
+        .flex(row);
+        .flex-align(center);
+        .flex-justify(flex-start);
+        .font-family-bold;
+        .flex-grow-shrink-basis(0, 0, 40px);
+        padding: 20px;
+        &.bk-loading {
+            .panel-loading-indicator()
+        }
+        .bk-status-spacer {
+            .flex-grow-shrink-basis(1, 0, 0)
+        }
+        .bk-viewer-button {
+            .flex-grow-shrink-basis(0, 0, auto);
+            .bk-open-scheduler, .bk-edit-click  {
+                .bk-margin-right-12;
+            }
+        }
+        .view-all {
+            .flex-grow-shrink-basis(0, 0, 60px);
+            .bk-btn {
+                padding: 7px 5px 5px 5px;
+                .bk-style-icon-arrow-left {
+                    padding-right: 3px;
+                }
+            }
+        }
+    }
+    .bk-status-viewer-list {
+        overflow: hidden;
+        margin-bottom: 20px;
+        .bk-vertical-flex-container-sized;
+    }
+    .bk-actionable-list {
+        .flex-grow-shrink-basis(5, 0, 0);
+    }
+    .bk-list-container {
+        overflow: hidden;
+        .flex(column);
+        .flex-grow-shrink-basis(1, 0, 0);
+    }
+    .bk-status-details {
+        margin: 0 20px;
+        .flex-grow-shrink-basis(0, 0, 120px);
+        overflow-y: auto;
+        .font-family-bold();
+
+        .status-message {
+            .font-family-regular();
+            color: @h-gray5;
+            margin: auto;
+            .status-message-title {
+                .font-family-bold();
+            }
+        }
+        .script-status-message {
+            margin-top: 10px;
+        }
+    }
+}

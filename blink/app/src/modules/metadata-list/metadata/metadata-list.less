@@ -1,0 +1,46 @@
+.bk-answer-list, .bk-pinboard-list, .bk-report-list, .bk-related-link-list {
+    .bk-vertical-flex-container-sized;
+}
+
+.bk-metadata-list {
+    .bk-vertical-flex-container-sized;
+}
+
+.bk-metadata-list-header {
+    .flex(row);
+    .flex-justify(space-between);
+    .flex-align(center);
+    height: @menu-height;
+    .bk-padding-horizontal-20;
+    .br-grey3-bottom;
+
+    .bk-metadata-list-title {
+        color: @gray-main-title;
+        font-size: 20px;
+        .flex-grow-shrink-basis(0, 0, auto);
+    }
+}
+
+.bk-generic-list {
+    .bk-vertical-flex-container-sized;
+}
+
+//TODO: bk-header is used on upload schema and data pages.
+//Remove dependency of bk-metadata-list class from those pages.
+.bk-header {
+    display: block;
+    .flex-grow-shrink-basis(0, 0, @list-header-height);
+    position: relative;
+    width: 100%;
+    height: 70px;
+    color: @gray-main-text;
+
+    .bk-page-title {
+        display: inline-block;
+        .bk-padding-left-20;
+        .bk-padding-top-20;
+        color: @gray-main-title;
+        font-size: 25px;
+        .font-page-title;
+    }
+}

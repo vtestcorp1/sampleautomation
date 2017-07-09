@@ -1,0 +1,32 @@
+<div class="bk-formula-assistant">
+    <div class="bk-formula-assistant-header">
+        <span class="bk-formula-assistant-header-title">{{title}}</span>
+        <span class="bk-formula-assistant-close-button" ng-click="close()">&times;</span>
+    </div>
+    <div class="bk-formula-assistant-body">
+        <div class="bk-formula-assistant-examples-tree">
+            <div ui-tree data-drag-enabled="false">
+                <ol ui-tree-nodes="" ng-model="data.children" data-nodrag>
+                    <li ui-tree-node ng-repeat="exampleSection in data.children" data-collapsed="true">
+                        <div ui-tree-handle ng-click="$event.stopPropagation(); toggle()">
+                            <span class="bk-expand-btn-light-bg bk-clickable"
+                                  ng-class="{'bk-arrow-collapsed': !!collapsed, 'bk-arrow-expanded': !collapsed}"></span>
+                            <span>{{ getValue(exampleSection) }}</span>
+                        </div>
+                        <ol ui-tree-nodes="" ng-model="exampleSection.children" ng-class="{hidden: collapsed}">
+                            <li ui-tree-node
+                                class="bk-leaf-node"
+                                ng-repeat="exampleItem in exampleSection.children"
+                                ng-click="onLeafSelected(exampleItem)"
+                                ng-class="{selected: isSelectedItem(exampleItem)}">
+                                <div ui-tree-handle>{{ getValue(exampleItem) }}</div>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="bk-formula-assistant-help-section"
+         ng-include="'src/modules/formula-editor/formula-assistant/formula-assistant-help-section.html'"></div>
+</div>

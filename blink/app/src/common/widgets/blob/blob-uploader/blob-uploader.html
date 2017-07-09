@@ -1,0 +1,25 @@
+<div class="bk-blob-uploader">
+    <div class="bk-blob-uploader-content">
+        <div class="bk-blob-uploader-overlay">
+            <div class="bk-blob-uploader-overlay-content">
+                <fieldset class="bk-blob-uploader-drop-zone">
+                    <input class="bk-blob-uploader-file-input"
+                           type="file"
+                           name="content"
+                           title=""
+                           blink-on-change="$ctrl.updateFile($event.target.files[0])"/>
+                </fieldset>
+                <div class="bk-blob-uploader-overlay-upload-button-container">
+                    <bk-icon-button icon="bk-style-icon-upload"
+                                    tooltip="$ctrl.getUploadFileActionText()"
+                                    is-borderless="true"></bk-icon-button>
+                </div>
+            </div>
+        </div>
+        <div ng-transclude></div>
+    </div>
+    <bk-auto-hide class="bk-blob-uploader-error"
+                  bk-ctrl="$ctrl.getAutoHideErrorMessageComponent()">
+        <span class="bk-blob-uploader-error-message">{{ $ctrl.getError() }}</span>
+    </bk-auto-hide>
+</div>

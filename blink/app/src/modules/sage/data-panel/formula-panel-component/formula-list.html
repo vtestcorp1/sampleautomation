@@ -1,0 +1,34 @@
+<div class="bk-formula-list">
+    <div class="bk-title-header">
+        <div class="bk-section-title">{{ getTitle() }}</div>
+        <bk-icon-button icon="bk-style-icon-small-plus"
+                         is-disabled="!hasWorksheetModel()"
+                         tooltip="headerAddButtonTooltip()"
+                         ng-show="showHeaderAddButton()"
+                         ng-click="onAddButtonClick()"
+                         class="header-add-button"></bk-icon-button>
+    </div>
+    <div class="bk-formulae" blink-scroll ng-class="{'bk-read-only': isReadOnly()}">
+        <ul class="bk-formula-list">
+            <li class="bk-formula-list-item"
+                ng-repeat="formula in getFormulae()" post-repeat>
+                <div class="bk-formula-list-item-content">
+                    <span class="bk-style-icon-x bk-actionable-icon"
+                          data-delay='{"show": "750", "hide": "0"}'
+                          blink-tooltip="Remove Formula"
+                          ng-click="$event.stopPropagation();removeFormulaFromContext(formula)"
+                          ng-dblclick="$event.stopPropagation()">
+                    </span>
+                    <span class="bk-label bk-overflow-ellipsis bk-column-name"
+                          blink-tooltip="{{ formula.getName() }}"
+                          ng-dblclick="addFormulaToWorksheet(formula)">
+                        {{ formula.getName() }}
+                    </span>
+                    <span class="bk-style-icon-edit bk-actionable-icon"
+                          ng-click="onFormulaEdit(formula)">
+                    </span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

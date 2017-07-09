@@ -1,0 +1,4 @@
+<div class="bk-table" ng-class="{'bk-table-with-header-dropdown': $ctrl.containsHeaderDropdown()}"></div>
+<div class="bk-pagination-info" ng-if="!!$ctrl.getPaginationInfo()">
+    <span> {{$ctrl.strings.showing.assign({lower: $ctrl.getPaginationInfo().topRow, higher: $ctrl.getPaginationInfo().bottomRow, total: $ctrl.getPaginationInfo().totalRows})}}</span>
+</div>

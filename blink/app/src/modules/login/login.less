@@ -1,0 +1,201 @@
+
+@import '/resources/css/import.less';
+@import '/resources/css/ui-styles.less';
+
+@-webkit-keyframes slideBig {.slide(10px);}
+@-moz-keyframes slideBig {.slide(10px);}
+@-ms-keyframes slideBig {.slide(10px);}
+@-o-keyframes slideBig {.slide(10px);}
+@keyframes slideBig {.slide(10px);}
+
+
+.bk-login {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    background: url('/resources/img/home-page-image-progressive.jpg') no-repeat center center fixed;
+    .background-size(cover);
+    .animation-duration(0.3s);
+    .animation-fill-mode(both);
+    .animation-name(fade-in);
+
+    .bk-logo-big {
+        display: block;
+        margin: 90px auto 0 auto;
+        width: 220px;
+        height: 49px;
+        background: url('/resources/img/logo/TS-logo-login.png') no-repeat center;
+        .animation-delay(0.1s);
+        .animation-duration(0.4s);
+        .animation-fill-mode(both);
+        .animation-name(fade-in-down);
+    }
+
+    .bk-login-form {
+        margin: 55px auto 0 auto;
+        padding: 50px 60px 60px 60px;
+        width: 280px;
+        background-color: @white-bg;
+        border-radius: 5px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border: none;
+        .box-shadow-inset(0px 5px 122px @bg-shadow, inset 0px 3px 0px @orange-default);
+        .animation-delay(0.3s);
+        .animation-duration(0.5s);
+        .animation-fill-mode(both);
+        .animation-name(fade-in-top);
+
+        .bk-login-header {
+            margin-bottom: 30px;
+            text-align: center;
+            .bk-main-title();
+            font-size: 27px;
+            color: @gray-main-text;
+        }
+
+        .bk-login-error {
+            position: absolute;
+            color: @red-default;
+        }
+
+        .bk-login-saml-section {
+            position: relative;
+            margin-top: 10px;
+            .bk-saml-login-link {
+                .color-orange2;
+                .font-family-semibold;
+                .bk-cursor-pointer;
+            }
+        }
+
+        .bk-login-section {
+            position: relative;
+            margin-top: 15px;
+
+            label {
+                position: absolute;
+                display: inline-block;
+                vertical-align: middle;
+                margin-top: 18px;
+                margin-left: 20px;
+                width: 16px;
+                height: 16px;
+                background-repeat: no-repeat;
+            }
+
+            input[type=text], input[type=password] {
+                padding: 3px 0 4px 60px;
+                margin-bottom: 5px;
+                width: 215px;
+                height: 45px;
+                line-height: inherit;
+                font-size: 14px;
+                .font-family-regular();
+                color: @gray-main-text;
+                border: 1px solid @gray-border;
+                border-radius: 3px;
+                background-color: @white-bg;
+                .box-shadow(inset 0px 1px 3px @bg-shadow-faint-1);
+
+                // override bootstrap specified style
+                &:focus {
+                    border: 1px solid @blue-default;
+                    box-shadow: none;
+                    color: @gray-main-text;
+                }
+            }
+
+            &.bk-login-failed {
+                // If login failed we show a red border arround the password input
+                input[type=text], input[type=password] {
+                    border: 1px solid @red-default;
+                    // override bootstrap specified style
+                    &:focus {
+                        border: 1px solid @red-default;
+                        box-shadow: none;
+                    }
+                }
+            }
+
+            @login-btn-top-margin: 15px;
+            .bk-login-btn {
+                display: inline-block;
+                margin-top: @login-btn-top-margin;
+            }
+
+            .bk-login-verifying {
+                position: absolute;
+                top: @login-btn-top-margin;
+                left: 0;
+                width: 67px;
+                text-align: center;
+                .bk-primary-button;
+
+
+                .bk-loader {
+                    margin-top: 12px;
+                    margin-left: 15px;
+                    .bk-dot {
+                        background-color: @white-text;
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 3px;
+
+                        &.dot2 {
+                            .animation-name(slideBig);
+                        }
+
+                        &.dot3 {
+                            left: 10px;
+                            .animation-name(slideBig);
+                        }
+                        &.dot4 {
+                            left: 20px;
+                        }
+                    }
+                }
+            }
+
+            .bk-style-icon-login, .bk-style-icon-password {
+                top: -2px;
+                &:before {
+                    color: @gray-secondary-text;
+                }
+            }
+
+            .bk-forgot, .bk-rememberme {
+                height: 45px;
+                line-height: 50px;
+                font-size: 14px;
+                .font-family-bold();
+                color: @nav-text;
+
+                &:hover {
+                    color: @orange-default;
+                }
+            }
+
+            .bk-rememberme {
+                float: right;
+                margin-top: 5px;
+                display: inline-block;
+                width: 114px;
+                cursor: pointer;
+
+                label {
+                    width: inherit;
+                    cursor: pointer;
+                    color: @gray-main-text;
+                    .font-family-regular();
+                }
+            }
+
+            .bk-forgot {
+                float: left;
+            }
+        }
+    }
+}

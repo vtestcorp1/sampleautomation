@@ -1,0 +1,134 @@
+.bk-chart-axis-configurator {
+    .font-family-regular;
+
+    select {
+        display: inline-block;
+        margin-left: 7px;
+        padding: 0 20px 0 5px;
+        right: 10px;
+        left: 5px;
+        width: 200px;
+        height: 19px !important;
+        line-height: 17px;
+        font-size: 9px;
+        border: 1px solid transparent;
+        background: none;
+        box-shadow: none;
+
+        &.bk-invalid-selection {
+            border: 1px solid red;
+        }
+    }
+
+    .bk-chart-axes-selectors {
+        margin-left: 1px;
+        margin-top: -5px;
+
+        // We apply the select box from input common UI
+        .bk-multiselect-input {
+            display: inline-block;
+
+            .select2-choices {
+                background-color: @grey1;
+                .br-grey3;
+                background-image: none;
+
+                .select2-search-choice {
+                    .br-grey3;
+                }
+            }
+
+            .select2-search-choice:hover {
+                .select2-search-choice-close {
+                    background-position: right -11px;
+                }
+            }
+
+            .ui-select-match-item, .select2-search-choice-close {
+                .bg-grey2;
+                .font-family-semibold();
+                color: @gray-main-text;
+                font-size: 12px;
+            }
+        }
+
+        .bk-chart-axis-selector {
+            position: relative;
+            margin: 20px 0 20px 0;
+
+            .bk-axis-header {
+                display: flex;
+                .axis-name {
+                    .flex-grow-shrink-basis(1, 1, auto);
+                }
+                .bk-chart-axis-config-locker {
+                    .flex-grow-shrink-basis(0, 0, 20px);
+                }
+            }
+
+            .axis-name {
+                vertical-align: top;
+                margin-top: 4px;
+                font-size: 12px;
+                .font-family-regular();
+            }
+
+            .bk-axis-column-source {
+                font-style: italic;
+            }
+
+            &.bk-disabled {
+                .axis-name {
+                    color: gray;
+                }
+
+                .search-field input {
+                    color: maroon;
+                }
+            }
+
+            @bk-chart-shared-y-axis-button-size: 25px;
+            .bk-chart-shared-y-axis-button {
+                position: absolute;
+                height: @bk-chart-shared-y-axis-button-size;
+                width: @bk-chart-shared-y-axis-button-size;
+                right: 4px;
+                top: 50%;
+                margin-top: -(@bk-chart-shared-y-axis-button-size / 2); // Centering the button relatively to bk-chart-axis-selector height
+                padding: 0;
+                cursor: pointer;
+                border-radius: 2px;
+
+                &:hover {
+                    background-color: @gray-hover-light;
+                }
+
+                &.bk-toggle-btn-on {
+                    .box-shadow-inset(0 0 0 @bg-shadow-faint-2, inset 0 1px 2px @bg-shadow-faint-2);
+                    background-color: @gray-hover-light;
+                    .transition(~"all 100ms ease-out");
+
+                    .bk-icon:before {
+                        color: @blue-default;
+                        .transition(~"color 200ms ease-in");
+                    }
+                }
+
+                .bk-icon:before {
+                    margin-left: 6px;
+                    line-height: @bk-chart-shared-y-axis-button-size;
+                    font-size: 14px;
+                    color: @gray-secondary-text;
+                    .transition(~"color 200ms ease-in");
+                }
+            }
+        }
+    }
+
+    .bk-chart-axis-errors {
+        margin: 10px 5px;
+        .validation-error-message {
+            color: red;
+        }
+    }
+}

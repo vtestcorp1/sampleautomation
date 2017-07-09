@@ -1,0 +1,62 @@
+<div class="bk-comment-panel">
+    <div blink-loading-indicator loading-text="Load comments" ng-if="!isInitCommentListFilled"></div>
+    <div class="bk-comment-inputbox">
+        <textarea mentio
+                  mentio-typed-text="typedTerm"
+                  mentio-items="user"
+                  mentio-require-leading-space="true"
+                  placeholder="Add your comment here"
+                  ng-model="newCommentMessage"
+                  mentio-template-url="src/modules/comment/user-mentions.html"
+                  mentio-search="getMatchingUsers(term)"
+                  mentio-select="formatForSelectedUser(item)"
+                  ng-readonly="createCommentPending"
+                  ng-trim="false"
+                >
+        </textarea>
+        <blink-button-menu menu="postButtonConifg" busy="createCommentPending"></blink-button-menu>
+    </div>
+    <ul infinite-scroll="renderMoreItems()">
+        <li class="bk-animate animate-repeat" ng-repeat="comment in comments | limitTo: maxComments track by comment.id" >
+            <blink-profile-pic user-id="comment.author" user-display-name="comment.authorDisplayName">
+            </blink-profile-pic>
+            <span class="bk-bubble">
+                <span class="bk-user-name bk-animate animate-if" ng-if="!comment.inEdit" >
+                    {{ comment.authorDisplayName }}
+                </span>
+                <span class="bk-time-label animate-if" ng-if="showEditedSign(comment)"
+                      blink-tooltip="{{convertToTimeAgo(comment.modifiedTime)}}">
+{{strings.Edited}}
+</span>
+                <div class="bk-message bk-animate animate-if" ng-if="!comment.inEdit">{{comment.currentlyEditingMessageBackup}}</div>
+                <textarea type="text" ng-model="comment.message" ng-if="comment.inEdit"
+                          ng-readonly="comment.modifiedCommentPending">
+                </textarea>
+                <div class="bk-btn-blue bk-animate animate-if" ng-click="endEditMode($index)"
+                     ng-if="showEditModeButtons(comment)"
+                     ng-class="{ 'bk-disabled': comment.modifiedCommentPending}">{{strings.Done}}</div>
+                <div class="bk-btn bk-animate animate-if" ng-click="cancelEditMode($index)"
+                     ng-if="showEditModeButtons(comment)">{{strings.Cancel}}</div>
+                <div class="bk-viz-btn-icon bk-style-icon-edit animate-if" blink-tooltip="Edit"
+                     ng-if="showModifiedButtons(comment)"
+                     ng-click="startEditMode($index)")>
+                </div>
+                <span class="bk-time-ago bk-animate animate-if" ng-if="showTimeAgo(comment)">
+                    <span class="bk-clock-icon"></span>
+                    <span class="bk-time-label">{{convertToTimeAgo(comment.createdTime)}}</span>
+                </span>
+                <span class="bk-delete-btn bk-animate animate-if" blink-tooltip="Delete" ng-click="deleteComment($index)"
+                      ng-if="showModifiedButtons(comment)">&times;
+                </span>
+                <span class="bk-bubble-arrow-shadow"></span>
+                <span class="bk-bubble-arrow"></span>
+            </span>
+        </li>
+    </ul>
+    <div ng-if="isInitCommentListFilled">
+        <div class="bk-more-comment-hint" ng-if="hasMoreItemsToLoad()"
+             blink-tooltip="Total number of comments: {{comments.length}}" data-placement="top">
+{{strings.Scroll_down_to}}</div>
+        <div class="bk-more-comment-hint" ng-if="!hasMoreItemsToLoad()"><span>{{strings.All}}</span>{{comments.length}} <span>{{strings.comments_are}}</span></div>
+    </div>
+</div>

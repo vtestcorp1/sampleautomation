@@ -1,0 +1,15 @@
+<div class="bk-chart-config-item"
+     ng-switch="$ctrl.type">
+    <bk-chart-config-toggler-item
+            ng-switch-when="toggler"
+            bk-ctrl="$ctrl">
+    </bk-chart-config-toggler-item>
+    <bk-chart-config-selector-item
+            ng-switch-when="selector"
+            bk-ctrl="$ctrl">
+    </bk-chart-config-selector-item>
+    <bk-chart-config-range-item
+            ng-switch-when="range"
+            bk-ctrl="$ctrl">
+    </bk-chart-config-range-item>
+</div>

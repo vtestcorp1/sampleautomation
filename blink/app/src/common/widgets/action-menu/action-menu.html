@@ -1,0 +1,20 @@
+<div class="bk-action-menu">
+    <div ng-repeat="action in $ctrl.menuItems">
+        <div ng-if="$ctrl.shouldShowItem(action)">
+            <div class="bk-dropdown-item {{ action.class }}"
+                 ng-if="!action.customContent"
+                 ng-class="{'bk-dropdown-item-disabled' : $ctrl.isItemDisabled(action)}"
+                 blink-tooltip="{{ $ctrl.getDisabledTooltip(action) }}"
+                 ng-click="$ctrl.onMenuItemClick(action, $event)">
+                <div class="bk-dropdown-icon">
+                    <span class="{{ action.icon }}"></span>
+                </div>
+                <div class="bk-dropdown-text">{{ action.label }}</div>
+            </div>
+            <div class="bk-dropdown-item {{action.class}}"
+                 ng-if="!!action.customContent"
+                 blink-bind-and-compile="action.customContent">
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,107 @@
+@import '/resources/css/import.less';
+
+.bk-rule-editor-popup {
+    @token-color-function-name: @h-blue;
+    @token-color-measure: @h-purple;
+    @token-color-attribute: @h-purple;
+    @token-color-operator: @h-blue;
+    @token-color-keyword: @h-blue;
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: @overlay-zindex;
+    background-color: @overlay-bg-faint;
+
+    .bk-rule-editor {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 700px;
+        margin: -300px 0 0 -350px;
+        background-color: @h-white;
+        box-shadow: 1px 1px 7px 4px @bg-shadow-faint-2;
+
+        .bk-rule-assistant-container {
+            position: absolute;
+            right: -260px;
+            top: 10px;
+            z-index: @formula-assistant-zindex;
+        }
+
+        .bk-editor-content {
+            .flex(column);
+
+            .bk-editor-header {
+                .flex(row);
+                .flex-align(baseline);
+                .flex-grow-shrink-basis(0,0,35px);
+                margin: 15px 30px;
+                z-index: 2;
+
+                .bk-edit-jp-btn {
+                    .bk-style-icon-link;
+                    cursor: pointer;
+                }
+
+                .bk-rule-name {
+                    max-width: 60%;
+                    font-size: 20px;
+                    .font-family-light();
+                    color: @gray-main-text;
+                }
+
+                .bk-rule-assistant-link {
+                    // SCAL-10110: webkit float bug workaround, display and float
+                    // set in js.
+                    display: inline-block;
+                    float: right;
+                    cursor: pointer;
+                    .flex-align-self(center);
+                    margin-left: auto;
+
+                    .bk-style-icon-formulae-assistant {
+                        vertical-align: middle;
+                    }
+                }
+            }
+
+            .bk-editor-body {
+                padding: 0 30px;
+                margin-bottom: 10px;
+            }
+        }
+
+        .bk-editor-footer {
+            padding: 14px 15px 15px;
+            margin-bottom: 0;
+            text-align: right;
+            border-top: 1px solid @gray-border;
+            background-color: @gray-bg;
+            display: flex;
+
+            .busy-indicator {
+                display: inline-block;
+                float: left;
+                margin-top: 20px;
+            }
+
+            .error-message {
+                margin-top: 8px;
+                float: left;
+                font-size: 11px;
+                max-width: 400px;
+                text-align: left;
+                color: @h-red-dark;
+            }
+
+            .bk-cancel-btn {
+                margin-left: auto;
+            }
+
+        }
+    }
+}

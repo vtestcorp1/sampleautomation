@@ -1,0 +1,8 @@
+<div class="bk-input" ng-class="{'is-editing': $ctrl.isEditing}">
+    <img ng-if="$ctrl.icon" class="bk-input-icon" ng-src="{{$ctrl.icon}}">
+    <input ng-focus="$ctrl.isEditing = true;"
+           ng-blur="$ctrl.isEditing = false;"
+           class="bk-input-field"
+           ng-model="$ctrl.value"
+           placeholder="{{$ctrl.placeholder}}">
+</div>

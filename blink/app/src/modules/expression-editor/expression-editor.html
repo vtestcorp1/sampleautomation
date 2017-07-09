@@ -1,0 +1,43 @@
+<div class="bk-expression-editor">
+    <div class="bk-content-editor-container">
+        <expression-editor-tooltip></expression-editor-tooltip>
+        <div contenteditable="true"
+             spellcheck="false"
+             class="content-editor"
+             data-placeholder="start typing your formula here"
+             ng-class="{'expression-error': hasValidationErrors(),
+                     'expression-busy': hasIncompleteExpression(),
+                     'expression-valid' : hasValidCompleteExpression()}"></div>
+
+        <div class="expression-editor-context-menu" ng-show="shouldShowContextMenu()" blink-overlay="hideContextMenu()">
+            <div ng-include="'src/modules/expression-editor/expression-suggestions-menu.html'"></div>
+        </div>
+
+    </div>
+
+    <!--
+           Note(sunny): we are using only the first error message for now (as sage supports only one
+           error message in a response). Once sage starts supporting multiple error message we'll
+           have to update the UI accordingly
+                   -->
+    <div class="expression-editor-validation-message"
+         ng-class="{'expression-error': hasValidationErrors(),
+                     'expression-busy': hasIncompleteExpression(),
+                     'expression-valid' : hasValidCompleteExpression()}"
+         ng-show="shouldShowValidationMessage()">
+                    <span ng-switch="hasValidCompleteExpression()" class="bk-validation-icons">
+                        <span ng-switch-when="true" class="bk-style-icon-circled-checkmark bk-icon bk-success-icon">
+                        </span>
+                        <span ng-switch-when="false" ng-switch="hasValidationErrors()">
+                            <bk-cross-icon ng-switch-when="true"
+                                           class="bk-icon bk-error-icon"
+                                           data-placement="bottom"
+                                           blink-tooltip="{{getExpressionMessage()}}"></bk-cross-icon>
+                            <span ng-switch-when="false"
+                                  class="bk-style-icon-circled-information bk-icon bk-warn-icon">
+                            </span>
+                        </span>
+                    </span>
+        <span class="bk-message" ng-bind-html="getExpressionMessage()"></span>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+<div class="bk-home-activity-container">
+    <bk-icon-button icon="bk-style-icon-activity-feed"
+                    class="bk-slider-btn"
+                    ng-click="toggleShow()"
+                    blink-tooltip="{{ activityFeedStrings.VIEW_ACTIVITY }}"
+                    is-selected=isShowingActivity()></bk-icon-button>
+
+    <div class="bk-home-activity"
+         ng-class="{'slide-in': isShowingActivity(), 'slide-out': !isShowingActivity()};">
+        <div ng-switch="isInitializing()" class="bk-sidebar-container">
+            <div class="bk-sidebar-header">
+                <div class="bk-close-sidebar-panel" ng-click="toggleShow()"></div>
+                <div class="bk-sidebar-title">
+                    {{ activityFeedStrings.RECENT_ACTIVITY }}
+                </div>
+            </div>
+            <div ng-switch-when="true"
+                 class="bk-home-activity-loading-indicator"
+                 blink-loading-indicator>
+            </div>
+            <div ng-switch-when="false" ng-switch="showEmptyState" class="bk-sidebar-body">
+                <div ng-switch-when="true" class="bk-empty-state">{{ activityFeedStrings.NO_ITEMS_TO_DISPLAY }}</div>
+                <div ng-switch-when="false" class="bk-activity-feed bk-vertical-flex-container-sized">
+                    <div ng-repeat="item in items" class="bk-activity-feed-item">
+                        <a ng-href="{{ item.href }}">
+                            <blink-profile-pic user-id="item.author"
+                                               user-display-name="item.authorDisplayName"></blink-profile-pic>
+                        <span class="bk-bubble bk-{{ item.type }}-item">
+                            <span class="bk-user-name">{{ item.authorDisplayName }}</span>
+                            <span class="bk-message">{{ item.message }}</span>
+                            <span class="bk-item-name bk-overflow-ellipsis">{{ item.name }}</span>
+                            <span class="bk-time-ago">
+                            <span class="bk-clock-icon"></span>
+                                <span class="bk-time-label">{{ item.timeAgo }}</span>
+                            </span>
+                            <span class="bk-bubble-arrow-shadow"></span>
+                            <span class="bk-bubble-arrow"></span>
+                        </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

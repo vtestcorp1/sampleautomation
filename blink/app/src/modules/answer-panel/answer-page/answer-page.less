@@ -1,0 +1,128 @@
+@sage-panel-start-width: 250px;
+@sage-panel-min-width: 150px;
+
+.bk-answer-page {
+    .bk-horizontal-flex-container-sized;
+    .centered-blink-loading-indicator;
+
+    .bk-data-panel {
+        z-index: 1;
+        display: inline-block;
+        .flex-grow-shrink-basis(0, 0, @sage-panel-start-width);
+        .flex(column);
+        min-width: @sage-panel-min-width;
+    }
+    .page-content {
+        z-index: 0;
+        margin: 20px;
+        .bk-vertical-flex-horizontal-container-sized;
+
+        .bk-search-panel {
+            .flex-grow-shrink-basis(0, 0, auto);
+            .flex(row);
+            .flex-align(center);
+            margin: 0 0 20px 0;
+
+            .bk-answer-data-source-preview {
+                display: inline-block;
+            }
+            .bk-answer-sage-bar {
+                display: inline-block;
+                .flex-grow-shrink-basis(1, 1, 0px);
+            }
+            .bk-answer-info-card-icon {
+                display: inline-block;
+            }
+        }
+
+        .bk-answer-content {
+            background: @white-bg;
+            .br-grey3;
+            .bk-horizontal-flex-container-sized;
+
+            .bk-answer-content-viewer {
+                padding: 20px;
+                .bk-vertical-flex-horizontal-container-sized;
+                .bk-title-panel {
+                    .flex(row);
+                    .flex-grow-shrink-basis(0, 0, 36px);
+                    .flex-align(center);
+                    z-index: 2;
+
+                    .bk-answer-title {
+                        .bk-document-title();
+                        .bk-horizontal-flex-container-sized;
+                        padding-right: 50px;
+
+                    }
+
+                    .bk-pin-launcher,
+                    .bk-answer-action-menu,
+                    .bk-toggle-chart-selector-display,
+                    .bk-toggle-table-selector-display,
+                    .bk-toggle-chart-editor-display {
+                        .bk-horizontal-flex-content-sized;
+                        margin-left: 6px;
+                    }
+                    .bk-pin-launcher {
+                        .bk-add-to-pinboard {
+                            height: 22px;
+                            width: 22px;
+                            padding: 5px;
+                            border-radius: 19px;
+                            cursor: pointer;
+                            &:hover {
+                                background-color: @grey2;
+                            }
+                        }
+                    }
+                    .bk-toggle-chart-selector-display,
+                    .bk-toggle-table-selector-display,
+                    .bk-toggle-chart-editor-display {
+                        // HACK: This is needed for IE10.
+                        // TODO(Jasmeet): Abstract all icons with round select/hover states
+                        // into a component and move all browser hacks there.
+                        display: inline-block;
+                        height: 18px;
+                        width: 18px;
+                        padding: 7px;
+                        border-radius: 19px;
+                        cursor: pointer;
+                        &:hover {
+                            background-color: @grey2;
+                        }
+                        &.bk-drawer-open {
+                            .border(@size :1px, @type: solid, @color: @grey5);
+                        }
+                        &.bk-disable-chart-editor-icon {
+                            background-color: white;
+                            opacity: 0.5;
+                            cursor: default;
+                        }
+                    }
+                }
+
+                .bk-answer-page-filter-panel {
+                    margin-top: 15px;
+                }
+                .bk-answer-body {
+                    overflow: auto;
+                    .bk-horizontal-flex-container-sized();
+                    .bk-answer-viz-container {
+                        margin-top: 15px;
+                        .bk-vertical-flex-horizontal-container-sized;
+                    }
+                    .bk-answer-viz-type-selector, .bk-chart-editor-container {
+                        .bk-horizontal-flex-content-sized;
+                        padding: 20px;
+                        overflow: auto;
+                    }
+                }
+            }
+
+            .bk-empty-answer-placeholder-container {
+                .bk-vertical-flex-container-sized;
+            }
+        }
+    }
+}

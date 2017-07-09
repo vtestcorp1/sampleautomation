@@ -1,0 +1,183 @@
+<div class="bk-explorer"
+     ng-class="{ 'bk-explorer-mapping': inSelectionMode,  'bk-with-footer': inSelectionMode}"
+     blink-on-escape="cancelSelection()">
+    <!--
+        Note (sunny): need to use ng-show instead of ng-if because the directive code looks for the presence
+        of certain dom nodes to decide state.
+        TODO: use js vars to track state instead of using DOM.
+    -->
+    <blink-loading-indicator ng-show="!data"
+                             loading-text="strings.LOADING_MSG">
+
+    </blink-loading-indicator>
+    <div class="bk-explorer-header" ng-show="!!data">
+        <div class="bk-missing-underlying-label"
+            ng-show="needsUnderlyingAccess && !underlyingLabelClose">
+            {{ needsUnderlyingAccessMessage }}
+            <span class="bk-close" ng-click="underlyingLabelClose = true">×</span>
+        </div>
+        <div class="view-all" ng-show="hideTableList">
+            <bk-icon-button icon="bk-style-icon-arrow-right"
+                             ng-click="onViewAllClick()"></bk-icon-button>
+        </div>
+        <div class="bk-table-title">
+            <div class="table-type">
+                {{ tableDisplayType }}
+            </div>
+            <div ng-switch="isSaveButtonEnabled()">
+                <div ng-switch-when="true"
+                     blink-content-editable
+                     class="bk-table-name"
+                     ng-model="tableName"
+                     description="tableDescription"
+                     on-change="onHeadersEdit(tableName, tableDescription)"
+                     disallow-empty="true">
+                </div>
+                <div class="bk-table-name"
+                     ng-switch-when="false">
+                    <div class="bk-table-name-readonly"
+                         uib-tooltip="{{ tableName }}"
+                         tooltip-placement="bottom"
+                         tooltip-popup-delay="300"
+                         tooltip-popup-close-delay="250">
+                        {{tableName}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mode-select fr clearfix">
+            <div class="mode-item" ng-class="{'select': isInPropMode() }" ng-click="setPropMode()">
+                {{strings.Columns}}
+            </div>
+            <div class="mode-item" ng-class="{'select': isInDataMode() }" ng-click="setDataMode()">
+                {{strings.Data}}
+            </div>
+            <div class="mode-item" ng-class="{'select': isInProfileMode() }" ng-click="setProfileMode()">
+                {{strings.Profile}}
+            </div>
+            <div class="mode-item" ng-class="{'select': isInRelationshipMode() }" ng-click="setRelationshipMode()">
+                {{strings.Relationships}}</div>
+            <div class="mode-item" ng-class="{'select': isInDependentsMode() }" ng-click="setDependentsMode()">
+                {{strings.Dependents}}
+            </div>
+            <div class="mode-item" ng-class="{'select': isInSecurityMode() }" ng-click="setSecurityMode()">
+                {{strings.Row_security}}
+            </div>
+            <div ng-if="!!showAnalyzeMode" class="mode-item"
+                 ng-class="{'select': isInAnalyzeMode() }" ng-click="setAnalyzeMode()">
+                {{strings.analyze.suggestions}}
+                <span class="bk-analyze-total-count" ng-if="!!analyzeCtrl && analyzeCtrl.isReady">
+                    ({{analyzeCtrl.totalViolationsCount}})
+                </span>
+                <span ng-if="!analyzeCtrl || !analyzeCtrl.isReady">
+                    (...)
+                </span>
+            </div>
+            <div ng-if="!!showA3Mode" class="mode-item"
+                 ng-class="{'select': isInA3Mode() }" ng-click="setA3Mode()">
+                {{strings.metadataObjectMenuItems.triggerA3.label}}
+            </div>
+        </div>
+        <div class="explorer-header-btns clearfix" ng-class="{invisible : areHeaderBtnsInvisible()}">
+            <div ng-switch="isOfLoadableType()">
+                <bk-secondary-button ng-switch-when="true"
+                                     text="{{ strings.importData.LOAD_DATA }}"
+                                     icon="bk-style-icon-data"
+                                     is-disabled="!isEditable"
+                                     class="bk-metadata-edit"
+                                     ng-click="isEditable ? onEditClick() : null"></bk-secondary-button>
+                <bk-secondary-button ng-switch-when="false"
+                                     text="{{ strings.EDIT }}"
+                                     icon="bk-style-icon-edit-small"
+                                     tooltip="{{buttonTooltip}}"
+                                     tooltip-placement="auto"
+                                     is-disabled="!isEditable"
+                                     class="bk-metadata-edit"
+                                     ng-click="isEditable ? onEditClick() : null"></bk-secondary-button>
+            </div>
+            <div class="bk-flippable" ng-switch='isEditable'>
+                <bk-primary-button ng-switch-when='true'
+                                   text="{{ strings.SAVE }}"
+                                   icon="bk-style-icon-save"
+                                   is-busy="isSaving()"
+                                   is-disabled="saveInactive"
+                                   ng-click="onSaveClick()"></bk-primary-button>
+                <div ng-switch-when='false' class="bk-label"><span>{{strings.Readonly}}</span></div>
+            </div>
+        </div>
+        <div class="bk-explorer-mapping-explanation-wrapper" ng-show="inSelectionMode">
+            <div class="bk-explorer-mapping-explanation">
+                <div class="bk-explorer-mapping-explanation-icon"></div>
+{{strings.Select_the_column}}
+</div>
+        </div>
+    </div>
+    <div class="bk-content" ng-show="!!data">
+        <div class="table-list-container" ng-if="!hideTableList">
+            <input class="bk-explorer-table-search"
+                   placeholder="Search table name"
+                   type="text"
+                   ng-model="explorer.tableFilter"/>
+
+            <div class="bk-table-list">
+                <div class="bk-table"
+                     ng-repeat="table in filtered = (data | filter:explorer.tableFilter)">
+                    <div class="bk-light-text-16px bk-tablename"
+                         blink-tooltip="{{getTooltip(table)}}"
+                         data-html="true"
+                         data-placement="right"
+                         data-delay='{"show":"750"}'
+                         ng-class="{'bk-loading': isLoading(table),
+                        'bk-selected': (selectedTableId == table.values.id) }"
+                         ng-click="onTableNameClick(table.values.id)">
+                        {{ table.values.name }}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <blink-loading-indicator loading-text="strings.LOADING_MSG"
+                                 ng-show="isLoading()">
+
+        </blink-loading-indicator>
+        <div class="bk-table-detail"
+             ng-show="!isLoading()"
+             ng-class="{
+                 'table-list-present': !hideTableList
+             }">
+            <div ng-if="isInRelationshipMode()" class="bk-relationship-ui-mode">
+                <relationship-list table-id="selectedTableId"
+                                   showHidden="isRelationshipEditingUnrestricted()"
+                                   should-own-target="!isRelationshipEditingUnrestricted()"
+                                   can-edit-only-own-relationships="!isRelationshipEditingUnrestricted()" >
+                </relationship-list>
+            </div>
+            <div ng-if="isInSecurityMode()" class="bk-security-mode">
+                <row-level-security class="rls-container"
+                                    ctrl="rlsCtrl"
+                                    ng-if="canEditRowSecurity()"></row-level-security>
+                <div ng-if="!canEditRowSecurity()">
+                    {{ getRLSDisabledReason() }}
+                </div>
+            </div>
+            <div class="bk-no-tables" ng-if="noTableToShow()">
+                {{ getNoTableReason() }}
+            </div>
+            <bk-analyzer class="bk-analyze"
+                      bk-ctrl="analyzeCtrl"
+                      ng-if="!!isInAnalyzeMode() && !!analyzeCtrl">
+            </bk-analyzer>
+            <bk-a3-table-analysis class="bk-a3-table-analysis"
+                         bk-ctrl="a3Ctrl"
+                         ng-if="!!isInA3Mode() && !!a3Ctrl">
+            </bk-a3-table-analysis>
+        </div>
+        <div class="bk-footer modal-footer" ng-show="inSelectionMode">
+            <a class="bk-btn bk-btn-cancel" ng-click="cancelSelection()">{{strings.Cancel}}</a>
+            <a class="bk-btn bk-save-btn"
+               ng-click="!!lastSelectedColumn && saveSelection()"
+               ng-class="{'bk-btn-disabled': !lastSelectedColumn, 'bk-btn-blue': !!lastSelectedColumn}">{{strings.Save}}</a>
+        </div>
+    </div>
+
+</div>

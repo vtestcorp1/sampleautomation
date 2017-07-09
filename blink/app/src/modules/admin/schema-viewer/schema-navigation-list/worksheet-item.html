@@ -1,0 +1,14 @@
+<div>
+      <div ng-class="{
+        'bk-formula-column' : row.item.isFormula(),
+        'bk-standard-column' : !row.item.isFormula()
+      }">
+      </div>
+      <div class="bk-wk-item"
+           data-html="true"
+           ng-class="{ 'bk-column-incomplete': !row.item.isColumnComplete()} "
+           data-placement="right"
+           blink-tooltip = "{{ row.item.getTooltipInformationModel().getTemplate()}}">
+      {{row.item.getName()}}
+      </div>
+</div>

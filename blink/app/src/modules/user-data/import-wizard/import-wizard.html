@@ -1,0 +1,71 @@
+<div class="bk-wizard-workflow bk-container bk-metadata-list">
+    <div blink-loading-indicator-overlay></div>
+    <div class="bk-header">
+        <div class="bk-page-title">{{strings.Upload_your2}}</div>
+    </div>
+
+    <div class="bk-wizard-workflow-inner container">
+        <div class="bk-wizard-container" ng-hide="confirmationScreen || errorScreen">
+            <div class="bk-wizard-header row">
+                <ul class="bk-wizard span12">
+                    <li ng-class="{'current': userDataWizard.isCurrentStep($index),
+                                       'done': userDataWizard.isCompletedStep($index)
+                                      }"
+                        ng-repeat="step in userDataWizard.steps">
+                        <span class="bk-badge">{{$index + 1}}</span>
+                        <i class="bk-checkmark" ng-show="userDataWizard.isCompletedStep($index)"></i>
+                        <span class="bk-heading">{{step.title}}</span>
+                        <span class="bk-sub-heading" ng-show="step.isOptional">{{strings.Optional}}</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="bk-wizard-step-error row">
+                <div class="span12" ng-show="!!errorRowMsg">
+                    <!-- put your error content here -->
+                    {{ errorRowMsg }}
+                </div>
+            </div>
+            <div class="bk-wizard-body row">
+                <div class="bk-upload-step span12" ng-include="userDataWizard.getContentUrl()">
+                </div>
+            </div>
+            <div class="bk-upload-footer row">
+                <div class="span9 bk-upload-footer-left">
+                    <div ng-include="userDataWizard.getFooterUrl()"></div>
+                    <bk-secondary-button text="{{ strings.BACK }}"
+                                         icon="bk-style-icon-arrow-left"
+                                         ng-hide="userDataWizard.isCurrentStep(0)"
+                                         ng-click="userDataWizard.goToPreviousStep()"></bk-secondary-button>
+                </div>
+                <div class="span4 bk-wizard-btn-group">
+                    <div class="bk-wizard-button" data-title="{{ userDataWizard.getProceedInstructions() }}">
+                        <bk-primary-button text="{{ nextBtnLabel }}"
+                                           icon="bk-style-icon-arrow-right"
+                                           reverse-text-icon="true"
+                                           is-disabled="userDataWizard.isNextDisabled()"
+                                           ng-hide="userDataWizard.isLastStep()"
+                                           ng-click="userDataWizard.goToNextStep()"
+                                           class="bk-next-button"></bk-primary-button>
+                    </div>
+                    <div class="bk-wizard-button">
+                        <bk-primary-button text="{{ strings.UPLOAD }}"
+                                           is-disabled="userDataWizard.isTransitioningToNextStep"
+                                           ng-show="userDataWizard.isLastStep()"
+                                           ng-click="userDataWizard.finish()"
+                                           class="bk-finish-button"></bk-primary-button>
+                    </div>
+                    <bk-secondary-button text="{{ strings.CANCEL }}"
+                                         ng-click="onCancel()"
+                                         ng-show="isWizardCancellable"></bk-secondary-button>
+
+                </div>
+            </div>
+        </div>
+        <div class="bk-upload-confirmation" ng-show="confirmationScreen">
+            <div ng-include="'src/modules/user-data/import-wizard/import-confirmation.html'"></div>
+        </div>
+        <div class="bk-upload-error" ng-show="errorScreen">
+            <div ng-include="'src/modules/user-data/import-wizard/import-system-error.html'"></div>
+        </div>
+    </div>
+</div>

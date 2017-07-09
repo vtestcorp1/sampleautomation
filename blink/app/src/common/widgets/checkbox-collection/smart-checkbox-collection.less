@@ -1,0 +1,61 @@
+.bk-smart-checkbox-collection {
+    .bk-smart-checkbox-loading-indicator {
+        .flex(row);
+    }
+    .bk-checkbox-search {
+        .bk-padding-top-20;
+        .bk-padding-bottom-15;
+        .bk-padding-horizontal-20;
+        .bk-search-input {
+            .bk-margin-bottom-0;
+            height: 24px;
+            .text-size-default;
+        }
+    }
+    .bk-smart-cb-bulk-action-container {
+        .flex(row);
+        padding-bottom: 8px;
+        .bk-clear-selected-options, .bk-select-all-options {
+            display: inline-block;
+            .flex-grow-shrink-basis(1, 1, auto);
+            text-align: center;
+            padding: 3px 20px;
+            .bk-text-blue;
+            .bk-cursor-pointer();
+            &.bk-disabled{
+                color: @h-gray4;
+                cursor: default;
+            }
+        }
+        .bk-select-all-options {
+            border-left: 1px @h-gray3 solid;
+        }
+    }
+    .bk-checkbox-section {
+        .bk-checkbox-container {
+            .bk-padding-horizontal-20;
+            &:hover {
+                .bg-grey1;
+            }
+        }
+
+        &:not(:last-child) {
+            .bk-margin-bottom-10;
+            .bk-padding-bottom-10;
+            .br-grey3-bottom;
+        }
+
+        .bk-checkbox-list-message {
+            .bk-padding-top-5;
+            .bk-padding-horizontal-20;
+            .color-grey7;
+        }
+        .bk-search-selected-items-msg,
+        .bk-search-unselected-items-msg,
+        .bk-search-readonly-items-msg,
+        .bk-refine-search-msg,
+        .bk-refine-search-readonly-msg {
+            .bk-checkbox-list-message;
+        }
+    }
+}

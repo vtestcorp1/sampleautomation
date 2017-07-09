@@ -1,0 +1,26 @@
+<div class="cluster-summary-viz">
+    <div class="cluster-summary">
+        <div class="summary-title">{{ clusterName }}</div>
+        <div class="summary-content truncate"
+             blink-tooltip="{{viz.getModel().getClusterName()}}"
+             auto-tooltip-style="bootstrap">
+            {{viz.getModel().getClusterName()}}
+        </div>
+    </div>
+    <div class="cluster-summary">
+        <div class="summary-title">{{ release }}</div>
+        <div class="summary-content truncate"
+             blink-tooltip="{{viz.getModel().getRelease()}}"
+             auto-tooltip-style="bootstrap">
+            {{viz.getModel().getRelease()}}
+        </div>
+    </div>
+    <div class="cluster-summary">
+        <div class="summary-title">{{ numberOfNodes }}</div>
+        <div class="summary-content">{{viz.getModel().getNumNodes()}}</div>
+    </div>
+    <div class="cluster-summary">
+        <div class="summary-title">{{ lastSnapshotTime }}</div>
+        <div class="summary-content">{{viz.getModel().getLastSnapshotTime()}}</div>
+    </div>
+</div>

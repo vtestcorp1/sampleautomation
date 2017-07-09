@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>pinboard-shape-sm-3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="bg" fill="#F7F7F7" x="-9079" y="-2890" width="15742" height="8184"></rect>
+        <g id="pinboard-shape-copy" fill="#333333">
+            <path d="M8.25,0 L0.997544646,0 C0.446311399,0 0,0.446385598 0,0.997030139 L0,8 L8.25,8 L14,8 L14,0.997030139 C14,0.453036308 13.5516669,0 12.9986199,0 L8.25,0 Z M0,9 L4,9 L4,14 L1.0093689,14 C0.451909848,14 0,13.5562834 0,13.0001925 L0,9 Z M5,9 L9,9 L9,14 L5,14 L5,9 Z M10,9 L14,9 L14,13.0001925 C14,13.5523709 13.5566468,14 12.9906311,14 L10,14 L10,9 Z" id="pinboard-shape"></path>
+        </g>
+    </g>
+</svg>

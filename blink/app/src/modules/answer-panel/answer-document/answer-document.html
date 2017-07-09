@@ -1,0 +1,18 @@
+<div class="answer-document">
+    <div class="answer-view"
+         ng-repeat="table in $ctrl.answerDocumentModel.getContextTables() track by $index">
+        <div ng-if="!$ctrl.isCurrentIndex($index)"
+             class="answer-preview clearfix"
+             ng-click="$ctrl.switchAnswerIndex(answerDocumentModel.getContext(), $index)">
+            <div class="bk-answer-preview-icon bk-style-icon-arrow-right"></div>
+            <div class="bk-answer-preview-text">{{$ctrl.computeAnswerName(table)}}</div>
+        </div>
+        <div ng-if="$ctrl.isCurrentIndex($index) && !!$ctrl.sageClient"
+             class="bk-vertical-flex-container-sized">
+            <bk-answer-page class="bk-answer-page-container"
+                         ng-if="!!$ctrl.answerPageComponent"
+                         bk-ctrl="$ctrl.answerPageComponent">
+            </bk-answer-page>
+        </div>
+    </div>
+</div>

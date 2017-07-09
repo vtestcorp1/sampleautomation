@@ -1,0 +1,306 @@
+.bk-insight-page {
+    .sharable-item-panel {
+        z-index: 1;
+        padding: 0 152px;
+
+        .bk-control-panel-author {
+            display: none;
+        }
+
+        .bk-expiration-button {
+            padding-left: 20px;
+
+            .bk-expiration-timer {
+                color: @white1;
+            }
+
+            .bk-button {
+                box-shadow: inset 0 0 0 0 transparent;
+                background-color: @green1;
+                color: @white1;
+            }
+
+            .saved-text {
+                color: @white1;
+            }
+        }
+
+        .bk-action-button-dropdown {
+            box-shadow: 0 0 0 0 transparent;
+            background-color: transparent;
+            color: @white1;
+            text-decoration: underline;
+            padding-right: 0px;
+
+            .bk-style-icon-triangle-solid::before {
+                color: @white1;
+            }
+        }
+
+        .bk-editable {
+            &:not(.bk-in-edit-mode) {
+                .bk-description-edit-dropdown {
+                    input[type=text].bk-editable-input {
+                        background-color: @h-black3;
+                        color: @white1;
+                    }
+                }
+            }
+        }
+    }
+
+    .bk-sharable-item-container {
+        .content-container {
+            background-color: @grey1;
+            .ribbon-item {
+                padding-top: 0px;
+            }
+        }
+    }
+
+    .bk-viz {
+        // NOTE: To avoid labels for chart with multiple y axis we hide these.
+        .bk-axis-label-container {
+            display: none;
+        }
+
+        &.bk-alternate-viz-style {
+
+            .bk-viz-inner-container {
+                .bk-viz-inner {
+                    background-color: @grey1;
+                    border: 0 solid transparent;
+
+                    .bk-viz-header {
+                        &.bk-alternate-header-style {
+                            background-color: @grey1;
+                            box-shadow: inset 0 0 0 transparent;
+
+                            .bk-viz-controls {
+                                opacity: 1 !important;
+                                .flex-basis(32px);
+
+                                .bk-action-button-dropdown {
+                                    margin-top: 6px;
+                                }
+
+                                .bk-icons-button {
+                                    background-color: @grey1;
+                                    box-shadow: inset 0 0 0 0 transparent;
+
+                                    &:hover {
+                                        background-color: @white1;
+                                    }
+                                }
+                            }
+
+                            .bk-viz-title-section {
+                                .bk-horizontal-flex-container-sized;
+
+                                .bk-viz-title-spacer {
+                                    .bk-horizontal-flex-container-sized;
+                                    height: 22px;
+                                    border-bottom: solid 1px #d6d6d6;
+                                }
+
+                                .bk-viz-title-container {
+                                    .bk-horizontal-flex-content-sized;
+                                }
+                            }
+
+                            .bk-description-edit-dropdown {
+                                input[type=text].bk-editable-input {
+                                    background-color: @grey1;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+
+                    .bk-viz-content {
+                        .bk-viz-inner {
+                            border: 1px solid #dedfe3;
+                            background-color: @white1;
+                        }
+
+                        .carousel {
+                            background-color: @grey1;
+
+                            .carousel-control {
+                                background: #ffffff;
+                                opacity: 1;
+                                box-shadow: 0 2px 4px 0 rgba(148, 145, 145, 0.5);
+                                line-height: 17px;
+                                color: #9e9e9e;
+                            }
+
+                            .bk-viz-details {
+                                padding: 10px 60px 10px 30px
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .bk-insightful-pinboard {
+        .tile-container {
+            .tile-size-l {
+                &:before {
+                    padding-top: 0px !important;
+                }
+            }
+
+            .tile-size-m {
+                &:before {
+                    padding-top: 0px !important;
+                }
+            }
+
+            .tile-size-s {
+                &:before {
+                    padding-top: 0px !important;
+                }
+            }
+        }
+    }
+
+    .bk-viz {
+        &.bk-slide-active {
+            .flex(column);
+
+            .bk-viz-details {
+                .bk-vertical-flex-content-sized;
+                background-color: @grey1;
+                font-size: 18px;
+                font-family: "Semibold";
+                font-weight: 600;
+                line-height: 24px;
+                color: @h-black2;
+                padding: 10px 60px 10px 20px;
+            }
+
+            .bk-viz-inner-container {
+                position: relative;
+                // height: 1000px;
+                .bk-vertical-flex-container-sized;
+                // min-height: 100%;
+            }
+        }
+    }
+
+    .bk-viz:not(.bk-slide-active) {
+        border-radius: 5px;
+
+        &.tile-size-m {
+            @media @bk-phone {
+                width: 100%;
+            }
+
+            @media @bk-desktop, @bk-widescreen {
+                width: 49.5%;
+            }
+
+            .bk-viz-inner-container {
+                &:before {
+                    padding-top: 89.5%;
+                }
+            }
+        }
+
+        &.tile-size-l {
+            @media @bk-phone, @bk-desktop, @bk-widescreen {
+                width: 100%;
+            }
+
+            .bk-viz-inner-container {
+
+                &:before {
+                    content:'';
+                    padding-top: 42.6%;
+                }
+            }
+        }
+
+        &.bk-alternate-viz-style {
+            &.tile-size-l {
+                @media @bk-phone, @bk-desktop, @bk-widescreen {
+                    width: 100%;
+                }
+
+                .bk-viz-inner-container {
+
+                    &:before {
+                        content:'';
+                        padding-top: 55%;
+                    }
+                }
+            }
+        }
+
+
+        .bk-viz-details {
+            background-color: @grey1;
+            font-size: 18px;
+            font-family: "Semibold";
+            font-weight: 600;
+            line-height: 24px;
+            color: @h-black2;
+            padding: 10px 60px 10px 20px;
+        }
+        //TODO: Understand why this container is needed to render a3 viz
+        //elements. Without the container the a3 tiles render improperly,
+        //with them the answer tiles render improperly.
+        .bk-viz-inner-container {
+            position: relative;
+
+            padding: 0 10px 20px 10px;
+            background-color: @grey1;
+            display: flex;
+
+            &:before {
+                content:'';
+                padding-top:89.5%;
+                float:left;
+            }
+        }
+
+        .bk-viz-inner {
+            position: relative;
+
+            .bk-viz-content {
+                position: relative;
+                .bk-viz-chart {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+
+    .bk-viz.bk-slide-active {
+        .bk-viz-inner-container {
+            .bk-vertical-flex-container-sized;
+            .bk-viz-inner {
+                position: absolute !important;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+            }
+        }
+    }
+}
+
+.bk-insightful-pinboard {
+
+}
+
+.bk-viz-details-title-info {
+    .retina-light-13-grey5;
+    text-align: right;
+}

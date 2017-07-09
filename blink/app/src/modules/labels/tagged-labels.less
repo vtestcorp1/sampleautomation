@@ -1,0 +1,103 @@
+@import '/resources/css/import.less';
+
+.bk-tagged-labels {
+    width: 220px;
+    line-height: 15px;
+    margin-top: 15px;
+
+    &.bk-with-multiple-rows {
+        margin-top: 10px;
+    }
+
+    .bk-tagged-label {
+        display: inline-block;
+        position: relative;
+        margin-right: 3px;
+        padding: 0;
+        padding-right: 5px;
+        padding-left: 10px;
+        max-width: 75px;
+        line-height: 13px;
+        vertical-align: middle;
+        border-radius:20px;
+        font-size: 11px;
+        .font-family-semibold();
+
+
+        &:hover {
+            &.bk-deletable {
+                .bk-delete {
+                    display: inline-block;
+                    opacity: 0.5;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        &.bk-deletable {
+            padding-right: 20px;
+        }
+
+        .bk-label-text {
+            display: inline-block;
+            width: 100%;
+            vertical-align: middle;
+        }
+
+        .bk-delete {
+            position: absolute;
+            top:1px;
+            right: 7px;
+            opacity: 0.4;
+            font-size: 15px;
+            .font-family-bold();
+        }
+    }
+
+    .bk-show-more {
+        font-size: 24px;
+    }
+
+    .dropdown {
+        .dropdown-menu {
+            @LABEL_MENU_MAX_HEIGHT: 160px;
+            max-height: @LABEL_MENU_MAX_HEIGHT;
+            padding-bottom: 8px;
+
+            .bk-label-rows-container {
+                max-height: @LABEL_MENU_MAX_HEIGHT;
+                overflow-y: scroll;
+                box-shadow: inset 0 -1px 2px rgba(0, 0, 0, 0.05);
+            }
+
+            .bk-label-row {
+                padding: 0 10px;
+                line-height: 20px;
+                font-size: 11px;
+                font-family: @font-family-semibold;
+
+                .bk-color-indicator {
+                    display: inline-block;
+                    width:8px;
+                    height:8px;
+                    border-radius:20px;
+                    margin-right: 10px;
+                }
+
+                .bk-clickable {
+                    opacity: 0;
+                }
+
+                &:hover {
+                    background-color: @gray-hover-light;
+                    .bk-clickable {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+<div class="bk-multi-section"
+     ng-keypress="$ctrl.keyPressed($event)"
+     ng-click="$ctrl.onClick($event)"
+     ng-mousedown="$ctrl.onMouseDown($event)"
+     ng-mouseenter="$ctrl.onMouseEnter()"
+     ng-mouseleave="$ctrl.onMouseLeave()">
+
+    <div class="bk-sections">
+       <bk-multi-expandable-section class="bk-section-container"
+               bk-ctrl="section"
+               ng-repeat="section in $ctrl._sections track by $index">
+       </bk-multi-expandable-section>
+    </div>
+</div>

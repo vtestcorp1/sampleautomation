@@ -1,0 +1,40 @@
+<div class="bk-worksheet" blink-on-escape="onEscape()">
+    <div ng-hide="noData || isReadOnly()" class="bk-worksheet-actions">
+        <bk-secondary-button text="{{ strings.DELETE }}"
+                             icon="bk-style-icon-delete"
+                             is-disabled="!isAnyRowSelected()"
+                             ng-click="onClickBulkDelete()"
+                             class="bk-delete-action"></bk-secondary-button>
+        <bk-secondary-button text="{{ strings.worksheets.ADD_PREFIX }}"
+                             icon="bk-style-icon-degree"
+                             is-disabled="!isAnyRowSelected()"
+                             ng-click="onClickBulkAddPrefix()"
+                             class="bk-add-prefix-action"></bk-secondary-button>
+    </div>
+    <div ng-show="isCorrupt()"
+         class="bk-warning-message">
+        <span>{{ getCorruptWorksheetWarningMessagePrefix() }}</span>
+        <span class="bk-warning-message-action-link" ng-click="onRemoveAllBrokenColumnsClick()">
+            {{ getCorruptWorksheetWarningLinkActionMessage() }}
+        </span>
+        <span>{{ getCorruptWorksheetWarningMessageSuffix() }}</span>
+    </div>
+    <div ng-hide="noData" class="bk-table-container" ng-class="{'bk-read-only': isReadOnly()}"></div>
+    <div ng-show="noData" class="bk-no-content-placeholder">{{ 'No data to display' | l10n }}</div>
+
+    <script type="text/ng-template" id="worksheet-column-tooltip">
+        <div>
+            <div>{1}:</div>
+            <div>{2}</div>
+        </div>
+    </script>
+
+    <script type="text/ng-template" id="worksheet-formula-column-table">
+        <div>{1}:</div>
+        <div>{2}</div>
+    </script>
+
+    <script type="text/ng-template" id="worksheet-formula-column-row">
+        <div>{1}</div>
+    </script>
+</div>

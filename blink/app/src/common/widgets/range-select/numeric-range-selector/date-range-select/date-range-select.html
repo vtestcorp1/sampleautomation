@@ -1,0 +1,51 @@
+<div class="bk-range-select">
+    <div class="bk-range-select-row bk-range-select-first-operator">
+        <div class="bk-select-box">
+            <select class="bk-op-selector"
+                    ng-model="selectedFirstOperatorOption"
+                    ng-options="option.label for option in firstOperatorOptions track by option.operator"
+                    ng-change="onFirstOperatorChange()"
+                    ng-disabled="isReadOnly"
+                    chosen
+                    data-width="54"></select>
+        </div>
+        <input type="text"
+               bs-datepicker
+               date-format="{{dateFormat}}"
+               placeholder="{{getPlaceholderText()}}"
+               today-btn="true"
+               today-highlight="true"
+               ng-model="rangeDefinition.firstOperand"
+               ng-disabled="isReadOnly"
+               ng-readonly="isReadOnly"
+               data-date-type="string"
+               class="bk-value-selector"
+               blink-on-enter="firstOperandOnEnter()"
+               blink-on-escape="firstOperandOnEscape()"/>
+    </div>
+    <div class="bk-range-select-row bk-range-select-second-operator">
+        <div class="bk-select-box">
+            <select ng-disabled="disableSecondOperator || isReadOnly"
+                    class="bk-op-selector"
+                    ng-model="selectedSecondOperatorOption"
+                    ng-change="onSecondOperatorChange()"
+                    ng-options="option.label for option in secondOperatorOptions track by option.operator"
+                    chosen
+                    data-width="54"></select>
+        </div>
+        <input type="text"
+               bs-datepicker
+               date-format="{{dateFormat}}"
+               placeholder="{{getPlaceholderText()}}"
+               today-btn="true"
+               today-highlight="true"
+               ng-model="rangeDefinition.secondOperand"
+               ng-disabled="isReadOnly"
+               ng-readonly="disableSecondOperator || isReadOnly"
+               data-date-type="string"
+               class="bk-value-selector"
+               blink-on-enter="secondOperandOnEnter()"
+               blink-on-escape="secondOperandOnEscape()"
+               ng-click="autoSelectSecondOperator()"/>
+    </div>
+</div>

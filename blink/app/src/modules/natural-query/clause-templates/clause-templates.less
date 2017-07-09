@@ -1,0 +1,30 @@
+.bk-clause-template {
+    li {
+        .font-family-regular();
+        .text-size-small;
+
+        position: relative;
+        padding-left: 6px;
+        margin-left: 10px;
+        list-style: none;
+
+        &:before {
+            position:absolute;
+            display:block;
+            width: 5px;
+            height: 8px;
+            left: -8px;
+            top: 5px;
+            content: " ";
+            background: url('/resources/img/icons-menu.png') -41px -70px no-repeat;
+        }
+    }
+
+    .bk-table {
+        font-size: 10px;
+    }
+
+    .bk-join-name {
+        font-style: italic;
+    }
+}

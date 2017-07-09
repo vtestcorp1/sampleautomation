@@ -1,0 +1,57 @@
+<div class="bk-dialog" ng-click="$event.stopPropagation();">
+        <div class="modal-header">
+            <a class="bk-close" ng-click="$ctrl.dismiss()">&times;</a>
+            <h3>{{ $ctrl.data.title }}</h3>
+        </div>
+        <div class="modal-body" ng-show="!!$ctrl.data.customBodyUrl" ng-include="$ctrl.data.customBodyUrl"></div>
+        <div class="modal-body" ng-hide="!!$ctrl.data.customBodyUrl">
+            <div ng-show="!$ctrl.processingAsyncConfirm && !$ctrl.asyncConfirmError" ng-bind-html="$ctrl.data.message"></div>
+            <div class="async-confirm-error-message"
+                 ng-show="!$ctrl.processingAsyncConfirm && !!$ctrl.asyncConfirmError && !$ctrl.data.showErrorOnFooter"
+                 ng-bind-html="$ctrl.asyncConfirmError.message"></div>
+            <div ng-show="!!$ctrl.processingAsyncConfirm">
+                <div class="bk-modal-loading-indicator" blink-loading-indicator></div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="bk-req-field-statement" ng-show="!!$ctrl.data.hasAnyRequiredField && (!$ctrl.data.showErrorOnFooter || !$ctrl.asyncConfirmError)">
+                {{strings.REQUIRED_FIELD}}
+            </div>
+            <div class="bk-error-message" ng-hide="!$ctrl.data.showErrorOnFooter">
+                <div ng-show="!$ctrl.processingAsyncConfirm && !!$ctrl.asyncConfirmError">
+                    {{$ctrl.asyncConfirmError.message}}.
+                    <a ng-if="!!$ctrl.asyncConfirmError.custom$ctrl.data.traceId"
+                       ng-click="$ctrl.asyncConfirmError.custom$ctrl.data.downloadTrace(traceId)">{{strings.DOWNLOAD_TRACE}}</a>
+                </div>
+            </div>
+            <div class="bk-modal-action-buttons">
+                <bk-secondary-button text="{{ $ctrl.data.cancelBtnLabel || strings.CANCEL }}"
+                                     is-disabled="!!$ctrl.data.disableCancelBtn"
+                                     ng-hide="$ctrl.data.skipCancelBtn"
+                                     ng-click="$ctrl.cancelBtnClick()"
+                                     class="bk-cancel-button"
+                                     blink-tooltip="{{ $ctrl.data.cancelTooltip }}"></bk-secondary-button>
+                <div ng-switch="!!$ctrl.data.onConfirmAsync" class="bk-modal-confirmation-buttons">
+                    <div ng-switch-when="true">
+                        <bk-secondary-button text="{{ $ctrl.data.confirmBtnLabel || strings.CONFIRM }}"
+                                             is-disabled="$ctrl.processingAsyncConfirm"
+                                             ng-hide="$ctrl.data.skipConfirmBtn"
+                                             ng-click="$ctrl.confirmSync()"
+                                             class="bk-confirm-btn"></bk-secondary-button>
+                        <bk-primary-button text="{{ $ctrl.data.confirmAsyncBtnLabel }}"
+                                             is-disabled="$ctrl.processingAsyncConfirm || $ctrl.isConfirmDisabled()"
+                                             is-busy="$ctrl.processingAsyncConfirm"
+                                             ng-click="$ctrl.confirmAsync()"
+                                             class="bk-confirm-async-btn"></bk-primary-button>
+                    </div>
+                    <div ng-switch-when="false">
+                        <bk-primary-button text="{{ $ctrl.data.confirmBtnLabel || strings.CONFIRM }}"
+                                           is-disabled="$ctrl.processingAsyncConfirm || $ctrl.isConfirmDisabled()"
+                                           ng-hide="$ctrl.data.skipConfirmBtn"
+                                           ng-click="$ctrl.confirmSync()"
+                                           class="bk-confirm-async-btn"></bk-primary-button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

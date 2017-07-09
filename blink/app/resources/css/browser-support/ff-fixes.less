@@ -1,0 +1,29 @@
+//  Copyright: ThoughtSpot Inc. 2013-2016
+//  Author: Shashank Singh (sunny@thoughtspot.com)
+//
+//  @fileoverview Bug fixes for Firefox
+
+@import '/resources/css/import.less';
+
+// All the following fixes apply to FF
+.ff {
+    .hidden-arrow-select {
+        //http://stackoverflow.com/a/18317228
+        -moz-appearance: none;
+        text-indent: 0.01px;
+        text-overflow: '';
+    }
+
+    .bk-viz-headline .bk-summary select.bk-headline-aggregate {
+        .hidden-arrow-select
+    }
+
+    .bk-range-filter {
+        .bk-filter-op-selector {
+            width: 55px;
+            padding-left: 5px;
+            .hidden-arrow-select
+        }
+    }
+}
+

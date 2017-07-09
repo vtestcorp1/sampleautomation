@@ -1,0 +1,47 @@
+.bk-embed-page {
+    .bk-vertical-flex-container-sized;
+}
+
+.bk-embed {
+    .bk-vertical-flex-container-sized;
+    .flex-justify(center);
+    .flex-align(center);
+
+    .bk-embed-content-container{
+        position: relative;
+        .bk-vertical-flex-container-sized;
+        width: 100%;
+
+        .bk-pinboard-page {
+            .bk-vertical-flex-container-sized;
+
+            &.single-viz-mode {
+                .tile-container {
+                    // Packery puts height of the container on the `element`
+                    // based on the size of the vizs. In case of embeds we
+                    // fix the container to take the size of the embedded frame.
+                    height: 100% !important;
+
+                    .tile {
+                        width: 100%;
+                        max-height: 100%;
+                        // We put the left position on the element
+                        // while doing layout, this is done to override that.
+                        left: 0% !important;
+                    }
+                }
+            }
+
+            .bk-app-canvas-module-inner {
+                position: relative;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    .bk-embed-powered-by-ts-ribbon {
+        .bk-powered-footer-layout();
+        .bg-grey1;
+    }
+}

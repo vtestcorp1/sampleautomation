@@ -1,0 +1,27 @@
+.bk-manage-sources {
+    position: relative;
+    display: inline-block;
+
+    .bk-sources-popover {
+        position: absolute;
+        top: -11px;
+        left: 100%;
+        z-index: 2;
+
+        .bk-arrow-left {
+            position: absolute;
+            top: 16px;
+            left: -9px;
+            width: 0; height: 0;
+            border: 10px solid transparent;
+            border-right-color: @black-bg-lighter;
+        }
+
+        .bk-sources-popover-inner {
+            background-color: white;
+            width: 700px;
+            margin-left: 10px;
+            box-shadow: 0 0 20px @bg-shadow;
+        }
+    }
+}

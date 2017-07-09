@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>worksheet-shape-sm</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="worksheet-shape" fill="#333333">
+            <path d="M0,4 L4,4 L4,14 L1.0093689,14 C0.451909848,14 0,13.5443356 0,13.0046024 L0,4 Z M5,2 L9,2 L9,14 L5,14 L5,2 Z M10,0 L14,0 L14,12.9931545 C14,13.5492199 13.5566468,14 12.9906311,14 L10,14 L10,0 Z" id="answer-shape"></path>
+        </g>
+    </g>
+</svg>

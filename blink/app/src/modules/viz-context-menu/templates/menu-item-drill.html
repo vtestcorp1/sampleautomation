@@ -1,0 +1,21 @@
+<div class="bk-drill-sub-menu context-sub-menu" ng-controller="MenuItemDrillController">
+    <div class="context-sub-menu-title-container"
+         ng-click="toggleDrillOptions()">
+        <div class="bk-icon bk-style-icon-drill-down"></div>
+{{strings.Drill_down}}
+</div>
+    <div ng-show="showDrillOptions" class="bk-drill-content-container">
+        <div class="bk-search-wrapper">
+            <div class="bk-search-icon"></div>
+            <input type="text" ng-model="itemFilter" spellcheck="false" blink-auto-focus ng-change="handleDrillSearch(itemFilter)">
+        </div>
+        <div class="bk-items">
+            <li ng-repeat="item in items | filter:itemFilter" ng-click="handleDrillCompletionClick(item)"
+                blink-tooltip="{{item.tooltipText}}" class="bk-item">
+                {{ item.tokenText }}
+                <span class="bk-lineage bk-right">{{ item.lineage }}</span>
+                </li>
+            <li class="bk-no-select" ng-show="!(items | filter:itemFilter).length">{{strings.No_matches}}</li>
+        </div>
+    </div>
+</div>

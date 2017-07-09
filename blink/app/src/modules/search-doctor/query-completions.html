@@ -1,0 +1,20 @@
+<div class="bk-expandable-list bk-query-completions">
+    <div class="bk-list-title">{{strings.Did_you2}}</div>
+    <div class="bk-list-content" ng-show="!!queryCompletions.length">
+        <div blink-paged-repeat="item in queryCompletions" model="queryCompletions" page-size="10" allow-expansion="true">
+            <div class="bk-list-row" ng-click="onItemClick(item)">
+                <div class="bk-icon bk-style-icon-search"></div>
+                <div class="bk-row-content">
+                    <span class="prefix-token">{{item.getPrefixTokensQueryString()}}</span>
+                    <span ng-class="{'suffix-token': !item.getSearchText(), 'new-token': !!item.getSearchText()}"
+                          ng-bind-html="item.getNewTokensQueryString() | blinkHighlight:item.getSearchText():'matched-substring'">
+                    </span>
+                    <span class="lineage" ng-bind-html="getLineageDropdown(item, false, queryCompletions)"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bk-empty-list" ng-show="!queryCompletions.length">
+{{strings.NO_DATA}}
+</div>
+</div>

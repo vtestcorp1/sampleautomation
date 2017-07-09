@@ -1,0 +1,117 @@
+<div class="bk-sharable-item {{ customClasses }}" ng-show="!shouldShowSage() || isSageBarReady"
+     ng-class="{'bk-with-sage-data': shouldShowDataPanel && isDataPanelNeeded(),
+           'bk-with-comment-panel': isCommentPanelExpanded() && isCommentable()}">
+
+    <div ng-if="isDataPanelNeeded()"
+         class="bk-sage-data-container"
+         ng-hide="isDataPanelExplicitlyCollapsed()"
+         ng-class="{'bk-show-above-overlay': showDataPanelAboveOverlay(),
+            show: isDataPanelExplicitlyExpanded()}"
+         resizable r-directions="['right']"
+         r-flex="true"
+         r-end="reflowContent(info)">
+        <sage-data config="config"
+                   sources-change-callback="onDataSourcesChanged"
+                   column-panel-component-config="config.columnPanelComponentConfig"
+                   on-header-click-callback="panelHeaderClicked">
+        </sage-data>
+    </div>
+
+    <div class="bk-sharable-item-inner"
+         ng-class="{'bk-with-sage-bar': shouldShowSage()}">
+        <div class="bk-sharable-item-container"
+             ng-class="{ 'bk-scale-up-animation': needsScaleUpAnimation(),
+                'unsaved-document': !config.model.isCreatedOnServer() }"
+             blink-on-animation-end="scaleUpAnimationDone()"
+             ng-controller="DocumentController"
+             ng-switch="config.shouldShowPlaceholderContainer()"
+             ng-if="!isSearchDoctorRequired">
+            <bk-empty-page-placeholder ng-switch-when="true"
+                                    bk-ctrl="emptyPagePlaceholderComponent">
+            </bk-empty-page-placeholder>
+            <div ng-switch-when="false"
+                 class="bk-sharable-content-container">
+                <div class="bk-missing-underlying-label"
+                     ng-show="!underlyingLabelClose &&
+                        config.permission &&
+                        config.permission.isMissingUnderlyingAccess()">
+                    {{ getMissingUnderlyingAccessMessage() }}
+                    <span class="bk-close" ng-click="underlyingLabelClose = true">×</span>
+                </div>
+                <div class="bk-missing-underlying-label"
+                     ng-show="config.model && config.model.hasAnyEditorialWarnings()">
+                    {{ config.model.getEditorialWarnings() }}
+                </div>
+
+                <bk-share-dialog
+                        ng-if="showShareDialog"
+                        bk-ctrl="shareDialogComponent">
+                </bk-share-dialog>
+                <div class="bk-sharable-item-content-container">
+                    <div class="sharable-item-panel" ng-lazy-show="showPanel()">
+                        <div class="bk-sharable-item-title bk-editable-title"
+                             ng-show="!config.hideTitle">
+                            <div blink-content-editable
+                                 not-editable="!isTitleEditingAllowed()"
+                                 fullspan before-edit-mode="shouldAllowInPlaceTitleEditing()"
+                                 placeholder="getPlaceholder()"
+                                 validate-input="validate()"
+                                 ng-model="documentTitle.name"
+                                 description="documentTitle.desc">
+                            </div>
+                        </div>
+                        <div ng-include="getPluginUrl()"
+                             class="bk-control-panel-item"
+                             ng-class="{'bk-left-aligned': !!pluginConfig.leftAlign}">
+                        </div>
+                        <div ng-if="config.showAuthor()"
+                             class="bk-control-panel-item bk-control-panel-author">
+                            <blink-author answer-model="config.model"></blink-author>
+                        </div>
+                        <div class="bk-control-panel-item bk-style-icon-comments bk-btn"
+                             blink-tooltip="Comment"
+                             ng-click="toggleCommentPanel()"
+                             ng-if="isCommentable()">
+                        </div>
+                        <bk-expiration-button class="bk-control-panel-expiration"
+                                              bk-ctrl="expirationButtonComponent"
+                                              ng-if="config.showTTLTimer">
+                        </bk-expiration-button>
+                        <bk-action-button-dropdown menu="config.actionMenuConfig"
+                                                   busy="config.isActionMenuBusy()"
+                                                   class="bk-control-panel-item"
+                                                   ng-if="config.actionMenuConfig">
+                        </bk-action-button-dropdown>
+                    </div>
+                    <div class="content-container">
+                        <div ng-if="showRibbon()"
+                             ng-include="getRibbonUrl()"
+                             class="ribbon-item">
+                        </div>
+                        <div ng-include="getContentUrl()" class="sharable-item-content"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bk-comment-panel-container" ng-if="isCommentPanelExpanded()">
+        <comment model="config.model"></comment>
+    </div>
+
+    <div class="bk-generic-overlay" ng-show="showOverlay"></div>
+    <div class="bk-progress-indicator"
+         ng-show="$root.workingIndicator && $root.workingIndicator.enabled">
+        <span>{{ $root.workingIndicator.text }}</span>
+        <div class="bk-moving-dots">
+            <div class="bk-dot dot1"></div>
+            <div class="bk-dot dot2"></div>
+            <div class="bk-dot dot3"></div>
+            <div class="bk-dot dot4"></div>
+        </div>
+    </div>
+    <div class="bk-query-progress-anchor"></div>
+    <div class="bk-query-latency-visualizer-container" ng-show="showQueryLatencyVisualizer()">
+        <div query-latency-visualizer></div>
+    </div>
+</div>

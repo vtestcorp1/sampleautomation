@@ -1,0 +1,8 @@
+{
+    permissions: {
+        "1": "CAN_VIEW",
+        "2": "CAN_VIEW",
+        "11": "CAN_EDIT",
+        "12": "CAN_EDIT"
+    }
+}

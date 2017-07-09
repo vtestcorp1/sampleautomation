@@ -1,0 +1,31 @@
+<div class="bk-join-disambiguation">
+    <div class="bk-column bk-column-one-third">
+        <div ng-show="$ctrl.canShowHistory()">
+            <div class="bk-heading">{{strings.You_have}}</div>
+            <div class="bk-clickable bk-mjp-previous-list bk-overflow-ellipsis"
+                 ng-class="{'bk-selected': $ctrl.item.question == $parent.question}"
+                 ng-repeat="item in $ctrl.previousSelections"
+                 ng-click="$ctrl.selectItemFromHistory(item)">
+                <span class="bk-icon bk-style-icon-checkmark bk-text-green"></span>
+                <span class="bk-label">{{ item.text }}</span>
+            </div>
+        </div>
+    </div>
+    <div class="bk-column bk-column-two-third">
+        <div ng-show="$ctrl.question.options.length" class="bk-mjp-question">
+            <div class="bk-heading" ng-show="$ctrl.question.prefaceText">{{$ctrl.question.prefaceText }}<br></div>
+            <div class="bk-heading" ng-hide="$ctrl.question.prefaceText">
+                <span>{{$ctrl.strings.terminalToken_confirmation.assign({
+                          terminal_Token: $ctrl.question.terminalToken
+                      })}}
+                </span>
+            </div>
+            <div class="bk-mjp-options">
+                <div class="bk-mjp-option" ng-repeat="radioBtnCtrl in $ctrl.question.optionCtrls">
+                    <bk-radio-button bk-ctrl="radioBtnCtrl"></bk-radio-button>
+                    <div class="bk-radio-label-secondary" ng-show="option.showTableName">&nbsp;({{ option.tableName }})</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

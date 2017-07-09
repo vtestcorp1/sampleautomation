@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en" ng-app="blink.app">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+
+    <title>ThoughtSpot</title>
+
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="resources/img/logo/favicon_3.ico">
+
+    <script type="text/javascript">
+        // Top level namespace var declaration
+        var blink = {};
+        blink.env = {
+            // to override any env.js var
+        };
+        blink.commitId = '@@commitId';
+        blink.gitBranch = '@@gitBranch';
+        blink.buildTimeStamp = '@@buildTimeStamp';
+        blink.translationsPath = './resources/strings/translations/';
+    </script>
+    <!-- include: "type": "css", "files": @@DEV_CSS -->
+    <!-- include: "type": "js", "files": @@LIB_JS -->
+    <script>
+        var locale = blink.getAppLocale();
+        blink.localeSuffix = '';
+        var translations =
+            blink.translationsPath + 'strings-' + locale + blink.localeSuffix;
+        System.config({
+            baseURL: 'node_modules',
+            packages: {
+                './.tmp/ts-out/src': {
+                    format: 'system',
+                    defaultExtension: 'js'
+                },
+                './resources/strings/translations': {
+                    format: 'system',
+                    defaultExtension: 'js'
+                }
+            },
+            packageConfigPaths: ['./node_modules/*/package.json'],
+            map: {
+                'src' : './.tmp/ts-out/src',
+                'translations': translations
+            }
+        });
+        var systemImports = System.import('src/base/pattern-bootstrap');
+    </script>
+    <!-- include: "type": "js", "files": @@APP_JS -->
+    <script>
+        systemImports.then(function (bootstrap) {
+            bootstrap.startPatternLibrary();
+            console.log('scripts loaded');
+        });
+    </script>
+    <!-- NOTE(vibhor): In dev mode, we don't really care about the template being served as modules, so create an
+         empty one because the main app depends on presence of a module named 'templates' -->
+    <script>
+        angular.module('resourceCache', []);
+        angular.module('templates', []);
+        angular.module('resourceCache', []);
+    </script>
+</head>
+    <body>
+        <!-- Include your test html file here. -->
+    <div class="bk-pattern-library-root" ng-controller="styleGuideController">
+        <bk-style-guide class="bk-pattern-library-body" ng-if="isAppReady()"></bk-style-guide>
+    </div>
+    </body>
+</html>
+

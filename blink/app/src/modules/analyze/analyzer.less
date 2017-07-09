@@ -1,0 +1,106 @@
+.bk-analyze-header-mixin {
+  .font-family-semibold;
+  font-size: 24px;
+  color: @grey8;
+  letter-spacing: 0.5px;
+}
+
+.bk-analyze-red-color {
+  color: #FA342D; // red
+}
+
+.bk-analyze-green-color {
+  color: #46C27C; // green
+}
+
+.bk-analyze-flex-left {
+  .flex-grow-shrink-basis(5, 0, 0);
+}
+
+.bk-analyze-flex-right {
+  .flex-grow-shrink-basis(3, 0, 0);
+}
+
+.bk-analyze {
+  .bk-vertical-flex-container-sized;
+  padding: 0px 10px 0px 10px;
+
+  .bk-analyze-header {
+    .bk-analyze-header-title {
+      .bk-horizontal-flex-container-sized;
+      .bk-analyze-header-suggestion {
+        .bk-analyze-flex-left;
+        .bk-analyze-header-mixin;
+      }
+      .bk-analyze-save-btn {
+        .bk-analyze-flex-right;
+      }
+    }
+    .bk-analyze-header-description {
+      padding: 5px 0px 20px 0px;
+    }
+  }
+
+  .bk-analyze-body {
+    .bk-vertical-flex-container-sized;
+    overflow-y: scroll;
+    a {
+      color: #5c9df5;
+    }
+
+    .bk-analyzer {
+      padding-bottom: 20px;
+
+      .bk-analyzer-header {
+        font-size: 18px;
+        .font-family-semibold;
+        color: @grey8;
+        letter-spacing: 0.4px;
+      }
+
+      .bk-analyzer-body {
+
+        .bk-analyzer-status {
+          font-size: 14px;
+          padding-top: 7px;
+          .font-family-semibold;
+          .bk-analyzer-status-pass {
+            .bk-analyze-green-color;
+          }
+          .bk-analyzer-status-fail {
+            .bk-analyze-red-color;
+          }
+        }
+
+        .bk-analyzer-description {
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+
+        .bk-analyzer-content {
+          .bk-input {
+            margin-bottom: 0px;
+            height: 25px;
+            font-size: 1em;
+            align-content: center;
+            .font-family-regular();
+            border-radius: 3px;
+
+            &:focus {
+              border: 1px solid @blue-default;
+              .box-shadow-inset(inset 0 1px 4px @input-inner-shadow, 0 1px 0 @inner-shadow);
+            }
+          }
+
+          .bk-analyzer-input {
+            .bk-analyze-flex-left;
+            padding-right: 40px;
+          }
+          .bk-analyzer-status {
+            .bk-analyze-flex-right;
+          }
+        }
+      }
+    }
+  }
+}

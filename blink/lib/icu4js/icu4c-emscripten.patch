@@ -1,0 +1,28 @@
+diff --git a/source/config/mh-darwin b/source/config/mh-darwin
+index 97d6bfc..bb91e57 100644
+--- a/source/config/mh-darwin
++++ b/source/config/mh-darwin
+@@ -17,7 +17,8 @@ LIBCXXFLAGS += -fvisibility=hidden
+ LD_FLAGS += -headerpad_max_install_names
+ 
+ # We do not need to see the stderr message that the archive was made.
+-ARFLAGS += -c
++# emscripten does not support -c on AR
++#ARFLAGS += -c
+ 
+ ## Commands to compile
+ COMPILE.c=	$(CC) $(DEFS) $(CPPFLAGS) $(CFLAGS) -fno-common -c
+diff --git a/source/extra/uconv/Makefile.in b/source/extra/uconv/Makefile.in
+index e8cd6cf..661d9ca 100644
+--- a/source/extra/uconv/Makefile.in
++++ b/source/extra/uconv/Makefile.in
+@@ -47,7 +47,8 @@ CPPFLAGS += -DUNISTR_FROM_CHAR_EXPLICIT=explicit -DUNISTR_FROM_STRING_EXPLICIT=e
+ LIBS = $(LIBICUI18N) $(LIBICUUC) $(DEFAULT_LIBS) $(LIB_M)
+ 
+ ifeq ($(PKGDATA_OPTS),)
+-PKGDATA_OPTS = -O pkgdata.inc
++## --without-assembly needed for emscripten
++PKGDATA_OPTS = -O pkgdata.inc --without-assembly
+ endif
+ 
+ ## generic settings for data - common.

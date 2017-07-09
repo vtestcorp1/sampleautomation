@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "system",
+        "moduleResolution": "node",
+        "baseUrl": "./app",
+        "noImplicitAny": false,
+        "removeComments": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "sourceMap": true,
+        "lib" : ["es5", "es6", "dom"],
+        "outDir": "app/.tmp/ts-out",
+        "paths": {
+            "translations": ["resources/strings/strings"]
+        }
+    },
+    "include": [
+        "app/**/*.ts"
+    ],
+    "compileOnSave": true
+}

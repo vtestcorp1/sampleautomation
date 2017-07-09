@@ -1,0 +1,805 @@
+@import '/resources/css/import.less';
+
+.bk-sage-input-font {
+    .font-family-regular;
+    .text-size-default;
+}
+
+.bk-sage-dropdown-font {
+    .font-family-semibold;
+    .text-size-default;
+}
+
+@pulse-z-index: 10;
+.pulse-frame() {
+    0% {
+        opacity: 1;
+        z-index: @pulse-z-index;
+        -webkit-transform: scale(0.95);
+    }
+
+    35% {
+        -webkit-transform: scale(1.13);
+    }
+
+    50% {
+        -webkit-transform: scale(0.97);
+    }
+
+    65% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+    }
+
+    75% {
+        z-index: @pulse-z-index;
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 0;
+        z-index: 0;
+        -webkit-transform: scale(1);
+    }
+}
+
+// create a named frame 'pulse' for the pulsing effect. Used in sage bar token transformation.
+@-webkit-keyframes pulse {.pulse-frame;}
+@-moz-keyframes pulse {.pulse-frame;}
+@-ms-keyframes pulse {.pulse-frame;}
+@-o-keyframes pulse {.pulse-frame;}
+@keyframes pulse {.pulse-frame;}
+
+.bk-sage {
+    z-index: @sage-bar-z-index;
+    height: @sage-height;
+    .font-family-regular();
+    .transition(~"all 100ms ease-out");
+
+    .bk-sage-inner {
+        height: 40px;
+        background-color: @sage-bg;
+        border-radius:3px;
+        border: 1px solid @sage-border;
+        .box-shadow-inset(0 1px 0 @sage-shadow, inset 0 1px 4px @sage-inner-shadow);
+    }
+
+    &.bk-active {
+        .bk-sage-inner {
+            border: 1px solid @blue-default;
+            .transition(~"border 200ms ease-in");
+        }
+    }
+
+    &.bk-read-only-sage {
+        background-color: @gray-bg;
+        opacity: 0.8;
+
+        .bk-sage-bar {
+            top: 0;
+
+            .bk-icon {
+                display: block;
+                position: absolute;
+                top: 9px;
+                left: 8px;
+            }
+        }
+    }
+
+    .bk-sage-bar {
+        position: relative;
+        top: -16px;
+        height: @sage-height;
+        margin-left: 2px;
+        margin-bottom: 0;
+        margin-right: 10px;
+        padding-left: 13px;
+        font-size: 18px;
+
+        .bk-sage-search-icon {
+            display: block;
+            position: absolute;
+            top: 13px;
+            left: 10px;
+            width: 13px;
+            height: 13px;
+            background-image: url('/resources/img/search-icon.png');
+            background-repeat: no-repeat;
+            border: 1px solid transparent;
+
+            &.bk-pressed {
+                .box-shadow(none) !important;
+            }
+
+            &.bk-error-exists, &.bk-warning-exists  {
+                top: 10px;
+                left: 7px;
+                width: 18px;
+                height: 18px;
+                background-image: url('/resources/img/icons-alerts.png');
+                background-repeat: no-repeat;
+                border-radius: 100px;
+                .box-shadow-inset( 0 1px 4px @bg-shadow-faint, inset 0px 1px 0px @inner-shadow-faint);
+            }
+
+            &.bk-error-exists {
+                border: 1px solid darken(@red-default, 15%);
+                background-position: -36px 0px;
+                background-color: @red-default;
+            }
+
+            &.bk-warning-exists {
+                border: 1px solid @yellow-darker;
+                background-color: @yellow-default;
+                background-position: -36px 0px;
+            }
+        }
+
+        .bk-sage-input-wrapper {
+            position: absolute;
+            top: -1px;
+            bottom: 0;
+            left: 33px;
+            right: 0px;
+            @SAGE_INPUT_HEIGHT: 20px;
+            // the sage bar has 3 layers. real-input in front, real-input-ghost in middle and ghost-tokens at the back.
+            // real-input-ghost is a readonly input element that mirrors the content of real-input and adds extra text to show the candidate token.
+            // The ghost-tokens layer is a container of ghost-token spans which are to provide the underlines.
+            .bk-sage-real-input, input.bk-sage-real-input-ghost, .bk-sage-ghost-tokens  {
+                position: absolute;
+                width: 100%;
+                height: @SAGE_INPUT_HEIGHT;
+                line-height: @SAGE_INPUT_HEIGHT;
+                .bk-sage-input-font;
+                padding: 7px 0px;
+            }
+
+            .bk-sage-real-input, input.bk-sage-real-input-ghost {
+                margin: 0;
+                margin-top: 4px;
+                color: @sage-text;
+                border: 0;
+                background-color: transparent;
+                .box-shadow(none);
+            }
+
+            input.bk-sage-real-input-ghost {
+                color: @sage-ghost-text;
+
+                // Makes the ghost text invisible
+                &.bk-sage-ghost-hide {
+                    display: none;
+                }
+            }
+
+            // override bootstrap specified style
+            > input:focus {
+                .box-shadow(none);
+            }
+
+            .bk-sage-ghost-tokens {
+                overflow: hidden; // otherwise shows scrollbar in chrome on linux
+
+                .bk-sage-ghost-token, .bk-sage-pulse-token {
+                    display: inline-block; // this is needed for alignment of autoc dropdown
+                    margin-right: 5px;
+                    color: transparent;
+                    height: @SAGE_INPUT_HEIGHT - 1px;  // reduce 1px for the border
+                    top: 10px;
+
+                    &.bk-absolute {
+                        position: absolute;
+                    }
+
+                    &.bk-truncated-token {
+                        background-color: @h-gray1;
+
+                        &:not(hover) {
+                            border-bottom: 1px solid @h-gray1;
+                        }
+                    }
+
+                    &.bk-highlight-active {
+                        border-bottom: 1px solid @green-default;
+                    }
+
+                    &.bk-no-jpath-token {
+                        background-color: @yellow-default;
+                        border-bottom: 1px solid @yellow-default;
+
+                        &:hover {
+                            border-bottom: 1px solid @yellow-default;
+                        }
+                    }
+
+                    &.bk-unrecognized:not(.bk-is-target-of-cursor) {
+                        border-bottom: 1px dashed @gray-secondary-text;
+                    }
+
+                    &.bk-is-target-of-cursor {
+                        border-bottom: 1px solid @gray-secondary-text;
+                    }
+
+                    &.bk-empty {
+                        visibility: hidden;
+                    }
+
+                    &.bk-nostyleinfo {
+                        visibility: hidden;
+                    }
+
+                    &.bk-error {
+                        background-color: @red-transparent;
+                        border-bottom: 1px solid @red-default;
+                        padding-right: 5px; // to extend the underline to the next token so that it looks like a single underline for the whole error phrase
+                        border-top-left-radius: 2px;
+                        border-top-right-radius: 2px;
+                    }
+
+                    &.bk-error-last {
+                        padding-right: 0px;
+                    }
+
+                    &.bk-warning {
+                        background-color: @yellow-default;
+                        border-bottom: 1px solid @yellow-default;
+                        padding-right: 5px; // to extend the underline to the next token so that it looks like a single underline for the whole error phrase
+                        border-top-left-radius: 2px;
+                        border-top-right-radius: 2px;
+                    }
+
+                    &.bk-warning-last {
+                        padding-right: 0px;
+                    }
+                }
+
+                .bk-pulse-container {
+                    &.bk-pulse {
+                        .animation-duration(0.75s);
+                        .animation-fill-mode(both);
+
+                        .animation-name(pulse);
+                    }
+
+                    position: absolute;
+                    padding: 0 4px;
+                    margin-left: -4px;
+                    height: 20px;
+                    line-height: 20px;
+                    margin-top: 2px;
+
+                    background-color: @blue-default;
+                    border: 1px solid @blue-darker;
+                    border-radius: 3px;
+                    .box-shadow-inset(0 1px 3px @bg-shadow-faint-1, inset 0 1px 0 @inner-shadow-faint-1);
+
+                    .bk-sage-pulse-token {
+                        top: 1px;
+                        margin-left: 3px;
+                        color: @white-text;
+                    }
+                }
+            }
+        }
+
+        .bk-sage-dropdown-wrapper {
+            position: relative;
+            z-index: @sage-bar-z-index;
+            top: 43px;
+            height: @sage-dropdown-height;
+            visibility: hidden;
+
+            &.bk-needs-join-path {
+                .bk-sage-data-dropdown-wrapper .bk-header,
+                .bk-sage-data-dropdown-wrapper .bk-header .bk-header-right,
+                .bk-sage-language-dropdown-wrapper .bk-header {
+                    color: transparent;
+                }
+            }
+
+            .bk-sage-language-dropdown-wrapper {
+                position: absolute;
+                width: @sage-language-dropdown-width + 10;
+                top: -10px;
+                bottom: 0px;
+                max-height: @sage-dropdown-height;
+                padding: 2px 1px 5px 1px;
+                margin-top: 30px;
+                border-bottom-right-radius: 4px;
+                background-color: @sage-bg;
+                border-top-color: transparent;
+                border-color: @sage-border;
+                .box-shadow(0 2px 2px @bg-shadow-faint);
+
+                .bk-header {
+                    color: @sage-label-text;
+                    height: @sage-language-dropdown-header-height;
+                    margin-left: 20px;
+                    top: 0px;
+                    padding-bottom:4px;
+                    font-size: 10px;
+                    .font-family-bold();
+                }
+
+                .bk-sage-language-dropdown {
+                    display: inline-block;
+                    width: @sage-language-dropdown-width + 10;
+                    height: @sage-dropdown-height - @sage-language-dropdown-header-height - 5; // needed for the overflow property
+                    margin: 0;
+                    vertical-align: top;
+                    overflow-y: auto;
+
+                    li {
+                        cursor: pointer;
+                        color: @sage-text;
+                        .bk-sage-dropdown-font;
+                        min-height: 22px;
+                        line-height: 25px;
+                        padding-left: 20px;
+                        .transition(~"background-color 200ms ease-out, color 200ms ease-out");
+
+                        &.bk-ui-state-focus {
+                            background-color: @sage-hover-light;
+                            color: @orange-default;
+                            .transition(~"background-color 200ms ease-out, color 200ms ease-out");
+                        }
+
+                        &:hover {
+                            color: @sage-text;
+                            background-color: @sage-hover-light;
+                        }
+                    }
+                }
+            }
+
+            .bk-sage-data-dropdown-wrapper {
+                width: @sage-dropdown-width + 4;
+
+                .bk-header {
+                    top: -3px !important;
+                    height: 13px;
+                    width: @sage-dropdown-width - 12px;
+                    padding-left: 16px;
+                    padding-top: 0px;
+                    padding-bottom:10px;
+                    background-color: @input-bg !important;
+                    border-top-color: transparent;
+                    color: @sage-label-text;
+                    font-size:10px;
+                    .font-family-bold();
+                    .box-shadow(0 2px 3px @bg-shadow-faint);
+
+                    .bk-header-right {
+                        position: absolute;
+                        margin-right: 17px;
+                        top: 0px;
+                        right: 0px;
+                        font-size: 10px;
+                        text-align: right;
+                        .font-family-bold();
+                        color: @sage-label-text;
+                    }
+                }
+
+                .bk-join-choice-btn {
+                    padding: 15px;
+                    padding-top: 0;
+
+                    .bk-label {
+                        font-family: @font-family-semibold;
+                        font-size: 14px;
+                        margin-bottom: 10px;
+                    }
+
+                    .bk-btn {
+                        margin-left: 40px;
+                    }
+                }
+            }
+
+            .bk-sage-explore {
+                position: absolute;
+                padding: 8px 0 4px 17px;
+                height: @sage-data-explorer-link-height;
+                background-color: @sage-bg;
+                border-bottom-left-radius: 4px;
+                z-index: @sage-bar-browse-data-z-index;
+                width: @sage-dropdown-width - 13;
+                .box-shadow(0 2px 2px @bg-shadow-faint);
+                cursor: pointer;
+                border-top: 1px solid @sage-border;
+                .transition(~"background-color 200ms ease-out, color 200ms ease-out");
+                .font-family-bold();
+
+                &:hover {
+                    background-color: @gray-hover-light;
+                    color: @sage-text;
+                    .transition(~"background-color 200ms ease-out, color 200ms ease-out");
+                }
+
+                .bk-sage-explore-icon {
+                    position: absolute;
+                    top: 14px;
+                    right: 17px;
+                    width: 5px;
+                    height: 8px;
+                    text-align: left;
+                    font-size: 11px;
+                    background-image: url('/resources/img/icons-menu.png');
+                    background-repeat: no-repeat;
+                    background-position: -41px -70px;
+                }
+            }
+
+            // overwrite jQuery UI autocomplete styling
+            .ui-autocomplete {
+                top: 20px !important;
+                bottom: @sage-data-explorer-link-height + 13; // it's the 12px of the vertical padding of the explorer link + 1px border
+                overflow-y: auto;
+                max-width: @sage-dropdown-width;
+                width: @sage-dropdown-width;
+                border-radius: 0;
+                border: 0px;
+                border-top-color: transparent;
+                background-color: @input-bg !important;
+                .box-shadow(0 2px 2px @bg-shadow-faint);
+                overflow-x: hidden;
+
+                li a {
+                    .bk-sage-dropdown-font;
+                    min-height: 21px;
+                    line-height: 21px;
+                    padding-left: 15px;
+                    color: @sage-text;
+                    background-color: transparent;
+                    border-radius: 0;
+                    .transition(~"background-color 200ms ease-out, color 200ms ease-out");
+
+                    &.ui-state-focus {
+                        background: @sage-hover-light;
+                        border-radius: 0;
+                        color: @sage-text;
+                        border-color: transparent;
+                        .transition(~"background-color 100ms ease-out, color 100ms ease-out");
+
+                        .bk-light-text {
+                            color: @sage-text;
+                            .transition(~"background-color 100ms ease-out, color 100ms ease-out");
+                        }
+                    }
+
+                    &:hover {
+                        color: @sage-text;
+                    }
+                }
+            }
+
+            // overwrite jQuery ui-widget-content styling
+            .ui-widget-content{
+                background: @sage-bg !important;
+            }
+
+            // overwrite jQuery ui-widget styling
+            .ui-widget{
+                .font-family-regular();
+                font-size: 12px;
+            }
+
+            .bk-formatted-label-and-lineage-wrapper {
+                width: @sage-dropdown-width - 25;
+
+                .bk-lineage-wrapper {
+                    float: right;
+                    margin: 0px 5px;
+                    height: 25px;
+                    color:@sage-lineage-text;
+
+                    .bk-lineage {
+                        display: inline-block;
+                        max-width: 110px;
+                    }
+                }
+
+                .bk-formatted-label, .bk-lineage {
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                .bk-formatted-label {
+                    display: block;
+
+                    .bk-emphasized-text {
+                        .font-family-semibold();
+                    }
+
+                    .bk-light-text {
+                        color: @sage-lineage-text;
+                    }
+                }
+            }
+
+            .bk-close {
+                float: right;
+                width: 19px;
+                height: 19px;
+                text-align: center;
+                background-color: @gray-bg;
+                border-radius: 19px;
+                color: @white-text;
+                font-size: 19px;
+                line-height: 15px;
+                font-weight: bold;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: @gray-hover;
+                }
+            }
+        }
+
+        .bk-boxed-token-layer {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 30px;
+            right: 0px;
+            line-height: 20px;
+            z-index: @sage-bar-z-index + 1;
+            padding: 5px;
+            overflow: hidden;
+            .text-size-default;
+            background-color: white;
+
+            &.bk-expanded {
+                line-height: 16px;
+                padding: 5px;
+            }
+
+            .bk-cross-btn {
+                display: block;
+                position: absolute;
+                z-index: 1;
+                opacity: 0.0;
+                top: -9px;
+                right: -6px;
+                width: 12px;
+                height: 12px;
+                cursor: pointer;
+                text-align: center;
+                background-color: @white-bg;
+                border-radius: 12px;
+                color: @gray-main-text;
+                border: 1px solid @blue-default;
+                line-height: 12px;
+                .transition(~"opacity 200ms ease-in");
+                .font-family-icon();
+                font-size: 5px;
+
+                &:hover {
+                    opacity: 1.0;
+                    color: @white-text;
+                    background-color: @blue-default;
+                }
+            }
+
+            .bk-boxed-token {
+                display: inline-block;
+                position: relative;
+                height: 20px;
+                margin: 4px 5px 0 0;
+                border: 1px solid transparent;
+                border-radius: 2px;
+                cursor: pointer;
+                box-shadow: 0 1px 1px 0px rgba(0, 0, 0, 0.05);
+                background-color: @h-gray;
+                border-color: @h-gray3;
+
+                &.bk-cross-hovered {
+                    border-color: @blue-default !important;
+                }
+
+                .bk-display-text {
+                    display: inline-block;
+                    padding: 0 4px 0 4px;
+                    height: 100%;
+
+                    border: 1px solid transparent;
+                    position: relative;
+                    top: -1px;
+                    left: -1px;
+                    border-radius: 2px;
+                    margin-right: -2px;
+                }
+
+                &.bk-qf-incomplete-phrase,
+                &.bk-qf-undefined-phrase {
+                    .bk-cross-btn {
+                        display: none;
+                    }
+                }
+
+                &:hover:not(.bk-qf-undefined-phrase):not(.bk-cross-hovered) {
+                    .bk-display-text {
+                        background-color: @blue-default !important;
+                        color: white !important;
+                        border-color: @blue-default !important;
+                    }
+
+                    .bk-cross-btn {
+                        opacity: 1.0;
+                    }
+                }
+
+                &:hover:not(.bk-qf-incomplete-phrase):not(.bk-cross-hovered) {
+                    .bk-display-text {
+                        background-color: @blue-default !important;
+                        color: white !important;
+                        border-color: @blue-default !important;
+                    }
+
+                    .bk-cross-btn {
+                        opacity: 1.0;
+                    }
+                }
+
+
+                // TODO(jonathan): There are some colors defined here that should get named mixins in color.less.
+                &.bk-query-fragment-blue {
+                    background-color: rgba(75,126,205,.11);
+                    border-color: #c1d9fb;
+                    color: @gray-main-text;
+                }
+                &.bk-query-fragment-white {
+                    background-color: white;
+                    border-color: #c1d9fb;
+                }
+
+                &.bk-qf-geofilter-phrase,
+                &.bk-qf-filter-phrase,
+                &.bk-qf-having-phrase {
+                    .bk-query-fragment-white();
+                }
+
+                &.bk-qf-aggregated-column-phrase,
+                &.bk-qf-group-by-column-phrase,
+                &.bk-qf-top-bottom-phrase,
+                &.bk-qf-growth-phrase,
+                &.bk-qf-sort-by-phrase,
+                &.bk-qf-for-each-phrase,
+                &.bk-qf-show-column-phrase,
+                &.bk-qf-aggregated-attribute-value-phrase,
+                &.bk-qf-formula-phrase {
+                    .bk-query-fragment-blue();
+                }
+
+                &.bk-qf-incomplete-phrase,
+                &.bk-qf-undefined-phrase {
+                    border: none;
+                    border-bottom: 1px dashed @gray-main-text;
+                    background-color: white;
+                    border-radius: 0;
+                }
+
+                &.bk-qf-stop-word-phrase {
+                    border: none;
+                    box-shadow: none;
+                    background-color: white;
+                    .bk-display-text {
+                      opacity: 0.3;
+                    }
+                }
+            }
+        }
+    }
+
+    .bk-below-sage {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: @sage-height + 1px;
+        bottom: -1 * (@sage-height + 200px);
+
+        &.bk-thinner {
+            bottom: -1 * (@sage-height + 50px);
+        }
+    }
+
+    .bk-join-disambiguation {
+        &.bk-define-join-mapping {
+            padding: 10px 20px;
+        }
+    }
+}
+
+.bk-canvas-state-home .bk-home-sage .bk-sage {
+    top: 115px;
+    width: 765px;
+    margin: 0 auto;
+    height: 60px;
+    border-bottom: none;
+    border-radius: 4px;
+    border: 0px solid transparent;
+    .box-shadow-inset(0 1px 4px @sage-home-shadow, inset 0 -1px 0 @sage-home-inner-shadow);
+
+    .bk-sage-bar {
+        top: -7px;
+        margin-left: 2px;
+        margin-bottom: 0;
+        padding-left: 13px;
+        height: 60px;
+        margin-right: 10px;
+    }
+}
+
+.bk-home-fade-out .bk-sage {
+    top: 50px;
+    left: 20px;
+    height: 40px;
+    width: 100%;
+    border: 1px solid @sage-border;;
+    .box-shadow-inset(0 1px 0 @inner-shadow, inset 0 1px 4px @input-inner-shadow);
+
+    .bk-sage-input-wrapper {
+        position: absolute;
+        top: -11px;
+        bottom: 0;
+        left: 43px;
+        right: 40px;
+    }
+
+    .bk-sage-real-input {
+        opacity: 0.0;
+    }
+
+    .bk-sage-search-icon {
+        top: 3px;
+    }
+}
+
+.bk-sage-input-string-width-calc {
+    display: none;
+    .bk-sage-input-font;
+}
+
+.bk-sage-dropdown-string-width-calc {
+    display: none;
+    .bk-sage-dropdown-font;
+}
+
+.bk-read-only-sage-expanded {
+    .bk-sage {
+        height: 60px;
+        overflow-y: auto;
+
+        .bk-sage-bar {
+            height: 60px;
+        }
+    }
+
+    .bk-infocard-button {
+        height: 44px !important;
+    }
+}
+
+.tooltip.bk-sage-suggestion-tooltip {
+    .tooltip-inner {
+        max-width: 300px;
+        font-size: 11px;
+        text-align: left;
+    }
+}
+
+// Overrides to progressJs library css.
+.bk-query-progress-anchor {
+    >div {
+        height: 3px !important;
+        border-bottom-left-radius: 2px;
+
+        >div {
+            position: absolute;
+            top: 0;
+        }
+    }
+}

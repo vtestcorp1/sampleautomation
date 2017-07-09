@@ -1,0 +1,20 @@
+<div class="bk-multi-font-selector">
+    <div class="bk-multi-font-selector-item-selector">
+        <ui-select ng-model="$ctrl.selectedItem"
+                   search-enabled="false"
+                   allow-clear="false"
+                   on-select="$ctrl.handleItemSelection($item)"
+                   theme="select2">
+            <ui-select-match>
+                <span>{{ $ctrl.getSelectedItemLabel() }}</span>
+            </ui-select-match>
+            <ui-select-choices
+                    repeat="item in $ctrl.getItems()">
+                <span>{{ item.getLabel() }}</span>
+            </ui-select-choices>
+        </ui-select>
+    </div>
+    <div class="bk-multi-font-selector-font-selector">
+        <bk-font-selector bk-ctrl="$ctrl.getFontSelectorComponent()"></bk-font-selector>
+    </div>
+</div>

@@ -1,0 +1,144 @@
+<div class="bk-data-scope bk-sage-data-sources-open" ng-class="{'bk-read-only': panelComponent.isReadOnly()}">
+    <div class="header clearfix">
+        <div class="fl">
+            <span class="bk-text-white">{{strings.Sources}}</span>
+        </div>
+        <div class="fr">
+            <bk-secondary-button text="{{ strings.DONE }}"
+                                 ng-click="panelComponent.collapse()"
+                                 class="close-popover"></bk-secondary-button>
+        </div>
+    </div>
+
+    <div class="body">
+        <div class="left-pane">
+            <div class="body-lt" ng-show="panelComponent.documentHasUnderlyingDataAccess()">
+                <div class="bk-light-text-14px bk-clickable bk-filter"
+                     ng-click="onSelectionFilterChanged(false)"
+                     ng-class="{'bk-selected-filter': !listOfLabelFilters.length && !isSelectedFilterApplied}">{{strings.All}}
+</div>
+                <div class="bk-light-text-14px bk-clickable bk-filter"
+                     ng-click="onSelectionFilterChanged(true)"
+                     ng-class="{'bk-selected-filter': !listOfLabelFilters.length && isSelectedFilterApplied}"><span>{{strings.Selected}}</span>{{ getSelectedSourcesCount() }})
+                </div>
+                <div class="bk-label-container">
+                    <labels-panel readonly
+                                  on-label-click="onLabelClicked($label)"
+                                  ng-model="labelsRegistry"></labels-panel>
+                </div>
+                <div class="bk-explore-data">
+                    <bk-secondary-button text="{{ strings.exploreAllData }}"
+                                         is-disabled="hasAccessToNoDataSources()"
+                                         ng-click="showExplorer()"></bk-secondary-button>
+                </div>
+            </div>
+        </div>
+
+    <div class="right-pane">
+        <div class="header-rt">
+            <div class="fl" ng-switch="!listOfLabelFilters.length && isSelectedFilterApplied">
+                <div ng-switch-when="false" class="bk-select-all" ng-show="hasItems(pageFilter)">
+                    <bk-checkbox bk-ctrl="selectAllCheckboxCtrl"></bk-checkbox>
+                </div>
+                <div ng-switch-when="true" class="bk-clear-selections">
+                    <a class="bk-text-blue"
+                       ng-show="!noItemsSelected(pageFilter)"
+                       ng-click="!clearItemsSelection(pageFilter, $event)">{{strings.Clear_Selections}}</a>
+                </div>
+            </div>
+            <div class="bk-search fr">
+                <input class="bk-search-input" type="text" ng-model="searchText" spellcheck="false"
+                       placeholder="Filter by Name">
+            </div>
+        </div>
+
+            <div class="body-rt">
+                <div ng-switch="getSourcesAvailabilityState()">
+                    <div class="bk-waiting-data-sources" ng-switch-when="WAITING">
+                        <blink-loading-indicator></blink-loading-indicator>
+                    </div>
+                    <div class="bk-no-data-sources" ng-switch-when="ERROR">
+                        <div class="bk-no-tables-message">
+{{strings.Oops_There_was}}
+</div>
+                    </div>
+                    <div class="bk-no-data-sources" ng-switch-when="NONE">
+                        <div class="bk-style-icon-password bk-icon"></div>
+                        <div ng-switch="hasAdminPrivileges" class="bk-no-tables-message">
+                            <div ng-switch-when="true">{{strings.There_is_no}}</div>
+                            <div ng-switch-when="false">{{strings.You_dont_have}}<br/>{{strings.Please_contact_your}}
+</div>
+                        </div>
+                    </div>
+                    <div ng-switch-when="AVAILABLE">
+                        <div ng-switch="hasItems(visibilityFilter)">
+                            <div ng-switch-when="false" class="bk-no-data-sources">
+                                <div class="bk-style-icon-password bk-icon"></div>
+                                <div>{{strings.No_matched}}</div>
+                            </div>
+                            <div ng-switch-when="true">
+                                <div ng-repeat="list in lists"
+                                     post-repeat
+                                     class="bk-list"
+                                     ng-show="list.data.filter(visibilityFilter).length > 0">
+                                    <span class="bk-list-header">{{ list.headerLabel }}</span>
+                                    <ul>
+                                        <li class="bk-list-item bk-overflow-ellipsis bk-link"
+                                            ng-class="{'bk-selected': tempSelectedIdsMap[item.id]}"
+                                            blink-tooltip="{{item.tooltip}}"
+                                            test-hook-table-id="{{item.id}}"
+                                            data-html="true"
+                                            data-delay='{"show":"750"}'
+                                            ng-repeat="item in list.data | filter: visibilityFilter">
+                                            <div ng-show="!panelComponent.isReadonly()">
+                                                <div ng-repeat="tag in item.tags" class="bk-stackable-label"
+                                                     ng-style="{'background-color': tag.clientState && tag.clientState.color,
+                                                    'right': (5 + $index * 4) + 'px'}"></div>
+                                            </div>
+                                            <div>
+                                                <bk-checkbox bk-ctrl="item.checkboxCtrl"></bk-checkbox>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="bk-panel-footer" ng-class="{'bk-with-join-type-selector': needsJoinTypeFooter}"
+                 ng-switch="needsJoinTypeFooter">
+                <div ng-switch-when="true" ng-switch="!panelComponent.isReadOnly()">
+                    <div ng-switch-when="true">
+                        <span class="bk-light-text-13px">{{strings.Choose_the}}</span>
+                        <p></p>
+                        <!--Added this bk-selected class to be able to grab the selected item easily-->
+                        <div class="bk-join-type-selector"
+                             ng-repeat="queryTypeData in worksheetQueryTypes"
+                             ng-class="{'bk-selected': queryTypeData.radioBtnCtrl.isSelected()}">
+                            <bk-radio-button bk-ctrl="queryTypeData.radioBtnCtrl">
+                            </bk-radio-button>
+                            <div class="bk-join-type-desc">({{ queryTypeData.description }})</div>
+                        </div>
+                        <p></p>
+                        <span class="bk-light-text-13px">{{strings.Choose_the_worksheet}}</span>
+                        <p></p>
+                        <div ng-repeat="wTypeButtonCtrl in worksheetTypes">
+                            <bk-radio-button bk-ctrl="wTypeButtonCtrl">
+                            </bk-radio-button>
+                        </div>
+                        <div ng-switch-default>
+                            <span class="bk-light-text-13px">{{strings.Inclusion_rule_is}}</span>
+                            <p></p>
+                            <span class="bk-dark-title-14px">{{ getCurrentQueryTypeLabel() }}&nbsp;({{ getCurrentQueryTypeDescription() }})</span>
+                            <p></p>
+                            <span class="bk-light-text-13px">{{strings.Worksheet_join_rule}}</span>
+                            <p></p>
+                            <span class="bk-dark-title-14px">{{ getCurrentWorksheetTypeLabel() }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

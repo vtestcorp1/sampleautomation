@@ -1,0 +1,20 @@
+<div class="bk-big-popup"
+     table-id="tableId"
+     source-ids="sourceIds"
+     is-ad-hoc-relationship-builder="isAdHocRelationshipBuilder"
+     sage-context="sageContext"
+     hide="hide">
+    <div class="bk-context-dialog">
+        <div class="popup-header">
+            <span class="bk-header-title">{{strings.Relationship_Builder}}</span>
+            <a type="button" class="bk-close" ng-click="hide()">&times;</a>
+        </div>
+        <relationship-list
+                class="popup-content"
+                table-id="tableId"
+                source-ids="sourceIds"
+                is-ad-hoc-relationship-builder="isAdHocRelationshipBuilder"
+                sage-context="sageContext">
+        </relationship-list>
+    </div>
+</div>

@@ -1,0 +1,210 @@
+.bk-editable {
+    max-width: 100%;
+    .bk-error-input {
+        input {
+            border: solid 1px @red-default;
+        }
+    }
+
+    .bk-visible {
+        visibility: visible !important;
+    }
+
+    .bk-readonly:focus {
+        background-color: transparent !important;
+        cursor: pointer !important;
+        border: 1px solid transparent !important;
+    }
+
+    .bk-description-edit-dropdown {
+        visibility: hidden;
+        width: inherit;
+        border-radius: 3px;
+        z-index: 1;
+        background-color: @h-white;
+        padding: 3px 7px 5px 5px;
+        .box-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+
+        input[type=text].bk-editable-input {
+            width: 100%;
+            height: 36px;
+            margin: 0;
+            padding: 5px;
+            background-color: @white-bg;
+            font-size: inherit;
+            font-family: inherit;
+            color: inherit;
+            line-height: 36px;
+            border: 1px solid transparent;
+            border-radius: 3px;
+            .box-shadow(none);
+            box-sizing: border-box;
+            .placeholder-inherit();
+
+            &.bk-readonly {
+                &:hover {
+                    border-color: transparent;
+                    cursor: text;
+                }
+            }
+
+            &:hover {
+                border-color: @gray-border-hover;
+                cursor: pointer;
+            }
+
+            &:focus {
+                cursor: text;
+                border-color: @blue-default;
+            }
+
+            &:after {
+                position: absolute;
+                right: 2px;
+                top: 50%;
+                margin-top: -7px;
+                content: "";
+                width: 16px;
+                height: 16px;
+                opacity: 0.3;
+                background: url('/resources/img/icons-viz-actions-2.png') no-repeat -167px -12px @white-bg;
+            }
+        }
+
+        .bk-description-label {
+            display: block;
+            padding: 3px 20px;
+            clear: both;
+            font-weight: 400;
+            font-family: @font-family-semibold;
+            font-size: 14px;
+            line-height: 20px;
+            color: @h-gray6;
+            white-space: nowrap;
+        }
+
+        .bk-description-container {
+            width: 100%;
+
+            .bk-description-editarea {
+                resize: none;
+                padding: 5px;
+                font-size: 12px;
+                border-radius: 3px;
+                width: 100%;
+                min-height: 80px;
+                margin: 7px 0;
+                box-sizing: border-box;
+
+                &.bk-readonly {
+                    cursor: text;
+                    background-color: @gray-bg;
+                }
+            }
+
+            .bk-style-icon-checkmark {
+                color: white;
+            }
+        }
+    }
+
+    .bk-error-popup {
+        @ARROW_DIMENSION: 6px;
+        @CONTAINER_WIDTH: 170px;
+
+        position: relative;
+        z-index: @error-popup-zindex;
+
+        .bk-container {
+            position: absolute;
+            top: -3px;
+            left: 2 * @ARROW_DIMENSION;
+            width: @CONTAINER_WIDTH;
+            padding: 8px 6px 6px 9px;
+            border-radius: 2px;
+            border-color: @h-black;
+            background-color: @h-white-bg;
+            box-shadow: 1px 1px 3px @bg-shadow-faint;
+            color: @h-red;
+
+            .bk-text {
+                font-size: 12px;
+            }
+        }
+
+        &:before {
+            position: absolute;
+            top: 5px;
+            left: 0px;
+            border: @ARROW_DIMENSION solid transparent;
+            content: '';
+            z-index: @error-popup-zindex;
+        }
+
+        &.bk-opens-right {
+            &:before {
+                border-right-color: @h-white-bg;
+            }
+        }
+    }
+
+    &:not(.bk-readonly):not(.bk-external) {
+        display: inline-block;
+        position: relative;
+        outline: none;
+
+        &.bk-full-width {
+            width: 100%;
+        }
+
+        span.bk-editable-text {
+            position: relative;
+            display: inline-block;
+            padding: 2px;
+            min-width: 50px;
+            max-width: 100%;
+            border: 1px solid transparent;
+            cursor: pointer;
+        }
+
+        &.bk-show-editable:not(.bk-in-edit-mode):not(.bk-empty-content) span.bk-editable-text,
+        &:not(.bk-in-edit-mode):not(.bk-empty-content) span.bk-editable-text:hover {
+            padding-right: 25px;
+            background-color: @white-bg;
+            border: 1px solid @gray-border-hover;
+            border-radius: 3px;
+
+            &:after {
+                position: absolute;
+                right: 2px;
+                top: 50%;
+                margin-top: -7px;
+                content: "";
+                width: 16px;
+                height: 16px;
+                opacity: 0.3;
+                background: url('/resources/img/icons-viz-actions-2.png') no-repeat -167px -12px @white-bg;
+            }
+        }
+
+        &.bk-empty-content .bk-editable-text {
+            height: 100%;
+        }
+
+        &.bk-in-edit-mode {
+            width: 100%;
+        }
+    }
+}
+
+.bk-content-editable-tooltip.tooltip{
+    .tooltip-inner {
+        .font-family-regular;
+        text-align: left;
+        .bk-tooltip-title,
+        .bk-tooltip-description {
+            .text-uppercase;
+            .color-grey4;
+        }
+    }
+}

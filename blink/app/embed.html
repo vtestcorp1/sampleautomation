@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" style="height: 100%; width: 100%">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+
+    <title>ThoughtSpot Embed App</title>
+    <script type="text/javascript" src="api/api.min.js"></script>
+    <script type="text/javascript">
+        function updateIframeUrl(id) {
+            var iframeUrl = "/?embedApp=true#/";
+            if (id === 'homepage') {
+                iframeUrl = "/?embedApp=true#/";
+            } else if (id === 'search') {
+                iframeUrl = "/?embedApp=true#/answer";
+            } else if (id === 'answerList') {
+                iframeUrl = "/?embedApp=true#/answers";
+            } else if (id === 'pinboardList') {
+                iframeUrl = "/?embedApp=true#/pinboards";
+            } else if (id === 'data') {
+                iframeUrl = "/?embedApp=true#/data/tables";
+            }
+            document.getElementById('ts-embed').setAttribute('src', iframeUrl);
+        }
+
+        function onCallback(event) {
+            console.log(event.data);
+        }
+        window.thoughtspot.subscribeToAlerts("http://localhost:8000", onCallback);
+
+    </script>
+</head>
+<body style="height: 100%; width: 100%">
+<button onclick="updateIframeUrl('homepage')">Homepage</button>
+<button onclick="updateIframeUrl('search')">Search</button>
+<button onclick="updateIframeUrl('answerList')">Answer list</button>
+<button onclick="updateIframeUrl('pinboardList')">Pinboard list</button>
+<button onclick="updateIframeUrl('data')">Data</button>
+
+<iframe id="ts-embed" src="/?embedApp=true#/" height="80%" width="80%"></iframe>
+</body>
+</html>

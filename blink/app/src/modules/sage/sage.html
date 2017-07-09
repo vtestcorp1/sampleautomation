@@ -1,0 +1,80 @@
+<div class="bk-sage" ng-class="{'bk-active': sageBarHasFocus}">
+    <div class="bk-sage-inner"
+         ng-mouseenter="onMouseOverSageBar()" ng-mouseleave="onMouseOutOfSageBar()">
+        <div blink-sage-bubble></div>
+        <form class="bk-sage-bar">
+
+            <!-- TODO(jonathan): enable the ng-class once the styling is in place for intelligent alerts -->
+            <span class="bk-sage-search-icon" ng-class="{'bk-pressed': !!sageStickyBubbleShowing,
+                                                         'bk-error-exists': sageClient.getSageModel().sageResponseErrorInfo.severity == 1,
+                                                         'bk-warning-exists': sageClient.getSageModel().sageResponseErrorInfo.severity == 2}"
+                                              ng-click="showIntelligentAlert({force: true})"></span>
+            <div class="bk-sage-input-wrapper">
+                <div class="bk-sage-ghost-tokens" ng-show="!!sageInput" ng-class="{'bk-sage-hover': isMouseOverInput}">
+                    <!-- note: do not add spaces between elements -->
+                    <span class="bk-sage-ghost-token" ng-repeat="(i, rtoken) in getTokens()"
+                          ng-class="{'bk-unrecognized': rtoken.isUnrecognized() && !sageBarHasFocus,
+                                     'bk-is-target-of-cursor': isTokenTargetOfCursor(rtoken, i),
+                                    'bk-empty': rtoken.getTokenText() == '',
+                                    'bk-nostyleinfo': !rtoken.cssProperties,
+                                    'bk-absolute': rtoken.cssProperties && rtoken.cssProperties.position == 'absolute',
+                                    'bk-error': isVisibleErrorToken(rtoken, i, false),
+                                    'bk-warning': isVisibleWarningToken(rtoken, i, false),
+                                    'bk-truncated-token': !!rtoken.truncated,
+                                    'bk-no-jpath-token': isJoinPathWorkingToken(rtoken, i),
+                                    'bk-error-last': isVisibleErrorToken(rtoken, i, true),
+                                    'bk-warning-last': isVisibleWarningToken(rtoken, i, true)}"
+                          ng-style="{'left': (rtoken.cssProperties && rtoken.cssProperties.left) + 'px',
+                                     'width': (rtoken.cssProperties && rtoken.cssProperties.width) + 'px'}">
+                        {{ rtoken.getTokenTextLowerCase() }}
+                    </span>
+                    <!--&lt;!&ndash;<span class="bk-sage-ghost-token bk-empty"></span>&ndash;&gt;-->
+                    <!--&lt;!&ndash; A temporary pulse layer &ndash;&gt;-->
+                    <!--<div ng-show="sageModel.getTokensAddedByTransform().length"-->
+                         <!--ng-class="{'bk-pulse': sageModel.getTokensAddedByTransform().length}"-->
+                         <!--class="bk-pulse-container"-->
+                         <!--blink-on-animation-end="onPulseAnimationDone()"-->
+                         <!--ng-style="{'left': getFirstTransformTokenLeft() + 'px',-->
+                                   <!--'width': getTotalTransformTokenWidth() + 'px'}">-->
+                        <!--<span class="bk-sage-pulse-token"-->
+                              <!--ng-repeat="(i, rtoken) in sageModel.getTokensAddedByTransform()"-->
+                              <!--ng-class="{'bk-absolute': rtoken.cssProperties && rtoken.cssProperties.position == 'absolute'}"-->
+                              <!--ng-style="{'left': (rtoken.cssProperties && rtoken.cssProperties.left - getFirstTransformTokenLeft()) + 'px',-->
+                                         <!--'width': (rtoken.cssProperties && rtoken.cssProperties.width) + 'px'}"-->
+                              <!--ng-bind-html="rtoken.getTokenTextForPulseLayer()">-->
+                        <!--</span>-->
+                    <!--</div>-->
+                </div>
+                <input type="text" ng-show="shouldShowInputGhost" class="bk-sage-real-input-ghost" ng-model="sageInputGhost"
+                       ng-trim="false" spellcheck="false" readonly tabindex="-1" />
+                <input type="text"
+                       class="bk-sage-real-input"
+                       ng-model="sageInput"
+                       blink-overlay="closeDropDown()"
+                       blink-on-escape="closeDropDown()"
+                       sage-autocomplete="autocompleteConfig"
+                       can-auto-close-dropdown="canAutoCloseDropdown"
+                       ng-trim="false"
+                       bk-ng-mouseenter="mouseEnterOnInput()"
+                       bk-ng-mouseleave="mouseLeaveOnInput()"
+                       ng-click="updateCaretState()"
+                       spellcheck="false" />
+            </div>
+            <div ng-show="shouldShowBoxLayer()" class="bk-boxed-token-layer" ng-click="hideBoxLayer()">
+                <div class="bk-boxed-token {{ qf.getCssClass() }}"
+                       ng-click="$event.stopPropagation()"
+                       ng-class="{'bk-cross-hovered': mouseHoveredOnCross}"
+                      ng-repeat="qf in sageClient.getSageModel().queryFragments">
+                    <div class="bk-display-text"
+                         ng-click="onQueryFragmentClick($event, qf)"
+                         ng-mouseleave="onMouseOutOfQueryFragment()"
+                         ng-mouseenter="onMouseOverQueryFragment($event, qf)">{{qf.getDisplayText()}}</div>
+                    <div class="bk-cross-btn"
+                         ng-mouseenter="mouseHoveredOnCross = true;"
+                         ng-mouseleave="mouseHoveredOnCross = false;"
+                         ng-click="onQueryFragmentDeletion($event, qf)">@</div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

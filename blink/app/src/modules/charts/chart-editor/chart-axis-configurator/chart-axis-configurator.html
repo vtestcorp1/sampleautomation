@@ -1,0 +1,125 @@
+<div class="bk-chart-axis-configurator">
+    <ul class="bk-chart-axes-selectors">
+        <li class="bk-chart-axis-selector">
+            <div class="bk-axis-header">
+                <div class="axis-name">
+                    {{ $ctrl.getAxesAlias().xAxis }}
+                </div>
+                <bk-chart-axis-locker class="bk-chart-axis-config-locker"
+                                   bk-ctrl="$ctrl.axisLockerComponent">
+                </bk-chart-axis-locker>
+            </div>
+            <div class="bk-multiselect-input bk-x-axis-selector-input"
+                  ng-class="{'bk-invalid-selection': !!$ctrl.validationErrors.xAxis}">
+                <ui-select multiple
+                           ng-model="$ctrl.selectedAxisConfig.xAxisColumns"
+                           search-enabled="false"
+                           ng-change="$ctrl.onAxisColumnChange()"
+                           theme="select2"
+                           style="width: 160px"
+                           class="bk-chart-editor-axis-selector">
+                    <ui-select-match
+                            placeholder={{strings.chart.chartEditor.chartAxisConfigurator.X_AXIS_PLACEHOLDER}}>
+                        <div blink-tooltip="{{$ctrl.columnIdToDisambiguatedName[$item.getSageOutputColumnId()]}}"
+                             ng-bind-html="$ctrl.columnIdToDisambiguatedName[$item.getSageOutputColumnId()]">
+                        </div>
+                    </ui-select-match>
+                    <ui-select-choices
+                            repeat="column in $ctrl.xAxisColumnChoices | filter:$ctrl.filterByInput($select.search)">
+                        <div blink-tooltip="{{$ctrl.columnIdToDisambiguatedName[column.getSageOutputColumnId()]}}"
+                             ng-bind-html="$ctrl.columnIdToDisambiguatedName[column.getSageOutputColumnId()]">
+                        </div>
+                    </ui-select-choices>
+                </ui-select>
+            </div>
+        </li>
+        <li class="bk-chart-axis-selector">
+            <div class="axis-name">{{ $ctrl.getAxesAlias().yAxis }}</div>
+            <div class="bk-multiselect-input bk-y-axis-selector-input"
+                  ng-class="{'bk-invalid-selection': !!$ctrl.validationErrors.yAxis}">
+                <ui-select multiple
+                           ng-model="$ctrl.selectedAxisConfig.yAxisColumns"
+                           ng-change="$ctrl.onAxisColumnChange()"
+                           theme="select2"
+                           style="width: 160px"
+                           class="bk-chart-editor-axis-selector">
+                    <ui-select-match placeholder={{strings.chart.chartEditor.chartAxisConfigurator.Y_AXIS_PLACEHOLDER}}>
+                        <div blink-tooltip="{{$ctrl.columnIdToDisambiguatedName[$item.getSageOutputColumnId()]}}"
+                             ng-bind-html="$ctrl.columnIdToDisambiguatedName[$item.getSageOutputColumnId()]">
+                        </div>
+                    </ui-select-match>
+                    <ui-select-choices
+                            repeat="column in $ctrl.yAxisColumnChoices | filter:$ctrl.filterByInput($select.search)">
+                        <div blink-tooltip="{{$ctrl.columnIdToDisambiguatedName[column.getSageOutputColumnId()]}}"
+                             ng-bind-html="$ctrl.columnIdToDisambiguatedName[column.getSageOutputColumnId()]">
+                        </div>
+                    </ui-select-choices>
+                </ui-select>
+            </div>
+            <div class="bk-chart-shared-y-axis-button bk-btn"
+                 ng-class="{'bk-toggle-btn-on': $ctrl.isYAxisShared}"
+                 ng-click="$ctrl.toggleYAxisSharing()"
+                 ng-show="$ctrl.showYAxisSharingButton()"
+                 blink-tooltip="{{strings.chart.chartEditor.chartAxisConfigurator.LINK_Y_AXIS}}">
+                <span class="bk-style-icon-chart-link bk-icon"></span>
+            </div>
+        </li>
+        <li class="bk-chart-axis-selector"
+            ng-show="!$ctrl.isLegendSelectorDisabled()">
+            <div class="axis-name">{{ $ctrl.getAxesAlias().legend }}</div>
+            <div class="bk-multiselect-input bk-legend-axis-selector-input"
+                  ng-class="{'bk-invalid-selection': !!$ctrl.validationErrors.legend}">
+                <ui-select multiple
+                           ng-model="$ctrl.selectedAxisConfig.legendColumns"
+                           ng-change="$ctrl.onAxisColumnChange()"
+                           theme="select2"
+                           style="width: 160px"
+                           class="bk-chart-editor-axis-selector">
+                    <ui-select-match placeholder="{{strings.chart.chartEditor.chartAxisConfigurator.LEGEND_AXIS_PLACEHOLDER}}">
+                        <div blink-tooltip="{{$ctrl.columnIdToDisambiguatedName[$item.getSageOutputColumnId()]}}"
+                             ng-bind-html="$ctrl.columnIdToDisambiguatedName[$item.getSageOutputColumnId()]">
+                        </div>
+                    </ui-select-match>
+                    <ui-select-choices
+                            repeat="column in $ctrl.legendColumnChoices | filter:filterByInput($select.search)">
+                        <div blink-tooltip="{{$ctrl.columnIdToDisambiguatedName[column.getSageOutputColumnId()]}}"
+                             ng-bind-html="$ctrl.columnIdToDisambiguatedName[column.getSageOutputColumnId()]">
+                        </div>
+                    </ui-select-choices>
+                </ui-select>
+            </div>
+        </li>
+        <li class="bk-chart-axis-selector" ng-show="$ctrl.isRadialSelectorEnabled()">
+            <div class="axis-name">{{ $ctrl.getAxesAlias().radial }}</div>
+            <ui-select class="bk-chart-config-selector"
+                       ng-model="$ctrl.selectedAxisConfig.radialColumn"
+                       theme="select2"
+                       search-enabled="false"
+                       on-select="$ctrl.onAxisColumnChange()">
+                <ui-select-match
+                        placeholder="{{strings.chart.chartEditor.chartAxisConfigurator.RADIAL_AXIS_PLACEHOLDER}}">
+                    {{ $ctrl.columnIdToDisambiguatedName[$select.selected.getSageOutputColumnId()]}}
+                </ui-select-match>
+                <ui-select-choices repeat="column in $ctrl.radialColumnChoices">
+                    {{ $ctrl.columnIdToDisambiguatedName[column.getSageOutputColumnId()] }}
+                </ui-select-choices>
+            </ui-select>
+        </li>
+        <li>
+            <ul class="bk-chart-axis-errors">
+                <li class="validation-error-message" ng-show="!!$ctrl.validationErrors.xAxis">{{$ctrl.validationErrors.xAxis}}</li>
+                <li class="validation-error-message" ng-show="!!$ctrl.validationErrors.yAxis">{{$ctrl.validationErrors.yAxis}}</li>
+                <li class="validation-error-message" ng-show="!!$ctrl.validationErrors.legend">{{$ctrl.validationErrors.legend}}</li>
+                <li class="validation-error-message" ng-show="!!$ctrl.validationErrors.radial">{{$ctrl.validationErrors.radial}}</li>
+                <li class="validation-error-message" ng-show="!!$ctrl.validationErrors.other">{{$ctrl.validationErrors.other}}</li>
+
+                <!--show chart type supportability error message only if there is no basic validation error shown
+                 above.-->
+                <li class="validation-error-message"
+                    ng-show="!$ctrl.hasValidationErrors() && !$ctrl.isConfigValidForChartType">
+                    {{strings.chart.chartEditor.chartAxisConfigurator.CONFIG_INVALID_FOR_CHART_TYPE}}
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>

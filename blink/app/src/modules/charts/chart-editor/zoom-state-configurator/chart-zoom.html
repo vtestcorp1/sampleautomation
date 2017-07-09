@@ -1,0 +1,17 @@
+<div class="bk-chart-zoom"
+     ng-class="{'bk-disabled': !$ctrl.isDisabled()}"
+     blink-tooltip="{{$ctrl.getTooltip()}}"
+     data-placement="auto bottom">
+    <div class="bk-area-select"
+         ng-class="{'bk-active': !$ctrl.isInPanMode()}"
+         ng-click="$ctrl.switchMode()">
+        <span class="bk-style-icon-zoom-zone"></span>
+        <span class="bk-chart-zoom-text">{{strings.chart.chartEditor.chartConfigurator.SELECT_AN_AREA}}</span>
+    </div>
+    <div class="bk-zoom-reset"
+         ng-class="{'bk-disabled': !$ctrl.isZoomedIn()}"
+         ng-click="$ctrl.zoomOut()">
+        <span class="bk-style-icon-reset"></span>
+        <span class="bk-chart-zoom-text">{{strings.chart.chartEditor.chartConfigurator.RESET_ZOOM}}</span>
+    </div>
+</div>

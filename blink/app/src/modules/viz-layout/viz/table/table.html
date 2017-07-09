@@ -1,0 +1,33 @@
+<div clipboard-copy-confirmation-view
+     blink-auto-hide-view
+     show="showCopyConfirmation">
+</div>
+<div class="bk-no-content-placeholder"
+     ng-if="viz.isEmpty()">
+    {{ 'No data to display' | l10n }}
+</div>
+<div class="bk-no-content-placeholder"
+     ng-if="viz.isPendingDataLoad()">
+    {{ 'Loading data...' | l10n }}
+</div>
+<div class="alert alert-error"
+     ng-if="viz.dataError" >
+    {{ 'Invalid data' | l10n }}
+</div>
+<div class="bk-cannot-display"
+     ng-if="!viz.isEmpty() && !canDisplayInScreenshot">
+    {{strings.screenshot.tableTooWide }}
+</div>
+<div class="bk-table"
+     ng-class="{'bk-table-with-header-dropdown': containsHeaderDropdown()}"
+     ng-hide="viz.isEmpty() || !canDisplayInScreenshot">
+</div>
+<div class="bk-pagination-info" ng-if="!!viz.paginationInfo && !viz.noData && !viz.dataError">
+    <span>{{strings.showing.assign({lower: viz.paginationInfo.topRow, higher: viz.paginationInfo.bottomRow, total: viz.paginationInfo.totalRows})}}</span>
+    <span ng-if="!!viz.showRelatedLink()"
+          blink-tooltip="{{strings.relatedLink.relatedLinkHelpMessage}}"
+          data-delay='{"show":"250"}'
+          data-html="true">
+        ({{ strings.relatedLink.relatedLinksCount}}{{viz.getRelatedLinksCount()}}{{" "}})
+    </span>
+</div>

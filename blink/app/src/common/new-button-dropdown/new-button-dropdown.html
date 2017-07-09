@@ -1,0 +1,16 @@
+<div class="bk-new-item-container {{ menu.css }}"
+     blink-tooltip="{{ menu.tooltip }}"
+     blink-overlay="hideNewButtonDropdown()">
+    <bk-primary-button text="{{ getTitle() }}"
+                       icon="bk-style-icon-small-plus"
+                       ng-click="onClick()"></bk-primary-button>
+    <div ng-show="showNewButtonDropdown" class="bk-new-button-dropdown">
+        <div class="bk-new-action-item"
+             ng-class="{'bk-disabled': action.isDisabled()}"
+             ng-repeat="action in menu.actions"
+             ng-click="onMenuClick(action)"
+             blink-tooltip = "{{ getTooltip(action) }}">
+            {{ action.title }}
+        </div>
+    </div>
+</div>

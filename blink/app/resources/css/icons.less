@@ -1,0 +1,697 @@
+//  Copyright: ThoughtSpot Inc. 2013-2014
+//  Author: Jonathan Moreira (jonathan@thoughtspot.com)
+//
+//  Icon Font
+//
+//  The purpose of this file is to set the parameters of the Icon Font and list all the icons classes.
+
+// TODO:(Vibhor/Jonathan) Make automated incremental change of the revion number at every update of the files
+
+@font-face {
+    font-family: 'DXIcons';
+    src: url('/resources/font/DXIcons/dxicons.eot');
+    src: url('/resources/font/DXIcons/dxicons.eot?#iefix') format('embedded-opentype'),
+    url('/resources/font/DXIcons/dxicons.woff') format('woff'),
+    url('/resources/font/DXIcons/dxicons.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'Iconfont';
+    src: url('/resources/font/thoughtspot_25/thoughtspot-iconfont-regular-webfont.eot');
+    src: url('/resources/font/thoughtspot_25/thoughtspot-iconfont-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('/resources/font/thoughtspot_25/thoughtspot-iconfont-regular-webfont.woff') format('woff'),
+    url('/resources/font/thoughtspot_25/thoughtspot-iconfont-regular-webfont.ttf') format('truetype'),
+    url('/resources/font/thoughtspot_25/thoughtspot-iconfont-regular-webfont.svg#webfont') format('svg');
+}
+
+// Icon font
+@font-family-icon: Iconfont;
+
+.font-family-icon()
+{
+    font-family: @font-family-icon;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased; /* Improves the rendering of icons */
+    -moz-osx-font-smoothing: grayscale; /* Improves the rendering of icons in firefox */
+    speak: none; /* This prevents screen readers from pronouncing the pseudo element text content used to trigger the icon font */
+}
+
+[class*='bk-style-icon-'] {
+    display: inline-block;
+}
+
+/**
+ * Icons Classes
+ *
+ * How to add icon to your HTML:
+ *  - add "bk-style-icon-[name]" to your HTML element (div, i, a, ...)
+ *
+ * How to add create a new icon class:
+ *  - check the mapping in "resources/font/thoughtspot/thoughtspot-iconfont-mapping.png"
+ *  - specify the letter in the "content" attribute
+ */
+
+.bk-style-icon-home:before {
+    .font-family-icon();
+    content: "A";
+}
+
+.bk-style-icon-answer:before {
+    .font-family-icon();
+    content: "B";
+}
+
+.bk-style-icon-pinboard:before {
+    .font-family-icon();
+    content: "C";
+}
+
+.bk-style-icon-data {
+    &:before {
+      .font-family-icon();
+      content: "D";
+    }
+}
+
+.bk-style-icon-admin:before, .bk-style-icon-settings:before {
+    .font-family-icon();
+    content: "E";
+}
+
+.bk-style-icon-tour:before {
+    .font-family-icon();
+    content: "F";
+}
+
+.bk-style-icon-login:before,
+.bk-style-icon-user:before {
+    .font-family-icon();
+    content: "G";
+}
+
+.bk-style-icon-users:before {
+    .font-family-icon();
+    content: "H";
+}
+
+.bk-style-icon-delete:before {
+    .font-family-icon();
+    content: "I";
+}
+
+.bk-style-icon-edit {
+    &:before {
+        .font-family-icon();
+        content: "J";
+    }
+}
+
+.bk-style-icon-view-schema:before {
+    .font-family-icon();
+    content: "K";
+}
+
+.bk-style-icon-password:before,
+.bk-style-icon-lock:before {
+    .font-family-icon();
+    content: "L";
+}
+
+.bk-style-icon-link {
+    &:before {
+        .font-family-icon();
+        content: "M";
+    }
+}
+
+.bk-style-icon-chart-link:before {
+    .font-family-icon();
+    content: "M";
+}
+
+.bk-style-icon-circled-question:before {
+    .font-family-icon();
+    content: "N";
+}
+
+.bk-style-icon-circled-warning:before {
+    .font-family-icon();
+    content: "O";
+}
+
+.bk-style-icon-circled-information {
+   &:before {
+       .font-family-icon();
+       content: "P";
+   }
+}
+
+.bk-style-icon-circled-x {
+    .bk-background {
+        &:before {
+            .font-family-icon();
+            content: "\51";
+            color: rgb(0, 0, 0);
+        }
+    }
+    .bk-cross {
+        &:before {
+            .font-family-icon();
+            content: "\5f";
+            margin-left: -1em;
+            color: rgb(255, 255, 255);
+        }
+    }
+}
+
+.bk-style-icon-circled-checkmark {
+    &:before {
+        .font-family-icon();
+        content: "R";
+    }
+}
+
+.bk-style-icon-circled-warning {
+    &:before {
+        .font-family-icon();
+        content: "O";
+    }
+}
+
+.bk-style-icon-circled-question {
+    &:before {
+        .font-family-icon();
+        content: "N";
+    }
+}
+
+.bk-style-icon-checkmark {
+    &:before {
+        .font-family-icon();
+        content: "T";
+    }
+}
+
+.bk-style-icon-cross {
+    &:before {
+        .font-family-icon();
+        content: "S";
+    }
+}
+
+.bk-style-icon-share:before {
+    .font-family-icon();
+    content: "U";
+}
+
+.bk-style-icon-create-doc:before {
+    .font-family-icon();
+    content: "V";
+}
+
+.bk-style-icon-save-doc:before {
+    .font-family-icon();
+    content: "W";
+}
+
+.bk-style-icon-copy-doc:before {
+    .font-family-icon();
+    content: "X";
+}
+
+.bk-style-icon-calendar:before {
+    .font-family-icon();
+    content: "a";
+}
+
+.bk-style-icon-download:before {
+    .font-family-icon();
+    content: "b";
+}
+
+.bk-style-icon-upload {
+  &:before {
+    .font-family-icon();
+    content: "c";
+  }
+}
+
+.bk-style-icon-data-assimilation:before {
+    .font-family-icon();
+    content: "l";
+}
+
+.bk-style-icon-list:before {
+    .font-family-icon();
+    content: "d";
+}
+
+.bk-style-icon-pin:before {
+    .font-family-icon();
+    content: "e";
+}
+
+.bk-style-icon-chart:before {
+    .font-family-icon();
+    content: "f";
+}
+
+.bk-style-icon-zoom:before {
+    .font-family-icon();
+    content: "g";
+}
+
+.bk-style-icon-zoom-zone:before {
+    .font-family-icon();
+    content: "h";
+}
+
+.bk-style-icon-filter:before {
+    .font-family-icon();
+    content: "i";
+}
+
+.bk-style-icon-metrics:before {
+    .font-family-icon();
+    content: "i";
+}
+
+.bk-style-icon-filter-big:before {
+    .font-family-icon();
+    content: '%';
+}
+
+.bk-style-icon-edit-small:before {
+    .font-family-icon();
+    content: "j";
+}
+
+.bk-style-icon-logout:before {
+    .font-family-icon();
+    content: "k";
+}
+
+.bk-style-icon-small-plus:before {
+    .font-family-icon();
+    content: "l";
+}
+
+.bk-style-icon-arrow-right {
+    &:before {
+        .font-family-icon();
+        content: "m";
+    }
+}
+
+.bk-style-icon-arrow-down:before {
+    .font-family-icon();
+    content: "n";
+}
+
+.bk-style-icon-arrow-left {
+    &:before {
+        .font-family-icon();
+        content: "o";
+    }
+}
+
+.bk-style-icon-search:before {
+    .font-family-icon();
+    content: "p";
+}
+
+.bk-style-icon-search-small:before {
+    .font-family-icon();
+    content: "p";
+}
+
+.bk-style-icon-logo:before {
+    .font-family-icon();
+    content: "q";
+}
+
+.bk-style-icon-stop:before {
+    .font-family-icon();
+    content: "r";
+}
+
+.bk-style-icon-chart-pareto:before {
+    .font-family-icon();
+    content: "z";
+}
+
+.bk-style-icon-add-group:before {
+    .font-family-icon();
+    content: "z";
+}
+
+.bk-style-icon-reset:before {
+    .font-family-icon();
+    content: "s";
+}
+
+.bk-style-icon-chart:before {
+    .font-family-icon();
+    content: "t";
+}
+
+.bk-style-icon-chart-line:before {
+    .font-family-icon();
+    content: "t";
+}
+
+.bk-style-icon-chart-column:before {
+    .font-family-icon();
+    content: "u";
+}
+
+.bk-style-icon-chart-funnel:before {
+    .font-family-icon();
+    content: "|";
+}
+
+.bk-style-icon-chart-spider-web:before {
+    .font-family-icon();
+    content: "L";
+}
+
+.bk-style-icon-chart-pie:before {
+    .font-family-icon();
+    content: "v";
+}
+
+.bk-style-icon-chart-scatter:before {
+    .font-family-icon();
+    content: "w";
+}
+
+.bk-style-icon-chart-bubble:before {
+    .font-family-icon();
+    content: "x";
+}
+
+.bk-style-icon-chart-stacked_column:before {
+    .font-family-icon();
+    content: "y";
+}
+
+.bk-style-icon-chart-line_stacked_column:before {
+    .font-family-icon();
+    content: "{";
+}
+
+.bk-style-icon-chart-area:before {
+    .font-family-icon();
+    content: "}";
+}
+
+.bk-style-icon-hamburger:before {
+    .font-family-icon();
+    content: "[";
+}
+
+.bk-style-icon-chart-line_column:before {
+    .font-family-icon();
+    content: "{";
+}
+
+.bk-style-icon-chart-geo_area:before {
+    .font-family-icon();
+    content: '"';
+}
+
+.bk-style-icon-chart-geo_bubble:before {
+    .font-family-icon();
+    content: ",";
+}
+
+.bk-style-icon-chart-geo_heatmap:before {
+    .font-family-icon();
+    content: "~";
+}
+
+.bk-style-icon-chart-geo_globe_area:before {
+    .font-family-icon();
+    content: '"';
+}
+
+.bk-style-icon-chart-geo_globe_bubble:before {
+    .font-family-icon();
+    content: ",";
+}
+
+.bk-style-icon-chart-geo_globe_heatmap:before {
+    .font-family-icon();
+    content: "~";
+}
+
+.bk-style-icon-chart-heatmap:before {
+    .font-family-icon();
+    content: ")";
+}
+.bk-style-icon-chart-treemap:before {
+    .font-family-icon();
+    content: "\\";
+}
+.bk-style-icon-chart-waterfall:before {
+    .font-family-icon();
+    content: "Y";
+}
+.bk-style-icon-chart-stacked_area:before {
+    .font-family-icon();
+    content: "Z";
+}
+
+.bk-style-icon-drill-down:before {
+    .font-family-icon();
+    content: ".";
+}
+
+.bk-style-icon-maximize:before {
+    .font-family-icon();
+    content: ":";
+}
+
+.bk-style-icon-minimize {
+    &:before {
+        .font-family-icon();
+        content: ";";
+    }
+}
+
+.bk-style-icon-layers:before {
+    .font-family-icon();
+    content: "-";
+}
+
+.bk-style-icon-formulae:before {
+    .font-family-icon();
+    content: "#";
+}
+
+.bk-style-icon-formulae-assistant:before {
+    .font-family-icon();
+    content: "/";
+}
+
+.bk-style-icon-label:before {
+    .font-family-icon();
+    content: "(";
+}
+
+.bk-style-icon-hyphen {
+    &:before {
+        .font-family-regular();
+        content: "-";
+    }
+}
+
+.bk-style-icon-table:before {
+    .font-family-icon();
+    content: "*";
+}
+
+.bk-style-icon-min-max:before {
+    .font-family-icon();
+    content: "+";
+}
+
+.bk-style-icon-close, .bk-style-icon-x {
+    &:before {
+        .font-family-icon();
+        content: "@";
+    }
+}
+
+.bk-style-icon-chart-bar:before {
+    .font-family-icon();
+    content: "&";
+}
+
+.bk-style-icon-chart-geo_earth_area:before {
+    .font-family-icon();
+    content: '"';
+}
+
+.bk-style-icon-chart-geo_earth_bubble:before {
+    .font-family-icon();
+    content: ",";
+}
+
+.bk-style-icon-chart-geo_earth_bar:before {
+    .font-family-icon();
+    content: '"';
+}
+
+.bk-style-icon-chart-geo_earth_heatmap:before {
+    .font-family-icon();
+    content: "~";
+}
+
+.bk-style-icon-chart-geo_earth_graph:before {
+    .font-family-icon();
+    content: '"';
+}
+
+.bk-style-icon-slack:before {
+    .font-family-icon();
+    content: "!";
+}
+
+.bk-style-icon-comments:before {
+    .font-family-icon();
+    content: "?";
+}
+
+.bk-style-icon-table-column-options {
+    &:before {
+        .font-family-icon();
+        content: "µ";
+    }
+}
+
+.bk-style-icon-formula:before {
+    .font-family-icon();
+    content: "©";
+}
+
+
+.bk-style-icon-degree:before {
+    .font-family-icon();
+    content: "°";
+}
+
+.bk-style-icon-play:before {
+    .font-family-icon();
+    content: "€";
+}
+
+.bk-style-icon-pause:before {
+    .font-family-icon();
+    content: "ä";
+}
+
+.bk-style-icon-replay:before {
+    .font-family-icon();
+    content: "ü";
+}
+
+.bk-style-icon-nextstep:before {
+    .font-family-icon();
+    content: "ç";
+}
+
+.bk-style-icon-export:before {
+    .font-family-icon();
+    content: "®";
+}
+
+.bk-style-icon-save:before {
+    .font-family-icon();
+    content: "¢";
+}
+
+.bk-style-icon-clipboard:before {
+    .font-family-icon();
+    content: "¥";
+}
+
+.bk-style-icon-inverted-question:before {
+    .font-family-icon();
+    content: "¿";
+}
+
+.bk-style-icon-triangle-solid:before {
+    .font-family-icon();
+    content: "£";
+}
+
+.bk-style-icon-dragable-handle:before {
+    .font-family-icon();
+    content: "$";
+}
+
+.bk-style-icon-search-big:before {
+    .font-family-icon();
+    content: "Σ";
+}
+
+.bk-style-icon-data-big:before {
+    .font-family-icon();
+    content: "α";
+}
+
+.bk-style-icon-clock:before {
+    .font-family-icon();
+    content: "=";
+}
+.bk-style-icon-funnel:before {
+    .font-family-icon();
+    content: "«";
+}
+.bk-style-icon-gauge:before {
+    .font-family-icon();
+    content: "¬";
+}
+.bk-style-icon-open-book:before {
+    .font-family-icon();
+    content: "§";
+}
+.bk-style-icon-clipboard-text:before {
+    .font-family-icon();
+    content: "¶";
+}
+.bk-style-icon-download-bold:before {
+    .font-family-icon();
+    content: "Þ";
+}
+.bk-style-icon-key:before {
+    .font-family-icon();
+    content: "ß";
+}
+.bk-style-icon-chart-stacked-line:before {
+    .font-family-icon();
+    content: "Ý";
+}
+.bk-style-icon-chart-pivot_table:before {
+    .font-family-icon();
+    content: "¤";
+}
+.bk-style-icon-activity-feed:before {
+    .font-family-icon();
+    content: "ƒ";
+}
+.bk-style-icon-relate:before {
+    .font-family-icon();
+    content: "M";
+}
+.bk-style-icon-magic-wand:before {
+    .font-family-icon();
+    content: "À";
+}
+.bk-style-icon-configure:before {
+    .font-family-icon();
+    content: "Â";
+}

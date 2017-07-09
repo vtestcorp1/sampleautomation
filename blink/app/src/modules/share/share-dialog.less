@@ -1,0 +1,360 @@
+@import '/resources/css/import.less';
+@import '/resources/css/ui-styles.less';
+
+@row-height: 45px;
+
+.bk-share-dialog {
+
+    &.modal.bk-dialog {
+        width: 560px;
+    }
+
+    &.bk-sidebar-dialog-layout {
+        .bk-multiple-select {
+            width: 250px;
+        }
+    }
+
+    .bk-multiple-select {
+        width: 325px;
+    }
+
+    .bk-loading {
+        .panel-loading-indicator(@y: 60%);
+    }
+
+    .bk-loading-sidebar {
+        .panel-loading-indicator(@x: 440px);
+    }
+
+    margin-top: -300px;
+
+    /* Sidebar Column Layout */
+    &.modal.bk-sidebar-dialog-layout {
+        width: 680px;
+
+        .bk-body {
+            .bk-dialog-permission-view {
+                border-left: 1px solid @gray-border;
+                margin-left: 200px;
+            }
+        }
+    }
+
+    .bk-body {
+        .bk-sidebar {
+            float: left;
+            margin-right: 20px;
+            padding: 20px;
+            width: 160px;
+            max-height: 350px;
+            min-height: 250px;
+            overflow-y: auto;
+            border-right: 1px solid @gray-border;
+
+            .bk-table-sharing-options {
+                label {
+                    input {
+                        margin-top: -3px;
+                    }
+
+                    span {
+                        margin-left: 6px;
+                    }
+                }
+            }
+
+            ul li {
+                margin-left: 22px;
+                line-height: 25px;
+                color: @gray-secondary-text;
+                font-size: 12px;
+                cursor: default;
+
+                &.bk-selected {
+                    color: @gray-main-text;
+                    font-weight: bold;
+                }
+            }
+
+            &:not(.bk-disabled) {
+                .bk-table-sharing-options label {
+                    cursor: pointer;
+                }
+
+                ul li {
+                    cursor: pointer;
+
+                    &:hover {
+                        color: @gray-main-text;
+                    }
+                }
+            }
+        }
+
+        .bk-dialog-permission-view {
+            padding: 10px 25px 25px 25px;
+
+            h2 {
+                padding-top: 1px;
+                margin-top: 0;
+                margin-bottom: 0;
+                font-size: 16px;
+                font-weight: normal;
+            }
+
+             .bk-permission-list {
+                 margin-bottom: 10px;
+
+                 .bk-principal-viewer {
+                     display: flex;
+                     flex-direction: row;
+                 }
+
+                 ul {
+                     max-height: 6 * (@row-height + 1) + 1;
+                     overflow-y: auto;
+                     margin-top: 10px;
+                     height: 100%;
+
+                     li.bk-user-list {
+                         height: @row-height + 3px;
+                         border-bottom: 1px solid @gray-border-faint;
+                         .bk-permission-viewer {
+                             display: flex;
+                             flex-direction: row;
+                             height: 100%;
+                             .bk-permission-type-drop-down {
+                                 .ui-select-container {
+                                     width: 100px;
+                                 }
+                             }
+                         }
+
+                         .bk-principal-container {
+                             margin-top: auto;
+                             margin-bottom: auto;
+                             .flex-grow-shrink-basis(1, 1, 160px);
+                         }
+                         .bk-share-principal {
+
+                         }
+
+                         &:first-child {
+                            border-top: 1px solid @gray-border-faint;
+                         }
+
+                         .bk-permission-pic {
+                             .flex-grow-shrink-basis(0, 1, 30px);
+                             margin: auto;
+                         }
+
+                         .bk-permission-principal {
+                             display: flex;
+                             flex-direction: column;
+                             white-space: nowrap;
+                             .bk-name, .bk-display-name {
+                                 display:inline-block;
+                                 .flex-grow-shrink-basis(0, 0, auto);
+                                 overflow: hidden;
+                                 text-overflow: ellipsis;
+                                 height:20px;
+                                 width: 200px;
+                             }
+                             .bk-display-name {
+                                 height: 10px;
+                                 line-height: 10px;
+                             }
+                             .bk-email {
+                                 line-height: 30px;
+                             }
+                         }
+
+                         .bk-profile-pic-container, .bk-group-icon {
+                             display: inline-block;
+                             margin-right: 10px;
+                         }
+
+                         .bk-profile-pic-container {
+                             .bk-profile-pic-container(30px);
+                             vertical-align: middle;
+                             font-size:18px;
+                         }
+
+                         .bk-group-icon {
+                             width: 30px;
+                             height: 30px;
+                             line-height: 30px;
+                             border-radius: 15px;
+                             background-color: @h-gray4;
+                             vertical-align: middle;
+
+                             span {
+                               margin-left: 7px;
+                               color: white;
+                             }
+                         }
+
+                         .bk-is-owner-label {
+                             float: right;
+                             margin: auto;
+                             color: @green-default;
+                             .font-family-bold();
+                             font-size: 13px;
+                         }
+
+                         // Apply the select box common UI
+                         .bk-select-box {
+                             .flex-grow-shrink-basis(0, 1, 100px);
+                             display: inline-block;
+                             margin: auto;
+                             margin-left: 20px;
+
+                         }
+
+                         .bk-delete-row-btn {
+                             .flex-grow-shrink-basis(0, 0, 10px);
+                             margin: auto;
+                             padding: 5px;
+                             color: @gray-main-text;
+                             cursor: pointer;
+
+                             &:hover {
+                                background-color: @gray-bg;
+                             }
+                         }
+                     }
+                 }
+            }
+
+            .bk-add-users {
+                padding: 12px 20px 20px 20px;
+                margin-top: 25px;
+                border-radius: 3px;
+                background-color: @gray-bg;
+                border: 1px solid @gray-border;
+                .transition(~"all .2s ease-in");
+
+                .bk-add-users-header {
+                    text-align: center;
+
+                    .bk-plus-icon {
+                        display: inline-block;
+                        width: 20px;
+                        height: 20px;
+                        border: 1px solid @h-gray5;
+                        border-radius: 100px;
+
+                        &:before {
+                            color: @gray-secondary-text;
+                        }
+                    }
+
+                    .bk-add-users-title {
+                        color: @gray-secondary-text;
+                        .font-family-bold();
+                    }
+                }
+
+                .bk-add-users-body {
+                    .bk-new-permission {
+                        .flex();
+                    }
+
+                    margin-top: 10px;
+
+                    .bk-user-autocomplete {
+                        display: inline-block;
+                        margin-right: 10px;
+                        width: 278px;
+                        vertical-align: middle;
+                    }
+
+                    .ui-select-highlight {
+                        color: @grey8;
+                    }
+                    // Apply the select box common UI
+                    .bk-select-box {
+                        display: inline-block;
+                        margin-left: 20px;
+
+                        // No need of the search box in this case
+                        .chosen-container-single .chosen-drop .chosen-search {
+                            display: none;
+                        }
+                    }
+
+                    // Apply the UI of the select box tight to an input
+                    .bk-multiselect-input {
+                        display: inline-block;
+                        .ui-select-choices-row {
+                            height: 45px;
+                        }
+                    }
+
+                    .bk-add-users-buttons {
+                        margin-top: 17px;
+
+                        .bk-add-permissions-btn {
+                            margin-left: 12px;
+                        }
+                    }
+
+                    .chosen-drop .chosen-results {
+                        max-height: 150px;
+                    }
+                }
+
+                &:not(.bk-expanded) {
+                    padding: 12px 20px !important;
+                    cursor: pointer;
+                    background-color: @h-gray;
+                    border: 1px solid @h-gray2;
+                    color: @h-gray5;
+                    .transition(~"all .2s ease-in");
+
+                    .bk-add-users-header {
+                        text-align: center;
+
+                        .bk-plus-icon {
+                            display: inline-block;
+                        }
+
+                        .bk-add-users-title {
+                            .font-family-bold();
+                        }
+                    }
+
+                    .bk-add-users-body { display: none; }
+                }
+            }
+
+            .bk-unsaved-changes-message {
+                margin-top: 20px;
+                line-height: 30px;
+                padding-right: 14px;
+
+                .bk-save-btn, .bk-cancel-button {
+                    float: right;
+                }
+
+                .bk-save-btn {
+                    .bk-padding-left-20;
+                }
+
+                .bk-cancel-button {
+                    .bk-margin-right-10;
+                }
+            }
+        }
+    }
+    .bk-add-principal {
+        display: block;
+        .bk-multiselect-input {
+            width: 100%;
+            .bk-select-box {
+                width: 100%;
+            }
+        }
+    }
+}

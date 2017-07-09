@@ -1,0 +1,91 @@
+<div class="bk-draggable-help-portal"
+     blink-draggable
+     blink-draggable-handle=".bk-draggable-bar">
+    <div class="bk-help-portal" ng-class="{'help-portal-minimized': isMinimized}">
+        <div class="bk-help-hd">
+            <div class="bk-help-title">{{strings.Help}}</div>
+            <div class="bk-draggable-bar">
+                <div class="bk-draggable-handle">
+                    <div class="clearfix">
+                        <div class="circle fl"></div>
+                        <div class="circle fl"></div>
+                        <div class="circle fl"></div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="circle fl"></div>
+                        <div class="circle fl"></div>
+                        <div class="circle fl"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="bk-help-controls">
+                <span class="bk-style-icon-min-max" ng-click="minMaxHelp()"></span>
+                <span class="bk-style-icon-close" ng-click="closeHelp()"></span>
+            </div>
+        </div>
+        <div class="help-bd" ng-show="!isMinimized">
+            <div ng-if="showLoadingIndicator()">
+                <div class="bk-in-progress">
+                    <div class="bk-dot dot1"></div>
+                    <div class="bk-dot dot2"></div>
+                    <div class="bk-dot dot3"></div>
+                    <div class="bk-dot dot4"></div>
+                </div>
+            </div>
+            <div ng-show="isMindtouchReady()" class="help-default">
+                <div class="bk-help-link">
+                    <span class="bk-style-icon-tour"></span>
+                    <div class="bk-mindtouch-link">
+                        <a href="{{ mindTouchUrlHome }}" target="_blank" ng-click="closeHelp()">
+                            {{mindTouchLinks.home.TITLE}}
+                        </a>
+                    </div>
+                </div>
+                <div class="bk-help-link">
+                    <span class="bk-style-icon-key"></span>
+                    <div class="bk-mindtouch-link">
+                        <a href="{{ mindTouchUrlKeywords }}" target="_blank" ng-click="closeHelp()">
+                            {{mindTouchLinksStrings.keywords.TITLE}}
+                        </a>
+                    </div>
+                </div>
+                <div class="bk-help-link">
+                    <span class="bk-style-icon-clipboard-text"></span>
+                    <div class="bk-mindtouch-link">
+                        <a href="{{ mindTouchUrlReleaseNotes }}" target="_blank" ng-click="closeHelp()">
+                            {{mindTouchLinksStrings.releaseNotes.TITLE}}
+                        </a>
+                    </div>
+                </div>
+                <div class="bk-help-link">
+                    <span class="bk-style-icon-open-book"></span>
+                    <div class="bk-mindtouch-link">
+                        <a href="{{ mindTouchUrlAdminGuide }}" target="_blank" ng-click="closeHelp()">
+                            {{mindTouchLinksStrings.adminGuide.TITLE}}
+                        </a>
+                    </div>
+                </div>
+                <div class="bk-help-link">
+                    <span class="bk-style-icon-download-bold"></span>
+                    <div class="bk-mindtouch-link">
+                        <a href="{{ mindTouchUrlDownloads }}" target="_blank" ng-click="closeHelp()">
+                            {{mindTouchLinksStrings.downloads.TITLE}}
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div ng-if="showKeywordsFallback()"
+                 ng-controller="HelpWidgetController"
+                 ng-include="'src/modules/help-widget/help-no-connection.html'"></div>
+        </div>
+        <div class="bk-help-footer" ng-show="!isMinimized">
+            <div>
+                {{strings.Still_need}}
+                <contact-support></contact-support>
+            </div>
+            <div>
+                <span>{{strings.Version}}</span>{{ getReleaseNameDisplayString() }}
+            </div>
+        </div>
+    </div>
+</div>

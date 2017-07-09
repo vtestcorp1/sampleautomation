@@ -1,0 +1,78 @@
+@import '/resources/css/import.less';
+
+.bk-blob-uploader {
+    display: inline-block;
+
+    .bk-blob-uploader-content {
+        position: relative;
+        display: inline-block;
+        margin: 8px 4px;
+        cursor: pointer;
+
+        .bk-blob-uploader-overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: @h-black-transparent-5;
+            border-radius: 2px;
+            opacity: 0;
+            transition: opacity 200ms ease-out;
+
+            &:hover {
+                opacity: 1;
+            }
+
+            .bk-blob-uploader-overlay-content {
+                position: relative;
+                width: 100%;
+                height: 100%;
+
+                .bk-blob-uploader-drop-zone {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    opacity: 0;
+                    z-index: 2;
+
+                    .bk-blob-uploader-file-input {
+                        width: 100%;
+                        height: 100%;
+                        cursor: pointer;
+                    }
+                }
+
+                .bk-blob-uploader-overlay-upload-button-container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0.85;
+                    z-index: 1;
+
+                    .bk-blob-uploader-overlay-upload-button {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    .bk-blob-uploader-error {
+        display: table-cell;
+        margin-top: 8px;
+        .text-size-x-small;
+        border-radius: 2px;
+        color: @grey5;
+        background-color: @h-pale-yellow;
+
+        .bk-blob-uploader-error-message {
+            display: inline-block;
+            padding: 3px 5px;
+        }
+    }
+}

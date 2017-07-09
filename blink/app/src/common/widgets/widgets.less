@@ -1,0 +1,104 @@
+/**
+ *  Copyright: ThoughtSpot Inc. 2013-2014
+ *  Author: Jonathan Moreira (jonathan@thoughtspot.com)
+ *
+ *  Widgets library
+ *
+ *  The purpose of this file is to regroup any reusable UI and style elements.
+ */
+
+@import '/resources/css/import.less';
+@import '/resources/css/ui-styles.less';
+
+/* Slider */
+@slider-width: 100px;
+@slider-height: 5px;
+@slider-color: @gray-bg;
+@slider-border-color: @gray-border;
+@slider-selection-color: @blue-default;
+@slider-selection-border-color: @blue-darker;
+@slider-handle-width: 5px;
+@slider-handle-color: @white-text;
+@slider-border-radius: 10px;
+@slider-selection-border-radius: 3px 3px 1px 1px;
+blink-slider {
+    display: block;
+    position: relative;
+    width: @slider-width;
+    height: @slider-height;
+    background-color: @slider-color;
+    border: 1px solid @slider-border-color;
+    border-radius: @slider-border-radius;
+    .box-shadow-inset(0 1px 4px @bg-shadow-faint, inset 0 1px 0 @inner-shadow-faint);
+
+    &.disabled {
+        opacity: 0.5;
+    }
+    .selection-indicator {
+        position: absolute;
+        height: @slider-height;
+        background-color: @slider-selection-color;
+        border: 1px solid @slider-selection-border-color;
+        top: -1px;
+        border-radius: @slider-border-radius;
+        .box-shadow-inset(0 1px 4px @bg-shadow-faint, inset 0 1px 0 @inner-shadow-faint);
+    }
+    &.disabled .selection-indicator {
+        background-color: transparent;
+        border-color: transparent;
+    }
+}
+blink-slider-handle {
+    z-index:1000;
+    width: @slider-handle-width;
+    height: @slider-height + 8px;
+    background-color: @slider-handle-color;
+    border: 1px solid @gray-border;
+    border-radius: 5px;
+    position: absolute;
+    top: -5px;
+    user-select: none;
+
+    &:hover {
+        cursor: ew-resize;
+    }
+
+    &.fixed-handle {
+        visibility: hidden;
+        z-index: 0;
+    }
+}
+blink-slider.slider-handle-dragging {
+    cursor: ew-resize;
+}
+
+.bk-action-confirmation-popup {
+    .popover {
+        background: transparent;
+        box-shadow: none;
+        border: 0;
+        .popover-content {
+            padding: 0;
+        }
+    }
+
+    .bk-action-buttons {
+        margin-top: 18px;
+        padding-bottom: 10px;
+        text-align: right;
+
+        &.bk-has-suppress-option {
+          margin-bottom: 10px;
+          border-bottom: 1px solid @h-gray5;
+        }
+
+        .bk-tn {
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+    }
+}
+
+.bk-sources-popover {
+    left: 220px
+}

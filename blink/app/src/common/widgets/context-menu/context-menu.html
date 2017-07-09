@@ -1,0 +1,22 @@
+<div class="bk-context-menu" blink-on-escape="close()"
+     blink-overlay="close()" ignore-click-selector="config.ignoreOverlayClickSelectors">
+    <div class="bk-context-menu-header" ng-show="!!config.title">
+        <div class="bk-context-menu-title" ng-bind-html="config.title"></div>
+    </div>
+    <div class="bk-sub-menu-container">
+        <div class="bk-sub-menu" ng-repeat="item in config.subMenuItems">
+            <div ng-include="item.url"
+                 blink-tooltip="{{item.disabledHelp}}"
+                 ng-show="canShowSubMenu(item.id)"
+                 class="bk-sub-menu-item"
+                 ng-class="{'bk-sub-menu-item-disabled': !item.enabled}"
+                 capture-click="onSubMenuItemClick($event, item)">
+            </div>
+        </div>
+        <bk-related-items
+                ng-if="(showRelatedItems() && !!relatedItemsComponent)"
+                bk-ctrl="relatedItemsComponent"
+                class="bk-sub-menu">
+        </bk-related-items>
+    </div>
+</div>

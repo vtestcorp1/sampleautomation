@@ -1,0 +1,54 @@
+<div class="row-level-security-container" ng-switch="$ctrl.areRulesDefined()">
+    <div class="bk-rls-rules-container" ng-switch-when="true">
+        <div class="bk-rls-header">
+            <div ng-bind-html="$ctrl.strings.RLS_DESCRIPTION">
+            </div>
+            <bk-secondary-button
+                    text="Add"
+                    icon="bk-style-icon-small-plus"
+                    class="fr bk-rls-add-btn"
+                    ng-click="$ctrl.addUpdateRule()"></bk-secondary-button>
+        </div>
+        <actionable-list
+                class="bk-rls-rules-list"
+                list-model="$ctrl.listModel"
+                on-row-click="$ctrl.onRowClick"
+                action-items="$ctrl.getActionBtns()"></actionable-list>
+    </div>
+    <div ng-switch-when="false" class="bk-rls-help-container">
+        <div class="rls-explain-content"> {{ $ctrl.strings.EXPLAIN_RLS }}</div>
+        <bk-secondary-button
+                text="{{ $ctrl.strings.ADD_RULE }}"
+                icon="bk-style-icon-small-plus"
+                class="bk-rls-add-btn"
+                ng-click="$ctrl.addUpdateRule()"></bk-secondary-button>
+        <div class="help-assistant">
+            <div class="assistant-image">
+            </div>
+            <div  class="rls-help-text">
+                <div ng-bind-html="$ctrl.strings.EXAMPLE1"></div>
+                <div class="img-example1">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Text Format-->
+<script type="text/ng-template" id="metadata-list-content-format.html">
+    <div class="bk-overflow-ellipsis bk-name-text"
+         blink-tooltip="{{column.format(row)}}"
+         auto-tooltip-style="bootstrap">
+        {{column.format(row)}}
+    </div>
+</script>
+<!--Date Format-->
+<script type="text/ng-template" id="metadata-list-date-format.html">
+    <div class="bk-clock-icon"></div><div class="bk-time-author-label">{{column.format(row)}}</div>
+</script>
+<!--Author Format-->
+<script type="text/ng-template" id="metadata-list-author-format.html">
+    <blink-profile-pic user-id="column.format(row)[0]"
+                       user-display-name="column.format(row)[1]"
+                       class="bk-profile-pic">
+    </blink-profile-pic>
+</script>

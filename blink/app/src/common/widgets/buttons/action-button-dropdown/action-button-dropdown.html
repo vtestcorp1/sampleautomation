@@ -1,0 +1,43 @@
+<div class="bk-dropdown-button-wrapper bk-button-wrapper"
+     blink-on-escape="closeDropdown()"
+     ng-show="hasAnyActionItem()">
+    <div ng-switch="state.showActionDropdownMenu" class="bk-button-switch">
+        <div ng-switch-when="true"
+             ng-class="{active: state.showMenu}"
+             class="bk-button-switch-when">
+            <bk-button button-class="{{ buttonClass }}"
+                       button-text="{{ buttonText }}"
+                       button-icon="{{icon}}"
+                       uib-popover-template="'action-dropdown'"
+                       popover-class="bk-action-dropdown"
+                       popover-placement="{{menu.placement || 'auto bottom-right'}}"
+                       popover-trigger="none"
+                       popover-is-open="state.showMenu"
+                       ng-click="toggleDropdown()"
+                       popover-append-to-body="true"></bk-button>
+            <div ng-if="showLoading()" class="bk-action-progress">
+                <div class="bk-in-progress">
+                    <div class="bk-dot dot1"></div>
+                    <div class="bk-dot dot2"></div>
+                    <div class="bk-dot dot3"></div>
+                    <div class="bk-dot dot4"></div>
+                </div>
+            </div>
+        </div>
+        <div ng-switch-when="false">
+            <bk-secondary-button text="{{ menu.actions[0].label }}"
+                                 icon="{{ menu.actions[0].icon }}"
+                                 is-disabled="menu.actions[0].dropdownItemDisabled"
+                                 ng-click="menu.actions[0].onClick();">
+            </bk-secondary-button>
+        </div>
+    </div>
+
+    <script type="text/ng-template" id="action-dropdown">
+        <div blink-overlay="closeDropdown()"
+             ng-click="closeDropdown()"
+             ignore-click-selector="['.bk-dropdown-button-wrapper .active']">
+            <bk-action-menu bk-ctrl="actionMenu"></bk-action-menu>
+        </div>
+    </script>
+</div>

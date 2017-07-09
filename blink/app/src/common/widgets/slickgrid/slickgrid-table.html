@@ -1,0 +1,48 @@
+<div class="bk-slickgrid-table" blink-on-escape="onEscape()">
+    <div clipboard-copy-confirmation-view blink-auto-hide-view show="showCopyConfirmation"></div>
+    <div ng-hide="noData" class="bk-table-container"></div>
+    <div ng-show="noData" class="bk-no-content-placeholder">{{ 'No data to display' | l10n }}</div>
+    <div ng-hide="noData" class="bk-pagination-info">
+        <span>{{strings.showing.assign(
+                {lower: paginationInfo.topRow,
+                higher: paginationInfo.bottomRow,
+                total: paginationInfo.totalRows})}}
+        </span>
+        <span ng-switch on="paginationInfo.hasMoreData">
+            <span ng-switch-when="true">
+                <span>{{strings.Results_are_limited}}</span>{{ paginationInfo.maxRows }}
+                <span>{{strings.rows}}</span>
+            </span>
+        </span>
+    </div>
+</div>
+
+<script type="text/ng-template" id="read-only-text-cell">
+    <div class="bk-readonly-value">{1}</div>
+</script>
+
+<script type="text/ng-template" id="editable-text-cell">
+    <div class="edit-wrapper">
+        <div class="bk-value">{1}</div>
+    </div>
+</script>
+
+<script type="text/ng-template" id="text-cell-placeholder">
+    <span class="placeholder">{1}</span>
+</script>
+
+<script type="text/ng-template" id="select-cell">
+    <span class="bk-select-box">
+        <ui-select ng-model="selectedValue"
+                   on-select="onEdit($item)"
+                   class="slick-cell-editor"
+                   theme="select2"
+                   append-to-body="true"
+                   search-enabled="false">
+            <ui-select-match>{{$select.selected}}</ui-select-match>
+            <ui-select-choices repeat="option in options">
+                {{option}}
+            </ui-select-choices>
+        </ui-select>
+    </span>
+</script>

@@ -1,0 +1,5 @@
+<div class="bk-icon object-result" ng-class="{'bk-style-icon-answer': match.isAnswer(),
+                                                'bk-style-icon-pinboard': match.isPinboard()}"></div>
+<div class="item-text">
+    <span ng-bind-html="match.getHighlightedName() | blinkRangeHighlight:formatters.getMatchHighlightClass()"></span>
+</div>

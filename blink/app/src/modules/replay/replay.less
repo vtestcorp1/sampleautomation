@@ -1,0 +1,99 @@
+/**
+ *  Copyright: ThoughtSpot Inc. 2012-2016
+ *  Author: Jordie Hannel (jordie@thoughtspot.com)
+ *
+ */
+
+@import '/resources/css/import.less';
+@import '/resources/css/ui-styles.less';
+
+/* Answer Replay Controls */
+
+.bk-viz-chart {
+
+    &.simhover .bk-toolbar-btn {
+        opacity: 1;
+        .transition(~"opacity 200ms ease-in");
+
+        &.bk-chart-editor.bk-locked {
+            opacity: 1;
+        }
+    }
+}
+
+.bk-replay-controls {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    min-height: 100%;
+    z-index: @max-zindex;
+    margin-bottom:100px;
+    .animation-duration(0.3s);
+    .animation-fill-mode(both);
+    .animation-name(fade-in);
+
+    .bk-replay-paused {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: @bg-shadow-faint;
+
+        div.container {
+            position: absolute;
+            top: 40%;
+            left: 40%;
+            width: 300px;
+
+            .bk-viz-btn-icon {
+                position: relative;
+                left: 30%;
+                &:before {
+                    font-size: 75px;
+                    color: @orange-default;
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+
+    .bk-replay-played {
+
+        div.container {
+            position: absolute;
+            top: 40%;
+            left: 40%;
+            width: 400px;
+
+            .bk-viz-btn-icon {
+                position: relative;
+                left: 30%;
+                &:before {
+                    font-size: 75px;
+                    color: @orange-default;
+                    opacity: 0.5;
+                }
+                .animation-duration(1.0s);
+                .animation-fill-mode(both);
+                .animation-name(fade-out);
+            }
+        }
+    }
+}
+
+/* Click Effect Controls */
+
+.bk-click-effect {
+    z-index: @max-zindex - 1;
+    position: absolute;
+    border-radius: 50%;
+    background-color: @orange-default;
+    opacity: 0.5;
+    .animation-duration(0.5s);
+    .animation-name(reveal);
+}

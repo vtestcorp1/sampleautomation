@@ -1,0 +1,105 @@
+<div class="create-schema">
+    <div ng-if="!showConfirmationScreen">
+        <!-- Header -->
+        <div class="header-menu">
+            <input class="bk-search-input" placeholder="{{strings.SEARCH}}" ng-model="searchText.value"/>
+            <div class="right-btns">
+                <bk-secondary-button text="{{strings.createSchema.WRITE_TQL}}"
+                                     icon="bk-style-icon-inverted-question"
+                                     ng-if="isUploadSqlMode"
+                                     class="bk-write-tql-button"
+                                     ng-click="write()"></bk-secondary-button>
+                <bk-secondary-button text="{{strings.createSchema.RESET}}"
+                                     icon="bk-style-icon-reset"
+                                     class="reset-btn"
+                                     ng-click="reset()"></bk-secondary-button>
+                <bk-primary-button text="{{ executeBtnConfig.label }}"
+                                   icon="bk-style-icon-play"
+                                   is-disabled="isUploadSqlMode"
+                                   is-busy="isExecuting()"
+                                   tooltip="{{ executeBtnConfig.tip }}"
+                                   ng-click="onExecuteClick()"></bk-primary-button>
+            </div>
+        </div>
+
+
+        <!-- Upload SQL Mode -->
+        <div ng-if="isUploadSqlMode">
+            <div blink-html5-file-upload upload-config="getSqlUploadConfig()"
+                 indicate-file-read>
+            </div>
+            <div class="bk-upload-sql-arrow bk-flip-v"></div>
+            <div class="bk-sql-icon"></div>
+        </div>
+
+        <!-- Edit SQL Mode -->
+        <ul ng-if="!isUploadSqlMode"
+            class="query-list">
+            <li ng-repeat="queryItem in queries | filter: textFilter track by queryItem.id"
+                class="query-list-item"
+                ng-class="{
+                expand: queryItem.isExpanded,
+                success: didQuerySucceed(queryItem),
+                failure: didQueryFail(queryItem),
+                'insert-allowed': canInsertQuery($index)}"
+                ng-click="expandQueryItem(queryItem, $index)">
+                <div ng-if="!queryItem.isExpanded" class="bk-query">
+                    {{ getQuerySnippet(queryItem) }}
+                </div>
+                <div ng-if="queryItem.isExpanded" class="query-editor-container">
+                    <div ng-class="{expand: queryItem.isExpanded}"
+                         ng-model="queryItem.command"
+                         ui-ace="{
+                    useWrapMode : true,
+                    theme: 'sqlserver',
+                    mode: 'tql',
+                    require: ['ace/ext/language_tools'],
+                    workerPath: 'app/lib/min/ace',
+                    advanced: {
+                        enableBasicAutocompletion: true,
+                        enableLiveAutocompletion: true
+                    },
+                    onLoad : editorLoaded
+                }">
+                    </div>
+                    <div ng-if="queryItem.isExpanded" class="action-bar">
+                        <div class="bk-style-icon-minimize"
+                             blink-tooltip="{{ strings.COLLAPSE }}"
+                             ng-click="collapseQueryItem($event, queryItem)"></div>
+                        <div ng-include="'add-btn'"></div>
+                        <div ng-include="'delete-btn'"></div>
+                        <div ng-if="didQuerySucceed(queryItem)">{{strings.Readonly}}</div>
+                    </div>
+                </div>
+                <div class="query-item-icons" ng-if="!queryItem.isExpanded">
+                    <div ng-include="'add-btn'"></div>
+                    <div ng-include="'delete-btn'"></div>
+                    <div ng-if="didQuerySucceed(queryItem)"
+                         class="bk-style-icon-circled-checkmark bk-icon bk-success-icon">
+                    </div>
+                    <bk-cross-icon ng-if="didQueryFail(queryItem)"
+                                   class="bk-icon bk-failure-icon"></bk-cross-icon>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="bk-import-confirmation" ng-if="showConfirmationScreen">
+        <div ng-include="'src/modules/user-data/create-schema/import-confirmation.html'"></div>
+    </div>
+</div>
+
+<script type="text/ng-template" id="delete-btn">
+    <div ng-if="!didQuerySucceed(queryItem)"
+         class="bk-delete-icon bk-style-icon-delete"
+         blink-tooltip="Delete"
+         ng-click="deleteItem($event, queryItem, $index)">
+    </div>
+</script>
+
+<script type="text/ng-template" id="add-btn">
+    <div class="bk-add-icon bk-icon bk-style-icon-small-plus"
+         blink-tooltip="Insert below"
+         ng-click="insertItem($event, queryItem, $index)">
+    </div>
+</script>

@@ -1,0 +1,28 @@
+<div class="bk-table-algorithm-customizer">
+    <div class="bk-section bk-table-algorithm-customization">
+        <div class="bk-title">{{ strings.a3.customizeTableAnalysisAlgorithmsTitle }}</div>
+        <form>
+            <div>
+                <div class="label2">{{ strings.a3.Min_Rows }}</div>
+                <input class="field-input" type="number" name="min_rows"
+                       ng-model="$ctrl.minRows"
+                       ng-change="$ctrl.verifyMinRows()"
+                       spellcheck="false">
+            </div>
+            <div>
+                <div class="label2">{{ strings.a3.Multiplier }}</div>
+                <input class="field-input" type="text" name="multiplier"
+                       ng-model="$ctrl.multiplier"
+                       ng-change="$ctrl.verifyMultiplier()"
+                       spellcheck="false">
+            </div>
+        </form>
+    </div>
+    <div class="bk-invalid-input-message2" id="invalid_input"
+          ng-show="$ctrl.isInputInvalid">{{$ctrl.invalidInputMessageString}}
+    </div>
+    <bk-primary-button class="bk-trigger-analysis-button"
+                       text="{{ strings.a3.triggerAnalysis }}"
+                       ng-click="$ctrl.trigger()">
+    </bk-primary-button>
+</div>

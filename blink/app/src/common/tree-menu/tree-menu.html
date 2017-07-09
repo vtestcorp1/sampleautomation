@@ -1,0 +1,21 @@
+<div class="bk-tree-menu">
+    <div class="bk-tree-levels">
+        <div class="bk-tree-level"
+             ng-repeat="widthFraction in spaceDistribution"
+             style="width:{{ widthFraction * 100 }}%">
+            <ul>
+                <li class="bk-tree-item"
+                    ng-repeat="value in (formattedValuesForLevels[$index] || [])">
+                    <span class="bk-tree-item-value"
+                          ng-click="selectNode($parent.$index, $index)"
+                          ng-class="{'selected': isSelectedItem($parent.$index, $index)}"
+                          ng-switch="!!value.templateUrl">
+                        <span ng-switch-when="true" ng-include="value.templateUrl" ng-init="data = value.data"></span>
+                        <span ng-switch-when="false" ng-bind-html="value"></span>
+                    </span>
+                </li>
+            </ul>
+            <!--<div class="bk-tree-level-selection-indicator">&lt;</div>-->
+        </div>
+    </div>
+</div>

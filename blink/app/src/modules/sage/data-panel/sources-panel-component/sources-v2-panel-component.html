@@ -1,0 +1,17 @@
+<div class="bk-manage-sources">
+    <bk-secondary-button text="{{ panelComponent.getString() }}"
+                         ng-click="panelComponent.toggleExpansion()"
+                         class="bk-choose-sources-btn"></bk-secondary-button>
+    <div class="bk-sources-popover" ng-show="panelComponent.isExpanded()"
+         blink-overlay="panelComponent.collapse()"
+         blink-on-escape="panelComponent.collapse()">
+        <div class="bk-arrow-left">
+            <div class="bk-arrow-left-inner"></div>
+        </div>
+        <div class="bk-sources-popover-inner">
+            <blink-data-scope component="panelComponent"
+                              sources-change-callback="onDataSourcesChange">
+            </blink-data-scope>
+        </div>
+    </div>
+</div>

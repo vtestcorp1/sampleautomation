@@ -1,0 +1,70 @@
+<div class="bk-checkbox-filter" ng-init="setCheckboxItems()">
+    <div class="bk-cb-filter-search-container">
+        <input class="bk-search-input"
+               type="text"
+               blink-auto-focus
+               spellcheck="false"
+               placeholder="{{displayTextValues.TYPE_A_VALUE}}"
+               ng-model="searchText"
+               ng-hide="hideSearchBar()"
+               ng-change="onSearchTextChange()">
+    </div>
+    <div class="bk-cb-filter-top-section" ng-hide="isReadOnly">
+        <div class="bk-section-control"
+             ng-click="changeSectionTo('ALL')"
+             ng-class="{active: inAllSection()}">{{displayTextValues.ALL}}
+        </div>
+        <div class="bk-section-control"
+             ng-click="changeSectionTo('SELECTED')"
+             ng-class="{active: inSelectedSection()}">{{displayTextValues.SELECTED}}
+        </div>
+    </div>
+    <div class="bk-cb-filter-lists-section" ng-switch on="selectedSection">
+        <div class="bk-cb-filter-selected-section"
+             ng-switch-when="SELECTED">
+            <blink-checkbox-collection bk-ctrl="selectedTabCheckboxCollectionCtrl">
+            </blink-checkbox-collection>
+            <div ng-hide="selectedTabCheckboxCollection.length > 0"
+                 class="bk-cb-no-selected-filter-container">
+                <div class="bk-no-content-placeholder bk-no-selected-filter-label">
+                    {{displayTextValues.NO_SELECTED_FILTER}}
+                </div>
+            </div>
+        </div>
+        <div class="bk-cb-filter-all-section" ng-switch-when="ALL">
+            <div ng-switch on="showLoadingIndicator">
+                <div ng-switch-when="true"
+                     class="bk-filter-search-pending-indicator">
+                    <blink-loading-indicator></blink-loading-indicator>
+                </div>
+                <div ng-switch-when="false"
+                     ng-switch="hasMoreValuesThanPageSize()">
+                    <div ng-switch-when="true">
+                        <div class="bk-no-content-placeholder bk-filter-too-many-values">
+                            {{ getTooManyValuesMessage() }}
+                        </div>
+                        <div class="bk-filter-sample-value-header">
+                            {{displayTextValues.SAMPLE_VALUES}}
+                        </div>
+                        <div class="bk-filter-sample-values"
+                             ng-repeat="sampleValue in getSampleValues()"
+                             ng-bind-html="sampleValue">
+                        </div>
+                    </div>
+                    <div ng-switch-when="false"
+                         ng-switch="allTabCheckboxCollection.length > 0">
+                        <div ng-switch-when="false">
+                            <div class="bk-no-content-placeholder bk-no-matches-message">
+                                {{displayTextValues.NO_MATCHES}}
+                            </div>
+                        </div>
+                        <div ng-switch-when="true">
+                            <blink-checkbox-collection bk-ctrl="allTabCheckboxCollectionCtrl">
+                            </blink-checkbox-collection>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

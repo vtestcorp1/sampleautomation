@@ -1,0 +1,16 @@
+<div class="bk-big-popup" blink-on-escape="hide()">
+    <div class="bk-context-dialog">
+        <div class="popup-header">
+            <span class="bk-header-title">{{title}}</span>
+            <a type="button" class="bk-close" ng-click="hide()">&times;</a>
+        </div>
+        <blink-data-explorer on-navigate-away="hide()"
+                             data="data"
+                             permissions="permissions"
+                             selected-table-id="selectedTable.tableId"
+                             selectable-column-predicate="selectableColumnPredicate"
+                             mode="mode"
+                             class="popup-content">
+        </blink-data-explorer>
+    </div>
+</div>

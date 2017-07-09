@@ -1,0 +1,16 @@
+{
+  "name": "video_recorder",
+  "main": "recorder.js",
+  "dependencies": {
+    "body-parser": "~1.4.2",
+    "express": "~4.5.1",
+    "fluent-ffmpeg": "^2.0.1",
+    "buffer-concat": "0.0.1"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "description": "",
+  "version": "1.0.0",
+  "devDependencies": {}
+}

@@ -1,0 +1,24 @@
+<div class="bk-sage-feedback-dialog">
+    <div class="bk-dialog-field">
+        <span class="bk-select-box">
+            <ui-select ng-model="$ctrl.data.customData.userRating"
+                       theme="select2"
+                       search-enabled="false">
+                <ui-select-match placeholder="{{$ctrl.data.customData.strings.SELECT_A_RATING}}">
+                    {{$select.selected.text}}
+                </ui-select-match>
+                <ui-select-choices repeat="rating.number as rating in $ctrl.data.customData.ratingList">
+                    {{rating.text}}
+                </ui-select-choices>
+            </ui-select>
+        </span>
+        <span class="bk-asterisk">*</span>
+    </div>
+    <div class="bk-dialog-field">
+        <textarea
+            class="bk-description-editarea"
+            placeholder="{{$ctrl.data.customData.strings.ENTER_DESCRIPTION_PLACEHOLDER}}"
+            ng-model="$ctrl.data.customData.description">
+        </textarea>
+    </div>
+</div>

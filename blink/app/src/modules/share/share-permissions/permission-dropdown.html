@@ -1,0 +1,20 @@
+<div  class="bk-permission-type-drop-down bk-select-box"
+      ng-class="{'bk-disabled': $ctrl.readOnly}">
+    <ui-select ng-model="$ctrl.permissionType"
+               ng-disabled="$ctrl.readOnly"
+               search-enabled="false"
+               append-to-body="true"
+               theme="select2"
+               ng-change="$ctrl.onChange()">
+        <ui-select-match placeholder="">
+            <span class="bk-selected-permission">
+                {{$ctrl.getPermissionTypeLabel($select.selected)}}
+            </span>
+        </ui-select-match>
+        <ui-select-choices repeat="permission in $ctrl.getPermissionTypes($select.selected)">
+            <span class="bk-options-permission">
+                {{$ctrl.getPermissionTypeLabel(permission)}}
+            </span>
+        </ui-select-choices>
+    </ui-select>
+</div>

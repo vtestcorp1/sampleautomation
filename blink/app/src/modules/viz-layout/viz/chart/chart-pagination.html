@@ -1,0 +1,5 @@
+<div class="bk-chart-pagination" ng-show="chartPagination.canPaginate()">
+    <span class="bk-page-num"><span>{{strings.Chart_page}}</span>{{ getCurrentPageNumber() }}</span>
+    <span class="bk-link bk-control bk-next" ng-class="{'bk-inactive': !chartPagination.canShowPrev()}" ng-click="chartPagination.onPrev()"></span>
+    <span class="bk-link bk-control bk-prev" ng-class="{'bk-inactive': !chartPagination.canShowNext()}" ng-click="chartPagination.onNext()"></span>
+</div>

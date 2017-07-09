@@ -1,0 +1,154 @@
+<!--
+* Copyright: ThoughtSpot Inc. 2017
+* @author: Vishwas B Sharma (vishwas.sharma@thoughtspot.com)
+*
+* Description : Client needs to take care of only three things.
+*
+* 1. What to do on initialization ? Can be wrapped inside a function say
+*    onInitialized(isInitialized)
+*
+* 2. What to do on authentication expiration ? Can be wrapped inside a function
+*    say onAuthExpiration()
+*
+* 3. Call window.thoughtspot.initialize() before anything providing it with
+*    callback functions on what to do on initialization and what to do on auth
+*    expiration.
+-->
+<html>
+<head>
+    <script type="text/javascript" src="api/api.js"></script>
+    <script type="text/javascript">
+
+        // Protocol for the ThoughtSpot app. Ex: http or https
+        var protocol = undefined; //
+        // Hostport info for ThoughtSpot app. Ex: <host>:<port> or <host>
+        var hostPort = undefined;
+        // Refer to the admin guide to know how to procure pinboardId and
+        // visualizationId for embedding.
+        // ID of the pinboard to embed.
+        var pinboardId = undefined;
+        // ID of the visualization to embed.
+        var vizualizationId = undefined;
+        // ID of the pinboard visualization is part of.
+        var vizPinboardId = undefined;
+
+        /**
+         * Following are the three important steps to follow in order to embed
+         * Thoughtspot app within your website.
+         */
+
+        /**
+         * Step 1: Define steps you want to carry out on initialization success
+         *         or failure.
+         *
+         * @param isInitialized Boolean value to represent if the initialization
+         *        was successful or not.
+         */
+        function onInitialized(isInitialized) {
+            document.getElementById('clientApp').style.display = "initial";
+            if (isInitialized) {
+                console.log("Initialization successful.");
+                embedPinboardIframe();
+                embedVisualizationIframe();
+            } else {
+                console.log("Initialization un-successful.");
+            }
+        }
+
+        /**
+         * Step 2: Define steps you want to carry out upon authentication
+         *         expiration.
+         */
+        function onAuthExpiration() {
+            console.log("Auth expiration handler being called.");
+            if (confirm("Do you want to re-authenticate using IDP?")) {
+                window.location.reload(true);
+            } else {
+                // Do nothing! or handle it in the way you see fit.
+            }
+        }
+
+        /**
+         * Step 3: Call initialize by providing the two handlers and the API
+         *         will assume the responsibility of calling these functions.
+         *         As this call can cause the whole page to reload, consider
+         *         doing it before loading any resources.
+         */
+        window.thoughtspot.initialize(
+            onInitialized,
+            onAuthExpiration,
+            hostPort);
+
+        ///////////////////////////////////////////////////////////////////////
+        //// Example app and functions used in it are defined after this //////
+        ///////////////////////////////////////////////////////////////////////
+
+        /**
+         * Creates the URL for host running ThoughtSpot.
+         */
+        function getHostURL() {
+            return protocol + "://" + hostPort;
+        }
+
+        /**
+         * Creates iFrame URL from pinboard ID.
+         *
+         * @param pId to embed.
+         * @return iFrame node
+         */
+        function getIframeToEmbedPinboard(pId) {
+            var tsApp = document.createElement('iframe');
+            tsApp.width = "60%";
+            tsApp.height = "60%";
+            tsApp.src = getHostURL() + "/#/embed/viz/" + pId;
+            console.log(tsApp.src);
+            return tsApp;
+        }
+
+        /**
+         * Creates iFrame URL from visualization ID
+         *
+         * @param pId of pinboard which contains visualization.
+         * @param vId to embed.
+         * @return iFrame node
+         */
+        function getIframeToEmbedVisualization(pId, vId) {
+            var tsApp = document.createElement('iframe');
+            tsApp.width = "60%";
+            tsApp.height = "60%";
+            tsApp.src = getHostURL() + "/#/embed/viz/" + pId + "/" + vId;
+            console.log(tsApp.src);
+            return tsApp;
+        }
+
+        /**
+         * Embeds a pinboard in an iFrame as a child node.
+         */
+        function embedPinboardIframe() {
+            var divElement = document.getElementById("p-embeded-content");
+            divElement.innerHTML = "";
+            document.getElementById("p-embeded-content").appendChild(
+                getIframeToEmbedPinboard(pinboardId));
+        }
+
+        /**
+         * Embeds a visualization in an iFrame as a child node.
+         */
+        function embedVisualizationIframe() {
+            var divElement = document.getElementById("v-embeded-content");
+            divElement.innerHTML = "";
+            document.getElementById("v-embeded-content").appendChild(
+                getIframeToEmbedVisualization(vizPinboardId, vizualizationId));
+        }
+    </script>
+</head>
+<body style="display:None;text-align:center" id="clientApp">
+    <h1>Sample App</h1>
+    <hr width="60%"/>
+    <h2>Embedded pinboard</h2>
+    <div id="p-embeded-content"></div>
+    <hr width="60%"/>
+    <h2>Embedded vizualization</h2>
+    <div id="v-embeded-content"></div>
+</body>
+</html>

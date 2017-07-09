@@ -1,0 +1,9 @@
+<div class="bk-report-list">
+    <div class="bk-metadata-list">
+        <bk-job-status-viewer  class="status-viewer bk-vertical-flex-container-sized"
+                            ng-if="$ctrl.shouldShowStatusViewer"
+                            bk-ctrl="$ctrl.jobStatusViewerCtrl"></bk-job-status-viewer>
+        <metadata-list-page bk-ctrl="$ctrl.jobListCtrl"
+                            class="bk-vertical-flex-container-sized"></metadata-list-page>
+    </div>
+</div>

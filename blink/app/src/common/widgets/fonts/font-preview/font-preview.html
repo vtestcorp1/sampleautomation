@@ -1,0 +1,13 @@
+<div class="bk-font-preview"
+     blink-tooltip="{{ $ctrl.getFontInfoToolTipHtml() }}"
+     data-html="true"
+     ng-switch="$ctrl.isFontFaceAvailable()">
+    <span class="bk-font-preview-font-available" ng-switch-when="true">
+        <span class="bk-font-preview-font-name">{{ $ctrl.getFontFamily() }}</span>
+        <span class="bk-font-preview-text"
+              ng-style="$ctrl.getFontCSSStyle()">{{ $ctrl.getPreviewText() }}</span>
+    </span>
+    <span ng-switch-when="false">
+        <span class="bk-font-preview-no-font-message">{{ $ctrl.getNoFontFaceMessage() }}</span>
+    </span>
+</div>

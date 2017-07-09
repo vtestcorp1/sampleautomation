@@ -1,0 +1,13 @@
+<div class="bk-style-background-configurator">
+    <ul class="bk-style-background-configurator-prop-list">
+        <li>
+            <div class="bk-style-background-configurator-prop-name">
+                {{ $ctrl.getColorPropertyName() }}
+            </div>
+            <div class="bk-style-background-configurator-prop-configurator">
+                <bk-color-configurator bk-ctrl="$ctrl.getColorConfiguratorComponent()">
+                </bk-color-configurator>
+            </div>
+        </li>
+    </ul>
+</div>

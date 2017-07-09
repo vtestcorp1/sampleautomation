@@ -1,0 +1,10 @@
+<div class="bk-permission-viewer">
+    <bk-principal-viewer bk-ctrl="$ctrl.principalViewer" class="bk-principal-container">
+    </bk-principal-viewer>
+    <bk-permission-dropdown
+            ng-if="$ctrl.showPermissionPlugin"
+            class='bk-select-box'
+            bk-ctrl="$ctrl.permissionDropdown">
+    </bk-permission-dropdown>
+    <span class="bk-delete-row-btn" ng-click="$ctrl.onDelete($ctrl.sharePrincipal)" ng-show="!$ctrl.readOnly">&times;</span>
+</div>

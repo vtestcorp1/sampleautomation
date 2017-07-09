@@ -1,0 +1,103 @@
+
+.bk-import-confirmation, .bk-import-error{
+  margin-top: 120px;
+  margin-bottom: 120px;
+  text-align: center;
+}
+
+//TODO(Jonathan): Clean the duplicate code below (after beta)
+.bk-import-confirmation {
+  .bk-import-success {
+    width: 500px;
+    margin: 50px auto 120px auto;
+    padding: 50px 30px 70px 30px;
+    border: 1px solid @gray-border;
+    background-color: @gray-bg;
+    border-radius: 5px;
+
+    .bk-import-success-text {
+      font-size: 25px;
+      .font-family-bold();
+      //color: @green-default;
+    }
+
+    .bk-success-icon {
+      display: inline-block;
+      width: 20px;
+      height: 27px;
+      background-image: url('/resources/img/icons-menu.png');
+      background-position: -223px 10px;
+    }
+
+    .bk-imported-rows-number {
+      margin-top: 30px;
+      font-size: 50px;
+      //color: @purple-default;
+      .font-family-light();
+    }
+
+    .bk-imported-rows-text {
+      margin-top: 15px;
+      .font-family-bold();
+      font-size: 15px;
+    }
+
+    .bk-imported-rows-secondary-text {
+      margin-top: 20px;
+      .font-family-regular();
+      color: @gray-secondary-text;
+      font-size: 13px;
+    }
+
+    .bk-btn-purple {
+      margin-top: 54px;
+      padding: 15px 21px;
+      font-size: 14px;
+    }
+  }
+}
+
+.bk-import-error {
+  .bk-import-error {
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 50px 30px 70px 30px;
+    width: 500px;
+    border-radius: 5px;
+    border: 1px solid @gray-border;
+    background-color: @gray-bg;
+
+    .bk-import-error-text {
+      font-size: 25px;
+      .font-family-bold();
+      color: @red-default;
+    }
+
+    .bk-error-icon {
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      background-image: url('/resources/img/icons-menu.png');
+      background-position: -216px -53px;
+    }
+
+    .bk-imported-rows-text {
+      margin-top: 30px;
+      font-size: 15px;
+      .font-family-bold();
+    }
+
+    .bk-imported-rows-secondary-text {
+      margin-top: 20px;
+      color: @gray-secondary-text;
+      font-size: 13px;
+      .font-family-regular();
+    }
+
+    .bk-btn-purple {
+      font-size: 14px;
+      margin-top: 54px;
+      padding: 15px 21px;
+    }
+  }
+}

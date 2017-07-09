@@ -1,0 +1,85 @@
+<div class="bk-smart-checkbox-collection">
+    <div class="bk-checkbox-search">
+        <input type="text" class="bk-search-input"
+               name="filter-input"
+               class="admin-list-filter"
+               placeholder="{{$ctrl.strings.CHECKBOX_SEARCH_PLACEHOLDER}}"
+               ng-change="$ctrl.doFilter()"
+               ng-model="$ctrl.checkboxFilterSearchText">
+    </div>
+    <blink-loading-indicator ng-if="$ctrl.isLoading"
+                             class="bk-smart-checkbox-loading-indicator"></blink-loading-indicator>
+    <div class="bk-checkbox-collections"
+         ng-if="!$ctrl.isLoading"
+         ng-switch="!!$ctrl.checkboxFilterSearchText">
+        <div ng-switch-when="false">
+            <div class="bk-smart-cb-bulk-action-container"
+                 ng-if="!$ctrl.smartCheckboxCollectionConfig.hideBulkActions">
+                <div ng-class="{'bk-disabled': !$ctrl.showClearSelectedItems}"
+                     class="bk-clear-selected-options"
+                     ng-click="$ctrl.clearSelectedItems()">
+                    {{$ctrl.strings.CLEAR_SELECTED_ITEMS}}
+                </div>
+                <div ng-class="{'bk-disabled': !$ctrl.showSelectAllItems
+                || $ctrl.smartCheckboxCollectionConfig.disallowSelectAll}"
+                     blink-tooltip="{{$ctrl.smartCheckboxCollectionConfig.disallowSelectAllMsg}}"
+                     class="bk-select-all-options"
+                     ng-click="$ctrl.selectAllItems()">
+                    {{$ctrl.strings.SELECT_ALL_ITEMS}}
+                </div>
+            </div>
+            <div ng-if="!!$ctrl.selectedCheckboxCollectionCtrl"
+                 class="bk-checkbox-section">
+                <blink-checkbox-collection class="bk-selected-checkboxes"
+                                           bk-ctrl="$ctrl.selectedCheckboxCollectionCtrl">
+                </blink-checkbox-collection>
+                <div ng-if="$ctrl.showSearchToFindMoreSelectedItems"
+                     class='bk-search-selected-items-msg'>
+                    {{$ctrl.strings.SEARCH_TO_FIND_MORE_SELECTED_ITEMS}}
+                </div>
+            </div>
+            <div ng-if="$ctrl.unselectedCheckboxCollectionCtrl"
+                 class="bk-checkbox-section">
+                <blink-checkbox-collection class="bk-unselected-checkboxes"
+                                           bk-ctrl="$ctrl.unselectedCheckboxCollectionCtrl">
+                </blink-checkbox-collection>
+                <div ng-if="$ctrl.showSearchToFindMoreItems"
+                     class='bk-search-unselected-items-msg'>
+                    {{$ctrl.strings.SEARCH_TO_FIND_MORE_ITEMS}}
+                </div>
+            </div>
+            <div ng-if="$ctrl.readOnlyCheckboxCollectionCtrl"
+                 class="bk-checkbox-section">
+                <blink-checkbox-collection class="bk-readonly-checkboxes"
+                                           bk-ctrl="$ctrl.readOnlyCheckboxCollectionCtrl">
+                </blink-checkbox-collection>
+                <div ng-if="$ctrl.showSearchToFindMoreReadOnlyItems"
+                     class="bk-search-readonly-items-msg">
+                    {{$ctrl.strings.SEARCH_TO_FIND_MORE_READ_ONLY_ITEMS}}
+                </div>
+            </div>
+        </div>
+        <div ng-switch-when="true">
+            <div ng-if="!!$ctrl.searchedCheckboxCollectionCtrl"
+                 class="bk-checkbox-section">
+                <blink-checkbox-collection class="bk-search-checkboxes"
+                                           bk-ctrl="$ctrl.searchedCheckboxCollectionCtrl">
+                </blink-checkbox-collection>
+                <div ng-if="$ctrl.showRefineFurtherMessage"
+                     class='bk-refine-search-msg'>
+                    {{$ctrl.strings.SEARCH_TO_REFINE_ITEMS_FURTHER}}
+                </div>
+            </div>
+            <div ng-if="!!$ctrl.searchedReadOnlyCheckboxCollectionCtrl"
+                 class="bk-checkbox-section">
+                <blink-checkbox-collection class="bk-search-readonly-checkboxes"
+                                           bk-ctrl="$ctrl.searchedReadOnlyCheckboxCollectionCtrl">
+                </blink-checkbox-collection>
+                <div ng-if="$ctrl.showReadOnlyRefineFurtherMessage"
+                     class="bk-refine-search-readonly-msg">
+                    {{$ctrl.strings.SEARCH_TO_REFINE_ITEMS_FURTHER}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

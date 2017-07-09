@@ -1,0 +1,73 @@
+/**
+ * Copyright: ThoughtSpot Inc. 2012-2015
+ * Author: Shashank Singh (sunny@thoughtspot.com)
+ *
+ * @fileoverview A guide on how to build icu4js, an emscripten port of icu4c.
+ * Note that build icu for host/emscripten is required only if the underlying
+ * copy of icu4c needs to be changed/updated. If the only change is in the glue code
+ * simply run the make targets for minified and source generation and copy generated
+ * files to the application libs.
+ */
+
+Requirements
+============
+
+1. Unix based OS
+2. emscripten SDK (https://kripken.github.io/emscripten-site/docs/getting_started/downloads.html)
+3. icu4c source code package (http://site.icu-project.org/download/57)
+
+
+Steps (these steps and the patch work for v57, any future version might require other changes)
+==============================================================================================
+
+1. Download and install emscripten. Follow standard instruction to setup the environment
+   so that emconfigure and emmake are on the path.
+
+2. Download icu4c source code package. Extract two copies of it icu-host, icu-emscripten.
+   We first need to build icu for the current host as icu needs to run some of the tools
+   that it builds. binary code build for emscripten target will, of course, not run on
+   the host machine. We'll copy these binaries from the host build to emscripten build.
+
+3. Build icu for host machine:
+
+   3.1.  cd icu-host/source
+   3.2.  mkdir install-host
+   3.3.  ./configure --prefix=$PWD/install-host --enable-static --disable-shared --disable-dyload --with-data-packaging=archive
+   3.4.  make install
+   3.5.  mkdir ~/projects/scaligent/blink/lib/icu4js/lib/icu4c-host-built/ (or clean the directory if it already exists)
+   3.6.  mkdir ~/projects/scaligent/blink/lib/icu4js/lib/icu4c-host-built/data (or clean the directory if it already exists)
+   3.7.  cp -r install-host/lib ~/projects/scaligent/blink/lib/icu4js/lib/icu4c-host-built/
+   3.8.  cp -r install-host/include ~/projects/scaligent/blink/lib/icu4js/lib/icu4c-host-built/
+   3.9.  cp install-host/share/icu/57.1/icudt57l.dat ~/projects/scaligent/blink/lib/icu4js/lib/icu4c-host-built/data/
+
+
+4. Build icu for emscripten
+   4.1.  cd icu-emscripten
+   4.2.  cp ~/projects/scaligent/blink/lib/icu4js/icu4c-emscripten.patch .
+   4.3.  patch -p1 < icu4c-emscripten.patch
+   4.4.  rm icu4c-emscripten.patch
+   4.5.  cd source && mkdir install-emscripten
+   4.6.  emconfigure ./configure --prefix=$PWD/install-emscripten --enable-static --disable-shared --disable-dyload --with-data-packaging=files --disable-tests --disable-samples --enable-draft
+   4.7.  emmake make, wait for bin/icupkg call to fail (something similar to `
+   ./bin/icupkg:Permission denied`)
+   4.8.  cp ../../icu-host/source/bin/icupkg bin/ && chmod +x bin/icupkg
+   4.9.  cp ../../icu-host/source/bin/pkgdata bin/ && chmod +x bin/pkgdata
+   4.10. cp ../../icu-host/source/bin/genrb bin/ && chmod +x bin/genrb
+   4.11. continue building: emmake make
+   4.12. emmake make install
+   4.13. cp -r install-emscripten/lib ~/projects/scaligent/blink/lib/icu4js/lib/icu4c-emscripten-built/
+   4.14. cp -r install-emscripten/include ~/projects/scaligent/blink/lib/icu4js/lib/icu4c-emscripten-built/
+   4.15. cp -r install-emscripten/share/icu/57.1/icudt57l ~/projects/scaligent/blink/lib/icu4js/lib/icu4c-emscripten-built/data/
+
+5. Generate javascript
+    5.1: cd ${TS_ROOT}/blink/lib/icu4js
+    5.2: run `make icu4js-src` and `make icu4js-min` for source and minified javascript files in build/src and
+         build/dist respectively.
+
+
+Troubleshooting
+=================
+
+1. If compilation of icu-host package throws `configure: error: cannot run C compiled programs.` or something
+   similar make sure you don't have emscripten environment in the current shell. emscripten environment can
+   mess up with the default xcode toolchain settings. Try building icu-host from a diferent shell in this case.

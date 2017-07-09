@@ -1,0 +1,17 @@
+<ul class="bk-clause-template">
+    {{
+        strings.And_then_determined.assign({
+            bucketing: growthBucketTranslation[query.growthRepresentation.growthBucket].toLowerCase()
+        })
+    }}
+    <span ng-repeat="outputColumn in query.outputColumns">
+        {{ getSequenceSymbol($index, query.outputColumns) }}
+        <span class="bk-output-column bk-text-{{getColumnColor(outputColumn.column)}}"
+              blink-tooltip="{{ outputColumn.column.table.name }}">
+            {{ outputColumn.column.name }}
+        </span>
+    </span>
+    <span ng-if="query.growthRepresentation.isYOY">
+        {{ strings.over_successive_year }}
+    </span>
+</ul>

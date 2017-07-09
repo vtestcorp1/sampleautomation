@@ -1,0 +1,10 @@
+<div class="bk-a3-dialog">
+    <bk-a3-analysis-customizer
+            ng-show="!$ctrl.isTableAnalysis"
+            bk-ctrl="$ctrl.a3AnalysisCustomizerComponent">
+    </bk-a3-analysis-customizer>
+    <bk-a3-table-analysis-customizer
+            ng-show="!!$ctrl.isTableAnalysis"
+            bk-ctrl="$ctrl.a3TableAnalysisCustomizerComponent">
+    </bk-a3-table-analysis-customizer>
+</div>

@@ -1,0 +1,37 @@
+.answer-document {
+    .bk-vertical-flex-container-sized;
+
+    .answer-view {
+        .bk-vertical-flex-container-sized;
+
+        .answer-preview {
+            cursor: pointer;
+            background-color: white;
+            padding: 23px 12px;
+            .box-shadow(1px 1px 3px @bg-shadow-faint);
+            position: relative;
+            z-index: 146;
+
+            .bk-answer-preview-icon {
+                .fl;
+                .bk-padding-right-10;
+            }
+
+            .bk-answer-preview-text {
+                .fl;
+                .bk-padding-left-5;
+                .font-family-regular;
+                .text-size-larger;
+            }
+
+            &:hover {
+                color: @h-blue;
+            }
+        }
+
+        .bk-answer-page-container {
+            .bk-vertical-flex-container-sized;
+            .bg-grey1;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+<div class="bk-dialog-field edit-schema-dialog">
+    <div class="schema-container expand">
+        <div class="bk-schema expand"
+             ng-model="$ctrl.data.customData.schemaText"
+             ui-ace="{
+                useWrapMode : true,
+                mode: 'tql',
+                theme: 'sqlserver',
+                require: ['ace/ext/language_tools'],
+                workerPath: 'app/lib/min/ace',
+                advanced: {
+                    enableBasicAutocompletion: true,
+                    enableLiveAutocompletion: true
+                }
+         }">
+        </div>
+    </div>
+</div>

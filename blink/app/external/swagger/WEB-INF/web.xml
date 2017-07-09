@@ -1,0 +1,76 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+                        http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+    version="3.0">
+
+  <display-name>Callosum Service</display-name>
+
+  <servlet>
+    <servlet-name>Callosum Service</servlet-name>
+    <servlet-class>com.thoughtspot.callosum.server.servlet.CallosumServlet</servlet-class>
+    <init-param>
+        <param-name>com.sun.jersey.config.property.packages</param-name>
+        <param-value>com.thoughtspot.callosum.server;com.wordnik.swagger.jersey.listing</param-value>
+    </init-param>
+    <init-param>
+        <param-name>com.sun.jersey.spi.container.ContainerRequestFilters</param-name>
+        <param-value>com.thoughtspot.callosum.server.servlet.CallosumRequestFilter;com.sun.jersey.api.container.filter.LoggingFilter</param-value>
+    </init-param>
+    <init-param>
+        <param-name>com.sun.jersey.spi.container.ContainerResponseFilters</param-name>
+        <param-value>com.thoughtspot.callosum.server.servlet.CallosumResponseFilter;com.sun.jersey.api.container.filter.LoggingFilter</param-value>
+    </init-param>
+    <init-param>
+        <param-name>com.sun.jersey.config.feature.logging.DisableEntitylogging</param-name>
+        <param-value>true</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>JerseyJaxrsConfig</servlet-name>
+    <servlet-class>com.wordnik.swagger.jersey.config.JerseyJaxrsConfig</servlet-class>
+    <init-param>
+      <param-name>api.version</param-name>
+      <param-value>1.0.0</param-value>
+    </init-param>
+    <!-- <init-param>
+      <param-name>swagger.api.basepath</param-name>
+      <param-value>http://localhost:8080/callosum/v1</param-value>
+    </init-param> -->
+    <load-on-startup>2</load-on-startup>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Callosum Service</servlet-name>
+    <url-pattern>/v1/*</url-pattern>
+  </servlet-mapping>
+
+  <listener>
+    <listener-class>com.thoughtspot.callosum.server.servlet.CallosumServletListener</listener-class>
+  </listener>
+
+  <listener>
+    <listener-class>org.apache.shiro.web.env.EnvironmentLoaderListener</listener-class>
+  </listener>
+
+  <filter>
+    <filter-name>ShiroFilter</filter-name>
+    <filter-class>org.apache.shiro.web.servlet.ShiroFilter</filter-class>
+    <init-param>
+        <param-name>configPath</param-name>
+        <param-value>/WEB-INF/shiro.ini</param-value>
+    </init-param>
+  </filter>
+
+  <filter-mapping>
+    <filter-name>ShiroFilter</filter-name>
+    <url-pattern>/v1/*</url-pattern>
+    <dispatcher>REQUEST</dispatcher>
+    <dispatcher>FORWARD</dispatcher>
+    <dispatcher>INCLUDE</dispatcher>
+    <dispatcher>ERROR</dispatcher>
+  </filter-mapping>
+
+</web-app>

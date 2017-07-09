@@ -1,0 +1,14 @@
+<div class="bk-a3-job-detail-popup">
+    <div class="bk-big-popup"
+         hide="$ctrl.hide">
+        <div class="bk-context-dialog">
+            <div class="popup-header">
+                <span class="bk-header-title">{{$ctrl.strings.a3.customAnalysisTitle}}</span>
+                <a type="button" class="bk-close" ng-click="$ctrl.hide()">&times;</a>
+            </div>
+            <bk-a3-job-detail bk-ctrl="$ctrl.a3JobDetailComponent"
+                              class="popup-content">
+            </bk-a3-job-detail>
+        </div>
+    </div>
+</div>

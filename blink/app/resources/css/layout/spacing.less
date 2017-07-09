@@ -1,0 +1,101 @@
+// Copyright ThoughtSpot Inc. 2012-2016
+// Authour: Priyanshi Deshwal (priyanshi@thoughtspot.com)
+//
+//
+// @fileoverview Generic margin and padding classes
+
+/* Content:
+
+=Parameters
+=Padding
+=Margin
+
+*/
+
+/* =Parameters
+*************************************************************/
+@spacing-0: 0px;
+@spacing-3: 3px;
+@spacing-5: 5px;
+@spacing-10: 10px;
+@spacing-12: 12px;
+@spacing-15: 15px;
+@spacing-20: 20px;
+@spacing-50: 50px;
+
+/* =Padding
+*************************************************************/
+.bk-padding-top-0, .bk-padding-vertical-0, .bk-padding-all-0 {padding-top: @spacing-0;}
+.bk-padding-top-3, .bk-padding-vertical-3, .bk-padding-all-3 {padding-top: @spacing-3;}
+.bk-padding-top-5, .bk-padding-vertical-5, .bk-padding-all-5 {padding-top: @spacing-5;}
+.bk-padding-top-10, .bk-padding-vertical-10, .bk-padding-all-10 {padding-top: @spacing-10;}
+.bk-padding-top-12, .bk-padding-vertical-12, .bk-padding-all-12 {padding-top: @spacing-12;}
+.bk-padding-top-15, .bk-padding-vertical-15, .bk-padding-all-15 {padding-top: @spacing-15;}
+.bk-padding-top-20, .bk-padding-vertical-20, .bk-padding-all-20 {padding-top: @spacing-20;}
+.bk-padding-top-50, .bk-padding-vertical-50, .bk-padding-all-50 {padding-top: @spacing-50;}
+
+.bk-padding-right-0, .bk-padding-horizontal-0, .bk-padding-all-0 {padding-right: @spacing-0;}
+.bk-padding-right-3, .bk-padding-horizontal-3, .bk-padding-all-3 {padding-right: @spacing-3;}
+.bk-padding-right-5, .bk-padding-horizontal-5, .bk-padding-all-5 {padding-right: @spacing-5;}
+.bk-padding-right-10, .bk-padding-horizontal-10, .bk-padding-all-10 {padding-right: @spacing-10;}
+.bk-padding-right-12, .bk-padding-horizontal-12, .bk-padding-all-12 {padding-right: @spacing-12;}
+.bk-padding-right-15, .bk-padding-horizontal-15, .bk-padding-all-15 {padding-right: @spacing-15;}
+.bk-padding-right-20, .bk-padding-horizontal-20, .bk-padding-all-20 {padding-right: @spacing-20;}
+.bk-padding-right-50, .bk-padding-horizontal-30, .bk-padding-all-50 {padding-right: @spacing-50;}
+
+.bk-padding-bottom-0, .bk-padding-vertical-0, .bk-padding-all-0 {padding-bottom: @spacing-0;}
+.bk-padding-bottom-3, .bk-padding-vertical-3, .bk-padding-all-3 {padding-bottom: @spacing-3;}
+.bk-padding-bottom-5, .bk-padding-vertical-5, .bk-padding-all-5 {padding-bottom: @spacing-5;}
+.bk-padding-bottom-10, .bk-padding-vertical-10, .bk-padding-all-10 {padding-bottom: @spacing-10;}
+.bk-padding-bottom-12, .bk-padding-vertical-12, .bk-padding-all-12 {padding-bottom: @spacing-12;}
+.bk-padding-bottom-15, .bk-padding-vertical-15, .bk-padding-all-15 {padding-bottom: @spacing-15;}
+.bk-padding-bottom-20, .bk-padding-vertical-20, .bk-padding-all-20 {padding-bottom: @spacing-20;}
+.bk-padding-bottom-50, .bk-padding-vertical-50, .bk-padding-all-50 {padding-bottom: @spacing-50;}
+
+.bk-padding-left-0, .bk-padding-horizontal-0, .bk-padding-all-0 {padding-left: @spacing-0;}
+.bk-padding-left-3, .bk-padding-horizontal-3, .bk-padding-all-3 {padding-left: @spacing-3;}
+.bk-padding-left-5, .bk-padding-horizontal-5, .bk-padding-all-5 {padding-left: @spacing-5;}
+.bk-padding-left-10, .bk-padding-horizontal-10, .bk-padding-all-10 {padding-left: @spacing-10;}
+.bk-padding-left-12, .bk-padding-horizontal-12, .bk-padding-all-12 {padding-left: @spacing-12;}
+.bk-padding-left-15, .bk-padding-horizontal-15, .bk-padding-all-15 {padding-left: @spacing-15;}
+.bk-padding-left-20, .bk-padding-horizontal-20, .bk-padding-all-20 {padding-left: @spacing-20;}
+.bk-padding-left-50, .bk-padding-horizontal-50, .bk-padding-all-50 {padding-left: @spacing-50;}
+
+
+/* =Margin
+*************************************************************/
+.bk-margin-top-0, .bk-margin-vertical-0, .bk-margin-all-0 {margin-top: @spacing-0;}
+.bk-margin-top-3, .bk-margin-vertical-3, .bk-margin-all-3 {margin-top: @spacing-3;}
+.bk-margin-top-5, .bk-margin-vertical-5, .bk-margin-all-5 {margin-top: @spacing-5;}
+.bk-margin-top-10, .bk-margin-vertical-10, .bk-margin-all-10 {margin-top: @spacing-10;}
+.bk-margin-top-12, .bk-margin-vertical-12, .bk-margin-all-12 {margin-top: @spacing-12;}
+.bk-margin-top-15, .bk-margin-vertical-15, .bk-margin-all-15 {margin-top: @spacing-15;}
+.bk-margin-top-20, .bk-margin-vertical-20, .bk-margin-all-20 {margin-top: @spacing-20;}
+.bk-margin-top-50, .bk-margin-vertical-50, .bk-margin-all-30 {margin-top: @spacing-50;}
+
+.bk-margin-right-0, .bk-margin-horizontal-0, .bk-margin-all-0 {margin-right: @spacing-0;}
+.bk-margin-right-3, .bk-margin-horizontal-3, .bk-margin-all-3 {margin-right: @spacing-3;}
+.bk-margin-right-5, .bk-margin-horizontal-5, .bk-margin-all-5 {margin-right: @spacing-5;}
+.bk-margin-right-10, .bk-margin-horizontal-10, .bk-margin-all-10 {margin-right: @spacing-10;}
+.bk-margin-right-12, .bk-margin-horizontal-12, .bk-margin-all-12 {margin-right: @spacing-12;}
+.bk-margin-right-15, .bk-margin-horizontal-15, .bk-margin-all-15 {margin-right: @spacing-15;}
+.bk-margin-right-20, .bk-margin-horizontal-20, .bk-margin-all-20 {margin-right: @spacing-20;}
+.bk-margin-right-50, .bk-margin-horizontal-30, .bk-margin-all-50 {margin-right: @spacing-50;}
+
+.bk-margin-bottom-0, .bk-margin-vertical-0, .bk-margin-all-0 {margin-bottom: @spacing-0;}
+.bk-margin-bottom-3, .bk-margin-vertical-3, .bk-margin-all-3 {margin-bottom: @spacing-3;}
+.bk-margin-bottom-5, .bk-margin-vertical-5, .bk-margin-all-5 {margin-bottom: @spacing-5;}
+.bk-margin-bottom-10, .bk-margin-vertical-10, .bk-margin-all-10 {margin-bottom: @spacing-10;}
+.bk-margin-bottom-12, .bk-margin-vertical-12, .bk-margin-all-12 {margin-bottom: @spacing-12;}
+.bk-margin-bottom-15, .bk-margin-vertical-15, .bk-margin-all-15 {margin-bottom: @spacing-15;}
+.bk-margin-bottom-20, .bk-margin-vertical-20, .bk-margin-all-20 {margin-bottom: @spacing-20;}
+.bk-margin-bottom-50, .bk-margin-vertical-50, .bk-margin-all-30 {margin-bottom: @spacing-50;}
+
+.bk-margin-left-0, .bk-margin-horizontal-0, .bk-margin-all-0 {margin-left: @spacing-0;}
+.bk-margin-left-3, .bk-margin-horizontal-3, .bk-margin-all-3 {margin-left: @spacing-3;}
+.bk-margin-left-5, .bk-margin-horizontal-5, .bk-margin-all-5 {margin-left: @spacing-5;}
+.bk-margin-left-10, .bk-margin-horizontal-10, .bk-margin-all-10 {margin-left: @spacing-10;}
+.bk-margin-left-12, .bk-margin-horizontal-12, .bk-margin-all-12 {margin-left: @spacing-12;}
+.bk-margin-left-15, .bk-margin-horizontal-15, .bk-margin-all-15 {margin-left: @spacing-15;}
+.bk-margin-left-20, .bk-margin-horizontal-20, .bk-margin-all-20 {margin-left: @spacing-20;}
+.bk-margin-left-50, .bk-margin-horizontal-50, .bk-margin-all-50 {margin-left: @spacing-50;}

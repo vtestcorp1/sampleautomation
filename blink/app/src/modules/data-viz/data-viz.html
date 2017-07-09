@@ -1,0 +1,40 @@
+<div class="bk-data-viz"
+     ng-switch="$ctrl.state">
+    <blink-loading-indicator ng-switch-when="initial"
+                             class="bk-data-viz-placeholder">
+    </blink-loading-indicator>
+    <blink-loading-indicator ng-switch-when="loadingData"
+                             class="bk-data-viz-placeholder">
+    </blink-loading-indicator>
+    <blink-loading-indicator ng-switch-when="dataLoaded"
+                             class="bk-data-viz-placeholder">
+    </blink-loading-indicator>
+    <div ng-switch-when="corrupt"
+         class="bk-data-viz-corrupt">
+        {{$ctrl.strings.dataViz.CORRUPT_VIZ}}
+    </div>
+    <div ng-switch-when="dataLoadFailed"
+         class="bk-data-viz-data-load-failed">
+        {{$ctrl.strings.dataViz.FAILED_DATA_LOAD}}
+    </div>
+    <div ng-switch-when="render"
+         class="bk-data-viz-content"
+         ng-switch="$ctrl.type">
+        <bk-chart-viz ng-switch-when="chart"
+                      class="bk-data-viz-chart-container"
+                      bk-ctrl="$ctrl">
+        </bk-chart-viz>
+        <bk-headline-viz ng-switch-when="headline"
+                         class="bk-data-viz-headline-container"
+                         bk-ctrl="$ctrl">
+        </bk-headline-viz>
+        <bk-table-viz ng-switch-when="table"
+                      class="bk-data-viz-table-container"
+                      bk-ctrl="$ctrl">
+        </bk-table-viz>
+        <bk-visualization-pinner-launcher class="bk-viz-btn-icon"
+                                          ng-if="$ctrl.allowPinning"
+                                          bk-ctrl="$ctrl.vizPinnerLauncherComponent">
+        </bk-visualization-pinner-launcher>
+    </div>
+</div>

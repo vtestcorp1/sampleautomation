@@ -1,0 +1,36 @@
+<div class="bk-attribute-filter">
+    <div ng-show="$ctrl.showCheckboxFilter()">
+        <!--<tab-control ng-show="$ctrl.showCheckboxFilter()"-->
+        <!--on-tab-activated="$ctrl.onTabActivated(activeTab)">-->
+        <!--<tab-control-tab tab-name={{strings.filters.Include_Tab}}-->
+        <!--tab-id="include">-->
+        <blink-checkbox-filter-v3 class="bk-cb-filter-content"
+                                  bk-ctrl="$ctrl.checkboxFilterController">
+        </blink-checkbox-filter-v3>
+        <div ng-show="!$ctrl.isReadOnly"
+             class="bk-add-filter-link-container">
+            <a class="bk-add-bulk-filter-link"
+               ng-click="$ctrl.onAddValuesInBulkClick()">
+                {{$ctrl.getAddValuesInBulkText()}}</a>
+        </div>
+        <!--</tab-control-tab>-->
+        <!--<tab-control-tab tab-name={{strings.filters.Exclude_Tab}}-->
+        <!--tab-id="exclude">-->
+        <!--<blink-checkbox-filter-v3 class="bk-exclude-cb-filter-content"-->
+        <!--ng-if="$ctrl.excludeCheckboxFilterController"-->
+        <!--bk-ctrl="$ctrl.excludeCheckboxFilterController">-->
+        <!--</blink-checkbox-filter-v3>-->
+        <!--</tab-control-tab>-->
+        <!--</tab-control>-->
+    </div>
+    <div ng-show="$ctrl.showBulkFilter()">
+        <div class="bk-revert-to-checkbox-filter-container">
+            <a class="bk-revert-to-checkbox-filter-link"
+               ng-click="$ctrl.onRevertBackFromBulkAdd()">
+                {{$ctrl.getRevertBackToCheckBoxFilterText()}}
+            </a>
+        </div>
+        <bulk-filter-v2 ctrl="$ctrl.bulkFilterController">
+        </bulk-filter-v2>
+    </div>
+</div>

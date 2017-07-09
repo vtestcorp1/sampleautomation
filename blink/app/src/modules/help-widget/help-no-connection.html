@@ -1,0 +1,48 @@
+<div class="help-no-connection">
+    <div class="help-no-connection-content">
+        <div class="info-module clearfix" ng-if="showInfoMessage">
+            <div class="fl info-icon">
+                <div class="bk-style-icon-circled-information"></div>
+            </div>
+            <div class="fl info-msg">
+                {{ noConnectionMessages.INFO_MESSAGE }}
+            </div>
+        </div>
+        <div class="keywords">
+            <div class="title">{{ noConnectionMessages.KEYWORD_TITLE }}</div>
+            <div class="description">
+                {{ noConnectionMessages.KEYWORD_DESCRIPTION }}:
+            </div>
+
+            <div ng-repeat="menu in menus">
+                <ul>
+                    <li ng-repeat="menuItem in menu.items">
+                        <div class="keyword-title" ng-click="onMenuItemClick(menuItem)"
+                             ng-class="{ 'bk-selected': menuItem.selected }">
+                            <span ng-class="menuItem.selected ? 'bk-style-icon-arrow-down' : 'bk-style-icon-arrow-right'"></span>
+                            <span class="pas">{{ menuItem.label }}</span>
+                        </div>
+                        <div class="bk-keyword-set-list"
+                             ng-repeat="keywords in keywordHelpDefinition[menuItem.actionType]"
+                             ng-if="menuItem.selected">
+                            <div class="bk-keyword-set-name">{{ keywords.keywordTitle }}</div>
+                            <div ng-class="{'bk-keyword-set-item': keywords.cssBottomBorder}">
+                                <div ng-repeat="example in keywords.example" class="keywords-list clearfix">
+                                    <ul class="fl keyword">
+                                        <li ng-class="{'bk-margin-left-20': keywords.keywordTitle}">
+                                            {{ example.keyword }}
+                                        </li>
+                                    </ul>
+                                    <ul class="fl example">
+                                        <li ng-bind-html="example | blinkRangeHighlight:'text-bold'">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

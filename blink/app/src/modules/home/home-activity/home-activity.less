@@ -1,0 +1,131 @@
+.bk-home-activity-loading-indicator {
+    margin-top: 100%;
+    text-align: center;
+}
+
+.bk-home-activity {
+    .bk-sidebar-panel();
+
+    .bk-activity-feed {
+
+        .bk-activity-feed-item {
+            margin: 20px 20px 0 20px;
+            text-align: left;
+            .transition(~"background-color 200ms ease-out, color 200ms ease-out");
+
+            a {
+                display: block;
+
+                &:hover {
+                    .bk-bubble {
+                        background-color: @gray-border-faint;
+                        .transition(~"background-color 200ms ease-out");
+
+                        .bk-bubble-arrow {
+                            border-color: @gray-border-faint;
+                            border-top-color: transparent;
+                            border-bottom-color: transparent;
+                            border-left-color: transparent;
+                            .transition(~"border-color 200ms ease-out");
+                        }
+                    }
+                }
+            }
+
+            .bk-profile-pic-container {
+                .bk-profile-pic-container(25px);
+                float: left;
+                font-size: 15px;
+                font-weight: lighter;
+            }
+
+            .bk-bubble {
+                position: relative;
+                display: block;
+                padding: 9px 10px;
+                margin-left: 35px;
+                line-height: 14px;
+                .font-family-semibold();
+                font-size: 12px;
+                background-color: white;
+                color: @gray-main-text;
+                border-radius: 3px;
+                .box-shadow-inset(0 1px 4px @bg-shadow-faint, inset 0 1px 0 @inner-shadow);
+                .transition(~"background-color 200ms ease-out");
+
+                .bk-bubble-arrow {
+                    position: absolute;
+                    display: block;
+                    left: -9px;
+                    top: 7px;
+                    .left-arrow(5px, white);
+                    .transition(~"border-color 200ms ease-out");
+                }
+
+                .bk-bubble-arrow-shadow {
+                    position: absolute;
+                    display: block;
+                    left: -10px;
+                    top: 7px;
+                    opacity: 0.6;
+                    .left-arrow(5px, @bg-shadow-faint-2);
+                }
+
+                .bk-message {
+                    font-size: 11px;
+                    .font-family-regular();
+                    color: @gray-secondary-text;
+                }
+
+                .bk-item-name {
+                    display: block;
+                    font-size: 12px;
+                    .font-family-semibold();
+                    .bk-overflow-ellipsis();
+                }
+
+                &.bk-saved-answer-item {
+                    .bk-item-name {
+                        color: @blue-default;
+                    }
+                }
+
+                &.bk-pinboard-item {
+                    .bk-item-name {
+                        color: @green-default;
+                    }
+                }
+
+                &.bk-worksheet-item, &.bk-imported-data-item {
+                    .bk-item-name {
+                        color: @purple-default;
+                    }
+                }
+
+                .bk-time-ago {
+                    position: relative;
+                    display: block;
+                    margin-top: 5px;
+                    margin-right: 25px;
+                    opacity: 0.9;
+                    font-size: 10px;
+                    .font-family-regular();
+
+                    .bk-clock-icon {
+                        display: inline-block;
+                        width: 9px;
+                        height: 9px;
+                        vertical-align: -1px;
+                        background-image: url('/resources/img/clock-icon.png');
+                    }
+
+                    .bk-time-label {
+                        display: inline-block;
+                        margin-left: 2px;
+                        color: @gray-secondary-text;
+                    }
+                }
+            }
+        }
+    }
+}

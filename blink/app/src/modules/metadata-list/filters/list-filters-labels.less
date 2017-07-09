@@ -1,0 +1,149 @@
+.top-list-filters {
+    .flex(row);
+    .flex-align(center);
+    .flex-justify(center);
+
+    .bk-filter-item {
+        .flex(row);
+        .flex-align(center);
+        margin-right: 40px;
+
+        .bk-top-menu-filters {
+            .flex(row);
+            margin-left: 15px;
+            li {
+                padding: 11px 8px;
+                margin-right: 2px;
+                .font-family-regular();
+                .text-size-default;
+                .color-grey8;
+                .br-transparent-bottom-3;
+                .br-transparent-top-3;
+                .bk-cursor-pointer;
+
+                &.bk-selected {
+                    .font-family-semibold;
+                    .br-grey8-bottom-3;
+                }
+            }
+        }
+    }
+
+    .stickers {
+        .flex(row);
+        .flex-align(center);
+        .color-grey8;
+
+        .bk-style-icon-label {
+            .bk-padding-right-10;
+            &:before {
+                .color-grey8;
+            }
+        }
+        .bk-title {
+            .text-capitalize;
+        }
+        .sticker-selector-container {
+            .flex(column);
+            position: relative;
+            margin-left: 5px;
+            cursor: pointer;
+
+            .selected-label {
+                padding: 5px;
+                .flex(row);
+                border: 1px solid transparent;
+                max-width: 250px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+
+                .label-icon {
+                    .flex-order(1);
+                    min-width: 15px;
+                    margin-left: 5px;
+
+                    .bk-label-color {
+                        display: inline-block;
+                        margin-top: -2px;
+                        width: 7px;
+                        height: 7px;
+                        border-radius: 7px;
+                        vertical-align: middle;
+                        border: 2px solid transparent;
+                        background-color: none;
+                    }
+                }
+
+                .bk-sticker-name {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    .flex-order(2);
+                    margin-left: 5px;
+                }
+
+                .bk-style-icon-arrow-down {
+                    margin: 0 2px 0 8px;
+                    .flex-order(3);
+
+                    &:before {
+                        color: @h-gray6;
+                    }
+                }
+
+                &.menu-shown {
+                    background-color: @white-bg;
+                    border: 1px solid @gray-border;
+                    border-bottom: none;
+                }
+
+                &.menu-shown:after {
+                    background-color: @white-bg;
+                    border: 1px solid @gray-border;
+                    border-left: none;
+                    border-bottom: none;
+                }
+
+            }
+
+            .bk-apply-label-menu {
+                position: absolute; // Needed for z-index
+                top: 32px;
+                min-width: 250px;
+                z-index: @label-menu-zindex;
+                line-height: 24px;
+                background-color: @white-bg;
+                border: 1px solid @gray-border;
+                margin-top: -1px;
+
+                .bk-apply-label-menu-inner {
+                    max-height: 400px;
+                    max-width: 350px;
+                    overflow-y: hidden;
+                    overflow-x: hidden;
+                    .bk-label-wrapper {
+                        max-height: 370px;
+                        overflow-y: auto;
+                    }
+
+
+                    .bk-label {
+                        padding: 0  0 0 10px;
+                        .bk-label-name {
+                            max-width: 300px;
+                            min-width: 100px;
+                            .bk-description-edit-dropdown {
+                                padding: 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .bk-label:hover {
+                background-color: white;
+            }
+        }
+
+    }
+}

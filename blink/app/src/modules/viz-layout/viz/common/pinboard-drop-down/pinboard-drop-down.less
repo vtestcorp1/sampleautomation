@@ -1,0 +1,193 @@
+
+@import '/resources/css/import.less';
+
+@pinboard-drop-down-row-height: 28px;
+@pinboard-drop-down-padding: 15px;
+
+.bk-viz-pinner-modal {
+    .bk-vertical-flex-container-sized;
+
+    .bk-loading {
+        .panel-loading-indicator(@y: 65%);
+    }
+
+    .bk-viz-title {
+        .bk-vertical-flex-content-sized;
+        z-index: 1;
+        padding-left: 5px;
+    }
+
+    // TODO(Priyanshi): Style this to be flexible sized search bar along with other search bar
+    // changes
+    .bk-search {
+        .bk-vertical-flex-content-sized;
+
+        .bk-search-icon {
+            position: absolute;
+            margin-top: 9px;
+            margin-left: 7px;
+            width: 13px;
+            height: 13px;
+            background-image: url('/resources/img/search-icon.png');
+        }
+
+        input.bk-search-input {
+            margin-left: 15px;
+            margin-bottom: 14px;
+            padding-left: 23px !important;
+            padding-right: 14px !important;
+            width: 375px;
+            box-shadow: 0 1px 0 @inner-shadow-faint-1, inset 0 1px 3px @input-inner-shadow !important;
+        }
+    }
+
+    .bk-pinboard-list {
+        .bk-vertical-flex-content-sized;
+        overflow: auto;
+        padding-bottom: @pinboard-drop-down-padding - 5px;
+        height: 300px;
+
+        .bk-create-pinboard-row {
+            .flex(row);
+            margin-bottom: @pinboard-drop-down-padding - 5px;
+            border-top: 1px solid @gray-border;
+            border-bottom: 1px solid @gray-border;
+
+            .bk-show-create-pinboard-btn {
+                .bk-horizontal-flex-container-sized;
+                padding-left: @pinboard-drop-down-padding;
+                padding-top: 1px;
+
+                .bk-pinboard-icon {
+                    float: left;
+                    margin-top: 4px;
+                    width: 18px;
+                    height: 16px;
+                    background-image: url('/resources/img/icons-menu.png');
+                    background-position: -54px -53px;
+                }
+
+                .bk-label {
+                    margin-top: 2px;
+                    margin-left: 6px;
+                    color: @gray-secondary-text;
+                    .font-family-regular();
+                    font-size: 12px;
+                    color: @gray-secondary-text;
+                }
+
+                &:hover {
+                    background-color: @gray-hover-light;
+                    border-bottom: 1px solid @gray-border;
+
+                    .bk-pinboard-icon {
+                        background-position: -73px -53px;
+                    }
+                    .bk-label {
+                        color: @gray-main-text;
+                    }
+                }
+            }
+
+            .bk-new-pinboard-input {
+                .bk-horizontal-flex-container-sized;
+
+                input.bk-input{
+                    .bk-horizontal-flex-container-sized;
+                    margin-left: 15px;
+                    width: 141px;
+                    height: 12px;
+                    color: @gray-secondary-text;
+                    border-right: none;
+                }
+
+                .bk-create-pinboard-btn {
+                    .bk-horizontal-flex-content-sized;
+                    padding: 4px 8px;
+                    height: 12px;
+                    vertical-align: 0;
+                    background-color: @blue-default;
+                    color: @white-text;
+                    border: 1px solid @blue-default;
+                    border-radius: 2px;
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                    box-shadow: none;
+                    font-size: 10px;
+
+                    &.bk-disabled {
+                        color: @gray-label-text;
+                        background-color: @gray-bg;
+                        border: 1px solid @gray-border;
+                    }
+                }
+            }
+        }
+
+        li {
+            .flex-grow-shrink-basis(0, 0, @pinboard-drop-down-row-height);
+            line-height: @pinboard-drop-down-row-height;
+            color: @gray-secondary-text;
+            font-size: 12px;
+            .font-family-regular();
+            cursor: pointer;
+
+            &.bk-pinboard-row {
+                padding-right: 10px;
+                padding-left: @pinboard-drop-down-padding;
+
+                &:hover {
+                    background-color: @gray-hover-light;
+                    color: @gray-main-title;
+
+                    .bk-plus-icon {
+                        span {
+                            background-position: -31px -77px;
+                        }
+                    }
+                }
+            }
+
+            .bk-plus-icon {
+                display: inline-block;
+                vertical-align: -4px;
+                width: 14px;
+                height: 14px;
+                border: 1px solid @gray-border;
+                background-color: @white-bg;
+                .box-shadow-inset(0 1px 3px @bg-shadow-faint, inset 0 1px 0 @inner-shadow);
+
+                span {
+                    display: block;
+                    margin-left: 3px;
+                    margin-top: 2px;
+                    width: 8px;
+                    height: 9px;
+                    background-image: url('/resources/img/icons-menu.png');
+                    background-position: -22px -77px;
+                }
+            }
+
+            .bk-pinboard-working {
+                display: inline-block;
+                vertical-align: -3px;
+                width: 12px;
+                height: 12px;
+                margin-left: 2px;
+                padding-left: 1px;
+                padding-right: 1px;
+                background: url('/resources/img/loading-icon-black.gif') no-repeat;
+                background-size: 12px;
+            }
+
+            .bk-pinboard-name {
+                margin-left: 6px;
+
+                .bk-filtered-match {
+                    color: black;
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+}

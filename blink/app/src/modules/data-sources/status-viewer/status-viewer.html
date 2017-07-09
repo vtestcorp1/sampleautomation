@@ -1,0 +1,61 @@
+<div class="bk-status-viewer">
+    <div class="status-viewer-header">
+        <div class="view-all">
+            <bk-icon-button icon="bk-style-icon-arrow-right"
+                            ng-click="onHide()"></bk-icon-button>
+        </div>
+        <div class="bk-status-spacer"></div>
+        <div class="bk-viewer-button">
+            <bk-secondary-button text="{{ strings.importData.SCHEDULE }}"
+                                 class="bk-open-scheduler"
+                                 ng-click="openScheduler()"></bk-secondary-button>
+            <bk-secondary-button text="{{strings.EDIT}}"
+                                 class="bk-edit-click"
+                                 ng-click="onEditClick()"></bk-secondary-button>
+            <bk-secondary-button text="{{strings.REFRESH}}"
+                                 class="bk-refresh-status"
+                                 ng-click="refreshStatus()"></bk-secondary-button>
+        </div>
+    </div>
+    <div class="bk-status-viewer-list">
+        <actionable-list on-row-click="onRowClick"
+                         list-model="listModel"
+                         action-items="actionItems">
+        </actionable-list>
+        <hr>
+        <div class="bk-status-details">
+            {{ selectedItem.name }}
+            <div class="status-message">
+                {{ selectedItem.message }}
+            </div>
+            <div class="status-message" ng-if="canDownloadTrace(selectedItem)">
+                <a ng-click="selectedItem.sessionLog.fetchLog(selectedItem.dataSourceID, selectedItem.name)">
+                    {{selectedItem.sessionLog.clickText}}</a>
+            </div>
+            <div class="script-status-message" ng-if="!!selectedItem">
+                <div class=" status-message"
+                     ng-if="!!selectedItem.preScriptStatus">
+                    <span class="status-message-title">
+                        {{strings.importData.PRE_SCRIPT_STATUS}}:
+                    </span>
+                    {{selectedItem.preScriptStatus }}
+                </div>
+                <div class="status-message"
+                     ng-if="!!selectedItem.postScriptStatus">
+                    <span class="status-message-title">
+                        {{strings.importData.POST_SCRIPT_STATUS}}:
+                    </span>
+                    {{selectedItem.postScriptStatus }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/ng-template" id="status-format.html">
+        <div class="bk-status-content">
+            <div class="bk-status-{{column.format(row)[0]}}">
+                <span class="status-text">{{column.format(row)[1]}}</span>
+            </div>
+        </div>
+    </script>
+</div>

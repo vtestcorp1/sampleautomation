@@ -1,0 +1,51 @@
+<div class="bk-related-link"
+     ng-switch="$ctrl.isConfigurationValid()">
+    <div ng-switch-when="false"
+         class="bk-invalid-related-link-config">
+        {{ $ctrl.getInvalidConfigurationMessage() }}
+    </div>
+    <div ng-switch-when="true"
+         class="bk-related-link-content-container" >
+        <div class="bk-related-link-filter-selector"
+             ng-if="!!$ctrl.runtimeFilterChoices && $ctrl.runtimeFilterChoices.length > 0">
+            <div class="bk-related-link-title">
+                <caption>
+                    {{strings.relatedLink.availableFilters}}
+                    {{" ( "}}
+                    {{strings.relatedLink.generatedFrom}}
+                    {{" '"}}{{$ctrl.relatedLinkName}}
+                    {{"' ):"}}</caption>
+            </div>
+            <div class="bk-related-link-filter-choice">
+                <span class="bk-select-box">
+                    <ui-select ng-model="$ctrl.selectedFilterComponent"
+                               on-select="$ctrl.onFilterRowClicked()"
+                               search-enabled="false"
+                               theme="select2"">
+                        <ui-select-match
+                                placeholder="{{$ctrl.getSelectRowAsRunTimeFilterMessage()}}">
+                            <bk-runtime-filter bk-ctrl="$ctrl.selectedFilterComponent">
+                            </bk-runtime-filter>
+                        </ui-select-match>
+                        <ui-select-choices repeat="runtimeFilter in $ctrl.runtimeFilterChoices">
+                            <runtime-filter bk-ctrl="runtimeFilter">
+                            </runtime-filter>
+                        </ui-select-choices>
+                    </ui-select>
+                </span>
+            </div>
+        </div>
+        <pinboard-page ng-if="$ctrl.isFilterRowSelected()"
+                       class="bk-pinboard-page"
+                       ng-class="{'single-viz-mode': $ctrl.singleVizMode}"
+                       hide-panel="true"
+                       dont-watch-url="true"
+                       id="$ctrl.pinboardId"
+                       pinboard-page-config="$ctrl.pinboardPageConfig">
+        </pinboard-page>
+        <div ng-if="!$ctrl.isFilterRowSelected()"
+             class="bk-invalid-related-link-config">
+            {{ strings.relatedLink.selectRunTimeFilter }}
+        </div>
+    </div>
+</div>

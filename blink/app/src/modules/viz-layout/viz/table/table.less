@@ -1,0 +1,372 @@
+@import '/resources/css/import.less';
+
+.bk-viz-table {
+    .bk-vertical-flex-container-sized;
+    &.bk-fade-in-animation {
+        .animation-duration(0.5s);
+        .animation-fill-mode(both);
+        .animation-name(fade-in-entry);
+    }
+
+    .bk-table {
+        .bk-vertical-flex-container-sized;
+        border-top: 1px solid @h-gray1;
+        .grid-canvas.grid-canvas-top.grid-canvas-left {
+            overflow: visible;
+        }
+    }
+
+    .bk-pagination-info {
+        .flex-grow-shrink-basis(0, 0, 21px);
+        background-color: white;
+        text-align: left;
+        .retina-light-13-grey5;
+        margin: 16px 0 0 16px;
+    }
+
+    .slick-header {
+        z-index: @viz-zindex;
+        background-color: @white-bg;
+        border-bottom: 1px solid @h-gray1;
+        border-top:0px;
+        box-shadow: 0 1px 3px @bg-shadow-faint-1;
+        .font-family-semibold;
+    }
+
+    .slick-header-column {
+        padding-left: 16px;
+        padding-right: 15px;
+        height: 30px;
+        line-height: 30px;
+        .semibold-14-grey8;
+        border: none;
+        background-color: @white-bg;
+        cursor: pointer;
+        text-align: left;
+
+        .chosen-container-single {
+            position: absolute;
+            left: 7px;
+            top: 25px;
+
+            .chosen-single {
+                height: 18px;
+                line-height: 19px;
+                .retina-book-11-grey7;
+                border-radius: 2px;
+                border: 1px solid transparent;
+                background-color: @white-bg;
+                background-image: none;
+                box-shadow: none;
+                .transition(~"all 200ms ease-out");
+
+                // Arrow
+                b {
+                    background: none !important;   // We are removing the background-image Chose is using to create the arrow
+
+                    // Instead we generate an arrow with only CSS
+                    @arrow-size: 4px;
+                    &:before {
+                        position: absolute;
+                        top: 50%;
+                        margin-top: -(@arrow-size / 2);
+                        right: 10px;
+                        border: @arrow-size solid transparent;
+                        content: '';
+                        border-top-color: @gray-border;
+                        color: @black-bg;
+                    }
+                }
+            }
+
+            .chosen-drop {
+                margin-top: -1px;
+                font-size: 12px;
+
+                .chosen-search {
+                    display: none;
+                }
+
+                .chosen-results li.active-result{
+                    font-size: 9px;
+                    padding: 3px 3px;
+                    color: @gray-main-text;
+                    .font-family-bold();
+                }
+            }
+
+            // When dropdown is open some cus   tomizations need to be done
+            &.chosen-with-drop {
+                //1px solid @gray-border;
+                .transition(~"background-color .2s ease-in, border .2s ease-in");
+
+                .chosen-single {
+                    background-color: @gray-bg;
+                    color: @gray-main-text;
+                    border: 1px solid @gray-border;
+                    border-radius: 0;
+                }
+            }
+        }
+
+        &:last-child {
+            border-right-color: @gray-border;
+        }
+
+        .slick-sort-indicator {
+            vertical-align: 1px;
+        }
+
+        &.bk-numeric-column.with-menu {
+            .slick-sort-indicator {
+                margin-right: 20px;
+            }
+        }
+
+        .slick-resizable-handle {
+            border-right: 1px solid @h-gray1;
+            padding-left: 7px;
+        }
+
+        .bk-table-header-action-btn {
+            position: absolute;
+            top: 10px;
+            width: 16px;
+            height: 16px;
+            margin-top: 6px;
+            margin-left: 8px;
+            line-height: 16px;
+            text-transform: none;
+            color: @gray-main-text;
+
+            &.bk-in-use {
+                visibility: visible;
+            }
+
+            &.bk-active {
+                visibility: visible;
+                color: @blue-default;
+            }
+
+
+            &.bk-disabled:not(.bk-active) {
+                display: none
+            }
+        }
+
+        .bk-table-header-menu-btn {
+            .bk-table-header-action-btn();
+            right: 10px;
+        }
+
+        .bk-table-header-edit-btn {
+            .bk-table-header-action-btn();
+            right: 35px;
+        }
+
+        &:hover {
+            .chosen-container-single {
+                color: @gray-main-text;
+                background-color: @gray-bg;
+                .transition(~"background-color .2s ease-in, border .2s ease-in");
+            }
+        }
+    }
+
+    .bk-table-with-header-dropdown {
+        .slick-header-column {
+            height: 40px;
+        }
+    }
+
+    .slick-header-column-sorted {
+        font-style: normal;
+        color: @blue-default;
+    }
+
+    .slick-row:not(.highlighted):hover {
+        background-color: @table-row-bg-hover;
+
+        .slick-cell {
+            .transition(~"background-color .5s ease-in");
+            background-color: @table-row-bg-hover;
+            color: @h-black;
+        }
+    }
+
+    .slick-row {
+        background: none;
+        border-bottom: 1px solid @h-gray1;
+
+        .slick-cell {
+            .retina-light-14-grey7;
+            border-right: 1px solid @h-gray1;
+
+            // SCAL-8677
+            .unselectable();
+
+            &.bk-numeric-column {
+                text-align: right;
+            }
+
+            &.row-span-active {
+                color: @table-row-span;
+            }
+        }
+
+        &.highlighted {
+            background-color: @blue-default !important;
+
+            .slick-cell {
+                color: @white-text;
+                font-weight: bolder;
+
+                &.highlighted {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        &.full-colspan {
+            margin-left: 0;
+            .slick-cell {
+                width: 100%;
+                .box-sizing(border-box);
+            }
+        }
+    }
+
+    .odd {
+        /*
+        border-top: 1px solid @gray-hover-light;
+        border-bottom: 1px solid @gray-hover-light;
+        */
+    }
+
+    &.selected {
+        background-color: @blue-default;
+    }
+
+    .slick-cell {
+        line-height: 33px;
+        background: none;
+        color: @gray-main-text;
+        border: none;
+        font-size: 14px;
+
+        &.measure {
+            padding-right: 50px;
+            text-align: right;
+        }
+
+        .slick-cell-content {
+            padding-left: 16px;
+            padding-right: 10px;
+            a.linkified {
+                .font-family-retina-light;
+            }
+        }
+    }
+
+    .bk-more-download-footer {
+        text-align: center;
+        .bk-link {
+            color: @blue-default;
+        }
+    }
+}
+
+.bk-grid-selected-ranges-decoration, .slick-range-decorator {
+    border: 2px solid @h-blue-rgba-lo !important;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+div[clipboard-copy-confirmation-view] {
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    left: 40%;
+}
+
+// NOTE(vibhor): These classes are global to be able to use them in javascript code for pixel width computation.
+.bk-viz-table-header-string-width-calc {
+    font-size: 10px;
+    .font-family-bold();
+    text-transform: uppercase;
+}
+
+.bk-viz-table-cell-string-width-calc {
+    font-size: 10px;
+    .font-family-bold();
+}
+
+.bk-table-header-menu-body {
+    position: absolute;
+    z-index: @overlay-zindex + 1;
+    min-width: 160px;
+
+    &.bk-checkbox-filter-container {
+        height: 244px;
+        width: 190px;
+    }
+
+    &.bk-range-filter-container {
+        height: 145px;
+        &.bk-range-filter-show-level-based-measure {
+            height: 360px;
+        }
+    }
+
+    &.bk-date-filter-container {
+        height: 115px;
+    }
+
+    .bk-unsupported-filter-placeholder {
+        padding: 20px;
+        font-family: @font-family-regular;
+        font-size: 11px;
+    }
+
+
+    &.bk-waiting-for-filter {
+        height: 100px;
+        background: @viz-bg url('/resources/img/loading-icon-dark.gif') no-repeat 50% 50%;
+    }
+
+    // The arrow css for dropdown is a copy from bootstrap colorpicker css.
+    &:before, &:after {
+        display: inline-block;
+        position: absolute;
+        line-height: 0;
+        content: "";
+    }
+
+    &:after {
+        clear: both;
+        top: -6px;
+        left: 13px;
+        border-right: 6px solid transparent;
+        border-bottom: 6px solid #ffffff;
+        border-left: 6px solid transparent;
+    }
+
+    &:before {
+        top: -7px;
+        left: 12px;
+        border-right: 7px solid transparent;
+        border-bottom: 7px solid rgba(0, 0, 0, 0.2);
+        border-left: 7px solid transparent;
+    }
+
+    &.bk-column-menu-left-of-anchor {
+        &:after {
+            left: auto;
+            right: 13px;
+        }
+        &:before {
+            left: auto;
+            right: 12px;
+        }
+    }
+}

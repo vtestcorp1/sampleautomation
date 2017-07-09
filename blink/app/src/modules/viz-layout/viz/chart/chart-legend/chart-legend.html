@@ -1,0 +1,26 @@
+<div class="bk-legend">
+    <div class="bk-legend-content" ng-style="{'max-height': getAvailableHeight() + 'px'}">
+        <ul class="bk-legend-content-inner">
+            <li class="bk-legend-item"
+                ng-class="{'bk-selected': !!getSeriesColor(label) }"
+                sf-virtual-repeat="label in legendLabels"
+                ng-model="virtualRepeatModel">
+                <div class="bk-legend-marker-container" ng-click="$event.stopPropagation()">
+                    <color-picker class="bk-legend-marker"
+                                  fill="true"
+                                  ng-model="getSerie(label).color"
+                                  on-change="updateSeriesColor()"></color-picker>
+                </div>
+                <div class="bk-legend-label bk-overflow-ellipsis"
+                     blink-tooltip="{{label}}"
+                     ng-click="onContainerClick($event)">{{label}}
+                </div>
+
+                <div class="bk-legend-singular-select"
+                     ng-class="{'bk-legend-singular-select-selected': isOnlySelectedSeries(label)}"
+                     ng-click="onSingularSeriesSelectionClick($event, label)">{{strings.only}}
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

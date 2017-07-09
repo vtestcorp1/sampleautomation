@@ -1,0 +1,620 @@
+{
+  "reportContent": {
+    "sheets": [
+      {
+        "sheetType": "QUESTION",
+        "sheetContent": {
+          "sheetContentType": "QUESTION",
+          "question": {
+            "sageContextProto": "CrQCGgA6rwIKlgEKkwEKHSACOABAAHIVCAEiEQoDCgEwGgoKAwoBMRoDCgExCiYYASABOABAAHIcCAEiGAoDCgEyGhEKAwoBMRoDCgE0KgUKAwoBMxIqGAAqB2FtZXJpY2GCARwIASIYCgMKATIaEQoDCgExGgMKATQqBQoDCgEzEh4YBCCAtRiCARUIASIRCgMKATAaCgoDCgExGgMKATESkwEKHSACOABAAHIVCAEiEQoDCgEwGgoKAwoBMRoDCgExCiYYASABOABAAHIcCAEiGAoDCgEyGhEKAwoBMRoDCgE0KgUKAwoBMxIqGAAqB2FtZXJpY2GCARwIASIYCgMKATIaEQoDCgExGgMKATQqBQoDCgEzEh4YBCCAtRiCARUIASIRCgMKATAaCgoDCgExGgMKATEyLwokZDhjZDg5NzgtYmQwMS00ZDU3LTkxMGQtNDc4MWU4YjMzMTIzEgdSZXZlbnVlMjEKJDI0NDVmZTgxLTMwZDYtNDZmYS05ZjQyLWY2YjFiNGUwMTYyMxIJTElORU9SREVSMjcKJDhjMWM0ZTM5LWIzMDItNGU3Zi04MGRiLWIxOTM3N2M3NWRmMBIPQ3VzdG9tZXIgUmVnaW9uMjkKJDEwZDM0MjNlLTMwZWYtNGRlZC1iMWMyLWE0M2RkOTE0MWJiORIRTGluZW9yZGVyIEN1c3RLZXkyMAokNWRlMTkzNTQtNzEwZi00NDhlLThlZDItNDMxNWQ5MjZhMjY0EghDVVNUT01FUjgC",
+            "sageContextIndex": 0,
+            "text": "revenue customer region america for revenue \u003e 400000",
+            "isChasmTrapQuery": false
+          },
+          "filter": {
+            "filterContent": {
+              "type": "SIMPLE",
+              "rows": [
+                {
+                  "column": {
+                    "isUserSorted": false,
+                    "aggrTypeOverride": "NONE",
+                    "typeOverride": "UNKNOWN",
+                    "dataTypeOverride": "UNKNOWN",
+                    "formatTypeOverride": "NONE",
+                    "uniqueValues": 0,
+                    "aggrApplied": false,
+                    "isVisible": true,
+                    "columnToFormatPatternType": {},
+                    "baseColumnName": "Customer Region",
+                    "baseAggrType": "NONE",
+                    "baseDataType": "VARCHAR",
+                    "baseType": "ATTRIBUTE",
+                    "isBaseColumnAdditive": false,
+                    "referencedTableHeaders": [
+                      {
+                        "id": "5de19354-710f-448e-8ed2-4315d926a264",
+                        "name": "CUSTOMER"
+                      }
+                    ],
+                    "referencedColumnHeaders": [
+                      {
+                        "id": "8c1c4e39-b302-4e7f-80db-b19377c75df0",
+                        "name": "Customer Region"
+                      }
+                    ],
+                    "allLevelReferencedTableHeaders": [
+                      {
+                        "id": "5de19354-710f-448e-8ed2-4315d926a264",
+                        "name": "CUSTOMER"
+                      }
+                    ],
+                    "allLevelReferencedColumnHeaders": [
+                      {
+                        "id": "8c1c4e39-b302-4e7f-80db-b19377c75df0",
+                        "name": "Customer Region"
+                      }
+                    ],
+                    "effectiveAggrType": "NONE",
+                    "effectiveDataType": "VARCHAR",
+                    "effectiveType": "ATTRIBUTE",
+                    "id": "92555ad0-da9e-3f76-b1b1-b1e64fc562bf",
+                    "effectiveColumnGuid": "92555ad0-da9e-3f76-b1b1-b1e64fc562bf",
+                    "effectiveColumnIdString": "0f769ca8-377a-34ca-9f26-9feeccdff013#NONE#VARCHAR#ATTRIBUTE#null"
+                  },
+                  "oper": "EQ",
+                  "values": [
+                    {
+                      "key": "America",
+                      "selected": true
+                    }
+                  ],
+                  "type": "SIMPLE"
+                },
+                {
+                  "column": {
+                    "isUserSorted": false,
+                    "aggrTypeOverride": "NONE",
+                    "typeOverride": "UNKNOWN",
+                    "dataTypeOverride": "UNKNOWN",
+                    "formatTypeOverride": "NONE",
+                    "uniqueValues": 0,
+                    "aggrApplied": false,
+                    "isVisible": true,
+                    "columnToFormatPatternType": {},
+                    "baseColumnName": "Revenue",
+                    "baseAggrType": "SUM",
+                    "baseDataType": "INT64",
+                    "baseType": "MEASURE",
+                    "isBaseColumnAdditive": true,
+                    "referencedTableHeaders": [
+                      {
+                        "id": "2445fe81-30d6-46fa-9f42-f6b1b4e01623",
+                        "name": "LINEORDER"
+                      }
+                    ],
+                    "referencedColumnHeaders": [
+                      {
+                        "id": "d8cd8978-bd01-4d57-910d-4781e8b33123",
+                        "name": "Revenue"
+                      }
+                    ],
+                    "allLevelReferencedTableHeaders": [
+                      {
+                        "id": "2445fe81-30d6-46fa-9f42-f6b1b4e01623",
+                        "name": "LINEORDER"
+                      }
+                    ],
+                    "allLevelReferencedColumnHeaders": [
+                      {
+                        "id": "d8cd8978-bd01-4d57-910d-4781e8b33123",
+                        "name": "Revenue"
+                      }
+                    ],
+                    "effectiveAggrType": "SUM",
+                    "effectiveDataType": "INT64",
+                    "effectiveType": "MEASURE",
+                    "id": "2fcc19d5-df67-3af6-92e3-2e00471b9576",
+                    "effectiveColumnGuid": "2fcc19d5-df67-3af6-92e3-2e00471b9576",
+                    "effectiveColumnIdString": "d8cd8978-bd01-4d57-910d-4781e8b33123#SUM#INT64#MEASURE#null"
+                  },
+                  "oper": "GT",
+                  "values": [
+                    {
+                      "key": "400000",
+                      "selected": true
+                    }
+                  ],
+                  "type": "SIMPLE"
+                }
+              ]
+            },
+            "header": {
+              "id": "335f350a-cb00-4bff-8462-ccb7a0614c4e",
+              "indexVersion": 0,
+              "generationNum": -1,
+              "name": "Filter revenue customer region america for revenue \u003e 400000",
+              "owner": "0f71134d-2615-4a8a-94a8-d8f33b30195c",
+              "tags": []
+            },
+            "complete": true,
+            "incompleteDetail": []
+          },
+          "visualizations": [
+            {
+              "vizContent": {
+                "vizType": "HEADLINE",
+                "template": "ATTRIBUTE",
+                "columns": [
+                  {
+                    "column": {
+                      "isUserSorted": false,
+                      "aggrTypeOverride": "NONE",
+                      "typeOverride": "UNKNOWN",
+                      "dataTypeOverride": "UNKNOWN",
+                      "formatTypeOverride": "NONE",
+                      "groupBy": true,
+                      "uniqueValues": -1,
+                      "aggrApplied": true,
+                      "isVisible": true,
+                      "columnToFormatPatternType": {},
+                      "baseColumnName": "Customer Region",
+                      "baseAggrType": "NONE",
+                      "baseDataType": "VARCHAR",
+                      "baseType": "ATTRIBUTE",
+                      "isBaseColumnAdditive": false,
+                      "referencedTableHeaders": [
+                        {
+                          "id": "5de19354-710f-448e-8ed2-4315d926a264",
+                          "name": "CUSTOMER"
+                        }
+                      ],
+                      "referencedColumnHeaders": [
+                        {
+                          "id": "8c1c4e39-b302-4e7f-80db-b19377c75df0",
+                          "name": "Customer Region"
+                        }
+                      ],
+                      "allLevelReferencedTableHeaders": [
+                        {
+                          "id": "5de19354-710f-448e-8ed2-4315d926a264",
+                          "name": "CUSTOMER"
+                        }
+                      ],
+                      "allLevelReferencedColumnHeaders": [
+                        {
+                          "id": "8c1c4e39-b302-4e7f-80db-b19377c75df0",
+                          "name": "Customer Region"
+                        }
+                      ],
+                      "effectiveAggrType": "NONE",
+                      "effectiveDataType": "VARCHAR",
+                      "effectiveType": "ATTRIBUTE",
+                      "id": "92555ad0-da9e-3f76-b1b1-b1e64fc562bf",
+                      "effectiveColumnGuid": "92555ad0-da9e-3f76-b1b1-b1e64fc562bf",
+                      "effectiveColumnIdString": "0f769ca8-377a-34ca-9f26-9feeccdff013#NONE#VARCHAR#ATTRIBUTE#null"
+                    },
+                    "aggrs": [
+                      "COUNT_DISTINCT"
+                    ],
+                    "tableSummary": true
+                  }
+                ],
+                "showSummaryAggrs": true,
+                "title": {
+                  "value": {
+                    "text": "Headline 0"
+                  }
+                },
+                "locked": true
+              },
+              "relatedLinks": [],
+              "header": {
+                "id": "0c216c9f-500b-4147-bd3b-47f0e02ef097",
+                "indexVersion": 0,
+                "generationNum": -1,
+                "name": "Headline Viz revenue customer region america for revenue \u003e 400000",
+                "owner": "0f71134d-2615-4a8a-94a8-d8f33b30195c",
+                "tags": []
+              },
+              "complete": true,
+              "incompleteDetail": []
+            },
+            {
+              "vizContent": {
+                "vizType": "HEADLINE",
+                "template": "MEASURE",
+                "columns": [
+                  {
+                    "column": {
+                      "isUserSorted": false,
+                      "aggrTypeOverride": "NONE",
+                      "typeOverride": "UNKNOWN",
+                      "dataTypeOverride": "UNKNOWN",
+                      "formatTypeOverride": "NONE",
+                      "uniqueValues": -1,
+                      "aggrApplied": true,
+                      "isVisible": true,
+                      "columnToFormatPatternType": {},
+                      "baseColumnName": "Revenue",
+                      "baseAggrType": "SUM",
+                      "baseDataType": "INT64",
+                      "baseType": "MEASURE",
+                      "isBaseColumnAdditive": true,
+                      "referencedTableHeaders": [
+                        {
+                          "id": "2445fe81-30d6-46fa-9f42-f6b1b4e01623",
+                          "name": "LINEORDER"
+                        }
+                      ],
+                      "referencedColumnHeaders": [
+                        {
+                          "id": "d8cd8978-bd01-4d57-910d-4781e8b33123",
+                          "name": "Revenue"
+                        }
+                      ],
+                      "allLevelReferencedTableHeaders": [
+                        {
+                          "id": "2445fe81-30d6-46fa-9f42-f6b1b4e01623",
+                          "name": "LINEORDER"
+                        }
+                      ],
+                      "allLevelReferencedColumnHeaders": [
+                        {
+                          "id": "d8cd8978-bd01-4d57-910d-4781e8b33123",
+                          "name": "Revenue"
+                        }
+                      ],
+                      "effectiveAggrType": "SUM",
+                      "effectiveDataType": "INT64",
+                      "effectiveType": "MEASURE",
+                      "id": "2fcc19d5-df67-3af6-92e3-2e00471b9576",
+                      "effectiveColumnGuid": "2fcc19d5-df67-3af6-92e3-2e00471b9576",
+                      "effectiveColumnIdString": "d8cd8978-bd01-4d57-910d-4781e8b33123#SUM#INT64#MEASURE#null"
+                    },
+                    "aggrs": [
+                      "SUM"
+                    ],
+                    "tableSummary": true
+                  }
+                ],
+                "showSummaryAggrs": true,
+                "title": {
+                  "value": {
+                    "text": "Headline 0"
+                  }
+                },
+                "locked": true
+              },
+              "relatedLinks": [],
+              "header": {
+                "id": "554149af-d4aa-4ae2-9c62-7b4433e14467",
+                "indexVersion": 0,
+                "generationNum": -1,
+                "name": "Headline Viz revenue customer region america for revenue \u003e 400000",
+                "owner": "0f71134d-2615-4a8a-94a8-d8f33b30195c",
+                "tags": []
+              },
+              "complete": true,
+              "incompleteDetail": []
+            },
+            {
+              "vizContent": {
+                "vizType": "FILTER",
+                "compoundRowIndices": [
+                  0
+                ],
+                "canGenerateQuery": true,
+                "title": {
+                  "value": {
+                    "text": "Filter 0"
+                  }
+                }
+              },
+              "relatedLinks": [],
+              "header": {
+                "id": "1d27a5d1-958a-4b33-9930-b5910a10a13a",
+                "indexVersion": 0,
+                "generationNum": -1,
+                "name": "Filter Viz revenue customer region america for revenue \u003e 400000 Row: 0",
+                "owner": "0f71134d-2615-4a8a-94a8-d8f33b30195c",
+                "tags": []
+              },
+              "complete": true,
+              "incompleteDetail": []
+            },
+            {
+              "vizContent": {
+                "vizType": "FILTER",
+                "compoundRowIndices": [
+                  1
+                ],
+                "canGenerateQuery": true,
+                "title": {
+                  "value": {
+                    "text": "Filter 1"
+                  }
+                }
+              },
+              "relatedLinks": [],
+              "header": {
+                "id": "c917b71d-1717-4cba-a3a1-095e1c3579be",
+                "indexVersion": 0,
+                "generationNum": -1,
+                "name": "Filter Viz revenue customer region america for revenue \u003e 400000 Row: 1",
+                "owner": "0f71134d-2615-4a8a-94a8-d8f33b30195c",
+                "tags": []
+              },
+              "complete": true,
+              "incompleteDetail": []
+            },
+            {
+              "vizContent": {
+                "vizType": "TABLE",
+                "columns": [
+                  {
+                    "isUserSorted": false,
+                    "aggrTypeOverride": "NONE",
+                    "typeOverride": "UNKNOWN",
+                    "dataTypeOverride": "UNKNOWN",
+                    "formatTypeOverride": "NONE",
+                    "groupBy": true,
+                    "uniqueValues": -1,
+                    "aggrApplied": false,
+                    "isVisible": true,
+                    "columnToFormatPatternType": {},
+                    "baseColumnName": "Customer Region",
+                    "baseAggrType": "NONE",
+                    "baseDataType": "VARCHAR",
+                    "baseType": "ATTRIBUTE",
+                    "isBaseColumnAdditive": false,
+                    "referencedTableHeaders": [
+                      {
+                        "id": "5de19354-710f-448e-8ed2-4315d926a264",
+                        "name": "CUSTOMER"
+                      }
+                    ],
+                    "referencedColumnHeaders": [
+                      {
+                        "id": "8c1c4e39-b302-4e7f-80db-b19377c75df0",
+                        "name": "Customer Region"
+                      }
+                    ],
+                    "allLevelReferencedTableHeaders": [
+                      {
+                        "id": "5de19354-710f-448e-8ed2-4315d926a264",
+                        "name": "CUSTOMER"
+                      }
+                    ],
+                    "allLevelReferencedColumnHeaders": [
+                      {
+                        "id": "8c1c4e39-b302-4e7f-80db-b19377c75df0",
+                        "name": "Customer Region"
+                      }
+                    ],
+                    "effectiveAggrType": "NONE",
+                    "effectiveDataType": "VARCHAR",
+                    "effectiveType": "ATTRIBUTE",
+                    "id": "92555ad0-da9e-3f76-b1b1-b1e64fc562bf",
+                    "effectiveColumnGuid": "92555ad0-da9e-3f76-b1b1-b1e64fc562bf",
+                    "effectiveColumnIdString": "0f769ca8-377a-34ca-9f26-9feeccdff013#NONE#VARCHAR#ATTRIBUTE#null"
+                  },
+                  {
+                    "isUserSorted": false,
+                    "aggrTypeOverride": "NONE",
+                    "typeOverride": "UNKNOWN",
+                    "dataTypeOverride": "UNKNOWN",
+                    "formatTypeOverride": "NONE",
+                    "uniqueValues": -1,
+                    "aggrApplied": true,
+                    "isVisible": true,
+                    "columnToFormatPatternType": {},
+                    "baseColumnName": "Revenue",
+                    "baseAggrType": "SUM",
+                    "baseDataType": "INT64",
+                    "baseType": "MEASURE",
+                    "isBaseColumnAdditive": true,
+                    "referencedTableHeaders": [
+                      {
+                        "id": "2445fe81-30d6-46fa-9f42-f6b1b4e01623",
+                        "name": "LINEORDER"
+                      }
+                    ],
+                    "referencedColumnHeaders": [
+                      {
+                        "id": "d8cd8978-bd01-4d57-910d-4781e8b33123",
+                        "name": "Revenue"
+                      }
+                    ],
+                    "allLevelReferencedTableHeaders": [
+                      {
+                        "id": "2445fe81-30d6-46fa-9f42-f6b1b4e01623",
+                        "name": "LINEORDER"
+                      }
+                    ],
+                    "allLevelReferencedColumnHeaders": [
+                      {
+                        "id": "d8cd8978-bd01-4d57-910d-4781e8b33123",
+                        "name": "Revenue"
+                      }
+                    ],
+                    "effectiveAggrType": "SUM",
+                    "effectiveDataType": "INT64",
+                    "effectiveType": "MEASURE",
+                    "id": "2fcc19d5-df67-3af6-92e3-2e00471b9576",
+                    "effectiveColumnGuid": "2fcc19d5-df67-3af6-92e3-2e00471b9576",
+                    "effectiveColumnIdString": "d8cd8978-bd01-4d57-910d-4781e8b33123#SUM#INT64#MEASURE#null"
+                  }
+                ],
+                "title": {
+                  "value": {
+                    "text": "Table 1"
+                  }
+                }
+              },
+              "relatedLinks": [],
+              "header": {
+                "id": "69b57f7b-905b-4df4-af34-913fa904ce87",
+                "indexVersion": 0,
+                "generationNum": -1,
+                "name": "Table Viz revenue customer region america for revenue \u003e 400000",
+                "owner": "0f71134d-2615-4a8a-94a8-d8f33b30195c",
+                "tags": []
+              },
+              "complete": true,
+              "incompleteDetail": []
+            },
+            {
+              "vizContent": {
+                "vizType": "CHART",
+                "categories": {
+                  "columns": [
+                    {
+                      "isUserSorted": false,
+                      "aggrTypeOverride": "NONE",
+                      "typeOverride": "UNKNOWN",
+                      "dataTypeOverride": "UNKNOWN",
+                      "formatTypeOverride": "NONE",
+                      "groupBy": true,
+                      "uniqueValues": -1,
+                      "aggrApplied": false,
+                      "isVisible": true,
+                      "columnToFormatPatternType": {},
+                      "baseColumnName": "Customer Region",
+                      "baseAggrType": "NONE",
+                      "baseDataType": "VARCHAR",
+                      "baseType": "ATTRIBUTE",
+                      "isBaseColumnAdditive": false,
+                      "referencedTableHeaders": [
+                        {
+                          "id": "5de19354-710f-448e-8ed2-4315d926a264",
+                          "name": "CUSTOMER"
+                        }
+                      ],
+                      "referencedColumnHeaders": [
+                        {
+                          "id": "8c1c4e39-b302-4e7f-80db-b19377c75df0",
+                          "name": "Customer Region"
+                        }
+                      ],
+                      "allLevelReferencedTableHeaders": [
+                        {
+                          "id": "5de19354-710f-448e-8ed2-4315d926a264",
+                          "name": "CUSTOMER"
+                        }
+                      ],
+                      "allLevelReferencedColumnHeaders": [
+                        {
+                          "id": "8c1c4e39-b302-4e7f-80db-b19377c75df0",
+                          "name": "Customer Region"
+                        }
+                      ],
+                      "effectiveAggrType": "NONE",
+                      "effectiveDataType": "VARCHAR",
+                      "effectiveType": "ATTRIBUTE",
+                      "id": "92555ad0-da9e-3f76-b1b1-b1e64fc562bf",
+                      "effectiveColumnGuid": "92555ad0-da9e-3f76-b1b1-b1e64fc562bf",
+                      "effectiveColumnIdString": "0f769ca8-377a-34ca-9f26-9feeccdff013#NONE#VARCHAR#ATTRIBUTE#null"
+                    }
+                  ]
+                },
+                "values": {
+                  "columns": [
+                    {
+                      "isUserSorted": false,
+                      "aggrTypeOverride": "NONE",
+                      "typeOverride": "UNKNOWN",
+                      "dataTypeOverride": "UNKNOWN",
+                      "formatTypeOverride": "NONE",
+                      "uniqueValues": -1,
+                      "aggrApplied": true,
+                      "isVisible": true,
+                      "columnToFormatPatternType": {},
+                      "baseColumnName": "Revenue",
+                      "baseAggrType": "SUM",
+                      "baseDataType": "INT64",
+                      "baseType": "MEASURE",
+                      "isBaseColumnAdditive": true,
+                      "referencedTableHeaders": [
+                        {
+                          "id": "2445fe81-30d6-46fa-9f42-f6b1b4e01623",
+                          "name": "LINEORDER"
+                        }
+                      ],
+                      "referencedColumnHeaders": [
+                        {
+                          "id": "d8cd8978-bd01-4d57-910d-4781e8b33123",
+                          "name": "Revenue"
+                        }
+                      ],
+                      "allLevelReferencedTableHeaders": [
+                        {
+                          "id": "2445fe81-30d6-46fa-9f42-f6b1b4e01623",
+                          "name": "LINEORDER"
+                        }
+                      ],
+                      "allLevelReferencedColumnHeaders": [
+                        {
+                          "id": "d8cd8978-bd01-4d57-910d-4781e8b33123",
+                          "name": "Revenue"
+                        }
+                      ],
+                      "effectiveAggrType": "SUM",
+                      "effectiveDataType": "INT64",
+                      "effectiveType": "MEASURE",
+                      "id": "2fcc19d5-df67-3af6-92e3-2e00471b9576",
+                      "effectiveColumnGuid": "2fcc19d5-df67-3af6-92e3-2e00471b9576",
+                      "effectiveColumnIdString": "d8cd8978-bd01-4d57-910d-4781e8b33123#SUM#INT64#MEASURE#null"
+                    }
+                  ]
+                },
+                "hiddenColumns": {},
+                "chartConfigurations": [],
+                "title": {
+                  "value": {
+                    "text": "Chart 1"
+                  }
+                }
+              },
+              "relatedLinks": [],
+              "header": {
+                "id": "e788e68a-376c-4b1a-9b24-757a32bf410b",
+                "indexVersion": 0,
+                "generationNum": -1,
+                "name": "Chart Viz revenue customer region america for revenue \u003e 400000",
+                "owner": "0f71134d-2615-4a8a-94a8-d8f33b30195c",
+                "tags": []
+              },
+              "complete": true,
+              "incompleteDetail": []
+            }
+          ],
+          "canGenerateLeafData": true
+        },
+        "header": {
+          "id": "0f71134d-2615-4a8a-94a8-d8f33b30195c",
+          "indexVersion": 0,
+          "generationNum": -1,
+          "name": "Untitled",
+          "author": "59481331-ee53-42be-a548-bd87be6ddd4a",
+          "owner": "fee06820-c045-4d64-8763-ceee1448221e",
+          "tags": []
+        },
+        "complete": true,
+        "incompleteDetail": []
+      }
+    ]
+  },
+  "type": "QUESTION",
+  "header": {
+    "id": "fee06820-c045-4d64-8763-ceee1448221e",
+    "indexVersion": 0,
+    "generationNum": -1,
+    "name": "Untitled",
+    "author": "59481331-ee53-42be-a548-bd87be6ddd4a",
+    "owner": "fee06820-c045-4d64-8763-ceee1448221e",
+    "tags": []
+  },
+  "complete": true,
+  "incompleteDetail": []
+}

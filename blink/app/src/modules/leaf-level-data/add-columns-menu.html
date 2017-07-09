@@ -1,0 +1,53 @@
+<div class="bk-menu-content-container">
+
+    <input class="bk-search-input bk-column-search"
+           type="text"
+           placeholder="{{$ctrl.strings.Search_Columns}}"
+           ng-change="$ctrl.onFilterChange()"
+           ng-model="$ctrl.colFilter.value"/>
+
+    <!--TODO(rahul): Is similar to sage-data-columns search tree, can be pulled out-->
+    <div class="bk-menu-content">
+        <div ng-repeat="srcInfo in $ctrl.sourceIdToSourceList"
+             ng-show="!!srcInfo.filteredColumns.length">
+            <div class="name-container" ng-click="$ctrl.toggleSourceExpansion(srcInfo)">
+                <div class="bk-src-arrow bk-expand-btn-light-bg"
+                     ng-class="{'bk-arrow-collapsed ': !srcInfo.expanded, 'bk-arrow-expanded': srcInfo.expanded}">
+                </div>
+                <div class="bk-source-checkbox">
+                    <bk-checkbox bk-ctrl="srcInfo.checkboxCtrl"></bk-checkbox>
+                </div>
+
+            </div>
+            <div class="bk-source-columns-container" ng-switch on="srcInfo.expanded">
+                <div ng-switch-when="true">
+                    <div class="bk-column-container" ng-repeat="colInfo in srcInfo.filteredColumns"
+                         ng-class="{'bk-disabled': colInfo.noEdit}">
+                        <div class="name-container">
+                            <div class="bk-col-arrow bk-expand-btn-light-bg"
+                                 ng-class="{'bk-arrow-collapsed ': !colInfo.expanded, 'bk-arrow-expanded': colInfo.expanded}"
+                                 ng-click="$event.stopPropagation(); $ctrl.toggleColumnExpansion(colInfo)"
+                                 ng-show="colInfo.joinPathList.length > 1">
+                            </div>
+                            <div class="bk-column-checkbox">
+                                <bk-checkbox bk-ctrl="colInfo.checkboxCtrl"></bk-checkbox>
+                            </div>
+                        </div>
+                        <div class="bk-join-paths-container" ng-show="colInfo.joinPathList.length > 1 && colInfo.expanded">
+                            <div ng-repeat="jpInfo in colInfo.joinPathList">
+                                <div class="name-container">
+                                    <div class="bk-join-path-checkbox">
+                                        <bk-checkbox bk-ctrl="jpInfo.checkboxCtrl"></bk-checkbox>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bk-btn-blue bk-btn-full-width"
+         ng-class="{'bk-disabled': $ctrl.disableConfirmBtn}"
+         ng-click="$ctrl.confirmSelection()"> {{$ctrl.strings.Confirm_Changes}}</div>
+</div>

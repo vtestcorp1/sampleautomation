@@ -1,0 +1,68 @@
+.bk-data-list {
+    .bk-vertical-flex-container-sized;
+    .bk-metadata-list {
+        .bk-tab-control {
+            .bk-vertical-flex-container-sized;
+
+            .bk-tab-header {
+                .flex-grow-shrink-basis(0, 0, 33px);
+                .flex(row);
+                .flex-justify(center);
+                .bk-padding-horizontal-20;
+                padding-top:14px;
+                .bk-padding-bottom-0;
+                .bk-margin-bottom-0;
+                .br-grey3-bottom;
+
+                .tab-header-item {
+                    .bk-padding-bottom-10;
+                    &:not(:last-child) {
+                        .bk-margin-right-20;
+                    }
+                }
+                .bk-disabed-tab {
+                    color: @h-gray4;
+                }
+
+                .bk-tab-header-item-selected {
+                    .br-grey8-bottom-3;
+                }
+            }
+            .bk-tab-body {
+                .bk-vertical-flex-container-sized;
+                .bk-data-management-tabs {
+                    .bk-vertical-flex-container-sized;
+
+                }
+                .bk-tab-control-tab {
+                    /* This is needed, there is a child position absolute div
+                    that needs to go bottom the tab
+                    */
+                    position: relative;
+                    tables-list-page {
+                        position: relative;
+                    }
+                    .bk-vertical-flex-container-sized;
+                    .bk-table-list, .bk-data-source-list {
+                        .bk-vertical-flex-container-sized;
+                    }
+                }
+            }
+        }
+
+    }
+    .data-explorer {
+        .flex-important(column);
+        .flex-grow-shrink-basis(1, 1, auto);
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 0px;
+        height: 100%;
+        right: 300px;
+        .transform(translate3D(300px, 0, 0));
+        .bk-explorer {
+            .flex-grow-shrink-basis(1, 1, auto);
+        }
+    }
+}

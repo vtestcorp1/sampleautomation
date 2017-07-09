@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>wand-round</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M-0.964466094,4.74264069 C-0.964466094,4.19035594 -0.517015395,3.74264069 0.0285031036,3.74264069 L10.4497475,3.74264069 L10.4497475,5.74264069 L0.0285031036,5.74264069 C-0.519898641,5.74264069 -0.964466094,5.29877586 -0.964466094,4.74264069 L-0.964466094,4.74264069 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="13.4142136" height="4">
+            <rect x="-1.96446609" y="2.74264069" width="13.4142136" height="4" fill="white"></rect>
+            <use xlink:href="#path-1" fill="black"></use>
+        </mask>
+        <path d="M-0.343145751,6.24264069 C-0.343145751,5.69035594 0.105468252,5.24264069 0.65403073,5.24264069 L6.82842712,5.24264069 L6.82842712,7.24264069 L0.65403073,7.24264069 C0.103305367,7.24264069 -0.343145751,6.79877586 -0.343145751,6.24264069 L-0.343145751,6.24264069 Z" id="path-3"></path>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="9.17157288" height="4">
+            <rect x="-1.34314575" y="4.24264069" width="9.17157288" height="4" fill="white"></rect>
+            <use xlink:href="#path-3" fill="black"></use>
+        </mask>
+    </defs>
+    <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="wand-copy" transform="translate(0.000000, -1.000000)">
+            <g id="rod" transform="translate(1.000000, 5.000000)">
+                <use id="Rectangle-14" stroke="#333333" mask="url(#mask-2)" stroke-width="2" transform="translate(4.742641, 4.742641) rotate(-45.000000) translate(-4.742641, -4.742641) " xlink:href="#path-1"></use>
+                <g id="Rectangle-14-Copy-14" transform="translate(3.242641, 6.242641) rotate(-45.000000) translate(-3.242641, -6.242641) ">
+                    <use fill="#333333" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    <use stroke="#333333" mask="url(#mask-4)" stroke-width="2" xlink:href="#path-3"></use>
+                </g>
+            </g>
+            <g id="flecks" transform="translate(4.000000, 0.000000)" fill="#333333">
+                <rect id="Rectangle-4" transform="translate(2.000000, 3.000000) rotate(-45.000000) translate(-2.000000, -3.000000) " x="1" y="2" width="2" height="2" rx="1"></rect>
+                <rect id="Rectangle-4-Copy-13" transform="translate(7.000000, 2.000000) rotate(-45.000000) translate(-7.000000, -2.000000) " x="6" y="1" width="2" height="2" rx="1"></rect>
+                <rect id="Rectangle-4-Copy-14" transform="translate(9.000000, 5.000000) rotate(-45.000000) translate(-9.000000, -5.000000) " x="8" y="4" width="2" height="2" rx="1"></rect>
+                <rect id="Rectangle-4-Copy-15" transform="translate(8.000000, 10.000000) rotate(-45.000000) translate(-8.000000, -10.000000) " x="7" y="9" width="2" height="2" rx="1"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

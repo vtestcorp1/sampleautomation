@@ -1,0 +1,38 @@
+<div class="bk-bulk-filter">
+    <div ng-switch="loading">
+        <blink-loading-indicator ng-switch-when="true">
+        </blink-loading-indicator>
+        <div ng-switch-when="false">
+            <div ng-if="parsingErrors.length"
+                 class="bk-bulk-filter-error bk-bulk-filter-parsing-error">
+                {{getParsingErrorString()}}
+            </div>
+            <div ng-if="unmatchedValues.length"
+                 class="bk-bulk-filter-error bk-bulk-filter-unmatched-error">
+                {{getErrorString()}}
+            </div>
+            <div ng-if="invalidValueErrors.length"
+                 class="bk-bulk-filter-error bk-bulk-filter-invalid-values-error">
+                {{getInvalidValueError()}}
+            </div>
+            <div ng-if="limitErrors.oneTimeAdditionExceeded"
+                 class="bk-bulk-filter-error bk-bulk-filter-one-time-error">
+                {{getOneTimeAdditionExceededLimitError()}}
+            </div>
+            <div ng-if="limitErrors.filterValuesExceeded"
+                 class="bk-bulk-filter-error bk-bulk-filter-limit-error">
+                {{getFilterValuesExceededLimitError()}}
+            </div>
+            <textarea class="bk-bulk-filter-text-area"
+                      blink-auto-focus
+                      rows="3"
+                      placeholder="{{getTextAreaPlaceholderText()}}"
+                      ng-model="$parent.editorText.editorText">
+            </textarea>
+            <blink-checkbox-collection ng-if="validatedCheckboxValues.length > 0"
+                                       bk-ctrl="checkboxCollectionCtrl.ctrl">
+            </blink-checkbox-collection>
+        </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,133 @@
+.row-level-security-container {
+    .bk-vertical-flex-container-sized();
+    overflow-y: hidden;
+
+    .bk-rls-rules-container {
+        .bk-vertical-flex-container-sized();
+        overflow-y: hidden;
+    }
+    .bk-rls-header {
+        .flex(row);
+        padding: 20px;
+        height: 30px;
+        align-items: center;
+
+        .bk-rls-add-btn {
+            margin-left: auto;
+        }
+
+    }
+    .bk-rls-rules-list {
+        max-height: 500px;
+        .flex(column);
+        .flex-grow-shrink-basis(1, 1, auto);
+        overflow-y: hidden;
+
+        .bk-generic-list {
+            background-color: @white-bg;
+            .box-shadow(none);
+            .bk-content {
+                min-width: 500px;
+                .box-shadow(none);
+
+                .bk-list-container {
+                    margin: 0 20px;
+                    border: 4px solid @h-gray1;
+
+                    .bk-name {
+                        position: absolute;
+                        padding-left: 15px;
+                        left: 45px;
+                        width: 20%;
+
+                        .bk-name-content {
+                            width: 100%;
+                            color: @gray-main-text;
+                            font-size: 13px;
+                            .font-family-semibold();
+                        }
+                    }
+
+                    .bk-description {
+                        position: absolute;
+                        padding-left: 15px;
+                        left: 28%;
+                        width: 30%;
+
+                        .bk-description-content {
+                            width: 100%;
+                            color: @gray-main-text;
+                            font-size: 13px;
+                            .font-family-semibold();
+                        }
+                    }
+
+                    .bk-time {
+                        position: absolute;
+                        left: 60%;
+                        width: 20%;
+                    }
+
+                    .bk-author-header {
+                        position: absolute;
+                        left: 85%;
+                        width: 10%;
+                    }
+                }
+            }
+        }
+    }
+
+    .bk-rls-help-container {
+        .bk-vertical-flex-container-sized();
+        align-items: center;
+        overflow-y:hidden;
+
+        .rls-explain-content {
+            padding: 30px;
+            .flex-grow-shrink-basis(0, 0, auto);
+            .font-family-regular();
+            .text-size-larger();
+        }
+
+        .bk-rls-add-btn {
+            .flex-grow-shrink-basis(0, 0, 35px);
+        }
+
+        .help-assistant {
+            .flex(row);
+            .flex-grow-shrink-basis(1, 1, 0);
+            overflow-y: hidden;
+            width: 100%;
+
+            .assistant-image {
+                .flex-grow-shrink-basis(0,0,200px);
+                background-image: url(/resources/img/carousel/help-tip/bg-know-your-data.png);
+                background-repeat: no-repeat;
+                background-position: bottom right;
+                background-size: 220px 220px;
+                height: 220px;
+            }
+
+            .rls-help-text {
+                .flex-grow-shrink-basis(1, 1, auto);
+                margin-top: 30px;
+                padding:10px;
+                overflow: auto;
+                border: 1px solid @input-border;
+                border-radius: 6px;
+                .box-shadow(0 5px 10px @dialog-shadow);
+                .font-family-gotham-regular();
+
+                .img-example1 {
+                    background-image: url(/resources/img/rls-example1.png);
+                    background-repeat: no-repeat;
+                    background-position: top right;
+                    background-size: 330px 150px;
+                    height: 150px;
+                    width: 330px;
+                }
+            }
+        }
+    }
+}

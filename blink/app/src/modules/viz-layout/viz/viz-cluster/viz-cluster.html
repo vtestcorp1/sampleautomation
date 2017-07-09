@@ -1,0 +1,27 @@
+<div class="bk-viz-cluster"
+     uib-carousel
+     active="$ctrl.activeVizIndex"
+     on-active-slide-change="$ctrl.onActiveSlideChangeCallback"
+     interval="-1"
+     no-pause="true"
+     no-transition="true">
+    <div class="bk-viz-cluster-viz"
+         uib-slide
+         ng-repeat="vizClusterVisualization in $ctrl.vizClusterVisualizations"
+         index="$index">
+        <div ng-if="!!$ctrl.vizClusterVisualizations &&
+            $ctrl.vizClusterVisualizations.length > 0 &&
+            $ctrl.activeVizIndex >= 0"
+             class="bk-viz-details-title-info">
+            ( {{strings.a3.SHOWING_INSIGHT}} {{$ctrl.activeVizIndex + 1}} {{strings.of}} {{$ctrl.vizClusterVisualizations.length}} )
+        </div>
+        <blink-viz-tile class="bk-viz-clustered-viz"
+                        viz-model="vizClusterVisualization.vizModel"
+                        sage-client="vizClusterVisualization.sageClient"
+                        bk-show-description="true"
+                        should-show-action-menu="true"
+                        on-render-complete="vizClusterVisualization.onRenderComplete"
+                        allow-context-edit="vizClusterVisualization.vizModel.isPinboardViz()">
+        </blink-viz-tile>
+    </div>
+</div>

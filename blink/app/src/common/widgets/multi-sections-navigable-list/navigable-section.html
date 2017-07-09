@@ -1,0 +1,29 @@
+<ul class="bk-section">
+    <div class="bk-section-header">
+        <div class="bk-section-header-text" ng-if="$ctrl.headerTitle">
+            {{ $ctrl.headerTitle}}
+        </div>
+    </div>
+    <div class="bk-section-items">
+         <div ng-repeat="item in $ctrl.items | limitTo:$ctrl.limitTo track by $index"
+              class="bk-multi-section-item-container"
+              ng-class="{'bk-active' : $ctrl.isItemHighlighted($index)}"
+              ng-click="$ctrl.onItemClicked($index)"
+              ng-include="$ctrl.itemTemplateUrl">
+             <p></p>
+        </div>
+    </div>
+    <div class="bk-repeat-view-all" ng-if="$ctrl.allowExpansion && !$ctrl.isFullyExpanded">
+        <span ng-switch="$ctrl.isFetching" ng-show="$ctrl.showExpansionButton()">
+            <span ng-switch-when="true">
+                 <div class="bk-repeat-loading-indicator"></div>
+            </span>
+            <span ng-switch-when="false"
+                  class="bk-repeat-view-all-label"
+                  ng-click="$ctrl.viewAllClicked()">
+                <span>{{ $ctrl.strings.View_All }}</span>
+                <span class="bk-expand-btn-light-bg bk-arrow-expanded"></span>
+            </span>
+        </span>
+    </div>
+</ul>

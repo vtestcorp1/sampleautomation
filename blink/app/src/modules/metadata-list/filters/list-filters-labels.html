@@ -1,0 +1,51 @@
+<div class="top-list-filters">
+    <div class="bk-filter-item" ng-repeat="filter in filters">
+        <ul class="bk-top-menu-filters">
+            <li class="bk-category-{{ menuItem.category.toLowerCase() }} "
+                ng-repeat="menuItem in filter.values"
+                ng-click="onFilterClick(filter, $index)"
+                ng-class="{ 'bk-selected': $index == filter.currentFilterIndex }">
+                {{ menuItem.label }}
+            </li>
+        </ul>
+    </div>
+    <div class="stickers" ng-if="!!stickers">
+        <div class="bk-style-icon-label"></div>
+        <div class="bk-title">{{ stickers.stickersLabel.pluralize() }}</div>
+        <div class="sticker-selector-container">
+            <div class="selected-label" ng-click="showMenu = !showMenu"
+                 ng-class="{'menu-shown': showMenu}">
+                <div class="label-icon">
+                    <color-picker class="bk-label-color"
+                                  fill="true"
+                                  ng-model="stickers.selectedSticker.color"
+                                  not-editable="true"></color-picker>
+                </div>
+                <div class="bk-sticker-name">{{ stickers.selectedSticker.name }}</div>
+                <div class="bk-style-icon-arrow-down"></div>
+            </div>
+
+            <div class="bk-apply-label-menu"
+                 ng-show="showMenu"
+                 ng-mouseover="$event.stopPropagation()"
+                 ng-mouseenter="$event.stopPropagation()"
+                 ng-click="$event.stopPropagation()"
+                 blink-overlay="showMenu = false">
+                <div class="bk-apply-label-menu-inner" ng-switch="hasAdminPrivileges">
+                    <labels-panel ng-switch-when="false"
+                                  class="bk-labels-container"
+                                  readonly
+                                  selected-label-id="stickers.selectedSticker.id"
+                                  on-label-click="onLabelClicked($label)"></labels-panel>
+                    <labels-panel ng-switch-when="true"
+                                  class="bk-labels-container"
+                                  selected-label-id="stickers.selectedSticker.id"
+                                  on-label-click="onLabelClicked($label)"
+                                  on-label-deletion="onLabelDeletion($label)"
+                                  on-label-update="onLabelUpdate($label)"></labels-panel>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<div>
+    <blink-smart-checkbox-collection ng-if="!!$ctrl.showRelevantValues"
+                                     bk-ctrl="$ctrl.relevantSmartCheckboxCollectionCtrl">
+    </blink-smart-checkbox-collection>
+    <blink-smart-checkbox-collection ng-if="!$ctrl.showRelevantValues"
+                                     bk-ctrl="$ctrl.allSmartCheckboxCollectionCtrl">
+    </blink-smart-checkbox-collection>
+    <bk-checkbox class="bk-show-all-values-toggler-checkbox"
+                    ng-if="!!$ctrl.showAllTogglerCBCtrl"
+                    blink-tooltip="{{strings.filters.Show_All_Possible_Values_Tooltip}}"
+                    bk-ctrl="$ctrl.showAllTogglerCBCtrl">
+    </bk-checkbox>
+</div>

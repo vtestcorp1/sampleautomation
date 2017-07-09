@@ -1,0 +1,10 @@
+<div class="bk-color-scale">
+    <div class="bk-color-labels">
+        <div class="bk-color-left-value">{{$ctrl.leftText}}</div>
+        <div class="bk-color-right-value">{{$ctrl.rightText}}</div>
+    </div>
+    <div class="bk-color-bar">
+        <div class="bk-color-scale-block" ng-repeat="color in $ctrl.colors" ng-style="{backgroundColor: color}">
+        </div>
+    </div>
+</div>

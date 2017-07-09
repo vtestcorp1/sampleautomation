@@ -1,0 +1,27 @@
+.bk-tab-control {
+
+    .bk-tab-header {
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+    }
+
+    .tab-header-item {
+        display: inline-block;
+        margin-right: 8px;
+        padding: 0 2px 0 0;
+        .font-family-regular();
+        .color-grey8;
+        .text-size-default;
+
+        &.bk-tab-header-item-selected {
+            .font-family-semibold;
+            border-bottom: 1px solid @h-black-transparent-2;
+        }
+    }
+
+    tab-control-tab {
+        &:empty {
+            display: none !important;
+        }
+    }
+}

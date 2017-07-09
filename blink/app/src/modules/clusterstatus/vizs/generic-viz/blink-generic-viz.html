@@ -1,0 +1,41 @@
+<div class="generic-viz" ng-switch="$ctrl.viz.getModel().getVizSubtype()">
+    <search-summary-viz viz="$ctrl.viz"
+                        class="bk-vertical-flex-container-sized"
+                        ng-switch-when="SEARCH_SUMMARY_VIZ"></search-summary-viz>
+    <search-detail-table-viz viz="$ctrl.viz"
+                             class="bk-vertical-flex-container-sized"
+                             ng-switch-when="SEARCH_DETAIL_TABLE_VIZ"></search-detail-table-viz>
+    <database-summary-viz viz="$ctrl.viz"
+                          class="bk-vertical-flex-container-sized"
+                          ng-switch-when="DATABASE_SUMMARY_VIZ"></database-summary-viz>
+    <database-detail-viz viz="$ctrl.viz"
+                         class="bk-vertical-flex-container-sized"
+                         ng-switch-when="DATABASE_DETAIL_VIZ"></database-detail-viz>
+    <cluster-summary-viz viz="$ctrl.viz" tile="$ctrl.tile"
+                         class="bk-vertical-flex-container-sized"
+                         ng-switch-when="CLUSTER_SUMMARY_VIZ"></cluster-summary-viz>
+    <cluster-detail-info-viz viz="$ctrl.viz"
+                             class="bk-vertical-flex-container-sized"
+                             ng-switch-when="CLUSTER_DETAIL_INFO_VIZ"></cluster-detail-info-viz>
+    <cluster-detail-log-viz viz="$ctrl.viz"
+                            class="bk-vertical-flex-container-sized"
+                            ng-switch-when="CLUSTER_DETAIL_LOG_VIZ"></cluster-detail-log-viz>
+    <cluster-detail-snapshot-viz viz="$ctrl.viz"
+                                 class="bk-vertical-flex-container-sized"
+                                 ng-switch-when="CLUSTER_DETAIL_SNAPSHOT_VIZ"></cluster-detail-snapshot-viz>
+    <alert-summary-viz viz="$ctrl.viz"
+                       class="bk-vertical-flex-container-sized"
+                       ng-switch-when="ALERT_SUMMARY_VIZ"></alert-summary-viz>
+    <event-summary-viz viz="$ctrl.viz"
+                       class="bk-vertical-flex-container-sized"
+                       ng-switch-when="EVENT_SUMMARY_VIZ"></event-summary-viz>
+    <alert-detail-alerts-viz viz="$ctrl.viz"
+                             class="bk-vertical-flex-container-sized"
+                             ng-switch-when="ALERT_DETAIL_ALERTS_VIZ"></alert-detail-alerts-viz>
+    <alert-detail-events-viz viz="$ctrl.viz"
+                             class="bk-vertical-flex-container-sized"
+                             ng-switch-when="ALERT_DETAIL_EVENTS_VIZ"></alert-detail-events-viz>
+    <alert-detail-notifications-viz viz="$ctrl.viz"
+                                    class="bk-vertical-flex-container-sized"
+                                    ng-switch-when="ALERT_DETAIL_NOTIFICATIONS_VIZ"></alert-detail-notifications-viz>
+</div>

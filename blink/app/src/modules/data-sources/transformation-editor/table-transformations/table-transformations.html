@@ -1,0 +1,29 @@
+<div class="bk-header">
+    <label><b>{{ strings.transformationEditor.TRANSFORMATION }}</b></label>
+    <bk-secondary-button class="bk-add-transform-btn"
+                         text="{{strings.transformationEditor.ADD_EXPRESSION}}"
+                         icon="bk-style-icon-small-plus"
+                         ng-click="showTransformationsEditor()">
+    </bk-secondary-button>
+</div>
+<div ng-if="isTransformationNotDefined()" class="bk-data-row">
+    <label>{{ strings.transformationEditor.NO_TRANSFORMATIONS_DEFINED }}</label>
+</div>
+<div ng-if="!isTransformationNotDefined()" class="bk-data-row">
+    <actionable-list class="bk-transformations-list"
+                     on-row-click="onRowClick"
+                     list-model="listModel"
+                     action-items="actionItems">
+    </actionable-list>
+</div>
+<script type="text/ng-template" id="transformation-editor-popup.html">
+    <div class="bk-transformation-editor-popup">
+        <bk-transformation-editor transformation="transformation"
+                                  on-upsert-transform="onUpsertTransform"
+                                  ds-metadata="dsMetadata"
+                                  tables="tables"
+                                  on-done="onDone"
+                                  get-table-columns="getTableColumns">
+        </bk-transformation-editor>
+    </div>
+</script>

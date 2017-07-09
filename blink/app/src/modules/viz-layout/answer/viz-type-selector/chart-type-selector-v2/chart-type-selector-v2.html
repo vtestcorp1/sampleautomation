@@ -1,0 +1,18 @@
+<div class="bk-chart-type-selector">
+    <div ng-repeat="chartType in $ctrl.getChartTypes()"
+         chart-type="{{chartType}}"
+         class="bk-viz-type-selector"
+         ng-class="{'bk-viz-type-selected': $ctrl.isCurrentType(chartType),
+         'bk-disabled-chart-type-option': !$ctrl.isVizTypeSupported(chartType)}"
+         blink-tooltip="{{$ctrl.getTooltip(chartType)}}"
+         data-placement="auto bottom"
+         data-html="true"
+         ng-click="$ctrl.onVizTypeSelection(chartType)">
+        <div class="bk-viz-selector-icon">
+            <img src="{{$ctrl.getChartImagePath(chartType)}}">
+        </div>
+        <span class="bk-viz-selector-title">
+                {{$ctrl.getDisplayName(chartType)}}
+        </span>
+    </div>
+</div>

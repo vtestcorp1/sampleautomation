@@ -1,0 +1,170 @@
+<div class="bk-metadata-list-header"
+     ng-if="$ctrl.showHeader()">
+    <div class="bk-metadata-list-title">
+        <div ng-if="$ctrl.headerTitle">{{$ctrl.headerTitle}}</div>
+    </div>
+    <list-filters-and-labels filters="$ctrl.filters"
+                             on-filter-applied="$ctrl.onFiltering()"
+                             label-deleted-callback="$ctrl.onLabelDeleted(label)"
+                             stickers="$ctrl.stickers"
+                             class="bk-filter-label-bar">
+    </list-filters-and-labels>
+    <div class="bk-metadata-list-action-button-wrapper">
+        <bk-action-button-dropdown ng-if="$ctrl.dropdownMenu"
+                                   blink-tooltip="{{$ctrl.dropdownMenu.tooltip}}"
+                                   menu="$ctrl.dropdownMenu">
+        </bk-action-button-dropdown>
+
+        <bk-secondary-button ng-if="$ctrl.button"
+                             text="{{ $ctrl.button.text }}"
+                             icon="{{ $ctrl.button.icon }}"
+                             ng-class="$ctrl.button.class"
+                             ng-click="$ctrl.button.onClick()">
+        </bk-secondary-button>
+    </div>
+</div>
+<div class="list-layout bk-generic-list">
+    <actionable-list list-model="$ctrl.listModel"
+                     action-items="$ctrl.actionItems"
+                     on-row-click="$ctrl.onRowClick"
+                     on-render-complete="$ctrl.onListRenderCallback"
+                     swap-header-items="$ctrl.swapHeaderItems"
+                     class="tab-content bk-list-container">
+    </actionable-list>
+</div>
+<div ng-switch="$ctrl.showShareDialog">
+    <bk-share-dialog bk-ctrl="$ctrl.shareDialogComponent" ng-switch-when="true"/>
+</div>
+
+<!--Text Format-->
+<script type="text/ng-template" id="metadata-list-content-format.html">
+    <div class="bk-overflow-ellipsis bk-name-text"
+         blink-tooltip="{{column.format(row)}}"
+         data-placement="auto bottom"
+         auto-tooltip-style="bootstrap">
+        {{column.format(row)}}
+    </div>
+</script>
+<!--Date Format-->
+<script type="text/ng-template" id="metadata-list-date-format.html">
+    <div class="bk-clock-icon"></div><div class="bk-time-author-label">{{column.format(row)}}</div>
+</script>
+<!--Author Format-->
+<script type="text/ng-template" id="metadata-list-author-format.html">
+    <blink-profile-pic user-id="column.format(row)[0]"
+                       user-display-name="column.format(row)[1]"
+                       show-tooltip="true"
+                       class="bk-profile-pic">
+    </blink-profile-pic>
+</script>
+<!--Source Format-->
+<script type="text/ng-template" id="metadata-list-source-format.html">
+    <div class="{{column.format(row)[1]}}"></div>
+    <div class="bk-source-content">{{column.format(row)[0]}}</div>
+</script>
+<!-- Stickers Format-->
+<script type="text/ng-template" id="metadata-list-stickers-format.html">
+    <tagged-labels tags="column.format(row)[0]"
+                   deletable="column.format(row)[1]"
+                   on-remove-label="column.format(row)[2](row, $label)">
+    </tagged-labels>
+</script>
+<!-- Data Source Type Format -->
+<script type="text/ng-template" id="data-source-list-format.html">
+    <div class="bk-ds-type-content bk-overflow-ellipsis"
+         blink-tooltip="{{column.format(row)}}"
+         auto-tooltip-style="bootstrap">
+        {{column.format(row)}}
+    </div>
+</script>
+<!-- Data Source Load Status Format -->
+<script type="text/ng-template" id="data-source-load-status-format.html">
+    <div class="bk-ds-load-status-content">
+        <div class="ds-load-status green">{{column.format(row)[0]}} <span>{{strings.Successful}}</span></div>
+        <div class="ds-load-status yellow">{{column.format(row)[1]}} <span>{{strings.In_progress}}</span></div>
+        <div class="ds-load-status red">{{column.format(row)[2]}} <span>{{strings.Failed}}</span></div>
+    </div>
+</script>
+
+<!-- Job status format -->
+<script type="text/ng-template" id="job-list-view-status.html">
+    <div>
+        {{column.format(row)}}
+    </div>
+</script>
+
+<!-- Job status format -->
+<script type="text/ng-template" id="job-list-status-format.html">
+    <div ng-switch="row.getState()" class="bk-job-content">
+        <div ng-switch-when="1" class="bk-style-icon-play">
+        </div>
+        <div ng-switch-when="2" class="bk-style-icon-pause"></div>
+        <div ng-switch-when="3" class="bk-style-icon-checkmark"></div>
+    </div>
+    {{column.format(row)}}
+</script>
+<!-- Job schedule format -->
+<script type="text/ng-template" id="job-list-schedule-format.html">
+  <div>
+      {{column.format(row)}}
+  </div>
+</script>
+
+<!-- Job recipient format -->
+<script type="text/ng-template" id="job-list-recipient-format.html">
+    <span  data-html="true" class="bk-recipient" blink-tooltip="{{row.getRecipientTooltip()}}">
+          {{column.format(row)}}
+    </span>
+</script>
+
+<!-- Job Status start date format -->
+<script type="text/ng-template" id="job-run-start-date.html">
+
+    <div>
+        {{column.format(row)}}
+    </div>
+</script>
+
+<!-- Job Status end date format -->
+<script type="text/ng-template" id="job-run-end-date.html">
+    <div>
+        {{column.format(row)}}
+    </div>
+</script>
+
+<!-- Job Status end date format -->
+<script type="text/ng-template" id="job-run-state.html">
+    <div class="bk-status-content">
+        <div class="bk-status-{{column.format(row)[0]}}">
+            <span class="status-text">{{column.format(row)[1]}}</span>
+        </div>
+    </div>
+</script>
+
+<!-- A3 job status -->
+<script type="text/ng-template" id="a3-job-result.html">
+    <div class="bk-overflow-ellipsis bk-name-text"
+         blink-tooltip="{{row.getLastFailureMessage()}}"
+         auto-tooltip-style="bootstrap"
+         ng-bind-html="column.format(row)">
+    </div>
+</script>
+
+<!-- A3 job run status -->
+<script type="text/ng-template" id="a3-job-run-result.html">
+    <div class="bk-overflow-ellipsis bk-name-text"
+         blink-tooltip="{{row.getFailureMessage()}}"
+         auto-tooltip-style="bootstrap"
+         ng-bind-html="column.format(row)">
+    </div>
+</script>
+
+<script type="text/ng-template" id="job-name-with-link.html">
+    <div class="bk-overflow-ellipsis bk-name-text"
+         blink-tooltip="{{column.format(row)}}"
+         auto-tooltip-style="bootstrap">
+         <a ng-href="{{row.href}}">{{column.format(row)}}</a>
+    </div>
+</script>
+
+

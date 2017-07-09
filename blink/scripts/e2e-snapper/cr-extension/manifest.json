@@ -1,0 +1,21 @@
+{
+    "name": "Blink E2E Snapper",
+    "description": "Chrome extension to take screen shot of failed cases",
+    "version": "0.1",
+    "manifest_version": 2,
+    "icons": {
+    },
+    "permissions": [
+        "tabs",
+        "<all_urls>"
+    ],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "content_scripts": [
+        {
+            "matches": ["http://localhost/*"],
+            "js": ["content-scripts/main.js"]
+        }
+    ]
+}

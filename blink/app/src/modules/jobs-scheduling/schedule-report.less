@@ -1,0 +1,171 @@
+.bk-job-schedule-page {
+  .bk-vertical-flex-container-sized;
+  .bk-job-schedule {
+    .bk-vertical-flex-container-sized;
+    .bk-schedule {
+      padding-left: 40px;
+    }
+    .bk-header {
+      .flex(row);
+      .flex-justify(space-between);
+      .flex-align(baseline);
+      .flex-grow-shrink-basis(0, 0, auto);
+      padding: 20px;
+      .bk-margin-bottom-20;
+      border-bottom: 1px solid @h-gray2;
+
+      .bk-page-title {
+        display: inline-block;
+        padding-left: 25px;
+        color: @gray-main-title;
+        font-size: 25px;
+        .font-page-title;
+        a {
+          color: #5c9df5;
+          text-decoration: underline;
+        }
+      }
+    }
+    .bk-job-schedule-body {
+      .flex(row);
+      .flex-wrap(wrap);
+      .flex-grow-shrink-basis(1, 0, 0);
+      overflow: auto;
+
+      .bk-schedule-section {
+        .flex-grow-shrink-basis(1, 1, 0);
+      }
+
+      .bk-recipient-section {
+        .flex-grow-shrink-basis(1, 1, 0);
+        border-left: 1px solid @grey3;
+      }
+
+      .bk-section-title {
+        font-size: 20px;
+        padding-left: 45px
+      }
+      .bk-dialog {
+        margin: 35px;
+        min-width: 450px;
+        max-width: 650px;
+
+        #everynminid, #hourlyid {
+          .bk-select-box {
+            padding-left: 10px;
+          }
+        }
+        #atid {
+          label:first-child {
+            margin-right: 115px;
+          }
+        }
+        #dailyid, #monthlyid {
+          .bk-data-row {
+            display: inline-block;
+            &:first-child {
+              margin-right: 60px;
+            }
+          }
+        }
+
+        .bk-job-description {
+          resize: none;
+        }
+
+        #monthlyid {
+          .bk-data-row:first-child {
+            margin-right: 27px;
+          }
+        }
+
+        .chosen-container {
+          .chosen-single {
+            font-size: 12px;
+          }
+          .chosen-drop {
+            .chosen-results li.active-result{
+              font-size: 12px;
+            }
+          }
+        }
+
+        .schedule-container label, .schedule-container input {
+          .font-family-semibold();
+          font-size: 14px;
+          color: @gray-main-text;
+        }
+        .bk-options > .bk-day-row {
+          margin-left: 140px;
+        }
+
+        .bk-occurences {
+          padding: 2px 0 2px 0;
+          line-height: 33px
+        }
+
+        .bk-label-repeats:first-child {
+          width: 119px; // (150-10-10-11)
+        }
+
+        .bk-body {
+          .bk-dialog-permission-view {
+            .bk-add-users-body {
+              .bk-dialog-field {
+                .bk-add-users-buttons {
+                  vertical-align: top;
+                  display: inline-block;
+                  margin-top: 3px;
+                }
+                .bk-multiple-select {
+                  width: 270px;
+                }
+                .bk-metadata-item-selector {
+                  display: inline-block;
+                  .bk-select-box {
+                    margin-left: 0px;
+                  }
+                }
+              }
+            }
+            padding: 0px 40px 25px 50px;
+          }
+        }
+      }
+    }
+  }
+
+  .bk-schedule-footer {
+
+    padding: 20px;
+    .flex-grow-shrink-basis(0, 0, 65px);
+    background-color: @gray-bg;
+    box-shadow: inset 0 1px 0 @gray-border;
+
+    .bk-btn-schedule {
+      float: right;
+      margin: 10px;
+    }
+
+    .bk-btn-back {
+      float: right;
+      margin: 10px;
+    }
+  }
+  .bk-format-item {
+    height: 40px;
+    align-items: center;
+    .flex(row);
+    .bk-format-radio {
+      .flex-grow-shrink-basis(0, 0, 150px);
+      .bk-form-radio {
+        .bk-radio-button {
+          margin: 0px;
+        }
+      }
+    }
+  }
+  .bk-warning {
+    padding-left: 10px;
+  }
+}

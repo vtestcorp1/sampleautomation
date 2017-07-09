@@ -1,0 +1,186 @@
+.bk-data-scope {
+
+    .header {
+        padding: 10px 25px;
+        background-color: @black-bg-lighter;
+        color: @white-default;
+        font-size: 18px;
+
+        .fl {
+            margin-top:7px;
+        }
+
+        .bk-num-sources-selected {
+            margin-left: 10px;
+            font-size: 11px;
+            font-family: @font-family-semibold;
+        }
+    }
+
+    .body {
+        border-left: 1px solid #dcdcdc;
+        border-bottom: 1px solid #dcdcdc;
+        border-right: 1px solid #dcdcdc;
+    }
+
+    .left-pane {
+        width: 170px;
+        float: left;
+        height: 100%;
+        margin-top: 15px;
+
+        .body-lt {
+            .bk-label-container {
+                position:absolute;
+                width:170px;
+                bottom:60px;
+                top:140px;
+                overflow-y: auto;
+
+                .bk-label-panel {
+                    .bk-label {
+                        padding: 0px 25px 0px 25px;
+
+                        &.bk-active {
+                            background-color: @h-gray1;
+                            font-family: @font-family-bold;
+                        }
+                    }
+                }
+            }
+
+            .bk-explore-data {
+                position: absolute;
+                left: 25px;
+                bottom: 20px;
+            }
+
+            .bk-filter {
+                padding: 3px 25px;
+
+                &:hover {
+                    background-color: @gray-hover;
+                }
+
+                &.bk-selected-filter {
+                    .font-family-semibold;
+                    background-color: @h-gray1;
+                }
+            }
+
+        }
+    }
+
+    .right-pane {
+        background-color: @h-gray1;
+        min-height: 400px;
+        margin-left: 170px;
+
+        .header-rt {
+            height: 65px;
+            padding: 16px 25px 0 25px;
+
+            .bk-select-all {
+                margin-top: 2px;
+                .flex(row);
+            }
+
+            .bk-clear-selections {
+                padding: 4px 0 0 7px;
+                font-size: 12px;
+            }
+
+            .bk-search {
+                input {
+                    width: auto;
+                }
+            }
+        }
+
+        .body-rt {
+            padding: 0px 16px 25px 25px;
+            height: 400px;
+            overflow-y: auto;
+
+            .bk-list {
+
+                &:not(:last-child) {
+                    margin-bottom: 12px;
+                }
+
+                .bk-list-header {
+                    .uppercase-heading;
+                    .color-grey6;
+                }
+
+                .bk-list-item {
+                    position:relative;
+                    display: inline-block;
+                    width: 140px;
+                    padding: 4px 1px 3px 7px;
+                    margin-right: 7px;
+                    background-color: @h-white;
+                    border: 1px solid #dcdcdc;
+                    box-shadow: 0 0 27px transparent;
+                    .font-family-semibold;
+                    .text-size-small;
+
+                    &.bk-selected {
+                        background-color: lighten(@blue-default, 31%);
+                        border-color: lighten(@blue-default, 10%);
+                    }
+
+                    .transition(~"box-shadow 200ms ease-out");
+
+                    &:hover {
+                        box-shadow: 0 0 27px rgba(0, 0, 0, 0.1);
+                        border-color: #dcdcdc;
+                    }
+
+                    .bk-stackable-label {
+                        position: absolute;
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 20px;
+                        border-right: 1px solid white;
+                        top: 2px;
+                    }
+                }
+            }
+
+            .bk-panel-footer {
+                padding: 0;
+                &.bk-with-join-type-selector {
+                    padding-top: 15px;
+                    .bk-join-type-selector {
+                        .flex(row);
+                        .bk-join-type-desc {
+                            margin-left: 5px;
+                            .bk-light-text-12px;
+                        }
+                    }
+                }
+            }
+
+            .bk-waiting-data-sources {
+                margin-top: 25%;
+                margin-left: 20%;
+            }
+
+            .bk-no-data-sources {
+                text-align: center;
+                font-size: 14px;
+                color: @h-gray4;
+
+                .bk-icon {
+                    margin-top: 30%;
+                    margin-bottom: 10px;
+                    &:before {
+                        font-size: 32px;
+                        line-height: 32px;
+                    }
+                }
+            }
+        }
+    }
+}

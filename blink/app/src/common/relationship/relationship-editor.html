@@ -1,0 +1,116 @@
+<div class="bk-relationship-editor">
+    <div class="bk-relationship-header">
+        <div class="bk-autogrow-block"></div>
+        <div class="bk-relationship-name-header">
+            <div>{{strings.Relationship_Name}}</div>
+            <div class="bk-document-title bk-editable-title bk-relationship-title">
+                <div blink-content-editable
+                     fullspan
+                     ng-model="config.name"
+                     description="config.desc">
+                </div>
+            </div>
+        </div>
+
+        <div class="bk-select-box">
+            <div>{{strings.Destination_Table}}</div>
+            <ui-select ng-model="config.destinationTable"
+                       theme="select2"
+                       class="bk-select-destination-table">
+                <ui-select-match placeholder="Destination table">{{$select.selected.name}}</ui-select-match>
+                <ui-select-choices repeat="table in config.destinationTableOptions | filter: $select.search">
+                   <div blink-tooltip="{{getTooltipHtml(table)}}"
+                         data-html="true"
+                         data-delay='{"show":"250"}'
+                         data-placement="right">
+                        {{table.name}}
+                   </div>
+                </ui-select-choices>
+            </ui-select>
+        </div>
+        <div class="bk-autogrow-block"></div>
+    </div>
+
+    <div class="bk-column-relationships">
+        <div class="bk-source">
+            <div class="bk-select-box">
+                <ui-select ng-model="config.newSourceColumn"
+                           theme="select2"
+                           class="bk-select-source-column">
+                    <ui-select-match placeholder="Source column">{{$select.selected.name}}</ui-select-match>
+                    <ui-select-choices repeat="column in config.sourceColumnOptions | filter: $select.search">
+                        {{column.name}}
+                    </ui-select-choices>
+                </ui-select>
+            </div>
+
+            <ul class="bk-column-list" ng-show="!!config.sourceColumns.length">
+                <li class="bk-column-cell"
+                    ng-repeat="row in config.sourceColumns track by $index"
+                    ng-mouseenter="config.currentHighlightedIndex = $index"
+                    ng-mouseleave="config.currentHighlightedIndex = -1"
+                    ng-class="{'bk-hovered': (config.currentHighlightedIndex === $index)}">
+                    {{ row.name }}
+                </li>
+            </ul>
+        </div>
+
+        <div class="bk-link-ui" ng-class="{'bk-success': isLinked()}">
+            <div class="bk-link-left"></div>
+            <div class="bk-link-icon-container">
+                <div class="bk-link-icon"></div>
+            </div>
+            <div class="bk-link-right"></div>
+        </div>
+
+        <div class="bk-target">
+            <div class="bk-select-box">
+                <div ng-if="config.destinationColumnOptions.length">
+                    <ui-select ng-model="config.newDestinationColumn"
+                               theme="select2"
+                               class="bk-select-destination-column">
+                        <ui-select-match placeholder="Destination column">{{$select.selected.name}}</ui-select-match>
+                        <ui-select-choices repeat="column in config.destinationColumnOptions | filter: $select.search">
+                            {{column.name}}
+                        </ui-select-choices>
+                    </ui-select>
+                </div>
+
+                <div class="chosen-container chosen-container-single chosen-disabled"
+                     ng-if="!config.destinationColumnOptions.length">
+                    <div class="chosen-single">
+                        <span>{{strings.No_values}}</span>
+                        <div><b></b></div>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="bk-column-list" ng-show="!!config.destinationColumns.length">
+                <li class="bk-column-cell"
+                    ng-repeat="row in config.destinationColumns track by $index"
+                    ng-mouseenter="config.currentHighlightedIndex = $index"
+                    ng-mouseleave="config.currentHighlightedIndex = -1"
+                    ng-class="{'bk-hovered': (config.currentHighlightedIndex === $index)}">
+                    {{ row.name }}
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <bk-secondary-button text="{{ relationshipEditorMessages.ADD_KEY }}"
+                             icon="bk-style-icon-small-plus"
+                             is-disabled="!isCompositeKeyValid()"
+                             ng-click="addCompositeKey()"
+                             class="bk-add-key-button"></bk-secondary-button>
+        <bk-secondary-button text="{{ relationshipEditorMessages.ADD_RELATIONSHIP }}"
+                             icon="bk-style-icon-small-plus"
+                             is-disabled="!isValidRelationship()"
+                             ng-click="addRelationship()"
+                             class="bk-add-relationship-button"></bk-secondary-button>
+        <bk-secondary-button text="{{ strings.CANCEL }}"
+                             ng-if="hasExistingRelationships()"
+                             ng-click="goToRelationshipViewer()"
+                             class="bk-cancel-relationship-edits"></bk-secondary-button>
+    </div>
+</div>

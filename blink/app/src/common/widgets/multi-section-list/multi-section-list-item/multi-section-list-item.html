@@ -1,0 +1,11 @@
+<div class="bk-multi-section-list-item">
+    <div class="bk-multi-section-list-item-name">{{ $ctrl.getItemName() }}</div>
+    <div class="bk-multi-section-list-item-action">
+        <bk-secondary-button
+                class="bk-multi-section-list-item-action-button"
+                text="{{ $ctrl.getActionLabel()}}"
+                ng-click="$ctrl.handleAction()"></bk-secondary-button>
+    </div>
+    <div class="bk-multi-section-list-item-content" ng-transclude></div>
+    <div class="bk-multi-section-list-item-subtext">{{ $ctrl.getItemSubtext() }}</div>
+</div>

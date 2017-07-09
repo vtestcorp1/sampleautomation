@@ -1,0 +1,69 @@
+<div class="bk-natural-query"
+     ng-switch="pendingNaturalQueryCall">
+    <blink-loading-indicator ng-switch-when="true"></blink-loading-indicator>
+    <div class="bk-natural-query" ng-switch-when="false">
+        <div ng-repeat="entity in queryTemplate">
+            <div ng-switch on="entity">
+                <div ng-switch-when="MEASURE_GROUP">
+                    <div ng-switch on="queryType">
+                        <div ng-switch-when="aggregated">
+                            <div class="bk-natural-query-item">
+{{strings.ThoughtSpot_computed}}<span ng-include="template('aggregate-clause')"></span>
+                            </div>
+                            <div class="bk-natural-query-item" ng-switch on="query.groupingColumns.length > 0" >
+                                <div ng-switch-when="true">
+                                    <span>{{strings.for_each}}</span>
+                                <span ng-switch on="query.groupingColumns.length > 1">
+                                    <span ng-switch-when="true"> {{strings.combination_of}}</span>
+                                </span>
+                                    <span ng-include="template('grouping-clause')"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div ng-switch-when="list" class="bk-natural-query-item">
+{{strings.ThoughtSpot_compiled_a}}<span ng-include="template('list-clause')"></span>
+                        </div>
+                        <div ng-switch-when="worksheetList" class="bk-natural-query-item">
+{{strings.ThoughtSpot_compiled_a}}<span ng-include="template('worksheet-list-clause')"></span>
+                        </div>
+                    </div>
+                </div>
+                <div ng-switch-when="FILTER">
+                    <div class="bk-natural-query-item" ng-switch on="query.userFilters.length > 0">
+                        <div ng-switch-when="true">
+                            {{strings.filtered_on}}
+                            <span ng-include="template('filter-clause')"></span>
+                        </div>
+                    </div>
+                </div>
+                <div ng-switch-when="SORT">
+                    <div class="bk-natural-query-item"
+                         ng-switch on="query.sortColumns.length > 0">
+                        <div ng-switch-when="true">
+                            {{strings.sorted_by}}
+                            <span ng-include="template('sort-clause')"></span>
+                        </div>
+                    </div>
+                </div>
+                <div ng-switch-when="TOP">
+                    <div class="bk-natural-query-item" ng-if="query.topRepresentation.topCount > 0">
+                       <div ng-include="template('top-clause')"></div>
+                    </div>
+                </div>
+                <div ng-switch-when="GROWTH">
+                    <div class="bk-natural-query-item" ng-if="!!query.growthRepresentation">
+                        <div ng-include="template('growth-clause')"></div>
+                    </div>
+                </div>
+                <div ng-switch-when="JOIN">
+                    <div class="bk-natural-query-item" ng-switch on="query.joinRepresentations.length > 0">
+                        <div ng-switch-when="true">
+                            {{strings.by_linking}}
+                            <span ng-include="template('join-clause')"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

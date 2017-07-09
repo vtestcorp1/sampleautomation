@@ -1,0 +1,23 @@
+<div class="bk-chart-editor">
+    <div class="bk-chart-editor-title">
+        <img class="bk-chart-editor-title-image"
+             ng-src={{$ctrl.getTitleIconPath()}}>
+        <div class="bk-chart-editor-title-text">
+            {{$ctrl.getTitleText()}}
+        </div>
+        <div class="bk-close-selector" ng-click="$ctrl.onClose()">
+            <img src="{{'/resources/img/cancel_icon_16.svg'}}">
+        </div>
+    </div>
+
+    <bk-chart-axis-configurator class="bk-chart-axis-configurator-container"
+                             bk-ctrl="$ctrl.chartAxisConfiguratorComponent">
+    </bk-chart-axis-configurator>
+    <bk-chart-config class="bk-chart-configurator-container"
+                  bk-ctrl="$ctrl.chartConfiguratorComponent">
+    </bk-chart-config>
+    <bk-chart-zoom class="bk-chart-zoom-container"
+                ng-if="!!$ctrl.chartZoomComponent"
+                bk-ctrl="$ctrl.chartZoomComponent">
+    </bk-chart-zoom>
+</div>

@@ -1,0 +1,20 @@
+.bk-color-picker {
+    position: relative;
+    
+    .bk-color-picker-fill {
+        width: 100%;
+        height: 100%;
+    }
+
+    // An anchor is a no-op element added to DOM to position the bootstrap color-picker component of.
+    // Bootstrap positions the color picker dropdown relative to this element.
+    .bk-color-picker-anchor {
+        position: absolute;
+        // Since bootstrap color picker dropdown adds an arrow but doesn't fix offset for it, we work around
+        // and place our anchor accordingly.
+        // left is set dynamically in code (depending on the color picker indicator size).
+        bottom: -6px;
+        height: 0;
+        width: 0
+    }
+}

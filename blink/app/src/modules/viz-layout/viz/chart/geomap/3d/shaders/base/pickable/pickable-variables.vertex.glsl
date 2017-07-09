@@ -1,0 +1,6 @@
+uniform float uHighlightedDataPointIndex;
+uniform float uLastHighlightedDataPointIndex;
+uniform float uHighlightTransitionInterval;
+uniform float uIsPickingMesh;
+
+attribute float vertexDataPointIndex;

@@ -1,0 +1,45 @@
+ <div class="bk-label-panel">
+     <div ng-hide="labelsPanel.isLoading" class="bk-label-wrapper">
+
+         <div class="bk-label bk-clickable"
+
+              ng-repeat="label in labelsPanel.getLabels() | filter: {deleted: false}"
+              ng-class="{'bk-active': labelsPanel.isCurrentlyActive(label)}"
+              ng-click="labelsPanel.onLabelClick(label)">
+             <div class="label-icon" ng-click="labelsPanel.isEditingAllowed(label)">
+                 <color-picker class="bk-label-color"
+                               fill="labelsPanel.isCurrentlyActive(label)"
+                               ng-model="label.color"
+                               is-triggered-externally="true"
+                               not-editable="!labelsPanel.isEditingAllowed(label)"
+                               on-change="labelsPanel.saveLabel(label)"></color-picker>
+             </div>
+             <div class="bk-label-name">
+                 <div blink-content-editable ng-model="label.name" external="true"
+                      validate-input="labelsPanel.validateLabelName(label.name, true)"
+                      on-change="labelsPanel.saveLabel(label)"></div>
+             </div>
+             <div class="dropdown" ng-show="labelsPanel.isEditingAllowed(label)"
+                  ng-click="labelsPanel.onEditBtnClick($event)">
+                 <div class="bk-style-icon-edit-small" role="button" data-toggle="dropdown"></div>
+                 <ul class="dropdown-menu" role="menu" ng-click="$event.stopPropagation()">
+                     <li role="presentation" ng-repeat="item in labelsPanel.editMenuItems">
+                         <a ng-click="labelsPanel.onMenuItemClick($event, item, label)">{{ item.text }}</a>
+                     </li>
+                 </ul>
+             </div>
+         </div>
+
+     </div>
+     <div ng-show="labelsPanel.isLoading" class="bk-indicator bk-loading">
+     </div>
+     <div ng-show="labelsPanel.isLabelCreationAllowed()">
+         <add-new-item on-add="labelsPanel.createNewLabel(itemName)"
+                       validate-input="labelsPanel.validateLabelName(itemName, false)">
+             <div class="add-label-button">
+                 <div class="bk-icon bk-style-icon-small-plus"></div>
+                 <div>{{strings.Add}}</div>
+             </div>
+         </add-new-item>
+     </div>
+ </div>

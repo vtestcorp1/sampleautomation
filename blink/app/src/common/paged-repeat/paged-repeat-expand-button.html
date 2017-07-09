@@ -1,0 +1,12 @@
+<div class="bk-repeat-view-all" ng-show="showExpansionButton()" ng-class="{'bk-small-mode': list.smallMode}">
+    <span ng-switch="!!isFetching">
+        <span ng-switch-when="true">
+             <div class="bk-repeat-loading-indicator"></div>
+        </span>
+        <span ng-switch-when="false">
+            <span ng-show="showAllInSecondPage">{{ viewAllButtonText || ('View all' + ' ' + model.length) }}</span>
+            <span ng-show="!showAllInSecondPage">{{ viewAllButtonText || 'View more' }}</span>
+            <span class="bk-expand-btn-light-bg bk-arrow-expanded"></span>
+        </span>
+    </span>
+</div>

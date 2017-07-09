@@ -1,0 +1,16 @@
+<div class="bk-import-error">
+    <h1 class="bk-import-error-text">
+        <div class="bk-error-icon"></div>
+{{strings.Oops_Sorry_there}}
+</h1>
+    <br>
+    <div class="bk-imported-rows-text" ng-hide="!systemError">
+        {{ systemError }}
+    </div>
+    <div class="bk-imported-rows-text-secondary" ng-show="userSchema.getNumErrorRows() > 0">
+        Try the import again by clicking the button below. If it still doesn't work, check your file. There might be some errors in the file.
+    </div>
+    <!-- TODO(Vibhor): Make this button work -->
+    <bk-primary-button text="{{ strings.importData.TRY_OVER_AGAIN }}"
+                         ng-click="resetWizard()"></bk-primary-button>
+</div>

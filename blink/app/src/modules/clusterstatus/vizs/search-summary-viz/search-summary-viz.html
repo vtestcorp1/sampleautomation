@@ -1,0 +1,43 @@
+<div class="search-summary-viz">
+    <div class="sage-status">
+        <span class="lastIndexed">{{ searchSummaryViz.LAST_INDEXED }} </span>
+        {{viz.getModel().getLastBuildFinishTime()}}
+    </div>
+    <div class="sage-stats">
+        <div class="sage-summary">
+            <div class="content">
+                <div class="summary-block">
+                    <div class="summary-number">{{viz.getModel().getNumReadyTables()}}</div>
+                    <div class="summary-title">{{ contentTitle.TABLES_SEARCHABLE }}</div>
+                </div>
+                <div class="summary-block">
+                    <div class="summary-number">
+                        {{ viz.getModel().getNumBuildingAndServing() }} <span>{{strings.of}}</span>{{viz.getModel().getNumReadyTables()}}
+                    </div>
+                    <div class="summary-title">{{ contentTitle.TABLES_BEING_INDEXED }}</div>
+                </div>
+            </div>
+        </div>
+        <div class="sage-summary">
+            <div class="content">
+                <div class="summary-block">
+                    <div class="summary-number">{{ newTablesIndexedNum }}</div>
+                    <div class="summary-title">{{ contentTitle.NEW_TABLES_BEING_INDEXED }}</div>
+                </div>
+                <div class="summary-block">
+                    <div class="summary-number"
+                         blink-tooltip="{{ tokenIndexedTooltip }}">
+                        {{ numTokenIndexed }}
+                    </div>
+                    <div class="summary-title">{{ contentTitle.TOKENS_SEARCHABLE }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sage-summary-failure" ng-if="notSearchable()">
+        <span class="content">
+            <span class="bk-style-icon-circled-warning vam"></span>
+            <span>{{strings.Not_Searchable}}</span>
+        </span>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="bk-a3-job-schedule-configurator bk-job-schedule-page">
+    <div class="bk-job-schedule">
+        <div class="bk-job-schedule-body">
+            <div class="bk-schedule-section">
+                <div class="bk-schedule bk-dialog">
+                    <bk-scheduler schedule-config="$ctrl.scheduleConfig">
+                    </bk-scheduler>
+                    <div class="bk-configurator-buttons">
+                        <bk-secondary-button text="{{ strings.Cancel }}"
+                                             ng-click="$ctrl.onCancel()"
+                                             class="bk-cancel-btn">
+                        </bk-secondary-button>
+                        <bk-primary-button text="{{ strings.report.schedule }}"
+                                           ng-click="$ctrl.onSchedule()"
+                                           class="bk-schedule-btn">
+                        </bk-primary-button>
+                        <div style="clear:both;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

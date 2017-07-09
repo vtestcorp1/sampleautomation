@@ -1,0 +1,10 @@
+<blink-slider-handle type="low" class="bk-low" title="{{$parent.getLowHandleTooltipText()}}"
+               left="pixelLeft" right="pixelHighHandle"
+               fixed="isDisabled() || isLowBarFixed()">
+    <div class="bk-handle-grip"></div>
+</blink-slider-handle>
+<blink-slider-handle type="high" class="bk-high" title="{{$parent.getHighHandleTooltipText()}}"
+               left="pixelLowHandle" right="pixelRight"
+               fixed="isDisabled() || isHighBarFixed()">
+</blink-slider-handle>
+<div class="selection-indicator" ng-style="{'opacity': (!shouldHideSelectionBar() && 1) || 0}"></div>

@@ -1,0 +1,39 @@
+@import '/resources/css/import.less';
+
+.bk-expression-editor-tooltip {
+    position: absolute;
+    display: none;
+    top: 10px;
+    left: 0;
+    min-height: 20px;
+    background-color: #000000;
+    min-width: 20px;
+    padding: 7px;
+    color: @white-text;
+    .box-shadow(0 1px 5px @bg-shadow-faint);
+    border-radius: 2px;
+    z-index: 150;
+
+    .bk-tooltip {
+        .flex-important('row');
+        word-wrap: normal;
+        word-break: normal;
+        white-space: nowrap;
+
+        .bk-tooltip-key {
+            margin-right: 7px;
+        }
+    }
+
+    .bk-bubble-arrow {
+        position: absolute;
+        border: solid;
+        border-color: #000000 transparent;
+        border-width: 5px 5px 0 5px;
+        bottom: -5px;
+        content: "";
+        margin-left: -5px;
+        left: 50%;
+        z-index: 99;
+    }
+}

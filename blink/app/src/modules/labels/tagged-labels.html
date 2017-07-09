@@ -1,0 +1,26 @@
+<div class="bk-tagged-labels" ng-class="{'bk-with-multiple-rows': hasMultipleRows}">
+    <div ng-repeat="label in labels | limitTo:allowedLabelCount"
+         ng-click="$event.stopPropagation(); makeFilterRequest(label)"
+         ng-style="{'background-color': label.getCommittedColor(), 'color': label.getTextColor() }"
+         ng-class="{'bk-deletable': isDeletable}"
+         class="bk-tagged-label bk-clickable">
+        <span class="bk-label-text bk-overflow-ellipsis"
+              blink-tooltip="{{ label.getName() }}"
+              auto-tooltip-style="bootstrap">{{ label.getName() }}</span>
+        <span ng-show="isDeletable" class="bk-delete bk-clickable" ng-click="$event.stopPropagation(); removeLabel(label)">&times;</span>
+    </div>
+    <span ng-show="labels.length > allowedLabelCount" class="dropdown">
+        <span class="bk-clickable bk-show-more"
+              data-toggle="dropdown"
+              ng-click="$($event.target).trigger('click.bs.dropdown')">...</span>
+        <div class="dropdown-menu" ng-click="$event.stopPropagation()">
+            <div class="bk-label-rows-container">
+                <div ng-repeat="label in labels" class="bk-label-row">
+                    <span ng-style="{'background-color': label.getCommittedColor()}" class="bk-color-indicator"></span>
+                    <span class="bk-overflow-ellipsis">{{ label.getName() }}</span>
+                    <span ng-show="isDeletable" ng-click="removeLabelFromDropdown(label)" class="fr bk-clickable">&times;</span>
+                </div>
+            </div>
+        </div>
+    </span>
+</div>

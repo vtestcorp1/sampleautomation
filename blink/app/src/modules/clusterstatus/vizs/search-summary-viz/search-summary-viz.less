@@ -1,0 +1,54 @@
+.search-summary-viz {
+    height: 100%;
+    .flex(column);
+
+    .sage-status {
+        padding: 13px 0;
+        text-align: center;
+        border-bottom: 1px solid @h-gray1;
+        .lastIndexed {
+            font-size: 12px;
+            color: @h-gray5;
+            text-transform: uppercase;
+        }
+    }
+
+    .sage-stats {
+        .flex-grow-shrink-basis(1, 1, auto);
+        .flex(column);
+        .flex-justify(space-around);
+
+        .sage-summary {
+            text-align: center;
+            width: 100%;
+
+            .content {
+                .flex(row);
+                .flex-justify(space-around);
+                .summary-block {
+                    .summary-number {
+                        margin-bottom: 5px;
+                        .font-family-light;
+                        font-size: 25px;
+                    }
+                    .summary-title {
+                        font-size: 12px;
+                        color: @h-gray5;
+                    }
+                }
+            }
+        }
+    }
+
+    .sage-summary-failure {
+        .flex-grow-shrink-basis(0, 0, 30px);
+        text-align: center;
+
+        .content {
+            background-color: @red-default;
+            color: @h-white;
+            padding: 4px;
+            border-radius: 2px;
+        }
+    }
+}

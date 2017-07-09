@@ -1,0 +1,20 @@
+<div class="list-wrapper">
+    <div class="bk-list-search">
+        <input type="text"
+               class="bk-search-input"
+               placeholder="search by name"
+               ng-model="searchText">
+    </div>
+    <div class="search-result">
+        <h3>{{ $ctrl.title}}</h3>
+        <ul class="content" vs-repeat="21">
+            <li class="schema-navigation-row"
+                ng-class="{ 'bk-selected' : row.selected }"
+                ng-repeat="row in $ctrl.listItems | filter:$ctrl.getFilterByInput(searchText) track by row.id"
+                ng-dblclick="$ctrl.itemDblClicked(row)"
+                ng-click="$ctrl.itemClicked(row)">
+                <ng-include src="$ctrl.itemTemplateURL"></ng-include>
+            </li>
+        </ul>
+    </div>
+</div>

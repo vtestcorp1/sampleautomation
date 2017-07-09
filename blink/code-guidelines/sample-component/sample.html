@@ -1,0 +1,12 @@
+<!--Always have single top level div-->
+<!--add class with the name prefix=bk and component name-->
+<div class="bk-sample">
+<!--All the template logic for the component-->
+    <!--This is example on how you refer other component in the app.-->
+    <!--1. put bk-{component-name}-container as class.-->
+    <!--2. The linked component is accessible here as $ctrl.-->
+    <!--3. To pass in component object to child set bk-ctrl as below.-->
+    <some-other-component class="bk-some-other-component-container"
+                          bk-ctrl="$ctrl.someOtherComponent">
+    </some-other-component>
+</div>

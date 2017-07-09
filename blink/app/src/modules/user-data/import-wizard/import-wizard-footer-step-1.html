@@ -1,0 +1,33 @@
+<div ng-class="{'bk-upload-footer-error': headerQuesNotAns}">
+    <span class="bk-upload-question bk-header-question">
+        {{ strings.importWizard.HEADER_QUESTION }}
+    </span>
+    <input class="bk-upload-question-choice" name="headerQuestion" type="radio" ng-model="uploadStep.headerDefined" id="yes" value="yes"/>
+    <label class="bk-upload-question-choice-label" for="yes">{{strings.Yes}}</label>
+    <input class="bk-upload-question-choice" name="headerQuestion" type="radio" ng-model="uploadStep.headerDefined" id="no" value="no"/>
+    <label class="bk-upload-question-choice-label" for="no">{{strings.No}}</label>
+</div>
+<div ng-class="{'bk-upload-footer-error': dropAppendQuesNotAns}" ng-show="existingDataId">
+    <span class="bk-upload-question bk-drop-append-question">
+        {{ strings.importWizard.DROP_APPEND_QUESTION }}
+    </span>
+    <input class="bk-upload-question-choice" name="dropAppendQuestion" type="radio" ng-model="uploadStep.dropExistingData" id="append" value="append"/>
+    <label class="bk-upload-question-choice-label" for="append">{{strings.Append}}</label>
+    <input class="bk-upload-question-choice" name="dropAppendQuestion" type="radio" ng-model="uploadStep.dropExistingData" id="overwrite" value="overwrite"/>
+    <label class="bk-upload-question-choice-label" for="overwrite">{{strings.Overwrite}}</label>
+</div>
+<div ng-init="uploadStep.separator='COMMA'">
+    <span class="bk-upload-question bk-separator-question">
+        {{ strings.importWizard.FIELD_SEPARATOR_QUESTION }}
+    </span>
+    <input class="bk-upload-question-choice" name="separatorQuestion" type="radio" ng-model="uploadStep.separator" id="comma" value="COMMA"/>
+    <label class="bk-upload-question-choice-label" for="comma">{{ strings.importWizard.fieldSeparators.COMMA }}</label>
+    <input class="bk-upload-question-choice" name="separatorQuestion" type="radio" ng-model="uploadStep.separator" id="semicolon" value="SEMICOLON"/>
+    <label class="bk-upload-question-choice-label" for="semicolon">{{ strings.importWizard.fieldSeparators.SEMICOLON }}</label>
+    <input class="bk-upload-question-choice" name="separatorQuestion" type="radio" ng-model="uploadStep.separator" id="pipe" value="PIPE"/>
+    <label class="bk-upload-question-choice-label" for="pipe">{{ strings.importWizard.fieldSeparators.PIPE }}</label>
+    <input class="bk-upload-question-choice" name="separatorQuestion" type="radio" ng-model="uploadStep.separator" id="space" value="SPACE"/>
+    <label class="bk-upload-question-choice-label" for="space">{{ strings.importWizard.fieldSeparators.SPACE }}</label>
+    <input class="bk-upload-question-choice" name="separatorQuestion" type="radio" ng-model="uploadStep.separator" id="tab" value="TAB"/>
+    <label class="bk-upload-question-choice-label" for="tab">{{ strings.importWizard.fieldSeparators.TAB }}</label>
+</div>

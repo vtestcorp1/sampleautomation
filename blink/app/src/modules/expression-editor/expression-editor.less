@@ -1,0 +1,262 @@
+.bk-expression-editor {
+    @token-color-function-name: @h-blue;
+    @token-color-measure: @h-purple;
+    @token-color-attribute: @h-purple;
+    @token-color-operator: @h-blue;
+    @token-color-keyword: @h-blue;
+
+    .bk-content-editor-container {
+        position: relative;
+        .content-editor {
+            margin: auto;
+            height: 150px;
+            padding: 15px;
+            overflow-y: auto;
+            overflow-x: visible;
+            border: 1px solid @input-border;
+            outline: none !important;
+            background-color: @h-white;
+            .box-shadow(inset 0 1px 5px @bg-shadow-faint-2);
+            font-size: 13px;
+            .font-family-regular();
+
+            &:empty:before {
+                content: attr(data-placeholder);
+                display: inline-block;
+                line-height: normal;
+                vertical-align: middle;
+                margin-bottom: 5px;
+                color: @h-gray4;
+            }
+
+            -webkit-user-modify: read-write-plaintext-only;
+            -moz-user-modify: read-write-plaintext-only;
+            -ms-user-modify: read-write-plaintext-only;
+            user-modify: read-write-plaintext-only;
+
+            .unselectable-text {
+                -webkit-user-modify: read-only;
+                -moz-user-modify: read-only;
+                -ms-user-modify: read-only;
+                user-modify: read-only;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+
+            .token {
+                &.empty {
+
+                }
+                &.unrecognized-token {
+                    &:not(.whitespace) {
+                        border-bottom: 1px dashed @gray-secondary-text;
+                    }
+                }
+
+                &.attribute {
+                    color: @token-color-attribute;
+                }
+
+                &.measure {
+                    color: @token-color-measure
+                }
+
+                &.function-name {
+                    color: @token-color-function-name;
+                }
+
+                &.line-break {
+                    display: block;
+                }
+
+                &.function-parameter-placeholder {
+                    background-color: rgba(192, 192, 192, 0.5);
+                    color: @h-gray6;
+                }
+
+                &.token-error {
+                    background-color: @red-transparent;
+                    border-bottom: 1px solid @h-red !important;
+                }
+                &.token-warning {
+                    color: black;
+                    background-color: @h-yellow;
+                    border-bottom: 1px solid @h-yellow !important;
+                }
+            }
+
+            .ghost {
+                color: @h-gray6;
+                opacity: 0.4;
+                .unselectable-text();
+            }
+
+            &:focus {
+                border-color: @blue-default;
+            }
+            &.expression-busy {
+                border-color: @h-yellow;
+            }
+            &.expression-error {
+                border-color: @red-default;
+            }
+            &.expression-valid {
+                border-color: @green-default;
+            }
+        }
+
+        .expression-editor-context-menu {
+            position: absolute;
+            z-index: @sage-bar-z-index;
+            min-width: 150px;
+            max-width: 350px;
+            padding: 5px 0 0 0;
+            font-size: 12px;
+            background-color: @white-bg-transparent-faint;
+            border-top-color: transparent;
+            border-color: @sage-border;
+            border-bottom-left-radius: 1px;
+            border-bottom-right-radius: 1px;
+            .box-shadow(0 2px 4px @bg-shadow-faint);
+
+            .header {
+                padding: 0 10px;
+                font-size: 10px;
+                font-style: italic;
+
+                .header-edit-join-path a {
+                    font-size: 11px;
+                    color: @h-blue;
+                    text-decoration: underline
+                }
+            }
+
+            .items {
+                max-height: 105px;
+                overflow-y: auto;
+                li {
+                    cursor: pointer;
+                    .transition(~"background-color 200ms ease-out, color 200ms ease-out");
+
+                    &.active {
+                        color: @sage-text;
+                        background-color: @sage-hover-light;
+                    }
+
+                    .suggestion {
+                        padding: 0 10px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+
+                        .suggestion-name {
+
+                        }
+                        .lineage {
+                            color: @gray-secondary-text;
+                            font-size: 10px;
+                            .font-family-regular();
+                        }
+                    }
+
+                }
+            }
+
+
+        }
+    }
+
+    .expression-editor-validation-message.expression-busy  {
+        color: @h-yellow;
+    }
+    .expression-editor-validation-message.expression-error {
+        color: @red-default;
+    }
+    .expression-editor-validation-message.expression-valid {
+        color: @h-green;
+    }
+
+    .expression-editor-validation-message {
+        margin-top:32px;
+        z-index: @sage-bar-z-index - 1;
+
+        .bk-validation-icons {
+            display: inline-block;
+            margin-right: 0.6em;
+            vertical-align: middle;
+
+            .bk-style-icon-circled-x {
+                .bk-background {
+                    &:before {
+                        color: @red-default;
+                    }
+                }
+            }
+
+            .bk-success-icon {
+                color: @green-default;
+            }
+
+            .bk-warn-icon {
+                color: @yellow-default;
+            }
+        }
+
+        .bk-message {
+            display: inline-block;
+            max-width: 47em;
+            max-height: 4.2em;
+            line-height: 1.4em;
+            overflow: hidden;
+            vertical-align: middle;
+            font-size: 12px;
+        }
+
+    }
+
+    .function-name {
+        color: @token-color-function-name;
+    }
+
+    .measure {
+        color: @token-color-measure;
+    }
+
+    .attribute {
+        color: @token-color-attribute;
+    }
+
+    .operator {
+        color: @token-color-operator;
+    }
+
+    .keyword {
+        color: @token-color-keyword;
+    }
+}
+
+.bk-formula-suggestion-tooltip {
+    color: @h-white-text;
+    font-size: 12px;
+    .font-family-regular();
+
+    .bk-suggestion-examples {
+        padding: 5px;
+        text-align: left;
+        .bk-help-text {
+            border-bottom: 1px solid @h-black1;
+        }
+
+        .bk-examples-list {
+            margin-top: 5px;
+            ul {
+                margin-left: 1em;
+                li {
+                    list-style-type: disc;
+                }
+            }
+        }
+    }
+}

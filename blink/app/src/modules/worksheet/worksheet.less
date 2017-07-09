@@ -1,0 +1,253 @@
+@import '/resources/css/import.less';
+
+.bk-worksheet {
+    background-color: @white-bg;
+
+    .tooltip-inner {
+        max-width: 400px;
+        .tooltip-cell {
+            padding: 0 5px 0 5px;
+        }
+    }
+
+    .bk-worksheet-actions {
+        .bk-margin-bottom-20;
+        .bk-delete-action {
+            .bk-margin-right-10;
+        }
+    }
+
+    .bk-warning-message {
+        display: inline-block;
+        text-align: center;
+        margin-left: 24%;
+        padding: 0 8px;
+        border-radius: 2px;
+        font-size: 12px;
+        background-color: @yellow-darker;
+
+        .bk-warning-message-action-link {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+
+    .bk-table-container {
+        .flex-grow-shrink-basis(1, 1, auto);
+        border-radius: 3px;
+        border: 1px solid @viz-border;
+        .box-shadow-inset(0 1px 4px @viz-shadow, inset 0 -1px 0px @viz-inner-shadow);
+        .transition(border-color 500ms ease-out);
+        width: 100%;
+
+        .slick-header {
+            display: none;
+        }
+
+        .slick-row {
+            background: none;
+
+            &:hover:not(.selected):not(.slick-group) {
+                background-color: @gray-hover-light !important;
+
+                .slick-cell {
+                    &.column-name-cell, &.slick-cell-checkbox, &.change-join-cell {
+                       // background-color: @gray-hover-light !important;
+                    }
+
+                    &.column-name-cell {
+                        .edit-wrapper {
+                            position: relative;
+                            top: 5px;
+                            padding-left: 3px;
+                            height: 20px;
+                            width: 100%;
+                            border: 1px solid @gray-border;
+                            border-radius: 3px;
+                            background-color: @white-bg;
+                            cursor: pointer;
+
+                            &:hover {
+                                border: 1px solid @gray-border-hover;
+                                .box-shadow-inset(inset 0 1px 4px @input-inner-shadow, 0 1px 0 @inner-shadow);
+
+                                .bk-icon:before {
+                                    color: @gray-secondary-text;
+                                    .transition(all 200ms ease-in);
+                                }
+                            }
+
+                            .bk-icon {
+                                display: block;
+
+                                &:before{
+                                    color: @gray-label-text;
+                                    .transition(all 200ms ease-in);
+                                }
+                            }
+                        }
+
+                        &.editable {
+                            border-color: transparent;
+                        }
+                    }
+                }
+            }
+
+            &.slick-group {
+                z-index: @viz-zindex + 1;
+
+                .slick-cell {
+                    background-color: @white-bg;
+
+                    .slick-group-title {
+                        position: absolute;
+                        top: 5px;
+                        .font-family-bold();
+                        font-size: 13px;
+                        color: @gray-main-text;
+                    }
+                }
+
+                .slick-cell.slick-cell-checkbox {
+                    padding-left: 10px;
+                    .slick-group-title {
+                        .group-checkbox{
+                            margin: -2px 6px 1px 0px;
+                        }
+                    }
+                }
+
+                .slick-cell {
+                    &.column-name-cell {
+                        padding-left: 10px;
+                    }
+                }
+            }
+
+            &:not(.slick-group) {
+                .slick-cell {
+                    &.column-name-cell, &.slick-cell-checkbox, &.change-join-cell {
+                        background-color: @gray-bg;
+                    }
+                }
+            }
+
+            .slick-cell {
+                padding-left: 16px;
+                padding-right: 10px;
+                line-height: 37px;
+                color: @table-text-color;
+                .font-family-regular();
+                font-size: 13px;
+                border-bottom-color: @viz-border;
+                height: 32px !important;
+
+                &.selected {
+                    background-color: @selected-list-item-bg !important;
+
+                    &.l0 {
+                        border-left: 2px solid @blue-default;
+                    }
+                }
+
+                &.column-name-cell {
+                    border-right: none;
+                    padding-left: 0px;
+
+                    .edit-wrapper {
+                        position: relative;
+                        top: 6px;
+                        height: 20px;
+                        width: 100%;
+
+                        .bk-icon {
+                            display: none;
+                            position: absolute;
+                            right: 3px;
+                            top: -9px;
+                        }
+
+                        .bk-value {
+                            position: absolute;
+                            top: 0px;
+                            right: 20px;
+                            bottom: 2px;
+                            left: 2px;
+                            line-height: 22px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                    }
+
+                    &.editable {
+                        border-color: transparent;
+
+                        .editor-text {
+                            height: 12px;
+                            width: 100%;
+                            margin-bottom: 5px;
+                            font-size: 13px;
+                            .font-family-regular();
+                            border-radius: 3px;
+
+                            &:focus{
+                                border: 1px solid @blue-default;
+                                .box-shadow-inset(inset 0 1px 4px @input-inner-shadow, 0 1px 0 @inner-shadow);
+                            }
+                        }
+                    }
+                }
+
+                &.slick-cell-checkbox {
+                    padding-right: 0px;
+                    padding-left: 31px;
+                    line-height: 27px;
+                    border-right: none;
+                }
+
+                &.change-join-cell {
+                    cursor: pointer;
+
+                    .bk-icon {
+                        position: absolute;
+                        right: 6px;
+                        top: -2px;
+                        color: @gray-secondary-text;
+                        .transition(color 200ms ease-in);
+
+                        &:hover {
+                            color: @gray-main-text;
+                            .transition(color 200ms ease-in);
+                        }
+                    }
+                }
+            }
+        }
+
+        /* Because of current implementation of slickgrid in Worksheet,
+           for read only there's some small UI tweaking to be done */
+        &.bk-read-only .slick-row {
+            &.slick-group .slick-cell .slick-group-title {
+                top: 0px;
+                left: 20px;
+            }
+
+            &:not(.slick-group) .slick-cell {
+                &.column-name-cell, &.change-join-cell {
+                    padding-left: 40px;
+                }
+            }
+        }
+    }
+}
+
+.bk-identical-column-names {
+    &:not(.editable) {
+        border: 1px solid @red-border !important;
+    }
+}
+
+.bk-broken-worksheet-column {
+    border: 1px solid @red-border !important;
+}

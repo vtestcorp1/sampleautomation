@@ -1,0 +1,52 @@
+<div class="bk-actionable-list" ng-switch="listModel.hasNoData()">
+    <div ng-switch-when="true" class="bk-no-content">
+        <div class="bk-no-content-icon"></div>
+        <div class="bk-no-content-label">
+            {{listModel.getTitle()}}
+        </div>
+        <div class="bk-no-content-message">{{ listModel.noContentMessage}}</div>
+    </div>
+
+    <div ng-switch-when="false" class="bk-actionable-list-content">
+        <div class="bk-list-bulk-actions">
+            <!-- Bulk Actions like share, delete, etc on the list item -->
+            <div class="bk-action-container" ng-if="!swapHeaderItems">
+                <div class="bk-action-item {{ action.class }}"
+                     ng-repeat="action in actionItems">
+                    <bk-secondary-button text="{{ action.text }}"
+                                         icon="{{ action.icon }}"
+                                         is-disabled="isActionItemDisabled(action)"
+                                         ng-click="onActionItemClick(action)">
+                    </bk-secondary-button>
+                    <div ng-include="action.accessoryContentUrl"></div>
+                </div>
+            </div>
+            <!-- Pagination Controls -->
+            <div class="bk-pagination" ng-if="listModel.isPaginated()">
+                <div class="bk-pagination-btn bk-prev"
+                     ng-class="{'bk-disabled': !listModel.hasPrevPage()}"
+                     ng-click="listModel.onPrevClick()">
+                </div>
+                <div class="bk-pagination-btn bk-next"
+                     ng-class="{'bk-disabled': !listModel.hasNextPage()}"
+                     ng-click="listModel.onNextClick()">
+                </div>
+            </div>
+            <div ng-if="listModel.canShowTitle()" class="bk-title">{{ listModel.getTitle() }}</div>
+            <!--Search Filter-->
+            <div class="bk-list-search" ng-class="{ 'bk-swap-action-item' : swapHeaderItems }">
+                <input type="text"
+                       class="bk-search-input"
+                       blink-on-enter="onEnterCallback()"
+                       placeholder="search by name"
+                       ng-model="listModel.searchText"/>
+            </div>
+        </div>
+
+        <!--List of Metadata Items-->
+        <blink-list model="listModel"
+                    on-column-click="onColumnClicked"
+                    on-render-complete="onRenderComplete">
+        </blink-list>
+    </div>
+</div>

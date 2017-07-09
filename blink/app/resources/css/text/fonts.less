@@ -1,0 +1,394 @@
+// Copyright ThoughtSpot Inc. 2013-2016
+// Jonathan Moreira (jonathan@thoughtspot.com)
+//
+//  @fileoverview Fonts library with variables and classes for the fonts used in the app.
+
+/* Content:
+
+=font-face Gotham Narrow
+=font-face Gotham
+=font-face Source Sans Pro
+=font-face RetinaMP
+=Font family LESS variables
+=Font family classes
+=Font family use case classes
+
+*/
+
+/* =font-face Retina
+*************************************************************/
+
+@font-face {
+    font-family: 'Retina-Black';
+    src: url('/resources/font/retina-normal-standard/black/Retina-Black.eot');
+    src: url('/resources/font/retina-normal-standard/black/Retina-Black.eot?#iefix') format('embedded-opentype'),
+    url('/resources/font/retina-normal-standard/black/Retina-Black.woff2') format('woff2'),
+    url('/resources/font/retina-normal-standard/black/Retina-Black.woff') format('woff'),
+    url('/resources/font/retina-normal-standard/black/Retina-Black.ttf') format('truetype'),
+    url('/resources/font/retina-normal-standard/black/Retina-Black.svg#Retina-Black') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Retina-Bold';
+    src: url('/resources/font/retina-normal-standard/bold/Retina-Bold.eot');
+    src: url('/resources/font/retina-normal-standard/bold/Retina-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/resources/font/retina-normal-standard/bold/Retina-Bold.woff2') format('woff2'),
+    url('/resources/font/retina-normal-standard/bold/Retina-Bold.woff') format('woff'),
+    url('/resources/font/retina-normal-standard/bold/Retina-Bold.ttf') format('truetype'),
+    url('/resources/font/retina-normal-standard/bold/Retina-Bold.svg#Retina-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Retina-Book';
+    src: url('/resources/font/retina-normal-standard/book/Retina-Book.eot');
+    src: url('/resources/font/retina-normal-standard/book/Retina-Book.eot?#iefix') format('embedded-opentype'),
+    url('/resources/font/retina-normal-standard/book/Retina-Book.woff2') format('woff2'),
+    url('/resources/font/retina-normal-standard/book/Retina-Book.woff') format('woff'),
+    url('/resources/font/retina-normal-standard/book/Retina-Book.ttf') format('truetype'),
+    url('/resources/font/retina-normal-standard/book/Retina-Book.svg#Retina-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Retina-ExLight';
+    src: url('/resources/font/retina-normal-standard/extra-light/Retina-ExLight.eot');
+    src: url('/resources/font/retina-normal-standard/extra-light/Retina-ExLight.eot?#iefix') format('embedded-opentype'),
+    url('/resources/font/retina-normal-standard/extra-light/Retina-ExLight.woff2') format('woff2'),
+    url('/resources/font/retina-normal-standard/extra-light/Retina-ExLight.woff') format('woff'),
+    url('/resources/font/retina-normal-standard/extra-light/Retina-ExLight.ttf') format('truetype'),
+    url('/resources/font/retina-normal-standard/extra-light/Retina-ExLight.svg#Retina-ExLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Retina-Light';
+    src: url('/resources/font/retina-normal-standard/light/Retina-Light.eot');
+    src: url('/resources/font/retina-normal-standard/light/Retina-Light.eot?#iefix') format('embedded-opentype'),
+    url('/resources/font/retina-normal-standard/light/Retina-Light.woff2') format('woff2'),
+    url('/resources/font/retina-normal-standard/light/Retina-Light.woff') format('woff'),
+    url('/resources/font/retina-normal-standard/light/Retina-Light.ttf') format('truetype'),
+    url('/resources/font/retina-normal-standard/light/Retina-Light.svg#Retina-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Retina-Medium';
+    src: url('/resources/font/retina-normal-standard/medium/Retina-Medium.eot');
+    src: url('/resources/font/retina-normal-standard/medium/Retina-Medium.eot?#iefix') format('embedded-opentype'),
+    url('/resources/font/retina-normal-standard/medium/Retina-Medium.woff2') format('woff2'),
+    url('/resources/font/retina-normal-standard/medium/Retina-Medium.woff') format('woff'),
+    url('/resources/font/retina-normal-standard/medium/Retina-Medium.ttf') format('truetype'),
+    url('/resources/font/retina-normal-standard/medium/Retina-Medium.svg#Retina-Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Retina-Thin';
+    src: url('/resources/font/retina-normal-standard/thin/Retina-Thin.eot');
+    src: url('/resources/font/retina-normal-standard/thin/Retina-Thin.eot?#iefix') format('embedded-opentype'),
+    url('/resources/font/retina-normal-standard/thin/Retina-Thin.woff2') format('woff2'),
+    url('/resources/font/retina-normal-standard/thin/Retina-Thin.woff') format('woff'),
+    url('/resources/font/retina-normal-standard/thin/Retina-Thin.ttf') format('truetype'),
+    url('/resources/font/retina-normal-standard/thin/Retina-Thin.svg#Retina-Thin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* =font-face RetinaMP
+*************************************************************/
+
+@font-face {
+    font-family: 'RetinaMP-Bold';
+    src: url('/resources/font/retina-normal-mp/bold/RetinaMP-Bold.eot');
+    src: url('/resources/font/retina-normal-mp/bold/RetinaMP-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/resources/font/retina-normal-mp/bold/RetinaMP-Bold.woff2') format('woff2'),
+    url('/resources/font/retina-normal-mp/bold/RetinaMP-Bold.woff') format('woff'),
+    url('/resources/font/retina-normal-mp/bold/RetinaMP-Bold.ttf') format('truetype'),
+    url('/resources/font/retina-normal-mp/bold/RetinaMP-Bold.svg#RetinaMP-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RetinaMP-Book';
+    src: url('/resources/font/retina-normal-mp/book/RetinaMP-Book.eot');
+    src: url('/resources/font/retina-normal-mp/book/RetinaMP-Book.eot?#iefix') format('embedded-opentype'),
+    url('/resources/font/retina-normal-mp/book/RetinaMP-Book.woff2') format('woff2'),
+    url('/resources/font/retina-normal-mp/book/RetinaMP-Book.woff') format('woff'),
+    url('/resources/font/retina-normal-mp/book/RetinaMP-Book.ttf') format('truetype'),
+    url('/resources/font/retina-normal-mp/book/RetinaMP-Book.svg#RetinaMP-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RetinaMP-ExLight';
+    src: url('/resources/font/retina-normal-mp/extra-light/RetinaMP-ExLight.eot');
+    src: url('/resources/font/retina-normal-mp/extra-light/RetinaMP-ExLight.eot?#iefix') format('embedded-opentype'),
+    url('/resources/font/retina-normal-mp/extra-light/RetinaMP-ExLight.woff2') format('woff2'),
+    url('/resources/font/retina-normal-mp/extra-light/RetinaMP-ExLight.woff') format('woff'),
+    url('/resources/font/retina-normal-mp/extra-light/RetinaMP-ExLight.ttf') format('truetype'),
+    url('/resources/font/retina-normal-mp/extra-light/RetinaMP-ExLight.svg#RetinaMP-ExLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RetinaMP-Light';
+    src: url('/resources/font/retina-normal-mp/light/RetinaMP-Light.eot');
+    src: url('/resources/font/retina-normal-mp/light/RetinaMP-Light.eot?#iefix') format('embedded-opentype'),
+    url('/resources/font/retina-normal-mp/light/RetinaMP-Light.woff2') format('woff2'),
+    url('/resources/font/retina-normal-mp/light/RetinaMP-Light.woff') format('woff'),
+    url('/resources/font/retina-normal-mp/light/RetinaMP-Light.ttf') format('truetype'),
+    url('/resources/font/retina-normal-mp/light/RetinaMP-Light.svg#RetinaMP-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RetinaMP-Medium';
+    src: url('/resources/font/retina-normal-mp/medium/RetinaMP-Medium.eot');
+    src: url('/resources/font/retina-normal-mp/medium/RetinaMP-Medium.eot?#iefix') format('embedded-opentype'),
+    url('/resources/font/retina-normal-mp/medium/RetinaMP-Medium.woff2') format('woff2'),
+    url('/resources/font/retina-normal-mp/medium/RetinaMP-Medium.woff') format('woff'),
+    url('/resources/font/retina-normal-mp/medium/RetinaMP-Medium.ttf') format('truetype'),
+    url('/resources/font/retina-normal-mp/medium/RetinaMP-Medium.svg#RetinaMP-Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* =font-face Gotham Narrow
+*************************************************************/
+
+@font-face {
+    font-family: 'Light';
+    src: url('/resources/font/gotham-narrow/light/GothamNarrow-Light.eot');
+    src: url('/resources/font/gotham-narrow/light/GothamNarrow-Light.eot?#iefix') format('embedded-opentype'),
+    url('/resources/font/gotham-narrow/light/GothamNarrow-Light.woff2') format('woff2'),
+    url('/resources/font/gotham-narrow/light/GothamNarrow-Light.woff') format('woff'),
+    url('/resources/font/gotham-narrow/light/GothamNarrow-Light.ttf') format('truetype'),
+    url('/resources/font/gotham-narrow/light/GothamNarrow-Light.svg#GothamNarrow-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Regular';
+    src: url('/resources/font/gotham-narrow/book/GothamNarrow-Book.eot');
+    src: url('/resources/font/gotham-narrow/book/GothamNarrow-Book.eot?#iefix') format('embedded-opentype'),
+    url('/resources/font/gotham-narrow/book/GothamNarrow-Book.woff2') format('woff2'),
+    url('/resources/font/gotham-narrow/book/GothamNarrow-Book.woff') format('woff'),
+    url('/resources/font/gotham-narrow/book/GothamNarrow-Book.ttf') format('truetype'),
+    url('/resources/font/gotham-narrow/book/GothamNarrow-Book.svg#GothamNarrow-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Semibold';
+    src: url('/resources/font/gotham-narrow/medium/GothamNarrow-Medium.eot');
+    src: url('/resources/font/gotham-narrow/medium/GothamNarrow-Medium.eot?#iefix') format('embedded-opentype'),
+    url('/resources/font/gotham-narrow/medium/GothamNarrow-Medium.woff2') format('woff2'),
+    url('/resources/font/gotham-narrow/medium/GothamNarrow-Medium.woff') format('woff'),
+    url('/resources/font/gotham-narrow/medium/GothamNarrow-Medium.ttf') format('truetype'),
+    url('/resources/font/gotham-narrow/medium/GothamNarrow-Medium.svg#GothamNarrow-Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bold';
+    src: url('/resources/font/gotham-narrow/bold/GothamNarrow-Bold.eot');
+    src: url('/resources/font/gotham-narrow/bold/GothamNarrow-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/resources/font/gotham-narrow/bold/GothamNarrow-Bold.woff2') format('woff2'),
+    url('/resources/font/gotham-narrow/bold/GothamNarrow-Bold.woff') format('woff'),
+    url('/resources/font/gotham-narrow/bold/GothamNarrow-Bold.ttf') format('truetype'),
+    url('/resources/font/gotham-narrow/bold/GothamNarrow-Bold.svg#GothamNarrow-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Book';
+    src: url('/resources/font/gotham-narrow/book/GothamNarrow-Book.eot');
+    src: url('/resources/font/gotham-narrow/book/GothamNarrow-Book.eot?#iefix') format('embedded-opentype'),
+    url('/resources/font/gotham-narrow/book/GothamNarrow-Book.woff2') format('woff2'),
+    url('/resources/font/gotham-narrow/book/GothamNarrow-Book.woff') format('woff'),
+    url('/resources/font/gotham-narrow/book/GothamNarrow-Book.ttf') format('truetype'),
+    url('/resources/font/gotham-narrow/book/GothamNarrow-Book.svg#GothamNarrow-Bookd') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* =font-face Gotham
+*************************************************************/
+
+@font-face {
+    font-family: 'Gotham-Regular';
+    src: url('/resources/font/gotham/book/Gotham-Book.eot');
+    src: url('/resources/font/gotham/book/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+    url('/resources/font/gotham/book/Gotham-Book.woff2') format('woff2'),
+    url('/resources/font/gotham/book/Gotham-Book.woff') format('woff'),
+    url('/resources/font/gotham/book/Gotham-Book.ttf') format('truetype'),
+    url('/resources/font/gotham/book/Gotham-Book.svg#Gotham-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-Semibold';
+    src: url('/resources/font/gotham/medium/Gotham-Medium.eot');
+    src: url('/resources/font/gotham/medium/Gotham-Medium.eot?#iefix') format('embedded-opentype'),
+    url('/resources/font/gotham/medium/Gotham-Medium.woff2') format('woff2'),
+    url('/resources/font/gotham/medium/Gotham-Medium.woff') format('woff'),
+    url('/resources/font/gotham/medium/Gotham-Medium.ttf') format('truetype'),
+    url('/resources/font/gotham/medium/Gotham-Medium.svg#Gotham-Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* =font-face Source Sans Pro
+*************************************************************/
+
+@font-face {
+    font-family: 'SourceSansPro-Light';
+    src: url('/resources/font/source-sans-pro/light/SourceSansPro-Light.eot');
+    src: url('/resources/font/source-sans-pro/light/SourceSansPro-Light.eot?#iefix') format('embedded-opentype'),
+    url('/resources/font/source-sans-pro/light/SourceSansPro-Light.woff2') format('woff2'),
+    url('/resources/font/source-sans-pro/light/SourceSansPro-Light.woff') format('woff'),
+    url('/resources/font/source-sans-pro/light/SourceSansPro-Light.ttf') format('truetype'),
+    url('/resources/font/source-sans-pro/light/SourceSansPro-Light.svg#SourceSansPro-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+30-39; //Applies this font only to numbers
+}
+
+@font-face {
+    font-family: 'SourceSansPro-Regular';
+    src: url('/resources/font/source-sans-pro/regular/SourceSansPro-Regular.eot');
+    src: url('/resources/font/source-sans-pro/regular/SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/resources/font/source-sans-pro/regular/SourceSansPro-Regular.woff2') format('woff2'),
+    url('/resources/font/source-sans-pro/regular/SourceSansPro-Regular.woff') format('woff'),
+    url('/resources/font/source-sans-pro/regular/SourceSansPro-Regular.ttf') format('truetype'),
+    url('/resources/font/source-sans-pro/regular/SourceSansPro-Regular.svg#SourceSansPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+30-39; //Applies this font only to numbers
+}
+
+@font-face {
+    font-family: 'SourceSansPro-Semibold';
+    src: url('/resources/font/source-sans-pro/semibold/SourceSansPro-Semibold.eot');
+    src: url('/resources/font/source-sans-pro/semibold/SourceSansPro-Semibold.eot?#iefix') format('embedded-opentype'),
+    url('/resources/font/source-sans-pro/semibold/SourceSansPro-Semibold.woff2') format('woff2'),
+    url('/resources/font/source-sans-pro/semibold/SourceSansPro-Semibold.woff') format('woff'),
+    url('/resources/font/source-sans-pro/semibold/SourceSansPro-Semibold.ttf') format('truetype'),
+    url('/resources/font/source-sans-pro/semibold/SourceSansPro-Semibold.svg#SourceSansPro-Semibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+30-39; //Applies this font only to numbers
+}
+
+@font-face {
+    font-family: 'SourceSansPro-Bold';
+    src: url('/resources/font/source-sans-pro/bold/SourceSansPro-Bold.eot');
+    src: url('/resources/font/source-sans-pro/bold/SourceSansPro-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/resources/font/source-sans-pro/bold/SourceSansPro-Bold.woff2') format('woff2'),
+    url('/resources/font/source-sans-pro/bold/SourceSansPro-Bold.woff') format('woff'),
+    url('/resources/font/source-sans-pro/bold/SourceSansPro-Bold.ttf') format('truetype'),
+    url('/resources/font/source-sans-pro/bold/SourceSansPro-Bold.svg#SourceSansPro-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+30-39; //Applies this font only to numbers
+}
+
+/* =Font family LESS variables
+*************************************************************/
+//Retina
+@font-family-retina-black: Retina-Black, helvetica neue, helvetica, Arial, sans-serif;
+@font-family-retina-bold: Retina-Bold, helvetica neue, helvetica, Arial, sans-serif;
+@font-family-retina-book: Retina-Book, helvetica neue, helvetica, Arial, sans-serif;
+@font-family-retina-extra-light: Retina-ExLight, helvetica neue, helvetica, Arial, sans-serif;
+@font-family-retina-light: Retina-Light, helvetica neue, helvetica, Arial, sans-serif;
+@font-family-retina-medium: Retina-Medium, helvetica neue, helvetica, Arial, sans-serif;
+@font-family-retina-thin: Retina-Thin, helvetica neue, helvetica, Arial, sans-serif;
+
+//Retina-MP
+@font-family-retina-mp-bold: RetinaMP-Bold, helvetica neue, helvetica, Arial, sans-serif;
+@font-family-retina-mp-book: RetinaMP-Book, helvetica neue, helvetica, Arial, sans-serif;
+@font-family-retina-mp-extra-light: RetinaMP-ExLight, helvetica neue, helvetica, Arial, sans-serif;
+@font-family-retina-mp-light: RetinaMP-Light, helvetica neue, helvetica, Arial, sans-serif;
+@font-family-retina-mp-medium: RetinaMP-Medium, helvetica neue, helvetica, Arial, sans-serif;
+
+//Gotham Narrow
+@font-family-light: Light, helvetica neue, helvetica, Arial, sans-serif;
+@font-family-regular: Regular, helvetica neue, helvetica, Arial, sans-serif;
+@font-family-semibold: Semibold, helvetica neue, helvetica, Arial, sans-serif;
+@font-family-bold: Bold, helvetica neue, helvetica, Arial, sans-serif;
+@font-family-book: Book, helvetica neue, helvetica, Arial, sans-serif;
+
+//Gotham
+@font-family-gotham-regular: Gotham-Regular, helvetica neue, helvetica, Arial, sans-serif;
+@font-family-gotham-semibold: Gotham-Semibold, helvetica neue, helvetica, Arial, sans-serif;
+
+//Source Sans Pro
+@font-family-source-sans-pro-light: SourceSansPro-Light, Light, helvetica neue, helvetica, Arial, sans-serif;
+@font-family-source-sans-pro-regular: SourceSansPro-Regular, Regular, helvetica neue, helvetica, Arial, sans-serif;
+@font-family-source-sans-pro-semibold: SourceSansPro-Semibold, Semibold, helvetica neue, helvetica, Arial, sans-serif;
+@font-family-source-sans-pro-bold: SourceSansPro-Bold, Bold, helvetica neue, helvetica, Arial, sans-serif;
+
+/* =Font family classes
+*************************************************************/
+
+// Mixin to make numbers monospaced supported in Chrome, FF & IE
+.numeric-monospaces-setting {
+    font-variant-numeric: tabular-nums;
+    -moz-font-feature-settings: "tnum";
+    -webkit-font-feature-settings: "tnum";
+    font-feature-settings: "tnum"; //Used in newer versions of Chrome, FF and IE10 & above
+}
+
+//Retina
+.font-family-retina-black { font-family: @font-family-retina-black; .numeric-monospaces-setting();}
+.font-family-retina-bold { font-family: @font-family-retina-bold; .numeric-monospaces-setting();}
+.font-family-retina-book { font-family: @font-family-retina-book; .numeric-monospaces-setting();}
+.font-family-retina-extra-light{ font-family: @font-family-retina-extra-light; .numeric-monospaces-setting();}
+.font-family-retina-light { font-family: @font-family-retina-light; .numeric-monospaces-setting();}
+.font-family-retina-medium { font-family: @font-family-retina-medium; .numeric-monospaces-setting();}
+.font-family-retina-thin { font-family: @font-family-retina-thin; }
+
+//Retina-MP
+.font-family-retina-mp-bold { font-family: @font-family-retina-mp-bold; .numeric-monospaces-setting();}
+.font-family-retina-mp-book { font-family: @font-family-retina-mp-book; .numeric-monospaces-setting();}
+.font-family-retina-mp-extra-light { font-family: @font-family-retina-mp-light; .numeric-monospaces-setting();}
+.font-family-retina-mp-light { font-family: @font-family-retina-mp-light; .numeric-monospaces-setting();}
+.font-family-retina-mp-medium { font-family: @font-family-retina-mp-medium; .numeric-monospaces-setting();}
+
+
+// Gotham Narrow
+// Default font style
+.font-family-light     { font-family: @font-family-light; letter-spacing: 0.3px; .numeric-monospaces-setting();}
+.font-family-regular   { font-family: @font-family-regular; letter-spacing: 0.3px; .numeric-monospaces-setting();}
+.font-family-semibold  { font-family: @font-family-semibold; letter-spacing: 0.3px; .numeric-monospaces-setting();}
+.font-family-bold      { font-family: @font-family-bold;  letter-spacing: 0.3px; .numeric-monospaces-setting();}
+.font-family-book      { font-family: @font-family-book;  letter-spacing: 0.3px; .numeric-monospaces-setting();}
+
+// Gotham
+// Used only for page titles, answer & pinboard titles
+.font-family-gotham-regular   { font-family: @font-family-gotham-regular; letter-spacing: 0; .numeric-monospaces-setting();}
+.font-family-gotham-semibold  { font-family: @font-family-gotham-semibold; letter-spacing: 0; .numeric-monospaces-setting();}
+
+// Source Sans Pro
+// Used in Safari for numbers because font-feature-settings isn't supported in Safari
+.font-family-source-sans-pro-light { font-family: @font-family-source-sans-pro-light; letter-spacing: 0.3px;}
+.font-family-source-sans-pro-regular { font-family: @font-family-source-sans-pro-regular; letter-spacing: 0.3px;}
+.font-family-source-sans-pro-semibold { font-family: @font-family-source-sans-pro-semibold; letter-spacing: 0.3px;}
+.font-family-source-sans-pro-bold { font-family: @font-family-source-sans-pro-bold; letter-spacing: 0.3px;}

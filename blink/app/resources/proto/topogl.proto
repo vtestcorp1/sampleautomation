@@ -1,0 +1,49 @@
+message Topology {
+    enum Projection {
+        UNKNOWN = 0;
+        SPHERICAL = 1;
+        MERCATOR = 2;
+    };
+
+    // a struct defining boundaries of slices of vertex and triangle data
+    // to be used in each batch of draw calls.
+    message TriangleBatchBoundary {
+        // the index in triangleIndices array of the starting triangle for the specific batch
+        required uint32 triangleIndex = 1;
+
+        // the index in vertexPositions array of the starting vertex for the specific batch
+        required uint32 vertexIndex = 2;
+    }
+
+    // the projection used to convert geographic coordinates into model coordinates
+    optional Projection projection = 1;
+
+    // an array of serialized json objects, each representing a geographical
+    // entity defined in the topology
+    repeated string serializedFeatures = 2;
+
+    // the total number of vertices in the geometry for the entire topology
+    required uint32 numVertices = 3;
+
+    // a Float32Array of size 3 * numVertices that holds x, y, z values for each vertex
+    required bytes vertexPositions = 4;
+
+    // the number of triangles in the geometry for the entrie topology
+    required uint32 numTriangles = 5;
+
+    // a Uint16Array of size numTriangles * 3 holding the indices of the 3 vertices
+    // for each triangle
+    required bytes triangleIndices = 6;
+
+    // boundaries of slices of vertex and triangle data to be used in each
+    // batch of the draw calls.
+    repeated TriangleBatchBoundary triangleBatchBoundaries = 7;
+
+    // a Float32Array of size numVertices specifying if a vertex is a fake vertex
+    // added to the geometry that needs to remain hidden
+    required bytes vertexHiddenStates = 8;
+
+    // a Float32Array of size numVertices where every entry represents
+    // the index in serializedFeatures of the feature the vertex belongs to
+    required bytes vertexFeatureIndices = 9;
+}

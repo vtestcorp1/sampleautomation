@@ -1,0 +1,16 @@
+<form class="bk-html5-upload-form">
+    <fieldset class="bk-drop-zone">
+        <label for="bk-file-input">
+            <bk-secondary-button text="{{ browseYourFiles }}"
+                                 ng-hide="showFileReadCompletionUI"
+                                 class="bk-file-upload-btn"></bk-secondary-button>
+            <bk-secondary-button text="{{ diskFileName }}"
+                                 ng-show="showFileReadCompletionUI"
+                                 class="bk-file-name-label"></bk-secondary-button>
+        </label>
+        <input type="file" name="content" id="bk-file-input" ng-hide="showFileReadCompletionUI"/>
+        <div ng-hide="showFileReadCompletionUI" class="upload-size-info">
+            {{ fileSizeInfo }}
+        </div>
+    </fieldset>
+</form>

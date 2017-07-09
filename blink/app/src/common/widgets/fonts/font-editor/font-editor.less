@@ -1,0 +1,57 @@
+.bk-font-editor {
+    background-color: @h-white;
+    padding: 20px;
+
+    .bk-blob-uploader {
+        margin-bottom: 30px;
+        text-align: center;
+        border: 1px solid rgba(238, 241, 244, 0.70);
+    }
+
+    .bk-font-editor-properties-list {
+        ul {
+            .bk-font-editor-property {
+                margin-bottom: 15px;
+            }
+
+            .bk-font-editor-property-family,
+            .bk-font-editor-property-color,
+            .bk-font-editor-property-weight,
+            .bk-font-editor-property-style {
+                .bk-font-editor-property();
+            }
+
+            .bk-font-editor-property-weight-selector,
+            .bk-font-editor-property-style-selector {
+                .bk-select-box();
+            }
+        }
+
+        .bk-font-editor-color-picker {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+
+        .bk-font-editor-prop-name {
+            display: inline-block;
+            min-width: 10em;
+            margin-right: 5px;
+            font-weight: bold;
+        }
+
+        input.bk-font-editor-prop-field {
+            height: 1em;
+            width: 16em;
+            margin-bottom: 0;
+            border-radius: 1px;
+        }
+    }
+
+    .bk-font-editor-footer {
+        margin-top: 20px;
+        text-align: right;
+    }
+}

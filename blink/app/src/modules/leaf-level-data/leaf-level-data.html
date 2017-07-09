@@ -1,0 +1,42 @@
+<div class="bk-leaf-level-data {{ customizationClass }}">
+    <div class="bk-summary-container">
+        <div class="section-heading">{{strings.Summary}}</div>
+        <div class="bk-summary-columns-container">
+            <div ng-repeat="colInfo in getSummaryInfo()"
+                 class="column-info">
+                <div class="column-name bk-overflow-ellipsis"
+                     blink-tooltip="{{colInfo.column.getName()}}">
+                    {{ colInfo.column.getName() }}: </div>
+                <div class="column-value bk-overflow-ellipsis"
+                     blink-tooltip="{{colInfo.formattedValue}}"
+                     ng-bind-html="colInfo.formattedValue"></div>
+            </div>
+        </div>
+    </div>
+    <div class="bk-mid-section-container">
+        <div class="section-heading">{{strings.Underlying_Data}}</div>
+        <bk-primary-button text="{{ strings.ADD_COLUMNS }}"
+                             icon="bk-style-icon-small-plus"
+                             ng-click="onClickAddColumnsBtn()"
+                             class="add-columns-btn"></bk-primary-button>
+        <bk-secondary-button text="{{ strings.DOWNLOAD }}"
+                             icon="bk-style-icon-download"
+                             ng-click="onClickDownloadBtn()"
+                             class="download-btn"></bk-secondary-button>
+    </div>
+    <div ng-switch on="showColumnMenu">
+        <div ng-switch-when="true">
+            <bk-add-columns-menu
+                      bk-ctrl="addColumnsMenuComponent">
+            </bk-add-columns-menu>
+            <!--<div ng-include="'src/modules/leaf-level-data/add-columns-menu.html'"></div>-->
+        </div>
+    </div>
+    <div class="bk-leaf-data-table-container" ng-switch on="!!slickTableModelInfo.model">
+        <div class="bk-vertical-flex-container-sized" ng-switch-when="true">
+            <blink-slick-grid-table table-model="slickTableModelInfo.model"
+                                    config="slickTableModelInfo.config"
+                                    class="bk-leaf-data-table"></blink-slick-grid-table>
+        </div>
+    </div>
+</div>

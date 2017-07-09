@@ -1,0 +1,282 @@
+<div class="schedule-container" id="schedule-container">
+    <div class="bk-form">
+        <div class="bk-data-row" ng-if="!scheduleConfig.scheduleJob">
+            <label class="bk-label">{{schedulerUIText.STARTS}}</label>
+            <input class="bk-start-day"
+                   ng-model="scheduleConfig.startDate"
+                   bs-datepicker
+                   date-type="string"
+                   date-format="{{dateFormat}}"
+                   placeholder="{{dateFormat}}">
+            <ng-include src="'atHourMinuteBox'"></ng-include>
+        </div>
+        <div class="bk-data-row">
+            <label class="bk-label-repeats">{{schedulerUIText.REPEATS}}</label>
+            <span class="bk-select-box bk-repeats">
+                <select id="freqid" ng-model="scheduleConfig.interval" class="bk-cell-content bk-selectable"
+                        ng-options="interval as text for (interval, text) in schedulerUIText.intervals"
+                        data-placeholder=""
+                        chosen>
+                    <option value=""></option>
+                </select>
+            </span>
+        </div>
+    </div>
+    <div id='everynminid' ng-if="shouldShowOptionEveryNMins()" ng-include="'everyNMin'"></div>
+    <div id='hourlyid' ng-if="shouldShowOptionHourly()" ng-include="'hourly'"></div>
+    <div id='dailyid' ng-if="shouldShowOptionDaily()" ng-include="'daily'"></div>
+    <div id='weeklyid' ng-if="shouldShowOptionWeekly()" ng-include="'weekly'"></div>
+    <div id='monthlyid' ng-if="shouldShowOptionMonthly()" ng-include="'monthly'"></div>
+    <div id='atid' ng-if="shouldShowOptionAt()" ng-include="'atTime'"></div>
+    <div ng-if="shouldShowStatusMessage()" class="bk-form">
+        <hr>
+        <div class="bk-data-row">
+            <label class="bk-label">
+                {{scheduleConfig.statusMessage}}
+            </label>
+        </div>
+    </div>
+</div>
+<div class="bk-schedule-disable" ng-if="!scheduleConfig.scheduleJob && !!scheduleConfig.showDisable">
+    <bk-checkbox  bk-ctrl="disableScheduleCtrl"></bk-checkbox>
+</div>
+
+<script type="text/ng-template" id="atTime">
+    <div class="bk-options">
+        <div class="bk-data-row">
+            <ng-include src="'atHourMinuteBox'"></ng-include>
+        </div>
+    </div>
+</script>
+
+
+<script type="text/ng-template" id="atHourMinuteBox">
+    <label class="bk-label">{{schedulerUIText.AT}}</label>
+    <span class="bk-select-box">
+        <select ng-model="scheduleConfig.hour" class="bk-cell-hour-content bk-selectable"
+                ng-options="hour for hour in uiConfig.hours"
+                data-placeholder=""
+                chosen>
+        </select>
+    </span>
+    <label class="bk-label">{{schedulerUIText.COLON}}</label>
+    <span class="bk-select-box">
+        <select ng-model="scheduleConfig.min" class="bk-cell-hour-content bk-selectable"
+                ng-options="min for min in uiConfig.minutes"
+                data-placeholder=""
+                chosen>
+            <option value="">
+            </option>
+        </select>
+    </span>
+</script>
+
+<script type="text/ng-template" id="everyNMin">
+    <!-- Repeat Frequency Options : Every N Minutes-->
+    <div class="bk-options">
+        <div class="bk-data-row">
+            <label class="bk-label bk-bold">{{schedulerUIText.RUN_EVERY}}</label>
+            <span class="bk-select-box bk-frequency">
+                <select ng-model="scheduleConfig.frequency" class="bk-cell-hour-content bk-selectable"
+                        ng-options="minute for minute in uiConfig.everyNMinutes"
+                        chosen>
+                    <option value=""></option>
+                </select>
+            </span>
+            <label class="bk-label">{{schedulerUIText.MINUTES_ON}}</label>
+        </div>
+        <div class="bk-day-row" ng-include="'weekday-selector'"></div>
+        <br>
+        <!--Temporarily disabled <div ng-include="'time-range'"></div>-->
+        <div ng-include="'repeat-options'"></div>
+    </div>
+</script>
+
+<script type="text/ng-template" id="hourly">
+    <!-- Repeat Frequency Options : Hourly-->
+    <div class="bk-options">
+        <div class="bk-data-row">
+            <label class="bk-label bk-bold">{{schedulerUIText.RUN_EVERY}}</label>
+            <span class="bk-select-box bk-frequency">
+                <select ng-model="scheduleConfig.frequency" class="bk-cell-hour-content bk-selectable"
+                        ng-options="hr for hr in uiConfig.hrly"
+                        chosen>
+                    <option value=""></option>
+                </select>
+            </span>
+            <label class="bk-label">{{schedulerUIText.HOURS_ON}}</label>
+        </div>
+        <div class="bk-day-row" ng-include="'weekday-selector'"></div>
+        <!-- Temporarily disabled <div ng-include="'time-range'"></div>-->
+        <div ng-include="'repeat-options'"></div>
+    </div>
+</script>
+
+<script type="text/ng-template" id="daily">
+    <!-- Repeat Frequency Options : Daily-->
+    <div class="bk-options">
+        <div class="bk-data-row">
+            <label class="bk-label bk-bold">{{schedulerUIText.RUN_THE_TASK}}</label>
+        </div>
+        <div class="bk-data-row">
+            <label class="bk-label">
+                <input type="radio" name="time" value="ALL" ng-model="scheduleConfig.dayOption" checked=true>
+                {{schedulerUIText.EVERY_DAY}}
+            </label><br>
+        </div>
+        <div class="bk-data-row">
+            <label class="bk-label">
+                <input type="radio" name="time" value="WEEKDAY" ng-model="scheduleConfig.dayOption">
+                {{schedulerUIText.EVERY_WEEKDAY}}
+            </label>
+        </div>
+        <div ng-include="'repeat-options'"></div>
+    </div>
+</script>
+
+<script type="text/ng-template" id="weekly">
+    <!-- Repeat Frequency Options : Weekly-->
+    <div class="bk-options">
+        <div class="bk-data-row">
+            <label class="bk-label bk-bold">{{schedulerUIText.RUN_WEEK}}</label>
+        </div>
+        <div class="bk-day-row" ng-include="'weekday-selector'"></div>
+        <div ng-include="'repeat-options'"></div>
+    </div>
+</script>
+
+<script type="text/ng-template" id="monthly">
+    <!-- Repeat Frequency Options : Monthly-->
+    <div class="bk-options">
+        <div class="bk-data-row">
+            <label class="bk-label bk-bold">{{schedulerUIText.RUN_ON}}</label>
+        </div>
+        <div class="bk-data-row">
+            <label class="bk-label" ng-if="!scheduleConfig.scheduleJob">
+                <input type="radio" ng-model="scheduleConfig.monthOption" name="monthOption" value={{timeRangeOptions.DATE}} checked=true>
+                {{schedulerUIText.DAY}}
+            </label>
+            <span class="bk-select-box">
+                <select ng-model="scheduleConfig.dayOfMonth" class="bk-cell-hour-content bk-selectable"
+                        ng-options="day for day in uiConfig.daysOfMonth"
+                        chosen>
+                </select>
+            </span>
+            <label class="bk-label">{{schedulerUIText.OF_EVERY_MONTH}}</label>
+        </div>
+        <div class="bk-data-row" ng-if="!scheduleConfig.scheduleJob">
+            <label class="bk-label">
+                <input type="radio" ng-model="scheduleConfig.monthOption" name="monthOption" value={{timeRangeOptions.WEEKDAY}}>
+                {{schedulerUIText.THE}}
+            </label>
+            <span class="bk-select-box">
+                <select ng-model="scheduleConfig.weekOfMonth" class="bk-month-content bk-selectable"
+                        ng-options="week for week in uiConfig.weeksOfMonth"
+                        chosen>
+                </select>
+            </span>
+            <span class="bk-select-box">
+                <select ng-model="scheduleConfig.dayOfWeek" class="bk-month-content bk-selectable"
+                        ng-options="dayOfWeek.camelize() for dayOfWeek in uiConfig.daysOfWeek"
+                        chosen>
+                </select>
+            </span>
+            <label class="bk-label">{{schedulerUIText.OF_EVERY_MONTH}}</label>
+        </div>
+        <div ng-include="'repeat-options'"></div>
+    </div>
+</script>
+
+<script type="text/ng-template" id="weekday-selector">
+    <span class="bk-day-row" ng-repeat="checkboxCtrl in dayCheckboxCtrls">
+        <div class="bk-day">
+            <bk-checkbox bk-ctrl="checkboxCtrl"></bk-checkbox>
+        </div>
+    </span>
+</script>
+
+<script type="text/ng-template" id="repeat-options">
+    <div ng-if="!scheduleConfig.scheduleJob">
+        <div class="bk-data-row">
+            <label class="bk-label bk-bold">{{schedulerUIText.REPEAT_OPTIONS}}</label>
+        </div>
+        <div class="bk-data-row">
+            <label class="bk-label">
+                <input type="radio" ng-model="scheduleConfig.repeatOption" name="repeatOption" value="indefinitely" checked=true>
+                {{schedulerUIText.REPEAT_INDEFINITELY}}
+            </label><br>
+        </div>
+        <div class="bk-data-row">
+            <label class="bk-label">
+                <input type="radio" ng-model="scheduleConfig.repeatOption" name="repeatOption" value="repeatUntil">
+                {{schedulerUIText.REPEAT_UNTIL}}
+            </label>
+            <input class="bk-repeat-until"
+                   ng-model="scheduleConfig.endDate"
+                   bs-datepicker
+                   date-type="string"
+                   date-format="{{dateFormat}}"
+                   placeholder="{{dateFormat}}">
+            <label class="bk-label">{{schedulerUIText.AT}}</label>
+            <span class="bk-select-box">
+                <select ng-model="scheduleConfig.repeatHour" class="bk-cell-hour-content bk-selectable"
+                        ng-options="hour for hour in uiConfig.hours"
+                        chosen>
+                </select>
+            </span>
+            <label class="bk-label">{{schedulerUIText.COLON}}</label>
+            <span class="bk-select-box">
+                <select ng-model="scheduleConfig.repeatMin" class="bk-cell-hour-content bk-selectable"
+                        ng-options="min for min in uiConfig.minutes"
+                        chosen>
+                </select>
+            </span>
+        </div>
+    </div>
+</script>
+
+<script type="text/ng-template" id="time-range">
+    <div class="bk-data-row">
+        <label class="bk-label bk-bold">{{schedulerUIText.TIME_RANGE}}</label>
+    </div>
+    <div class="bk-data-row">
+        <label class="bk-label">
+            <input type="radio" name="time" ng-model="scheduleConfig.timeRange" value="{{timeRangeOptions.ALL_DAY}}" checked=true>
+            {{schedulerUIText.ALL_DAY}}
+        </label><br>
+    </div>
+    <div class="bk-data-row">
+        <label class="bk-label">
+            <input type="radio" name="time" ng-model="scheduleConfig.timeRange" value="{{timeRangeOptions.BETWEEN}}">
+            {{schedulerUIText.BETWEEN}}
+        </label>
+            <span class="bk-select-box">
+                <select ng-model="scheduleConfig.startHour" class="bk-cell-hour-content bk-selectable"
+                        ng-options="hour for hour in uiConfig.hours"
+                        chosen>
+                </select>
+            </span>
+        <label class="bk-label">{{schedulerUIText.COLON}}</label>
+            <span class="bk-select-box">
+                <select ng-model="scheduleConfig.startMin" class="bk-cell-hour-content bk-selectable"
+                        ng-options="min for min in uiConfig.minutes"
+                        chosen>
+                </select>
+            </span>
+        <label class="bk-label">{{schedulerUIText.AND}}</label>
+            <span class="bk-select-box">
+                <select ng-model="scheduleConfig.endHour" class="bk-cell-hour-content bk-selectable"
+                        ng-options="hour for hour in uiConfig.hours"
+                        chosen>
+                </select>
+            </span>
+        <label class="bk-label">{{schedulerUIText.COLON}}</label>
+            <span class="bk-select-box">
+                <select ng-model="scheduleConfig.endMin" class="bk-cell-hour-content bk-selectable"
+                        ng-options="min for min in uiConfig.minutes"
+                        chosen>
+                </select>
+            </span>
+        <label class="bk-label">{{schedulerUIText.EACH_DAY}}</label>
+    </div>
+</script>

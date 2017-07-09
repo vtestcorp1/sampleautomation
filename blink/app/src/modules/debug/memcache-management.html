@@ -1,0 +1,103 @@
+<blink-loading-indicator ng-show='isLoading'></blink-loading-indicator>
+<div ng-show='!isLoading'>
+    <div class='row-fluid'>
+        <div class='span10'></div>
+        <div class='span2'>
+            <button class='bk-btn' ng-click='onMemcacheClearClick()'>
+{{strings.Clear_cache}}
+</button>
+        </div>
+    </div>
+
+    <div class='row-fluid bk-row-margin'>
+        <div class='instance-select'>
+            <div ng-repeat='instance in stats track by instance.addr'
+                 class='instance-item'
+                 ng-class="{'select': instance.addr === currentInstance.addr}"
+                 ng-click="selectInstance(instance)">
+                {{instance.addr}}
+            </div>
+        </div>
+    </div>
+
+    <div class='row-fluid'>
+        <pie-chart class='span6' data='memoryChartData' title='Memory usage'></pie-chart>
+        <pie-chart class='span6' data='efficiencyChartData' title='Efficiency'></pie-chart>
+    </div>
+
+    <div class='row-fluid bk-row-margin'>
+        <span class='bk-stat-header'><small>{{strings.Objects_count}}</small>{{currentInstance.total_items}}</span>
+        <span class='bk-stat-header'><small>{{strings.Connections}}</small>{{currentInstance.curr_connections}}</span>
+        <span class='bk-stat-header'><small>{{strings.Data_read}}</small>{{currentInstance.bytes_read | bytes}}</span>
+        <span class='bk-stat-header'><small>{{strings.Data_written}}</small>{{currentInstance.bytes_written | bytes}}</span>
+        <span class='bk-stat-header'><small>{{strings.Memory_used}}</small>{{currentInstance.bytes | bytes}}</span>
+        <a class='bk-more'
+           ng-show='!statsExpanded'
+           ng-click='toggleStats()'>
+{{strings.More}}
+</a>
+        <a ng-show='statsExpanded'
+           ng-click='toggleStats()'>
+{{strings.Less}}
+</a>
+    </div>
+
+    <pre class='bk-row-margin' ng-if='statsExpanded'>
+        <json-formatter json="currentInstance" open="1"></json-formatter>
+    </pre>
+
+    <h4 class='bk-row-margin'>{{strings.Search_memcache}}</h4>
+
+    <div class='row-fluid bk-row-margin'>
+        <form class='form-inline'>
+            <div class='span6'>
+                <div class='bk-select-box'>
+                    <select ng-model='memcacheSearch.objectType'
+                            ng-options='type for type in memcacheSearch.objectTypes'
+                            ng-change='refreshChoices()'
+                            chosen>
+                    </select>
+                </div>
+            </div>
+            <div class='span3'>
+                <input type='checkbox'
+                       ng-model='memcacheSearch.showHidden'
+                       ng-change='refreshChoices()'
+                       ng-change='refreshSearchResults()' />
+                <label>{{strings.Show_hidden}}</label>
+            </div>
+            <div class='span3'>
+                <input type='checkbox'
+                       ng-change='refreshChoices()'
+                       ng-model='memcacheSearch.useUnsecured'
+                       ng-change='refreshSearchResults()' />
+                <label>{{strings.Use_unsecured}}</label>
+            </div>
+        </form>
+    </div>
+
+    <div class='row-fluid bk-row-margin'>
+        <div class='span4'>
+            <div class='bk-select-box'>
+                <select ng-model='memcacheSearch.user'
+                        ng-options='user.getDisplayName() for user in users track by user.getId()'
+                        ng-change='refreshChoices()'
+                        chosen>
+                </select>
+            </div>
+        </div>
+        <div class='span8'>
+            <div class='bk-select-box'>
+                <select ng-model='memcacheSearch.currentObject'
+                        ng-options='object.getTitle() for object in memcacheSearch.objectChoices track by object.id'
+                        ng-enabled='!!memcacheSearch.user && !!memcacheSearch.objectTypes && !!memcacheSearch.objectChoices'
+                        ng-change='refreshSearchResults()'
+                        chosen>
+                </select>
+            </div>
+        </div>
+    </div>
+    <pre class='bk-row-margin' ng-if='memcacheSearchResults'>
+        <json-formatter json="memcacheSearchResults" open="2"></json-formatter>
+    </pre>
+</div>

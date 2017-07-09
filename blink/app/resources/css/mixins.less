@@ -1,0 +1,218 @@
+
+/* mixins */
+
+// General functions
+
+.backface-visibility(@bv) {
+  -webkit-backface-visibility: @bv;
+  -moz-backface-visibility: @bv;
+  -ms-backface-visibility: @bv;
+  backface-visibility: @bv;
+
+}
+
+.box-shadow(@bs) {
+    -webkit-box-shadow: @bs;
+    -moz-box-shadow: @bs;
+    box-shadow: @bs;
+}
+
+.box-shadow-inset(@bs, @is) {
+    -webkit-box-shadow: @bs, @is;
+    -moz-box-shadow: @bs, @is;
+    box-shadow: @bs, @is;
+}
+
+.box-sizing(@bs) {
+    -webkit-box-sizing: @bs;
+    -moz-box-sizing: @bs;
+    box-sizing: @bs;
+}
+
+.background-clip-padding-box(@bc) {
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+
+.background-size(@type) {
+    -webkit-background-size: @type;
+    -moz-background-size: @type;
+    -o-background-size: @type;
+    background-size: @type;
+}
+
+.appearance(@appearance) {
+    -webkit-appearance: @appearance;
+    appearance: @appearance;
+    -moz-appearance: @appearance;
+}
+
+.transform(@var) {
+    transform: @var;
+    -ms-transform: @var;
+    -webkit-transform: @var;
+}
+
+.dark-gradient() {
+    background-image: -moz-linear-gradient(top, rgba(255,255,255,0.02) 0%, rgba(0,0,0,0.01) 100%); /* FF3.6+ */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.02)), color-stop(100%,rgba(0,0,0,0.01))); /* Chrome,Safari4+ */
+    background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.02) 0%,rgba(0,0,0,0.01) 100%); /* Chrome10+,Safari5.1+ */
+    background-image: -o-linear-gradient(top, rgba(255,255,255,0.02) 0%,rgba(0,0,0,0.01) 100%); /* Opera 11.10+ */
+    background-image: -ms-linear-gradient(top, rgba(255,255,255,0.02) 0%,rgba(0,0,0,0.01) 100%); /* IE10+ */
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.02) 0%,rgba(0,0,0,0.01) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0affffff', endColorstr='#0a000000',GradientType=0 ); /* IE6-9 */
+}
+
+.gray-to-transparent-gradient() {
+    background: -moz-linear-gradient(top,  rgba(244,245,246,1.0) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(244,245,246,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(244,245,246,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(244,245,246,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(244,245,246,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(244,245,246,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f5f6', endColorstr='#002989d8',GradientType=0 ); /* IE6-9 */
+}
+
+.vert-gradient(@startcolor, @endcolor) {
+    background-image: -moz-linear-gradient(top, @startcolor, @endcolor);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@startcolor), to(@endcolor));
+    background-image: -webkit-linear-gradient(top, @startcolor, @endcolor);
+    background-image: -o-linear-gradient(top, @startcolor, @endcolor);
+    background-image: linear-gradient(to bottom, @startcolor, @endcolor);
+}
+
+.user-select(@us) {
+    -webkit-touch-callout: @us;
+    -webkit-user-select: @us;
+    -khtml-user-select: @us;
+    -moz-user-select: @us;
+    -ms-user-select: @us;
+    user-select: @us;
+}
+
+.centered-blink-loading-indicator {
+    .bk-loading-indicator {
+        .flex(row);
+        .flex-grow-shrink-basis(1, 1, auto);
+        .flex-align(center);
+        .flex-justify(center);
+        margin-left: 0;
+    }
+    .bk-loader {
+        margin-left: 0;
+    }
+}
+
+.column-count(@count) {
+    -moz-column-count: @count;
+    -webkit-column-count: @count;
+    column-count: @count;
+}
+
+.calcWidth(@val) {
+    width: -moz-calc(@val);
+    width: -webkit-calc(@val);
+    width: calc(@val);
+}
+
+.calcMaxWidth(@val) {
+    max-width: -moz-calc(@val);
+    max-width: -webkit-calc(@val);
+    max-width: calc(@val);
+}
+
+.calcHeight(@val) {
+    height: -moz-calc(@val);
+    height: -webkit-calc(@val);
+    height: calc(@val);
+}
+
+.calcMaxHeight(@val) {
+    max-height: -moz-calc(@val);
+    max-height: -webkit-calc(@val);
+    max-height: calc(@val);
+}
+
+.left-arrow(@width, @color) {
+    width: 0;
+    border: @width solid @color;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+}
+
+.right-arrow(@width, @color) {
+    width: 0;
+    border: @width solid @color;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+}
+
+.position-absolute(@top, @rt, @btm, @lt) {
+    position: absolute;
+    top: @top;
+    right: @rt;
+    bottom: @btm;
+    left: @lt;
+}
+
+.linear-gradient(@dir, @colorStop1, @colorStop2) {
+    background: -webkit-linear-gradient(@dir, @colorStop1, @colorStop2); /*Safari 5.1-6*/
+    background: -o-linear-gradient(@dir, @colorStop1, @colorStop2); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(@dir, @colorStop1, @colorStop2); /*Fx 3.6-15*/
+    background: linear-gradient(@dir, @colorStop1, @colorStop2); /*Standard*/
+}
+
+
+
+.flip-v {
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    -ms-transform: scaleY(-1);
+    transform: scaleY(-1);
+    -ms-filter: "FlipY";
+    filter: FlipY;
+}
+
+.unselectable {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.placeholder-inherit {
+    &::-webkit-input-placeholder { /* WebKit browsers */
+        font-size: inherit !important;
+        font-style: italic;
+        color: @gray-label-text;
+        padding: 2px;
+    }
+    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        font-size: inherit !important;
+        font-style: italic;
+        color: @gray-secondary-text; // Slightly darker in Firefox (color rendering is brighter)
+        padding: 2px;
+
+    }
+    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+        font-size: inherit !important;
+        font-style: italic;
+        color: @gray-secondary-text; // Slightly darker in Firefox (color rendering is brighter)
+        padding: 2px;
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10+ */
+        font-size: inherit !important;
+        font-style: italic;
+        color: @gray-label-text;
+        padding: 2px;
+    }
+}
+
+.panel-loading-indicator(@url:'/resources/img/loading-icon-black.gif', @x: 50%, @y:50%) {
+    background: url(@url) no-repeat @x @y;
+}

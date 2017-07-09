@@ -1,0 +1,86 @@
+<div class="import-data">
+    <div class="bk-error-message" ng-if="!dsMetaData.name">
+        {{ strings.NAME_DESCRIPTION_ERROR }}
+    </div>
+    <div blink-content-editable
+         external="isEditMode()"
+         class="source-name-edit"
+         ng-model="dsMetaData.name"
+         placeholder="'Source name'"
+         description="dsMetaData.desc">
+    </div>
+    <div class="table-viewer-container">
+        <div>
+            <span class="tables-title">{{strings.Tables}}</span>
+            <general-item-viewer config="itemViewerConfig"
+                                  items="tablesToLoad"
+                                  get-sub-items="getTableColumns">
+            </general-item-viewer>
+            <bk-checkbox class="truncate-checkbox"
+                            bk-ctrl="truncateCheckboxCtrl"></bk-checkbox>
+            <bk-checkbox class="enable-emails-checkbox"
+                            bk-ctrl="enableEmailsCheckboxCtrl"></bk-checkbox>
+        </div>
+        <div class="advanced-options">
+            <bk-accordion-list-viewer class='advanced-options-list' bk-ctrl="accordion">
+                <bk-accordion-list-viewer-item class='advanced-options-list-item'
+                                            bk-ctrl="accordionItem.Schedule">
+                    <div class='list-item-tpl'
+                         ng-class="{expand: accordionItem.Schedule.isExpanded()}"
+                         ng-include="'scheduler_id'"></div>
+                </bk-accordion-list-viewer-item>
+                <bk-accordion-list-viewer-item ng-if="isTimelySchedulingEnabled"
+                                            class='advanced-options-list-item'
+                                            bk-ctrl="accordionItem.PreScript">
+                    <div class='list-item-tpl'
+                         ng-class="{expand: accordionItem.PreScript.isExpanded()}"
+                         ng-include="'pre_script'"></div>
+                </bk-accordion-list-viewer-item>
+                <bk-accordion-list-viewer-item ng-if="isTimelySchedulingEnabled"
+                                            class='advanced-options-list-item'
+                                            bk-ctrl="accordionItem.PostScript">
+                    <div class='list-item-tpl'
+                         ng-class="{expand: accordionItem.PostScript.isExpanded()}"
+                         ng-include="'post_script'"></div>
+                </bk-accordion-list-viewer-item>
+            </bk-accordion-list-viewer>
+        </div>
+    </div>
+    <script type="text/ng-template" id="scheduler_id">
+        <div class="bk-scheduler-container">
+            <bk-scheduler schedule-config="scheduleConfig"></bk-scheduler>
+        </div>
+    </script>
+    <script type="text/ng-template" id="pre_script">
+        <div class="bk-schema"
+             ng-model="dsMetaData.preScriptText"
+             ui-ace="{
+                useWrapMode : true,
+                mode: 'tql',
+                theme: 'sqlserver',
+                require: ['ace/ext/language_tools'],
+                workerPath: 'app/lib/min/ace',
+                advanced: {
+                    enableBasicAutocompletion: true,
+                    enableLiveAutocompletion: true
+                }
+         }">
+        </div>
+    </script>
+    <script type="text/ng-template" id="post_script">
+        <div class="bk-schema"
+             ng-model="dsMetaData.postScriptText"
+             ui-ace="{
+                useWrapMode : true,
+                mode: 'tql',
+                theme: 'sqlserver',
+                require: ['ace/ext/language_tools'],
+                workerPath: 'app/lib/min/ace',
+                advanced: {
+                    enableBasicAutocompletion: true,
+                    enableLiveAutocompletion: true
+                }
+         }">
+        </div>
+    </script>
+</div>

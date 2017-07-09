@@ -1,0 +1,69 @@
+.bk-range-select {
+    .bk-padding-all-20;
+    .bk-range-select-row {
+        height: 24px;
+        min-width: 130px;
+        .flex(row);
+        .bk-select-box {
+            min-width: 52px;
+            height: 24px;
+
+            .chosen-container {
+                height: 24px;
+                line-height: 15px;
+                .chosen-single{
+                    height: 24px;
+                    line-height: 24px;
+                    .br-radius-3-left;
+                    .font-family-regular;
+                    .text-size-larger;
+
+                    b:before {
+                        border-top-color: @grey7;
+                    }
+
+                }
+            }
+
+            .chosen-search {
+                display: none;
+            }
+
+            select {
+                display: inline-block;
+                height: 24px;
+                line-height: 24px;
+                font-size: 9px;
+                border: 1px solid transparent;
+                background: none;
+                box-shadow: none;
+
+                &.bk-invalid-selection {
+                    border: 1px solid red;
+                }
+            }
+        }
+        .bk-value-selector {
+            .flex-grow-shrink-basis(1, 1, auto);
+            margin-left: 0px;
+            line-height: 24px;
+            height: 26px;
+            padding-top: 3px;
+            border-radius: 1px 2px 2px 1px;
+            box-sizing: border-box;
+            .font-family-regular;
+            font-size: 12px;
+            background-color: @h-white;
+            .box-shadow-inset(0 1px 0 rgba(255,255,255,.1),inset 0 1px 3px rgba(0,0,0,.09));
+            color: @h-gray6;
+
+            &.bk-validation-failed {
+                border-color: @red-default;
+            }
+        }
+    }
+
+    .bk-range-select-second-operator {
+        padding: 20px 0 0 0;
+    }
+}

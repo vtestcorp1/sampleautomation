@@ -1,0 +1,29 @@
+<div class="bk-a3-analysis-customizer">
+    <tab-control class="bk-a3-analysis-customizer-tab-container"
+                 on-tab-activated="$ctrl.onTabActivated(activeTab)">
+        <tab-control-tab class="bk-a3-columns-selector-container"
+                         tab-name="{{ $ctrl.strings.a3.selectColumnsTabHeader }}"
+                         tab-id="selectColumns">
+            <bk-a3-drill-column-selector
+                    class="bk-a3-columns-selector-viewer-container"
+                    bk-ctrl="$ctrl.a3DrillColumnSelectorComponent">
+            </bk-a3-drill-column-selector>
+        </tab-control-tab>
+        <tab-control-tab class="bk-a3-exclude-columns-container"
+                         tab-name="{{ $ctrl.strings.a3.excludeColumnsTabHeader }}"
+                         tab-id="excludedColumns">
+            <bk-a3-exclude-column-selector
+                    class="bk-a3-exclude-columns-viewer-container"
+                    bk-ctrl="$ctrl.a3ExcludeColumnSelectorComponent">
+            </bk-a3-exclude-column-selector>
+        </tab-control-tab>
+        <tab-control-tab class="bk-a3-customize-algorithms-container"
+                         tab-name="{{ $ctrl.strings.a3.customizeAlgorithmsTabHeader }}"
+                         tab-id="customizeAlgorithms">
+            <bk-a3-algorithm-customizer
+                    class="bk-a3-customize-algorithms-viewer-container"
+                    bk-ctrl="$ctrl.a3AlgorithmCustomizerComponent">
+            </bk-a3-algorithm-customizer>
+        </tab-control-tab>
+    </tab-control>
+</div>

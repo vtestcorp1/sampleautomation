@@ -1,0 +1,24 @@
+<div class="bk-add-principal">
+    <div ng-if='$ctrl.name && !!$ctrl.name.length' class="label">{{$ctrl.name}}</div>
+    <div class="bk-new-permission">
+        <!-- Input in which the user can type new user or group names, with autocomplete -->
+        <div class="bk-multiselect-input">
+            <bk-principal-selector
+                    bk-ctrl="$ctrl.principalSelectorComponent">
+            </bk-principal-selector>
+        </div>
+        <!-- Drop down listing the permission type ("Can View" or "Can Edit") for the new users or groups -->
+        <bk-permission-dropdown class='bk-select-box'
+                                bk-ctrl="$ctrl.newPermissionTypeDropDown"
+                                ng-if="$ctrl.displayPermissionPlugin">
+        </bk-permission-dropdown>
+    </div>
+    <div class="bk-add-users-buttons">
+        <bk-secondary-button text="{{ strings.CANCEL }}"
+                             ng-if="$ctrl.displayPermissionPlugin"
+                             ng-click="$ctrl.cancel()"></bk-secondary-button>
+        <bk-primary-button text="{{ strings.ADD_AND_SAVE }}"
+                           ng-click="$ctrl.addPermissions()"
+                           class="bk-add-permissions-btn"></bk-primary-button>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<div>
+    <div class="bk-pinboard-page-content"
+         ng-if="!!metadataConfig.model">
+        <blink-sharable-item type="'PINBOARD'"
+                             with-sage-bar="false"
+                             metadata-config="metadataConfig"
+                             content-url="'src/modules/viz-layout/answer/pinboard-content.html'"
+                             class="bk-vertical-flex-container-sized"
+                             ng-class="{ 'bk-insight-page': pinboardPageConfig.isAutoCreated }">
+        </blink-sharable-item>
+        <bk-viz-context-answer ng-if="!!vizContextAnswerComponent"
+                            bk-ctrl="vizContextAnswerComponent">
+        </bk-viz-context-answer>
+    </div>
+</div>

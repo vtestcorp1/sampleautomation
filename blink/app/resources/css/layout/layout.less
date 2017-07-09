@@ -1,0 +1,323 @@
+/* **************** FLEX LAYOUT ***************** */
+.flex-important(@dir) {
+    display: -webkit-box !important;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box !important;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox !important;      /* TWEENER - IE 10 */
+    display: -webkit-flex !important;     /* NEW - Chrome */
+    display: flex !important;
+    flex-direction: @dir;
+    -ms-flex-direction: @dir;
+    -webkit-flex-direction: @dir;
+}
+
+.flex(@dir: ~'') {
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;
+    flex-direction: @dir;
+    -ms-flex-direction: @dir;
+    -webkit-flex-direction: @dir;
+}
+
+.flex-inline (@dir: ~'') {
+    display: -webkit-inline-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-inline-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-inline-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-inline-flex;     /* NEW - Chrome */
+    display: inline-flex;
+    flex-direction: @dir;
+    -ms-flex-direction: @dir;
+    -webkit-flex-direction: @dir;
+}
+
+.flex-grow-shrink-basis(@grow, @shrink, @basis) {
+    .flex-grow(@grow);
+    .flex-shrink(@shrink);
+    .flex-basis(@basis);
+}
+
+.flex-auto-grow-shrink-basis() {
+    flex: 1;
+    -ms-flex: 1;
+    -webkit-flex: 1;
+}
+
+.flex-grow(@weight) {
+    flex-grow: @weight;
+    -webkit-flex-grow: @weight;
+    -ms-flex-grow: @weight;
+}
+
+.flex-shrink(@weight) {
+    flex-shrink: @weight;
+    -webkit-flex-shrink: @weight;
+    -ms-flex-shrink: @weight;
+}
+.flex-basis(@basis) {
+    flex-basis: @basis;
+    -webkit-flex-basis: @basis;
+    -ms-flex-basis: @basis;
+}
+
+.flex-order(@order) {
+    order: @order;
+    -webkit-order: @order;
+    -ms-flex-order: @order;
+}
+
+.flex-align(@alignment){
+    align-items: @alignment;
+    -webkit-align-items: @alignment;
+    -ms-flex-align: @alignment;
+}
+
+.flex-justify(@alignment){
+    justify-content: @alignment;
+    -webkit-justify-content: @alignment;
+    -ms-flex-pack: @alignment;
+}
+
+.flex-wrap(@wrap) {
+    .ms-flex-wrap(@wrap); // IE10
+    -webkit-flex-wrap: @wrap; // Safari / iOS
+    flex-wrap: @wrap;
+}
+
+.ms-flex-wrap(@wrap) when (@wrap = nowrap) {
+    -ms-flex-wrap: none;
+}
+
+.ms-flex-wrap(@wrap) when (@wrap = wrap), (@wrap = wrap-reverse) {
+    -ms-flex-wrap: @wrap;
+}
+
+.flex-align-self(@alignment){
+    align-self: @alignment;
+    -webkit-align-self: @alignment;
+    -ms-flex-item-align: @alignment;
+}
+
+.flex-flow(@flow) {
+    flex-flow: @flow;
+    -webkit-flex-flow: @flow;
+}
+
+.bk-vertical-flex-content-sized {
+    .flex(column);
+    // NOTE: This is used as we dont want this section to grow but retain its original height.
+    // This should be used in cases where we are certain that the child content will dictate
+    // the height.
+    // Eg. Filter panel, headline panel. They both decide height of each headline and naturally
+    // wrap to multi-line so the parent allocates that exact height and remaining height is
+    // distributed.
+    .flex-grow-shrink-basis(0, 0, auto);
+}
+
+.bk-vertical-flex-container-sized {
+    .flex(column);
+    .flex-grow-shrink-basis(1, 1, 0px);
+    // NOTE: This property is used to allow for shrink property to take effect.
+    // http://stackoverflow.com/questions/38382734/flex-items-not-shrinking-when-window-gets-smaller
+    // When a child is given some height, shrink doesn't take effect unless there is a min-height
+    // on the element.
+    min-height: 0px;
+}
+
+.bk-vertical-flex-horizontal-container-sized {
+    .flex(column);
+    .flex-grow-shrink-basis(1, 1, 0px);
+    min-width: 0px;
+}
+
+// The mixins below are rotation of the the above mixins.
+.bk-horizontal-flex-container-sized {
+    .flex(row);
+    .flex-grow-shrink-basis(1, 1, 0px);
+    min-width: 0px;
+}
+
+.bk-horizontal-flex-content-sized {
+    .flex(row);
+    .flex-grow-shrink-basis(0, 0, auto);
+}
+
+.flex-horizontal-centered-box {
+    .flex(row);
+    .flex-justify(center);
+    .flex-align(center);
+}
+
+/* **************** GRIDS ***************** */
+
+.line:after{content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+.lastUnit:after{content: " . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ";visibility:hidden; clear:both;height:0 !important;display:block;line-height:0;}
+.line{*zoom:1;}
+.unit{float:left;}
+.size1of1{float:none;}
+.size1of2{width:50%;}
+.size1of3{width:33.33333%;}
+.size2of3{width:66.66666%;}
+.size1of4{width:25%;}
+.size3of4{width:75%;}
+.size1of5{width:20%;}
+.size2of5{width:40%;}
+.size3of5{width:60%;}
+.size4of5{width:80%;}
+.lastUnit {display: table-cell; *display:block;*zoom:1;float:none;_position:relative; _left:-3px; _margin-right: -3px;width:auto;}
+
+.of-hidden { overflow: hidden; }
+.of-visible { overflow: visible; }
+.of-scroll { overflow: scroll; }
+.of-auto { overflow: auto; }
+
+.fl{ float: left; }
+.fr{ float: right; }
+
+.pa { position: absolute; }
+.pr { position: relative; }
+
+.clearfix:after {
+    clear: both;
+    content: ' ';
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+.clearfix {
+    display: inline-block;
+}
+* html .clearfix {
+    height: 1%;
+}
+.clearfix {
+    display: block;
+}
+
+.dn {display: none; }
+.db { display: block; }
+.di {display: inline; }
+.dib {display: inline-block; }
+
+.vat { vertical-align: top; }
+.vam { vertical-align: middle; }
+.vab {vertical-align: bottom; }
+
+
+/*Media blocks
+****************************************************************/
+
+.media, .bd {overflow:hidden; _overflow:visible; zoom:1; .bk-margin-all-0;}
+.media .img {float:left; }
+.media .img img{display:block;}
+.media .imgExt{float:right;}
+
+
+.bk-row {
+    position: relative;
+    width: 100%;
+    overflow-y: scroll;
+
+    &.bk-row-10 {
+        height: 10%;
+    }
+
+    &.bk-row-20 {
+        height: 20%;
+    }
+
+    &.bk-row-30 {
+        height: 30%;
+    }
+
+    &.bk-row-40 {
+        height: 40%;
+    }
+
+    &.bk-row-50 {
+        height: 50%;
+    }
+
+    &.bk-row-60 {
+        height: 60%;
+    }
+
+    &.bk-row-70 {
+        height: 70%;
+    }
+
+    &.bk-row-80 {
+        height: 80%;
+    }
+
+    &.bk-row-90 {
+        height: 90%;
+    }
+}
+
+.bk-column {
+    position: relative;
+    float: left;
+    top: 0;
+    bottom: 0;
+
+    &.bk-column-10 {
+        width: 10%;
+    }
+
+    &.bk-column-20 {
+        width: 20%;
+    }
+
+    &.bk-column-30 {
+        width: 30%;
+    }
+
+    &.bk-column-40 {
+        width: 40%;
+    }
+
+    &.bk-column-50 {
+        width: 50%;
+    }
+
+    &.bk-column-60 {
+        width: 60%;
+    }
+
+    &.bk-column-70 {
+        width: 70%;
+    }
+
+    &.bk-column-80 {
+        width: 80%;
+    }
+
+    &.bk-column-90 {
+        width: 90%;
+    }
+
+    &.bk-column-one-third {
+        width: 100/3%;
+    }
+
+    &.bk-column-one-half {
+        width: 100/2%;
+    }
+
+    &.bk-column-one-fourth {
+        width: 100/4%;
+    }
+
+    &.bk-column-three-fourth {
+        width: 300/4%;
+    }
+
+    &.bk-column-two-third {
+        width: 200/3%;
+    }
+}

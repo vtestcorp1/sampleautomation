@@ -1,0 +1,32 @@
+<span class="bk-formula-suggestion-tooltip">
+    <!-- for non-function tokens the tooltip is the same as the suggestion text (but it's never truncated)  -->
+    <span ng-if="!suggestion.getSuggestionToken().isFunctionToken()">
+        <span ng-bind-html="suggestion.getMetaInfoHtml()"></span>
+    </span>
+    <div ng-if="!!suggestion.getSuggestionToken().isFunctionToken()"
+          ng-init="helpData = suggestion.getHelpDataForFunctionSuggestion()"
+          class="bk-suggestion-examples">
+        <div ng-bind-html="helpData.helpText" class="bk-help-text"></div>
+        <div class="bk-examples-list" ng-if="!!helpData.fixedExample || !!helpData.queryExample">
+            <div>{{strings.Examples}}</div>
+            <ul>
+                <li ng-if="!!helpData.fixedExample">
+                    <span ng-repeat="token in helpData.fixedExample">
+                        <span>{{ token.value }}</span>
+                        <span ng-switch="!!token.spaceAfter">
+                            <span ng-switch-when="true">&nbsp;</span>
+                        </span>
+                    </span>
+                </li>
+                <li ng-if="!!helpData.queryExample">
+                    <span ng-repeat="token in helpData.queryExample">
+                        <span>{{ token.value }}</span>
+                        <span ng-switch="!!token.spaceAfter">
+                            <span ng-switch-when="true">&nbsp;</span>
+                        </span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</span>

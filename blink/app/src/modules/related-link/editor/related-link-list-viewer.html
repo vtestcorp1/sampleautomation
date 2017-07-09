@@ -1,0 +1,29 @@
+<div class="bk-related-link-viewer-component">
+<div ng-if="!!$ctrl.isValid">
+    <div class="bk-related-link-viewer" ng-if="!$ctrl.inEditorMode">
+        <div class="bk-related-link-list">
+            <metadata-list-page bk-ctrl="$ctrl.relatedLinkListController"
+                                class="bk-vertical-flex-container-sized">
+            </metadata-list-page>
+        </div>
+        <bk-secondary-button
+                text="{{strings.relatedLink.createLink }}"
+                ng-click="$ctrl.showEditorComponent()"
+                class="bk-add-related-link-button"
+                icon="bk-style-icon-small-plus">
+        </bk-secondary-button>
+    </div>
+    <bk-related-link-editor
+            ng-if="!!$ctrl.inEditorMode"
+            bk-ctrl="$ctrl.editorComponent">
+    </bk-related-link-editor>
+</div>
+<div ng-if="!$ctrl.isValid" class="bk-no-content">
+    <div class="bk-no-content-icon"></div>
+    <div class="bk-no-content-label">
+        {{ $ctrl.emptyMessage }}
+    </div>
+</div>
+</div>
+
+

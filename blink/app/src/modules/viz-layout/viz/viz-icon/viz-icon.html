@@ -1,0 +1,13 @@
+<div class="bk-viz-icon-wrapper" ng-switch="vizTypePanel">
+    <div ng-switch-when="true">
+        <div class="bk-viz-icon-button">
+            <div class="bk-viz-icon" ng-class="getIconClass()"></div>
+        </div>
+    </div>
+    <div ng-switch-when="false">
+        <bk-icon-button icon="{{ getIconClass() }}"
+                        is-disabled="!vizTypeSelectorModel.isVizTypeSupported(vizType)"
+                        is-selected="vizTypeSelectorModel.isCurrentType(vizType)"
+                        class="bk-viz-icon-button"></bk-icon-button>
+    </div>
+</div>

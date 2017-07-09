@@ -1,0 +1,11 @@
+<div class="bk-chart-config-range">
+    <div class="bk-chart-config-range-title">{{$ctrl.title}}</div>
+    <input class="bk-chart-config-range-start-value"
+           ng-model="$ctrl.start"
+           placeholder="{{strings.start}}"
+           ng-change="$ctrl.onChange()">
+    <input class="bk-chart-config-range-end-value"
+           ng-model="$ctrl.end"
+           placeholder="{{strings.end}}"
+           ng-change="$ctrl.onChange()">
+</div>

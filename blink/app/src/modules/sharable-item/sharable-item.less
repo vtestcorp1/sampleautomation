@@ -1,0 +1,302 @@
+@import '/resources/css/import.less';
+
+
+.bk-missing-underlying-label {
+    display: inline-block;
+    position: absolute;
+    padding: 0 10px;
+    top: 10px;
+    left: 50%;
+    margin-left: -300px;
+    width: 556px;
+    height: 20px;
+    background-color: #ffef80;
+    font-size: 11px;
+    text-align: center;
+
+    .bk-close {
+        margin-top: 0px;
+        margin-right: -5px;
+        font-size: 16px;
+        color: gray;
+    }
+}
+
+.bk-sharable-item {
+    .flex-grow-shrink-basis(1, 1, 0px);
+    .flex(row);
+
+    @sage-data-expand-btn-width: @sage-height + 20px;
+    @sage-data-width-collapsed: 2 * @sage-bar-margin + @sage-data-expand-btn-width;
+    @sage-data-width-expanded: 220px;
+    @comment-panel-width-expanded: 220px;
+    @comment-panel-width-collapsed: 0px;
+    @content-minimum-width: 500px;
+
+    .bk-sage-data-container {
+        .flex(column);
+        .flex-grow-shrink-basis(0, 1, @sage-data-width-expanded);
+
+        @media @mobile, @tablet {
+            display: none;
+        }
+
+        z-index: @sage-data-container-z-index;
+        .animation-delay(0.2s);
+        .animation-duration(0.3s);
+        .animation-fill-mode(both);
+        .animation-name(fade-in-left);
+        .transition(~"all 100ms ease-in");
+
+        &.show {
+            .flex-important(column);
+        }
+        .rg-right span {
+            border: none;
+        }
+    }
+
+    &.bk-with-sage-data {
+        .bk-sage-data-container {
+            min-width: @sage-data-width-expanded;
+            max-width: 40%;
+            .transition(~"width 200ms ease-out");
+
+            .bk-sage-data {
+                .flex-grow-shrink-basis(1, 1, auto);
+                z-index: @sage-data-columns-z-index;
+            }
+        }
+    }
+
+    .bk-comment-panel-container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: @comment-panel-width-collapsed;
+        height: @comment-panel-width-collapsed;
+        .animation-delay(0.2s);
+        .animation-duration(0.3s);
+        .animation-fill-mode(both);
+        .animation-name(fade-in-right);
+        .transition(~"all 100ms ease-in");
+    }
+
+    &.bk-with-comment-panel {
+        .bk-comment-panel-container {
+            width: @comment-panel-width-expanded;
+            bottom: 0;
+            height: auto;
+            z-index: @comment-panel-z-index;
+            .box-shadow(1px 0 3px @bg-shadow-faint);
+            .transition(~"width 200ms ease-out");
+
+            .bk-comment-panel {
+                .animation-delay(0.1s);
+                .animation-duration(0.2s);
+                .animation-fill-mode(both);
+                .animation-name(fade-in);
+            }
+        }
+
+        .bk-sharable-item-inner {
+            right: @comment-panel-width-expanded;
+        }
+    }
+
+    @DOCUMENT_MARGIN: 20px;
+    @DOCUMENT_MARGIN_TOP: 18px;
+    @THREE_D_SHIM_HEIGHT: 8px;
+    @SHARABLE_TITLE_TOP_MARGIN: 25px;
+    @SHARABLE_TITLE_LEFT_MARGIN: 25px;
+    @SHARABLE_TITLE_LABEL_HEIGHT: 20px;
+    @SHARABLE_TITLE_NAME_HEIGHT: 22px;   // Added 2px to line height due to the content-editable border of 1px.
+    .bk-sharable-item-inner {
+        .bk-vertical-flex-container-sized;
+        .bk-margin-all-20;
+        .transition(~"all 100ms ease-out");
+
+        // & here represents the parent classes -> .bk-sharable-item .bk-sharable-item-inner
+        //Refer this link for explanation: http://stackoverflow.com/questions/17286742/less-css-is-it-possible-to-get-a-parents-parent
+        .bk-sharable-item-pinboard & {
+            bottom: 0;
+            margin: 0;
+        }
+
+        &.bk-with-sage-bar {
+            bottom: 2 * @DOCUMENT_MARGIN_TOP + @sage-height + 22px;
+        }
+    }
+
+    .bk-sharable-item-container {
+        .bk-vertical-flex-container-sized;
+        .flex-justify(center);
+
+        .bk-sharable-item-pinboard & {
+            margin: 0;
+        }
+
+        &.bk-scale-up-animation {
+            .animation-duration(0.4s);
+            .animation-fill-mode(both);
+            .animation-name(fade-in-entry);
+        }
+
+        &.unsaved-document{
+            .unsaved-doc {
+                color: #979faf;
+                font-style: italic;
+            }
+        }
+
+        .bk-sharable-content-container {
+            .bk-vertical-flex-container-sized;
+
+            .bk-sharable-item-content-container {
+                .bk-vertical-flex-container-sized;
+            }
+        }
+
+        .sharable-item-panel {
+            .flex-grow-shrink-basis(0, 0, 70px);
+            .flex(row);
+            .flex-align(center);
+
+            .bk-control-panel-expiration {
+                .bk-horizontal-flex-content-sized;
+                display: inline-block;
+                position: relative;
+                padding-left: 10px;
+            }
+
+            .bk-sharable-item-title {
+                .bk-horizontal-flex-container-sized;
+                display: inline-block;
+                position: relative;
+                z-index: 3;
+                .bk-document-title();
+            }
+
+            .bk-chart-selector-button {
+                display: inline-block;
+            }
+
+            .bk-control-panel-item {
+                .flex-grow-shrink-basis(0, 0, auto);
+                margin-left: 12px;
+                .bk-pinboard-launcher {
+                    .dib;
+                    margin-right: 8px;
+                }
+                .bk-comment-btn {
+                    background-image: url('/resources/img/icons-menu.png');
+                    background-position: -54px -53px;
+                }
+                &.bk-left-aligned {
+                    .flex-grow-shrink-basis(1, 1, auto);
+                }
+                &:last-child {
+                    margin-right: 20px;
+                }
+            }
+        }
+
+        .ribbon-item {
+            background-color: @white1;
+            padding-top: 15px;
+            .flex-grow-shrink-basis(0, 0, auto);
+        }
+
+        .content-container {
+            overflow-y: scroll; // Always have space for scrollbar to aid calculations.
+            overflow-x: hidden;
+            .bk-vertical-flex-container-sized;
+
+            .sharable-item-content {
+                position: relative;
+                .bk-vertical-flex-container-sized;
+            }
+        }
+    }
+
+    .sharable-item-content {
+        .bk-vertical-flex-container-sized;
+    }
+
+    .bk-worksheet-table {
+        .bk-vertical-flex-container-sized;
+        margin: 20px;
+        margin-top: 10px;
+
+    }
+
+    .bk-progress-indicator {
+        display: inline-block;
+        position: fixed;
+        top: @sage-height + @DOCUMENT_MARGIN_TOP;
+        left: 50%;
+        z-index: @overlay-zindex;
+        padding: 2px 10px;
+        background-color: @h-black-transparent;
+        color: white;
+        font-size: 12px;
+        font-family: @font-family-bold;
+
+        .bk-moving-dots {
+            display: inline-block;
+            position: relative;
+            width: 20px;
+            height: 4px;
+
+            .bk-dot {
+                position: absolute;
+                left: 0;
+                width: 4px;
+                height: 4px;
+                border-radius: 5px;
+                background-color: rgba(255, 255, 255, 0.5);
+                .animation-duration(0.4s);
+                .animation-iteration-count(infinite);
+                .transition-timing(linear);
+
+
+                &.dot1 {
+                    .animation-name(reveal);
+                }
+
+                &.dot2 {
+                    left: 1px;
+                    .animation-name(slide);
+                }
+
+                &.dot3 {
+                    left: 7px;
+                    .animation-name(slide);
+                }
+
+                &.dot4 {
+                    left: 14px;
+                    .animation-name(reveal);
+                    .animation-direction(reverse);
+                }
+            }
+        }
+    }
+
+    .bk-query-latency-visualizer-container {
+        position: fixed;
+        z-index: @overlay-zindex;
+        bottom: 20px;
+    }
+}
+
+// When the sharable item is embedded (currently only
+// pinboards can be embedded) we want to let the
+// embedder control the background color of the
+// embed. Box-shadow has to be removed to make
+// it aesthetically acceptable with transparent
+// background.
+.bk-embedded .bk-sharable-item-container {
+    background-color: transparent;
+    box-shadow: none;
+}

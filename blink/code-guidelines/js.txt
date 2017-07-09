@@ -1,0 +1,142 @@
+/**
+ * Copyright: ThoughtSpot Inc. 2012-2015
+ * Author: Shashank Singh (sunny@thoughtspot.com)
+ *
+ * @fileoverview Guidelines for ThoughtSpot JS code. Team members are supposed to follow these guidelines
+ *               for all new code. If you need to do something that significantly deviates from the guidelines
+                 please please add a comment in the code with the justification.
+ */
+
+
+
+Classes:
+----------------
+
+1. Write as many classes as needed. Encapsulation is good.
+
+2. Basic class structure:
+
+function ClassName(constructor_param_1, constructor_param_2,...,constructor_param_n) {
+    ClassName.__super.call(this, constructor_param_1, ....) // or ClassName.__super.apply(this, arguments);
+    this.classProperty1 = constructor_param_1;
+    ...
+}
+util.inherits(ClassName, BaseClassName);
+
+ClassName.prototype.newMethodInClasss = function () {
+   ...
+}
+
+3. Almost always classes are defined as:
+
+
+blink.app.factory('ClassName', ['util', ...,
+function (util, ...) {
+
+    function ClassName(constructor_param_1...) {
+        ....
+    }
+    ...
+
+    return ClassName;
+}]);
+
+
+4. Don't define private methods on prototype (no ClassName.prototype._methodInClass).
+
+5. Keep body of prototype methods as lightweight as possible, delegate logic to private functions in factory scope.
+   Functional is better than procedural. The more the number of lines of code you have in the body of the proto
+   method the more the chance that you will end up writing non functional code.
+
+Worse way:
+
+ClassName.prototype.newMethodInClasss = function () {
+   var abc = ...
+   var efg = ..
+   ...
+   ...
+   ...
+   this.xyz = ...
+}
+
+Better way:
+
+function aStatelessFunction(<only_the_state_this_function_needs>) {
+    ....
+    return ...
+}
+
+ClassName.prototype.newMethodInClasss = function () {
+   this.xyz = aStatelessFunction(this.abc, this.efg...)
+}
+
+6. Keep the private functions as stateless as possible (and more 'functional')
+
+
+
+Factories/Services
+-----------------------
+
+blink.app.factory('SomeService', ['util', ...,
+function (util, ...) {
+
+   function privateFunction (param1, param2,..., paramM) {
+
+   }
+
+   function functionToExport(param1, param2,..., paramN) {
+
+   }
+
+   // bundle all the exported functions at the end of the file for easy reference
+   return {
+       functionToExport1: functionToExport1,
+       functionToExport2: functionToExport2
+       ....
+   };
+}]);
+
+Function Parameters
+---------------------------
+
+1. If the parameter names during method/function definition are too long and you need to break down
+   a function declaration into multiple lines use this style:
+
+   function aFunctionName(param1WithARatherLongNameOrExpression, param2WithARatherLongNameOrExpression
+       param3WithARatherLongNameOrExpression, param4WithARatherLongNameOrExpression,
+       param5WithARatherLongNameOrExpression) {
+
+       ....
+
+   }
+
+2. If the parameter names during method/function invocation are too long and you need to break down
+   a function call into multiple lines use this style:
+
+   aFunctionName(
+       param1WithARatherLongNameOrExpression,
+       param2WithARatherLongNameOrExpression,
+       param3WithARatherLongNameOrExpression,
+       ...
+   )
+
+
+Angular Templates
+----------------------
+
+1. Minimize logic spill into templates, move as much code to JS as possible.
+
+   For example, replace this:
+
+       <div ng-show="someScopeVar.firstBoolean() && anotherScopeVar.secondBoolean()"></div>
+
+   with:
+       <div ng-show="shouldShowXYZ()"></div> in HTML
+
+       and
+
+       scope.shouldShowXYZ = function () {
+           return scope.firstBoolean() && scope.secondBoolean();
+       }
+
+       in directive code.

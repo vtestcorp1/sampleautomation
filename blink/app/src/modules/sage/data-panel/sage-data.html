@@ -1,0 +1,34 @@
+<div class='bk-sage-data' ng-class="[panel.getTopLevelCssClass(), panel.getExpansionClass()]"
+     blink-on-animation-end="onPanelAnimationDone()">
+    <div class="bk-header-container" ng-click="onHeaderClick()">
+        <div class="header-text">{{getHeaderText()}}</div>
+        <div class="header-arrow {{getHeaderIconClass()}}"></div>
+    </div>
+    <div uib-popover-template="'addSourcesPopover.html'"
+         ng-if="showAddSourcesPopover"
+         popover-is-open="true"
+         popover-append-to-body="true"
+         popover-placement="right"
+         popover-class="bk-add-sources-popover">
+    </div>
+    <div ng-repeat="panelComponent in panel.getComponents()"
+         class="bk-sage-data-component {{ panelComponent.getComponentClass() }}">
+        <div ng-if="panelComponent.isOutOfFlow()"
+             class="bk-out-of-flow-panel-component"
+             ng-include="panelComponent.getTemplateUrl()">
+        </div>
+        <div ng-if="!panelComponent.isOutOfFlow()"
+             class="bk-in-flow-panel-component"
+             ng-include="panelComponent.getTemplateUrl()">
+        </div>
+    </div>
+
+    <script type="text/ng-template" id="addSourcesPopover.html">
+        <div blink-overlay="hideAddSourcesPopover()">
+            <div class="bk-header">{{ strings.dataPanel.popover.ADD_SOURCES }}</div>
+            <div class="bk-popup-text">
+                {{ strings.dataPanel.popover.SELECT_DATA_SOURCES }}
+            </div>
+        </div>
+    </script>
+</div>

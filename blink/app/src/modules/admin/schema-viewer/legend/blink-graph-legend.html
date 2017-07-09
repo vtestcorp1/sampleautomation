@@ -1,0 +1,21 @@
+<div class='chart-legend' ng-class="{
+     'reduced' : $ctrl.reduced
+    }">
+    <a class="bk-close-legend" ng-click="$ctrl.reduceClicked()">
+        {{$ctrl.legendActionText}}
+    </a>
+    <h3>{{$ctrl.title}}</h3>
+    <div ng-repeat="(key, value) in $ctrl.legendColors" class="legend-content">
+        <div class="legend-color" ng-style="{ 'background-color' : value }">
+        </div>
+        <div class="legend">
+            {{key}}
+        </div>
+    </div>
+    <div ng-repeat="(key, value) in $ctrl.legendPictures" class="legend-content">
+        <img class="legend-picture" ng-src="{{value}}">
+        <div class="legend">
+            {{key}}
+        </div>
+    </div>
+</div>

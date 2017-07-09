@@ -1,0 +1,43 @@
+<div class="bk-column-metrics-widget">
+    <div class="bk-column-metric-add" ng-if="$ctrl.isEditable">
+        <span class="bk-icon bk-clickable bk-style-icon-small-plus" ng-click="$ctrl.addNewMetric()"></span>
+    </div>
+    <div class="bk-column-metrics-list" ng-switch="$ctrl.hasNoMetrics()">
+        <div class="bk-column-metrics-defined" ng-switch-when="false">
+            <div class="bk-column-metrics">
+                <div ng-if="!$ctrl.isEditable" class="bk-filter-read-only bk-column-metric">
+                    {{strings.filtersMessages.READONLY}}
+                </div>
+                <div ng-repeat="metric in $ctrl.metricsEditBuffer.row" class="bk-column-metric">
+                    <div class="bk-numeric-range"
+                         ng-class="{'bk-numeric-range-invalid': $ctrl.rowHasValidationErrors($index)}">
+                          <span class="bk-numeric-metric-value bk-numeric-metric-value-min"
+                                ng-class="{'bk-numeric-range-invalid': $ctrl.cellHasValidationErrors($index, 0)}">
+                              <input type="text" ng-model="metric.range.min" placeholder=">=" ng-disabled="!$ctrl.isEditable">
+                          </span>
+                        <span class="bk-numeric-metric-value bk-numeric-metric-value-max"
+                              ng-class="{'bk-numeric-range-invalid': $ctrl.cellHasValidationErrors($index, 1)}">
+                              <input type="text" ng-model="metric.range.max" placeholder="<" ng-disabled="!$ctrl.isEditable">
+                          </span>
+                    </div>
+                    <div class="bk-clickable bk-metric-color">
+                        <color-picker ng-model="metric.color"
+                                      fill="true"
+                                      not-editable="!$ctrl.isColorPickerEditable()"
+                                      class="bk-metric-color-picker">
+                        </color-picker>
+                    </div>
+                    <div ng-if="$ctrl.isEditable" class="bk-metric-remove-button">
+                        <span class="bk-icon bk-clickable bk-style-icon-cross" ng-click="$ctrl.removeMetric(metric)"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bk-column-metric-validation-error-message"
+                 ng-if="!!$ctrl.validationErrors">{{$ctrl.validationErrors.message}}</div>
+        </div>
+        <div class="bk-column-metrics-not-defined" ng-switch-when="true">
+            <div class="bk-column-metrics-add-new-message">{{ $ctrl.getNoMetricsDefinedMessage() }}</div>
+        </div>
+    </div>
+</div>

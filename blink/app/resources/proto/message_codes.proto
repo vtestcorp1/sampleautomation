@@ -1,0 +1,82 @@
+// Copyright: ThoughtSpot Inc. 2015
+// Author: Vijay Ganesan (vijay@thoughtspot.com)
+
+package common;
+option java_package = "com.thoughtspot.common";
+option go_package = "message_codes_pb";
+
+// MessageCode
+//
+// Published message code with associated information used to generate
+// documentation and translated application messages.
+//
+// Every message code has the folloing parts:
+// - a unique code of the form "TS-<code>" where code is a number in the
+// range [0 - 99999].
+// - a severity of the message e.g. Error, Warning
+// - Summary and Detail portions which are text describing the
+// message. Summary is one line of text providing a high-level definition of
+// the message. Detail is one or more lines of text providing a detailed description
+// of the message.
+// - Both Summary and Detail messages can be parameterized using the {n} notation e.g
+// Object with Id: {0} of type: {1} not found.
+// - Action text that is one or more lines of text describing what action the user
+// seeing the message could perform.
+//
+// Messages could be internal or external. External messages are seen by end users.
+// Internal messages are private to TS components and not seen the end users.
+// External message texts are translated while internal messages are not.
+//
+// See this doc for more details:
+// https://docs.google.com/a/thoughtspot.com/document/d/
+// 1Pvc7AAHRFzH9KKnOqosG8RsWshsWY9Pb1HNWp3S_28w/edit?usp=sharing
+//
+// Next available tag: 7
+//
+// swagger:model MessageCode
+message MessageCode {
+  enum Severity {
+    INFO = 0;     // Informational message; no loss of application functionality
+    WARNING = 1;  // Warning message; no loss of application functionality
+    ERROR = 2;    // Loss of specific application functionality but system generally available
+    FATAL = 3;    // System completely unavailable
+  }
+  optional Severity severity = 1 [default = ERROR];
+  optional int32 code = 2;      // The final published code is of the form "TS-<code>"
+  optional string summary = 3;
+  optional string detail = 4;
+  optional string action = 5;
+  optional bool external = 6;
+}
+
+// Set of all published message codes for a particular TS component.
+// This inludes both internal and external messages.
+// Customer documentation will be generated based on the external message
+// codes in this set.
+message MessageCodeSet {
+  repeated MessageCode message_code = 1;
+}
+
+// Context-specific message code definition. This is used in inter-component
+// messaging where in addition to a code, the following context-specific
+// information is sent:
+// - Incident Id - GUID that can be used to trace a specific incident across
+// components in the logs
+// - Trace Id - GUID that can be used to locate trace message in the trace
+// vault. A single incident id can correspond to one or more trace ids.
+// - Debug message which contains verbose details of the error specific to the
+// incident. This is typically used for internal debugging and never seen by
+// the end user.
+// - Positional parameters that are bind values for parameterized messages
+//
+// Note that code is a unique identifier of a MessageCode within the entire stack.
+//
+// Next avaiable tag: 6
+message ContextMessageCode {
+  optional int32 code = 1;
+  optional string incident_id_guid = 2;
+  optional string trace_id_guid = 3;
+  optional string debug = 4;
+  repeated string parameter = 5;
+}
+

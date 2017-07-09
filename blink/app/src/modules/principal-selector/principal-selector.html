@@ -1,0 +1,17 @@
+<div class="bk-principal-selector">
+    <!-- List of individual or group -->
+    <bk-permissions-list bk-ctrl="$ctrl.permissionsListComponent"></bk-permissions-list>
+    <!-- The add user section can be expanded or collapsed and is used to give permissions to new users / groups -->
+    <div class="bk-add-principals">
+        <div class="bk-add-principals-header"
+             ng-click="$ctrl.toggleAddPrincipalSection()">
+            <span class="bk-plus-icon bk-style-icon-small-plus"></span>
+            <span class="bk-add-principals-title">{{$ctrl.strings.addRecipients}}</span>
+        </div>
+        <div class="bk-add-principals-body">
+            <bk-add-principal bk-ctrl="$ctrl.addPrincipalComponent"></bk-add-principal>
+            <hr/>
+            <bk-add-email bk-ctrl="$ctrl.addEmailComponent"></bk-add-email>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="bk-long-column-names-analyzer bk-analyzer">
+    <div class="bk-analyzer-body">
+        <div class="bk-analyzer-description">
+            {{strings.analyze.longColumnNamesAnalyzer.description}}{{$ctrl.recommendedLength}}.
+        </div>
+        <div class="bk-analyzer-content">
+            <div class="bk-long-column-names"
+                 ng-repeat="column in $ctrl.longColumns">
+                <div class="bk-analyzer-input">
+                    <input type="text"
+                           id="long-column-name-{{column.originalName}}"
+                           class="bk-input"
+                           value="column.newName"
+                           ng-model="column.newName"
+                           ng-change="$ctrl.onChange(column)"/>
+                </div>
+                <div class="bk-analyzer-status">
+                    <div class="bk-analyzer-status-{{column.status}}">
+                        {{column.newName.length}}/{{$ctrl.recommendedLength}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="bk-import-success">
+    <h1 class="bk-import-success-text">
+        <div class="bk-success-icon"></div>
+{{strings.Congratulations}}
+</h1>
+    <br>
+    <div class="bk-imported-rows-number">
+        {{ importSchemaStats.queriesExecuted }}
+    </div>
+    <div class="bk-imported-rows-text">
+{{strings.statements_were}}
+</div>
+
+    <div class="bk-import-action-buttons">
+        <bk-secondary-button text="{{ strings.createSchema.SAVE_COMMANDS }}"
+                             blink-tooltip={{strings.createSchema.SAVE_COMMANDS_TIP}}
+                             ng-click="dumpSql()"></bk-secondary-button>
+        <bk-secondary-button text="{{ strings.createSchema.VIEW_TABLES }}"
+                             ng-click="goToTables()"></bk-secondary-button>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+<ul class="bk-clause-template">
+    <span>
+        {{ strings.regionCount.assign({
+        topKeyword: query.topRepresentation.topKeyword.toLowerCase(),
+        topCount: query.topRepresentation.topCount
+             })
+        }}
+    </span>
+    <span ng-repeat="topColumn in query.topRepresentation.topColumns">
+        {{ getSequenceSymbol($index, query.topRepresentation.topColumns) }}
+        <span class="bk-output-column bk-text-{{getColumnColor(topColumn)}}"
+          blink-tooltip="{{ topColumn.table.name }}">{{ topColumn.name.pluralize() }}</span>
+    </span>
+    {{strings.ranked_by}}
+    <span ng-repeat="rankedByColumn in query.topRepresentation.rankedByColumns">
+        {{ getSequenceSymbol($index, query.topRepresentation.rankedByColumns) }}
+        <span class="bk-output-column bk-text-{{getColumnColor(rankedByColumn.column)}}"
+              blink-tooltip="{{ rankedByColumn.column.table.name }}">
+            {{ rankedByColumn.column.name }}
+        </span>
+    </span>
+    <span ng-if="query.topRepresentation.groupLimitColumns.length > 0">
+        {{strings.for_each}}
+        <span ng-repeat="forEachColumn in query.topRepresentation.groupLimitColumns">
+            {{ getSequenceSymbol($index, query.topRepresentation.groupLimitColumns) }}
+            <span class="bk-output-column bk-text-{{getColumnColor(forEachColumn)}}"
+                  blink-tooltip="{{ forEachColumn.table.name }}">
+                {{ forEachColumn.name }}
+            </span>
+        </span>
+    </span>
+</ul>
+

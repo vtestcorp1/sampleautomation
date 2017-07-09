@@ -1,0 +1,142 @@
+.bk-label-panel {
+
+    .bk-label {
+        .flex(row);
+        .flex-align(center);
+
+        .label-icon {
+            min-width: 15px;
+            .flex-order(1);
+
+            .bk-label-color {
+                display: inline-block;
+                margin-top: -2px;
+                width: 7px;
+                height: 7px;
+                border-radius: 7px;
+                vertical-align: middle;
+                border: 2px solid transparent;
+                background-color: none;
+            }
+        }
+
+        .bk-label-name {
+            .flex-order(2);
+            .flex-grow(1);
+            font-size: 13px;
+            color: @gray-secondary-text;
+            max-width: 99px;
+
+            .bk-editable {
+                input {
+                    height: 16px;
+                    padding: 0 3px 0 3px;
+                    border-radius: 1px;
+                    .text-size-default;
+                    box-shadow: none;
+                    display: inline-block;
+                }
+
+                input:hover {
+                    border: 1px solid transparent;
+                }
+
+                input:focus {
+                    padding: 2px;
+                    border: 1px solid @blue-default;
+                    min-width: 90px;
+                }
+            }
+
+            .bk-style-icon-edit-small:before {
+                color: @gray-main-text;
+                font-size: 18px;
+                vertical-align: middle;
+            }
+        }
+
+        .dropdown {
+            .flex-order(3);
+            min-width: 26px;
+            position: static;
+            .bk-padding-left-5;
+            .dropdown-menu {
+                border-radius: 0px;
+                left: auto;
+                top: auto;
+                margin: 0;
+                li {
+                    a {
+                        color: @h-dark-text !important;
+                        .font-family-regular();
+                        font-size: 13px;
+                        &:hover {
+                            background-image: none;
+                            background-color: @gray-hover;
+                        }
+                    }
+                }
+            }
+        }
+
+        .dropdown:not(.bk-sticky) {
+            visibility: hidden;
+        }
+
+        &.bk-active {
+            .bk-label-name {
+                .font-family-semibold;
+            }
+        }
+
+        &:hover {
+            background-color: @gray-hover;
+            .dropdown {
+                visibility: visible;
+            }
+        }
+    }
+
+    .bk-add-new-item {
+        .bk-padding-left-10;
+
+        .bk-spinner {
+            .bk-padding-left-10;
+        }
+
+        .bk-add-label {
+            display: block;
+            margin-top: 5px;
+            font-size: 12px;
+            font-family: @font-family-semibold;
+            font-weight: 800;
+            color: @gray-secondary-text;
+
+            &:hover {
+                color: @blue-default;
+                text-decoration: underline;
+            }
+
+            .bk-icon {
+                float: left;
+                margin-left: -2px;
+                margin-right: 2px;
+            }
+        }
+
+        .bk-input {
+            max-width: 90%;
+        }
+        .bk-input-error {
+            margin-bottom: 0px;
+            border: solid 1px @red-default;
+        }
+
+        .bk-error-message {
+            font-size: 10px;
+            font-family: @font-family-semibold;
+            font-weight: 800;
+            color: @red-default;
+        }
+    }
+}

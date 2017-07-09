@@ -1,0 +1,131 @@
+.pivot-table {
+    .flex(column);
+    position: absolute;
+    overflow:hidden;
+    height: 100%;
+    width: 100%;
+    .br-grey3-right-bottom-left;
+
+    .pivot-columns {
+        .flex-grow-shrink-basis(0,0, 48px);
+        margin-left: 110px;
+        .flex(row);
+        .flex-justify(center);
+
+        li {
+            .pivot-header-item;
+            height: 22px;
+        }
+    }
+
+    .pivot-rows {
+        li {
+            .pivot-header-item;
+            height: 32px;
+        }
+    }
+
+    .pivot-header-item {
+        .pivot-header-name {
+            display: inline-block;
+            max-width: 120px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        .bk-options {
+            display: inline-block;
+            .bk-style-icon-table-column-options;
+            font-size: 12px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    }
+
+    .pivot-content {
+        .flex-grow-shrink-basis(1,1,0);
+        position: relative;
+        overflow: hidden;
+
+        .pivot-inner {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .dx-area-field-content {
+        visibility: hidden;
+    }
+
+    .dx-pivotgrid-fields-container .dx-area-field.dx-area-box {
+        padding: 17px 5px;
+        max-width: 150px;
+        border: none;
+        background-color: inherit;
+        cursor: move;
+
+        &:hover {
+            background-color: @grey3;
+        }
+    }
+
+    .dx-pivotgrid .dx-data-header,
+    .dx-pivotgrid .dx-column-header,
+    .dx-pivotgrid .dx-area-description-cell.dx-pivotgrid-background {
+        background-color: @grey1;
+    }
+
+    .dx-pivotgrid.dx-row-lines .dx-pivotgrid-area td {
+        border-top: 1px solid @grey2;
+    }
+
+    .dx-pivotgrid .dx-pivotgrid-area td {
+        color: @grey5;
+    }
+
+    .dx-pivotgrid .dx-bottom-border,
+    .dx-pivotgrid .dx-area-description-cell,
+    .dx-pivotgrid .dx-area-column-cell {
+        .br-grey3-bottom;
+    }
+
+    .dx-pivotgrid .dx-pivotgrid-fields-area-head td {
+        padding: 0 2px;
+    }
+
+    .dx-pivotgrid .dx-pivotgrid-area-data tbody td {
+        border-left: 1px solid @grey2;
+        color: @grey7;
+    }
+
+    .dx-pivotgrid .dx-pivotgrid-vertical-headers td {
+        border-right: 1px solid @grey2;
+    }
+
+    .dx-pivotgrid .dx-pivotgrid-border .dx-filter-header,
+    .dx-pivotgrid .dx-pivotgrid-border .dx-area-column-cell,
+    .dx-pivotgrid .dx-pivotgrid-border .dx-column-header,
+    .dx-pivotgrid .dx-pivotgrid-border .dx-filter-header,
+    .dx-pivotgrid .dx-pivotgrid-border .dx-area-data-cell {
+        .br-grey3-right;
+    }
+
+    .dx-widget {
+        .font-family-regular;
+    }
+
+    .dx-data-header {
+        .br-grey3-right;
+        .br-grey3-bottom;
+    }
+
+    .pivot-header-item {
+        .font-family-semibold;
+        .text-size-small;
+    }
+
+    .dx-grandtotal {
+        .font-family-semibold;
+    }
+}

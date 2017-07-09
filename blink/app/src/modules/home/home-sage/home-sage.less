@@ -1,0 +1,45 @@
+
+@import '/resources/css/import.less';
+@import '/resources/css/ui-styles.less';
+
+.bk-home-sage {
+    margin: 0 120px;
+
+    @media @bk-phone {
+        .flex-grow-shrink-basis(0, 0, 80px);
+    }
+
+    @media @bk-tablet {
+        .flex-grow-shrink-basis(0, 0, 100px);
+    }
+
+    @media @bk-desktop, @bk-widescreen {
+        .flex-grow-shrink-basis(0, 0, 190px);
+    }
+
+    .flex(column);
+    .flex-justify(center);
+
+    .bk-home-sage-bar {
+        .bk-padding-horizontal-20;
+        .bk-padding-vertical-10;
+        .flex(row);
+        .font-family-regular;
+        .text-size-larger;
+        .color-grey8;
+        .br-radius-3;
+        .br-grey3;
+        border-width: 2px;
+        .bk-cursor-text;
+
+        .bk-sage-placeholder {
+            .bk-padding-left-15;
+        }
+
+        &:hover {
+            .br-grey4;
+            border-width: 2px;
+            .transition(~"all .4s ease-out");
+        }
+    }
+}

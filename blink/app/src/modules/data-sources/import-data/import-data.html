@@ -1,0 +1,70 @@
+<div class="bk-import-data-workflow">
+    <div blink-loading-indicator-overlay></div>
+
+    <div class="bk-wizard-header">
+        <div class="bk-wizard-header-item"
+             ng-repeat="step in userDataWizard.steps">
+            <div ng-class="{'bk-current': userDataWizard.isCurrentStep($index),
+                                       'bk-done': userDataWizard.isCompletedStep($index),
+                                       'bk-future': (!userDataWizard.isCurrentStep($index)
+                                       && !userDataWizard.isCompletedStep($index))}"
+                 class="bk-heading-desc" >
+                <span class="bk-badge">{{$index + 1}}</span>
+                <span class="bk-heading">{{step.title}}</span>
+                <span class="bk-sub-heading" ng-show="step.isOptional">{{strings.OPTIONAL_STEP}}
+                </span>
+            </div>
+            <div class="bk-arrow">
+                <div class="bk-forward-arrow" ng-if="showForwardArrow($index)">
+                    <div class="bk-line"></div>
+                    <div class="bk-point"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bk-wizard-step-error row">
+        <div class="span12">
+            <div class="bk-import-error-body" ng-show="!!errorRowMsg">
+                <!-- put your error content here -->
+                {{ errorRowMsg }}
+            </div>
+        </div>
+    </div>
+    <div class="bk-wizard-body row">
+        <div class="span12 bk-wizard-content" ng-include="userDataWizard.getContentUrl()">
+        </div>
+    </div>
+
+    <div class="bk-upload-footer" ng-hide="!!userDataWizard.hideFooterForCurrentStep()">
+        <div class="bk-upload-footer-body">
+            <div class="bk-upload-footer-left">
+                <div ng-include="userDataWizard.getFooterUrl()"></div>
+                <bk-secondary-button text="{{ btnStrings.BACK }}"
+                                     ng-hide="userDataWizard.isCurrentStep(0)"
+                                     ng-click="userDataWizard.goToPreviousStep()"></bk-secondary-button>
+            </div>
+            <div class="bk-wizard-btn-group">
+                <bk-secondary-button text="{{ btnStrings.CANCEL }}"
+                                     ng-click="onCancel()"
+                                     ng-show="isWizardCancellable"></bk-secondary-button>
+                <div class="bk-wizard-button"
+                     data-title="{{ userDataWizard.getProceedInstructions() }}">
+                    <bk-primary-button text="{{ nextBtnLabel }}"
+                                       is-disabled="userDataWizard.isNextDisabled()"
+                                       class="bk-next-button"
+                                       ng-hide="userDataWizard.isLastStep()"
+                                       ng-click="userDataWizard.goToNextStep()"></bk-primary-button>
+                </div>
+                <div class="bk-wizard-button">
+                    <bk-primary-button text="{{ btnStrings.IMPORT }}"
+                                       ng-if="userDataWizard.isLastStep()"
+                                       is-disabled="isImportDisabled()"
+                                       blink-tooltip="{{getImportTooltip()}}"
+                                       data-placement="right"
+                                       ng-click="startImportDataWorkflow()"
+                                       class="bk-btn-finish"></bk-primary-button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

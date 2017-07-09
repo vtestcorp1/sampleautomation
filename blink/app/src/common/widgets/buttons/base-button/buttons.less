@@ -1,0 +1,419 @@
+// Copyright ThoughtSpot Inc. 2012-2016
+// Priyanshi Deshwal (priyanshi@thoughtspot.com)
+//
+// Button types
+//
+// @fileoverview Mixins to create colored buttons and definition of primary, secondary and icon only buttons
+
+
+/* Content:
+
+=Basic button mixin
+=Colored button mixin
+=Colored buttons
+=Primary Button
+=Secondary Button
+=Icon Button
+=Old button styles
+
+*/
+
+@button-height: 32px;
+
+/* =Basic button mixin
+*************************************************************/
+
+.bk-button {
+    //layout
+    .flex-inline(row);
+    .flex-justify(space-around);
+    height: @button-height;
+    .bk-padding-horizontal-20;
+
+    //text
+    .font-family-regular;
+    font-size: 14px;
+    line-height: @button-height + 2; // Adding extra 2px to vertically align the text
+    .bk-align-center;
+    .bk-text-no-wrap;
+    .user-select(none);
+
+    //assorted
+    .br-radius-16;
+    .bk-cursor-pointer;
+
+    &.bk-button-text-icon {
+        .bk-padding-horizontal-15;
+    }
+
+    .bk-icons {
+        .bk-padding-right-5;
+        &:before {
+            line-height: 30px;
+        }
+    }
+
+    &.bk-reverse-text-icon {
+        .bk-text {
+            .flex-order(1);
+        }
+        .bk-icons {
+            .flex-order(2);
+            .bk-padding-right-0;
+            .bk-padding-left-5;
+        }
+    }
+}
+
+.bk-button-wrapper {
+    .flex-inline(row);
+    .pr;
+
+    .bk-button-icon-text {
+        .flex-inline(row);
+    }
+
+    .bk-button-body {
+        .flex-inline(row);
+    }
+
+    .bk-button-loading-indicator {
+        .flex-inline(row);
+        .flex-align(center);
+        height: 32px;
+        width: 60px;
+
+        .bk-in-progress {
+            position: relative;
+            height: 8px;
+            left: 16px;
+
+            .bk-dot {
+                position: absolute;
+                left: 0;
+                width: 8px;
+                height: 8px;
+                border-radius: 5px;
+                .bg-grey6;
+                .animation-duration(0.4s);
+                .animation-iteration-count(infinite);
+                .transition-timing(linear);
+
+                &.dot1 {
+                    .animation-name(reveal);
+                }
+
+                &.dot2 {
+                    left: 2px;
+                    .animation-name(slide);
+                }
+
+                &.dot3 {
+                    left: 12px;
+                    .animation-name(slide);
+                }
+
+                &.dot4 {
+                    left: 24px;
+                    .animation-name(reveal);
+                    .animation-direction(reverse);
+                }
+            }
+        }
+    }
+}
+
+/* =Colored buttons mixin
+*************************************************************/
+
+.bk-colored-button(@color: ~'',
+                @hover-color: ~'',
+                @disabled-color: ~'',
+                @selected-color: ~'',
+                @txt-color: ~'',
+                @hover-txt-color: ~'',
+                @disabled-txt-color: ~'',
+                @selected-txt-color: ~'',
+                @br-color: ~'',
+                @hover-br-color: ~'',
+                @disabled-br-color: ~'',
+                @selected-br-color: ~'',
+                @icon-color: ~'',
+                @disabled-icon-color: ~'',
+                @selected-icon-color: ~'') {
+
+    &:extend(.bk-button all);
+
+    background-color: ~"@{@{color}}";
+    color: ~"@{@{txt-color}}";
+    box-shadow: inset 0px 0px 0px 1px ~"@{@{br-color}}";
+
+    &:hover {
+        background-color: ~"@{@{hover-color}}";
+        color: ~"@{@{hover-txt-color}}";
+        box-shadow: inset 0px 0px 0px 1px ~"@{@{hover-br-color}}";
+    }
+
+    &.bk-disabled-button {
+        background-color: ~"@{@{disabled-color}}";
+        color: ~"@{@{disabled-txt-color}}";
+        box-shadow: inset 0px 0px 0px 1px ~"@{@{disabled-br-color}}";
+        .bk-cursor-default;
+
+        .bk-icons {
+            color: ~"@{@{disabled-icon-color}}";
+        }
+    }
+
+    &.bk-selected-button {
+        background-color: ~"@{@{selected-color}}";
+        color: ~"@{@{selected-txt-color}}";
+        box-shadow: inset 0px 0px 0px 1px ~"@{@{selected-br-color}}";
+
+        .bk-icons {
+            color: ~"@{@{selected-icon-color}}";
+        }
+    }
+
+    .bk-icons {
+        color: ~"@{@{icon-color}}";
+    }
+
+    &.bk-borderless-button {
+        border: none;
+    }
+}
+
+/* =Colored buttons
+*************************************************************/
+
+.bk-orange-button {
+    .bk-colored-button(@color: orange2,
+    @hover-color: orange3,
+    @disabled-color: orange1,
+    @txt-color: white1);
+}
+
+.bk-grey-outline-button {
+    .bk-colored-button(@color: white1,
+    @hover-color: grey1,
+    @disabled-color: white1,
+    @txt-color: grey8,
+    @hover-txt-color: grey8,
+    @disabled-txt-color: grey5,
+    @br-color: grey5,
+    @hover-br-color: grey4,
+    @disabled-br-color: grey3,
+    @icon-color: grey5,
+    @disabled-icon-color: grey4);
+}
+
+.bk-grey-outline-icon-button {
+    .bk-colored-button(@color: white1,
+        @hover-color: grey1,
+        @disabled-color: white1,
+        @selected-color: orange2,
+        @br-color: white1,
+        @hover-br-color: grey4,
+        @disabled-br-color: white1,
+        @selected-br-color: orange2,
+        @icon-color: grey8,
+        @disabled-icon-color: grey4,
+        @selected-icon-color: white1);
+}
+
+/* =Primary Button
+*************************************************************/
+
+.bk-primary-button {
+    &:extend(.bk-orange-button all);
+}
+
+/* =Secondary Button
+*************************************************************/
+
+.bk-secondary-button {
+    &:extend(.bk-grey-outline-button all);
+}
+
+/* =Action button dropdown
+*************************************************************/
+
+.bk-action-button-dropdown {
+    &:extend(.bk-grey-outline-button all);
+}
+
+/* =Icon Button
+*************************************************************/
+
+.bk-icons-button {
+    &:extend(.bk-grey-outline-icon-button all);
+
+    width: @button-height;
+    padding: 0;
+    margin: 0;
+
+    .bk-icons {
+        padding: 0;
+    }
+}
+
+/* =Old button styles
+*************************************************************/
+
+.bk-btn {
+    display: inline-block;
+    padding: 8px 12px;
+    line-height: 12px;
+    font-size: 13px;
+    .font-family-bold();
+    border-radius: 3px;
+    border: 1px solid @gray-border;
+    color: @gray-main-text;
+    background-color: @gray-bg;
+    cursor: pointer;
+    .transition(~"background-color 200ms ease-out, border 200ms ease-out");
+
+    &:not(.bk-disabled) {
+        &:hover, &:focus {
+            background-color: @gray-hover;
+            border: 1px solid @gray-border-hover;
+            .box-shadow-inset(0 1px 4px @bg-shadow-faint, inset 0 1px 0 @inner-shadow-faint);
+            .transition(~"background-color 200ms ease-out, border 200ms ease-out");
+        }
+    }
+
+    &.bk-disabled {
+        opacity: 0.5;
+    }
+
+    // not used of anything yet. Might be good to clean it up
+    &.bk-check-btn:before {
+        float: left;
+        margin-top: 1px;
+        height: 10px;
+        content: '';
+    }
+
+    &.bk-btn-full-width {
+        display: block;
+        text-align: center;
+    }
+}
+
+.bk-btn-disabled {
+    display: inline-block;
+    font-size: 13px;
+    line-height: 12px;
+    .font-family-bold();
+    padding: 8px 12px;
+    border-radius: 3px;
+    color: @gray-secondary-text;
+    border: 1px solid @gray-border-faint;
+    cursor: default;
+    .transition(~"box-shadow 200ms ease-out, border 200ms ease-out");
+}
+
+.bk-btn-cancel, .bk-btn-secondary-cancel {
+    display: inline-block;
+    padding: 8px 12px;
+    line-height: 12px;
+    font-size: 13px;
+    .font-family-bold();
+    border-radius: 3px;
+    border: 1px solid transparent;
+    color: @white-text;
+    background-color: @cancel-btn;
+    cursor: pointer;
+    .transition(~"all 200ms ease-out");
+
+    &:not(.bk-disabled) {
+        &:hover, &:focus {
+            background-color: @cancel-btn-hover;
+            border: 1px solid @cancel-btn-border;
+            .box-shadow-inset(0 1px 4px @bg-shadow-faint, inset 0 1px 0 @inner-shadow-faint);
+            .transition(~"all 200ms ease-out");
+            color: @white-text;
+        }
+    }
+
+    &.bk-check-btn:before {
+        float: left;
+        margin-top: 1px;
+        height: 10px;
+        content: '';
+    }
+}
+
+// Function to create a colored button (pass the 3 colors as parameters)
+.bk-btn-colored(@color-default, @color-hover, @color-border) {
+    .bk-btn();
+    color: @white-text;
+    border: 1px solid @color-default;
+    background-color: @color-default;
+
+    &:not(.bk-disabled) {
+        &:hover, &:focus {
+            background-color: @color-hover;
+            border-color: @color-border;
+            .box-shadow-inset(0 1px 4px @bg-shadow-faint, inset 0 1px 0 @inner-shadow-faint);
+        }
+    }
+}
+
+.bk-btn-orange {
+    .bk-btn-colored(@orange-default, @orange-hover, @orange-darker);
+}
+
+.bk-btn-yellow {
+    .bk-btn-colored(@yellow-default, @yellow-hover, @yellow-darker);
+}
+
+.bk-btn-purple {
+    .bk-btn-colored(@purple-default, @purple-hover, @purple-darker);
+}
+
+.bk-btn-blue {
+    .bk-btn-colored(@blue-default, @blue-hover, @blue-darker);
+}
+
+.bk-btn-green {
+    .bk-btn-colored(@green-default, @green-hover, @green-border);
+}
+
+// Arrows for toggling expansion state of menu. ex. data panel columns list
+
+.bk-expand-btn(@color, @hover-color) {
+    display: inline-block;
+    width: 0;
+    height: 0;
+
+    &.bk-arrow-collapsed {
+        border: 5px solid transparent;
+        border-left: 5px solid @color;
+
+        &:hover {
+            border-left: 5px solid @hover-color;
+            cursor: pointer;
+        }
+    }
+
+    &.bk-arrow-expanded {
+        vertical-align: middle;
+        border: 5px solid transparent;
+        border-top: 5px solid @color;
+
+        &:hover {
+            border-top: 5px solid @hover-color;
+            cursor: pointer;
+        }
+    }
+}
+
+.bk-expand-btn-light-bg {
+    .bk-expand-btn(@gray-label-text, @gray-main-text);
+}
+
+.bk-expand-btn-dark-bg {
+    .bk-expand-btn(@gray-label-text, @white-text);
+}

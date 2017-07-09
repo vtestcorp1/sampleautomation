@@ -1,0 +1,20 @@
+<div class="bk-embed"
+     ng-switch="isEmbedConfigurationValid()">
+    <div ng-switch-when="false"
+         class="bk-invalid-embed-config">
+        {{ getInvalidEmbedConfigurationMessage() }}
+    </div>
+    <div ng-switch-when="true"
+         class="bk-embed-content-container">
+        <pinboard-page class="bk-pinboard-page"
+                       ng-class="{'single-viz-mode': singleVizMode}"
+                       hide-panel="true"
+                       dont-watch-url="true"
+                       id="pinboardId"
+                       pinboard-page-config="pinboardPageConfig">
+        </pinboard-page>
+    </div>
+    <bk-powered-footer class="bk-embed-powered-by-ts-ribbon"
+                    ng-if="showPoweredByRibbon()"
+                    bk-ctrl="poweredFooterComponent"></bk-powered-footer>
+</div>

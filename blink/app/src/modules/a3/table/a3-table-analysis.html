@@ -1,0 +1,12 @@
+<div class="bk-a3-table-analysis">
+    <div class="bk-title">{{$ctrl.analysisTitle}}</div>
+    <bk-primary-button class="bk-trigger-analysis-button"
+                       text="{{ $ctrl.strings.a3.autoAnalyze }}"
+                       ng-click="$ctrl.trigger()">
+    </bk-primary-button>
+    <div class="bk-title">{{$ctrl.customAnalysisTitle}}</div>
+    <bk-primary-button class="bk-custom-analysis-button"
+                       text="{{ $ctrl.strings.a3.customAnalysisTitle }}"
+                       ng-click="$ctrl.customize()">
+    </bk-primary-button>
+</div>

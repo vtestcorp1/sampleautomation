@@ -1,0 +1,129 @@
+.bk-loading-indicator-overlay {
+    display: none;
+    z-index: @loading-indicator-z-index;
+    background-color: @overlay-bg-white;
+
+    &.bk-transparent {
+        background-color: transparent;
+    }
+
+    &.bk-light-weight {
+        background-color: transparent;
+
+        .bk-loading-indicator-box {
+            padding: 0px;
+            margin-top: - (@loading-indicator-height + 25px) / 2;
+            margin-left: - (@loading-indicator-width + 25px) / 2;
+            background-color: @black-bg;
+            .box-shadow(0 1px 4px @bg-shadow-faint);
+        }
+    }
+
+    .bk-loading-indicator-box {
+        position: absolute;
+        padding: 3px;
+        left: 50%;
+        top: 50%;
+        .transform(translateX(-50%));
+        margin-top: -@loading-indicator-height / 2;
+        background-color: @white-bg;
+        color: @white-text;
+        border-radius: 3px;
+        .box-shadow(0 1px 3px @bg-shadow-faint-2);
+        .animation-duration(0.2s);
+        .animation-fill-mode(both);
+        .animation-name(fade-in);
+
+        &.bk-document-loading-overlay {
+            background-color: @overlay-bg-white;
+        }
+    }
+}
+
+.bk-loading-indicator {
+    line-height: 1em;
+
+    .bk-loading-message {
+        display: block;
+        margin: auto;
+        padding: 1.2em;
+        font-size: 12px;
+        .font-family-bold;
+        color: @nav-text;
+
+        .bk-loading-message-text {
+            display: inline-block;
+        }
+    }
+}
+
+/* Animated loader (using only CSS3 animations)
+ * - Avoid using 'delay' option for the animation as it will
+ *   conflict with the rendering of the charts done on the CPU,
+ *   resulting in a flaky animation.
+ */
+
+.bk-loader {
+    position: relative;
+    display: inline-block;
+    font-size: 3px;  // font size important: sets the size of the dots
+    height: 1em;
+    margin: auto;
+    width: 30px;
+
+    .bk-dot {
+        position: absolute;
+        left: 0;
+        width: 4px;
+        height: 4px;
+        border-radius: 2px;
+        background-color: @nav-text;
+        .animation-duration(0.4s);
+        .animation-iteration-count(infinite);
+        .transition-timing(linear);
+
+
+        &.dot1 {
+            .animation-name(reveal);
+        }
+
+        &.dot2 {
+            .animation-name(slide);
+        }
+
+        &.dot3 {
+            left: 7px;
+            .animation-name(slide);
+        }
+
+        &.dot4 {
+            left: 14px;
+            .animation-name(reveal);
+            .animation-direction(reverse);
+        }
+    }
+}
+
+.bk-light-weight {
+    .bk-loading-indicator {
+        .bk-loading-message {
+            font-size: 13px;
+        }
+
+        .bk-loader {
+            font-size: 4px;
+        }
+    }
+}
+
+
+.bk-indicator {
+    width: 40px;
+    height: 30px;
+
+    &.bk-loading {
+        // TODO(jonathan): Replace gif with css animation. See SCAL-5566
+        background: url('/resources/img/loading-icon-black.gif') no-repeat;
+    }
+
+}

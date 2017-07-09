@@ -1,0 +1,58 @@
+<div class="bk-job-schedule-page">
+    <div class="bk-job-schedule-error" ng-if="$ctrl.hasError">
+        {{$ctrl.errorMessage}}
+    </div>
+
+    <div class="bk-job-schedule" ng-if="$ctrl.canDisplayEditor()">
+        <div class="bk-header">
+            <div class="bk-page-title">
+                {{$ctrl.getTitle()}}
+                <a ng-href="{{$ctrl.getLinkToPinboard()}}"> {{$ctrl.getLinkTitle()}} </a>
+            </div>
+        </div>
+        <div class="bk-job-schedule-body">
+            <div class="bk-schedule-section">
+                <span class="bk-section-title">{{$ctrl.strings.schedule}}</span>
+                <div class="bk-schedule bk-dialog">
+                    <!-- schedule -->
+                    <bk-scheduler schedule-config="$ctrl.scheduleConfig"></bk-scheduler>
+                    <div class="bk-dialog-field" ng-if="false"> <!-- to be enabled -->
+                        <div class="label">{{$ctrl.strings.nextOccurence}}</div>
+                        <div class="bk-occurences">{{$ctrl.getNextOccurenceOfSchedule()}}</div>
+                    </div>
+                    <div class="bk-dialog-field">
+                        <div class="label">{{$ctrl.strings.serverTimeZone}} </div>
+                        <div class="bk-occurences">{{$ctrl.timeZoneString}}</div>
+                    </div>
+                    <!-- general metadata !-->
+                    <bk-job-metadata bk-ctrl="$ctrl.jobMetadataComponent"></bk-job-metadata>
+                    <div ng-if="$ctrl.pinboardHasNoTable">
+                       {{$ctrl.noTableString}}
+                    </div>
+                    <hr/>
+                </div>
+            </div>
+            <div class="bk-recipient-section">
+                <span class="bk-section-title">{{$ctrl.strings.recipients}}</span>
+                <bk-principals-selector class="bk-principals-selector-container"
+                                        bk-ctrl="$ctrl.principalsSelectorComponent">
+                </bk-principals-selector>
+            </div>
+            <!-- footer -->
+            <hr/>
+        </div>
+        <div class="bk-schedule-footer">
+            <div class="bk-req-field-statement">
+                {{$ctrl.requiredString}}
+            </div>
+            <bk-primary-button text="{{$ctrl.saveButtonString}}"
+                               ng-click="$ctrl.scheduleJob()"
+                               is-disabled="!$ctrl.isScheduleEnabled()"
+                               class="bk-btn-schedule"></bk-primary-button>
+            <bk-secondary-button text="{{$ctrl.strings.cancel}}"
+                                 ng-click="$ctrl.cancel()"
+                                 class="bk-btn-back"></bk-secondary-button>
+            <div style="clear:both;"></div>
+        </div>
+    </div>
+</div>

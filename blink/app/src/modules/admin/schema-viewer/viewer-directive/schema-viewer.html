@@ -1,0 +1,48 @@
+<div class="graph-container">
+    <div class="schema-filter" >
+        <list-filters-and-labels class="bk-top-filters"
+                                 filters="$ctrl.filters"
+                                 ng-if="!!$ctrl.filters"
+                                 on-filter-applied="$ctrl.applyFilters()"
+                                 label-deleted-callback="$ctrl.onLabelDeletion(label)"
+                                 stickers="$ctrl.stickers">
+
+        </list-filters-and-labels>
+    </div>
+    <div class="graph">
+        <div id="sidebarContainer"
+             resizable
+             r-directions="['right']"
+             r-flex="true"
+             r-end="$ctrl.relayoutGraph()"
+             class="sidebar">
+
+            <navigation-list class="navigation-list" bk-ctrl="$ctrl.navigationController">
+            </navigation-list>
+        </div>
+        <div schema-canvas-list bk-ctrl="$ctrl.graphViewerController" class="graph-content" >
+            <div id="{{$ctrl.canvasId}}"
+                 class="graph-body">
+                <h2 ng-if="$ctrl.hasError"> {{ $ctrl.strings.HAS_ERRORS }} </h2>
+            </div>
+            <div id="{{$ctrl.outlineId}}" class="outline" ng-hide="!$ctrl.shouldShowOverview"> </div>
+            <div id="zoomContainer" class="zoom">
+                <div class="zoom-in" ng-click="$ctrl.zoom(true)">
+                    <span></span>
+                </div>
+                <div class="zoom-out" ng-click="$ctrl.zoom(false)">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <bk-graph-legend ng-if="$ctrl.shouldShowLegend" bk-ctrl="$ctrl.legendController"> </bk-graph-legend>
+        <!-- hidden tooltip -->
+        <div ng-if="!$ctrl.showModal" class="tooltip" style="display: block;">
+                <div class="tooltip-arrow"></div>
+                <div class="tooltip-inner">
+                        <div>
+                        </div>
+                </div>
+        </div>
+        <bk-schema-viewer-modal ng-if="$ctrl.showModal" bk-ctrl="$ctrl.modalController"></bk-schema-viewer-modal>
+</div>

@@ -1,0 +1,100 @@
+<div class="bk-answer-page">
+    <div class="bk-data-panel"
+         ng-show="!$ctrl.showDataSourcePreview"
+         resizable
+         r-directions="['right']"
+         r-flex="true"
+         r-end="$ctrl.onDataPanelResizeCallback()">
+        <sage-data config="$ctrl.dataPanelConfig"
+                   column-panel-component-config="$ctrl.columnPanelComponentConfig"
+                   on-header-click-callback="$ctrl.panelHeaderClickCallback">
+        </sage-data>
+    </div>
+    <div class="page-content">
+        <div class="bk-search-panel">
+            <bk-data-source-preview class="bk-answer-data-source-preview"
+                                    ng-if="!!$ctrl.dataSourcePreviewComponent"
+                                    bk-ctrl="$ctrl.dataSourcePreviewComponent">
+            </bk-data-source-preview>
+            <bk-sage-bar class="bk-answer-sage-bar"
+                         ng-if="!!$ctrl.sageBarComponent"
+                         bk-ctrl="$ctrl.sageBarComponent">
+            </bk-sage-bar>
+            <bk-info-card-icon class="bk-answer-info-card-icon"
+                               ng-show="!!$ctrl.answerModel"
+                               ng-if="!!$ctrl.infoCardIconComponent"
+                               bk-ctrl="$ctrl.infoCardIconComponent">
+            </bk-info-card-icon>
+        </div>
+        <div class="bk-answer-content"
+             ng-switch="$ctrl.viewerState">
+            <bk-empty-page-placeholder ng-switch-when="0"
+                                       class="bk-empty-answer-placeholder-container"
+                                       bk-ctrl="$ctrl.emptyPagePlaceholderComponent">
+            </bk-empty-page-placeholder>
+            <search-doctor ng-switch-when="1"
+                           class="search-doctor"
+                           sage-client="$ctrl.sageClient"
+                           model="$ctrl.searchDoctorModel"
+                           on-search-corrected="$ctrl.onSearchCorrectedCallback">
+            </search-doctor>
+            <div ng-switch-when="2" class="bk-answer-content-viewer">
+                <div class="bk-title-panel">
+                    <div class="bk-answer-title">
+                        <blink-content-editable
+                                class=""
+                                not-editable="!$ctrl.answerPageTitle.isTitleEditingAllowed"
+                                fullspan
+                                placeholder="$ctrl.answerPageTitle.placeholder"
+                                ng-model="$ctrl.answerPageTitle.name"
+                                description="$ctrl.answerPageTitle.desc">
+                        </blink-content-editable>
+                    </div>
+                    <bk-visualization-pinner-launcher class="bk-pin-launcher"
+                                                      ng-if="!!$ctrl.visualizationPinnerComponent"
+                                                      bk-ctrl="$ctrl.visualizationPinnerComponent">
+                    </bk-visualization-pinner-launcher>
+                    <bk-table-type-selector class="bk-table-type-selector-container"
+                                            bk-ctrl="$ctrl.tableTypeSelectorComponent">
+                    </bk-table-type-selector>
+                    <div class="bk-toggle-chart-selector-display"
+                         ng-class="{'bk-drawer-open': $ctrl.showChartSelector}"
+                         blink-tooltip="{{$ctrl.strings.CHANGE_VISUALIZATION}}"
+                         ng-click="$ctrl.toggleChartSelectorDisplay()">
+                        <img ng-src="{{$ctrl.getChartSelectorIconPath()}}"/>
+                    </div>
+                    <div class="bk-toggle-chart-editor-display"
+                         ng-class="{'bk-drawer-open': $ctrl.showChartEditor,
+                         'bk-disable-chart-editor-icon': !$ctrl.displayChartConfigEditorIcon}"
+                         blink-tooltip="{{$ctrl.strings.EDIT_CHART_CONFIGURATION}}"
+                         ng-click="$ctrl.toggleChartEditorDisplay()">
+                        <img src="resources/img/viz-selector-icons/chart-icons/chart_config_icon_24.svg"/>
+                    </div>
+                    <bk-action-button-dropdown class="bk-answer-action-menu"
+                                               ng-if="!!$ctrl.actionMenu"
+                                               menu="$ctrl.actionMenu">
+                    </bk-action-button-dropdown>
+                </div>
+                <filter-panel class="bk-answer-page-filter-panel"
+                              ng-if="!!$ctrl.answerPageFilterPanel.filterPanelController"
+                              ng-show="$ctrl.answerPageFilterPanel.filterPanelController.showPanel()"
+                              ctrl="$ctrl.answerPageFilterPanel.filterPanelController">
+                </filter-panel>
+                <div class="bk-answer-body">
+                    <bk-answer-visualization-viewer class="bk-answer-viz-container"
+                                                    ng-if="!!$ctrl.answerVisualizationViewerComponent"
+                                                    bk-ctrl="$ctrl.answerVisualizationViewerComponent">
+                    </bk-answer-visualization-viewer>
+                    <bk-chart-editor class="bk-chart-editor-container"
+                                     ng-if="$ctrl.showChartEditor"
+                                     bk-ctrl="$ctrl.chartEditorComponent">
+                    </bk-chart-editor>
+                    <bk-chart-type-selector-panel class="bk-answer-viz-type-selector"
+                                          ng-if="$ctrl.showChartSelector"
+                                          bk-ctrl="$ctrl.chartTypeSelectorPanelComponent">
+                    </bk-chart-type-selector-panel>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

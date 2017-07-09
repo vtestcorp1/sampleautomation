@@ -1,0 +1,148 @@
+.schedule-container {
+  margin-left:10px;
+  label, input {
+      .font-family-regular();
+      font-size: 12px;
+  }
+
+  .bk-calendar {
+    width : 20px;
+    height : 20px;
+    margin-right: 5px;
+  }
+  .bk-start-day {
+    width : 75px;
+    height : 20px;
+    margin: 0 5px 0 35px;
+    padding-left: 5px;
+  }
+  .bk-form {
+    margin-bottom: 10px;
+    .bk-data-row {
+      line-height: 25px;
+      .flex(row);
+      align-items: center;
+      margin-top: 15px;
+    }
+  }
+  .bk-options {
+    .bk-day-row {
+      line-height: 30px;
+      .flex(row);
+      display: inline-block;
+      vertical-align: top;
+    }
+    .bk-data-row {
+      line-height: 30px;
+      .flex(row);
+      align-items: center;
+    }
+  }
+  .bk-time {
+    width : 35px;
+    height : 30px;
+    padding-left: 3px;
+    margin-left: 3px;
+  }
+  .bk-month-option-order {
+    width : 70px;
+    height : 30px;
+    padding-left: 3px;
+    margin-left: 3px;
+  }
+  .bk-month-option-day {
+    width : 90px;
+    height : 30px;
+    padding-left: 3px;
+    margin-left: 3px;
+  }
+  .bk-timezone {
+    width : 200px;
+    height : 30px;
+    padding-left: 3px;
+    margin-left: 3px;
+  }
+  .bk-repeat-until {
+    width : 75px;
+    height : 20px;
+    margin: 0 5px 0 5px;
+    padding-left: 5px;
+  }
+  .bk-day {
+    margin-right : 20px;
+  }
+  .bk-label {
+    display : inline;
+    margin-top: 8px;
+
+    input[type='radio'] {
+        margin: 0;
+    }
+  }
+  .bk-bold {
+      .font-family-bold();
+  }
+  .bk-label-repeats {
+    display : inline;
+    margin-top: 8px;
+    padding-right: 11px;
+  }
+  .bk-select-box {
+    .bk-cell-content {
+      width: 200px;
+      height: 30px;
+    }
+    .bk-cell-hour-content {
+      width: 50px;
+    }
+    .bk-month-content {
+      width: 100px;
+    }
+    .chosen-container-single {
+      width: auto !important;
+      margin: 0 10px 0 10px;
+
+      .chosen-single {
+        height: 23px;
+        line-height: 24px;
+        font-size: 10px;
+        background-color: @white-bg;
+        border-radius: 2px;
+        .font-family-semibold();
+      }
+
+      .chosen-drop {
+        margin-top: -1px;
+        font-size: 12px;
+
+        .chosen-results li.active-result{
+          font-size: 10px;
+          color: @gray-main-text;
+        }
+
+        // We hide the search field
+        .chosen-search {
+          display: none;
+        }
+      }
+    }
+  }
+}
+.bk-schedule-disable {
+  .bk-checkbox-container {
+    padding: 10px;
+    bottom: 15%;
+    .bk-checkbox {
+      margin-left: 10px;
+    }
+    .bk-checkbox-title {
+      font-size: 12px;
+    }
+  }
+}
+
+.update-schedule-error-message {
+  line-height: 32px;
+  font-size: 13px;
+  color: @h-red;
+}

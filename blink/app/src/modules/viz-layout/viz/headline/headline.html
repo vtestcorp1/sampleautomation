@@ -1,0 +1,61 @@
+<div ng-show="viz.isEmpty()" class="bk-no-content-placeholder">{{ 'No data to display' | l10n }}</div>
+<div ng-show="viz.isPendingDataLoad()" class="bk-no-content-placeholder">{{ 'Loading data...' | l10n }}</div>
+<div ng-show="!viz.isEmpty()" class="bk-summary-container" ng-class="{'bk-date-summaries': isDateHeadline()}">
+    <div class="bk-headline-content">
+        <div ng-if="!isDateHeadline()">
+            <div class="bk-overflow-ellipsis" blink-tooltip="{{headline.summaries[0].tooltipContent}}"
+                 auto-tooltip-style="bootstrap">
+                <div ng-hide="isUpdating"  class="bk-headline-value">{{ headline.summaries[0].value }}</div>
+                <div ng-show="isUpdating" class="bk-headline-value-updating-placeholder">{{strings.Updating}}</div>
+            </div>
+            <div ng-show="!viz.getModel().isPinboardViz()">
+                <div class="bk-headline-aggregation-selector" ng-show="viz.getModel().shouldShowSummaryAggregates()">
+                    <div class="column-name bk-headline-title">{{ getColumnName() }}</div>
+                    <div class="bk-select-box">
+                        <ui-select ng-model="headline.summaries[0].aggregateType"
+                                   ng-change="headline.onSummaryChange()"
+                                   theme="select2"
+                                   class="bk-headline-aggregation-selector"
+                                   append-to-body="true"
+                                   search-enabled="false">
+                            <ui-select-match>{{ typeToLabel($select.selected) }}</ui-select-match>
+                            <ui-select-choices repeat="aggrType in aggregateTypes">
+                                {{ typeToLabel(aggrType) }}
+                            </ui-select-choices>
+                        </ui-select>
+                    </div>
+                </div>
+                <div class="bk-headline-column-name bk-headline-title"
+                     ng-show="!viz.getModel().shouldShowSummaryAggregates()">
+                    {{ getHeadlineTitle() }}
+                </div>
+            </div>
+        </div>
+        <div ng-if="isDateHeadline()">
+            <!--TODO: headline.summaries[i].value.min/max should be replace by a method call -->
+            <div class="bk-range-summary" ng-class="{'bk-invisible-summary': isUpdating}"
+                 ng-if="headline.isRangeAggregationSummary(headline.summaries[0])">
+                <span class="bk-overflow-ellipsis">
+                    <span class="bk-headline-value bk-range-headline-min-value">
+                        {{ headline.summaries[0].value.min }}
+                    </span>
+                </span>
+                <span class="bk-headline-value">-</span>
+                <span class="bk-overflow-ellipsis">
+                    <span class="bk-headline-value bk-range-headline-max-value">
+                        {{ headline.summaries[0].value.max }}
+                    </span>
+                </span>
+            </div>
+            <div ng-class="{'bk-invisible-summary': isUpdating}"
+                 ng-if="!headline.isRangeAggregationSummary(headline.summaries[0])"
+                 class="bk-date-headline-single-valued">
+                <div class="bk-overflow-ellipsis">
+                    <div class="bk-headline-value bk-range-headline-min-value">{{ headline.summaries[0].value }}</div>
+                </div>
+            </div>
+            <div class="bk-headline-column-name bk-headline-title"
+                 ng-show="!viz.getModel().isPinboardViz()">{{ getHeadlineTitle() }}</div>
+        </div>
+    </div>
+</div>

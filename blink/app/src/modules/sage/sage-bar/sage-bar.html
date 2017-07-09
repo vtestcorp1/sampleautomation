@@ -1,0 +1,16 @@
+<div class="bk-sage-bar"
+     ng-switch="$ctrl.canEdit">
+    <div ng-switch-when="true">
+        <blink-sage ng-if="!!$ctrl.sageClient"
+                    sage-search-on-init="$ctrl.sageSearchOnInit"
+                    sage-client="$ctrl.sageClient"
+                    on-force-invalid-search="$ctrl.onForceInvalidSearch"
+                    on-edit="$ctrl.onSageEdit"
+                    on-search-corrected="$ctrl.onSearchCorrected">
+        </blink-sage>
+    </div>
+    <div ng-switch-default>
+        <blink-read-only-sage query-text="$ctrl.readOnlyText">
+        </blink-read-only-sage>
+    </div>
+</div>

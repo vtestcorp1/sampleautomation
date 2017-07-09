@@ -1,0 +1,41 @@
+<div class="bk-status-viewer" ng-class=" {'bk-loading' : $ctrl.isLoading}">
+    <div class="status-viewer-header">
+        <div class="bk-icons-button">
+            <div class="bk-icons" ng-click="$ctrl.onHide()">
+                <div class="bk-style-icon-arrow-right"></div>
+            </div>
+        </div>
+        <div class="bk-job-title">
+            {{$ctrl.getTitle()}}
+        </div>
+    </div>
+    <div ng-switch on="$ctrl.isLoading" class="bk-status-viewer-list">
+        <div ng-switch-when="false" class="bk-list-container">
+            <actionable-list on-row-click="$ctrl.onRowClick"
+                             list-model="$ctrl.listModel"
+                             action-items="$ctrl.actionItems">
+            </actionable-list>
+            <div class="bk-status-details">
+                {{$ctrl.titleString}}
+                <div ng-if="$ctrl.exitDetail" class="bk-job-status-detail">
+                    <div ng-repeat="detail in $ctrl.exitDetail track by $index">
+                        {{detail}}
+                    </div>
+                </div>
+                <hr/>
+                <div ng-repeat="step in $ctrl.steps">
+                    {{step.description}}
+                </div>
+            </div>
+        </div>
+        <div ng-switch-when="true"></div>
+    </div>
+</div>
+
+<script type="text/ng-template" id="status-format.html">
+    <div class="bk-status-content">
+        <div class="bk-status-{{column.format(row)[0]}}">
+            <span class="status-text">{{column.format(row)[1]}}</span>
+        </div>
+    </div>
+</script>

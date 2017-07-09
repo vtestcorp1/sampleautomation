@@ -1,0 +1,18 @@
+.bk-color-scale {
+    width: 140px;
+    .flex(column);
+    .bk-color-labels {
+        .flex(row);
+        .flex-justify(space-between);
+        font-size: 12px;
+        line-height: 13px;
+        height: 14px;
+    }
+    .bk-color-bar {
+        height: 14px;
+        .flex(row);
+        .bk-color-scale-block {
+            .flex-grow-shrink-basis(1, 1, 0);
+        }
+    }
+}

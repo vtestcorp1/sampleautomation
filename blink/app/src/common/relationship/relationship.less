@@ -1,0 +1,225 @@
+.bk-relationship-list {
+    .bk-vertical-flex-container-sized;
+    overflow: auto;
+    text-align: left;
+
+    &.bk-loading {
+        opacity: 0.3;
+    }
+
+    .bk-add-mode-btn {
+        margin: 15px;
+    }
+
+    // Customization of the select box
+    .chosen-container-single {
+        height: 34px;
+        width: 250px;
+        text-align: left;
+
+        .chosen-single {
+            height: 32px;
+            font-size: 14px;
+            line-height: 32px;
+            padding-left: 12px;
+            padding-top: 2px;
+            background-color: @h-gray;
+            .box-shadow(inset 0px 1px 0px @inner-shadow);
+            .font-family-regular();
+
+            &:hover {
+                background-color: @white-bg;
+            }
+
+            // Arrow positioning
+            b:before {
+                right: 11px;
+            }
+        }
+
+        // When dropdown opened
+        &.chosen-with-drop .chosen-single {
+            background-color: @white-bg;
+        }
+
+        .chosen-drop .chosen-results li {
+            padding: 5px 8px;
+        }
+    }
+
+    .bk-column-list {
+        width: 250px;
+        margin-top: 14px;
+        border: 1px solid @gray-border;
+        border-radius: 2px;
+        text-align: left;
+
+        .bk-column-cell {
+            padding: 5px 15px;
+            .font-family-regular;
+            font-size: 12px;
+            color: @gray-secondary-text;
+
+            &:not(:last-child) {
+                border-bottom: 1px solid @gray-border;
+            }
+
+            &.bk-hovered {
+                background-color: @h-gray1-transparent;
+                .transition(~"background-color 200ms ease-in");
+            }
+        }
+    }
+
+    .bk-relationship-viewer {
+        padding: 5px 5px 20px;
+        margin-bottom: 20px;
+        border-bottom: 3px solid @h-gray1;
+
+        .bk-relationship-header {
+            padding: 15px 15px 0;
+            text-align: left;
+
+            .key-value-pair {
+                font-size: 18px;
+
+                .key {
+                    display: inline-block;
+                    width: 170px;
+                    .font-family-regular();
+                }
+
+                .value {
+                    .font-family-light();
+                }
+
+                .bk-relationship-title-container {
+                    display: inline-block;
+                    position: relative;
+                    width: 400px;
+
+                    .bk-relationship-title {
+                        margin: 0 100px 0 0;
+                        font-size: 18px;
+                        width: 220px;
+                        min-width: 220px;
+
+                        .bk-editable-input {
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .bk-column-relationships {
+            padding: 15px;
+
+            .title {
+                .font-family-semibold();
+            }
+
+            .bk-source {
+                display: inline-block;
+                width: 300px;
+            }
+
+            .bk-target {
+                display: inline-block;
+                width: 300px;
+            }
+        }
+
+        .bk-actions-relationship {
+            padding: 15px;
+        }
+    }
+
+    .bk-relationship-editor {
+        .flex-important(column);
+        padding: 30px;
+        text-align: center;
+
+        .bk-relationship-header {
+            padding: 15px;
+            z-index: 2;
+            font-size: 16px;
+            display: flex;
+
+            .bk-autogrow-block {
+                .flex-grow(1);
+            }
+
+            .bk-relationship-name-header {
+                display: inline-block;
+                text-align: left;
+
+                .bk-relationship-title {
+                    margin: 0 100px 0 0;
+                    font-size: 18px;
+                    width: 220px;
+                    min-width: 220px;
+
+                    .bk-description-edit-dropdown {
+                        &.bk-visible {
+                            margin-top: 0px;
+                        }
+                        padding-top: 8px;
+                    }
+                }
+            }
+        }
+        .bk-select-box {
+            display: inline-block;
+            text-align: left;
+            width: 230px;
+
+            .bk-select-source-column,
+            .bk-select-destination-table,
+            .bk-select-destination-column {
+                width: 100%;
+            }
+        }
+
+        .bk-column-relationships {
+            .flex-grow(1);
+            padding: 30px;
+            .flex-important(row);
+
+            .bk-column-list {
+                margin: auto;
+                margin-top: 13px;
+            }
+
+            .title {
+                .font-family-semibold();
+            }
+
+            .bk-source {
+                text-align: left;
+                .flex-grow(2);
+                margin: auto;
+            }
+
+            .bk-link-ui {
+                .flex-grow(2);
+                margin: auto;
+
+                .bk-link-icon-container {
+                    margin: auto;
+                }
+            }
+
+            .bk-target {
+                text-align: left;
+                .flex-grow(2);
+                margin: auto;
+            }
+        }
+
+        .bk-add-key-button,
+        .bk-add-relationship-button {
+            .bk-padding-right-20;
+        }
+    }
+}

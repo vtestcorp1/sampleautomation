@@ -1,0 +1,20 @@
+<ul>
+    <li class="bk-currency-item">
+        <bk-radio-button class="bk-currency-radio" bk-ctrl="$ctrl.noneRadioController">
+        </bk-radio-button>
+    </li>
+    <li class="bk-currency-item">
+        <bk-radio-button class="bk-currency-radio" bk-ctrl="$ctrl.localeRadioController">
+        </bk-radio-button>
+    </li>
+    <li class="bk-currency-item" ng-if="$ctrl.includeFromColumnRadioOption()">
+        <bk-radio-button class="bk-currency-radio" bk-ctrl="$ctrl.columnRadioController">
+        </bk-radio-button>
+        <bk-select bk-ctrl="$ctrl.columnSelectCtrl"></bk-select>
+    </li>
+    <li class="bk-currency-item">
+        <bk-radio-button class="bk-currency-radio" bk-ctrl="$ctrl.isoCodeRadioController">
+        </bk-radio-button>
+        <bk-select bk-ctrl="$ctrl.isoCodeSelectCtrl"></bk-select>
+    </li>
+</ul>

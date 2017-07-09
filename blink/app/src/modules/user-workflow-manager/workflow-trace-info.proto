@@ -1,0 +1,29 @@
+// Copyright: ThoughtSpot Inc. 2017
+// Author: Jasmeet Singh Jaggi (jasmeet@thoughtspot.com)
+//
+// Protos used by blink to trace workflows.
+
+package blink.workflow;
+
+import "net/trace/trace.proto";
+
+// E2E user workflow types in the product.
+message UserWorkflowActionType {
+  enum E {
+    // Loading of pinboard.
+    PINBOARD_LOAD = 0;
+    // Unimplemented action type.
+    NONE = 10000;
+  }
+}
+
+// Encapsulates all the information for the end user workflow
+message WorkflowDebugInfo {
+  extend net.TraceEvent {
+    optional WorkflowDebugInfo workflow_debug_info = 1010;
+  }
+
+  // User workflow action.
+  optional UserWorkflowActionType.E action = 1;
+  optional bool user_terminated = 2;
+}

@@ -1,0 +1,93 @@
+@import '/resources/css/import.less';
+
+.bk-column-metrics-widget {
+    .bk-column-metric-add {
+        height: 16px;
+        display: block;
+        text-align: right;
+        margin-right: 8px;
+        margin-bottom: 10px;
+
+        .bk-icon {
+            line-height: 1em;
+            background-color: @h-black-transparent-3;
+
+            &::before {
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .bk-column-metric {
+
+        padding: 14px 9px 5px 7px;
+        .bk-numeric-range {
+            display: inline-block;
+            .bk-numeric-metric-value {
+                display: inline-block;
+                input {
+                    .bk-text-input();
+                    width: 90px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .bk-metric-color {
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 5px;
+            margin-left: 5px;
+
+            .bk-metric-color-picker {
+                width: 11px;
+                height: 11px;
+                margin-right: 1px;
+                vertical-align: middle;
+                border-radius: 50%;
+                background-color: @gray-secondary-text;
+            }
+        }
+
+        .bk-metric-remove-button {
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 18px;
+            margin-top: 1px;
+            color: @h-gray5;
+            visibility: hidden;
+
+            .bk-style-icon-cross::before {
+                font-size: 9px;
+            }
+        }
+
+        &:hover {
+            background-color: @h-black-transparent-3;
+            .bk-metric-remove-button {
+                visibility: visible;
+            }
+        }
+
+        .bk-numeric-range-invalid {
+            border: 1px solid @red-darker;
+        }
+    }
+
+    .bk-column-metric-validation-error-message {
+        max-width: 80%;
+        margin-top: 13px;
+        margin-left: 7px;
+        font-size: 11px;
+        font-style: italic;
+        color: @red-darker;
+    }
+
+    .bk-column-metrics-add-new-message {
+        max-width: 180px;
+        padding: 0 10px;
+        font-size: 11px;
+        text-align: center;
+        color: @gray-label-text-darker;
+    }
+}

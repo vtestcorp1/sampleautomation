@@ -1,0 +1,179 @@
+.tile-container {
+    .flex-grow-shrink-basis(1, 1, auto);
+
+    @media @bk-phone {
+        margin: 10px 30px;
+    }
+
+    @media @bk-tablet {
+        margin: 10px 30px;
+    }
+
+    @media @bk-desktop {
+        margin: 10px 40px;
+    }
+
+    @media @bk-widescreen {
+        margin: 10px 120px;
+    }
+
+    .tile-size-xs {
+        @media @bk-phone {
+            width: 100%;
+        }
+
+        @media @bk-tablet {
+            width: 49.5%;
+        }
+
+        @media @bk-desktop {
+            width: 24.25%;
+        }
+
+        // This maintains a fixed aspect ratio in the tiles.
+        // Inspired from https://css-tricks.com/snippets/sass/maintain-aspect-ratio-mixin/
+        &:before {
+            content:'';
+            padding-top:42.6%; /* vertical value as 100% equals width */
+            float:left;
+        }
+    }
+
+    .tile-size-ms {
+        display: block;
+
+        @media @bk-phone {
+            width: 100%;
+
+            &:before {
+                padding-top:89.5%;
+            }
+        }
+
+        @media @bk-tablet {
+            width: 49.5%;
+
+            &:before {
+                padding-top: 89.5%;
+            }
+        }
+
+        @media @bk-desktop, @bk-widescreen{
+            width: 49.5%;
+
+            &:before {
+                padding-top: 43.9%;
+            }
+        }
+
+        &:before{
+            content:'';
+            float:left;
+        }
+    }
+
+    .tile-size-s {
+        .bk-chart .bk-axis-label-container {
+            display: none;
+        }
+        @media @bk-phone {
+            width: 100%;
+        }
+
+        @media @bk-tablet {
+            width: 49.5%;
+        }
+
+        @media @bk-desktop, @bk-widescreen{
+            width: 24.25%;
+        }
+
+        &:before{
+            content:'';
+            padding-top:89.5%;
+            float:left;
+        }
+    }
+
+    .tile-size-ls {
+        display: block;
+
+        @media @bk-phone {
+            width: 100%;
+            &:before{
+                padding-top:89.5%;
+            }
+        }
+
+        @media @bk-tablet {
+            width: 100%;
+            &:before{
+                padding-top:42.6%;
+            }
+        }
+
+        @media @bk-desktop, @bk-widescreen{
+            width: 100%;
+            &:before{
+                padding-top:21.8%;
+            }
+        }
+
+        &:before{
+            content:'';
+            float:left;
+        }
+    }
+
+
+    .tile-size-m {
+        display: block;
+
+        @media @bk-phone {
+            width: 100%;
+        }
+
+        @media @bk-tablet,@bk-desktop, @bk-widescreen{
+            width: 49.5%;
+        }
+
+        &:before{
+            content:'';
+            padding-top:89.7%;
+            float:left;
+        }
+    }
+
+    .tile-size-l {
+        display: block;
+
+        @media @bk-phone {
+            width: 100%;
+            &:before{
+                padding-top:89.5%;
+            }
+        }
+
+        @media @bk-tablet,@bk-desktop, @bk-widescreen{
+            width: 100%;
+            &:before{
+                padding-top:42.6%;
+            }
+        }
+
+        &:before{
+            content:'';
+            float:left;
+        }
+    }
+
+    .tile {
+        box-sizing: border-box;
+        float: left;
+    }
+
+    .tile-gutter {
+        width: 1%;
+    }
+
+}

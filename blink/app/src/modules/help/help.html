@@ -1,0 +1,89 @@
+<div class="bk-help bk-sidebar-layout">
+    <!--Side bar menu for system info and different keywords-->
+    <div class="bk-left-menu">
+        <h3 class="mvl mll plm font-family-light">{{strings.Help}}</h3>
+        <div class="mtl" ng-repeat="menu in menus">
+            <span class="font-smaller font-family-bold font-uppercase font-primary-darker mll plm ">{{ menu.header }}</span>
+            <ul class="bk-filters bk-red">
+                <li ng-repeat="menuItem in menu.items" ng-click="onMenuItemClick(menuItem)" ng-class="{ 'bk-selected': menuItem.selected }">
+                    {{ menuItem.label }}
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--Container for System info and Keywords-->
+    <div class="bk-list-container" ng-switch="currentMenuItem.actionType">
+        <div class="bk-title-bar">
+            <div class="bk-list-title">{{ currentMenuItem.label }}</div>
+        </div>
+
+        <div class="bk-help-container" ng-switch-default>
+            <!--Keywords header-->
+            <div class="line mbl">
+                <ul class="unit size1of5">
+                    <li class="font-small font-family-bold font-uppercase font-primary-darker">
+{{strings.Keyword}}
+</li>
+                </ul>
+                <ul class="unit size2of5 lastUnit">
+                    <li class="font-small font-family-bold font-uppercase font-primary-darker">
+{{strings.Example}}
+</li>
+                </ul>
+            </div>
+            <!--List of keywords and examples-->
+            <div ng-repeat="keywords in keywordHelpDefinition[currentMenuItem.actionType]">
+                <div class="text-bold mbm">{{ keywords.keywordTitle }}</div>
+                <div ng-class="{'br-bottom-gray mbl pbl': keywords.cssBottomBorder}">
+                    <div ng-repeat="example in keywords.example">
+                        <div class="line keywordsList">
+                            <ul class="unit size1of5">
+                                <li class="text-bold mvx" ng-class="{'mll': keywords.keywordTitle}">
+                                    {{ example.keyword }}
+                                </li>
+                            </ul>
+                            <ul class="unit size2of5 lastUnit">
+                                <li class="mvx" ng-bind-html="example | blinkRangeHighlight:'text-bold'">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--System info section with release vesion name, release notes and support contacts-->
+        <div ng-switch-when="system-info" class="bk-help-container">
+            <h4 class="text-bold mbl font-capitalize">
+<span>{{strings.Version}}</span>{{ getReleaseNameDisplayString() }}
+            </h4>
+            <div ng-show="releaseNameComputationStatus == 'complete'">
+                <a href="/version/release-notes/ThoughtSpot_{{ versionNameForLink }}_Release_Notes.pdf">
+                    <div class="bk-btn"><span>{{strings.Release_Notes}}</span>{{ versionNameForLink }}</div>
+                </a>
+            </div>
+            <h4 class="text-bold mvl">
+{{strings.Support}}
+</h4>
+            <div class="media">
+                <div class="img">
+{{strings.Phone}}
+</div>
+                <div class="bd pll">
+{{strings.key_1_8005087008}}
+</div>
+            </div>
+            <div class="media">
+                <div class="img">
+{{strings.Email}}
+</div>
+                <div class="bd pll">
+                    <a href="mailto:support@thoughtspot.com">
+{{strings.supportthoughtspotcom}}
+</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,35 @@
+<li class="bk-source-item bk-clickable"
+    ng-if="shouldShowFormulaList()">
+
+    <div class="bk-source-header" ng-click="isExpanded = !isExpanded">
+        <span class="bk-expand-btn-light-bg bk-clickable"
+              ng-class="{'bk-arrow-collapsed ': !isExpanded, 'bk-arrow-expanded': isExpanded}">
+        </span>
+        <span class="bk-source-name bk-label bk-overflow-ellipsis">{{strings.Formulas}}</span>
+    </div>
+
+    <div class="bk-formulae"
+         ng-class="{'bk-read-only': isReadOnly()}"
+         ng-if="isExpanded">
+        <div class="bk-list">
+            <ul class="bk-columns-list bk-list-items">
+                <li class="bk-column-item bk-clickable bk-list-item"
+                    ng-repeat="formula in getFormulaList()">
+                    <div>
+                        <span class="bk-style-icon-x bk-actionable-icon"
+                              data-delay='{"show": "750", "hide": "0"}'
+                              blink-tooltip="Remove Formula"
+                              ng-click="$event.stopPropagation(); removeFormula(formula)"
+                              ng-dblclick="$event.stopPropagation()">
+                        </span>
+                            <span class="bk-label bk-overflow-ellipsis bk-column-name"
+                                  blink-tooltip="{{formula.getName()}}"
+                                  ng-dblclick="onFormulaDblClick(formula)">{{ formula.getName() }}</span>
+                            <span class="bk-style-icon-edit bk-actionable-icon"
+                                  ng-click="onFormulaClick(formula)"></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</li>

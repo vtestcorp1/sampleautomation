@@ -1,0 +1,4 @@
+<li class="bk-user-list" ng-repeat="viewer in $ctrl.principalViewers | filter:$ctrl.hasPermissions">
+<!-- Profile picture for individual users -->
+    <bk-sharing-row bk-ctrl="viewer"></bk-sharing-row>
+</li>

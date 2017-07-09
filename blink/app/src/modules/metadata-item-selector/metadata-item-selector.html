@@ -1,0 +1,54 @@
+<div class="bk-metadata-item-selector">
+    <div class="bk-select-box">
+        <!-- ng-attr will not work because ui-select will be compiled before ng-attr is evaluated,
+         and in that case the multiple attribute is always absent. That's why we add the ng-if
+        !-->
+        <ui-select ng-if="!$ctrl.isMultiple()"
+                   ng-model="$ctrl.selectedItems"
+                   search-enabled="true"
+                   allow-clear="false"
+                   on-select="$ctrl.onItemSelected()"
+                   reset-search-input="true"
+                   theme="select2"
+                   blink-select
+                   on-drop-down-toggled="$ctrl.onDropDownToggled(isOpen)">
+            <ui-select-match>
+                <span>{{ $ctrl.getSelectedItemName() }}</span>
+            </ui-select-match>
+            <ui-select-choices
+                    ui-disable-choice="!item.id"
+                    group-by="$ctrl.groupBy"
+                    refresh="$ctrl.onInputChange($select.search)"
+                    refresh-delay="$ctrl.getDebounceTime()"
+                    repeat="item in $ctrl.getItemsList()">
+                <span>{{ $ctrl.getItemName(item) }}</span>
+            </ui-select-choices>
+        </ui-select>
+        <ui-select ng-if="$ctrl.isMultiple()"
+                   class="bk-multiple-select"
+                   ng-model="$ctrl.selectedItems"
+                   search-enabled="true"
+                   allow-clear="false"
+                   on-select="$ctrl.onItemSelected()    "
+                   reset-search-input="true"
+                   theme="select2"
+                   blink-select
+                   multiple
+                   on-drop-down-toggled="$ctrl.onDropDownToggled(isOpen)">
+            <ui-select-match>
+                <span>{{ $ctrl.getSelectedItemName($index) }}</span>
+            </ui-select-match>
+            <ui-select-choices
+                    ui-disable-choice="!item.id"
+                    group-by="$ctrl.getGroupByFunction()"
+                    refresh="$ctrl.onInputChange($select.search)"
+                    refresh-delay="$ctrl.getDebounceTime()"
+                    repeat="item in $ctrl.getItemsList()">
+                <div>
+                    <span ng-bind-html="$ctrl.getItemName(item) | highlight: $select.search"></span>
+                </div>
+                <small ng-bind-html="$ctrl.getItemDetails(item) | highlight: $select.search"></small>
+            </ui-select-choices>
+        </ui-select>
+    </div>
+</div>

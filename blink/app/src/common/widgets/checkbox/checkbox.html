@@ -1,0 +1,18 @@
+<div class="bk-checkbox-container"
+     ng-click="$ctrl.onClick($event)"
+     ng-class="{
+       'bk-checked': $ctrl.stateGetter(),
+       'bk-disabled': $ctrl.isReadOnly,
+       'bk-partial': $ctrl.isPartialState()
+     }">
+    <div class="bk-checkbox"
+          ng-class="{'bk-checked': $ctrl.stateGetter()}">
+    </div>
+    <div class="bk-checkbox-title"
+         ng-if="!!$ctrl.label"
+         ng-class="{'bk-overflow-ellipsis': $ctrl.shouldTruncate}"
+         data-html="true"
+         blink-tooltip="{{$ctrl.label}}"
+         ng-bind-html="$ctrl.label">
+    </div>
+</div>

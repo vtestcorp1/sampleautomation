@@ -1,0 +1,10 @@
+<div class="bk-apply-label-menu"
+     ng-show="action.showMenu"
+     ng-mouseover="$event.stopPropagation()"
+     ng-mouseenter="$event.stopPropagation()"
+     ng-click="$event.stopPropagation()"
+     blink-overlay="action.showMenu = false">
+    <div class="bk-apply-label-menu-inner">
+        <labels-panel readonly selectable="false" ng-model="labelsRegistry" on-label-click="action.applyLabel($label); action.showMenu = false"></labels-panel>
+    </div>
+</div>

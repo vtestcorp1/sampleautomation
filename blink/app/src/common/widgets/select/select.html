@@ -1,0 +1,23 @@
+<div class="bk-select {{$ctrl.customCssClass}}"
+     ng-class="{'bk-dropdown-open': $ctrl.showDropdown, 'bk-disabled': $ctrl.isDisabled}">
+    <div class="bk-select-head"
+         ng-click="$ctrl.onHeadClick($event)"
+         ng-class="{'bk-disabled': $ctrl.isDisabled}">
+        <div class="bk-selected-value">{{$ctrl.getSelectedText()}}</div>
+        <img class="bk-select-arrow" ng-src="{{$ctrl.getDropdownArrowIcon()}}">
+    </div>
+    <div class="bk-select-body {{$ctrl.customCssClass}}" ng-show="$ctrl.showDropdown"
+         blink-overlay="$ctrl.closeDropdown()"
+         ignore-click-selector="['.bk-select-body.{{$ctrl.customCssClass}}', '.bk-select.{{$ctrl.customCssClass}} .bk-select-head']">
+        <div ng-repeat="(optionID, option) in $ctrl.optionsMap">
+            <div class="bk-select-option"
+                 ng-class="{'bk-disabled': option.isDisabled, 'bk-selected': $ctrl.isOptionSelected(option)}"
+                 ng-click="$ctrl.onOptionClick(option, $event)">
+                <img ng-if="$ctrl.isOptionSelected(option)"
+                     class="bk-selected-icon" src="/resources/img/checkmark_16.svg">
+                <div class="bk-caption">{{option.caption}}</div>
+            </div>
+            <div ng-if="option.showSeparator" class="bk-separator"></div>
+        </div>
+    </div>
+</div>

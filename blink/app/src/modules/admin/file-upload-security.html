@@ -1,0 +1,54 @@
+<!--  TODO Joy: Same as above but with "Security" word instead of "modeling", and download path different -->
+<div class="bk-upload-step bk-upload-step-left">
+    <div class="bk-upload-step-arrow-1"></div>
+    <div class="bk-upload-step-number">
+        1
+    </div>
+    <div class="bk-upload-step-explanations">
+        <div class="bk-upload-step-title">
+{{strings.Download_the2}}
+</div>
+        <div class="bk-upload-step-description">
+{{strings.Click_on_the2}}
+</div>
+    </div>
+    <div class="bk-upload-download-button">
+        <div class="bk-download-file-name">{{ fileName.tabDataSecurity.SECURITY_FILE_NAME }}</div>
+        <a href="/callosum/v1/security/download">
+            <bk-secondary-button text="{{ strings.DOWNLOAD }}"
+                                 icon="bk-style-icon-download"></bk-secondary-button>
+        </a>
+    </div>
+</div>
+<div class="bk-upload-step bk-upload-step-right">
+    <div class="bk-upload-step-number">
+        2
+    </div>
+    <div class="bk-upload-step-explanations">
+        <div class="bk-upload-step-title">
+{{strings.Update_the}}
+</div>
+        <div class="bk-upload-step-description">
+{{strings.Set_the_column}}
+</div>
+    </div>
+    <div class="bk-upload-step-illustration"></div>
+</div>
+<div class="bk-upload-step-full">
+    <div class="bk-upload-step-arrow-2">
+        <div class="bk-upload-file-icon-xls"></div>
+    </div>
+    <div class="bk-upload-step-number">
+        3
+    </div>
+    <div class="bk-upload-step-explanations">
+        <div class="bk-upload-step-title">
+            Upload the security file (.xls, size &lt; 50MB)
+        </div>
+        <div class="bk-upload-step-description">
+{{strings.After_your_file}}
+</div>
+    </div>
+    <div blink-html5-file-upload upload-config="getSecurityModelingFileUploadConfig()"></div>
+</div>
+<!-- END TODO Joy -->

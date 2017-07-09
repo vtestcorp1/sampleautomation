@@ -1,0 +1,44 @@
+.bk-pb-cluster-viz {
+    .bk-vertical-flex-container-sized;
+
+    .bk-pinboard-viz-header {
+        .bk-vertical-flex-content-sized;
+    }
+
+    .bk-pinboard-viz-content {
+        // This padding is added to show the left/right control.
+        padding: 0 20px 0 20px;
+        .bk-vertical-flex-container-sized;
+
+        .carousel-inner {
+            .bk-vertical-flex-container-sized;
+            z-index: 0;
+            .bk-viz-cluster-viz.active {
+                .bk-vertical-flex-container-sized;
+                .bk-data-viz-container {
+                    width: 100%;
+                    .bk-vertical-flex-container-sized;
+                }
+            }
+        }
+
+        .carousel-control {
+            z-index: 1;
+            top: 50%;
+            .sr-only {
+                display: none;
+            }
+            &.right {
+                .bk-style-icon-arrow-right();
+                right: -12px;
+            }
+            &.left {
+                .bk-style-icon-arrow-left();
+                left: -12px;
+            }
+        }
+        .carousel-indicators {
+            display: none;
+        }
+    }
+}

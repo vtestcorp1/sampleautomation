@@ -1,0 +1,39 @@
+<div class="bk-job-metadata">
+    <div class="bk-dialog-field">
+        <div class="label">
+            <blink-required-field>{{$ctrl.reportStrings.name}}</blink-required-field>
+        </div>
+        <input type="text"
+               class="bk-job-name"
+               ng-model="$ctrl.job.backingProto.name"
+               ng-required="true"
+               spellcheck="false" blink-auto-focus>
+    </div>
+    <div class="bk-dialog-field">
+        <div class="label">
+            {{$ctrl.reportStrings.description}}
+        </div>
+                    <textarea ng-readonly=""
+                              class="bk-job-description"
+                              ng-model="$ctrl.job.backingProto.description"
+                              spellcheck="false">
+                    </textarea>
+    </div>
+    <div class="bk-dialog-field">
+        <div class="label">{{$ctrl.reportStrings.type}}</div>
+        <div class="bk-format-item">
+            <bk-radio-button class="bk-format-radio" bk-ctrl="$ctrl.csvRadioController">
+            </bk-radio-button>
+           <!-- <bk-radio-button class="bk-format-radio" bk-ctrl="$ctrl.xlsRadioController">
+            </bk-radio-button> -->
+            <bk-radio-button class="bk-format-radio" bk-ctrl="$ctrl.pdfRadioController">
+            </bk-radio-button>
+        </div>
+    </div>
+    <div ng-if="$ctrl.isCsvJob()" class="bk-warning">
+        {{$ctrl.reportStrings.csvWarning}}
+    </div>
+    <div ng-if="$ctrl.hasNoTable" class="bk-warning">
+        {{$ctrl.reportStrings.noTableWarning}}
+    </div>
+</div>

@@ -1,0 +1,193 @@
+
+@import '/resources/css/import.less';
+
+@pinboard-snapshot-row-height: 26px;
+@pinboard-snapshot-padding: 15px;
+
+// TODO(raj): remove repeated names
+.bk-viz-pinner-modal {
+    .bk-loading {
+        .panel-loading-indicator(@y: 65%);
+    }
+
+    /* .bk-viz-title { */
+    /*     padding-left: 10px; */
+    /*     margin-bottom: 10px; */
+    /* } */
+
+    // TODO(Priyanshi): Style this to be flexible sized search bar along with other search bar
+    // changes
+    .bk-search {
+        .bk-search-icon {
+            position: absolute;
+            margin-top: 9px;
+            margin-left: 7px;
+            width: 13px;
+            height: 13px;
+            background-image: url('/resources/img/search-icon.png');
+        }
+
+        input.bk-search-input {
+            margin-left: 15px;
+            margin-bottom: 14px;
+            padding-left: 23px !important;
+            padding-right: 14px !important;
+            width: 375px;
+            box-shadow: 0 1px 0 @inner-shadow-faint-1, inset 0 1px 3px @input-inner-shadow !important;
+        }
+    }
+
+    /* TODO: change snapshot icon */
+    .bk-snapshot-list {
+        overflow: auto;
+        padding-bottom: @pinboard-snapshot-padding - 5px;
+        max-height: 318px;
+        min-height: 60px;
+
+        .bk-create-snapshot-row {
+            margin-bottom: @pinboard-snapshot-padding - 5px;
+            border-top: 1px solid @gray-border;
+            border-bottom: 1px solid @gray-border;
+
+            .bk-show-create-snapshot-btn {
+                display: block;
+                padding-left: @pinboard-snapshot-padding;
+                padding-top: 1px;
+
+                .bk-snapshot-icon {
+                    float: left;
+                    margin-top: 4px;
+                    width: 18px;
+                    height: 16px;
+                    background-image: url('/resources/img/icons-menu.png');
+                    background-position: -54px -53px;
+                }
+
+                .bk-label {
+                    margin-top: 2px;
+                    margin-left: 6px;
+                    color: @gray-secondary-text;
+                    .font-family-regular();
+                    font-size: 12px;
+                    color: @gray-secondary-text;
+                }
+
+                &:hover {
+                    background-color: @gray-hover-light;
+                    border-bottom: 1px solid @gray-border;
+
+                    .bk-snapshot-icon {
+                        background-position: -73px -53px;
+                    }
+                    .bk-label {
+                        color: @gray-main-text;
+                    }
+                }
+            }
+
+            .bk-new-snapshot-input {
+                display: block;
+                position: relative;
+
+                input.bk-input{
+                    margin-top: 2px;
+                    margin-left: 15px;
+                    width: 141px;
+                    height: 12px;
+                    color: @gray-secondary-text;
+                    border-right: none;
+                }
+
+                .bk-create-snapshot-btn {
+                    position: absolute;
+                    padding: 4px 8px;
+                    top: 2px;
+                    margin-left: -1px;
+                    padding-top: 6px 6px 4px 6px;
+                    vertical-align: 0;
+                    background-color: @blue-default;
+                    color: @white-text;
+                    border: 1px solid @blue-default;
+                    border-radius: 2px;
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                    box-shadow: none;
+                    font-size: 10px;
+
+                    &.bk-disabled {
+                        color: @gray-label-text;
+                        background-color: @gray-bg;
+                        border: 1px solid @gray-border;
+                    }
+                }
+            }
+        }
+
+        /* TODO -- text vertical alignment */
+        li {
+            height: @pinboard-snapshot-row-height;
+            line-height: @pinboard-snapshot-row-height;
+            color: @gray-secondary-text;
+            font-size: 12px;
+            .font-family-regular();
+            cursor: pointer;
+
+            &.bk-snapshot-row {
+                padding-right: 10px;
+                padding-left: @pinboard-snapshot-padding;
+
+                &:hover {
+                    background-color: @gray-hover-light;
+                    color: @gray-main-title;
+
+                    .bk-delete-icon {
+                        span {
+                            background-position: -86px -22px;
+                        }
+                    }
+                }
+            }
+
+            .bk-delete-icon {
+                display: inline-block;
+                vertical-align: 0px;
+                width: 22px;
+                height: 22px;
+                border: 1px solid @gray-border;
+                background-color: @white-bg;
+                .box-shadow-inset(0 1px 3px @bg-shadow-faint, inset 0 1px 0 @inner-shadow);
+
+                span {
+                    display: block;
+                    margin-left: 2px;
+                    margin-top: 2px;
+                    width: 18px;
+                    height: 18px;
+                    background-image: url('/resources/img/chosen/chosen-sprite@2x.png');
+                    background-position: -86px -0px;
+                }
+            }
+
+            .bk-snapshot-working {
+                display: inline-block;
+                vertical-align: -3px;
+                width: 12px;
+                height: 12px;
+                margin-left: 2px;
+                padding-left: 1px;
+                padding-right: 1px;
+                background: url('/resources/img/loading-icon-black.gif') no-repeat;
+                background-size: 12px;
+            }
+
+            .bk-snapshot-info {
+                margin-left: 6px;
+
+                .bk-filtered-match {
+                    color: black;
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+}

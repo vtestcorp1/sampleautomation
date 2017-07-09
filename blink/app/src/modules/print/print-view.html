@@ -1,0 +1,17 @@
+<div class="bk-print"
+     ng-class="{'bk-screenshot-mode': $ctrl.isScreenshotMode}"
+     ng-switch="$ctrl.isViewValid()">
+    <div ng-switch-when="false"
+         class="bk-invalid-print-config">
+        {{ $ctrl.getInvalidPrintConfigurationMessage() }}
+    </div>
+    <div ng-switch-when="true"
+         class="bk-print-content-container">
+        <pinboard-page class="bk-pinboard-page"
+                       hide-panel="true"
+                       dont-watch-url="true"
+                       id="$ctrl.getPinboardId()"
+                       pinboard-page-config="$ctrl.getPinboardPageConfig()">
+        </pinboard-page>
+    </div>
+</div>

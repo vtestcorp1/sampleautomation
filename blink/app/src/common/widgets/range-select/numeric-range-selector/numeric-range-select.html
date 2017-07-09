@@ -1,0 +1,46 @@
+<div class="bk-range-select">
+    <form name="rangeSelectForm">
+        <div class="bk-range-select-row bk-range-select-first-operator">
+            <div class="bk-select-box">
+                <select class="bk-op-selector"
+                        ng-model="selectedFirstOperatorOption"
+                        ng-options="option.label for option in firstOperatorOptions track by option.operator"
+                        ng-change="onFirstOperatorChange()"
+                        ng-disabled="isReadOnly"
+                        chosen
+                        data-width="54"></select>
+            </div>
+            <input class="bk-value-selector"
+                   type="text"
+                   name="firstOperand"
+                   ng-pattern="getValidator()"
+                   ng-model="rangeDefinition.firstOperand"
+                   placeholder="{{getPlaceholderText(rangeDefinition.firstOperator)}}"
+                   ng-class="{'bk-validation-failed': rangeSelectForm.firstOperand.$error.pattern }"
+                   ng-readonly="isReadOnly"
+                   blink-on-enter="firstOperandOnEnter()"
+                   blink-on-escape="firstOperandOnEscape()"/>
+        </div>
+        <div class="bk-range-select-row bk-range-select-second-operator">
+            <div class="bk-select-box">
+                <select class="bk-op-selector"
+                        ng-model="selectedSecondOperatorOption"
+                        ng-options="option.label for option in secondOperatorOptions track by option.operator"
+                        ng-change="onSecondOperatorChange()"
+                        ng-disabled="disableSecondOperator || isReadOnly"
+                        chosen
+                        data-width="54"></select>
+            </div>
+            <input class="bk-value-selector"
+                   type="text"
+                   name="secondOperand"
+                   ng-pattern="getValidator()"
+                   ng-model="rangeDefinition.secondOperand"
+                   placeholder="{{getPlaceholderText(secondOperator)}}"
+                   ng-readonly="disableSecondOperator || isReadOnly"
+                   ng-click="autoSelectSecondOperator()"
+                   blink-on-enter="secondOperandOnEnter()"
+                   blink-on-escape="secondOperandOnEscape()"/>
+        </div>
+    </form>
+</div>

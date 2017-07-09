@@ -1,0 +1,21 @@
+<div class="bk-viz-control bk-viz-menu bk-slack-channels-drop-down bk-open" blink-on-escape="close()">
+    <div>
+        <div class="bk-viz-menu-btn bk-viz-btn bk-pin-viz-btn" ng-click="onDropDownClick($event)">
+            <div class="bk-viz-btn-icon bk-style-icon-slack" blink-tooltip="Share on Slack"></div>
+        </div>
+    </div>
+    <div class="bk-viz-menu-drop-down" ng-if="isOpen">
+        <div class="bk-header">{{strings.Share_with}}</div>
+        <ul class="bk-pinboard-list">
+            <li ng-repeat="channel in slackChannels"
+                ng-click="onShareWithChannelClicked(channel)"
+                class="bk-pinboard-row bk-overflow-ellipsis"
+                data-html="true"
+                data-placement="left">
+                <span class="bk-style-icon-checkmark" ng-show="channel.selected"><span></span></span>
+                <span class="bk-pinboard-working" ng-show="!!channel.loading"></span>
+                <span class="bk-pinboard-name" ng-bind-html="channel.name"></span>
+            </li>
+        </ul>
+    </div>
+</div>

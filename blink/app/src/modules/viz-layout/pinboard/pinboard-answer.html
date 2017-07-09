@@ -1,0 +1,24 @@
+<div class="bk-pinboard-answer" ng-class="{
+      'bk-editable-layout': allowLayoutEdit,
+      'bk-insightful-pinboard': $ctrl.isAutoCreated,
+      'bk-pinboard-loaded': !!$ctrl.isLoaded()
+    }">
+    <bk-slide-show-v2 class="bk-answer-canvas"
+                ng-class="{
+                    'bk-answer-rendering-vizs': isRenderingVisualizations(),
+                    'bk-narrow-margin': $ctrl.isAutoCreated
+                }"
+                bk-ctrl="$ctrl.slideShow">
+        <div class="tile-container">
+            <li class="grid-sizer tile-size-xs"></li>
+            <li class="gutter-sizer tile-gutter"></li>
+            <div class="bk-pinboard-tile tile-size-{{$ctrl.vizIdToLayoutTileMap[vizId].size}} bk-packable"
+                 ng-repeat="(vizId, pinboardVizCardComponent) in $ctrl.pinboardVizCardComponents track by vizId"
+                 id="{{vizId}}">
+                <bk-pb-card class="bk-pinboard-viz-card-container"
+                            bk-ctrl="pinboardVizCardComponent">
+                </bk-pb-card>
+            </div>
+        </div>
+    </bk-slide-show-v2>
+</div>

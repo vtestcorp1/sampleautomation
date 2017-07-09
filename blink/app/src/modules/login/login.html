@@ -1,0 +1,63 @@
+<div class="bk-login">
+    <div class="bk-logo-big bk-logo-wide-customizable"></div>
+    <form class="bk-login-form">
+        <ul>
+            <li class="bk-login-header">
+                {{strings.Enter_The}}
+            </li>
+            <li class="bk-login-section">
+                <label class="bk-style-icon-login" for="login-email"></label>
+                <input ng-model="$ctrl.user"
+                       blink-auto-focus
+                       type="text"
+                       id="login-email"
+                       maxlength="100"
+                       placeholder="{{ strings.LOGIN }}"
+                       ng-trim="true"
+                       ng-change="$ctrl.onUserNameChange()"
+                       blink-on-enter="$ctrl.submitLogin()">
+            </li>
+            <li class="bk-login-section"
+                ng-class="{ 'bk-login-failed': loginFailed}">
+                <label class="bk-style-icon-password" for="login-password"></label>
+                <input ng-model="$ctrl.password"
+                       type="password"
+                       id="login-password"
+                       ng-change="$ctrl.onPasswordChange()"
+                       placeholder="{{ strings.PASSWORD }}"
+                       blink-on-enter="$ctrl.submitLogin()">
+            </li>
+             <li class="bk-login-error" ng-show="$ctrl.loginFailed">
+                 <span ng-if="$ctrl.invalidCreds">{{strings.Invalid_loginpassword}}</span>
+                 <span ng-if="!$ctrl.invalidCreds">{{strings.Could_not_reach}}</span>
+             </li>
+            <li class="bk-login-section">
+                <bk-primary-button text="{{ strings.Enter_Now }}"
+                                   is-disabled=$ctrl.isLoginButtonDisabled()
+                                   ng-click="$ctrl.submitLogin()"
+                                   class="bk-login-btn">
+                </bk-primary-button>
+                <div class="bk-login-verifying" ng-show="$ctrl.isVerifying">
+                    <div class="bk-loader">
+                        <div class="bk-dot dot1"></div>
+                        <div class="bk-dot dot2"></div>
+                        <div class="bk-dot dot3"></div>
+                        <div class="bk-dot dot4"></div>
+                    </div>
+                </div>
+                <div class='bk-rememberme'>
+                    <label for="login-rememberme">{{ strings.Remember_me }}</label>
+                    <input type="checkbox" ng-model="$ctrl.rememberMe" id="login-rememberme">
+                </div>
+                <!-- Feature not implemented yet, no need to display it for now
+                <span class="bk-forgot bk-link bk-right">Forgot your password?</span>
+                -->
+            </li>
+            <li class="bk-login-saml-section" ng-show="$ctrl.samlEnabled">
+                <div class="bk-saml-login-link" ng-click="$ctrl.samlLogin()">
+                    {{ strings.loginConstants.LOGIN_WITH_SAML_MESSAGE }}
+                </div>
+            </li>
+        </ul>
+    </form>
+</div>

@@ -1,0 +1,25 @@
+.bk-add-principal {
+    .flex(row);
+
+    .label {
+        .flex-grow-shrink-basis(0, 0, 100px);
+        .font-family-semibold();
+        font-size: 14px;
+        color: @gray-main-text;
+        background: none;
+    }
+    .bk-new-permission {
+        margin-left: 20px;
+        .flex-grow-shrink-basis(1, 1, auto);
+        .bk-multiple-select {
+            width: 100%;
+            .ui-select-choices-row {
+                height: 45px;
+            }
+        }
+    }
+    .bk-add-users-buttons {
+        margin-left: 20px;
+        .flex-grow-shrink-basis(0, 0, auto);
+    }
+}

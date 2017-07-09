@@ -1,0 +1,14 @@
+<div ng-repeat="field in $ctrl.fields" class="form-row">
+    <div class="label">
+        {{field.label}}
+        <span ng-if="field.required" class="bk-asterisk">*</span>
+    </div>
+    <input type="{{field.inputType}}"
+           name="{{field.name}}"
+           ng-disabled="{{field.disabled}}"
+           ng-model="$ctrl.model[field.modelKey]"
+           ng-required="{{field.required}}"
+           spellcheck="false"
+           ng-change="field.onChange()"
+           blink-auto-focus="!!field.autoFocus" />
+</div>

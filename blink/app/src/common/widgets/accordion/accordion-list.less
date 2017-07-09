@@ -1,0 +1,63 @@
+.bk-accordion-list {
+  .bk-vertical-flex-container-sized;
+
+  .bk-accordion-item-header {
+    .bk-horizontal-flex-container-sized;
+
+    .font-family-semibold;
+    font-size: 18px;
+
+    .bk-accordion-btn {
+      align-self: center;
+      .bk-expand-btn-light-bg {
+        top: 7px;
+        .bk-expand-btn(@gray-label-text, @gray-main-text);
+      }
+
+      .bk-expand-btn-dark-bg {
+        .bk-expand-btn(@gray-label-text, @white-text);
+      }
+    }
+    .bk-accordion-item-header-title {
+      margin-left: 5px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .bk-accordion-item-description {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    max-height: 0px;
+    overflow: hidden;
+    .transition(~"all 300ms ease-out");
+    &.expand {
+      max-height: 100px;
+      opacity: 1;
+    }
+  }
+
+  .bk-accordion-item-content .bk-accordion-item-content-template {
+    .bk-vertical-flex-container-sized;
+    overflow: hidden;
+    //the animation setting require max-height to be 0
+    max-height: 0px;
+    margin-bottom: 20px;
+
+    // cubic bezier curve is used so that when height is large we
+    // start fast and then end slow in animation.
+    .transition(~"max-height 500ms cubic-bezier(0, 1.05, 0, 1.0)");
+    &.expand {
+      .transition(~"max-height 500ms ease-out");
+      // animating with auto or 100% height screws up transition animation
+      // http://css3.bradshawenterprises.com/animating_height/
+      // this max-height is sufficiently long for most
+      // overflow marked auto in case it overflows we like to catch it.
+      max-height: 700px;
+      overflow: hidden;
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+<div class="bk-rule-editor">
+
+    <div class="bk-editor-content">
+        <div class="bk-editor-header">
+            <div ng-if="ruleModel.canEditJoinPath()"
+                 ng-click="editJoinPath()"
+                 blink-tooltip="{{strings.rlsRuleEditor.EDIT_JOIN_PATH}}"
+                 class="bk-edit-jp-btn">
+            </div>
+            <div blink-content-editable
+                 fullspan
+                 disallow-empty
+                 ng-model="props.name"
+                 description = "props.desc"
+                 placeholder="getPlaceholder()"
+                 class="bk-rule-name"></div>
+
+            <div class="bk-rule-assistant-link" ng-click="showRuleAssistant()">
+                <span class="bk-style-icon-formulae-assistant"></span>
+                <span>{{strings.rlsRuleEditor.RULE_ASSISTANT}}</span>
+            </div>
+        </div>
+        <div class="bk-editor-body">
+            <expression-editor
+                    expression-editor-model="::expressionEditorModel"
+                    on-valid-expression="onValidRule(expressionEditorModel)"
+                    on-invalid-expression="onInvalidRule()">
+            </expression-editor>
+        </div>
+    </div>
+    <formula-assistant
+            title="strings.rlsRuleEditor.RULE_ASSISTANT"
+            data="examplesTreeData"
+            on-close="closeRuleAssistant()"
+            blink-draggable
+            blink-draggable-handle=".bk-formula-assistant-header"
+            class="bk-rule-assistant-container"
+            ng-if="props.isRuleAssistantOpen">
+    </formula-assistant>
+    <div class="bk-editor-footer">
+        <div class="error-message" ng-show="!!saveError">
+            <span>{{ saveError.message }}</span>
+            <a  ng-if="!!saveError.customData.traceId"
+                ng-click="saveError.customData.downloadTrace()">{{strings.alertService.DOWNLOAD_TRACE}}</a>
+        </div>
+
+        <bk-secondary-button class="bk-padding-right-10 bk-cancel-btn"
+                             text="{{strings.CANCEL}}"
+                             ng-click="onCancel()"></bk-secondary-button>
+        <bk-primary-button class="bk-confirm-btn"
+                           is-disabled="!isSaveRuleEnabled()"
+                           text="{{strings.SAVE}}"
+                           ng-click="saveRule()"></bk-primary-button>
+    </div>
+</div>

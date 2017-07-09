@@ -1,0 +1,9 @@
+<div ng-show="viz.isDownloadChartSupported()"
+     class="bk-viz-image-download-btn"
+     ng-click="viz.onChartDownloadBtnClick($event)" >
+    <div>
+        <div class="bk-viz-btn-icon bk-style-icon-download"
+             ng-class="{'bk-viz-btn-disabled': !viz.isDataDownloadAllowed()}"
+             blink-tooltip="{{ viz.getDownloadTooltip() }}"></div>
+    </div>
+</div>

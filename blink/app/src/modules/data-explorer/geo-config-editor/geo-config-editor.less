@@ -1,0 +1,62 @@
+.bk-geo-config-option-list > li {
+    margin-bottom: 20px;
+    .bk-geo-config-sub-nation {
+        margin: 14px 0 0 25px;
+        .bk-sub-nation-country {
+            .flex(row);
+            .bk-country-label {
+                margin: 5px 10px 0 0;
+            }
+            .bk-select-box {
+                width: 150px;
+            }
+        }
+        .bk-sub-nation-options {
+            margin: 14px 0 0 50px;
+            .bk-sub-nation-option {
+                margin-bottom: 5px;
+            }
+        }
+    }
+    .bk-geo-config-custom-region {
+        margin: 10px 0 0 25px;
+        .bk-horizontal-flex-content-sized();
+        .bk-custom-region-name {
+            max-width: 200px;
+            .bk-custom-region-def-name {
+                .bk-truncate-text;
+            }
+            .bk-no-def-selected {
+                .color-grey4;
+            }
+        }
+        .bk-custom-region-uploader {
+            margin-left: 10px;
+        }
+    }
+
+    .bk-select-box {
+        .select2-container {
+            width: 100%;
+            .select2-choice {
+                height: 28px;
+                .select2-chosen {
+                    .color-grey8;
+                    .font-family-regular;
+                    font-size: 13px;
+                    line-height: 30px;
+                }
+            }
+            &.select2-container-disabled {
+                .select2-choice {
+                    .select2-chosen {
+                        .color-grey5;
+                        .select2-arrow b:before {
+                            border-top-color: @grey5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+<div id="{{ carousel.carouselId }}" class="carousel {{ carousel.carouselClass }}" data-interval="false">
+
+    <!-- Indicators -->
+    <ol class="carousel-indicators" ng-show="carousel.indicators">
+        <li data-target="#{{ carousel.carouselId }}" class="slider-indicator" ng-repeat="slide in carousel.slides"
+            data-slide-to="{{$index}}" ng-class="{'active': slide.active }"></li>
+    </ol>
+
+    <!-- Controls -->
+    <span ng-show="carousel.prevBtn" class="{{ carousel.prevBtnClass }} " data-target="#{{ carousel.carouselId }}"
+         role="button" data-slide="prev">
+        <span class="{{ carousel.prevIcon }} left">{{ carousel.prevBtnLabel }}</span>
+    </span>
+    <span ng-show="carousel.nextBtn" class="{{ carousel.nextBtnClass }}" data-target="#{{ carousel.carouselId }}"
+         role="button" data-slide="next">
+        <span class="{{ carousel.nextIcon }} right">{{ carousel.nextBtnLabel }}</span>
+    </span>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item"  ng-repeat="slide in carousel.slides" ng-class="{'active': slide.active}">
+            <div ng-include="slide.contentUrl"></div>
+        </div>
+    </div>
+</div>

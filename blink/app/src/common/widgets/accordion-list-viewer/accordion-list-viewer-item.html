@@ -1,0 +1,12 @@
+<div class= 'list-item-header' ng-click="$ctrl.click()">
+                        <span class="bk-expand-btn-light-bg"
+                              ng-class="{'bk-arrow-collapsed': !$ctrl.isClicked(),
+                          'bk-arrow-expanded': !!$ctrl.isExpanded()}"></span>
+    <div class="heading">{{$ctrl.header}}</div>
+</div>
+<div class="list-item-description" ng-class="{expand: $ctrl.isExpanded()}"
+     ng-if="!!$ctrl.description" ng-bind-html="$ctrl.description">
+</div>
+<li class="bk-accordion-item" ng-transclude>
+
+</li>

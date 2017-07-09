@@ -1,0 +1,36 @@
+.alert-summary-viz {
+    overflow: auto;
+    .alert-box {
+        .bk-vertical-flex-content-sized;
+        padding: 10px 7px 13px 7px;
+
+        .alert-title {
+            color: @h-white;
+            .flex(row);
+            .flex-wrap(wrap);
+
+            .alert-type {
+                .flex-grow-shrink-basis(1, 0, auto);
+                &.alert-type-warning {
+                    color: @h-yellow;
+                }
+                &.alert-type-critical {
+                    color: @h-red;
+                }
+                .alert-icon {
+                    vertical-align: middle;
+                    padding-right: 2px;
+                }
+            }
+            .alert-message {
+                .flex-grow-shrink-basis(1, 1, 0);
+            }
+        }
+        .alert-timestamp {
+            .flex-grow-shrink-basis(0, 0, auto);
+            color: @h-gray4;
+            text-align: right;
+            font-size: 12px;
+        }
+    }
+}

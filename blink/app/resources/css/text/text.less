@@ -1,0 +1,421 @@
+// Copyright ThoughtSpot Inc. 2013-2016
+// Priyanshi Deshwal (priyanshi@thoughtspot.com)
+//
+// @fileoverview Text related styles.
+
+/* Content:
+
+=White text color classes
+=Grey text color classes
+=Orange text color classes
+=Blue text color classes
+=Red text color classes
+=Text size classes
+=Text transform classes
+=Text alignment classes
+=Text patterns based on type and use case
+=Old text color classes
+
+*/
+
+/* =Grey text color classes
+*************************************************************/
+.color-white {color: @white1; }
+/* =Grey text color classes
+*************************************************************/
+
+.color-grey1 { color: @grey1; }
+.color-grey2 { color: @grey2; }
+.color-grey3 { color: @grey3; }
+.color-grey4 { color: @grey4; }
+.color-grey5 { color: @grey5; }
+.color-grey6 { color: @grey6; }
+.color-grey7 { color: @grey7; }
+.color-grey8 { color: @grey8; }
+.color-grey9 { color: @grey9; }
+
+/* =Orange text color classes
+*************************************************************/
+
+.color-orange1 { color: @orange1; }
+.color-orange2 { color: @orange2; }
+
+/* test warning
+***************************************************************/
+.text-warning-orange { color: @orange3; }
+.text-warning-red {color: @red1; }
+
+/* =Blue text color classes
+*************************************************************/
+
+.color-blue1 { color: @blue1; }
+
+/* =Red text color classes
+*************************************************************/
+
+.color-red1 { color: @red1; }
+
+/* =Text size classes
+******************************************************************/
+
+.text-size-x-small { font-size: 11px; }
+.text-size-small { font-size: 12px; }
+.text-size-default { font-size: 14px; }
+.text-size-larger { font-size: 16px; }
+
+.text-size-11 { font-size: 11px; }
+.text-size-12 { font-size: 12px; }
+.text-size-13 { font-size: 13px; }
+.text-size-14 { font-size: 14px; }
+.text-size-15 { font-size: 15px; }
+.text-size-18 { font-size: 18px; }
+.text-size-52 { font-size: 52px; }
+
+/* =Text transform classes
+******************************************************************/
+
+.text-capitalize { text-transform: capitalize; }
+.text-uppercase { text-transform: uppercase; }
+.text-lowercase { text-transform: lowercase; }
+
+/* =Text alignment classes
+******************************************************************/
+
+.bk-align-left    { text-align: left; }
+.bk-align-center  { text-align: center; }
+.bk-align-right   { text-align: right; }
+.bk-align-justify { text-align: justify; }
+.bk-text-no-wrap { white-space: nowrap; }
+
+/* =Text patterns based on use case
+*************************************************************/
+.font-page-title {
+    &:extend(.font-family-bold);
+}
+
+input {
+    &:extend(.font-family-regular);
+}
+
+.uppercase-heading {
+    &:extend(.font-family-semibold);
+    .text-size-x-small;
+    .text-uppercase;
+    letter-spacing: 0.8px;
+}
+
+.bk-heading-uppercase-12 {
+    .font-family-regular;
+    .text-size-small;
+    .text-uppercase;
+}
+
+.regular-narrow-12 {
+    .font-family-regular;
+    .text-size-12;
+}
+
+.regular-semibold-12 {
+    .font-family-semibold;
+    .text-size-12;
+}
+
+.regular-narrow-15 {
+    .font-family-regular;
+    .text-size-15;
+}
+
+.regular-bold-15 {
+    .font-family-bold;
+    .text-size-15;
+}
+
+// Pinboard Tile Title
+.regular-bold-15-grey9 {
+    .font-family-bold;
+    .text-size-15;
+    .color-grey9;
+}
+.regular-semibold-15 {
+    .font-family-semibold;
+    .text-size-15;
+}
+
+.regular-semibold-15-grey9 {
+    .font-family-semibold;
+    .text-size-15;
+    .color-grey9;
+}
+
+.regular-book-15-grey9 {
+    .font-family-book;
+    .text-size-15;
+    .color-grey9;
+}
+
+// Answer Title
+.regular-bold-18-grey8 {
+    .font-family-bold;
+    .text-size-18;
+    .color-grey8;
+}
+
+.regular-book-14-grey8 {
+    .font-family-book;
+    .text-size-14;
+    .color-grey8;
+}
+
+.regular-book-14-grey4 {
+    .font-family-book;
+    .text-size-14;
+    .color-grey4;
+}
+
+.regular-book-18-grey7 {
+    .font-family-book;
+    .text-size-18;
+    .color-grey7;
+}
+
+.regular-bold-18-grey7 {
+    .font-family-bold;
+    .text-size-18;
+    .color-grey7;
+}
+
+// Legend Items, Tooltip Key
+.retina-mp-light-12-grey8 {
+    .font-family-retina-mp-light;
+    .text-size-12;
+    .color-grey8;
+}
+
+// Chart Axis Labels, Chart Data Labels
+.retina-mp-book-12-grey8 {
+    .font-family-retina-mp-book;
+    .text-size-12;
+    .color-grey8;
+}
+
+// Chart Axis Title, Stacked Data Labels
+.retina-mp-medium-12-grey8 {
+    .font-family-retina-mp-medium;
+    .text-size-12;
+    .color-grey8;
+}
+
+// Tooltip Value
+.retina-mp-medium-15 {
+    .font-family-retina-mp-medium;
+    .text-size-15;
+}
+
+// Pinboard Headline
+.retina-meium-52-grey9 {
+    .font-family-retina-medium;
+    .text-size-52;
+    .color-grey9;
+}
+
+// Standard List Item
+.regular-14-grey9 {
+    .font-family-regular;
+    .text-size-14;
+    .color-grey9;
+}
+
+// Tile Description, Answer Description
+.retina-light-14-grey-9 {
+    .font-family-retina-light;
+    .text-size-14;
+    .color-grey9;
+}
+
+// Table Line Item
+.retina-light-14-grey7 {
+    .font-family-retina-light;
+    .text-size-14;
+    .color-grey7;
+}
+
+// Table Column Header
+.semibold-14-grey8 {
+    .font-family-semibold;
+    .text-size-14;
+    .color-grey8;
+}
+
+// Table Column Filter
+.retina-book-11-grey7 {
+    .font-family-retina-book;
+    .text-size-11;
+    .color-grey7;
+}
+
+// Table Column Filter Item
+.retina-light-11-grey5 {
+    .font-family-retina-light;
+    .text-size-11;
+    .color-grey5;
+}
+
+// Table Row Counter
+.retina-light-13-grey5 {
+    .font-family-retina-light;
+    .text-size-13;
+    .color-grey5;
+}
+
+/* =Old text color classes
+*************************************************************/
+.setColor(@color; @default;) {
+    .font-@{color}-default{
+        color: ~"@{@{color}-@{default}}";
+    }
+}
+.setColor(@color; @default; @hover;) {
+    .font-@{color}-default{
+        color: ~"@{@{color}-@{default}}";
+    }
+    .font-@{color}-hover{
+        color: ~"@{@{color}-@{hover}}";
+    }
+}
+.setColor(@color; @default; @hover; @darker;) {
+    .font-@{color}-default{
+        color: ~"@{@{color}-@{default}}";
+    }
+    .font-@{color}-hover{
+        color: ~"@{@{color}-@{hover}}";
+    }
+    .font-@{color}-darker{
+        color: ~"@{@{color}-@{darker}}"; // color: @red-darker
+    }
+}
+.setColor(@color; @default; @hover; @darker; @transparent) {
+    .font-@{color}-default{
+        color: ~"@{@{color}-@{default}}";
+    }
+    .font-@{color}-hover{
+        color: ~"@{@{color}-@{hover}}";
+    }
+    .font-@{color}-darker{
+        color: ~"@{@{color}-@{darker}}";
+    }
+    .font-@{color}-transparent{
+        color: ~"@{@{color}-@{transparent}}";
+    }
+}
+.setColor(@color; @default; @hover; @darker; @transparent; @light;) {
+    .font-@{color}-default{
+        color: ~"@{@{color}-@{default}}";
+    }
+    .font-@{color}-hover{
+        color: ~"@{@{color}-@{hover}}";
+    }
+    .font-@{color}-darker{
+        color: ~"@{@{color}-@{darker}}";
+    }
+    .font-@{color}-transparent{
+        color: ~"@{@{color}-@{transparent}}";
+    }
+    .font-@{color}-light{
+        color: ~"@{@{color}-@{light}}";
+    }
+}
+
+// Classes created like -> .font-red-default, .font-red-hover, .font-red-darker, .font-red-transparent
+.setColor(~"red", ~"default", ~"hover", ~"darker", ~"transparent");
+.setColor(~"orange", ~"default", ~"hover", ~"darker");
+.setColor(~"blue", ~"default", ~"hover", ~"darker");
+.setColor(~"green", ~"default", ~"hover", ~"darker");
+.setColor(~"purple", ~"default", ~"hover", ~"darker");
+.setColor(~"yellow", ~"default", ~"hover", ~"darker");
+.setColor(~"pink", ~"default");
+.setColor(~"turquoise", ~"default");
+.setColor(~"dark-blue", ~"default");
+.setColor(~"white", ~"default");
+.setColor(~"primary", ~"default", ~"hover", ~"light");    //Primary grey text
+.setColor(~"secondary", ~"default", ~"hover");  //Secondary grey text
+
+
+.font-transparent {
+    color: transparent;
+}
+
+.bk-text-gray {
+    color: @gray-main-text;
+}
+
+.bk-text-white {
+    color: @white-text;
+}
+
+.bk-text-orange {
+    color: @orange-default;
+}
+
+.bk-text-green {
+    color: @green-default;
+}
+
+.bk-text-blue {
+    color: @blue-default;
+}
+
+.bk-text-yellow {
+    color: @yellow-default;
+}
+
+.bk-text-purple {
+    color: @purple-default;
+}
+.bk-text-turquoise {
+    color: @turquoise-default;
+}
+
+.bk-text-pink {
+    color: @pink-default;
+}
+
+.bk-text-dark-blue {
+    color: @dark-blue-default;
+}
+
+.bk-text-red {
+    color: @red-default;
+}
+
+.bk-text-gray {
+    color: @gray-main-text;
+}
+
+.bk-text-clickable {
+    .font-blue-default();
+}
+
+.fontClassGenerator(@classPrefix, @fontFamily, @fontColor, @fontSize) {
+    @fontClass: ~".@{classPrefix}-@{fontSize}";
+    @{fontClass} {
+        font-family: @fontFamily;
+        color: @fontColor;
+        font-size: @fontSize;
+    }
+}
+
+.darkTitleGenerator(@size) when (@size > 0) {
+    .darkTitleGenerator(@size - 1);
+    .fontClassGenerator("bk-dark-title", @font-family-bold, @gray-main-title, ~"@{size}px");
+}
+
+// Generate classes like .bk-dark-title-1px -> .bk-dark-title-36px.
+.darkTitleGenerator(36);
+
+.lightTextGenerator(@size) when (@size > 0) {
+    .lightTextGenerator(@size - 1);
+    .fontClassGenerator("bk-light-text", @font-family-regular, @gray-secondary-text, ~"@{size}px");
+}
+
+// Generate classes like .bk-light-text-1px -> .bk-light-text-36px.
+.lightTextGenerator(36);

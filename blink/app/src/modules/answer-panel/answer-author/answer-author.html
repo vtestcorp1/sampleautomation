@@ -1,0 +1,7 @@
+<div class="bk-document-author" ng-show="canShowAuthor()" blink-tooltip="{{ authorName }}">
+    <div ng-switch="!!authorId">
+        <div ng-switch-when="true">
+            <blink-profile-pic user-id="authorId" user-display-name="authorName"></blink-profile-pic>
+        </div>
+    </div>
+</div>

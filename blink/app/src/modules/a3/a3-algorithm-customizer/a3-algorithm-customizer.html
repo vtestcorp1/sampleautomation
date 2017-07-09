@@ -1,0 +1,61 @@
+<div class="bk-a3-algorithm-customizer">
+    <div class="bk-section bk-algorithm-customization" ng-show="$ctrl.isA3Viz">
+        <div class="bk-title">{{$ctrl.strings.a3.customizeVizAnalysisAlgorithmsTitle}}</div>
+        <form>
+            <div>
+                <div class="label">{{$ctrl.strings.a3.Min_Rows}}</div>
+                <input class="field-input" type="number" name="min_rows"
+                       ng-model="$ctrl.minRows"
+                       ng-change="$ctrl.verifyMinRows()"
+                       spellcheck="false">
+            </div>
+            <div>
+                <div class="label">{{$ctrl.strings.a3.Multiplier}}</div>
+                <input class="field-input" type="text" name="multiplier"
+                       ng-model="$ctrl.multiplier"
+                       ng-change="$ctrl.verifyMultiplier()"
+                       spellcheck="false">
+            </div>
+        </form>
+    </div>
+    <div class="bk-section bk-algorithm-customization" ng-show="$ctrl.isA3Diff">
+        <div class="bk-title">{{$ctrl.strings.a3.customizeDiffAnalysisAlgorithmsTitle}}</div>
+        <form>
+            <div>
+                <div class="label">{{$ctrl.strings.a3.Max_Diff_Elements}}</div>
+                <input class="field-input" type="number" name="max_diff_elements"
+                       ng-model="$ctrl.maxDiffElements"
+                       ng-change="$ctrl.verifyMaxDiffElements()"
+                       spellcheck="false">
+            </div>
+            <div>
+                <div class="label">{{$ctrl.strings.a3.Max_Fraction}}</div>
+                <input class="field-input" type="number" name="max_fraction"
+                       ng-model="$ctrl.maxFraction"
+                       ng-change="$ctrl.verifyMaxFraction()"
+                       spellcheck="false">
+            </div>
+            <div>
+                <div class="label">{{$ctrl.strings.a3.Min_Abs_Change_Ratio}}</div>
+                <input class="field-input" type="number" name="min_abs_change_ratio"
+                       ng-model="$ctrl.minAbsChangeRatio"
+                       ng-change="$ctrl.verifyMinAbsChangeRatio()"
+                       spellcheck="false">
+            </div>
+            <div>
+                <div class="label">{{$ctrl.strings.a3.Min_Change_Ratio}}</div>
+                <input class="field-input" type="number" name="min_change_ratio"
+                       ng-model="$ctrl.minChangeRatio"
+                       ng-change="$ctrl.verifyMinChangeRatio()"
+                       spellcheck="false">
+            </div>
+        </form>
+    </div>
+    <div class="bk-invalid-input-message" id="invalid_input"
+          ng-show="$ctrl.isInputInvalid">{{$ctrl.invalidInputMessageString}}
+    </div>
+    <bk-primary-button class="bk-trigger-analysis-button"
+                       text="{{ strings.a3.triggerAnalysis }}"
+                       ng-click="$ctrl.trigger()">
+    </bk-primary-button>
+</div>

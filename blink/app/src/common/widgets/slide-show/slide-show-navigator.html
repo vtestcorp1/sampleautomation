@@ -1,0 +1,26 @@
+<div class="bk-presentation-mode-container">
+    <!-- This template represents the presentation shell (see the comments in slide-show.js) -->
+    <!-- The html here appears as an overlay with a navigator on the left (orientation will be
+     configurable in future) -->
+    <!-- The overlay leaves an empty space for the slides. The slide content area is left to the caller and
+         slide-show directive takes care of sizing the slide and bringing it on top of this presentation shell. -->
+    <!-- The main reason to use such a design is to allow the original content to work in its own DOM tree and scope
+         tree regardless of whether the content is shown in presentation mode or not. (for example, we want
+         any changes made to a pinboard chart in presentation mode to persist even after user exits this mode. -->
+    <div class="bk-slide-show-navigator">
+        <div class="bk-scrollable-container" ng-show="!$ctrl.inSizingTransition">
+            <h3>{{ $ctrl.navigator.getTitle() }}</h3>
+            <ol>
+                <li ng-repeat="slide in $ctrl.navigator.slides"
+                    ng-click="$ctrl.navigator.goToSlide(slide)"
+                    ng-class="{ 'bk-active': slide.isActive()}"><span ng-bind-html="slide.getTitle()"></span></li>
+            </ol>
+        </div>
+        <bk-primary-button text="{{ $ctrl.strings.CLOSE }}"
+                           ng-click="$ctrl.navigator.stopSlideShow()"
+                           class="bk-close-slideshow"></bk-primary-button>
+    </div>
+    <div class="bk-sizing-btn bk-collapse-btn" ng-show="!$ctrl.isCollapsed && !$ctrl.inSizingTransition" ng-click="$ctrl.collapsePanel()">&laquo;</div>
+    <div class="bk-sizing-btn bk-expand-btn" ng-show="$ctrl.isCollapsed && !$ctrl.inSizingTransition" ng-click="$ctrl.expandPanel()">&raquo;</div>
+    <div class="bk-close-btn" ng-click="$ctrl.navigator.stopSlideShow()" blink-tooltip="Exit fullscreen" data-placement="left">&times;</div>
+</div>

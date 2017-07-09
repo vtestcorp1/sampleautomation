@@ -1,0 +1,35 @@
+<div class="bk-expression-suggestions-menu">
+    <div class="header" ng-switch="getHeaderType()">
+        <div ng-switch-when="ErrorQueryCompletion" class="bk-overflow-ellipsis">
+            <div class="header-text">
+                <span class="header-text-error" blink-tooltip="{{ expressionEditorModel.sageCompletionError.errorMessage || '' }}"><u>{{strings.I_didnt}}</u></span>
+                <span> {{strings.Did_you}}</span>
+            </div>
+        </div>
+        <div ng-switch-when="WarnQueryCompletion" class="bk-overflow-ellipsis">
+            <div class="header-text">{{strings.Multiple_matches}}</div>
+        </div>
+        <div ng-switch-when="EditJoinPath" class="bk-overflow-ellipsis header-edit-join-path">
+            <a ng-click="requestJoinPathEdit()"><span>{{strings.See_other}}</span>{{ getCurrentTokenWithSuggestions().getTokenTextLowerCase() }}<span>{{strings.types}}</span></a>
+        </div>
+    </div>
+    <div class="items" scroll-into-view="{{ 'ul li:nth-child({1})'.assign(getActiveCompletionIndex() + 1) }}">
+        <ul>
+            <li ng-repeat="(index, suggestion) in getSuggestionsForCurrentCursor()"
+                ng-class="{active: isActiveCompletionIndex(index)}"
+                ng-click="onCompletionClick($event, index)"
+                ng-mouseover="onCompletionMouseOver($event, index)"
+                ng-mousedown="onCompletionMouseDown($event)">
+                <div class="suggestion"
+                     data-tooltip-html="true"
+                     data-placement="right"
+                     data-html="true"
+                     blink-tooltip-model="{'suggestion': suggestion}"
+                     blink-tooltip-template-url="'src/modules/expression-editor/expression-suggestion-item-tooltip.html'"
+                     blink-tooltip>
+                    <span ng-include="'src/modules/expression-editor/expression-suggestion-item.html'"></span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

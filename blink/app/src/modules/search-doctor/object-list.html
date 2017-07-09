@@ -1,0 +1,21 @@
+<div class="bk-expandable-list bk-object-list">
+    <div class="bk-list-title">{{title}}</div>
+    <div class="bk-list-content" ng-show="!!objects.length">
+        <div blink-paged-repeat="object in objects" model="objects" page-size="10" allow-expansion="true">
+            <div class="bk-list-row" ng-click="onItemClick(object)">
+                <div class="bk-icon object-result" ng-class="{'bk-style-icon-answer': object.isAnswer(), 'bk-style-icon-pinboard': object.isPinboard()}"></div>
+                <div class="bk-row-content">
+                    <div class="row-header">
+                        <span class="new-token" ng-bind-html="object.name.text | blinkHighlight:object.getHighlightedName().getMatchedSubstring() :'matched-substring'"></span>
+                    </div>
+                    <div class="row-subtext" ng-if="hasSubtext(object)">
+                        <span ng-bind-html="getMatchedQuestion(object).getName() | blinkHighlight:getMatchedQuestion(object).getHighlightedName().getMatchedSubstring():'matched-substring'"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bk-empty-list" ng-show="!objects.length">
+{{strings.NO_DATA}}
+</div>
+</div>

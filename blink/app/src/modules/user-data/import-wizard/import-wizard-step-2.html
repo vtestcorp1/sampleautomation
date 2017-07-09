@@ -1,0 +1,56 @@
+<div class="bk-userdata-table">
+    <table>
+        <tr class="bk-userdata-header-row bk-column-header-names">
+            <td class="bk-cell" ng-repeat="column in getColumns()"
+                ng-class="{'bk-error-cell': isInvalidColName(column.logicalName) }">
+                <div class="bk-header-cell-container bk-cell-content">
+                    <div blink-content-editable
+                         fullspan
+                         not-editable="!!existingDataId"
+                         auto-show-editable
+                         ng-model="column.logicalName"
+                         placeholder="'Enter column name'"></div>
+                </div>
+            </td>
+            <td class="bk-cell">&nbsp</td>
+        </tr>
+        <tr class="bk-userdata-header-row bk-column-types" ng-show="shouldShowDataTypeRow()">
+            <td class="bk-cell" ng-repeat="column in getColumns()"
+                ng-class="{'bk-error-cell': isInvalidColType($index) }"
+                blink-tooltip="{{ userSchema.getColumnError($index) }}">
+                <div ng-show="!!existingDataId"
+                     class="bk-cell-content bk-overflow-ellipsis"
+                        >{{getLabelForColumnDataType(column.dataType)}}</div>
+                <div ng-show="!existingDataId">
+                    <div class="bk-select-box">
+                        <ui-select ng-model="column.dataType"
+                                   theme="select2"
+                                   class="bk-column-data-type"
+                                   search-enabled="false"
+                                   append-to-body="true">
+                            <ui-select-match placeholder={{strings.importWizard.SELECT_TYPE}}>
+                                {{ $select.selected.name }}
+                            </ui-select-match>
+                            <ui-select-choices repeat="type.id as type in typeStep.columnTypes">
+                                {{ type.name }}
+                            </ui-select-choices>
+                        </ui-select>
+                    </div>
+                </div>
+            </td>
+            <td class="bk-cell">&nbsp</td>
+        </tr>
+        <tr class="bk-userdata-data-row" ng-repeat="(rowIndex, dataRow) in getDataRows()"
+            ng-class="{'bk-error-row': userSchema.isRowWithError(rowIndex)}"
+            data-line-number="{{ userSchema.getLineNumber(rowIndex) }}">
+            <td class="bk-cell"
+                blink-tooltip="{{ userSchema.getCellError(rowIndex, colIndex) }}"
+                ng-class="{'bk-error-cell': userSchema.isCellWithError(rowIndex, colIndex) }"
+                ng-repeat="(colIndex, dataCell) in userSchema.getColumns()">
+                <div class="bk-cell-content bk-overflow-ellipsis">
+                    {{ dataRow[colIndex] }}
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>

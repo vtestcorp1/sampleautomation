@@ -1,0 +1,54 @@
+<div class="bk-viz-pinner-modal">
+    <div class="bk-viz-title">
+        <blink-content-editable
+             fullspan
+             ng-model="pinTitle.name"
+             description="pinTitle.desc">
+        </blink-content-editable>
+    </div>
+    <div class="bk-search" ng-show="pinboards.length > 6">
+        <input type="text" class="bk-search-input" placeholder="{{strings.SEARCH_PLACEHOLDER}}"
+               ng-model="searchFilter.name">
+    </div>
+    <ul class="bk-pinboard-list" ng-class="{
+            'bk-loading' : shouldShowLoadingIndicator()
+        }">
+        <li class="bk-create-pinboard-row">
+                <div class="bk-show-create-pinboard-btn"
+                      ng-hide="showNewPinboardInput"
+                      ng-click="onShowCreatePinboardClick()">
+                    <span class="bk-pinboard-icon"></span>
+                    <span class="bk-label">{{strings.CREATE_NEW_PINBOARD}}</span>
+                </div>
+                <div class="bk-new-pinboard-input" ng-show="showNewPinboardInput">
+                    <div class="bk-pinboard-icon"></div>
+                    <input type="text" class="bk-input"
+                           placeholder="{{strings.NEW_PINBOARD_NAME_PLACEHOLDER}}"
+                           ng-model="newPinboardName"
+                           ng-enter="createPinboard()">
+                    <a class="bk-btn bk-create-pinboard-btn" ng-click="createPinboard()"
+                       ng-class="{ 'bk-disabled': !newPinboardNameIsValid || addingPinboard }">
+                        {{strings.ADD_PINBOARD}}
+                    </a>
+                </div>
+        </li>
+        <li ng-repeat="pinboard in pinboards | filter:searchFilter"
+            ng-click="onAddToPinboardClick(pinboard)"
+            class="bk-pinboard-row bk-overflow-ellipsis"
+            ng-class="{ 'bk-selected': pinboard.selected }"
+            blink-tooltip="{{ pinboard.tooltip }}"
+            data-html="true"
+            data-placement="left">
+                <span class="bk-plus-icon"
+                      ng-show="!pinboardsWithActiveVizAddition[pinboard.id]">
+                    <span></span>
+                </span>
+                <span class="bk-pinboard-working"
+                      ng-show="!!pinboardsWithActiveVizAddition[pinboard.id]">
+                </span>
+            <span class="bk-pinboard-name"
+                  ng-bind-html="pinboard.name | searchResultHighlight:searchFilter.name">
+            </span>
+        </li>
+    </ul>
+</div>

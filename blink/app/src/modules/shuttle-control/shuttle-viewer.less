@@ -1,0 +1,107 @@
+.shuttle-viewer-container {
+  .flex(row);
+  .shuttle-title {
+    .font-family-bold();
+    color: @h-purple;
+  }
+  .left-shuttle {
+    .flex-order(1);
+    .flex(column);
+    .bk-list-search {
+      .flex(column);
+      .bk-search-input {
+        width: auto;
+        .flex-grow-shrink-basis(1, 1, auto);
+      }
+    }
+  }
+  .center-col{
+    .flex-order(2);
+    .flex-grow(1);
+    width: 70px;
+    height: 380px;
+    .buttons-mid {
+      margin-top: 85px;
+      height:380px;
+      .bk-btn {
+        margin-top: 10px;
+      }
+    }
+  }
+  .buttons {
+    margin-top: 10px;
+    .flex-grow(1);
+  }
+  .right-shuttle {
+    .flex-order(3);
+    .bk-general-item-viewer {
+      margin-top: 33px;
+    }
+  }
+  .shuttle {
+    .flex(row);
+  }
+  .bk-width {
+    width:100px;
+  }
+  .bk-name-label {
+    margin-top: 30px;
+  }
+  .bk-desc-label {
+    margin-top: 30px;
+  }
+  .bk-conn-label {
+    margin-top: 30px;
+  }
+  .bk-table-viewer {
+    box-shadow: 0 1px 4px rgba(46, 48, 55, .06), inset 0 -1px 0 rgba(255, 255, 255, .1);
+    border: 1px solid #dedfe3;
+    overflow: auto;
+    max-height: 400px;
+
+    .bk-checkbox-container {
+      display: inline-block;
+    }
+
+    .bk-table {
+      padding: 10px;
+      vertical-align: middle;
+      cursor: pointer;
+
+      border-bottom-color: #DEDFE1;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+    }
+
+    .bk-subitems {
+      padding-left: 0;
+      font-weight: normal;
+
+      li {
+        vertical-align: middle;
+        display: flex;
+        border-bottom-color: #DEDFE1;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+
+        .column_name {
+          .flex(row);
+          padding: 10px 10px 10px 30px;
+          display: inline-block;
+          width: 350px;
+          background-color: #f0f1f3;
+        }
+
+        .column_value {
+          padding: 10px;
+          display: inline-block;
+          width: 300px;
+        }
+
+        &:hover {
+          background-color: #f0f1f3;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+<div class="bk-more-download-footer">
+    <!-- we dont have access to the cell, so we add a style that target this cell -->
+    <style>.ui-widget-content.slick-row.full-colspan { width:{{getTableWidth()}}px;}</style>
+    <span class="bk-dark-title-12px">
+        <span>{{strings.Showing_only}}</span>
+        &nbsp;{{ viz.getModel().getData().length}}&nbsp;
+        <span>{{strings.rows_here}}</span>
+    </span>
+    <span ng-if="viz.showDownloadHelp()" ng-switch="viz.isDataDownloadAllowed()">
+        <a ng-switch-when="true"
+           class="bk-link"
+           ng-click="viz.onDownloadMoreBtnClick($event)">{{strings.dataDownload.DOWNLOAD_MORE}}
+        </a>
+        <a ng-switch-when="false">{{strings.dataDownload.DOWNLOAD_MORE_INSUFFICIENT_PERMISSION}}</a>
+    </span>
+</div>

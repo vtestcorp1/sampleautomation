@@ -1,0 +1,30 @@
+<div class="bk-dropdown-wrapper"  ng-class="{ 'bk-show': isOpen()}"
+     ng-mousedown="$event.stopPropagation()"
+     ng-mouseenter="onMouseEnter()" ng-mouseleave="onMouseLeave()">
+    <div class="bk-dropdown-lists">
+        <div ng-repeat="(listIndex, list) in matches" class="bk-dropdown-list-wrapper {{ list.css || '' }}">
+            <div ng-show="list.items.length > 0">
+                <div ng-include="listHeaderTemplateUrl"></div>
+                <ul class="bk-dropdown-list">
+                <span class="bk-paged-dropdown-list-wrapper">
+                    <span blink-paged-repeat="match in list.items"
+                          model="list.items"
+                          page-size="list.paging.pageSize"
+                          allow-expansion="list.paging.allowExpansion"
+                          show-all-in-second-page="list.paging.showAllInSecondPage"
+                          add-next-page="getMoreCompletions()"
+                          use-virtual-scroll="true"
+                          view-all-button-text="'View More'">
+                        <li ng-class="{active: isActive($index, listIndex), 'bk-small-mode': list.smallMode }"
+                            ng-mouseenter="selectHoverState($index, listIndex)"
+                            ng-click="selectMatch($index, listIndex)">
+                            <div ng-include="getItemTemplateUrl()(match, list)"></div>
+                        </li>
+                    </span>
+                </span>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div ng-if="isScrollActive()" class="bk-scroll-indicator">{{strings.Scroll_for}}</div>
+</div>

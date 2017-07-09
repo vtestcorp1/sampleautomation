@@ -1,0 +1,58 @@
+<div class="bk-editable"
+     ng-class="{'bk-in-edit-mode': isBeingEdited,
+                'bk-empty-content': !text || !text.trim(),
+                'bk-readonly': isNotEditable(),
+                'bk-external': isExternal(),
+                'bk-full-width': fullSpan,
+                'bk-show-editable': autoShowEditable,
+                'bk-error-input': !!error}"
+     ng-mouseenter="mouseEntered()"
+     ng-mouseleave="mouseLeft()">
+
+    <div class="bk-description-edit-dropdown"
+        ng-class="{'bk-visible': isDescEnabled && (isBeingEdited)}">
+        <div class="bk-visible bk-error-popup bk-opens-right fr" ng-show="!!error">
+            <div class="bk-container">
+                {{error}}
+            </div>
+        </div>
+        <input type="text"
+               class="bk-visible bk-editable-input"
+               ng-class="{'bk-readonly' : isReadOnly || isNotEditable()}"
+               ng-click="contentClicked($event)"
+               spellcheck="false"
+               placeholder="{{ getPlaceHolderText() }}"
+               size="{{ getSize() }}"
+               name="{{ text }}"
+               blink-on-escape="reset();"
+               blink-on-enter="submit();"
+               ng-change="onTextChange()"
+               ng-model="text"
+               ng-readonly="isReadOnly || isNotEditable()"
+               uib-tooltip-template="'content-editable-tooltip-template.html'"
+               tooltip-class="bk-content-editable-tooltip"
+               tooltip-placement="auto bottom"
+               tooltip-popup-delay="500"
+               tooltip-append-to-body="true"/>
+        <div class="bk-description-container" ng-show="isDescEnabled && (isBeingEdited)">
+            <textarea class="bk-description-editarea"
+                      ng-class="{'bk-readonly' : isReadOnly || isNotEditable()}"
+                      ng-readonly="isReadOnly || isNotEditable()"
+                      placeholder="Description"
+                      ng-model="description">
+            </textarea>
+            <bk-primary-button class="bk-content-editable-done-button"
+                               text="{{ strings.DONE }}"
+                               ng-click="changeEditMode(false)"></bk-primary-button>
+        </div>
+
+        <script type="text/ng-template" id="content-editable-tooltip-template.html">
+            <div>
+                <span ng-if="description" class="bk-tooltip-title">{{strings.TITLE}}:</span> {{text}}
+            </div>
+            <div ng-if="description" >
+                <span class="bk-tooltip-description">{{strings.DESCRIPTION}}:</span> {{description}}
+            </div>
+        </script>
+    </div>
+</div>

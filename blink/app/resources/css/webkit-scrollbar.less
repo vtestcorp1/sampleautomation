@@ -1,0 +1,24 @@
+// Copyright ThoughtSpot Inc. 2013-2017
+// Priyanshi Deshwal (priyanshi@thoughtspot.com)
+//
+// @fileoverview Custom styling of scroll bar for webkit browsers.
+// FF and IE will still have the default design.
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar:horizontal {
+    height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    .bg-grey1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    .border-radius (5px);
+    .bg-grey4;
+}

@@ -1,0 +1,68 @@
+<div class="bk-dialog-field" blink-dialog-password-check>
+    <div class="bk-connection-property">
+        <div class="bk-property-label">
+            <blink-required-field >{{$ctrl.data.connectionName}}</blink-required-field>
+        </div>
+        <div class="bk-property-value">
+            <input class="bk-property-input"
+                   ng-model="$ctrl.data.customData.name"
+                   type="text"
+                   ng-readonly="!!$ctrl.data.customData.nameReadOnly"
+                   ng-required="true">
+        </div>
+    </div>
+    <div class="bk-connection-property" ng-repeat="attribute in $ctrl.data.customData.attributes">
+        <div class="bk-property-label" ng-if="!!attribute.isRequired">
+            <blink-required-field >{{attribute.displayName}}</blink-required-field>
+        </div>
+        <div class="bk-property-label" ng-if="!attribute.isRequired">
+            {{attribute.displayName}}
+        </div>
+        <div class="bk-property-value" ng-switch="attribute.type">
+            <div ng-switch-when="PASSWORD">
+                <input class="bk-property-input"
+                       ng-model="attribute.value"
+                       type="password"
+                       ng-required="{{attribute.isRequired}}">
+            </div>
+            <div ng-switch-when="TEXT">
+                <input class="bk-property-input"
+                       ng-model="attribute.value"
+                       type="text"
+                       ng-init="$ctrl.data.initializeWithDefaultValue(attribute)"
+                       ng-required="{{attribute.isRequired}}">
+            </div>
+            <div ng-switch-when="BOOL">
+                <span class="bk-bool-container">
+                <span class="bk-select-box">
+                    <ui-select ng-model="attribute.value"
+                               ng-init="$ctrl.data.translateBoolSelection($ctrl.data.initializeWithDefaultValue(attribute))"
+                               class="bk-connection-select"
+                               theme="select2"
+                               search-enabled="false">
+                        <ui-select-match>{{$ctrl.data.translateBoolSelection($select.selected)}}</ui-select-match>
+                        <ui-select-choices repeat="value as value in $ctrl.data.getBoolTypeListOptions()">
+                            {{ $ctrl.data.translateBoolSelection(value) }}
+                        </ui-select-choices>
+                    </ui-select>
+                </span>
+                </span>
+
+            </div>
+            <div ng-switch-when="LIST">
+                <span class="bk-select-box">
+                    <ui-select ng-model="attribute.value"
+                               ng-init="$ctrl.data.initializeWithDefaultValue(attribute)"
+                               class="bk-connection-select"
+                               theme="select2"
+                               search-enabled="false">
+                        <ui-select-match>{{ $select.selected }}</ui-select-match>
+                        <ui-select-choices repeat="value as value in attribute.listOptions">
+                            {{ value }}
+                        </ui-select-choices>
+                    </ui-select>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

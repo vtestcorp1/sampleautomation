@@ -1,0 +1,24 @@
+<!-- Output: aggr1 <comma separates values>; aggr2 <comma separates values>; aggr3 <>;..... -->
+<ul class="bk-clause-template">
+    <span ng-repeat="(aggregation, columns) in outputColumnValues">
+        <li>
+            <span class="bk-aggr-label">{{ aggregationTranslation[aggregation] }}</span>
+            <span ng-repeat="column in columns">
+                <span ng-switch on="$index == maxMeasuresToShow - 1">
+                    <span ng-switch-when="true">
+                        {{ strings.aggregateMetricMeasures.assign({
+                                length: columns.length - maxMeasuresToShow + 1
+                            })
+                        }}
+                    </span>
+                    <span ng-switch-when="false" ng-switch on="$index > maxMeasuresToShow - 1">
+                        <span ng-switch-when="false">
+                            {{ getSequenceSymbol($index, columns) }}
+                            <span class="bk-output-column bk-text-{{getColumnColor(column)}}" blink-tooltip="{{ column.table.name }}">{{ column.name}}</span>
+                        </span>
+                    </span>
+                </span>
+            </span>
+        </li>
+    </span>
+</ul>

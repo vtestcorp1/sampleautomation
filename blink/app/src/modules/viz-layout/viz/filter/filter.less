@@ -1,0 +1,31 @@
+@import '/resources/css/import.less';
+
+.bk-viz-filter {
+    &:focus, &:active {
+        outline: none;
+    }
+
+    .bk-headline-filter-body {
+        position:relative;
+        display: block;
+        padding: 8px;
+        margin-top: -1px;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        bottom: 0;
+
+        .bk-no-selected-filter-label {
+            margin-left: 0px;
+        }
+    }
+
+    .bk-filter-loading-indicator {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: url('/resources/img/loading-icon-dark.gif') no-repeat 50% 50%;
+    }
+}
+

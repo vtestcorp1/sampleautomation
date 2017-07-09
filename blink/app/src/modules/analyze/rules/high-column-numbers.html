@@ -1,0 +1,17 @@
+<div class="bk-high-column-numbers-analyzer bk-analyzer">
+    <div class="bk-analyzer-body">
+        <div class="bk-analyzer-description">
+            {{strings.analyze.highColumnNumbersAnalyzer.description1}}
+            {{$ctrl.recommendedColumnsNumber}}
+            {{strings.analyze.highColumnNumbersAnalyzer.description2}}
+            <div class="high-columns">
+                <div class="bk-analyzer-status">
+                    <div class="bk-analyzer-status-{{$ctrl.columnStatus}}">
+                        {{$ctrl.columnsNumber}}/{{$ctrl.recommendedColumnsNumber}}
+                        {{strings.analyze.highColumnNumbersAnalyzer.columns}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

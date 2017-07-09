@@ -1,0 +1,20 @@
+<div class="bk-a3-insights-summary">
+    <div class="bk-a3-insights-description-container">
+        <div class="bk-a3-insights-description">
+            {{ $ctrl.getInsightsHeaderDescription() }}
+            <a class="bk-a3-insights-edit-query"
+               ng-click="$ctrl.launchCustomizationDialog()">
+               {{ $ctrl.strings.a3.EDIT_ANALYSIS_TEXT }}
+            </a>
+        </div>
+        <br>
+    </div>
+
+    <div class="bk-a3-insights-original-query">
+        <span class="bk-a3-insights-summary-key"
+              blink-tooltip="{{$ctrl.originalQuery}}">
+              {{$ctrl.strings.a3.ORIGINAL_QUERY}}
+              </span>:
+        {{$ctrl.originalQuery}}
+    </div>
+</div>

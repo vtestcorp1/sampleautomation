@@ -1,0 +1,851 @@
+/* Buttons classes and functions */
+
+@import '/resources/css/import.less';
+
+
+/* Global */
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    .font-family-semibold;
+    color: @orange-default;
+
+    &:hover {
+        text-decoration: none;
+        .transition(~"color 200ms ease-out");
+        color: @gray-main-text;
+    }
+
+    &.linkified {
+        text-decoration: underline;
+    }
+}
+
+.bk-full-height {
+    height: 100%;
+}
+
+.bk-right {
+    float: right;
+}
+
+.bk-strong {
+    font-weight: bold;
+}
+
+.bk-link {
+    cursor: pointer;
+}
+
+.bk-clear {
+    clear: both;
+}
+
+/* Body */
+
+html {
+    height: 100%;
+}
+
+b {
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* jQuery UI */
+
+.ui-state-default {
+    background-image: none;
+}
+
+.select2-dropdown-open {
+    .select2-choice {
+        height: 32px;
+        border-radius: 3px;
+        .br-grey3;
+        background: transparent none;
+        width: auto;
+        font-size: 14px;
+        color: #4e515e;
+
+        .select2-chosen {
+            font-family: @font-family-regular;
+            line-height: 33px;
+        }
+    }
+
+    .select2-drop-active {
+        margin-top: -2px;
+        .br-grey3;
+        border-top: none;
+    }
+
+    .ui-select-choices-row {
+        height: 27px;
+
+        &.select2-highlighted {
+            .select2-result-label {
+                background-color: @h-gray;
+            }
+        }
+
+        .select2-result-label {
+            font-size: 13px;
+            color: @h-gray5;
+            white-space: nowrap;
+            overflow: hidden;
+            -ms-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+
+            &:hover {
+                background-color: @h-gray;
+            }
+        }
+    }
+}
+
+// Simple select box (based on ui-select)
+
+
+.bk-select-box {
+    .select2-container {
+        .select2-choice {
+            height: 32px;
+            border-radius: 3px;
+            .br-grey3;
+            background: transparent none;
+            .box-shadow(inset 0px 1px 0px rgba(255, 255, 255, 0.9));
+            .transition(~"all 200ms ease-out");
+            width: auto;
+            font-size: 14px;
+            color: #4e515e;
+
+            .select2-chosen {
+                .font-family-semibold();
+                line-height: 33px;
+            }
+
+            .select2-arrow {
+                background: none;
+                border: none;
+
+                // Arrow
+                b {
+                    @arrow-size: 4px;
+                    &:before {
+                        position: absolute;
+                        top: 50%;
+                        margin-top: -(@arrow-size / 2);
+                        right: 10px;
+                        border: @arrow-size solid transparent;
+                        content: '';
+                        border-top-color: @grey7;
+                    }
+                }
+            }
+        }
+        .select2-search {
+            display: block;
+
+            input {
+                width: 100%;
+            }
+        }
+    }
+}
+
+// disabled state
+.bk-disabled {
+    .select2-container {
+        .select2-choice {
+            color: @gray-label-text;
+            .select2-arrow {
+                b {
+                    &:before {
+                        border-top-color: @gray-label-text;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// Simple select box (based on Chosen JS)
+.bk-select-box {
+    // Chosen Bugfix: https://github.com/harvesthq/chosen/issues/1410
+    .chosen-container .chosen-drop  {
+        height: 0;
+        left: 0;
+        visibility: hidden;
+    }
+
+    .chosen-container.chosen-with-drop .chosen-drop {
+        height: auto;
+        visibility: visible;
+    }
+
+    .chosen-container-single.chosen-container-single-nosearch .chosen-search {
+        height: 0;
+        visibility: hidden;
+    }
+    // End Fix
+
+    .chosen-container-single {
+        background-color: #ffffff;
+        background-image: none;
+        cursor: pointer;
+        border-color: @gray-border;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        .font-family-regular();
+        .box-shadow(inset 0px 1px 0px rgba(255,255,255,0.9));
+        .transition(~"all 200ms ease-out");
+
+        .chosen-single {
+            height: 29px;
+            line-height: 30px;
+            font-size: 13px;
+            border-radius: 3px;
+            .font-family-bold();
+            border: 1px solid @gray-border;
+            color: @gray-main-text;
+            background-color: @white-bg;
+            background-image: none;
+            box-shadow: none;
+
+            // Arrow
+            b {
+                background: none !important; // We are removing the background-image chosen.js is using to create the arrow
+
+                // Instead we generate an arrow with only CSS
+                @arrow-size: 4px;
+                &:before {
+                    position: absolute;
+                    top: 50%;
+                    margin-top: -(@arrow-size / 2);
+                    right: 10px;
+                    border: @arrow-size solid transparent;
+                    content: '';
+                    border-top-color: @gray-border;
+                }
+            }
+        }
+
+        // Dropdown
+        .chosen-drop {
+            border-color: @gray-border;
+            border-top-color: transparent;
+            border-radius: 0 0 3px 3px;
+            .box-shadow( 0 2px 4px @bg-shadow-faint-2);
+
+            // Search input
+            .chosen-search {
+                border-radius: 2px;
+                padding: 4px 12px;
+
+                input[type=text]{
+                    color: @gray-main-text;
+                    font-size: 12px;
+
+                    &::-webkit-input-placeholder {
+                        color: @gray-main-text;
+                    }
+                    &:-moz-placeholder {
+                        color: @gray-secondary-text; // Slightly darker in Firefox (color rendering is brighter)
+                    }
+                    &::-moz-placeholder {
+                        color: @gray-secondary-text; // Slightly darker in Firefox (color rendering is brighter)
+                    }
+                    &:-ms-input-placeholder {
+                        color: @gray-main-text;
+                    }
+
+                    &:focus{
+                        border: 1px solid @blue-default;
+                        box-shadow: none;
+                    }
+                }
+            }
+
+            // List of elements
+            .chosen-results {
+                padding: 4px 0 0 4px;
+                border-color: green;
+
+                li.active-result{
+                    color: @gray-secondary-text;
+                    font-size: 13px;
+                    .font-family-regular();
+                    .transition(~"all 200ms ease-out");
+
+                    &.highlighted, &:hover{
+                        background: @gray-hover-light;
+                        color: @gray-main-text;
+                        .transition(~"all 200ms ease-out");
+                    }
+                }
+            }
+        }
+    }
+}
+
+.extracted-chosen-drop {
+    &.chosen-drop {
+        // Chosen drop needs a higher z-index to be displayed over the answer table and headlines in Firefox.
+        // This is also needed in the case of permission drop down on the share dialog.
+        z-index: @bk-extracted-chosen-drop-down-z-index;
+        color: @gray-main-text;
+        background-color: @white-bg;
+        cursor: pointer;
+
+        // Search input
+        .chosen-search {
+            border-radius: 2px;
+            padding: 4px 12px;
+
+            input[type=text] {
+                color: @gray-main-text;
+                font-size: 12px;
+
+                &::-webkit-input-placeholder {
+                    color: @gray-main-text;
+                }
+                &:-moz-placeholder {
+                    color: @gray-secondary-text; // Slightly darker in Firefox (color rendering is brighter)
+                }
+                &::-moz-placeholder {
+                    color: @gray-secondary-text; // Slightly darker in Firefox (color rendering is brighter)
+                }
+                &:-ms-input-placeholder {
+                    color: @gray-main-text;
+                }
+
+                &:focus {
+                    border: 1px solid @blue-default;
+                    box-shadow: none;
+                }
+            }
+        }
+
+        .chosen-results {
+            border: 1px solid @gray-border;
+            padding: 4px;
+
+            li {
+                margin: 0;
+                padding: 5px 6px;
+                list-style: none;
+                line-height: 15px;
+            }
+
+            li.active-result {
+                .retina-light-11-grey5;
+                .transition(~"all 200ms ease-out");
+
+                &.highlighted, &:hover {
+                    background: @gray-hover-light;
+                    color: @gray-main-text;
+                    .transition(~"all 200ms ease-out");
+                }
+            }
+        }
+
+        &.dropdown-below {
+            .chosen-results {
+                border-top: none;
+                .box-shadow(0 2px 4px @bg-shadow-faint-2);
+            }
+        }
+
+        &.dropdown-above{
+            .chosen-results {
+                border-bottom: none;
+                .box-shadow(2px 0 4px @bg-shadow-faint-2);
+            }
+        }
+    }
+
+    &.bk-permission-type-drop-down {
+        .chosen-search {
+            display: none;
+        }
+    }
+
+    &.bk-op-selector {
+        .chosen-search {
+            display: none;
+        }
+        .chosen-results {
+            li.active-result {
+                line-height: 10px;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    &.bk-headline-aggregate, &.bk-table-header-chosen-menu {
+        .chosen-search {
+            display: none;
+        }
+        .chosen-results {
+            li.active-result {
+                font-size: 9px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+// Multiselect input (based on Chosen JS)
+.bk-multiselect-input {
+    .chosen-container {
+        .chosen-choices {
+            border-radius: 2px;
+            border: 1px solid @input-border;
+            background-image: none;
+            .box-shadow-inset(0 1px 0 @inner-shadow, inset 0 1px 3px @input-inner-shadow);
+            .transition(~"border 200ms ease-out");
+
+            .search-choice {
+                padding: 4px 20px 3px 5px;
+                background-color: @blue-default;
+                color: @white-text;
+                background-image: none;
+                -webkit-font-smoothing: auto;
+                .box-shadow(none);
+                border: none;
+                font-size: 12px;
+
+                .search-choice-close:hover {
+                    background-position: -42px 1px; // To avoid using the ugly hover effect from Chosen JS
+                    opacity: 0.5;
+                }
+            }
+
+            .search-field {
+                input[type=text], input[type=password] {
+                    .font-family-regular();
+                    color: @gray-secondary-text;
+                }
+            }
+        }
+
+        // When focus on input we change the border color
+        &.chosen-container-active .chosen-choices {
+            border-color: @blue-default;
+            .box-shadow-inset(0 1px 0 @inner-shadow, inset 0 1px 3px @input-inner-shadow);
+            .transition(~"border 200ms ease-out");
+        }
+
+        // Dropdown
+        .chosen-drop {
+            border: 1px solid @gray-border;
+            border-top: none;
+
+            // List of elements
+            .chosen-results {
+                background: @white-bg;
+
+                li.active-result{
+                    color: @gray-secondary-text;
+
+                    &.highlighted, &:hover{
+                        background: @gray-hover-light;
+                        color: @gray-main-text;
+                    }
+
+                    &.highlighted {
+                        color: @gray-main-text;
+                    }
+                }
+
+                // Group of elements header
+                li.group-result{
+                    padding-left: 16px;
+                    padding-top: 10px;
+                    color: @gray-main-text;
+                    font-size: 10px;
+                    text-transform: uppercase;
+                    .font-family-bold();
+
+                    &:first-child{
+                        border-top: none;
+                    }
+                }
+            }
+        }
+    }
+
+    // Removing the shadow of the elements in the input
+    .chosen-container-active .chosen-choices {
+        .box-shadow(none);
+    }
+}
+
+/* Other elements */
+
+// Circled profile pictures and user avatar
+.bk-profile-pic-container(@size) {
+    display: inline-block;
+    position: relative;
+    width: @size;
+    height: @size;
+    border-radius: @size;
+    overflow: hidden;
+    .font-white-default;
+    .font-family-bold();
+
+    .bk-profile-content{
+        text-align: center;
+        text-transform: capitalize;
+        line-height:@size + 2px;
+    }
+
+    img {
+        display: block;
+        max-width: @size;
+        border-radius: @size;
+        .animation-delay(0.5);
+        .animation-duration(0.7s);
+        .animation-fill-mode(both);
+        .animation-name(fade-in);
+    }
+}
+
+// Main title
+.bk-main-title() {
+    font-size: 35px;
+    .font-family-light();
+    color: @gray-main-title;
+}
+
+// Overflow ellipsis (...)
+.bk-overflow-ellipsis {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+// Close button
+.bk-close {
+    float: right;
+    margin-top: -4px;
+    margin-right: 3px;
+    font-size: 25px;
+    .font-family-bold();
+    color: @white-text;
+    text-shadow: none;
+    opacity: 1.0;
+    cursor: pointer;
+
+    &:hover {
+        color: @white-text;
+    }
+}
+
+.bk-plus-icon-small {
+    float: left;
+    margin-right: 6px;
+    width: 9px ;
+    height: 9px;
+    background-image: url('/resources/img/icons-menu.png');
+    background-position: -13px 11px;
+}
+
+.bk-style-icon-column() {
+    width: 8px;
+    height: 4px;
+    border: 1px solid @gray-secondary-text;
+    border-top-width: 4px;
+}
+
+.bk-info {
+    display: inline-block;
+    padding: 25px;
+    font-size: 13px;
+    .font-family-semibold();
+    border-radius: 3px;
+    border: 1px solid @info-border;
+    color: @info-text;
+    background-color: @info-bg;
+    box-shadow: 0 1px 3px @bg-shadow-faint-1;
+}
+
+.bk-delete-btn {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    opacity: 0.0;
+    top: -9px;
+    left: -9px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    .font-family-bold();
+    line-height: 16px;
+    text-align: center;
+    box-shadow: 0 0px 3px @bg-shadow-faint;
+    background-color: @black-bg;
+    border: 2px solid @white-border;
+    color: @white-text;
+    border-radius: 10px;
+
+    .transition(~"opacity 200ms ease-in");
+
+    &:hover {
+        background-color: @red-default;
+    }
+}
+
+select {
+    height: 35px;
+    line-height: 35px;
+    padding-left: 13px;
+    padding-top: 0px;
+    width: 100%;
+    font-size: 13px;
+    border-radius: 3px;
+    .font-family-bold();
+    border: 1px solid @gray-border;
+    color: @gray-main-text;
+    background: @gray-bg url('/resources/img/arrow-dropdown.png') no-repeat 90% center;
+    outline: none !important;
+    .appearance(none);
+
+    &:not(.bk-disabled):hover {
+        background-color: @gray-hover-light;
+        border: 1px solid @gray-border-hover;
+        .box-shadow-inset(0 1px 4px @bg-shadow-faint, inset 0 1px 0 @inner-shadow);
+        .transition(~"box-shadow 200ms ease-out, border 200ms ease-out");
+    }
+
+    &.bk-disabled {
+        opacity: 0.5;
+    }
+}
+
+input {
+    outline: none !important;
+    outline-style: hidden !important;
+}
+
+input.bk-input {
+    outline: none;
+    height: 14px;
+    line-height: 14px;
+    font-size: 11px;
+    padding-left: 7px !important;
+    padding-right: 3px !important;
+    width: 100%;
+    background-color: @input-bg !important;
+    border: 1px solid @input-border;
+    border-radius: 1px;
+    .box-shadow-inset(0 1px 0 @inner-shadow, inset 0 1px 3px @input-inner-shadow) !important;
+}
+
+input.bk-search-input {
+    outline: none;
+    height: 14px;
+    line-height: 14px;
+    font-size: 11px;
+    padding-left: 23px !important;
+    padding-right: 14px !important;
+    width: 100%;
+    background: url('/resources/img/search-icon.png') no-repeat !important;
+    background-position: 5px center !important;
+    background-color: @input-bg !important;
+    border: 1px solid @input-border;
+    border-radius: 1px;
+    .box-shadow-inset(0 1px 0 @inner-shadow, inset 0 1px 3px @input-inner-shadow) !important;
+}
+
+input[type=text], input[type=password] {
+    &[placeholder] {
+        text-overflow: ellipsis;
+    }
+    &::-webkit-input-placeholder { /* WebKit browsers */
+        color: @gray-label-text;
+        text-overflow: ellipsis;
+    }
+    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: @gray-secondary-text; // Slightly darker in Firefox (color rendering is brighter)
+        text-overflow: ellipsis;
+    }
+    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: @gray-secondary-text; // Slightly darker in Firefox (color rendering is brighter)
+        text-overflow: ellipsis;
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10+ */
+        color: @gray-label-text;
+        text-overflow: ellipsis;
+    }
+
+}
+
+.bk-generic-overlay, .bk-loading-indicator-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: @overlay-bg-faint;
+    .animation-duration(0.3s);
+    .animation-fill-mode(both);
+    .animation-name(fade-in);
+}
+
+.bk-generic-overlay {
+    z-index: @no-sources-overlay-z-index;
+}
+
+.bk-auto-popup {
+    position: relative;
+    .animation-delay(0.2s);
+    .animation-duration(0.7s);
+    .animation-fill-mode(both);
+    .animation-name(bounce);
+
+    @ARROW_DIMENSION: 8px;
+    .bk-container {
+        position: absolute;
+        top: 0;
+        left: @ARROW_DIMENSION;
+        padding: 15px;
+        padding-left: 17px;
+        border-radius: 3px;
+        background-color: @h-black-transparent;
+        box-shadow: 1px 1px 5px @inner-shadow;
+        color: white;
+
+        &.bk-small {
+            width: 100px;
+        }
+        &.bk-medium {
+            width: 185px;
+        }
+        &.bk-big {
+            width: 300px;
+        }
+        &.bk-bigger {
+            width: 330px;
+        }
+
+        .bk-header {
+            display: block;
+            margin-bottom: 8px;
+            .font-family-regular();
+            font-size: 16px;
+            color: @white-text;
+        }
+
+        .bk-cancel-btn {
+            .bk-padding-right-20;
+        }
+
+        .bk-popup-text {
+            color: @white-text;
+            font-size: 12px;
+        }
+    }
+
+    &:before {
+        position: absolute;
+        top: 15px;
+        left: -1 * @ARROW_DIMENSION;
+        border: @ARROW_DIMENSION solid transparent;
+        content: '';
+        z-index: 1;
+    }
+
+    &.bk-opens-right {
+        &:before {
+            border-right-color: @h-black-transparent;
+        }
+    }
+}
+
+.flex-two-columns-container {
+     .flex-important('');
+     margin: 10px;
+}
+
+.flex-two-columns-container > div {
+
+    padding: 0;
+    position: static;
+}
+
+.flex-two-columns-container > div:first-child {
+    width: 55%;
+    margin-right: 30px;
+    position: static;
+}
+
+.flex-two-columns-container.collapsed > div:first-child {
+    width: 100%;
+}
+
+.flex-two-columns-container > div:last-child {
+    width: 45%;
+    padding-left:30px;
+    position: static;
+}
+
+.flex-two-columns-container .borderLeft {
+    border-left: 1px solid @gray-border;
+    position: relative;
+    width: 1px;
+    padding: 0;
+    margin: 0;
+}
+
+.bk-dialog {
+    .bk-dialog-field {
+        .form-row {
+            margin-bottom: 15px;
+            overflow: hidden;
+
+            ul.bk-checkbox-list input {
+                float: none;
+            }
+            input, ul.bk-checkbox-list {
+                width: 53%;
+                margin: 0;
+                padding-left: 14px;
+                float: right;
+            }
+            .label.comment {
+                float: right;
+                width: 47%;
+                .font-family-regular;
+                font-size: 13px;
+                color: @blue-default;
+                padding-right: 0;
+            }
+            .form-row .label {
+                width : 35%;
+                margin: 0;
+                padding: 4px 11px 4px 0;
+
+            }
+        }
+    }
+}
+.bk-dialog .bk-dialog-field .flex-two-columns-container ul.bk-checkbox-list.full-size {
+    width: auto;
+    padding: 15px;
+    height: 240px;
+}

@@ -1,0 +1,63 @@
+<label>{{$ctrl.data.customData.constants.NO_FILTER_TEXT}}
+</label>
+<div class="bk-filter-target">
+    <label class="bk-property-label-bold">{{$ctrl.data.customData.constants.OBJECT}}</label>
+    <span class="bk-select-box">
+        <ui-select ng-model="$ctrl.data.customData.config.name"
+                   on-select="$ctrl.data.customData.config.onChange($select.selected, $ctrl.data.customData.config.columns)"
+                   theme="select2"
+                   search-enabled="true">
+            <ui-select-match placeholder="Select a table">{{$select.selected}}</ui-select-match>
+            <ui-select-choices
+                    repeat="table in $ctrl.data.customData.config.tables | filter: $select.search">
+                {{table}}
+            </ui-select-choices>
+        </ui-select>
+    </span>
+</div>
+<div class="bk-filter-properties">
+    <label class="bk-property-label font-family-bold">{{$ctrl.data.customData.constants.FILTER}}</label>
+    <div class="bk-data-filter-options">
+            <span class="bk-select-box">
+                <ui-select ng-model="$ctrl.data.customData.config.column"
+                           class="bk-filter-column"
+                           theme="select2"
+                           search-enabled="true">
+                    <ui-select-match>{{$select.selected.name}}</ui-select-match>
+                    <ui-select-choices
+                            repeat="column in $ctrl.data.customData.config.columns[$ctrl.data.customData.config.name] | filter: $select.search ">
+                        {{ column.name }}
+                    </ui-select-choices>
+                </ui-select>
+            </span>
+            <span class="bk-select-box">
+                <ui-select ng-model="$ctrl.data.customData.config.option"
+                           class="bk-filter-operand"
+                           theme="select2"
+                           search-enabled="false">
+                    <ui-select-match>{{$select.selected}}</ui-select-match>
+                    <ui-select-choices
+                            repeat="option in $ctrl.data.customData.config.options">
+                        {{ option }}
+                    </ui-select-choices>
+                </ui-select>
+            </span>
+    </div>
+    <div class="column-type">
+        {{$ctrl.data.customData.config.column.dataType}}
+    </div>
+    <div ng-if="$ctrl.data.customData.config.isTextRequired($ctrl.data.customData.config.option)"
+         ng-switch="$ctrl.data.customData.config.isDateType($ctrl.data.customData.config.column)">
+        <input class="operand-value"
+               ng-switch-when="true"
+               placeholder="{{$ctrl.data.customData.config.getPlaceholderValue($ctrl.data.customData.config.column)}}"
+               bs-datepicker
+               date-format="MM/DD/YYYY"
+               date-type="string"
+               ng-model="$ctrl.data.customData.config.text">
+        <input class="operand-value"
+               ng-switch-when="false"
+               placeholder="{{$ctrl.data.customData.config.getPlaceholderValue($ctrl.data.customData.config.column)}}"
+               ng-model="$ctrl.data.customData.config.text">
+    </div>
+</div>

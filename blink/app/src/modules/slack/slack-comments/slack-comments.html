@@ -1,0 +1,34 @@
+<div class="bk-viz-control bk-viz-menu bk-slack-comments-drop-down" ng-class="{'bk-open': isOpen}" blink-on-escape="close()">
+    <div>
+        <div class="bk-viz-menu-btn bk-viz-btn bk-pin-viz-btn" ng-click="onDropDownClick($event)">
+            <div class="bk-viz-btn-icon bk-style-icon-comments" blink-tooltip="Comments"></div>
+        </div>
+    </div>
+    <div class="bk-viz-menu-drop-down" ng-show="isOpen">
+        <div class="bk-header">{{strings.Comment_List}}</div>
+        <a class="bk-btn bk-create-pinboard-btn" style="margin-left : 10px" ng-click="refreshComments()">
+{{strings.REFRESH}}
+</a>
+        <ul class="bk-pinboard-list">
+            <li ng-repeat="comment in fileComments"
+                class="bk-pinboard-row"
+                data-html="true"
+                data-placement="left">
+                <!--<span class="bk-plus-icon"-->
+                      <!--ng-show="!pinboardsWithActiveVizAddition[pinboard.id]"><span></span></span>-->
+                <!--<span class="bk-pinboard-working"-->
+                      <!--ng-show="!!pinboardsWithActiveVizAddition[pinboard.id]"></span>-->
+                <span class="bk-pinboard-name"><b>{{getAuthorName(comment) + ": "}}</b>{{comment.comment}}</span>
+            </li>
+            <li class="bk-create-pinboard-row">
+                <span class="bk-new-pinboard-input">
+                    <span class="bk-pinboard-icon"></span>
+                    <input type="text" class="bk-input" placeholder="Add a comment" ng-model="newComment"
+                           ng-enter="addComment()">
+                    <a class="bk-btn bk-create-pinboard-btn" ng-click="addComment()"
+                       ng-class="{ 'bk-disabled': !newComment }">{{strings.ADD}}</a>
+                </span>
+            </li>
+        </ul>
+    </div>
+</div>

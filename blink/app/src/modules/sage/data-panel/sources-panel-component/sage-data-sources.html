@@ -1,0 +1,79 @@
+<div class="bk-sage-data-sources-old"
+     ng-class="{'bk-read-only': panelComponent.isReadOnly()}">
+    <div class="bk-explore-link-old bk-link" ng-show="panelComponent.isExpanded()" ng-click="showExplorer()">
+{{strings.Explore_all}}
+</div>
+    <div class="bk-sage-data-sources-dialog" blink-on-escape="panelComponent.collapse()"
+         blink-overlay="panelComponent.collapse()" ignore-click-selector="'.bk-sources-container'"
+         ng-show="showDialog">
+        <div class="bk-search-wrapper">
+            <div class="bk-search-icon"></div>
+            <input class="bk-search-input" type="text" ng-model="srcItemFilter" spellcheck="false" placeholder="Search sources">
+        </div>
+
+        <div class="bk-list-wrapper" ng-switch="getSourcesAvailabilityState()">
+            <div class="bk-waiting-data-sources" ng-switch-when="WAITING">
+            </div>
+            <div class="bk-no-data-sources" ng-switch-when="ERROR">
+                <div class="bk-no-tables-message">
+{{strings.Oops_There_was}}
+</div>
+            </div>
+            <div class="bk-no-data-sources" ng-switch-when="NONE">
+                <div class="bk-style-icon-password bk-icon"></div>
+                <div ng-switch="hasAdminPrivileges" class="bk-no-tables-message">
+                    <div ng-switch-when="true">{{strings.There_is_no}}</div>
+                    <div ng-switch-when="false">{{strings.You_dont_have}}<br/>{{strings.Please_contact_your}}</div>
+                </div>
+            </div>
+            <div class="bk-list-wrapper-inner" ng-switch-when="AVAILABLE">
+                <div class="bk-list" ng-repeat="list in lists">
+                    <div class="bk-list-header">{{ list.headerLabel }}</div>
+                    <div class="bk-list-select-all"
+                         ng-click="selectAllItems($event, list)">
+                        <div class="bk-checkbox-container">
+                            <div class="bk-checkbox"
+                                 ng-class="{'bk-checked': list._selected}"></div>
+                        </div>
+                        <span class="bk-source-name">{{strings.Select_All}}</span>
+                    </div>
+                    <ul class="bk-list-items">
+                        <li class="bk-list-item bk-overflow-ellipsis"
+                            ng-click="selectItem($event, list, item)"
+                            ng-repeat="item in list.data | filter:srcItemFilter">
+                            <div class="bk-checkbox-container">
+                                <div class="bk-checkbox"
+                                     ng-class="{'bk-checked': tempSelectedIdsMap[item.id]}"></div>
+                            </div>
+                            <span class="bk-source-name">{{ item.name }}</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bk-req-field-statement" ng-show="!!data.hasAnyRequiredField">{{strings.Cannot_Deselect_Already}}</div>
+    </div>
+    <div class="bk-panel-footer" ng-switch="needsJoinTypeFooter">
+        <div ng-switch-when="true" ng-switch="!panelComponent.isReadOnly()">
+            <div ng-switch-when="true">
+                <span class="bk-light-text-13px">{{strings.Choose_the}}</span>
+                <p></p>
+                <div class="bk-form-radio bk-clickable" ng-repeat="queryType in worksheetQueryTypes"
+                     ng-click="setCurrentQueryType(queryType)"
+                     ng-class="{'bk-selected': isCurrentQueryType(queryType)}">
+                        <div class="bk-radio-button bk-radio-10">
+                            <div class="bk-radio-inner"></div>
+                        </div>
+                        <div class="bk-radio-label bk-inline-block bk-top-aligned">{{ queryType.label }}&nbsp;
+                            <span class="bk-light-text-12px">({{ queryType.description }})</span>
+                        </div>
+                </div>
+            </div>
+            <div ng-switch-default>
+                <span class="bk-light-text-13px">{{strings.Inclusion_rule_is}}</span>
+                <p></p>
+                <span class="bk-dark-title-14px">{{ getCurrentQueryTypeLabel() }}&nbsp;({{ getCurrentQueryTypeDescription() }})</span>
+            </div>
+        </div>
+    </div>
+</div>

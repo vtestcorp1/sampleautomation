@@ -1,0 +1,41 @@
+<blink-loading-indicator ng-show='isLoading'></blink-loading-indicator>
+<div ng-repeat='logger in loggers track by logger.name' ng-show='!isLoading'>
+    <div class='bk-logger-item'>
+        <div class='row-fluid bk-row-margin'>
+            <div class='span6'>
+                <b>{{logger.name}}</b>
+                <div>
+                    {{logger.description}}
+                </div>
+            </div>
+
+            <div class='span6'>
+                <div class="bk-select-box">
+                    <select ng-model="logger.currentLevel"
+                            ng-options="level for level in logLevels"
+                            chosen>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class='row-fluid bk-row-margin' ng-show='logger.currentLevel != logger.originalLevel'>
+            <div class='span7'></div>
+            <div class='span1 text-right'>{{strings.Timeout}}</div>
+            <div class='span3 text-right'>
+                <div class='bk-select-box'>
+                    <select ng-model='logger.timeout'
+                            ng-options='timeout.title for timeout in timeouts track by timeout.value'
+                            chosen>
+                    </select>
+                </div>
+            </div>
+            <div class='span1 text-right'>
+                <button class='bk-btn' ng-disabled='logger.timeout === null' ng-click='onLevelApplyClick(logger)'>
+{{strings.Apply}}
+</button>
+            </div>
+        </div>
+
+    </div>
+</div>

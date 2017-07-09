@@ -1,0 +1,24 @@
+<div class="bk-long-table-name-analyzer bk-analyzer">
+    <div class="bk-analyzer-body">
+        <div class="bk-analyzer-description">
+            {{strings.analyze.longTableNameAnalyzer.description}}{{$ctrl.recommendedLength}}.
+        </div>
+        <div class="bk-analyzer-content">
+            <div class="bk-long-table-name">
+                <div class="bk-analyzer-input">
+                    <input type="text"
+                           id="long-table-name"
+                           class="bk-input"
+                           value="{{$ctrl.tableName}}"
+                           ng-model="$ctrl.tableName"
+                           ng-change="$ctrl.onChange()"/>
+                </div>
+                <div class="bk-analyzer-status">
+                    <div class="bk-analyzer-status-{{$ctrl.status}}">
+                        {{$ctrl.tableNameLength}}/{{$ctrl.recommendedLength}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

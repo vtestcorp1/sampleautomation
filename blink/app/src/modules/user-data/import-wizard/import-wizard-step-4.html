@@ -1,0 +1,84 @@
+<div class="bk-userdata-link-step">
+    <div class="bk-userdata-no-keys" ng-hide="linkStep.hasSourceColumns()">
+        <div class="bk-userdata-no-keys-title">{{strings.The_new_data}}</div>
+        <div class="bk-userdata-no-keys-explanation">
+            <p>
+{{strings.Add_a_column}}
+</p>
+        </div>
+
+    </div>
+    <div class="bk-userdata-with-keys container-fluid" ng-show="linkStep.hasSourceColumns()">
+        <div class="row-fluid">
+            <div class="span2"></div>
+            <div class="span3 bk-link-section">
+                <div class="bk-link-section-header">
+                    <div>
+{{strings.Your_uploaded}}
+</div>
+                </div>
+                <div class="bk-link-section-body">
+                    <div class="bk-select-box">
+                        <select ng-model="linkStep.sourceColumn"
+                                ng-change="linkStep.onSourceColumnChange()"
+                                ng-options="getUserColumnName(option) for option in linkStep.getSourceColumns()"
+                                chosen
+                                data-width="290">
+                            <option value="">{{strings.Select_a}}</option>
+                        </select>
+                    </div>
+                    <div class="bk-link-data-column" ng-show="linkStep.sourceColumnData">
+                        <div class="bk-link-data-cell" ng-repeat="dataRow in linkStep.sourceColumnData">{{ dataRow }}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="span3">
+                <div class="bk-link-section-header">
+                    &nbsp;
+                </div>
+                <div class="bk-link-ui"
+                     ng-class="{'bk-success': linkStep.isLinked()}">
+                    <div class="bk-link-left"></div>
+                    <div class="bk-link-icon-container">
+                        <div class="bk-link-icon"></div>
+                    </div>
+                    <div class="bk-link-right"></div>
+                </div>
+            </div>
+            <div class="span3 bk-link-section">
+                <div class="bk-link-section-header">
+                    <div>
+{{strings.Existing_data}}
+</div>
+                </div>
+                <div class="bk-link-section-body"
+                     ng-class="{ 'bk-disabled': !linkStep.targetColumnOptions || linkStep.targetColumnOptions.length == 0 }">
+                    <div class="bk-select-box">
+                        <select ng-disabled="!linkStep.targetColumnOptions || linkStep.targetColumnOptions.length == 0"
+                                ng-model="linkStep.targetColumnOption"
+                                ng-change="linkStep.onTargetColumnChange()"
+                                ng-options="getLogicalColumnName(option.column) + ' (' + option.tableName + ')' for option in linkStep.targetColumnOptions"
+                                chosen
+                                data-width="290">
+                            <option value="">{{strings.Select_a}}</option>
+                        </select>
+                    </div>
+                    <div class="bk-link-data-column" ng-show="linkStep.targetColumnData">
+                        <div class="bk-link-data-cell" ng-repeat="dataRow in linkStep.targetColumnData track by $index">{{ dataRow }}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="span1 bk-link-section">
+                <div class="bk-link-section-header">
+                    &nbsp;
+                </div>
+                <div class="bk-link-section-body"
+                     ng-class="{ 'bk-disabled': !linkStep.sourceColumn }">
+                    <div class="bk-btn" ng-click="showExplorer(linkStep.sourceColumn[0])">
+{{strings.Browse}}
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="bk-auto-popup bk-opens-right">
+    <div class="bk-container bk-bigger">
+        <span class="bk-popup-text" ng-bind-html="popupText"></span>
+        <div class="bk-action-buttons"
+             ng-class="{'bk-has-suppress-option': showSuppressOption}">
+            <bk-secondary-button text="{{ cancelButtonText || strings.CANCEL }}"
+                                 ng-click="onCancel($event)"
+                                 class="bk-cancel-btn"></bk-secondary-button>
+            <bk-primary-button text="{{ actionButtonText || strings.OK }}"
+                               ng-click="onAction($event)"
+                               class="bk-save-btn"></bk-primary-button>
+        </div>
+        <div class="bk-popup-text">
+            <bk-checkbox bk-ctrl="dontShowAgainCheckboxCtrl"></bk-checkbox>
+        </div>
+    </div>
+</div>

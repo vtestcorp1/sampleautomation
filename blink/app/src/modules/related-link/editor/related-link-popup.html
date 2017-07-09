@@ -1,0 +1,15 @@
+<div class="bk-related-link-popup">
+     <div class="bk-big-popup"
+         hide="$ctrl.hide">
+        <div class="bk-context-dialog">
+            <div class="popup-header">
+                <span ng-bind-html="$ctrl.relatedLinkListViewerComponent.headerTitle"></span>
+                <a type="button" class="bk-close" ng-click="$ctrl.hide()">&times;</a>
+            </div>
+            <bk-related-link-list-viewer
+                    bk-ctrl="$ctrl.relatedLinkListViewerComponent"
+                    class="popup-content">
+            </bk-related-link-list-viewer>
+        </div>
+     </div>
+</div>

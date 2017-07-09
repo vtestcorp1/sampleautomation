@@ -1,0 +1,21 @@
+<ul class="bk-clause-template">
+    <li>
+        <span ng-repeat="joinRepresentation in query.joinRepresentations">
+            {{ getSequenceSymbol($index, query.joinRepresentations) }}
+            <span class="bk-table"
+                  blink-tooltip="{{ joinRepresentation.source.name }}">
+                {{ joinRepresentation.source.name }}
+            </span>
+            {{strings.and}}
+            <span class="bk-table"
+                  blink-tooltip="{{ joinRepresentation.destination.name }}">
+                {{ joinRepresentation.destination.name }}
+            </span>
+            {{strings.tables_using}}
+            <span class="bk-join-name">
+                {{ joinRepresentation.relationshipName }}
+            </span>
+            {{strings.relation}}
+        </span>
+    </li>
+</ul>

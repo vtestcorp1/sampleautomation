@@ -1,0 +1,273 @@
+// If you change this, please also update blinkConstants.printing.A4_HEIGHT
+@a4-height: 792px;
+// If you change this, please also update blinkConstants.printing.A4_WIDTH
+@a4-width: 1122px;
+// If you change this, please also update blinkConstants.printing.VIZ_CONTENT_MARGIN
+@viz-content-margin: 12px;
+// If you change this, please also update blinkConstants.printing.VIZ_TITLE_HEIGHT
+@viz-title-height: 32px;
+
+@page {
+    size: A4 landscape;
+    margin: 0;
+}
+
+.bk-print-document {
+    height: auto;
+    overflow: visible;
+
+    body, .bk-app-controller-container, .bk-app-container, .bk-app-content,
+    .bk-print-page, .bk-print, .bk-print-content-container, .bk-pinboard-page,
+    .bk-sharable-item-pinboard, .bk-sharable-item, .bk-sharable-item-inner,
+    .bk-sharable-item-container, .bk-sharable-content-container, .bk-sharable-item-content-container,
+    .sharable-item-content, .bk-pinboard-content, .bk-pinboard-container, .bk-pinboard-answer-container,
+    .bk-pinboard-answer, .bk-answer-canvas , .content-container, .sharable-item-content,
+    .bk-pinboard-container {
+        .bk-vertical-flex-content-sized !important;
+    }
+
+    // scrollbar is not needed in print
+    ::-webkit-scrollbar {
+        width: 0;
+        background: transparent;
+    }
+
+    .bk-screenshot-mode {
+        .bk-pinboard-page {
+            .ribbon-item {
+                display: none;
+            }
+
+            .bk-data-viz-content {
+                width: 100vw;
+
+                .bk-viz-table {
+                    .bk-table {
+                        .slick-header-column, .slick-cell .slick-cell-content {
+                            font-size: 9px;
+                        }
+                    }
+                }
+            }
+
+            .bk-data-viz-chart-container {
+                height: 100vh;
+                .bk-chart {
+                    .bk-axis-label-container {
+                        display: inline-block;
+                    }
+               }
+            }
+
+            .bk-chart-legend {
+                 .bk-legend-label {
+                     padding-left: 15px !important;
+                 }
+            }
+
+            // Fixes legend bug in Webkit (SCAL-18485).
+            .bk-viz-chart .bk-legend .bk-legend-content .bk-legend-content-inner .bk-legend-item {
+              display: -webkit-box!important;
+              display: -webkit-flex!important;
+               -webkit-border-radius: 7px;
+            }
+
+            // Fixes legend bug in geo charts in Webkit (SCAL-18485).
+            .bk-viz-chart .bk-chart-legend[chart-type^=GEO_].bk-legend-horizontal .bk-legend {
+                display: -webkit-box;
+                display: -webkit-flex;
+            }
+
+            // Fixes bug in long tables (SCAL-18485).
+            .bk-pinboard-type.bk-answer.bk-insightful-pinboard .bk-viz .bk-viz-inner .bk-viz-details.collapsed {
+                padding-top: -webkit-calc(100% - 65% - 56px);
+            }
+
+       }
+    }
+
+    .bk-pinboard-page {
+
+        .ribbon-item {
+            padding: 0 !important;;
+            .bk-pinboard-cover-page {
+                .bg-orange2;
+                .color-white;
+                box-sizing: border-box;
+                margin: 0 !important;
+                padding: 30px 96px;
+                width: @a4-width;
+                height: @a4-height;
+                .flex(column);
+                .bk-pinboard-details {
+                    .flex-grow-shrink-basis(1, 1, 0);
+                    .flex(column);
+                    .flex-justify(center);
+                    .bk-pinboard-headers {
+                        text-align: center;
+                        .bk-pinboard-name {
+                            .font-family-bold;
+                            font-size: 30px;
+                            letter-spacing: -0.5px;
+                            line-height: 40px;
+                            margin-bottom: 24px;
+                        }
+                        .bk-pinboard-description {
+                            .font-family-regular;
+                            letter-spacing: -0.3px;
+                            font-size: 20px;
+                            margin-bottom: 24px;
+                            line-height: 26px;
+                        }
+                        .bk-current-date {
+                            .font-family-regular;
+                            font-size: 16px;
+                            letter-spacing: -0.3px;
+                            margin-bottom: 100px;
+                        }
+                    }
+
+                    .bk-filter-heading {
+                        .color-white;
+                        .font-family-semibold;
+                    }
+
+                    .bk-filter-panel {
+                        .bg-orange2;
+                        padding: 0;
+                        .bk-filter-list-item {
+                            .flex(row);
+                            margin: 0;
+                            padding: 0;
+                            .filter-title-text {
+                                .flex-shrink(0);
+                                margin: 0;
+                                .color-white;
+                                .font-family-semibold;
+                                text-overflow: initial;
+                                overflow: initial;
+                                white-space: normal;
+                                max-width: 100%;
+                            }
+                            .filter-value-text {
+                                .font-family-regular;
+                                .color-white;
+                                text-overflow: initial;
+                                overflow: initial;
+                                white-space: normal;
+                                max-width: 100%;
+                            }
+                            .bk-filter-dropdown-icon {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                .bk-cover-logo {
+                    text-align: center;
+                    .flex-grow-shrink-basis(0, 0, 60px);
+                }
+            }
+        }
+
+        .tile-container {
+            margin: 0;
+            .tile-gutter {
+                width: 0;
+            }
+        }
+
+        .bk-pinboard-tile {
+            width: @a4-width;
+            min-height: @a4-height;
+            border: 0;
+            page-break-after: always;
+            &:before {
+                content: normal;
+            }
+
+            .bk-viz-table {
+                .bk-table {
+                    // HACK(mahesh): In case of print view, there is no re-render fired after aggregation type element
+                    // is added to the slick-grid's header DOM. So the height of header is reported less. This causes
+                    // first row to merge into the header.
+                    // From 4.1 we will move away from slick-grid in print view, so this problem with go away.
+                    &.bk-table-with-header-dropdown {
+                        .slick-pane.slick-pane-top.slick-pane-left {
+                            margin-top: 10px;
+                        }
+                    }
+                    position: relative !important;
+                    .bk-sub-table-container:not(:last-child) {
+                        page-break-after: always;
+                    }
+                    .slick-header-column, .slick-cell .slick-cell-content {
+                        // Note: 3 things are tweaked to make table more compact. slick-cell-content's
+                        // font-size, slick-cell's line-height and slickGridOptions.rowHeight in
+                        // table-controller. If you are further reducing these values, please reduce them in
+                        // roughly same ratio.
+                        font-size: 7px;
+                        padding: 0 5px;
+                    }
+                    .slick-row {
+                        // This prevents the js sizing related code
+                        // from getting thrown off by changes to
+                        // border/margin styling
+                        box-sizing: border-box !important;
+                        position: relative !important;
+                        top: 0 !important;
+                        page-break-inside: avoid;
+                        page-break-after: auto;
+
+                        .slick-cell {
+                            line-height: 17px;
+                        }
+                    }
+
+                    .bk-more-download-footer {
+                        text-align: center;
+                        padding: 0 !important;
+                    }
+                }
+            }
+        }
+
+        .bk-data-viz-chart-container {
+            .bk-chart {
+                .bk-axis-label-container {
+                    display: inline-block;
+                }
+            }
+        }
+
+        .tile[type="headline"] {
+            .bk-viz-content {
+                .flex-justify(center);
+                .bk-viz-headline .bk-summary-container
+                .bk-headline-content .bk-headline-value {
+                    line-height: 50px;
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+
+    .bk-viz[type="table"] .bk-viz-inner {
+        min-height: @a4-height;
+        blink-viz-table {
+            display: block;
+            min-height: @a4-height - 2 * @viz-content-margin - @viz-title-height;
+        }
+    }
+
+    .bk-pinboard-answer .bk-answer-canvas .bk-pinboard-tile {
+        border: none;
+        .bk-viz-content {
+            margin: @viz-content-margin;
+        }
+    }
+}
+
+
+
+

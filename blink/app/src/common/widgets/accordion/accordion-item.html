@@ -1,0 +1,23 @@
+<div class="bk-accordion-item-header"
+     ng-click="$ctrl.click()">
+    <div class="bk-accordion-btn">
+        <span class="bk-expand-btn-light-bg"
+              ng-class="{'bk-arrow-collapsed': !$ctrl.isExpanded(),
+              'bk-arrow-expanded': !!$ctrl.isExpanded()}">
+        </span>
+    </div>
+    <div class="bk-accordion-item-header-title"
+        ng-bind-html="$ctrl.header">
+    </div>
+</div>
+
+<div class="bk-accordion-item-description"
+     ng-class="{expand: $ctrl.isExpanded()}"
+     ng-if="!!$ctrl.description"
+     ng-bind-html="$ctrl.description">
+</div>
+
+<div class="bk-accordion-item-content"
+    ng-class="{expand: $ctrl.isExpanded()}"
+    ng-transclude/>
+</div>

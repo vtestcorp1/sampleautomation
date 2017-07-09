@@ -1,0 +1,16 @@
+<ul class="bk-clause-template">
+    <span ng-repeat="(order, columns) in sortColumnValues">
+        <li>
+            <span ng-repeat="(i, column) in columns">
+                {{ getSequenceSymbol(i, columns) }}
+                <span class="bk-sort-column bk-text-{{getColumnColor(column)}}" blink-tooltip="{{ column.table.name }}"> {{column.name}} </span>
+            </span>
+            <span>
+                {{ strings.order.assign({
+                                order: order
+                            })
+                        }}
+                </span>
+</li>
+    </span>
+</ul>

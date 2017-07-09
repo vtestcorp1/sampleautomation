@@ -1,0 +1,33 @@
+<div class="bk-filter-panel"
+     ng-class="{'bk-read-only': isReadOnly}">
+    <ul class="bk-filter-list-items">
+        <li class="bk-filter-list-item"
+            ng-repeat="filter in filterList"
+            ng-show="filter.shouldDisplay()"
+            ng-click="onFilterItemClick(filter)"
+            ng-class="{'selected': isFilterOpened(filter),
+                   'active': isFilterActive(filter)}">
+            <div class="bk-filter-container">
+                <div class="filter-title-text"
+                      blink-tooltip="{{ getFilterDisplayName(filter) }}"
+                      auto-tooltip-style="bootstrap">
+                    {{ getFilterDisplayName(filter) }}
+                </div>
+                <div class="filter-value-text"
+                      blink-tooltip="{{ getFilterValueText(filter) }}"
+                      auto-tooltil-style="bootstrap">
+                    {{ getFilterValueText(filter) }}
+                </div>
+                <div class="bk-filter-dropdown-icon">
+                    <div class="bk-style-icon-triangle-solid"></div>
+                </div>
+            </div>
+            <span ng-show="!isReadOnly"
+                 class="close-icon bk-style-icon-circled-x"
+                 ng-click="onDeleteFilterClick($event, filter)">
+                <span class="bk-background"></span>
+                <span class="bk-cross"></span>
+            </span>
+        </li>
+    </ul>
+</div>

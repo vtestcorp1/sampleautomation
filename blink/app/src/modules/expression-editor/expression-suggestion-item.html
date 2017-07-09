@@ -1,0 +1,5 @@
+<span>
+    <span class="suggestion-name" ng-class="suggestion.getTokenCssClass()">{{ suggestion.getSuggestionTokenText() }}</span>
+    <span ng-show="!!suggestion.getLinks()"> - {{ suggestion.getLinks() }}</span>
+    <span class="lineage" ng-show="!!suggestion.getLineage()"> {{ suggestion.getLineage().replace('->', '\u2192') }}</span>
+</span>

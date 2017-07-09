@@ -1,0 +1,17 @@
+<div class="bk-infocard-icon">
+    <div class="bk-infocard-button"
+         ng-class="{'bk-active': $ctrl.showInfoCard}"
+         ng-click="toggleInfoCard()"
+         blink-tooltip="{{$ctrl.tooltipText}}"
+         uib-popover-template="$ctrl.popoverTemplateUrl"
+         popover-is-open="$ctrl.isInfoCardOpen()"
+         popover-append-to-body="true"
+         popover-placement="bottom-right"
+         popover-class="bk-info-card-popover">
+        <span class="bk-style-icon-circled-question bk-icon"></span>
+    </div>
+</div>
+
+<script type="text/ng-template" id="info-card.html">
+    <bk-info-card bk-ctrl="$ctrl.infoCardComponent"></bk-info-card>
+</script>

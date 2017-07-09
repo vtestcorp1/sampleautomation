@@ -1,0 +1,17 @@
+<div class="bk-widgets-browser">
+    <input type="text"
+           class="bk-search-query"
+           ng-model="$ctrl.query"
+           placeholder="Search available UI components">
+    </input>
+    <div class="bk-widgets">
+        <div class="bk-component" ng-repeat="compDetail in $ctrl.getCompDetails() | filter:$ctrl.filter($ctrl.query)">
+            <div class="bk-component-name">{{compDetail.displayName}}</div>
+            <div class="bk-component-examples">
+                <div class="bk-component-example" ng-repeat="compExample in compDetail.examples">
+                    <div class="bk-view" ng-include="compExample.templateKey"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

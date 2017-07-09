@@ -1,0 +1,130 @@
+<div class="bk-sage-data-columns bk-bulk-data-columns bk-highlight-area"
+     ng-class="{'bk-read-only': panelComponent.isReadOnly()}"
+     ng-click="colPanel.deselectAll()"
+     blink-overlay="colPanel.deselectAll()">
+    <div class="bk-search-wrapper"
+         ng-click="$event.stopPropagation()">
+        <input class="bk-search-input"
+               type="text"
+               ng-model="colPanel.searchText"
+               ng-change="onColumnPanelSearchTextChange()"
+               spellcheck="false"
+               placeholder="Search Columns">
+    </div>
+    <div class="bk-columns-body-section"
+         ng-class="{ 'bk-loading': colPanel.isLoading() }">
+        <div ng-if="colPanel.dataSources.length > 0 && !colPanel.isLoading()"
+             class="bk-source-list-wrapper">
+            <ul class="bk-source-list">
+                <li class="bk-source-item"
+                     ng-repeat="source in colPanel.dataSources track by source.getId()"
+                     post-repeat
+                     id="{{ source.getId() }}"
+                     ng-click="$event.stopPropagation()"
+                     ng-class="{'bk-disabled': !source.isAccessible()}"
+                     ng-show="source.hasAnyFilteredColumns()">
+                    <div class="bk-source-header-container">
+                        <div class="bk-source-header bk-clickable"
+                             blink-tooltip="{{!source.isAccessible() ? 'This source cannot work with your search.' : source.getMetadataInfo().getTemplate()}}"
+                             data-html="true"
+                             data-delay='{"show":"750"}'
+                             data-placement="right"
+                             ng-click="source.toggleExpansion()">
+                            <span class="bk-expand-btn-light-bg bk-clickable"
+                                  ng-class="{'bk-arrow-collapsed ': !source.isExpanded(), 'bk-arrow-expanded': source.isExpanded()}"></span>
+                            <span class="bk-source-name bk-label bk-overflow-ellipsis">
+                                {{ source.getName() }}
+                            </span>
+                        </div>
+                        <span class="bk-icon bk-style-icon-link"
+                              ng-click="source.launchRelationshipEditor()"
+                              ng-if="isInQueryOnQueryMode()"></span>
+                    </div>
+                    <div class="bk-list" ng-lazy-show="source.isExpanded()" ng-switch="source.hasNestedSubsources()">
+                        <div ng-switch-when="false">
+                            <ul class="bk-columns-list bk-list-items">
+                                <li class="bk-column-item bk-list-item"
+                                    ng-repeat="column in source.getFilteredColumns()"
+                                    ng-include="'columnList'">
+                                </li>
+                            </ul>
+                        </div>
+                        <div ng-switch-when="true">
+                            <ul class="bk-columns-list bk-list-items">
+                                <li class="bk-column-item"
+                                    ng-repeat="(srcTable, columns) in source.getColumnsByColumnSource()">
+                                    <div class="bk-clickable" ng-click="columns.isExpanded = !columns.isExpanded">
+                                        <span class="bk-expand-btn-light-bg"
+                                              ng-class="{'bk-arrow-collapsed ': !columns.isExpanded, 'bk-arrow-expanded': columns.isExpanded}"></span>
+                                        <span class="bk-source-name bk-label bk-overflow-ellipsis">
+                                            {{ srcTable.toLowerCase() }}
+                                        </span>
+                                    </div>
+                                    <ul ng-show="columns.isExpanded">
+                                        <li class="bk-column-item bk-list-item"
+                                            ng-repeat="column in columns track by column.getId()"
+                                            ng-include="'columnList'">
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <answer-formula-list ng-if="showFormulas"
+                                     formula-handler="columnPanelComponentConfig.formulaHandler"
+                                     on-success="addColumnSuccessHandler"
+                                     sage-client="panelComponent.getSageClient()">
+                </answer-formula-list>
+            </ul>
+        </div>
+        <div ng-if="colPanel.showNoSourcePlaceholder()"
+             class="bk-no-sources-placeholder">
+            {{noSourcesPlaceholderString}}
+        </div>
+    </div>
+    <div class="bk-columns-footer-section"
+         ng-hide="colPanel.disallowColumnAddition() || !colPanel.canShowAddColumns()">
+        <bk-secondary-button text="{{ addColumnsBtnLabel }}"
+                             icon="bk-style-icon-small-plus"
+                             ng-click="colPanel.addSelectedColumns(); colPanel.deselectAll()"
+                             tooltip="{{colPanel.getColumnAdditionNotAllowedReason()}}"
+                             tooltip-placement="top"
+                             class="bk-add-columns-btn"></bk-secondary-button>
+        <a ng-click="colPanel.deselectAll()"
+           class="bk-clear-all-columns">{{strings.Clear}}</a>
+    </div>
+</div>
+
+<script type="text/ng-template" id="columnList">
+        <div
+            id="{{ column.getId() }}"
+            class="bk-clickable"
+            ng-class="column.getCssList()"
+            blink-tooltip = "{{ colPanel.getColumnTooltip(column) || '' }}"
+            blink-changeable-tooltip="true"
+            data-html="true"
+            data-delay='{"show": "750"}'
+            data-placement="right"
+            ng-click="$event.stopPropagation(); colPanel.onColumnClick(column, source)"
+            ng-dblclick="colPanel.onColumnDblClick(column)">
+            <div class="bk-column-left-actions">
+                <div class="bk-style-icon-checkmark" ng-show="column.isInUse() && !column.isUpdating()"></div>
+                <div class="bk-style-icon-x bk-actionable-icon" ng-show="column.isInUse() && !column.isUpdating()"
+                     data-delay='{"show": "750", "hide": "0"}' blink-tooltip="Remove column"
+                     ng-click="$event.stopPropagation(); colPanel.removeColumn(column)"
+                     ng-dblclick="$event.stopPropagation()"></div>
+                <div class="bk-working" ng-show="column.isUpdating()"></div>
+            </div>
+            <div class="bk-label bk-overflow-ellipsis bk-column-name">{{ column.getName() }}</div>
+            <div class="bk-style-icon-filter bk-actionable-icon"
+                  ng-show="!colPanel.isFilterUpdating()"
+                  data-delay='{"show": "750", "hide": "0"}' blink-tooltip="Add filter"
+                  ng-click="$event.stopPropagation(); column.addFilter()"
+                  ng-dblclick="$event.stopPropagation()"></div>
+            <div class="bk-filter-working"
+                  ng-show="column.isFilterUpdating()"
+                  ng-click="$event.stopPropagation()"
+                  ng-dblclick="$event.stopPropagation()"></div>
+        </div>
+</script>

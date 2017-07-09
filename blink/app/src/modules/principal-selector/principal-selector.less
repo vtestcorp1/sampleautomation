@@ -1,0 +1,36 @@
+.bk-principal-selector {
+    min-width: 450px;
+    max-width: 650px;
+    padding: 20px;
+
+    .bk-add-principals {
+        padding: 12px 20px 20px 20px;
+        margin-top: 25px;
+        border-radius: 3px;
+        background-color: @gray-bg;
+        border: 1px solid @gray-border;
+        .transition(~"all .2s ease-in");
+
+        .bk-add-principals-header {
+            text-align: center;
+            padding: 20px;
+
+            .bk-plus-icon {
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                border: 1px solid @h-gray5;
+                border-radius: 100px;
+
+                &:before {
+                    color: @gray-secondary-text;
+                }
+            }
+
+            .bk-add-principals-title {
+                color: @gray-secondary-text;
+                .font-family-bold();
+            }
+        }
+    }
+}

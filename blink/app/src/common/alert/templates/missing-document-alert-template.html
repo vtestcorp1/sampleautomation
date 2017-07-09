@@ -1,0 +1,26 @@
+<div>
+    <div class="bk-detail-header" ng-if="customData.detailMessage">{{customData.detailMessage}}</div>
+
+    <div class="bk-detail-content">
+        <div ng-repeat="detail in customData.incompleteDetails" class="bk-detail-block">
+            <div class="bk-name"><span>{{strings.Name}}</span>{{detail.header.name}}</div>
+            <div>
+                <span class="bk-key">{{strings.Type}}</span>
+                <span class="bk-value">{{customData.getDisplayNameForMetadataTypeName(detail.type)}}</span>
+                <span class="bk-key">{{strings.Id}}</span>
+                <span class="bk-value">{{detail.header.id}}</span>
+            </div>
+        </div>
+    </div>
+
+    <span class="bk-details-key-value"
+          ng-repeat="nameValuePair in customData.nameValuePairs"
+          ng-class="{'fr': ($index % 2)}">
+        <span class="bk-details-key">{{nameValuePair.name}}: </span>
+        <span class="bk-details-value">{{nameValuePair.value}}</span>
+    </span>
+
+    <div ng-if="!!customData.traceId" class="bk-details-footer">
+        <a class="fl" ng-click="customData.downloadTrace(traceId)">{{strings.Download_Trace}}</a>
+    </div>
+</div>

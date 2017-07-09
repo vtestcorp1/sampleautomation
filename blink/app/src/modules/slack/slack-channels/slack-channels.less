@@ -1,0 +1,96 @@
+@import '/resources/css/import.less';
+
+@pinboard-drop-down-row-height: 26px;
+@pinboard-drop-down-padding: 15px;
+
+.bk-slack-channels-drop-down {
+    position: relative;
+
+    .bk-viz-menu-drop-down {
+        position: absolute;
+        z-index: @viz-menu-z-index - 1;
+        top: 25px;
+        right: 0;
+        width: 216px;
+        padding: 10px;
+        border: 1px solid ;
+        border-radius: 4px;
+        border-top-right-radius: 0;
+        border: 1px solid @gray-border;
+        background-color: @white-bg;
+        .box-shadow-inset( 0 1px 8px @bg-shadow-faint, inset 0 1px 0 @inner-shadow);
+        padding: 0px !important;
+        width: 180px !important;
+
+        .bk-header {
+            margin-top: -9px;
+            padding: @pinboard-drop-down-padding @pinboard-drop-down-padding;
+            padding-bottom: @pinboard-drop-down-padding - 10px;
+            height: @pinboard-drop-down-row-height;
+            line-height: @pinboard-drop-down-row-height;
+            color: @gray-main-text;
+            font-size: 13px;
+            .font-family-bold();
+            text-shadow: none;
+        }
+
+        .bk-pinboard-list {
+            overflow: auto;
+            padding-bottom: @pinboard-drop-down-padding - 5px;
+            max-height: 318px;
+
+            li {
+                height: @pinboard-drop-down-row-height;
+                line-height: @pinboard-drop-down-row-height;
+                color: @gray-secondary-text;
+                font-size: 12px;
+                .font-family-regular();
+                cursor: pointer;
+
+                .bk-style-icon-checkmark {
+                    &:before {
+                        font-size: 8px;
+                    }
+                }
+
+                &.bk-pinboard-row {
+                    padding-right: 6px;
+                    padding-left: @pinboard-drop-down-padding;
+
+                    &:hover {
+                        background-color: @gray-hover-light;
+                        color: @gray-main-title;
+
+                        .bk-plus-icon {
+                            span {
+                                background-position: -31px -77px;
+                            }
+                        }
+                    }
+                }
+
+                .bk-pinboard-working {
+                    display: inline-block;
+                    vertical-align: -3px;
+                    width: 12px;
+                    height: 12px;
+                    margin-left: 2px;
+                    padding-left: 1px;
+                    padding-right: 1px;
+                    background: url('/resources/img/loading-icon-black.gif') no-repeat;
+                    background-size: 12px;
+                }
+
+                .bk-pinboard-name {
+                    margin-left: 12px;
+
+                    .bk-filtered-match {
+                        color: black;
+                        font-weight: bolder;
+                    }
+                }
+            }
+        }
+    }
+}
+

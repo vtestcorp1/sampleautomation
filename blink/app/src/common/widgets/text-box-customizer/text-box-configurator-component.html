@@ -1,0 +1,9 @@
+<div class="bk-text-box-configurator">
+    <input type="text"
+           placeholder="{{ $ctrl.placeHolderText }}"
+           value="{{ $ctrl.inputValue }}"
+           maxlength="{{ $ctrl.textBoxLength }}"
+           ng-change="$ctrl.setTextBox()"
+           ng-model="$ctrl.textBoxModel"
+           class="bk-text-box-input"/>
+</div>

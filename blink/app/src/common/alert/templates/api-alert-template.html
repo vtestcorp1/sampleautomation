@@ -1,0 +1,23 @@
+<div>
+    <div ng-if="customData.detailMessage">{{customData.detailMessage}}</div>
+    <span class="bk-details-left-column">
+        <div class="bk-details-key-value" ng-repeat="nameValuePair in customData.leftColumnPairs">
+            <span class="bk-details-key">{{nameValuePair.name}}: </span>
+            <span class="bk-details-value">{{nameValuePair.value}}</span>
+        </div>
+    </span>
+    <span class="fr">
+        <div class="bk-details-key-value" ng-repeat="nameValuePair in customData.rightColumnPairs">
+            <span class="bk-details-key">{{nameValuePair.name}}: </span>
+            <span class="bk-details-value">{{nameValuePair.value}}</span>
+        </div>
+    </span>
+    <div ng-if="!!customData.traceId" class="bk-details-footer">
+        <span class="fl">
+            <a ng-click="customData.downloadTrace(traceId)">{{customData.downloadTraceText}}</a>
+        </span>
+        <span class="fr">
+            <a ng-click="customData.emailTrace(traceId)">{{customData.reportProblemText}}</a>
+        </span>
+    </div>
+</div>

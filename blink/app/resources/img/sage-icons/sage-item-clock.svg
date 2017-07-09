@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>clock-dark-l</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="clock-export-copy-4">
+            <circle id="Oval-3" fill="#333333" cx="7" cy="7" r="7"></circle>
+            <g id="Group-3" transform="translate(6.000000, 2.000000)" fill="#FFFFFF">
+                <rect id="Rectangle-29" x="0" y="0" width="1" height="6" rx="0.5"></rect>
+                <rect id="Rectangle-29-Copy" x="0" y="5" width="4" height="1" rx="0.5"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

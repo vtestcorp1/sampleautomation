@@ -1,0 +1,308 @@
+// Copyright ThoughtSpot Inc. 2013-2014
+// Jonathan Moreira (jonathan@thoughtspot.com)
+//
+//
+//  HOW TO USE THE COLORS
+//
+//  - Picking a color from the COLORS HUES:
+//      - The colors listed in the COLORS HUES section are not intended to be used directly in our .less files. Their only purpose is to set the colors of the COLORS LIBRARY.
+//      - So if you're creating a new COLORS LIBRARY variable ONLY, you can choose a color hue from the COLORS HUES section.
+//      - Check in the comments the use case for each colors and choose the right one accordingly
+//      - If the color you need doesn't exist in the COLORS HUES section (which should happen in only a few cases), create a new color hue by following the rules below.
+//
+//  - Adding a new color to the COLORS HUES:
+//      - Make sure the color is not already listed in the COLORS HUES section (it's really important to keep control on our colors by limiting the amount of colors instances).
+//      - You normally doesn't need to add new color as the set of colors are large (eg.: the gray hues scope is pretty large, so you should be able find the right one).
+//      - Ultimately ask the opinion of the designer in charge ;-) He might tell you that the color you need is already listed here, so no need to create a new one.
+//      - However in some rare cases, you'll have maybe to add a new hue, to do so:
+//          - Simply write the name of the color hue (eg. pink) followed by the HEX color code (if no transparency).
+//          - For transparent colors use the rgba(r,g,b, a) function instead of the HEX color code.
+//          - Add in the right place of the COLORS HUES section (eg.: don't add a new 'pink' color in the middle of gray ones), we should keep a consistent and clean order.
+//          - Make sure to give an update to the designer that you're creating this new HUE, like that he's always aware of what's happening with the colors.
+//
+//  - Picking a color from the COLORS LIBRARY:
+//      - The colors listed in the COLORS LIBRARY are the only ones you can use in other .less files to style your elements
+//      - Check in the comments the use case for each color and choose the right one accordingly. A few examples:
+//          - You want to set the background-color to an input, you will choose the @input-bg color from section [A]
+//          - You want to set the background-color of a very specific element like the background-color of Sage bar, you will choose @sage-bg color
+//      - If the color doesn't exist in the COLORS LIBRARY (which should happen in only a few cases), create a new color variable by following the rules below.
+//
+//  - Adding a new color to the COLORS LIBRARY:
+//      - [IMPORTANT] When adding a new variable to the COLORS LIBRARY, only pick an existing HUE variable from the COLORS HUES section. NEVER re-use another color from
+//        the COLORS LIBRARY in order to set a new color. The idea behind the COLORS LIBRARY is to make it dependant from the COLORS HUES only. Like that
+//        we keep a modularity in the COLORS LIBRARY. If the HUE you want doesn't exist, you'll have to create a new HUE by following the guideline for the COLORS HUES section
+//        above.
+//      - Make sure the color you need is not already listed in the COLORS LIBRARY (it's really important to keep control on our colors by limiting the amount of colors instances).
+//      - If it's a specific color you'll use for a specific attribute of several elements (eg. background of div's), only specificy the color's name and the attribute it is used for (eg.: pink-bg),
+//        and add it to the sub-section [A] common elements colors.
+//      - If it's a common color (eg. white, black, gray) you'll use for a specific attribute of different elements (eg. background of div's), only specificy for which element and attribute it is used (eg.: overlay-bg),
+//        and add it to the sub-section [A] common elements colors.
+//      - If it's a very specific color (eg. blue) for a specific element (eg. input) , specify the name of the color followed by the name of the element and it's attribute (eg.: blue-input-bg)
+//        and add it to the sub-section [B] specific elements colors.
+
+
+/******************** [1] COLORS HUES *********************
+ * Main colors listed below. These colors are the base of
+ * our app design. They are used in the COLORS LIBRARY
+ * below. To create a new theme we only need to make change
+ * to these colors. They will automatically apply across
+ * all our COLORS LIBRARY below and so all our app.
+/*********************************************************/
+
+// Main colorful hues
+@h-red: #f5615d;
+@h-red-dark: #b94646;
+@h-green: #35bb58;
+@h-green-rgba-lo: rgba(53,187,88,.4);
+@h-green-rgba-hi: rgba(53,187,88, 1);
+@h-green-dark: #2d9e4a;
+@h-blue: #5c9df5;
+@h-blue-rgba-lo: rgba(92, 157, 245, 0.4);
+@h-blue-rgba-hi: rgba(92, 157, 245, 1);
+@h-purple: #b37ef5;
+@h-orange: #fc5f45;
+
+// Secondary colorful hues
+@h-pink: #f55d9a;
+@h-yellow: #feb960;
+@h-dark-blue: #4c54eb;
+@h-turquoise: #5bbdea;
+@h-caribbean-green: #4bcb9f;
+
+// Help/info  colors
+@h-braun: #c19a57;
+@h-pale-yellow: #FEF9DB;
+
+// White hues
+@h-white: #ffffff;
+@h-white-text: #ffffff;
+@h-white-transparent: rgba(255, 255, 255, 0.5);
+@h-white-transparent-1: rgba(255,255,255,0.2);
+@h-white-transparent-2: rgba(255,255,255,0.1);
+@h-white-transparent-3: rgba(255,255,255,0.95);
+@h-white-transparent-4: rgba(255, 255, 255, 0.7);
+@h-white-transparent-5: rgba(250, 250, 250, 0.98);
+
+// Gray hues (each number increase = darker)
+@h-gray: #f4f5f6;
+@h-gray1: #EEF1F4;
+@h-gray1-transparent: rgba(238, 241, 244, 0.70);
+@h-gray2: #dedfe3;
+@h-gray3: #d1d3d8;
+@h-gray4: #a6acbc;
+@h-gray5: #7a7f93;
+@h-gray6: #4e515e;
+@h-grey7: #ebebeb;
+
+// Black hues (each transparency number increase = more transparent)
+@h-black: #2f323a;
+@h-black-transparent: rgba(46, 48, 55, 0.9);
+@h-black-transparent-1: rgba(46, 48, 55, 0.5);
+@h-black-transparent-2: rgba(46, 48, 55, 0.18);
+@h-black-transparent-3: rgba(46, 48, 55, 0.06);
+@h-black-transparent-4: rgba(0, 0, 0, 0.09);
+@h-black-transparent-5: rgba(46, 48, 55, 0.3);
+@h-black-transparent-6: rgba(0, 0, 0, 0.60);
+@h-black1: #1f2126;
+@h-black2: #131313;
+@h-black3: #333333;
+
+
+
+/******************** [2] COLORS LIBRARY *********************
+ * List of all the colors use accross the app. They are based
+ * on the COLORS HUES above. If you need a color to use in
+ * other .less files, you should pick it from this list.
+ * If it doesn't exist or you need a new specific color
+ * variable, simply add it here by picking a color from the
+ * COLORS HUES above (just make sure to follow the guidelines
+ * above).
+ * There's two sections:
+ * - A) COMMON elements colors: list of colors used for several
+     elements
+ * - B) SPECIFIC elements colors: list of colors variables used for
+     specific elements
+/************************************************************/
+
+
+/******** [A] COMMON/REUSABLE ELEMENTS COLORS *********/
+
+// Used for Admin section, alert banner and headlines
+@red-default: @h-red;
+@red-hover: darken(@h-red, 5%);
+@red-border: darken(@h-red, 7%);
+@red-darker: @h-red-dark;
+@red-transparent: rgba(245, 97, 93, 0.1);
+
+// Used for Home section and headlines
+@orange-default: @h-orange;
+@orange-hover: darken(@h-orange, 5%);
+@orange-darker: darken(@h-orange, 7%);
+
+// Used for Answer section and headlines
+@blue-default: @h-blue;
+@blue-hover: darken(@h-blue, 5%);
+@blue-darker: darken(@h-blue, 7%);
+
+// Used for Pinboard section, success messages and headlines
+@green-default: @h-green;
+@green-hover: darken(@h-green, 5%);
+@green-border: darken(@h-green, 7%);
+@green-darker: @h-green-dark;
+
+// Used for Data section and headlines
+@purple-default: @h-purple;
+@purple-hover: darken(@h-purple, 5%);
+@purple-darker: darken(@h-purple, 7%);
+
+// Used for Sage warning and headlines
+@yellow-default: @h-yellow;
+@yellow-hover: darken(@h-yellow, 5%);
+@yellow-darker: darken(@h-yellow, 9%);
+
+// Used for headlines
+@pink-default: @h-pink;
+@turquoise-default: @h-turquoise;
+@dark-blue-default: @h-dark-blue;
+
+@white-default: @h-white-text;
+
+@primary-default: @h-gray6;
+@primary-hover: @h-black;
+@primary-light: @h-gray3;
+
+@secondary-default: @h-gray5;
+@secondary-hover: @h-black;
+
+
+// Used for Simple mode
+@simple-mode: @h-caribbean-green;
+@simple-mode-bg: lighten(@h-caribbean-green,42%);
+@simple-mode-hover: darken(@h-caribbean-green,2%);
+
+// Used for Advance mode
+@advance-mode: @h-turquoise;
+@advance-mode-bg: lighten(@h-turquoise,42%);
+@advance-mode-hover: darken(@h-turquoise,2%);
+
+// Used for style white elements (divs, spans, etc.)
+@white-bg: @h-white;
+@white-bg-transparent-faint: @h-white-transparent-3;
+@white-border: @h-white;
+@white-border-transparent: @h-white-transparent-1;
+
+// Used to style black elements (divs, spans, etc.)
+@black-bg: @h-black1;
+@black-border: @h-black1;
+@black-bg-lighter: @h-black;
+@black-bg-transparent: @h-black-transparent;
+
+// Used to style gray elements (divs, spans, etc.)
+@gray-bg: @h-gray;
+@gray-hover: @h-gray2;
+@gray-hover-light: darken(@h-gray, 1.5%);
+@gray-border: @h-gray2;
+@gray-border-hover: @h-gray3;
+@gray-border-faint: @h-gray1;
+
+// Text colors
+@white-text: @h-white-text;
+@gray-label-text: @h-gray3;
+@gray-label-text-darker: @h-gray4;
+@gray-secondary-text: @h-gray5;
+@gray-main-title: @h-gray6;
+@gray-main-text: @h-gray6;
+@gray-text-hover: @h-gray6;
+@blue-main-text: @h-blue-rgba-hi;
+
+// Shadows colors
+@text-shadow: @h-white;
+@bg-shadow: @h-black-transparent-1;
+@bg-shadow-medium: @h-black-transparent-5;
+@bg-shadow-faint: @h-black-transparent-2;
+@bg-shadow-faint-1: @h-black-transparent-3;
+@bg-shadow-faint-2: @h-black-transparent-4;
+@inner-shadow: @h-white;
+@inner-shadow-faint: @h-white-transparent-1;
+@inner-shadow-faint-1: @h-white-transparent-2;
+@inner-gray-shadow: @h-gray3;
+@dialog-shadow: @h-black-transparent-1;
+
+// Overlay bg color
+@overlay-bg: @h-black-transparent-1;
+@overlay-bg-faint: @h-black-transparent-2;
+@overlay-bg-white: @h-white-transparent-4;
+
+// Inputs styling
+@input-bg: @h-white;
+@input-border: @h-gray3;
+@input-inner-shadow: @h-black-transparent-4;
+@input-dark-bg: @h-black1;
+@input-dark-border: darken(@h-black1, 8%);
+@input-dark-inner-shadow: @h-black;
+@input-border: #cccccc;
+
+
+/******** B) CUSTOM/SPECIFIC ELEMENTS COLORS *********/
+
+// Used as the color of the body
+@body-bg: @h-gray1;
+@body-bg-transparent: @h-gray1-transparent;
+
+// Used for info banner, container, button, ...
+@info-bg: @h-pale-yellow;
+@selected-list-item-bg: lighten(@h-pale-yellow, 3%);
+@active-list-item-bg: darken(@h-pale-yellow, 5%);
+@info-border: darken(@h-pale-yellow, 18%);
+@info-text: @h-braun;
+
+// Navigation element styling colors
+@nav-bg: @h-black;
+@nav-text: @h-gray4;
+
+// Cancel button
+@cancel-btn: @h-gray5;
+@cancel-btn-border: @h-gray5;
+@cancel-btn-hover: lighten(@h-gray5, 10%);
+
+// Sage bar colors
+@sage-bg: @h-white;
+@sage-border: @h-gray3;
+@sage-inner-shadow: @h-black-transparent-3;
+@sage-shadow: @h-white-transparent;
+@sage-text: @h-gray6;
+@sage-ghost-text: @h-gray2;
+@sage-lineage-text: @h-gray5;
+@sage-label-text: @h-gray3;
+@sage-hover-light: darken(@h-gray, 0.5%);
+@sage-home-shadow: @h-black-transparent-3;
+@sage-home-inner-shadow: @h-gray3;
+
+// No content placeholders
+@no-content-label: darken(@h-gray3, 3%);
+@no-content-bg: darken(@h-gray1, 2%);
+@no-content-border: darken(@h-gray2, 4%);
+
+// Separators on bright background
+@separator: @h-gray2;
+@separator-bright: @h-white;
+
+// Separators on dark background
+@separator-on-dark: @h-black1;
+@separator-on-dark-shadow: @h-white-transparent-2;
+
+// Viz tiles colors
+@viz-border: @h-gray2;
+@viz-bg: @h-white;
+@viz-shadow: @bg-shadow-faint-1;
+@viz-inner-shadow: @h-white-transparent-2;
+
+// BETA label color
+@beta-label: @h-white-transparent;
+
+// Table colors
+@table-row-bg: darken(@h-gray, 0.5%);
+@table-row-bg-hover: darken(@h-gray, 1.4%);
+@table-text-color: @h-gray6;
+@table-text-color-hover: @h-gray6;
+@table-row-span: #c1c6d2;

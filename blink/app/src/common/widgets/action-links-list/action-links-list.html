@@ -1,0 +1,8 @@
+<div class="bk-actions-lists">
+    <div class="bk-action"
+         ng-repeat="action in $ctrl.actionLinksList">
+        <a ng-click="$ctrl.onClick($index)">
+            <span>{{action.text}}</span>
+        </a>
+    </div>
+</div>

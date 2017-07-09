@@ -1,0 +1,6 @@
+This is a directory containing various release version notes.
+The release notes filename shall use following template:
+
+Thoughtspot_<release_version_string>_Release_Notes.pdf
+
+For e.g. Thoughtspot_2.0.5_Release_Notes.pdf

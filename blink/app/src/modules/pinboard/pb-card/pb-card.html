@@ -1,0 +1,25 @@
+<div class="bk-pinboard-card"
+     slide
+     viz-id="{{$ctrl.vizModel.getId()}}">
+    <bk-action-button-dropdown class="bk-pb-card-action-menu"
+                               menu="$ctrl.actionMenuConfig"
+                               only-icon="true"
+                               icon="bk-style-icon-table-column-options"
+                               ng-if="!!$ctrl.actionMenuConfig">
+    </bk-action-button-dropdown>
+    <div class="bk-pinboard-card-content"
+         ng-switch="$ctrl.contentType">
+        <bk-pb-generic-viz class="bk-pb-generic-viz-container"
+                           ng-switch-when="GENERIC"
+                           bk-ctrl="$ctrl.contentCtrl">
+        </bk-pb-generic-viz>
+        <bk-pinboard-data-viz class="bk-pinboard-data-viz-container"
+                              ng-switch-when="DATA"
+                              bk-ctrl="$ctrl.contentCtrl">
+        </bk-pinboard-data-viz>
+        <bk-pb-cluster-viz class="bk-pb-cluster-viz-container"
+                           ng-switch-when="CLUSTER"
+                           bk-ctrl="$ctrl.contentCtrl">
+        </bk-pb-cluster-viz>
+    </div>
+</div>

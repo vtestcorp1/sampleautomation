@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="317px" height="146px" viewBox="0 0 317 146" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-weight="300" font-style="condensed">
+        <g id="Artboard-3" transform="translate(-41.000000, -36.000000)">
+            <g id="Group" transform="translate(39.000000, 25.000000)">
+                <text id="REST" font-family="GothamNarrow-Book, Gotham Narrow" font-size="128" letter-spacing="2.74285793" fill="#00A739">
+                    <tspan x="19" y="102">REST</tspan>
+                </text>
+                <text id="Web-Services" font-family="GothamNarrow-Light, Gotham Narrow" font-size="54" letter-spacing="1.157143" fill="#9E9E9E">
+                    <tspan x="0" y="156">Web Services</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

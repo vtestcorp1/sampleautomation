@@ -1,0 +1,83 @@
+.bk-action-progress {
+    height: 30px;
+    background-color: white;
+    position: relative;
+    top: -31px;
+    left: 15px;
+    width: 63px;
+
+    .bk-in-progress {
+        position: relative;
+        height: 8px;
+        top: 11px;
+        left: 9px;
+
+        .bk-dot {
+            position: absolute;
+            left: 0;
+            width: 8px;
+            height: 8px;
+            border-radius: 5px;
+            .bg-grey6;
+            .animation-duration(0.4s);
+            .animation-iteration-count(infinite);
+            .transition-timing(linear);
+
+            &.dot1 {
+                .animation-name(reveal);
+            }
+
+            &.dot2 {
+                left: 2px;
+                .animation-name(slide);
+            }
+
+            &.dot3 {
+                left: 12px;
+                .animation-name(slide);
+            }
+
+            &.dot4 {
+                left: 24px;
+                .animation-name(reveal);
+                .animation-direction(reverse);
+            }
+        }
+    }
+}
+
+.bk-dropdown-button-wrapper {
+    .bk-button-switch {
+        .flex(row);
+
+        .bk-button-switch-when {
+            .flex(row);
+        }
+    }
+}
+
+.bk-action-button-dropdown {
+    .bk-icons {
+        &:before {
+            color: @grey7;
+            font-size: 12px;
+        }
+    }
+}
+
+.bk-action-dropdown {
+    position: absolute;
+    right: 0px;
+    top: 38px;
+    &.popover {
+        border: none;
+        // display: table enables a div to take content's width with width:auto
+        // !important added because in the lib, display is also set with !important
+        display:table !important;
+        width: auto;
+    }
+    .arrow {
+        // We do not want to display the popover arrow.
+        display: none;
+    }
+}

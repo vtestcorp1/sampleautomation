@@ -1,0 +1,24 @@
+<div ng-controller="DataManagementPageController" class="bk-data-list">
+    <div class="bk-metadata-list">
+        <tab-control-component bk-ctrl="ctrl" class="bk-vertical-flex-container-sized">
+            <tab-control-component-tab tab-ctrl="ctrl"
+                                       tab-name="{{strings.tables.tabHeader}}"
+                                       tab-id="{{constants.tables.tabId}}"
+                                       disabled="isTabDisabled(constants.tables.tabId)"
+                                       tooltip-text="{{getToolTipText(constants.tables.tabId)}}"
+                                       class="bk-vertical-flex-container-sized"
+                                       ng-show="isTabOpen(constants.tables)">
+                <tables-list-page class="bk-vertical-flex-container-sized"></tables-list-page>
+            </tab-control-component-tab>
+            <tab-control-component-tab tab-ctrl="ctrl"
+                                       tab-name="{{strings.dataSources.tabHeader}}"
+                                       tab-id="{{constants.dataSources.tabId}}"
+                                       disabled="isTabDisabled(constants.dataSources.tabId)"
+                                       tooltip-text="{{getToolTipText(constants.dataSources.tabId)}}"
+                                       class="bk-vertical-flex-container-sized"
+                                       ng-show="isTabOpen(constants.dataSources)">
+                <ds-list-page class="bk-vertical-flex-container-sized"></ds-list-page>
+            </tab-control-component-tab>
+        </tab-control-component>
+    </div>
+</div>

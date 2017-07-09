@@ -1,0 +1,124 @@
+.bk-context-menu {
+    z-index: @overlay-zindex;
+    position: absolute;
+    padding: 9px 0;
+    min-width: 200px;
+    .bg-white1;
+    .br-radius-4;
+    border: none;
+    .box-shadow(0 10px 30px rgba(0, 0, 0, 0.3));
+    .color-grey8;
+    .animation-duration(0.15s);
+    .animation-fill-mode(both);
+    .animation-name(fade-in);
+
+    .bk-context-menu-header {
+        margin-bottom: 1px;
+        border-radius: 5px 5px 0 0;
+        background-clip: padding-box;
+    }
+
+    .bk-context-menu-title {
+        .font-family-bold();
+        text-align: left;
+        padding: 6px 6px 6px 32px;
+    }
+
+    .bk-context-menu-subtitle {
+        .font-family-bold();
+        text-align: left;
+        padding: 4px 6px 2px 12px;
+    }
+
+    .context-sub-menu-title-container {
+        .flex(row);
+        .flex-align(center);
+        height: 28px;
+        &:hover {
+            cursor: pointer;
+            .bg-grey1;
+        }
+
+        .bk-icon {
+            .flex-grow-shrink-basis(0, 0, 32px);
+            .flex(row);
+            .flex-justify(center);
+            &:before {
+                font-size: 13px;
+            }
+        }
+    }
+
+    .bk-sub-menu-item-disabled {
+        .context-sub-menu-title-container {
+            .color-grey4;
+            &:hover {
+                .bg-white1;
+                .color-grey4;
+                .bk-cursor-default;
+            }
+        }
+    }
+
+    .bk-search-wrapper {
+        position: relative;
+        height: 24px;
+        padding: 12px 12px 12px 11px;
+        width: 100%;
+
+        .bk-search-icon {
+            display: block;
+            position: absolute;
+            top: 17px;
+            left: 17px;
+            width: 14px;
+            height: 14px;
+            background-size: 14px 14px;
+            background-image: url('../../../resources/img/search-icon.png');
+        }
+
+        input {
+            font-size: 12px;
+            padding-left: 22px;
+            width: 249px;
+            height: 14px;
+            line-height: 14px;
+            border-radius: 3px;
+        }
+    }
+
+    .bk-items {
+        height: 192px;
+        overflow-y: auto;
+        margin-bottom: 8px;
+
+        li {
+            padding: 2px 12px;
+            border-radius: 0px;
+            cursor: pointer;
+            .font-family-semibold();
+
+            &:hover {
+                cursor: pointer;
+                .bg-grey1;
+            }
+
+            &.bk-no-select:hover {
+                .bg-white;
+                cursor: default;
+            }
+        }
+
+        li.selected {
+            color: @white-text;
+        }
+
+        li.bk-no-select {
+            text-transform: uppercase;
+            .font-family-bold();
+            color: @gray-secondary-text;
+            font-size: 10px;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+<div class="bk-sage bk-read-only-sage" >
+    <form class="bk-sage-bar">
+        <span class="bk-style-icon-lock bk-icon" blink-tooltip="You have read-only permissions"></span>
+        <div class="bk-sage-input-wrapper" ng-click="onSageBarClick()">
+            <div class="bk-sage-real-input" ng-class="{'bk-overflow-ellipsis': !sageExpanded}"
+                 blink-tooltip="{{ queryText }}">{{ queryText }}</div>
+        </div>
+    </form>
+</div>

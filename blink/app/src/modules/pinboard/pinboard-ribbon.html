@@ -1,0 +1,50 @@
+<div ng-switch="metadataConfig.pinboardPageConfig.viewState">
+    <div ng-switch-when="PRINT_STATE" class="bk-pinboard-cover-page">
+        <div class="bk-pinboard-details">
+            <div class="bk-pinboard-headers">
+                <div class="bk-pinboard-name">{{metadataConfig.model.getName()}}</div>
+                <div class="bk-pinboard-description">
+                    {{metadataConfig.model.getDescription()}}
+                </div>
+                <div class="bk-current-date">
+                    {{metadataConfig.strings.DATE}}{{': '}}{{currentDate}}
+                </div>
+            </div>
+            <div ng-if="metadataConfig.hasFilters">
+                <div class="bk-filter-heading">
+                    {{metadataConfig.strings.FILTER_HEADING}}
+                </div>
+                <filter-panel class="pinboard-filter-panel"
+                              ctrl="metadataConfig.filterPanelController">
+                </filter-panel>
+            </div>
+        </div>
+        <div class="bk-cover-logo">
+            <img width="60" height="60" src="resources/img/logo/TS-logo-white.png"/>
+        </div>
+     </div>
+    <div ng-switch-when="RELATED_LINK_STATE" class="bk-pinboard-cover-page">
+        <div class="bk-pinboard-headers">
+            <div class="bk-pinboard-name">
+                {{metadataConfig.strings.PINBOARD_TAB}}{{': '}}{{metadataConfig.model.getName()}}
+            </div>
+            <div class="bk-pinboard-description">{{metadataConfig.model.getDescription()}}</div>
+        </div>
+        <div ng-if="metadataConfig.hasFilters">
+            <div class="bk-filter-heading">
+                {{metadataConfig.strings.FILTER_HEADING}}
+            </div>
+            <filter-panel class="pinboard-filter-panel"
+                          ctrl="metadataConfig.filterPanelController">
+            </filter-panel>
+        </div>
+    </div>
+    <div ng-switch-default>
+        <bk-a3-insights-summary ng-if="!!metadataConfig.a3InsightsSummaryComponent"
+                                bk-ctrl="metadataConfig.a3InsightsSummaryComponent">
+        </bk-a3-insights-summary>
+        <filter-panel class="pinboard-filter-panel"
+                      ctrl="metadataConfig.filterPanelController">
+        </filter-panel>
+    </div>
+</div>

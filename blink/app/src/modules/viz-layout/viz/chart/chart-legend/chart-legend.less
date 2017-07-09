@@ -1,0 +1,206 @@
+.bk-viz-chart {
+    @legend-width: 165px;
+    @unselected-opacity: 0.35;
+
+    .bk-chart[chart-type=HEATMAP] {
+        .highcharts-legend-item {
+            .highcharts-axis-labels text {
+                &:first-child {
+                    text-anchor: end;
+                }
+                &:last-child {
+                    text-anchor: start;
+                }
+            }
+        }
+    }
+
+    .bk-chart-legend[chart-type^=GEO_] {
+        .bk-legend {
+            background-color: white;
+            .box-shadow(1px 1px 6px @grey2);
+            .br-grey3;
+
+        }
+
+        &.bk-legend-horizontal {
+            .bk-legend {
+                display: flex;
+                padding: 10px;
+            }
+        }
+    }
+
+    .chart-container {
+
+        &.bk-vertical-layout {
+            .bk-chart-legend {
+                max-width: 25%;
+                // This padding is difficult to standardize as it is aligning the
+                // top of the legend with the top line of the svg chart.
+                // I could increase the spacing-top of the chart by 3 to make
+                // this padding 12px, but the trade off is the chart spacing-top
+                // would be an odd value.
+                padding-top: 9px;
+                .bk-horizontal-flex-content-sized;
+            }
+        }
+
+        &.bk-horizontal-layout {
+            .bk-chart-legend {
+                .bk-vertical-flex-content-sized;
+            }
+        }
+    }
+
+    .bk-chart-legend.bk-legend-horizontal {
+        .bk-horizontal-flex-container-sized;
+        .flex-align(center);
+
+        .bk-legend-content {
+            flex: none
+        }
+
+        .bk-legend-content-inner {
+            // height must be set here due to a bug (possibly with sf-virtual-repeat),
+            // in which the parent container height is set to the sum of each legend
+            // items height. This results in too much vertical spacing in vertically
+            // aligned charts.
+
+            height: 36px !important;
+            .bk-horizontal-flex-container-sized;
+
+            .bk-legend-item {
+                padding-top: 12px;
+                .bk-horizontal-flex-content-sized;
+            }
+
+            .bk-legend-singular-select {
+                float: none;
+                position: absolute;
+                left: 14px;
+                bottom: 2em;
+            }
+        }
+    }
+
+
+
+    .bk-chart-legend {
+        z-index: 0;
+    }
+
+    .bk-legend {
+        @legend-header-height: 20px;
+        .flex(row);
+        .bk-legend-header {
+            position: relative;
+            max-width: 250px;
+            height: @legend-header-height;
+            padding-right: 10px;
+            white-space: nowrap;
+            font-size: 11px;
+            line-height: @legend-header-height;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            vertical-align: top;
+            font-weight: bold;
+
+            @legend-title-right: 20px;
+            .bk-legend-title {
+                left: 0px;
+                right: @legend-title-right;
+            }
+        }
+
+        .bk-legend-content {
+            overflow-y: auto;
+            .transition(~"max-height 200ms ease-in");
+
+            .bk-legend-content-inner {
+                .retina-mp-light-12-grey8;
+                @legend-label-height: 23px;
+
+                .bk-legend-item {
+                    .flex-important(row);
+                    cursor: pointer;
+                    height: @legend-label-height;
+                    position: relative;
+                    padding-left: 8px;
+
+                    .bk-legend-marker-container {
+                        opacity: @unselected-opacity;
+                        display: inline-block;
+                        vertical-align: middle;
+
+                        .bk-legend-marker {
+                            width: 11px;
+                            height: 11px;
+                            margin-right: 1px;
+                            vertical-align: middle;
+                            border-radius: 7px;
+                            background-color: @gray-secondary-text;
+                            .bk-color-picker-fill {
+                                border-radius: 7px;
+                            }
+                        }
+                    }
+
+                    .bk-legend-label {
+                        display: inline-block;
+                        line-height: 13px;
+                        font-size: 12px;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        padding-left: 3px;
+                        padding-right: 8px;
+                        vertical-align: middle;
+                        opacity: @unselected-opacity;
+                        color: @gray-secondary-text;
+                    }
+
+                    .bk-legend-singular-select {
+                        display: inline-block;
+                        float: right;
+                        font-weight: bold;
+                        visibility: hidden;
+                        line-height: 13px;
+                        margin-right: 15px;
+
+                        &.bk-legend-singular-select-selected {
+                            color: @h-blue;
+                        }
+                    }
+
+                    &.bk-selected {
+                        .bk-legend-label {
+                            opacity: 1;
+                            color: @grey8;
+                        }
+
+                        .bk-legend-marker-container {
+                            opacity: 1;
+                        }
+
+                        &:hover {
+                            .bk-legend-label {
+                                color: @gray-main-text;
+                            }
+                        }
+                    }
+                }
+
+                .bk-legend-item:hover {
+                    .bk-legend-singular-select {
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+    }
+}
+
+blink-sharable-item[type="'PINBOARD'"] .bk-legend-item {
+    /*SCAL-4841*/
+    cursor: default !important;
+}

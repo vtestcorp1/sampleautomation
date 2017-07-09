@@ -1,0 +1,57 @@
+<div class="bk-pattern-heading">LESS directory structure</div>
+<div>All LESS files with common style patterns and mixins reside under <span class="font-family-semibold">blink/app/resources/css</span>.
+    Rest of the module related LESS files is created in the same directory as its HTML and JS files.
+</div>
+
+<div class="bk-pattern-heading">LESS class naming</div>
+<div class="font-default font-primary-default">
+    Every class name added in a LESS file should have a prefix
+    <span class="bk-pattern-text-highlight">'bk'</span>.
+    <div class="code">
+            <div class="tag">.bk-test-class-name {</div>
+            <div class="tag">//CSS rules</div>
+            <div class="tag">}</div>
+    </div>
+</div>
+<div class="bk-pattern-heading">How to structure a LESS class?</div>
+<div>We have base patterns defined in various less file which you can find inside css folder.
+    They should be self-explanatory. Whenever we create a new module we should try to re-use those patterns to create
+    more patterns which will help in bringing visual harmony across the app.
+</div>
+<div class="bk-pattern-sub-heading">Note:</div>
+<div class="bk-padding-top-10">
+    - Maintain the order of elements in html as they appear visually in design
+</div>
+<div>
+    - !important: important overrides and other css rules defined for a particular element.
+    We <span class="font-family-bold">never</span> want to use it.
+</div>
+<div class="bk-pattern-sub-heading">Example:</div>
+<div>
+    <div class="code">
+        <div class="tag">.bk-filter-list-heading {</div>
+        <div class="tag color-orange1">/* Positioning */</div>
+        <div class="tag">.pa;</div>
+        <div class="tag">top: 0;</div>
+        <div class="tag">right: 0</div>
+        <div class="tag">z-index: 10;</div>
+
+        <div class="tag color-orange1">/* Display & Box Model */</div>
+        <div class="tag">.dib;</div>
+        <div class="tag">width: 100px;</div>
+        <div class="tag">height: 100px;</div>
+        <div class="tag">.bk-padding-all-10;></div>
+        <div class="tag">.bk-margin-vertical-5;</div>
+
+        <div class="tag color-orange1">/* Color */</div>
+        <div class="tag">.bg-grey2;</div>
+        <div class="tag">.color-grey8;</div>
+
+        <div class="tag color-orange1">/* Text */</div>
+        <div class="tag">.font-family-semibold;</div>
+        <div class="tag">.text-size-larger;</div>
+        <div class="tag">.text-uppercase;</div>
+        <div class="tag">.bk-align-right;</div>
+        <div class="tag">}</div>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+<div>
+    <div class="bk-context-menu-subtitle"
+        ng-if="$ctrl.relatedItems.length > 0">
+        {{ $ctrl.RELATED_ITEMS_TITLE }}
+    </div>
+    <div ng-click="$ctrl.onRelatedItemClicked(item)"
+         ng-repeat="item in $ctrl.relatedItems">
+        <div class="bk-sub-menu-item">
+            <div class="context-sub-menu">
+                <div class="context-sub-menu-title-container">
+                    <div class="bk-icon bk-style-icon-{{item.type}}"></div>
+                    {{ item.name }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

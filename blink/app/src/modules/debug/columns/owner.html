@@ -1,0 +1,4 @@
+<div title="{{row.owner}}">
+    <a class='bk-guid' ng-if="row.owner !== row.id">{{column.format(row)}}</a>
+    <span ng-if="row.owner === row.id">{{column.constants.IS_ROOT}}</span>
+</div>

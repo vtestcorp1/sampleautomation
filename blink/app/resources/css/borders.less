@@ -1,0 +1,266 @@
+// Copyright ThoughtSpot Inc. 2013-2016
+// Priyanshi Deshwal (priyanshi@thoughtspot.com)
+//
+// Border styles
+//
+// The purpose of this file is to define different types of borders(size, types color and radius)
+
+/* Content:
+
+=Border mixin
+=Border transparent
+=Border grey
+=Border orange
+=Border radii mixin
+=Border radii
+=Old borders styles
+
+*/
+
+/* =Border mixin
+*************************************************************/
+
+.border(@size, @type, @color, @top, @right, @bottom, @left) when (@top = true){
+    border-top: @size @type @color;
+}
+.border(@size, @type, @color, @top, @right, @bottom, @left) when (@right = true){
+    border-right: @size @type @color;
+}
+.border(@size, @type, @color, @top, @right, @bottom, @left) when (@bottom = true){
+    border-bottom: @size @type @color;
+}
+.border(@size, @type, @color, @top, @right, @bottom, @left) when (@left = true){
+    border-left: @size @type @color;
+}
+.border (@size, @type, @color) when (default()) {
+    border: @size @type @color;
+}
+/* =Border transparent
+*************************************************************/
+
+.br-transparent-bottom-3 {
+    .border(@size :3px,
+        @type: solid,
+        @color: transparent,
+        @top: false,
+        @right: false,
+        @bottom: true,
+        @left: false);
+}
+
+.br-transparent-top-3 {
+    .border(@size :3px,
+        @type: solid,
+        @color: transparent,
+        @top: true,
+        @right: false,
+        @bottom: false,
+        @left: false);
+}
+
+/* =Border grey
+*************************************************************/
+
+.br-grey1 {.border(@size :1px, @type: solid, @color: @grey1); .border-radius(4px);}
+.br-grey2 {.border(@size :1px, @type: solid, @color: @grey2); .border-radius(4px);}
+.br-grey3 {.border(@size :1px, @type: solid, @color: @grey3); .border-radius(4px);}
+.br-grey4 {.border(@size :1px, @type: solid, @color: @grey4); .border-radius(4px);}
+.br-grey5 {.border(@size :1px, @type: solid, @color: @grey5); .border-radius(4px);}
+.br-grey6 {.border(@size :1px, @type: solid, @color: @grey6); .border-radius(4px);}
+.br-grey7 {.border(@size :1px, @type: solid, @color: @grey7); .border-radius(4px);}
+.br-grey8 {.border(@size :1px, @type: solid, @color: @grey8); .border-radius(4px);}
+
+.br-grey3-top {
+    .border(@size :1px,
+        @type: solid,
+        @color: @grey3,
+        @top: true,
+        @right: false,
+        @bottom: false,
+        @left: false);
+}
+
+.br-grey3-left {
+    .border(@size :1px,
+        @type: solid,
+        @color: @grey3,
+        @top: false,
+        @right: false,
+        @bottom: false,
+        @left: true);
+}
+
+.br-grey3-right {
+    .border(@size :1px,
+        @type: solid,
+        @color: @grey3,
+        @top: false,
+        @right: true,
+        @bottom: false,
+        @left: false);
+}
+
+.br-grey3-bottom {
+    .border(@size :1px,
+        @type: solid,
+        @color: @grey3,
+        @top: false,
+        @right: false,
+        @bottom: true,
+        @left: false);
+}
+
+.br-grey3-right-bottom-left {
+    .border(@size :1px,
+        @type: solid,
+        @color: @grey3,
+        @top: false,
+        @right: true,
+        @bottom: true,
+        @left: true);
+}
+
+.br-grey4-top {
+    .border(@size :1px,
+        @type: solid,
+        @color: @grey4,
+        @top: true,
+        @right: false,
+        @bottom: false,
+        @left: false);
+}
+
+.br-grey8-bottom-3 {
+    .border(@size :3px,
+        @type: solid,
+        @color: @grey8,
+        @top: false,
+        @right: false,
+        @bottom: true,
+        @left: false);
+}
+
+/* =Border orange
+*************************************************************/
+
+.br-orange1 {.border(@size :1px, @type: solid, @color: @orange1);}
+.br-orange2 {.border(@size :1px, @type: solid, @color: @orange2);}
+
+.br-orange-bottom-3 {
+    .border(@size :3px,
+        @type: solid,
+        @color: @orange2,
+        @top: false,
+        @right: false,
+        @bottom: true,
+        @left: false);
+}
+
+/* =Border radii mixin
+*************************************************************/
+
+.border-radius (@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius:    @radius;
+    border-radius:         @radius;
+
+    -moz-background-clip:    padding;
+    -webkit-background-clip: padding-box;
+    background-clip:         padding-box;
+}
+
+.border-radii (@topright, @bottomright, @bottomleft, @topleft) {
+    -webkit-border-top-right-radius:    @topright;
+    -webkit-border-bottom-right-radius: @bottomright;
+    -webkit-border-bottom-left-radius:  @bottomleft;
+    -webkit-border-top-left-radius:     @topleft;
+
+    -moz-border-radius-topright:        @topright;
+    -moz-border-radius-bottomright:     @bottomright;
+    -moz-border-radius-bottomleft:      @bottomleft;
+    -moz-border-radius-topleft:         @topleft;
+
+    border-top-right-radius:            @topright;
+    border-bottom-right-radius:         @bottomright;
+    border-bottom-left-radius:          @bottomleft;
+    border-top-left-radius:             @topleft;
+
+    -moz-background-clip:    padding;
+    -webkit-background-clip: padding-box;
+    background-clip:         padding-box;
+}
+
+/* =Border radii
+*************************************************************/
+
+.br-radius-2 { .border-radius (2px); }
+.br-radius-3 { .border-radius (3px); }
+.br-radius-4 { .border-radius (4px); }
+.br-radius-5 { .border-radius (5px); }
+.br-radius-16 { .border-radius (16px); }
+
+.br-radius-3-top {
+    .border-radii (@topright: 3px, @bottomright: 0, @bottomleft: 0, @topleft: 3px);
+}
+
+.br-radius-3-bottom {
+    .border-radii (@topright: 0, @bottomright: 3px, @bottomleft: 3px, @topleft: 0);
+}
+
+.br-radius-3-left {
+    .border-radii (@topright: 0, @bottomright: 0, @bottomleft: 3px, @topleft: 3px);
+}
+
+.br-radius-5-bottom {
+    .border-radii (@topright: 0, @bottomright: 5px, @bottomleft: 5px, @topleft: 0);
+}
+
+.br-radius-left-none {
+    .border-radii (@topright: 4px, @bottomright: 4px, @bottomleft: 0, @topleft: 0);
+}
+
+/* =Old borders styles
+*************************************************************/
+
+.br-gray {
+    .border(@size :1px, @type: solid, @color: @gray-border);
+}
+.br-gray-bottom {
+    .border(@size :1px,
+        @type: solid,
+        @color: @gray-border,
+        @top: false,
+        @right: false,
+        @bottom: true,
+        @left: false);
+}
+
+.br-green {
+    .border(@size :1px, @type: solid, @color: @green-default);
+}
+
+.br-red {
+    .border(@size :1px, @type: solid, @color: @red-default);
+}
+
+.br-yellow {
+    .border(@size :1px, @type: solid, @color: @yellow-default);
+}
+
+.br-blue {
+    .border(@size :1px, @type: solid, @color: @blue-default);
+}
+
+.br-purple {
+    .border(@size :1px, @type: solid, @color: @purple-default);
+}
+
+.br-orange-top {
+    .border(@size :3px,
+        @type: solid,
+        @color: @orange-default,
+        @top: true,
+        @right: false,
+        @bottom: false,
+        @left: false);
+}

@@ -1,0 +1,51 @@
+<div class="bk-sage-data-columns bk-bulk-data-columns" ng-class="{'bk-read-only': panelComponent.isReadOnly()}"
+     blink-overlay="onFocusOut()">
+    <div class="bk-search-wrapper">
+        <input class="bk-search-input" type="text" ng-model="colItemFilter" spellcheck="false"
+               placeholder="Search Columns">
+    </div>
+
+    <div class="bk-bulk-columns-container"
+         ng-controller="GroupedColumnsController">
+        <div class="bk-columns-body-section" ng-class="{'bk-loading': isLoadingColumns()}">
+            <div class="bk-source-list-wrapper">
+                <ul class="bk-source-list">
+                    <li class="bk-source-item bk-clickable"
+                        ng-repeat="sourceObj in selectedSources"
+                        post-repeat
+                        ng-click="onGroupClick(sourceObj)"
+                        ng-show="isSourceAccessible(sourceObj.sourceId) && sourceObj.filteredColumns.length">
+                        <div class="bk-source-header">
+                            <span class="bk-expand-btn-light-bg bk-clickable"
+                                  ng-class="{'bk-arrow-collapsed ': !sourceObj.expanded, 'bk-arrow-expanded': sourceObj.expanded}"
+                                  ng-click="$event.stopPropagation(); toggleGroup(sourceObj.sourceId, sourceObj)"></span>
+                            <span class="bk-source-name bk-label bk-overflow-ellipsis"
+                                  blink-tooltip="{{sourceObj.tooltip}}" data-html="true" auto-tooltip-style="bootstrap" data-placement="right">
+                                {{ sourceObj.sourceName }}
+                            </span>
+                        </div>
+                        <div class="bk-list" ng-switch="sourceObj.expanded">
+                            <ul ng-switch-when="true"
+                                class="bk-columns-list bk-list-items"
+                                blink-selectable="{ modelGetter: 'col' }"
+                                on-selection-change="onSelectionChange($model, sourceObj.sourceId)"
+                                on-custom-dbl-click="addColumn($model)"
+                                id="{{sourceObj.sourceId}}">
+                                <li class="bk-column-item bk-clickable bk-list-item"
+                                    ng-repeat="col in sourceObj.filteredColumns">
+                                    <span class="bk-label bk-overflow-ellipsis bk-column-name"
+                                          blink-tooltip="{{col.getTooltipInformationModel().getTemplate()}}" data-html="true" auto-tooltip-style="bootstrap" data-placement="right">{{ col.getName() }}</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <bk-secondary-button text="{{ addColumnsBtnLabel }}"
+                             icon="bk-style-icon-small-plus"
+                             ng-show="shouldShowAddBulkColumnsBtn()"
+                             ng-click="addSelectedColumns()"
+                             class="bk-add-columns-btn"></bk-secondary-button>
+    </div>
+</div>

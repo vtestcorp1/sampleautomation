@@ -1,0 +1,99 @@
+<div class="bk-user-preference bk-sidebar-layout">
+    <div class="bk-left-menu">
+        <div class="bk-page-title">{{$ctrl.strings.Preferences}}</div>
+        <div class="bk-menu-group" ng-repeat="menu in $ctrl.menus">
+            <ul class="bk-filters bk-orange">
+                <li ng-repeat="menuItem in menu.items" ng-click="$ctrl.onMenuItemClick(menuItem)" ng-class="{ 'bk-selected': menuItem.selected }">
+                    {{ menuItem.label }}
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="bk-list-container" ng-switch on="$ctrl.getCurrentAction().actionType">
+        <div blink-loading-indicator-overlay></div>
+        <div class="bk-title-bar">
+            <div class="bk-list-title">{{ $ctrl.getCurrentAction().label }}</div>
+        </div>
+
+        <div ng-switch-when="my-profile" class="bk-my-profile">
+
+            <div class="bk-section-title">{{$ctrl.strings.Update_my}}</div>
+            <div class="bk-section bk-profile-picture">
+                <div blink-profile-pic-upload></div>
+            </div>
+
+            <div class="bk-section-title" ng-show="$ctrl.canChangePassword">{{$ctrl.strings.Update_my2}}</div>
+            <div class="bk-section bk-account-info" ng-show="$ctrl.canChangePassword">
+                <form>
+                    <div>
+                        <div class="label">{{$ctrl.strings.Current_Password}}</div>
+                        <input class="field-input" type="password" name="current_password"
+                               ng-model="$ctrl.currentPassword"
+                               blink-on-enter="$ctrl.saveAccountInfo()" spellcheck="false">
+                    </div>
+                    <div>
+                        <div class="label">{{$ctrl.strings.Password}}</div>
+                        <input class="field-input" type="password" name="password"
+                               ng-model="$ctrl.password" ng-change="$ctrl.comparePasswords()"
+                               blink-on-enter="$ctrl.saveAccountInfo()" spellcheck="false">
+                    </div>
+                    <div>
+                        <div class="label">{{strings.Confirm_Password}}</div>
+                        <input class="field-input" type="password" name="password"
+                               ng-model="$ctrl.confirmPassword" ng-change="$ctrl.comparePasswords()"
+                               blink-on-enter="$ctrl.saveAccountInfo()" spellcheck="false">
+                    </div>
+                    <div ng-click="$ctrl.saveAccountInfo()" class="bk-update-info-btn bk-btn-orange" ng-class="{ 'bk-disabled': !$ctrl.allowSave }">{{strings.Update_Password}}</div>
+                    <span class="bk-non-matching-passwords-message" ng-show="$ctrl.updatePasswordMessageReady">{{$ctrl.updatePasswordMessageString}}</span>
+                </form>
+            </div>
+
+            <div class="bk-section-title">{{$ctrl.strings.Update_my3}}</div>
+            <div class="bk-section bk-preferences">
+                <div>
+                    <div class="label">{{strings.preferred_locale}}</div>
+                    <div class="bk-select-box field-input">
+                        <ui-select ng-model="$ctrl.selectedLocale"
+                                   ng-disabled="$ctrl.isLocalizationDisabled"
+                                   theme="select2"
+                                   on-select="$ctrl.onLocaleChanged($item)">
+                            <ui-select-match placeholder="{{strings.select_locale}}">
+                                {{$select.selected}}
+                            </ui-select-match>
+                            <ui-select-choices repeat="locale in $ctrl.locales">
+                                {{ locale }}
+                            </ui-select-choices>
+                        </ui-select>
+                        <div class="bk-localization-disabled-message"
+                             ng-show="$ctrl.isLocalizationDisabled">
+                            {{strings.localizationDisabled}}</div>
+                    </div>
+                </div>
+                <bk-checkbox class="notify-share-checkbox"
+                        bk-ctrl="$ctrl.notifyOnShareCheckbox"></bk-checkbox>
+            </div>
+
+            <!-- A3 Preferences -->
+            <div class="bk-section-title"
+                 ng-if="!!$ctrl.isA3Enabled()">{{$ctrl.strings.preferences.a3.title}}</div>
+            <div class="bk-section bk-preferences"
+                 ng-if="!!$ctrl.isA3Enabled()">
+                <bk-user-a3-preference
+                        bk-ctrl="$ctrl.userA3PreferenceComponent">
+                </bk-user-a3-preference>
+            </div>
+
+            <!-- Slack Preferences -->
+            <div class="bk-section-title" ng-if="i$ctrl.sSlackEnabled()">{{strings.Slack_Integration}}</div>
+            <div class="bk-section" ng-if="$ctrl.isSlackEnabled()">
+                <div ng-if="!$ctrl.hasLinkedSlackAccount()" ng-click="$ctrl.linkSlackAccount()" class="bk-update-info-btn bk-btn-orange">{{strings.Integrate_Slack}}</div>
+                <div ng-if="!!$ctrl.hasLinkedSlackAccount()">
+                    <div><span>{{$ctrl.strings.Slack_Username}}</span>{{$ctrl.slackUserInfo.userName}}</div>
+                    <div><span>{{$ctrl.strings.Slack_TeamName}}</span>{{$ctrl.slackUserInfo.teamName}}</div>
+                    <div ng-click="$ctrl.unlinkAccount()" class="bk-update-info-btn bk-btn-orange">{{$ctrl.strings.Unlink_Slack}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

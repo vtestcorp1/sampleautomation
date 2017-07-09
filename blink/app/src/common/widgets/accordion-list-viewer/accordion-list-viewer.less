@@ -1,0 +1,74 @@
+.bk-accordion-list-viewer {
+    overflow: auto;
+    min-height: 380px;
+    min-width: 400px;
+
+    margin-bottom: 40px;
+    .bk-expand-btn-light-bg {
+        .bk-expand-btn(@gray-label-text, @gray-main-text);
+        margin: 4px;
+    }
+    .list-item-header {
+        .flex(row);
+        width: 250px;
+        height: 17px;
+        .font-family-gotham-semibold;
+        font-size: 14px;
+        color: #333333;
+        overflow: hidden;
+        .heading {
+            margin-left: 7px;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .list-item-description {
+        width: 393px;
+        margin-left: 26px;
+        .font-family-gotham-regular;
+        font-size: 13px;
+        height: 0px;
+        overflow: hidden;
+        .transition(~"all 400ms ease-in");
+        &.expand {
+            height: 16px;
+            opacity:1;
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+    }
+
+    .bk-accordion-item {
+        .flex(column);
+        margin-bottom: 40px;
+        vertical-align: middle;
+        .bk-expand-btn-light-bg {
+            .bk-expand-btn(@gray-label-text, @gray-main-text);
+            margin: 4px;
+        }
+
+        .bk-expand-btn-dark-bg {
+            .bk-expand-btn(@gray-label-text, @white-text);
+            margin: 4px;
+        }
+        margin-left: 26px;
+        .list-item-tpl {
+            max-height: 300px;
+            max-width: 600px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            opacity: 1;
+            height: 0px;
+            .ace_editor {
+                max-height: 300px;
+                max-width: 600px;
+            }
+            .transition(~"height 500ms ease-in");
+            &.expand {
+                height: 300px;
+                overflow-x: auto;
+            }
+        }
+    }
+}
