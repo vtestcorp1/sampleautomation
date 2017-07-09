@@ -1,0 +1,2302 @@
+####################################################
+# Blink Message codes
+# Range - TS-00000 to TS-09999
+####################################################
+
+
+# Generic Errors (0-99)
+
+# Metadata Errors (100 - 499)
+message_code {
+  code: 100
+  severity: INFO
+  summary: "Success. {1} has been added to {2}."
+  # {1} – name of visualization
+  # {2} – {name/link to pinboard}
+  external: true
+}
+message_code {
+  code: 101
+  severity: ERROR
+  summary: "Failure adding {1} to {2}."
+  detail: "The visualization could not be added to {2}."
+  # {1} – name of visualization
+  # {2} – name/link to pinboard
+  external: true
+}
+message_code {
+  code: 102
+  severity: ERROR
+  summary: "Failure adding {1} to {2} due to corruption."
+  detail: "{1} could not be added to {2}, as the pinboard has one or more invalid visualizations."
+ action: "Please try again after removing the invalid visualization(s) from {2}"
+  # {1} – name of visualization
+  # {2} – name/link to pinboard
+  external: true
+}
+message_code {
+  code: 103
+  severity: INFO
+  summary: "Success. The visualization has been deleted from {1}."
+  # {1} – name/link to pinboard
+  external: true
+}
+message_code {
+  code: 104
+  severity: ERROR
+  summary: "Failure deleting visual from {1} "
+  detail: "The visualization could not be deleted from the pinboard."
+  external: true
+  # {1} – name/link to pinboard
+}
+message_code {
+  code: 105
+  severity: ERROR
+  summary: "Failure deleting visual from {1} due to corruption"
+  detail: "The visualization could not be deleted from {1} as the pinboard has one or more invalid visualizations."
+  # {1} – name/link to pinboard
+ action: "Please try again after removing the invalid visualization(s) from the pinboard"
+  external: true
+}
+message_code {
+  code: 106
+  severity: INFO
+  summary: "{1} created successfully."
+  # {1} – name/link to pinboard
+  external: true
+}
+message_code {
+  code: 107
+  severity: ERROR
+  summary: "{1} could not be created."
+  # {1} – name/link to pinboard
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 108
+  severity: INFO
+  summary: "Sticker created successfully."
+  external: true
+}
+message_code {
+  code: 109
+  severity: ERROR
+  summary: "The sticker could not be created."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 110
+  severity: INFO
+  summary: "Sticker deleted successfully."
+  external: true
+}
+message_code {
+  code: 111
+  severity: ERROR
+  summary: "The sticker could not be deleted"
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 112
+  severity: INFO
+  summary: "Pinboards deleted successfully."
+  external: true
+}
+message_code {
+  code: 113
+  severity: ERROR
+  summary: "The pinboards could not be deleted"
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 114
+  severity: INFO
+  summary: "Answers deleted successfully."
+  external: true
+}
+message_code {
+  code: 115
+  severity: ERROR
+  summary: "The answers could not be deleted."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 116
+  severity: INFO
+  summary: "Tables deleted successfully."
+  external: true
+}
+message_code {
+  code: 117
+  severity: ERROR
+  summary: "The tables could not be deleted."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 118
+  severity: INFO
+  summary: "Relationship created successfully."
+  external: true
+}
+message_code {
+  code: 119
+  severity: ERROR
+  summary: "The relationship could not be created."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 120
+  severity: INFO
+  summary: "Relationship updated successfully."
+  external: true
+}
+message_code {
+  code: 121
+  severity: ERROR
+  summary: "The relationship could not be updated."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 122
+  severity: INFO
+  summary: "Relationship deleted successfully."
+  external: true
+}
+message_code {
+  code: 123
+  severity: ERROR
+  summary: "The relationship could not be deleted."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 124
+  severity: ERROR
+  summary: "There was a failure fetching details for the table."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 125
+  severity: ERROR
+  summary: "There was a failure details for the tables."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 126
+  severity: ERROR
+  summary: "There was a failure fetching details for the datasource."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 127
+  severity: ERROR
+  summary: "There was a failure fetching details for datasources."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 128
+  severity: ERROR
+  summary: "There was a failure fetching details for the metadata items."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 129
+  severity: ERROR
+  summary: "The answer could not be opened."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 130
+  severity: ERROR
+  summary: "The pinboard could not be opened."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 131
+  severity: ERROR
+  summary: "Failure opening the worksheet"
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 132
+  severity: INFO
+  summary: "Table saved successfully."
+  external: true
+}
+message_code {
+  code: 133
+  severity: ERROR
+  summary: "There was a problem saving the table."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 134
+  severity: INFO
+  summary: "Visualization update successfully."
+  external: true
+}
+message_code {
+  code: 135
+  severity: ERROR
+  summary: "The visualization failed to update."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 136
+  severity: INFO
+  summary: "{1} saved."
+  # {1} – name of answer
+  external: true
+}
+message_code {
+  code: 137
+  severity: ERROR
+  summary: "{1} could not be saved."
+  # {1} – name of answer
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 138
+  severity: INFO
+  summary: "{1} saved."
+  # {1} - name of pinboard / link
+  external: true
+}
+message_code {
+  code: 139
+  severity: ERROR
+  summary: "{1} could not be saved."
+  # {1} - name of pinboard / link
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 140
+  severity: INFO
+  summary: "{1} saved."
+  # {1} – name of worksheet
+  external: true
+}
+message_code {
+  code: 141
+  severity: ERROR
+  summary: "{1} could not be saved."
+  # {1} – name of worksheet
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 142
+  severity: INFO
+  summary: "{1} saved."
+  # {1} – name of answer
+  external: true
+}
+message_code {
+  code: 143
+  severity: ERROR
+  summary: "{1} could not be saved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  # {1} – name of answer
+  external: true
+}
+message_code {
+  code: 144
+  severity: INFO
+  summary: "{1} saved."
+  # {1} – name/link to pinboard
+  external: true
+}
+message_code {
+  code: 145
+  severity: ERROR
+  summary: "{1} could not be saved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  # {1} – name of pinboard
+  external: true
+}
+message_code {
+  code: 146
+  severity: INFO
+  summary: "Worksheet saved."
+  external: true
+}
+message_code {
+  code: 147
+  severity: ERROR
+  summary: "The worksheet could not be saved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 148
+  severity: INFO
+  summary: "Sticker updated."
+  external: true
+}
+message_code {
+  code: 149
+  severity: ERROR
+  summary: "The sticker could not be updated."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 150
+  severity: INFO
+  summary: "Successfully assigned sticker."
+  external: true
+}
+message_code {
+  code: 151
+  severity: ERROR
+  summary: "The sticker could not be assigned."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 152
+  severity: INFO
+  summary: "Successfully unassigned sticker."
+  external: true
+}
+message_code {
+  code: 153
+  severity: ERROR
+  summary: "The sticker could not be unassigned."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 154
+  severity: ERROR
+  summary: "The list of metadata could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 155
+  severity: ERROR
+  summary: "The list of tables could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 156
+  severity: ERROR
+  summary: "The list of relationships could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 157
+  severity: ERROR
+  summary: "The list of answers could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 158
+  severity: ERROR
+  summary: "The list of pinboards could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 159
+  severity: ERROR
+  summary: "The list of worksheets could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 160
+  severity: ERROR
+  summary: "The list of aggregated worksheets could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 161
+  severity: ERROR
+  summary: "The list of imported data could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 162
+  severity: ERROR
+  summary: "The list of system tables could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 163
+  severity: ERROR
+  summary: "The list of DB views could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 164
+  severity: ERROR
+  summary: "The list of data sources could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 165
+  severity: ERROR
+  summary: "The list of columns could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 166
+  severity: ERROR
+  summary: "The list of stickers could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 167
+  severity: ERROR
+  summary: "The answer could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 168
+  severity: ERROR
+  summary: "The worksheet could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 169
+  severity: INFO
+  summary: "Aggregated worksheet {1} created."
+  # {1} – name of aggregated worksheet
+  external: true
+}
+message_code {
+  code: 170
+  severity: ERROR
+  summary: "The Aggregated Worksheet could not be created."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 171
+  severity: INFO
+  summary: "{1} updated."
+  # {1} – name of aggregated worksheet
+  external: true
+}
+message_code {
+  code: 172
+  severity: ERROR
+  summary: "{1} was unable to update."
+  # {1} – name of aggregated worksheet
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 173
+  severity: ERROR
+  summary: "{1} was unable to update."
+  # {1} – name of the formula
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 174
+  severity: ERROR
+  summary: "The comments could not be retrieved."
+  detail: "Failed to save client state"
+  external: true
+}
+message_code {
+  code: 175
+  severity: ERROR
+  summary: "The comment cannot be created"
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 176
+  severity: ERROR
+  summary: "The comment was unable to update"
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 177
+  severity: ERROR
+  summary: "The comment cannot be deleted"
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 178
+  severity: INFO
+  summary: "Rule saved successfully."
+  external: true
+}
+message_code {
+  code: 179
+  severity: ERROR
+  summary: "Rule could not be saved."
+  detail: "We’re not sure what happened. Please email the trace file to {adminEmail}."
+  external: true
+}
+message_code {
+  code: 180
+  severity: INFO
+  summary: "Rule deleted successfully."
+  external: true
+}
+message_code {
+  code: 181
+  severity: ERROR
+  summary: "Rule could not be deleted."
+  detail: "We’re not sure what happened. Please email the trace file to {adminEmail}."
+  external: true
+}
+message_code {
+  code: 182
+  severity: INFO
+  summary: "Item deleted successfully."
+  external: true
+}
+message_code {
+  code: 183
+  severity: ERROR
+  summary: "Item could not be deleted."
+  detail: "We’re not sure what happened. Please email the trace file to {adminEmail}."
+  external: true
+}
+message_code {
+  code: 184
+  severity: INFO
+  summary: "Related link created successfully."
+  external: true
+}
+message_code {
+  code: 185
+  severity: ERROR
+  summary: "Related link could not be created."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 186
+  severity: INFO
+  summary: "Related link updated successfully."
+  external: true
+}
+message_code {
+  code: 187
+  severity: ERROR
+  summary: "Related link could not be updated."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 188
+  severity: INFO
+  summary: "Related link deleted successfully."
+  external: true
+}
+message_code {
+  code: 189
+  severity: ERROR
+  summary: "Related link could not be deleted."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 190
+  severity: INFO
+  summary: "Related link detail fetched successfully."
+  external: true
+}
+message_code {
+  code: 191
+  severity: ERROR
+  summary: "Related link detail could not be fetched."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+# Data Service (500-699)
+message_code {
+  code: 500
+  severity: ERROR
+  summary: "The leaf level data could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 501
+  severity: ERROR
+  summary: "The excel data could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 502
+  severity: ERROR
+  summary: "The visualization data could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 503
+  severity: ERROR
+  summary: "The visualization data could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 504
+  severity: ERROR
+  summary: "The chart data could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 505
+  severity: ERROR
+  summary: "The table data could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 506
+  severity: ERROR
+  summary: "The worksheet data could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 507
+  severity: ERROR
+  summary: "The filter data could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 508
+  severity: ERROR
+  summary: "The headline data could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 509
+  severity: ERROR
+  summary: "The natural query could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 510
+  severity: INFO
+  summary: "File upload successful."
+  external: true
+}
+message_code {
+  code: 511
+  severity: ERROR
+  summary: "The file failed to upload."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 512
+  severity: ERROR
+  summary: "The pinboard data could not be exported to pdf."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+
+# Dependencies(700-799)
+message_code {
+  code: 700
+  severity: ERROR
+  summary: "The table's dependents could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 701
+  severity: ERROR
+  summary: "The column's dependents could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 702
+  severity: ERROR
+  summary: "The incomplete items could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+
+# Admin Service(800-899)
+message_code {
+  code: 800
+  severity: ERROR
+  summary: "The MemCache states could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 801
+  severity: ERROR
+  summary: "The MemCache could not be cleared."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 802
+  severity: ERROR
+  summary: "The MemCache could not be searched."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 803
+  severity: ERROR
+  summary: "The Loggers could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 804
+  severity: ERROR
+  summary: "The LogLevel could not be set."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 805
+  severity: ERROR
+  summary: "The debug info could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 806
+  severity: INFO
+  summary: "Memcache cleared successfully."
+  external: true
+}
+message_code {
+  code: 807
+  severity: INFO
+  summary: "Log level set successfully."
+  external: true
+}
+message_code {
+  code: 808
+  severity: ERROR
+  summary: "Failed to send email to {adminEmail}."
+  external: true
+}
+message_code {
+  code: 809
+  severity: INFO
+  summary: "The email was sent successfully to {adminEmail}. Thank you for reporting the problem!"
+  external: true
+}
+
+# Permissions(900-999)
+message_code {
+  code: 900
+  severity: ERROR
+  summary: "The table permissions could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 901
+  severity: ERROR
+  summary: "The answer permissions could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 902
+  severity: ERROR
+  summary: "The pinboard permissions could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 903
+  severity: ERROR
+  summary: "The metadata permissions could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+
+# Import Data (1000-1099)
+message_code {
+  code: 1000
+  severity: ERROR
+  summary: "The Data caching was unsuccessful."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1001
+  severity: ERROR
+  summary: "The columns could not be read."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1002
+  severity: ERROR
+  summary: "The keys could not be read."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1003
+  severity: ERROR
+  summary: "The relationships could not be read."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1004
+  severity: ERROR
+  summary: "The data failed to load."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1005
+  severity: ERROR
+  summary: "The table could not be created."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1006
+  severity: ERROR
+  summary: "The data rows could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1007
+  severity: ERROR
+  summary: "The files could not be deleted."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1008
+  severity: ERROR
+  summary: "The table creation could not be canceled."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1009
+  severity: ERROR
+  summary: "The schema could not be created."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1010
+  severity: ERROR
+  summary: "The table models could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1011
+  severity: ERROR
+  summary: "The sample values could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+
+#Scheduled jobs (1100-1199)
+
+message_code {
+  code: 1100
+  severity: INFO
+  summary: "The list of jobs."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+
+message_code {
+  code: 1110
+  severity: INFO
+  summary: "Successfully created job."
+  external: true
+}
+message_code {
+  code: 1111
+  severity: ERROR
+  summary: "The job could not be created."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1112
+  severity: INFO
+  summary: "Successfully updated job."
+  external: true
+}
+message_code {
+  code: 1113
+  severity: ERROR
+  summary: "The job could not be updated"
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1114
+  severity: INFO
+  summary: "Successfully deleted jobs."
+  external: true
+}
+message_code {
+  code: 1115
+  severity: ERROR
+  summary: "The job could not be deleted."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+
+message_code {
+  code: 1116
+  severity: INFO
+  summary: "The job was paused"
+  external: true
+}
+
+message_code {
+  code: 1117
+  severity: ERROR
+  summary: "The job could not be paused"
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+
+message_code {
+  code: 1118
+  severity: INFO
+  summary: "The job was resumed"
+  external: true
+}
+
+message_code {
+  code: 1119
+  severity: ERROR
+  summary: "The job could not be resumed"
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+
+# User Admin Service (1200-1399)
+message_code {
+  code: 1200
+  severity: ERROR
+  summary: "The user list could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1201
+  severity: ERROR
+  summary: "The groups list could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1202
+  severity: ERROR
+  summary: "The users and groups list could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1203
+  severity: INFO
+  summary: "Successfully created user."
+  external: true
+}
+message_code {
+  code: 1204
+  severity: ERROR
+  summary: "The user could not be created."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1205
+  severity: INFO
+  summary: "Successfully created group."
+  external: true
+}
+message_code {
+  code: 1206
+  severity: ERROR
+  summary: "The group could not be created."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1207
+  severity: INFO
+  summary: "Successfully updated user."
+  external: true
+}
+message_code {
+  code: 1208
+  severity: ERROR
+  summary: "The user could not be updated."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1209
+  severity: INFO
+  summary: "Successfully updated users."
+  external: true
+}
+message_code {
+  code: 1210
+  severity: ERROR
+  summary: "The users could not be updated."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1211
+  severity: INFO
+  summary: "Successfully updated group."
+  external: true
+}
+message_code {
+  code: 1212
+  severity: ERROR
+  summary: "The group could not be updated."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1213
+  severity: INFO
+  summary: "Successfully updated password."
+  external: true
+}
+message_code {
+  code: 1214
+  severity: ERROR
+  summary: "The password could not be updated."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1215
+  severity: INFO
+  summary: "Successfully deleted users."
+  external: true
+}
+message_code {
+  code: 1216
+  severity: ERROR
+  summary: "The users could not be deleted."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1217
+  severity: INFO
+  summary: "Successfully deleted groups."
+  external: true
+}
+message_code {
+  code: 1218
+  severity: ERROR
+  summary: "The groups could not be deleted."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1219
+  severity: INFO
+  summary: "Successfully assigned users to groups."
+  external: true
+}
+message_code {
+  code: 1220
+  severity: ERROR
+  summary: "The users could not be assigned to groups."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1221
+  severity: ERROR
+  summary: "The profile pic could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1222
+  severity: INFO
+  summary: "Successfully uploaded profile pic."
+  external: true
+}
+message_code {
+  code: 1223
+  severity: ERROR
+  summary: "The profile pic could not be uploaded."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1224
+  severity: ERROR
+  summary: "Successfully assigned groups to group"
+  detail: "Failed to assign user to group"
+  external: true
+}
+
+message_code {
+  code: 1228
+  severity: ERROR
+  summary: "Successfully created role"
+  detail: "Successfully created role"
+  external: true
+}
+message_code {
+  code: 1229
+  severity: ERROR
+  summary: "Failed to create role"
+  detail: "Failed to create role"
+  external: true
+}
+
+message_code {
+  code: 1230
+  severity: ERROR
+  summary: "Successfully delete role"
+  detail: "Successfully delete role"
+  external: true
+}
+message_code {
+  code: 1231
+  severity: ERROR
+  summary: "Failed to delete role"
+  detail: "Failed to delete role"
+  external: true
+}
+
+message_code {
+  code: 1232
+  severity: INFO
+  summary: "Successfully updated role"
+  detail: "Successfully updated role"
+  external: true
+}
+message_code {
+  code: 1233
+  severity: ERROR
+  summary: "Failed to update role"
+  detail: "Failed to update role"
+  external: true
+}
+message_code {
+  code: 1234
+  severity: INFO
+  external: true
+}
+message_code {
+  code: 1235
+  severity: ERROR
+  external: true
+}
+message_code {
+  code: 1236
+  severity: INFO
+  external: true
+}
+message_code {
+  code: 1237
+  severity: ERROR
+  external: true
+}
+message_code {
+  code: 1238
+  severity: INFO
+  external: true
+}
+message_code {
+  code: 1239
+  severity: ERROR
+  external: true
+}
+
+
+
+#Session Service (1400-1599)
+message_code {
+  code: 1400
+  severity: ERROR
+  summary: "The session info could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1401
+  severity: ERROR
+  summary: "Login was unsuccessful."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1402
+  severity: ERROR
+  summary: "Logging out was unsuccessful."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1403
+  severity: ERROR
+  summary: "The client state could not be saved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1404
+  severity: ERROR
+  summary: "The login config could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1405
+  severity: ERROR
+  summary: "The slack config could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1406
+  severity: ERROR
+  summary: "The health check was unsuccessful."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1407
+  severity: ERROR
+  summary: "The health portal token could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1408
+  severity: ERROR
+  summary: "The health portal release name could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+
+# Data Management Service (1600-1799)
+message_code {
+  code: 1600
+  severity: ERROR
+  summary: "The data source types could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1601
+  severity: ERROR
+  summary: "The data source sample values could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1602
+  severity: ERROR
+  summary: "The data source could not be deleted."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1603
+  severity: ERROR
+  summary: "The DDL could not be executed."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1604
+  severity: ERROR
+  summary: "The schedule could not be updated."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1605
+  severity: ERROR
+  summary: "The tasks could not be reloaded."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1606
+  severity: ERROR
+  summary: "The tasks could not be stopped."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1607
+  severity: ERROR
+  summary: "The creation DDL could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1608
+  severity: ERROR
+  summary: "The load from data source was unsuccessful."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1609
+  severity: ERROR
+  summary: "The data source connection could not be created."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1610
+  severity: ERROR
+  summary: "The data source could not be created."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1611
+  severity: ERROR
+  summary: "The data source connection was unsuccessful."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1612
+  severity: ERROR
+  summary: "The data source connection field info could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1613
+  severity: ERROR
+  summary: "The data source connection list could not be retrieved."
+  detail: "Failed to get connection list for data source"
+  external: true
+}
+message_code {
+  code: 1614
+  severity: ERROR
+  summary: "The data source connection attributes could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1615
+  severity: ERROR
+  summary: "The data source connections could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1616
+  severity: ERROR
+  summary: "The data source config could not be retrieved."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1617
+  severity: ERROR
+  summary: "The sql could not be parsed."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1618
+  severity: ERROR
+  summary: "The sql could not be executed."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1619
+  severity: INFO
+  summary: "Successfully created data source connection"
+  external: true
+}
+message_code {
+  code: 1620
+  severity: INFO
+  summary: "Successfully updated data upload schedule"
+  external: true
+}
+message_code {
+  code: 1621
+  severity: ERROR
+  summary: "The sql failed to execute."
+  detail: "Please check the failing command, executed {1} statements successfully."
+  external: true
+}
+message_code {
+  code: 1622
+  severity: ERROR
+  summary: "The lightweight data-cache is disabled"
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 1623
+  severity: INFO
+  summary: "Selected tables are queued for loading."
+  external: true
+}
+message_code {
+  code: 1624
+  severity: ERROR
+  summary: "DataType conversion error."
+  detail: "No mapping found for source datatype to Thoughtspot datatype."
+  external: true
+}
+message_code {
+  code: 1625
+  severity: INFO
+  summary: "Load task(s) re-started successfully."
+  external: true
+}
+message_code {
+  code: 1626
+  severity: INFO
+  summary: "Successfully connected to data source."
+  external: true
+}
+message_code {
+  code: 1627
+  severity: INFO
+  summary: "Successfully created data source."
+  external: true
+}
+message_code {
+  code: 1628
+  severity: INFO
+  summary: "Successfully stopped the tasks."
+  external: true
+}
+message_code {
+  code: 1629
+  severity: INFO
+  summary: "Successfully deleted the connection"
+  external: true
+}
+message_code {
+  code: 1630
+  severity: ERROR
+  summary: "There was an error deleting this connection."
+  external: true
+}
+message_code {
+  code: 1631
+  severity: INFO
+  summary: "Successfully executed the DDL"
+  external: true
+}
+
+# Cluster Status Service (1800-1899)
+message_code {
+  code: 1800
+  severity: WARNING
+  summary: "The cluster information from search service could not be retrieved."
+  external: true
+}
+message_code {
+  code: 1801
+  severity: WARNING
+  summary: "The table detail information from search service could not be retrieved."
+  external: true
+}
+message_code {
+  code: 1802
+  severity: WARNING
+  summary: "The cluster information from database service could not be retrieved."
+  external: true
+}
+message_code {
+  code: 1803
+  severity: WARNING
+  summary: "The table detail information from databse service could not be retrieved."
+  external: true
+}
+message_code {
+  code: 1804
+  severity: WARNING
+  summary: "The cluster information from cluster management service could not be retrieved."
+  external: true
+}
+message_code {
+  code: 1805
+  severity: WARNING
+  summary: "The detail information from cluster management service could not be retrieved."
+  external: true
+}
+message_code {
+  code: 1806
+  severity: WARNING
+  summary: "The log from cluster management service could not be retrieved."
+  external: true
+}
+message_code {
+  code: 1807
+  severity: WARNING
+  summary: "The snapshot list from cluster management service could not be retrieved."
+  external: true
+}
+message_code {
+  code: 1808
+  severity: WARNING
+  summary: "The cluster information from alert management service could not be retrieved."
+  external: true
+}
+message_code {
+  code: 1809
+  severity: WARNING
+  summary: "The cluster information from event service could not be retrieved."
+  external: true
+}
+message_code {
+  code: 1810
+  severity: WARNING
+  summary: "The alerts information from alert management service could not be retrieved."
+  external: true
+}
+message_code {
+  code: 1811
+  severity: WARNING
+  summary: "The events information from alert management service could not be retrieved."
+  external: true
+}
+message_code {
+  code: 1812
+  severity: INFO
+  summary: "Thanks for your feedback!"
+  external: true
+}
+message_code {
+  code: 1813
+  severity: WARNING
+  summary: "Sorry! Unable to submit the feedback at this moment!"
+  external: true
+}
+message_code {
+  code: 1814
+  severity: INFO
+  summary: "Successfully exported objects. File can be found at {1}."
+  external: true
+}
+message_code {
+  code: 1815
+  severity: ERROR
+  summary: "Sorry! Unable to export objects at this moment!"
+  detail: "What happened? {1}."
+  external: true
+}
+message_code {
+  code: 1816
+  severity: INFO
+  summary: "Successfully imported objects."
+  external: true
+}
+message_code {
+  code: 1817
+  severity: ERROR
+  summary: "Sorry! Unable to import objects at this moment!"
+  detail: "What happened? {1}."
+  external: true
+}
+message_code {
+  code: 1818
+  severity: INFO
+  summary: "Successfully deleted data source object(s)"
+  external: true
+}
+
+# Callosum API error codes (9000-9199)
+message_code {
+  code: 9000
+  severity: ERROR
+  summary: "The data you are trying to delete has some dependencies."
+  detail: "Some objects depend on the data you are trying to delete,"
+  action: "delete the dependencies before deleting this data."
+  external: true
+}
+message_code {
+  code: 9001
+  severity: ERROR
+  summary: "Uh oh. We’re not sure what happened."
+  detail: "Please email the trace file to {adminEmail}."
+  external: true
+}
+message_code {
+  code: 9002
+  severity: ERROR
+  summary: "The user could not be authorized."
+  detail: "Try logging in again"
+  external: true
+}
+message_code {
+  code: 9003
+  severity: ERROR
+  summary: "Uh oh. We’re not sure what happened."
+  detail: "Please email the trace file to {adminEmail}."
+  external: true
+}
+message_code {
+  code: 9004
+  severity: WARNING
+  summary: "Still loading data, come back soon"
+  external: true
+}
+message_code {
+  code: 9005
+  severity: ERROR
+  summary: "Uh oh. We’re having trouble getting data for this request."
+  detail: "Please email the trace file to {adminEmail}."
+  external: true
+}
+message_code {
+  code: 9006
+  severity: ERROR
+  summary: "Uh oh. We’re having trouble getting data for this request."
+  detail: "Please email the trace file to {adminEmail}."
+  external: true
+}
+message_code {
+  code: 9007
+  severity: ERROR
+  summary: "Uh oh. We’re having trouble getting data for this request."
+  detail: "Please email the trace file to {adminEmail}."
+  external: true
+}
+message_code {
+  code: 9008
+  severity: ERROR
+  summary: "Something went wrong with your search."
+  detail: "Uh oh. We’re not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}."
+  external: true
+}
+message_code {
+  code: 9009
+  severity: ERROR
+  summary: "ThoughtSpot is unreachable. Please try again."
+  detail: "Please email the trace file to {adminEmail}."
+  external: true
+}
+message_code {
+  code: 9010
+  severity: ERROR
+  summary: "The object could not be opened."
+  detail: "Object cannot be opened due to errors in some of its dependencies"
+  external: true
+}
+
+# Blink generated error codes
+message_code {
+  code: 9500
+  severity: WARNING
+  summary: "ThoughtSpot is unreachable. Please try again soon."
+  external: true
+}
+message_code {
+  code: 9501
+  severity: WARNING
+  summary: "ThoughtSpot has timed out. Please try again."
+  external: true
+}
+message_code {
+  code: 9502
+  severity: WARNING
+  summary: "Cannot connect to ThoughtSpot. Please try again soon."
+  external: true
+}
+message_code {
+  code: 9503
+  severity: WARNING
+  summary: "ThoughtSpot has timed out. Please try again."
+  external: true
+}
+message_code {
+  code: 9504
+  severity: ERROR
+  summary: "{1} cannot be opened."
+  detail: "{1} cannot be opened due to errors in the following dependencies"
+  # {1} - Type of the object Table/Answer/Pinboard etc.
+  external: true
+}
+message_code {
+  code: 9505
+  severity: WARNING
+  summary: "We’re still indexing this data, try again soon!"
+  external: true
+}
+message_code {
+  code: 9506
+  severity: ERROR
+  summary: "The object is not present in the system."
+  detail: "The {1} is not present in the system."
+  # {1} - Type of the object Table/Answer/Pinboard etc.
+  external: true
+}
+message_code {
+  code: 9507
+  severity: ERROR
+  summary: "ThoughtSpot is unreachable. Please try again soon."
+  external: true
+}
+
+
+####################################################
+# Callosum Message codes
+# Range - TS-10000 to TS-19999
+####################################################
+## Following map to CommonErrorCode
+message_code {
+  code: 10000
+  severity: ERROR
+  summary: "A system error has occurred."
+  detail: "Uh oh. We’re not sure what happened. Please contact your administrator."
+  external: true
+}
+message_code {
+  code: 10001
+  severity: ERROR
+  summary: "Connection failed"
+  detail: "The metadata store is not reachable."
+  action: "Please contact your administrator."
+  external: false
+}
+message_code {
+  code: 10002
+  severity: ERROR
+  summary: "The input is invalid."
+  detail: "Input from client to server is invalid"
+  action: "Please contact your administrator"
+  external: false
+}
+message_code {
+  code: 10003
+  severity: ERROR
+  summary: "Unfortunately, you can't do that."
+  detail: "You are not authorized to perform {1}."
+  # {1} - action user is not authorized for
+  action: "Please request access from your administrator."
+  external: true
+}
+message_code {
+  code: 10004
+  severity: ERROR
+  summary: "The user could not be authorized."
+  detail: "User {0} is not authorized to perform {1}"
+  # {0} - name of the user
+  # {1} - action user is not authorized for
+  action: "Please request access from your administrator"
+  external: true
+}
+message_code {
+  code: 10005
+  severity: ERROR
+  summary: "The base object is missing."
+  detail: "An underlying object referenced by this object is missing in store."
+  action: "Please contact your administrator"
+  external: true
+}
+message_code {
+  code: 10006
+  severity: ERROR
+  summary: "The connection to Zookeeper has failed."
+  detail: "Zookeeper is not reachable."
+  action: "Please contact your administrator."
+  external: false
+}
+message_code {
+  code: 10007
+  severity: ERROR
+  summary: "There's invalid parameter(s)."
+  detail: "Invalid parameter values: {0}."
+  action: "Please contact your administrator."
+  external: true
+}
+message_code {
+  code: 10008
+  severity: ERROR
+  summary: "The user cannot be found."
+  detail: "User {0} not found in store."
+  # {0} - name of the user
+  action: "Please contact your administrator"
+  external: true
+}
+message_code {
+  code: 10009
+  severity: ERROR
+  summary: "Cannot add group"
+  detail: "This group already belongs to the group you are trying to add"
+  external: true
+}
+## Following map to DataErrorCode
+message_code {
+  code: 11001
+  severity: ERROR
+  summary: "Invalid row"
+  external: false
+}
+message_code {
+  code: 11002
+  severity: ERROR
+  summary: "Invalid table/query resultset"
+  external: false
+}
+message_code {
+  code: 11003
+  severity: ERROR
+  summary: "Invalid column identifier"
+  external: false
+}
+message_code {
+  code: 11004
+  severity: ERROR
+  summary: "Invalid visualization identifier"
+  external: false
+}
+message_code {
+  code: 11005
+  severity: ERROR
+  summary: "No data"
+  detail: "Query execution resulted in no data"
+  external: false
+}
+message_code {
+  code: 11006
+  severity: ERROR
+  summary: "Query execution failed"
+  detail: "Error in query execution to Falcon"
+  external: false
+}
+message_code {
+  code: 11007
+  severity: ERROR
+  summary: "Answer data generation failed"
+  detail: "Error in Answer data generation for Sage input"
+  external: false
+}
+message_code {
+  code: 11008
+  severity: ERROR
+  summary: "Data export failed"
+  external: false
+}
+message_code {
+  code: 11009
+  severity: ERROR
+  summary: "Data generation failed"
+  detail: "Error in data generation in Callosum"
+  external: false
+}
+
+####################################################
+# Report Generation Message codes
+# Range - TS-12000 TS-13000
+####################################################
+message_code {
+code: 12700
+ severity: ERROR
+ summary: "Error while exporting data file"
+ external: false
+}
+message_code {
+code: 12701
+ severity: ERROR
+ summary: "Invalid input"
+ detail: "The definition of the job is invalid"
+ external: false
+}
+message_code {
+code: 12702
+ severity: ERROR
+ summary: "No author provided"
+ external: false
+}
+message_code {
+code: 12703
+ severity: ERROR
+ summary: "No pinboard provided"
+ external: false
+}
+message_code {
+code: 12704
+ severity: ERROR
+ summary: "No recipients provided"
+ external: false
+}
+message_code {
+code: 12705
+ severity: ERROR
+ summary: "This format is not supported"
+ external: false
+}
+message_code {
+code: 12706
+ severity: ERROR
+ summary: "No job name provided"
+ external: false
+}
+message_code {
+code: 12707
+ severity: ERROR
+ summary: "No job description provided"
+ external: false
+}
+message_code {
+code: 12708
+ severity: ERROR
+ summary: "Pinboard data export error"
+ external: false
+}
+message_code {
+code: 12709
+ severity: ERROR
+ summary: "Visualization data export error"
+ external: false
+}
+message_code {
+code: 12710
+ severity: ERROR
+ summary: "User data unavailable"
+ external: false
+}
+message_code {
+code: 12711
+ severity: ERROR
+ summary: "Configuration information unavailable"
+ external: false
+}
+
+message_code {
+code: 12712
+ severity: ERROR
+ summary: "There are too many recipients"
+ detail: "The max number of recipients is 1000"
+ external: false
+}
+message_code {
+code: 12713
+ severity: ERROR
+ summary: "Attachment size limit exceeded"
+ external: false
+}
+message_code {
+code: 12714
+ severity: ERROR
+ summary: "Recipient domain is not whitelisted"
+ external: false
+}
+
+## Following map to MetadataErrorCode
+message_code {
+  code: 13001
+  severity: ERROR
+  summary: "Schema creation failed"
+  detail: "Error creating database schema"
+  external: false
+}
+message_code {
+  code: 13002
+  severity: ERROR
+  summary: "Views creation failed"
+  detail: "Error creating view"
+  external: false
+}
+message_code {
+  code: 13003
+  severity: ERROR
+  external: true
+}
+message_code {
+  code: 13004
+  severity: ERROR
+  summary: "The object is in an invalid state."
+  detail: "Object with Id: {0} of type: {1} in invalid state"
+  # {0} - identity of the object
+  # {1} - type of object
+  external: false
+}
+message_code {
+  code: 13005
+  severity: ERROR
+  summary: "Object already exists"
+  detail: "Object with Id: {0} of type: {1} already exists"
+  # {0} - identity of the object
+  # {1} - type of object
+  external: false
+}
+message_code {
+  code: 13006
+  severity: ERROR
+  summary: "Invalid object type"
+  detail: "Invalid type: {0} provided"
+  # {1} - type of object
+  external: false
+}
+message_code {
+  code: 13007
+  severity: ERROR
+  summary: "Invalid Sage question"
+  detail: "Insufficient or invalid input from Sage: {0}"
+  # {0} - the invalid input
+  external: false
+}
+message_code {
+  code: 13008
+  severity: ERROR
+  summary: "Invalid Sage question"
+  detail: "Input from Sage - missing columns of type: {0}"
+  # {0} - column type
+  external: false
+}
+message_code {
+  code: 13009
+  severity: ERROR
+  summary: "Invalid Sage question."
+  detail: "Invalid input from Sage - invalid expression: {0}"
+  # {0} - the invalid expression
+  external: false
+}
+message_code {
+  code: 13010
+  severity: ERROR
+  summary: "Sending logical metadata to Sage failed"
+  detail: "Sending logical metadata to Sage failed due to: {0}"
+  # {0} - reason for failure
+  external: false
+}
+message_code {
+  code: 13011
+  severity: ERROR
+  summary: "Answer generation failed"
+  detail: "Answer generation failed due to: {0}"
+  # {0} - reason for failure
+  external: false
+}
+message_code {
+  code: 13012
+  severity: ERROR
+  summary: "Worksheet generation failed"
+  detail: "Worksheet generation failed due to: {0}"
+  # {0} - reason for failure
+  external: false
+}
+message_code {
+  code: 13013
+  severity: ERROR
+  summary: "Service provider unavailable"
+  detail: "Service provider unavailable: {0}"
+  # {0} - provider details
+  external: false
+}
+message_code {
+  code: 13015
+  severity: ERROR
+  summary: "Physical model not loaded"
+  external: false
+}
+message_code {
+  code: 13016
+  severity: ERROR
+  summary: "Invalid physical schema proto"
+  detail: "Inconsistency in physical schema from Falcon: {0}"
+  # {0} - error details
+  external: false
+}
+message_code {
+  code: 13017
+  severity: ERROR
+  summary: "Invalid duplicate columns"
+  detail: "Duplicate columns: {0}"
+  # {0} - list of duplicate column identities
+  external: false
+}
+message_code {
+  code: 13018
+  severity: ERROR
+  summary: "Cyclic relationship"
+  detail: "Detected cycles: {0}"
+  # {0} - cycle details
+  external: false
+}
+message_code {
+  code: 13019
+  severity: WARNING
+  summary: "Older physical schema version received"
+  detail: "Schema update for older version: {0} received and ignored"
+  # {0} - received version number
+  external: false
+}
+message_code {
+  code: 13020
+  severity: ERROR
+  summary: "Invalid relationship"
+  detail: "Attempted to create invalid relationship: {0}"
+  # {0} - relationship details
+  external: false
+}
+message_code {
+  code: 13022
+  severity: ERROR
+  summary: "Invalid filter values: {values}"
+  external: true
+}
+message_code {
+  code: 13023
+  severity: ERROR
+  summary: "Creating relationship failed."
+  external: true
+}
+message_code {
+  code: 13024
+  severity: ERROR
+  summary: "Deleting schema failed. {0}"
+  external: true
+}
+message_code {
+  code: 13025
+  severity: ERROR
+  summary: "Expression validation failed. "
+  external: true
+}
+message_code {
+  code: 13026
+  severity: INFO
+  summary: "Load schedule successfully disabled."
+  external: true
+}
+message_code {
+  code: 13027
+  severity: ERROR
+  summary: "Load schedule could not be disabled."
+  external: true
+}
+message_code {
+  code: 13028
+  severity: ERROR
+  summary: "Objects fetched from the connection are invalid for editing datasource"
+  external: true
+  action: "To proceed with editing the datasource, please edit the connection below to fetch valid source objects."
+}
+message_code {
+  code: 13029
+  severity: INFO
+  summary: "Successfully edited data source connection"
+  external: true
+}
+message_code {
+  code: 13030
+  severity: ERROR
+  summary: "Connection test failed. Please verify connection attributes."
+  external: true
+}
+message_code {
+  code: 13031
+  severity: ERROR
+  summary: "Invalid schedule configuration. Reason - {0}"
+  external: true
+}
+
+####################################################
+# Timely Message codes
+# Range - TS-60000 to TS-64999
+####################################################
+message_code {
+  code: 60000
+  severity: ERROR
+  summary: "Failed to initialize"
+  external: true
+}
+
+
+####################################################
+# Sage Message codes
+# Range - TS-20000 to TS-29999
+####################################################
+
+####################################################
+# Falcon Message codes
+# Range - TS-30000 to TS-39999
+####################################################
+
+####################################################
+# Falcon Manager and tql Message codes
+# Range - TS-40000 to TS-49999
+####################################################
+
+####################################################
+# Orion and tscli Message codes
+# Range - TS-50000 to TS-59999
+####################################################
+
+####################################################
+# Timely message codes
+# Range - TS-60000 to TS-64999
+####################################################
+
+####################################################
+# Message codes common to all components
+# Range - TS-90000 to TS-99999
+####################################################
+

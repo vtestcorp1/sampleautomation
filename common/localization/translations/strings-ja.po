@@ -1,0 +1,9582 @@
+
+#
+msgid ""
+msgstr ""
+
+# description
+msgid "LOGIN"
+msgstr "ログイン"
+
+# description
+msgid "PASSWORD"
+msgstr "パスワード"
+
+# description
+msgid "Enter_Now"
+msgstr "今すぐ入力"
+
+# description
+msgid "Remember_me"
+msgstr "記憶する"
+
+# description
+msgid "Upload_the_modeling_file"
+msgstr "モデリング ファイルをアップロードしてください (.xls、サイズ < 50MB)"
+
+# description
+msgid "Upload_the_security_file"
+msgstr "セキュリティ ファイルをアップロードしてください (.xls、サイズ < 50MB)"
+
+# description
+msgid "Are_you_sure"
+msgstr "本当にピンボードからこのビジュアリゼーションを削除しますか?"
+
+# description
+msgid "Choose_the_worksheet"
+msgstr "ワークシート結合ルールを選択してください:"
+
+# description
+msgid "Cancel"
+msgstr "キャンセル"
+
+# description
+msgid "Both_passwords_need"
+msgstr "両方のパスワードは一致する必要があります"
+
+# description
+msgid "Emails"
+msgstr "電子メール:"
+
+# description
+msgid "Results_are_limited"
+msgstr "結果は最初の行範囲に限定されます"
+
+# description
+msgid "Choose_the"
+msgstr "包含ルールを選択:"
+
+# description
+msgid "This_content_will"
+msgstr "この内容は left-panel-content CSS ルールから赤色を継承します。"
+
+# description
+msgid "Select_an"
+msgstr "領域を選択"
+
+# description
+msgid "Show_Data"
+msgstr "データ ラベルを表示"
+
+# description
+msgid "Are_you_sure3"
+msgstr "本当にこのステッカーを削除しますか?"
+
+# description
+msgid "Did_you2"
+msgstr "どういう意味ですか？"
+
+# description
+msgid "All"
+msgstr "すべて"
+
+# description
+msgid "Float_is_a"
+msgstr "float は CSS の配置プロパティです。CSS の float プロパティが適用されるページ要素は、印刷レイアウトの中でテキストが周囲に流れる画像に似ています。フロートされた要素はウェブ ページの流れの一部に残ります。"
+
+# description
+msgid "Color"
+msgstr "/* 色 */"
+
+# description
+msgid "Pinboard_name"
+msgstr "ピンボード名:"
+
+# description
+msgid "Zoom_options"
+msgstr "ズーム オプション"
+
+# description
+msgid "want_to"
+msgstr "はこれを使用したいと考えます。"
+
+# description
+msgid "Set_the_column"
+msgstr "列名を設定し、データをセルにコピーしてください。"
+
+# description
+msgid "Granularity"
+msgstr "精度:"
+
+# description
+msgid "Existing_data"
+msgstr "既存のデータ"
+
+# description
+msgid "Update_my3"
+msgstr "基本設定を更新"
+
+# description
+msgid "You_can_do"
+msgstr "キーワードを使うと ThoughtSpot でより複雑な検索を実行することができます。これらの強力なキーワードで試すと、興味深い情報を得ることができます。"
+
+# description
+msgid "Update_my2"
+msgstr "パスワードを更新"
+
+# description
+msgid "Type"
+msgstr "タイプ:"
+
+# description
+msgid "rows"
+msgstr "行"
+
+# description
+msgid "Javascript_class"
+msgstr "Javascript クラス名:"
+
+# description
+msgid "ThoughtSpot_Style"
+msgstr "ThoughtSpot スタイル ガイド"
+
+# description
+msgid "Update_my"
+msgstr "自分の写真を更新"
+
+# description
+msgid "Add_a_column"
+msgstr "データをリンクするには一意の値を持つ列を追加してください。アップロードされたデータは、独立して分析し続けることができます。"
+
+# description
+msgid "Logical_version"
+msgstr "論理バージョン:"
+
+# description
+msgid "Upload_your"
+msgstr "スキーマを更新"
+
+# description
+msgid "Knowing_your_data"
+msgstr "データをさらに理解することで、探している回答を手に入れやすくなります。データで利用可能な列を検索するにはデータ パネルの列を使用してください。"
+
+# description
+msgid "Used_when_we2"
+msgstr "ボディと相対的に要素を配置したい時に使用されます (ページの左上隅)。場所を設定するには、位置属性の top、left bottom、right を使用します。これらの値は、相対 (または絶対) 位置を持つ次の親要素と比較されます。"
+
+# description
+msgid "No_values"
+msgstr "使用可能な値がありません"
+
+# description
+msgid "No_matches"
+msgstr "一致がありません"
+
+# description
+msgid "Upload_Picture"
+msgstr "写真をアップロード"
+
+# description
+msgid "Other_tips"
+msgstr "その他の小技:"
+
+# description
+msgid "clearfix"
+msgstr "clearfix"
+
+# description
+msgid "is_used"
+msgstr "使用"
+
+# description
+msgid "Formulas"
+msgstr "フォーミュラ"
+
+# description
+msgid "No_matched"
+msgstr "一致するデータがありません。"
+
+# description
+msgid "Profile"
+msgstr "プロファイル"
+
+# description
+msgid "View_Keywords"
+msgstr "キーワードを表示"
+
+# description
+msgid "Add_a"
+msgstr "次にフィルターを追加:"
+
+# description
+msgid "Memory_used"
+msgstr "使用済メモリ:"
+
+# description
+msgid "Done"
+msgstr "完了"
+
+# description
+msgid "Selected"
+msgstr "選択済 ("
+
+# description
+msgid "to"
+msgstr "から"
+
+# description
+msgid "Updating"
+msgstr "更新中..."
+
+# description
+msgid "In_progress"
+msgstr "進行中"
+
+# description
+msgid "I_didnt"
+msgstr "これを取得できませんでした。"
+
+# description
+msgid "Download_the2"
+msgstr "セキュリティ ファイルをダウンロード"
+
+# description
+msgid "No_sources"
+msgstr "選択されたソースがありません"
+
+# description
+msgid "did_you"
+msgstr "どういう意味ですか？"
+
+# description
+msgid "comments_are"
+msgstr "コメントが読み込まれました。"
+
+# description
+msgid "By_default_all"
+msgstr "デフォルトではすべての要素がスタティックです。"
+
+# description
+msgid "Still_need"
+msgstr "まだヘルプが必要ですか?"
+
+# description
+msgid "Static"
+msgstr "Static"
+
+# description
+msgid "Error_in"
+msgstr "プレビュー生成でエラーが発生しました。"
+
+# description
+msgid "Positioning"
+msgstr "位置"
+
+# description
+msgid "incomplete"
+msgstr "未完了"
+
+# description
+msgid "Advanced_settings"
+msgstr "高度な設定"
+
+# description
+msgid "Click_on_the"
+msgstr "モデリング ファイルをダウンロードするにはボタンをクリックしてください。"
+
+# description
+msgid "Share_with"
+msgstr "チャネルと共有"
+
+# description
+msgid "showing"
+msgstr "( 行を表示"
+
+# description
+msgid "Did_you"
+msgstr "意味した内容:"
+
+# description
+msgid "Conditional_Formatting2"
+msgstr "条件付き書式"
+
+# description
+msgid "You_have"
+msgstr "選択済:"
+
+# description
+msgid "Scroll_down_to"
+msgstr "スクロールダウンするとコメントを読み込むことができます。"
+
+# description
+msgid "a_property"
+msgstr "- 名前、住所、ID 番号などのプロパティ。"
+
+# description
+msgid "Slack_TeamName"
+msgstr "Slack TeamName:"
+
+# description
+msgid "Select_All"
+msgstr "すべて選択"
+
+# description
+msgid "Users_or"
+msgstr "ユーザーまたはグループ"
+
+# description
+msgid "Yes"
+msgstr "はい"
+
+# description
+msgid "Left"
+msgstr "左"
+
+# description
+msgid "Text_colors"
+msgstr "テキスト色:"
+
+# description
+msgid "Add_test_prefix"
+msgstr "Javascript でのみ使用されるクラスにはすべて「test」プレフィクスを追加します。例: .test-className"
+
+# description
+msgid "Installed_version"
+msgstr "インストールバージョン:"
+
+# description
+msgid "over_successive"
+msgstr "連続し過ぎです"
+
+# description
+msgid "Text_transformation"
+msgstr "テキスト変換:"
+
+# description
+msgid "While_implementing_the"
+msgstr "最初のアプローチを実行する時に、読みやすいように類似の CSS プロパティ タイプをグルーピングしようとします。"
+
+# description
+msgid "Drill_down"
+msgstr "ドリルダウン"
+
+# description
+msgid "Integrate_Slack"
+msgstr "Slack を統合"
+
+# description
+msgid "Fixed"
+msgstr "固定"
+
+# description
+msgid "only"
+msgstr "のみ"
+
+# description
+msgid "Use_unsecured"
+msgstr "非固定を使用"
+
+# description
+msgid "Create_a_pinboard"
+msgstr "ここに表示するピンボードを作成"
+
+# description
+msgid "more_columns"
+msgstr "さらに多くの列"
+
+# description
+msgid "Name2"
+msgstr "名前"
+
+# description
+msgid "dib2"
+msgstr ".dib;"
+
+# description
+msgid "more_metrics"
+msgstr "さらに多くのメトリクス"
+
+# description
+msgid "Relationship_Name"
+msgstr "関連名"
+
+# description
+msgid "After_your_file"
+msgstr "ファイルの準備ができたら、下のゾーンにドラッグ & ドロップするか、ボタンをクリックして取得してください。"
+
+# description
+msgid "Get_to_know"
+msgstr "データへの理解を深めてください。"
+
+# description
+msgid "We_try_to"
+msgstr "新しいモジュールが作成されるたびに新しい CSS ルールを作成するのを避けようとします。しかし、新しいルールを作成しなければならない場合は必ず存在します。モジュールの整形には 2 つの方法を使用します。"
+
+# description
+msgid "Text_sizing"
+msgstr "テキストサイズ調整:"
+
+# description
+msgid "Name"
+msgstr "名前:"
+
+# description
+msgid "dib"
+msgstr "dib"
+
+# description
+msgid "Table"
+msgstr "テーブル"
+
+# description
+msgid "on_Pinboard"
+msgstr "ピンボード上"
+
+# description
+msgid "Float_right"
+msgstr "この要素を右にフロート"
+
+# description
+msgid "Absolute"
+msgstr "絶対"
+
+# description
+msgid "Data_read"
+msgstr "データ読み取り:"
+
+# description
+msgid "Clearfix"
+msgstr "Clearfix"
+
+# description
+msgid "Password"
+msgstr "パスワード"
+
+# description
+msgid "Display2"
+msgstr "/* 表示 & ボックス モデル */"
+
+# description
+msgid "Phone"
+msgstr "電話:"
+
+# description
+msgid "Email_me"
+msgstr "通知を電子メールで送信"
+
+# description
+msgid "mam"
+msgstr ".mam;"
+
+# description
+msgid "Copied_to"
+msgstr "クリップボードにコピーしました"
+
+# description
+msgid "Empty_Pinboard"
+msgstr "ピンボードは空です"
+
+# description
+msgid "Inline"
+msgstr "インライン"
+
+# description
+msgid "Explore_all"
+msgstr "全データを検索"
+
+# description
+msgid "Positioning3"
+msgstr "/* 位置 */"
+
+# description
+msgid "Absolutely_positioned"
+msgstr "絶対位置要素"
+
+# description
+msgid "Positioning2"
+msgstr "位置:"
+
+# description
+msgid "of"
+msgstr "の"
+
+# description
+msgid "Add_Derived"
+msgstr "由来する列を追加:"
+
+# description
+msgid "Maintain_the_order"
+msgstr "デザインの中で視覚的に表示される時に、HTML の要素の順序は維持されます。"
+
+# description
+msgid "Unlink_Slack"
+msgstr "Slack をリンク解除"
+
+# description
+msgid "Add"
+msgstr "追加"
+
+# description
+msgid "never"
+msgstr "なし"
+
+# description
+msgid "Floats_the_element"
+msgstr "要素を左にフロートします。"
+
+# description
+msgid "DESTINATION_COLUMN"
+msgstr "ターゲット列"
+
+# description
+msgid "Only_add_prefix"
+msgstr "名前が競合する列にのみプレフィクスを追加します。"
+
+# description
+msgid "Help"
+msgstr "ヘルプ"
+
+# description
+msgid "Overwrite"
+msgstr "上書き"
+
+# description
+msgid "element_when"
+msgstr "element when it's"
+
+# description
+msgid "Current_version"
+msgstr "現在のバージョン:"
+
+# description
+msgid "Connections"
+msgstr "接続:"
+
+# description
+msgid "Block"
+msgstr "ブロック"
+
+# description
+msgid "Filter"
+msgstr "フィルター:"
+
+# description
+msgid "rows_have"
+msgstr "行がインポートされました。"
+
+# description
+msgid "top_0"
+msgstr "top: 0;"
+
+# description
+msgid "Select_a"
+msgstr "列を選択"
+
+# description
+msgid "It_took_too"
+msgstr "クエリを完了するのに時間がかかり過ぎました。表示は部分的に計算された結果です。"
+
+# description
+msgid "Floats_the_element2"
+msgstr "要素を右にフロートします。"
+
+# description
+msgid "Underlying_Data"
+msgstr "基礎となるデータ"
+
+# description
+msgid "Measure_or"
+msgstr "測定値または属性"
+
+# description
+msgid "Only_show"
+msgstr "次のみ表示: \""
+
+# description
+msgid "Relationships"
+msgstr "関連"
+
+# description
+msgid "Edited"
+msgstr "(編集済)"
+
+# description
+msgid "More"
+msgstr "詳細..."
+
+# description
+msgid "Show_hidden"
+msgstr "非表示の内容を表示"
+
+# description
+msgid "Inline_block"
+msgstr "インライン ブロック"
+
+# description
+msgid "Back2"
+msgstr "...戻る"
+
+# description
+msgid "Whats_your"
+msgstr "ソースは何ですか?"
+
+# description
+msgid "TEST"
+msgstr "テスト"
+
+# description
+msgid "Its_positioned_relative"
+msgstr "ビューポートまたはブラウザ ウィンドウ自体から相対的に配置されます。ビューポートはウィンドウがスクロールした時に変化しません。"
+
+# description
+msgid "Cannot_Deselect_Already"
+msgstr "選択を解除できません。すでに使用されています。"
+
+# description
+msgid "Other"
+msgstr "/* その他 */"
+
+# description
+msgid "NO_DATA"
+msgstr "データなし"
+
+# description
+msgid "Data"
+msgstr "データ"
+
+# description
+msgid "CSS_templates"
+msgstr "CSS テンプレート"
+
+# description
+msgid "Your_uploaded"
+msgstr "アップロードされたデータ"
+
+# description
+msgid "Apply"
+msgstr "適用"
+
+# description
+msgid "Select_the_column"
+msgstr "アップロードしているデータにリンクしたい列を選択してください。"
+
+# description
+msgid "Copy_to"
+msgstr "クリップボードにコピー"
+
+# description
+msgid "tables_using"
+msgstr "使用しているテーブル"
+
+# description
+msgid "Congratulations"
+msgstr "おめでとうございます!"
+
+# description
+msgid "Timeout"
+msgstr "タイムアウト:"
+
+# description
+msgid "Configuration_Options"
+msgstr "構成オプション"
+
+# description
+msgid "Examples"
+msgstr "例:"
+
+# description
+msgid "Reset_zoom"
+msgstr "ズームをリセット"
+
+# description
+msgid "Existing_pinboards_answers"
+msgstr "このステッカーのある既存のピンボード、回答、データソースが影響を受けます。"
+
+# description
+msgid "You_dont_have"
+msgstr "あらゆるデータへのアクセスがありません。"
+
+# description
+msgid "Ready_for"
+msgstr "高度な検索の準備はできていますか?"
+
+# description
+msgid "To_begin_a"
+msgstr "新しい検索を開始するには、[ソースを選択] を使って最初にデータソースを選択します。選択されたデータソースの文脈で検索は行われます。しかし心配しないでください。ThoughtSpot は、他のデータソースからの提案も行いますので、何かを見逃すことはありません。"
+
+# description
+msgid "Slack_Integration"
+msgstr "Slack 統合"
+
+# description
+msgid "No_Pinboards"
+msgstr "ピンボードがありません"
+
+# description
+msgid "important_important_overrides"
+msgstr "重要!: 重要なオーバーライドやその他の CSS ルールが特定の要素に定義されました。私達"
+
+# description
+msgid "Browse"
+msgstr "閲覧"
+
+# description
+msgid "Failed"
+msgstr "失敗"
+
+# description
+msgid "selector"
+msgstr ".selector {"
+
+# description
+msgid "Select_an_entity"
+msgstr "ヘルプを確認するには、上のエンティティを選択してください"
+
+# description
+msgid "Refresh"
+msgstr "リフレッシュ"
+
+# description
+msgid "SOURCE_COLUMN"
+msgstr "ソース列"
+
+# description
+msgid "See_other"
+msgstr "その他の次を参照してください: \""
+
+# description
+msgid "key_1_8005087008"
+msgstr "+1 800-508-7008 内線1"
+
+# description
+msgid "Support"
+msgstr "サポート"
+
+# description
+msgid "cursor_pointer"
+msgstr "cursor: pointer;"
+
+# description
+msgid "No_prefix_required"
+msgstr "ここではプレフィクスは必要ありません。コンポーネントや CSS ルールをもっともうまく表すクラス名を作成してください。"
+
+# description
+msgid "Readonly"
+msgstr "読取専用"
+
+# description
+msgid "rows_here"
+msgstr "ここの行。"
+
+# description
+msgid "right_0"
+msgstr "right: 0;"
+
+# description
+msgid "Border"
+msgstr "Border:"
+
+# description
+msgid "Conditional_Formatting"
+msgstr "条件付き書式 ..."
+
+# description
+msgid "zindex_10"
+msgstr "z-index: 10;"
+
+# description
+msgid "Invalid_loginpassword"
+msgstr "無効なログイン/パスワードです!"
+
+# description
+msgid "Physical_version"
+msgstr "物理バージョン:"
+
+# description
+msgid "Example2"
+msgstr "例:"
+
+# description
+msgid "No_suggestions_from"
+msgstr "選択されたソースからの提案がありません"
+
+# description
+msgid "Flex"
+msgstr "Flex"
+
+# description
+msgid "Could_not_reach"
+msgstr "サーバーに接続できません。後で再度お試しください。"
+
+# description
+msgid "attribute"
+msgstr "属性"
+
+# description
+msgid "I_didnt_get"
+msgstr "これを取得できませんでした。意味した内容:"
+
+# description
+msgid "CSS"
+msgstr "CSS:"
+
+# description
+msgid "Confirm_Password"
+msgstr "パスワードを確認"
+
+# description
+msgid "Totally_removes_the"
+msgstr "ページから要素を完全に削除します。"
+
+# description
+msgid "Used_when_we"
+msgstr "元の位置から相対的に要素を配置したい時に使用されます。場所を設定するには、位置属性の top、left bottom、right を使用します。"
+
+# description
+msgid "key_2_from"
+msgstr "{3} からの {2}"
+
+# description
+msgid "Row_security"
+msgstr "行セキュリティ"
+
+# description
+msgid "Worksheet_join_rule"
+msgstr "ワークシート結合ルール設定先:"
+
+# description
+msgid "pam"
+msgstr ".pam;"
+
+# description
+msgid "in"
+msgstr "で"
+
+# description
+msgid "Exclude"
+msgstr "次を除外: \""
+
+# description
+msgid "CLICK_TO"
+msgstr "リセットするにはクリックしてください"
+
+# description
+msgid "Call"
+msgstr "電話:"
+
+# description
+msgid "download_sage"
+msgstr "Sage のメタデータをダウンロード"
+
+# description
+msgid "Some_columns_names"
+msgstr "一部の列名はすでに存在しています。追加する新しい列にプレフィクスを追加することができます。"
+
+# description
+msgid "measure"
+msgstr "測定値"
+
+# description
+msgid "Data_written"
+msgstr "書き込まれるデータ:"
+
+# description
+msgid "Chart_axes"
+msgstr "グラフ軸"
+
+# description
+msgid "has"
+msgstr "所有"
+
+# description
+msgid "Slack_Username"
+msgstr "Slack ユーザー名:"
+
+# description
+msgid "Description"
+msgstr "説明"
+
+# description
+msgid "Right"
+msgstr "右"
+
+# description
+msgid "Oops_There_was"
+msgstr "残念です。データソースの読み込みでエラーが発生しました。"
+
+# description
+msgid "gitcommit"
+msgstr "git-commit:"
+
+# description
+msgid "rows_while"
+msgstr "インポート中の行。"
+
+# description
+msgid "from_the"
+msgstr "ピンボードから?"
+
+# description
+msgid "child"
+msgstr "子"
+
+# description
+msgid "CSS_classname"
+msgstr "CSS クラス名の命名法"
+
+# description
+msgid "Email"
+msgstr "電子メール:"
+
+# description
+msgid "Dependency"
+msgstr "依存関係:"
+
+# description
+msgid "Clear_Selections"
+msgstr "選択をクリア"
+
+# description
+msgid "Keyword"
+msgstr "キーワード"
+
+# description
+msgid "types"
+msgstr "\" タイプ"
+
+# description
+msgid "parent"
+msgstr "親"
+
+# description
+msgid "Add_js_prefix"
+msgstr "Javascript でのみ使用されるクラスにはすべて「js」プレフィクスを追加します。例: .js-className"
+
+# description
+msgid "gitbranch"
+msgstr "git-branch:"
+
+# description
+msgid "Please_contact_your"
+msgstr "システム管理者に連絡してください。"
+
+# description
+msgid "pa2"
+msgstr ".pa;"
+
+# description
+msgid "a_numeric"
+msgstr "- 数や測定値のように数学を使って比較できる数値。"
+
+# description
+msgid "Aggregation"
+msgstr "集約"
+
+# description
+msgid "Successful"
+msgstr "成功"
+
+# description
+msgid "Style_class"
+msgstr "スタイル クラス名:"
+
+# description
+msgid "Tables"
+msgstr "テーブル"
+
+# description
+msgid "No"
+msgstr "いいえ"
+
+# description
+msgid "Oops_Sorry_there"
+msgstr "残念です。申し訳ございません、エラーが発生しました。"
+
+# description
+msgid "Confirm_Changes"
+msgstr "変更を確認"
+
+# description
+msgid "Inclusion_rule_is"
+msgstr "包含ルール設定先:"
+
+# description
+msgid "Formula_Assistant"
+msgstr "フォーミュラ アシスタント"
+
+# description
+msgid "Append"
+msgstr "追加"
+
+# description
+msgid "Debug"
+msgstr "デバッグ"
+
+# description
+msgid "Relationship_Builder"
+msgstr "関連ビルダー"
+
+# description
+msgid "Incomplete_only"
+msgstr "未完了のみ"
+
+# description
+msgid "ADD"
+msgstr "追加"
+
+# description
+msgid "Multiple_matches"
+msgstr "一致が複数あります。一つ選択してください:"
+
+# description
+msgid "Less"
+msgstr "...折り畳む"
+
+# description
+msgid "Press_escape_to"
+msgstr "リプレイを終了するにはエスケープを押してください"
+
+# description
+msgid "Display"
+msgstr "表示"
+
+# description
+msgid "Objects_count"
+msgstr "オブジェクト数:"
+
+# description
+msgid "None"
+msgstr "なし"
+
+# description
+msgid "Destination_Table"
+msgstr "ターゲット テーブル"
+
+# description
+msgid "from"
+msgstr "から"
+
+# description
+msgid "Chart_page"
+msgstr "グラフ ページ"
+
+# description
+msgid "How_to_structure"
+msgstr "LESS の構成方法?"
+
+# description
+msgid "Search_memcache"
+msgstr "Memcache を検索:"
+
+# description
+msgid "Save"
+msgstr "保存"
+
+# description
+msgid "Float_left"
+msgstr "この要素を左にフロート"
+
+# description
+msgid "Grouping_of"
+msgstr "CSS プロパティのグルーピング:"
+
+# description
+msgid "Headings"
+msgstr "見出し:"
+
+# description
+msgid "The_new_data"
+msgstr "新しいデータは ThoughtSpot の既存のデータにリンクされません。"
+
+# description
+msgid "Editing_Visualization"
+msgstr "ビジュアリゼーション編集中"
+
+# description
+msgid "SORT"
+msgstr "ソート"
+
+# description
+msgid "Are_you"
+msgstr "まだ不慣れですか?"
+
+# description
+msgid "Tip_In"
+msgstr "ヒント: ほとんどの場合"
+
+# description
+msgid "Clear_cache"
+msgstr "キャッシュをクリア"
+
+# description
+msgid "Download_Trace"
+msgstr "トレースをダウンロード"
+
+# description
+msgid "Comment_List"
+msgstr "コメント リスト"
+
+# description
+msgid "Summary"
+msgstr "サマリー"
+
+# description
+msgid "Columns"
+msgstr "列"
+
+# description
+msgid "Text"
+msgstr "/* テキスト */"
+
+# description
+msgid "colorreddefault"
+msgstr "color:@red-default"
+
+# description
+msgid "dn"
+msgstr "dn"
+
+# description
+msgid "Release_Notes"
+msgstr "リリース ノート"
+
+# description
+msgid "There_is_no"
+msgstr "システムにはまだデータがありません。"
+
+# description
+msgid "di"
+msgstr "di"
+
+# description
+msgid "Back"
+msgstr "戻る"
+
+# description
+msgid "db"
+msgstr "db"
+
+# description
+msgid "Click_on_the2"
+msgstr "セキュリティファイルをダウンロードするにはボタンをクリックしてください。"
+
+# description
+msgid "Which"
+msgstr "どれ"
+
+# description
+msgid "questionText"
+msgstr "{questionText}"
+
+# description
+msgid "Showing_only"
+msgstr "表示のみ"
+
+# description
+msgid "Buttons"
+msgstr "ボタン:"
+
+# description
+msgid "Show_me"
+msgstr "表示する"
+
+# description
+msgid "Example"
+msgstr "例"
+
+# description
+msgid "A3_Analysis"
+msgstr "A3分析"
+
+# description
+msgid "Not_Searchable"
+msgstr "検索不能です"
+
+# description
+msgid "This_content_will2"
+msgstr "この内容は font-red-default CSS ルールから赤色を継承します。このアプローチは、新しい CSS ルール作成を回避するため優れています。"
+
+# description
+msgid "statements_were"
+msgstr "ステートメントが実行されました。"
+
+# description
+msgid "built_on"
+msgstr "構築日:"
+
+# description
+msgid "Floats"
+msgstr "フロート"
+
+# description
+msgid "Add_charts_or"
+msgstr "このピンボードにグラフまたはテーブルを追加"
+
+# description
+msgid "Relative"
+msgstr "相対"
+
+# description
+msgid "Preferences"
+msgstr "基本設定"
+
+# description
+msgid "ofhidden"
+msgstr ".of-hidden;"
+
+# description
+msgid "Add_a_prefix"
+msgstr "選択された列にプレフィクスを追加します。"
+
+# description
+msgid "Similar_to_inline"
+msgstr "尊重される幅と高さを設定できる以外はインラインと類似しています。"
+
+# description
+msgid "and"
+msgstr "および"
+
+# description
+msgid "Version"
+msgstr "バージョン:"
+
+# description
+msgid "No_preview"
+msgstr "使用できるプレビューがありません。"
+
+# description
+msgid "Download_the"
+msgstr "モデリング ファイルをダウンロード"
+
+# description
+msgid "Add_to"
+msgstr "検索に追加"
+
+# description
+msgid "Update_Password"
+msgstr "パスワードを更新"
+
+# description
+msgid "E2E_and_Unit"
+msgstr "E2Eおよびユニット クラス名:"
+
+# description
+msgid "Applied_on_the"
+msgstr "親要素に適用され、フロートをクリアするため、CSS の疑似セレクタ (:after) を使用します。"
+
+# description
+msgid "Id"
+msgstr "ID:"
+
+# description
+msgid "Download_as"
+msgstr "次としてダウンロード:"
+
+# description
+msgid "Scroll_for"
+msgstr "スクロールするとさらに提案を確認することができます"
+
+# description
+msgid "Background_colors"
+msgstr "背景色 & ボックス モデル:"
+
+# description
+msgid "Class_name"
+msgstr "クラス名 -"
+
+# description
+msgid "complete"
+msgstr "完了"
+
+# description
+msgid "supportthoughtspotcom"
+msgstr "support@thoughtspot.com"
+
+# description
+msgid "relation"
+msgstr "関連"
+
+# description
+msgid "Optional"
+msgstr "(オプション)"
+
+# description
+msgid "Clear"
+msgstr "クリア"
+
+# description
+msgid "Sources"
+msgstr "ソース"
+
+# description
+msgid "SOURCE_TYPE"
+msgstr "ソース タイプ:"
+
+# description
+msgid "Update_the"
+msgstr "ファイルを更新"
+
+# description
+msgid "order"
+msgstr "順序"
+
+# description
+msgid "This_video_shows"
+msgstr "このビデオは検索を開始する方法について説明します。視聴に必要な2.5分で専門家になることができます。"
+
+# description
+msgid "Upload_your2"
+msgstr "データをアップロード"
+
+# description
+msgid "FILTER"
+msgstr "フィルター..."
+
+# description
+msgid "This_filter_type"
+msgstr "このフィルター タイプは検索バーでのみ編集できます。"
+
+# description
+msgid "Version_info"
+msgstr "バージョン情報:"
+
+# description
+msgid "Layouts_templates"
+msgstr "レイアウト テンプレート"
+
+# description
+msgid "Show_underlying"
+msgstr "基礎となるデータを表示"
+
+# description
+msgid "Update_Preferences"
+msgstr "基本設定を更新"
+
+# description
+msgid "Dependents"
+msgstr "依存される対象"
+
+# description
+msgid "Enter_The"
+msgstr "ThoughtSpot を起動してください"
+
+# description
+msgid "HTML"
+msgstr "HTML:"
+
+# description
+msgid "Data_type"
+msgstr "データ タイプ"
+
+# description
+msgid "INVALID_PRINT_CONFIGURATION_MESSAGE"
+msgstr ""
+
+# description
+msgid "SCHEDULE_PINBOARD_CREATE"
+msgstr "次のスケジュールを追加: "
+
+# description
+msgid "SCHEDULE_PINBOARD_UPDATE"
+msgstr "ピンボードのスケジュール {1} を編集 "
+
+# description
+msgid "jobStatusViewerTitle"
+msgstr "{1} はジョブ {2} のために動作します"
+
+# description
+msgid "PINBOARD"
+msgstr "ピンボード"
+
+# description
+msgid "TABLE"
+msgstr "テーブル"
+
+# description
+msgid "COLUMN"
+msgstr "列"
+
+# description
+msgid "WIDTH"
+msgstr "幅"
+
+# description
+msgid "WORKSHEETS"
+msgstr "ワークシート"
+
+# description
+msgid "IMPORTED_DATA"
+msgstr "インポートされたデータ"
+
+# description
+msgid "TABLES"
+msgstr "テーブル"
+
+# description
+msgid "UNTITLED_OBJECT_NAME"
+msgstr "無題"
+
+# description
+msgid "SEARCH"
+msgstr "検索"
+
+# description
+msgid "CHART_VIZ_DISPLAY_NAME"
+msgstr "チャート"
+
+# description
+msgid "SUBMIT"
+msgstr "送信"
+
+# description
+msgid "CANCEL"
+msgstr "キャンセル"
+
+# description
+msgid "CREATE"
+msgstr "作成"
+
+# Create a worksheet btn
+msgid "CREATE_YOUR_WORKSHEET"
+msgstr "ワークシートを作成"
+
+# description
+msgid "OK"
+msgstr "OK"
+
+# description
+msgid "BY"
+msgstr "により"
+
+# description
+msgid "AND"
+msgstr "および"
+
+# description
+msgid "SAVE"
+msgstr "保存"
+
+#Saving in progress
+msgid "SAVING"
+msgstr "保存中"
+
+# description
+msgid "MAKE_A_COPY"
+msgstr "コピーを作成"
+
+# description
+msgid "COPY_OF"
+msgstr "{1} のコピー"
+
+# description
+msgid "YES"
+msgstr "はい"
+
+# description
+msgid "NO"
+msgstr "いいえ"
+
+# description
+msgid "UPDATE"
+msgstr "更新"
+
+# description
+msgid "DONE"
+msgstr "完了"
+
+# description
+msgid "COLLAPSE"
+msgstr "折り畳む"
+
+# description
+msgid "EDIT"
+msgstr "編集"
+
+# description
+msgid "REFRESH"
+msgstr "リフレッシュ"
+
+# description
+msgid "DOWNLOAD"
+msgstr "ダウンロード"
+
+# description
+msgid "UPLOAD"
+msgstr "アップロード"
+
+# description
+msgid "DOWNLOAD_TRACE"
+msgstr "トレースをダウンロード"
+
+# description
+msgid "REQUIRED_FIELD"
+msgstr "* 必須フィールド"
+
+# description
+msgid "BROWSE_YOUR_FILES"
+msgstr "ファイルを参照"
+
+# description
+msgid "MAX_FILE_SIZE_MESSAGE"
+msgstr "最大アップロード ファイル サイズ: {size}"
+
+# description
+msgid "DELETE"
+msgstr "削除"
+
+# description
+msgid "ADD_COLUMNS"
+msgstr "列を追加"
+
+# description
+msgid "IMPORT"
+msgstr "インポート"
+
+# description
+msgid "BACK"
+msgstr "戻る"
+
+# description
+msgid "CONFIRM"
+msgstr "確認"
+
+# description
+msgid "FILTERS"
+msgstr "フィルター"
+
+# description
+msgid "CLOSE"
+msgstr "閉じる"
+
+# description
+msgid "ADD_AND_SAVE"
+msgstr "追加 & 保存"
+
+# description
+msgid "NEW_PINBOARD"
+msgstr "新規ピンボード"
+
+# description
+msgid "ACTIONS"
+msgstr "アクション"
+
+# description
+msgid "SEARCH_COLUMN"
+msgstr "検索列"
+
+# description
+msgid "SEARCH_YOUR_DATA"
+msgstr "データを検索"
+
+# description
+msgid "PAUSED_JOB"
+msgstr "一時停止"
+
+# description
+msgid "SCHEDULED_JOB"
+msgstr "スケジュール済"
+
+# description
+msgid "STOPPED_JOB"
+msgstr "停止済"
+
+# description
+msgid "JOB"
+msgstr "スケジュール"
+
+# description
+msgid "JOBS"
+msgstr "スケジュール"
+
+# description
+msgid "NO_JOB"
+msgstr "スケジュールがありません"
+
+# description
+msgid "READ_MORE"
+msgstr "詳細を読む"
+
+# description
+msgid "HIDE_DETAILS"
+msgstr "詳細を非表示"
+
+# description
+msgid "metadataListSearchPlaceholder"
+msgstr "名前で検索"
+
+# description
+msgid "exploreDataTitle"
+msgstr "データを検索"
+
+# description
+msgid "exploreAllData"
+msgstr "全データを検索"
+
+# description
+msgid "chooseSources"
+msgstr "ソースを選択"
+
+# description
+msgid "alerts.WHAT_HAPPENED"
+msgstr "何が発生しましたか?"
+
+# description
+msgid "primaryNavigation.SEARCH"
+msgstr "検索"
+
+# description
+msgid "primaryNavigation.ANSWERS"
+msgstr "回答"
+
+# description
+msgid "primaryNavigation.PINBOARDS"
+msgstr "ピンボード"
+
+# description
+msgid "primaryNavigation.MANAGE_DATA"
+msgstr "データ"
+
+# description
+msgid "primaryNavigation.ADMIN"
+msgstr "管理者"
+
+# description
+msgid "primaryNavigation.HELP"
+msgstr "ヘルプ"
+
+# description
+msgid "primaryNavigation.DISABLED_ANSWER_RELEASE_VERSION"
+msgstr "3.4"
+
+# description
+msgid "primaryNavigation.userMenu.PROFILE"
+msgstr "プロファイル"
+
+# description
+msgid "primaryNavigation.userMenu.SIGN_OUT"
+msgstr "サインアウト"
+
+# description
+msgid "activityFeed.VIEW_ACTIVITY"
+msgstr "アクティビティを表示"
+
+# description
+msgid "activityFeed.RECENT_ACTIVITY"
+msgstr "最近のアクティビティ"
+
+# description
+msgid "activityFeed.NO_ITEMS_TO_DISPLAY"
+msgstr "表示する項目がありません"
+
+# description
+msgid "emptyRelationshipsMessage"
+msgstr "表示する関連がありません"
+
+# description
+msgid "editPinboardDetails"
+msgstr "ピンボード詳細を編集"
+
+# description
+msgid "basicActionMessages.OK"
+msgstr "OK"
+
+# description
+msgid "blinkList.NAME"
+msgstr "名前"
+
+# description
+msgid "blinkList.AUTHOR"
+msgstr "作者"
+
+# description
+msgid "blinkList.MODIFIED"
+msgstr "修正済"
+
+# description
+msgid "blinkList.DESCRIPTION"
+msgstr "説明"
+
+# description
+msgid "schemaType.TABLE"
+msgstr "テーブル"
+
+# description
+msgid "schemaType.WORKSHEET"
+msgstr "ワークシート"
+
+# description
+msgid "schemaType.ANSWER"
+msgstr "回答"
+
+# description
+msgid "schemaViewer.backToTables"
+msgstr "< データ管理に戻る"
+
+# description
+msgid "schemaViewer.backToSchema"
+msgstr "< スキーマ ビューワーに戻る"
+
+# description
+msgid "schemaViewer.HAS_ERRORS"
+msgstr "何か異常が発生しました.."
+
+# description
+msgid "schemaViewer.WKS_COLUMNS_TABLE_KEY"
+msgstr "WKSTABLECOLUMS"
+
+# description
+msgid "schemaViewer.WKS_GROUP_KEY"
+msgstr "WKSGROUP"
+
+# description
+msgid "schemaViewer.TITLE"
+msgstr "スキーマを表示"
+
+# description
+msgid "schemaViewer.LEGEND_TITLE"
+msgstr "凡例"
+
+# description
+msgid "schemaViewer.CLOSE_LEGEND"
+msgstr "凡例を非表示"
+
+# description
+msgid "schemaViewer.SHOW_LEGEND"
+msgstr "凡例を表示"
+
+# description
+msgid "schemaViewer.TABLE_TITLE"
+msgstr "テーブル"
+
+# description
+msgid "schemaViewer.WKS_TITLE"
+msgstr "ワークシート列"
+
+# description
+msgid "schemaViewer.ANSWER_TITLE"
+msgstr "回答"
+
+# description
+msgid "schemaViewer.tableType.WORKSHEET"
+msgstr "ワークシート"
+
+# description
+msgid "schemaViewer.tableType.USER_DEFINED"
+msgstr "テーブル"
+
+# description
+msgid "schemaViewer.tableType.ONE_TO_ONE_LOGICAL"
+msgstr "テーブル"
+
+# description
+msgid "schemaViewer.tableType.AGGR_WORKSHEET"
+msgstr "ワークシート"
+
+# description
+msgid "schemaViewer.relationships.GENERIC"
+msgstr "ジェネリック"
+
+# description
+msgid "schemaViewer.relationships.PK_FK"
+msgstr "PK->FK"
+
+# description
+msgid "schemaViewer.relationships.USER_DEFINED"
+msgstr "ユーザー定義"
+
+# description
+msgid "schemaViewer.tooltip.common.NAME"
+msgstr "名前"
+
+# description
+msgid "schemaViewer.tooltip.common.TYPE"
+msgstr "タイプ"
+
+# description
+msgid "schemaViewer.tooltip.common.CREATED_AT"
+msgstr "作成時間"
+
+# description
+msgid "schemaViewer.tooltip.common.UPDATED_AT"
+msgstr "更新時間"
+
+# description
+msgid "schemaViewer.tooltip.common.NO_DATA"
+msgstr "N/A"
+
+# description
+msgid "schemaViewer.tooltip.common.ID"
+msgstr "ID"
+
+# description
+msgid "schemaViewer.tooltip.join.JOIN_TYPE"
+msgstr "JOIN_TYPE"
+
+# description
+msgid "schemaViewer.tooltip.join.DESTINATION_TABLE"
+msgstr "ターゲット テーブル"
+
+# description
+msgid "schemaViewer.tooltip.join.SOURCE_TABLE"
+msgstr "ソース テーブル"
+
+# description
+msgid "schemaViewer.tooltip.join.SOURCE_COLUMNS"
+msgstr "ソース列"
+
+# description
+msgid "schemaViewer.tooltip.join.DESTINATION_COLUMNS"
+msgstr "ターゲット列"
+
+# description
+msgid "schemaViewer.tooltip.join.GENERIC_EXPRESSION"
+msgstr "GENERIC_EXPRESSION"
+
+# description
+msgid "metadataListPage.headerTitle.SCHEDULE"
+msgstr "{1} のスケジュール"
+
+# description
+msgid "metadataListPage.captions.NAME"
+msgstr "名前"
+
+# description
+msgid "metadataListPage.captions.CRON_SCHEDULE"
+msgstr "スケジュール"
+
+# description
+msgid "metadataListPage.captions.DESCRIPTION"
+msgstr "説明"
+
+# description
+msgid "metadataListPage.captions.DISPLAYED_NAME"
+msgstr "表示名"
+
+# description
+msgid "metadataListPage.captions.CREATED_AT"
+msgstr "作成時間"
+
+# description
+msgid "metadataListPage.captions.CREATED"
+msgstr "作成済"
+
+# description
+msgid "metadataListPage.captions.MODIFIED"
+msgstr "修正済"
+
+# description
+msgid "metadataListPage.captions.AUTHOR"
+msgstr "作者"
+
+# description
+msgid "metadataListPage.captions.RECIPIENT"
+msgstr "受信者"
+
+# description
+msgid "metadataListPage.captions.STICKERS"
+msgstr "ステッカー"
+
+# description
+msgid "metadataListPage.captions.SOURCE"
+msgstr "ソース"
+
+# description
+msgid "metadataListPage.captions.DATA_SOURCE_TYPE"
+msgstr "タイプ"
+
+# description
+msgid "metadataListPage.captions.DATA_SOURCE_SCHEDULED"
+msgstr "スケジュール済"
+
+# description
+msgid "metadataListPage.captions.DATA_SOURCE_LOAD_STATUS"
+msgstr "読み込みステータス"
+
+# description
+msgid "metadataListPage.captions.START_TIME"
+msgstr "開始時間"
+
+# description
+msgid "metadataListPage.captions.END_TIME"
+msgstr "終了時間"
+
+# description
+msgid "metadataListPage.captions.STATE"
+msgstr "ステータス"
+
+# description
+msgid "metadataListPage.captions.STATUS_VIEWER_LOAD_STATUS"
+msgstr "読み込みステータス"
+
+# description
+msgid "metadataListPage.captions.DATA_FILTER_TABLE"
+msgstr "テーブル"
+
+# description
+msgid "metadataListPage.captions.DATA_FILTER_COLUMN"
+msgstr "列"
+
+# description
+msgid "metadataListPage.captions.DATA_FILTER_CONDITION"
+msgstr "条件"
+
+# description
+msgid "metadataListPage.captions.DATA_FILTER_TEXT"
+msgstr "値"
+
+# description
+msgid "metadataListPage.captions.TRANSFORMATION_EDITOR_COLUMN"
+msgstr "列名"
+
+# description
+msgid "metadataListPage.captions.TRANSFORMATION_EDITOR_TABLE"
+msgstr "テーブル名"
+
+# description
+msgid "metadataListPage.captions.TRANSFORMATION_EDITOR_EXPRESSION"
+msgstr "式"
+
+# description
+msgid "metadataListPage.users.title"
+msgstr "ユーザー"
+
+# description
+msgid "metadataListPage.users.noItems"
+msgstr "ユーザーがありません"
+
+# description
+msgid "metadataListPage.users.listTitle"
+msgstr "ユーザー {1}-{2}"
+
+# description
+msgid "metadataListPage.groups.title"
+msgstr "グループ"
+
+# description
+msgid "metadataListPage.groups.noItems"
+msgstr "グループがありません"
+
+# description
+msgid "metadataListPage.groups.listTitle"
+msgstr "グループ {1}-{2}"
+
+# description
+msgid "metadataListPage.roles.title"
+msgstr "ロール"
+
+# description
+msgid "metadataListPage.roles.noItems"
+msgstr "ロールがありません"
+
+# description
+msgid "metadataListPage.roles.listTitle"
+msgstr "ロール {1}-{2}"
+
+# description
+msgid "metadataListPage.answers.title"
+msgstr "回答"
+
+# description
+msgid "metadataListPage.answers.noItems"
+msgstr "回答がありません"
+
+# description
+msgid "metadataListPage.answers.listTitle"
+msgstr "回答 {1}-{2}"
+
+# description
+msgid "metadataListPage.answers.disableAnswerAlert.TITLE"
+msgstr "回答"
+
+# description
+msgid "metadataListPage.answers.disableAnswerAlert.MESSAGE"
+msgstr "回答を共有しますか? 保存しますか? ピンボードに追加しました!"
+
+# description
+msgid "metadataListPage.answers.disableAnswerAlert.CONFIRM_BUTTON_LABEL"
+msgstr "わかりました"
+
+# description
+msgid "metadataListPage.pinboards.title"
+msgstr "ピンボード"
+
+# description
+msgid "metadataListPage.pinboards.noItems"
+msgstr "ピンボードがありません"
+
+# description
+msgid "metadataListPage.pinboards.listTitle"
+msgstr "ピンボード {1}-{2}"
+
+# description
+msgid "metadataListPage.pinboards.button.title"
+msgstr "新規ピンボード"
+
+# description
+msgid "metadataListPage.dataManagement.title"
+msgstr "データ管理"
+
+# description
+msgid "metadataListPage.dataManagement.tables.tabHeader"
+msgstr "テーブル"
+
+# description
+msgid "metadataListPage.dataManagement.tables.noItems"
+msgstr "テーブルがありません"
+
+# description
+msgid "metadataListPage.dataManagement.tables.listTitle"
+msgstr "テーブル {1}-{2}"
+
+# description
+msgid "metadataListPage.dataManagement.dataSources.tabHeader"
+msgstr "データソース"
+
+# description
+msgid "metadataListPage.dataManagement.dataSources.noItems"
+msgstr "データソースがありません"
+
+# description
+msgid "metadataListPage.dataManagement.dataSources.listTitle"
+msgstr "データソース {1}-{2}"
+
+# description
+msgid "metadataListPage.jobs.button.title"
+msgstr "新規スケジュール"
+
+# description
+msgid "metadataListPage.jobs.recipients.one"
+msgstr "1 受信者"
+
+msgid  "metadataListPage.jobs.noContentMessage"
+msgstr "このピンボードにスケジュールを追加"
+
+# description
+msgid "metadataListPage.jobs.recipients.more"
+msgstr "{1} 受信者"
+
+# description
+msgid "metadataListPage.actions.share.text"
+msgstr "共有"
+
+# description
+msgid "metadataListPage.actions.delete.text"
+msgstr "削除"
+
+# description
+msgid "metadataListPage.actions.tag.text"
+msgstr "ステッカーを適用"
+
+# description
+msgid "metadataListPage.actions.reset.text"
+msgstr "再起動"
+
+# description
+msgid "metadataListPage.actions.abort.text"
+msgstr "中止"
+
+# description
+msgid "metadataListPage.actions.schedule.text"
+msgstr "レポートをスケジュール"
+
+# description
+msgid "metadataListPage.actions.pause.text"
+msgstr "一時停止"
+
+# description
+msgid "metadataListPage.actions.resume.text"
+msgstr "再開"
+
+# description
+msgid "metadataListPage.actions.export.text"
+msgstr "エクスポート"
+
+# description
+msgid "metadataListPage.actions.import.text"
+msgstr "インポート"
+
+# description
+msgid "metadataListPage.actions.download.text"
+msgstr "ダウンロード"
+
+# description
+msgid "metadataListPage.actions.sendEmail.text"
+msgstr "電子メールで送信"
+
+# description
+msgid "sharableItem.INVALID_ITEM_NAME_MESSAGE"
+msgstr "名前が無効です"
+
+# description
+msgid "filterInputDataType.DEFAULT_PLACE_HOLDER"
+msgstr "ここに値を入力してください"
+
+# description
+msgid "filterInputDataType.DATE"
+msgstr "MM/DD/YYYY"
+
+# description
+msgid "filterInputDataType.DATE_TIME"
+msgstr "MM/DD/YYYY HH24:MI:SS"
+
+# description
+msgid "walkMe.deploymentTypes.TRIAL"
+msgstr "試用版"
+
+# description
+msgid "walkMe.deploymentTypes.STANDARD"
+msgstr "標準"
+
+# description
+msgid "replayAnswer.REPLAY_TITLE"
+msgstr "検索をリプレイ"
+
+# description
+msgid "replayAnswer.CANNOT_REPLAY_TITLE"
+msgstr "検索をリプレイできません"
+
+# description
+msgid "replayAnswer.CANNOT_REPLAY_MESSAGE"
+msgstr "基礎となるテーブルへのアクセスがない可能性があります - 表示する回答を確認してください。"
+
+# description
+msgid "replayAnswer.CANNOT_REPLAY_CONFIRM"
+msgstr "回答を表示"
+
+# description
+msgid "replayAnswer.REPLAY_CONFIRM"
+msgstr "リプレイを開始"
+
+# description
+msgid "replayAnswer.REPLAY_CANCEL"
+msgstr "リプレイを記録"
+
+# description
+msgid "replayAnswer.REPLAY_CANCEL_TOOLTIP"
+msgstr "Firefox の管理ユーザーは記録できません。"
+
+# description
+msgid "replayAnswer.REPLAY_CANCEL_TOOLTIP_ENABLED"
+msgstr "リプレイ後ビデオをダウンロードするか、Esc を押してそれ以前に停止してください。"
+
+# description
+msgid "replayAnswer.NAME_PREFIX"
+msgstr "ThoughtSpot チュートリアル "
+
+# description
+msgid "replayAnswer.FINISHED_TITLE"
+msgstr "リプレイが完了しました"
+
+# description
+msgid "replayAnswer.RE_REPLAY"
+msgstr "リプレイ"
+
+# description
+msgid "replayAnswer.EDIT_ANSWER"
+msgstr "検索を編集"
+
+# description
+msgid "replayAnswer.NAME_LABEL"
+msgstr "回答名"
+
+# description
+msgid "replayAnswer.DESCRIPTION_LABEL"
+msgstr "回答内容"
+
+# description
+msgid "replayAnswer.LAST_MODIFIED_LABEL"
+msgstr "最終修正"
+
+# description
+msgid "replayAnswer.AUTHOR_LABEL"
+msgstr "作者"
+
+# description
+msgid "replayAnswer.EXIT_WARNING_TITLE"
+msgstr "リプレイが進行中です"
+
+# description
+msgid "replayAnswer.EXIT_WARNING_MESSAGE"
+msgstr "本当にリプレイを終了しますか?"
+
+# description
+msgid "replayAnswer.EXIT_WARNING_CONFIRM"
+msgstr "はい、リプレイを終了します"
+
+# description
+msgid "replayAnswer.EXIT_WARNING_CANCEL"
+msgstr "リプレイを再開"
+
+# description
+msgid "screenRecorder.PROCESSING_VIDEO"
+msgstr "ビデオ作成中"
+
+# description
+msgid "screenRecorder.DL_TITLE"
+msgstr "チュートリアルをダウンロード"
+
+# description
+msgid "screenRecorder.DL_MESSAGE"
+msgstr "ビデオ チュートリアルをダウンロードしてください。"
+
+# description
+msgid "screenRecorder.DL_CONFIRM"
+msgstr "ダウンロード"
+
+# description
+msgid "screenRecorder.DL_CANCEL"
+msgstr "ビデオを削除"
+
+# description
+msgid "screenRecorder.ERROR_TITLE"
+msgstr "ビデオを作成できません"
+
+# description
+msgid "screenRecorder.ERROR_MESSAGE"
+msgstr "大変申し訳ございません。エラーが発生してビデオを作成できません。"
+
+# description
+msgid "screenRecorder.CANNOT_RECORD_TITLE"
+msgstr "画面を記録できません"
+
+# description
+msgid "screenRecorder.CANNOT_RECORD_MESSAGE"
+msgstr "URL \"about:config\" に移動して現在のドメイン (\"{1}\") を \"media.getusermedia.screensharing.allowed_domains\" フラグに追加してください。これによって Firefox が画面を記録できるようになります (記録前に権限が確認されます)。"
+
+# description
+msgid "screenRecorder.DEFAULT_VIDEO_NAME"
+msgstr "ThoughtSpot スクリーンキャスト"
+
+# description
+msgid "metadataExplorer.title"
+msgstr "データ管理"
+
+# description
+msgid "metadataExplorer.selectValueMessage"
+msgstr "値を選択"
+
+# description
+msgid "metadataExplorer.dataValidationErrorMessage"
+msgstr "未選択の項目の値を選択してください"
+
+# description
+msgid "metadataExplorer.dataLoadingMessage"
+msgstr "データ取得中"
+
+# description
+msgid "metadataExplorer.cannotToggleMessage"
+msgstr "このタイプの追加を切り替えられません"
+
+# description
+msgid "metadataExplorer.clickToEdit"
+msgstr "編集するにはクリックしてください"
+
+# description
+msgid "metadataExplorer.createWorksheet"
+msgstr "ワークシートを作成"
+
+# description
+msgid "metadataExplorer.importData"
+msgstr "データをアップロード"
+
+# description
+msgid "metadataExplorer.newDataSource"
+msgstr "新規データソース"
+
+# description
+msgid "metadataExplorer.importPermissionTip"
+msgstr "データをインポートする権限がありません"
+
+# description
+msgid "metadataExplorer.createWorksheetTip"
+msgstr "ワークシートを作成する権限がありません"
+
+# description
+msgid "metadataExplorer.cannotDeleteReason"
+msgstr "選択に削除できない次のシステム テーブルが含まれています:"
+
+# description
+msgid "metadataExplorer.cannotDelete"
+msgstr "削除できません"
+
+# description
+msgid "metadataExplorer.cannotEdit"
+msgstr "ワークシートを編集できません"
+
+# description
+msgid "metadataExplorer.rlsNeedsAdmin"
+msgstr "行レベル セキュリティへのアクセスは、管理者のみ使用できます。"
+
+# description
+msgid "metadataExplorer.rlsDisabledWS"
+msgstr "行レベル セキュリティは、現在ワークシートに対してサポートされていません。"
+
+# description
+msgid "metadataExplorer.profileDisabledWS"
+msgstr "データ プロファイルは、ワークシートに対してサポートされていません。"
+
+# description
+msgid "metadataExplorer.needsUnderlyingAccess"
+msgstr "ワークシートを編集するには、基礎となるデータへのアクセスを管理者に申請してください。"
+
+# description
+msgid "metadataExplorer.types.USER_DEFINED"
+msgstr "インポート済"
+
+# description
+msgid "metadataExplorer.types.WORKSHEET"
+msgstr "ワークシート"
+
+# description
+msgid "metadataExplorer.types.AGGR_WORKSHEET"
+msgstr "ワークシート"
+
+# description
+msgid "metadataExplorer.types.ONE_TO_ONE_LOGICAL"
+msgstr "システムテーブル"
+
+# description
+msgid "metadataExplorer.currencyEditor.NONE"
+msgstr "なし"
+
+# description
+msgid "metadataExplorer.currencyEditor.FROM_BROWSER"
+msgstr "ビルダーから推定"
+
+# description
+msgid "metadataExplorer.currencyEditor.FROM_COLUMN"
+msgstr "列から"
+
+# description
+msgid "metadataExplorer.currencyEditor.FROM_ISO_CODE"
+msgstr "ISOコードを指定"
+
+# description
+msgid "metadataExplorer.currencyEditor.SELECT_COLUMN"
+msgstr "列を選択"
+
+# description
+msgid "metadataExplorer.currencyEditor.SELECT_ISO_CODE"
+msgstr "通貨コードを選択"
+
+# description
+msgid "metadataExplorer.currencyEditor.DIALOG_TITLE"
+msgstr "通貨タイプを指定"
+
+# description
+msgid "metadataExplorer.currencyEditor.CURRENCY_TYPE"
+msgstr "通貨タイプ"
+
+# description
+msgid "metadataExplorer.displayValuesForColumns.geoType.NONE"
+msgstr "なし"
+
+# description
+msgid "metadataExplorer.displayValuesForColumns.geoType.COUNTRY_REGION"
+msgstr "国/地域"
+
+# description
+msgid "metadataExplorer.displayValuesForColumns.geoType.LATITUDE"
+msgstr "緯度"
+
+# description
+msgid "metadataExplorer.displayValuesForColumns.geoType.LONGITUDE"
+msgstr "経度"
+
+# description
+msgid "metadataExplorer.displayValuesForColumns.geoType.STATE_PROVINCE"
+msgstr "州/県"
+
+# description
+msgid "metadataExplorer.displayValuesForColumns.geoType.ZIP_CODE"
+msgstr "郵便番号"
+
+# description
+msgid "metadataExplorer.relationshipEditorMessages.ADD_KEY"
+msgstr "キーを追加"
+
+# description
+msgid "metadataExplorer.relationshipEditorMessages.ADD_RELATIONSHIP"
+msgstr "関連を追加"
+
+# description
+msgid "privilegesLabels.ADMINISTRATION"
+msgstr "管理権限所有"
+
+# description
+msgid "privilegesLabels.USERDATAUPLOADING"
+msgstr "ユーザー データをアップロード可能"
+
+# description
+msgid "privilegesLabels.DATADOWNLOADING"
+msgstr "データをダウンロード可能"
+
+# description
+msgid "privilegesLabels.SHAREWITHALL"
+msgstr "全ユーザーと共有可能"
+
+# description
+msgid "privilegesLabels.DATAMANAGEMENT"
+msgstr "データ管理可能"
+
+# description
+msgid "privilegesLabels.JOBSCHEDULING"
+msgstr "ピンボードのスケジュール可能"
+
+# description
+msgid "listFilterLabels.TAG_LABEL_UI_NAME"
+msgstr "ステッカー"
+
+# description
+msgid "listFilterLabels.selectStickerMessage"
+msgstr "ステッカーを選択"
+
+# description
+msgid "listFilterLabels.tableTypeFilterLabel"
+msgstr "タイプ"
+
+# description
+msgid "listFilterLabels.tableTypeFilterValueAll"
+msgstr "すべてのタイプ"
+
+# description
+msgid "listFilterLabels.tableTypeFilterValueImported"
+msgstr "インポート済"
+
+# description
+msgid "listFilterLabels.tableTypeFilterValueTables"
+msgstr "テーブル"
+
+# description
+msgid "listFilterLabels.tableTypeFilterValueWorksheets"
+msgstr "ワークシート"
+
+# description
+msgid "listFilterLabels.authorFilterLabel"
+msgstr "作成者"
+
+# description
+msgid "listFilterLabels.authorFilterValueAll"
+msgstr "すべて"
+
+# description
+msgid "listFilterLabels.authorFilterValueYou"
+msgstr "あなた"
+
+# description
+msgid "dataSources.USER_DEFINED"
+msgstr "インポート済"
+
+# description
+msgid "dataSources.ONE_TO_ONE_LOGICAL"
+msgstr "デフォルト"
+
+# description
+msgid "disabledChartTypeSelectorTooltips.BAR"
+msgstr "検索には少なくとも 1 つの属性と 1 つの測定値が必要です。"
+
+# description
+msgid "disabledChartTypeSelectorTooltips.COLUMN"
+msgstr "検索には少なくとも 1 つの属性と 1 つの測定値が必要です。"
+
+# description
+msgid "disabledChartTypeSelectorTooltips.STACKED_COLUMN"
+msgstr "検索には少なくとも 2 つの属性と 1 つの測定値が必要です。"
+
+# description
+msgid "disabledChartTypeSelectorTooltips.PARETO"
+msgstr "検索には少なくとも 1 つの属性と 1 つの測定値が必要です。"
+
+# description
+msgid "disabledChartTypeSelectorTooltips.LINE"
+msgstr "検索には少なくとも 1 つの属性と 1 つの測定値が必要です。"
+
+# description
+msgid "disabledChartTypeSelectorTooltips.AREA"
+msgstr "検索には少なくとも 1 つの属性と 1 つの測定値が必要です。"
+
+# description
+msgid "disabledChartTypeSelectorTooltips.SCATTER"
+msgstr "検索には少なくとも 1 つの属性と 1 つの測定値が必要です。"
+
+# description
+msgid "disabledChartTypeSelectorTooltips.BUBBLE"
+msgstr "検索には少なくとも 1 つの属性と 2 つの測定値が必要です。"
+
+# description
+msgid "disabledChartTypeSelectorTooltips.PIE"
+msgstr "検索には少なくとも 1 つの属性と 1 つの測定値が必要です。"
+
+# description
+msgid "disabledChartTypeSelectorTooltips.GEO_AREA"
+msgstr "検索には 1 つ地域列が必要です。"
+
+# description
+msgid "disabledChartTypeSelectorTooltips.GEO_BUBBLE"
+msgstr "検索には 1 つの地域列か緯度列と経度列のペアが必要です。"
+
+# description
+msgid "disabledChartTypeSelectorTooltips.GEO_HEATMAP"
+msgstr "検索には 1 つの地域列か緯度列と経度列のペアが必要です。"
+
+# description
+msgid "disabledChartTypeSelectorTooltips.HEATMAP"
+msgstr "検索には少なくとも 2 つの属性と 1 つの測定値が必要です。"
+
+# description
+msgid "disabledChartTypeSelectorTooltips.TREEMAP"
+msgstr "検索には少なくとも 1 つの属性と 2 つの測定値が必要です。 "
+
+# description
+msgid "disabledChartTypeSelectorTooltips.WATERFALL"
+msgstr "検索には少なくとも 1 つの属性と 1 つの測定値が必要です。"
+
+# description
+msgid "disabledChartTypeSelectorTooltips.STACKED_AREA"
+msgstr "検索には少なくとも 2 つの属性と 1 つの測定値が必要です。"
+
+# description
+msgid "disabledChartTypeSelectorTooltips.LINE_COLUMN"
+msgstr "検索には少なくとも 1 つの属性と 2 つの測定値が必要です。"
+
+# description
+msgid "disabledChartTypeSelectorTooltips.FUNNEL"
+msgstr "検索には少なくとも 1 つの属性と 1 つの測定値が必要です。"
+
+# description
+msgid "disabledChartTypeSelectorTooltips.LINE_STACKED_COLUMN"
+msgstr "検索には少なくとも 2 つの属性と 2 つの測定値が必要です。"
+
+# description
+msgid "disabledChartTypeSelectorTooltips.PIVOT_TABLE"
+msgstr "検索には少なくとも 1 つの属性と 1 つの測定値が必要で、分散や標準偏差は許可されません。"
+
+# description
+msgid "dataDisabledChartExplanation.PARETO"
+msgstr "検索には最小値が 0 より大きい測定値が少なくとも 1 つ必要です。"
+
+# description
+msgid "dataDisabledChartExplanation.CARDINALITY"
+msgstr "検索には{1}未満の値をふくむ属性が必要です。"
+
+# description
+msgid "dataDisabledChartExplanation.UNIQUE_X_VALUES_PER_SERIES"
+msgstr "検索は、X 軸に表示される一連の各データに対して一意の Y 軸の値を持つ必要があります。"
+
+# description
+msgid "dataDisabledChartExplanation.UNIQUE_X_VALUES_ALL_DATA"
+msgstr "検索は、X 軸の各値に対して一意の Y 軸の値を持つ必要があります。"
+
+# description
+msgid "dataDisabledChartExplanation.ONLY_ONE_Y_AXIS_COLUMN_SUPPORTED"
+msgstr "検索は Y 軸に 1 つだけ列を持つことができます。"
+
+# description
+msgid "dataDisabledChartExplanation.NON_NEGATIVE_VALUES_NEEDED"
+msgstr "検索結果に、このグラフ タイプでサポートされない負の値が含まれています。"
+
+# description
+msgid "dataDisabledChartExplanation.SD_AND_VARIANCE_PIVOT"
+msgstr "標準偏差と分散はピボット テーブルでは現在サポートされていません。"
+
+# description
+msgid "dataDisabledChartExplanation.DATA_INCOMPLETE_PIVOT"
+msgstr "クエリの返した結果が多すぎます。ピボット テーブルを使用できるようにフィルターしてください。"
+
+# description
+msgid "chartEditorErrorExplanation.ATLEAST_ONE_X_COLUMN"
+msgstr "少なくとも 1 つ X 軸列が必要です。"
+
+# description
+msgid "chartEditorErrorExplanation.ATLEAST_ONE_Y_COLUMN"
+msgstr "少なくとも 1 つ Y 軸列が必要です。"
+
+# description
+msgid "chartEditorErrorExplanation.MULTIPLE_NON_NUMERIC_ON_Y"
+msgstr "Y 軸に複数の列が存在する場合、数値以外の列は許可されません。"
+
+# description
+msgid "chartEditorErrorExplanation.ONLY_ATTRIBUTES_ON_LEGEND"
+msgstr "凡例には属性のみ許可されます。"
+
+# description
+msgid "chartEditorErrorExplanation.UNSUPPORTED_LEGEND_WITH_MULTIPLE_Y"
+msgstr "Y 軸に複数の列が存在する場合、凡例は許可されません。"
+
+# description
+msgid "chartEditorErrorExplanation.COLUMN_ALREADY_ON_X"
+msgstr "{1} はすでにX 軸列です。"
+
+# description
+msgid "chartEditorErrorExplanation.COLUMN_ALREADY_ON_Y"
+msgstr "{1} はすでにY 軸列です。"
+
+# description
+msgid "chartEditorErrorExplanation.NUMERIC_SIZE_COLUMN"
+msgstr "サイズ列は数値である必要があります。"
+
+# description
+msgid "chartEditorErrorExplanation.COLUMN_ALREADY_USED"
+msgstr "{1} はすでに使用されています。"
+
+# description
+msgid "chartEditorErrorExplanation.INVALID_AXIS_SHARING"
+msgstr "異なる通貨設定を持つ列は Y 軸を共有できません。"
+
+# description
+msgid "smartCheckboxCollection.CLEAR_SELECTED_ITEMS"
+msgstr "すべて選択解除"
+
+# description
+msgid "smartCheckboxCollection.SELECT_ALL_ITEMS"
+msgstr "すべて選択"
+
+# description
+msgid "smartCheckboxCollection.CHECKBOX_SEARCH_PLACEHOLDER"
+msgstr "名前で検索"
+
+# description
+msgid "smartCheckboxCollection.SEARCH_TO_REFINE_ITEMS_FURTHER"
+msgstr "入力を続けると精度が向上します。"
+
+# description
+msgid "smartCheckboxCollection.SEARCH_TO_FIND_MORE_READ_ONLY_ITEMS"
+msgstr "項目を絞るために検索します。"
+
+# description
+msgid "smartCheckboxCollection.SEARCH_TO_FIND_MORE_ITEMS"
+msgstr "項目を絞るために検索します。"
+
+# description
+msgid "smartCheckboxCollection.SEARCH_TO_FIND_MORE_SELECTED_ITEMS"
+msgstr "項目を絞るために検索します。"
+
+# description
+msgid "SAVE_AS_DIALOG_TITLE"
+msgstr "{1} を名前を付けて保存"
+
+# description
+msgid "NAME_BEFORE_SHARING_DIALOG_TITLE"
+msgstr "共有前に {1} の名前を付けてください"
+
+# description
+msgid "LOADING_MSG"
+msgstr "読み込み中"
+
+# description
+msgid "LOADING_FAILED_MSG"
+msgstr "読み込みが失敗しました"
+
+# description
+msgid "UPLOADING_MSG"
+msgstr "アップロード中"
+
+# description
+msgid "NO_MATCH_MSG"
+msgstr "一致が見つかりませんでした"
+
+# description
+msgid "MORE_ITEMS_MSG"
+msgstr "検索を絞り込んでください..."
+
+# description
+msgid "UPGRADING_ANSWER_MSG"
+msgstr "回答をアップグレード中"
+
+# description
+msgid "CALLOSUM_CODE_CANCELED"
+msgstr "キャンセル済"
+
+# description
+msgid "DRILL_TYPE_VIZ_LEVEL"
+msgstr "viz-level"
+
+# description
+msgid "dataPanel.SOURCES_TITLE"
+msgstr "ソース"
+
+# description
+msgid "dataPanel.COLUMNS_TITLE"
+msgstr "列"
+
+# description
+msgid "dataPanel.FILTERS_TITLE"
+msgstr "フィルター"
+
+# description
+msgid "dataPanel.FORMULAE_TITLE"
+msgstr "フォーミュラ"
+
+# description
+msgid "dataPanel.SELECTED_SOURCES"
+msgstr "選択されたソース"
+
+# description
+msgid "dataPanel.SELECTED_SUBTITLE"
+msgstr "{1} が選択されました"
+
+# description
+msgid "dataPanel.TOO_MANY_COLUMNS"
+msgstr "おめでとうございます! [+追加] 列の最大列数の上限に到達しました"
+
+# description
+msgid "dataPanel.COMPLEX_QUERY"
+msgstr "素晴らしい検索です! [+追加] 列には複雑すぎます。しかし、検索バーではまだ入力することができます。"
+
+# description
+msgid "dataPanel.MISSING_UNDERLYING_ACCESS"
+msgstr "質問を編集するには、基礎となるデータへのアクセスを管理者に申請してください。"
+
+# description
+msgid "dataPanel.CREATE_FORMULA_TOOLTIP"
+msgstr "新規フォーミュラを作成"
+
+# description
+msgid "dataPanel.TITLE"
+msgstr "データ"
+
+# description
+msgid "dataPanel.popover.DONT_SHOW_AGAIN"
+msgstr "今後表示しない。"
+
+# description
+msgid "dataPanel.popover.ADD_SOURCES"
+msgstr "ソースを追加して開始"
+
+# description
+msgid "dataPanel.popover.SELECT_DATA_SOURCES"
+msgstr "データソースを選択して検索"
+
+# description
+msgid "dataProfile.metrics.NULL"
+msgstr "NULL 値"
+
+# description
+msgid "dataProfile.NOT_AVAILABLE"
+msgstr "N/A"
+
+# description
+msgid "expressionEditorPanel.EXPRESSION_VALID"
+msgstr "準備ができました!"
+
+# description
+msgid "expressionEditorPanel.EXPRESSION_INCOMPLETE"
+msgstr "式は完了していません"
+
+# description
+msgid "formulaEditor.FORMULA_ASSISTANT"
+msgstr "フォーミュラ アシスタント"
+
+# description
+msgid "rlsRuleEditor.RULES"
+msgstr "ルール"
+
+# description
+msgid "rlsRuleEditor.ADD_RULE"
+msgstr "行セキュリティを追加"
+
+# description
+msgid "rlsRuleEditor.RULE_ASSISTANT"
+msgstr "ルール アシスタント"
+
+# description
+msgid "rlsRuleEditor.RULE_NAME_PLACEHOLDER"
+msgstr "ルール名を入力してください"
+
+# description
+msgid "rlsRuleEditor.EDIT_JOIN_PATH"
+msgstr "ルールがテーブルを結合する方法を変更します。"
+
+# description
+msgid "rlsRuleEditor.RLS_DESCRIPTION"
+msgstr "次のルールの<b>いずれか</b>が満たされる場合、このテーブルの行へのアクセスを提供します。"
+
+# description
+msgid "rlsRuleEditor.EXPLAIN_RLS"
+msgstr "行セキュリティを使うと、特定の行へのアクセスをどのグループが持つか制御することができます。"
+
+# description
+msgid "rlsRuleEditor.EXAMPLE1"
+msgstr "<b>例</b><br><br>データを列からグループへ適用する式を入力します。<br><br>例えば、\"EastSales\" と呼ばれるグループと \"WestSales\" と呼ばれるグループがあるとします。あなたは、これらのグループのユーザーには、それぞれ \"East\" および \"West\" を含む行を表示させたいと考えています。<br>このため、あなたは次のように入力します:<br><br><span class=\"font-blue-default\">concat</span>(<span class=\"font-purple-default\">region</span>, \"Sales\") = ts_groups<br><br>こうすると、ユーザーが \"EastSales\" に属する場合はデータの \"East\" を含む行が表示され、\"WestSales\" に属する場合はデータの \"West\" を含む行が表示されます。<br>"
+
+# description
+msgid "queryJoinType.labels.INNER"
+msgstr "空の行を除外"
+
+# description
+msgid "queryJoinType.labels.LEFT_OUTER"
+msgstr "左外部結合を適用"
+
+# description
+msgid "queryJoinType.labels.FULL_OUTER"
+msgstr "完全外部結合を適用"
+
+# description
+msgid "queryJoinType.descriptions.INNER"
+msgstr "内部結合"
+
+# description
+msgid "queryJoinType.descriptions.LEFT_OUTER"
+msgstr "左外部結合"
+
+# description
+msgid "queryJoinType.descriptions.FULL_OUTER"
+msgstr "完全外部結合"
+
+# description
+msgid "worksheetType.labels.VIEW"
+msgstr "すべての結合を適用"
+
+# description
+msgid "worksheetType.labels.CONTAINER"
+msgstr "結合を段階的に適用 (ほとんどの場合に推奨)"
+
+# description
+msgid "worksheets.ADD_PREFIX"
+msgstr "プレフィクスを追加"
+
+# description
+msgid "worksheets.MULTIPLE_COL_SAME_NAME_WARNING"
+msgstr "このワークシートには同じ名前の列が複数存在します。すべての列名は一意である必要があります。"
+
+# description
+msgid "worksheets.SAME_COLUMNS_ADDED_WITH_NEW_COLS_WARNING"
+msgstr "追加しようとしている列の一部は、すでにこのワークシートに存在しています。"
+
+# description
+msgid "worksheets.SAME_COLUMNS_ADDED_NO_NEW_COLS_WARNING"
+msgstr "追加する列は、すでにこのワークシートに存在しています。"
+
+# description
+msgid "worksheets.corruptWorksheetWarning.PREFIX"
+msgstr "強調表示されたワークシート列の基礎となる列にはアクセスできません。これらの"
+
+# description
+msgid "worksheets.corruptWorksheetWarning.LINK_ACTION"
+msgstr "ワークシートの列を"
+
+# description
+msgid "worksheets.corruptWorksheetWarning.SUFFIX"
+msgstr "削除してください。"
+
+# description
+msgid "worksheets.upgrade.UPGRADE_IN_PROGRESS_MESSAGE"
+msgstr "アップグレード中"
+
+# description
+msgid "worksheets.upgrade.UPGRADE_FAILURE_MESSAGE"
+msgstr "ワークシートのアップグレードでエラーが発生しました。Sage をリフレッシュできませんでした ({errorCode})"
+
+# description
+msgid "worksheets.updating"
+msgstr "更新中"
+
+# description
+msgid "worksheets.verifying"
+msgstr "検証中"
+
+# description
+msgid "worksheets.source"
+msgstr "ソース"
+
+# description
+msgid "worksheets.sources"
+msgstr "ソース"
+
+# description
+msgid "worksheets.noSources"
+msgstr "この列にはソースがありません"
+
+# description
+msgid "vizContext.title"
+msgstr "<span class=\"bk-header-title\">ピンボード <span class=\"bk-element-name\">{pinboardModel}</span> のビジュアリゼーション <span class=\"bk-element-name\">{vizName}</span> の編集中</span>"
+
+# natural query aggregate metrics
+msgid "naturalQuery.aggregateMetricMeasures"
+msgstr "さらに {length} のメトリクス"
+
+# natural query grouping clause
+msgid "naturalQuery.groupingClause"
+msgstr "さらに {length} の列"
+
+# Thoughtspot computed <bla bla bla..>
+msgid "naturalQuery.Thoughtspot_computed"
+msgstr "Thoughtspot が計算しました"
+
+# description
+msgid "naturalQuery.for_each"
+msgstr "それぞれに対して"
+
+# description
+msgid "naturalQuery.combination_of"
+msgstr "次の組み合わせ:"
+
+# description
+msgid "naturalQuery.filtered_on"
+msgstr "フィルター日"
+
+# description
+msgid "naturalQuery.sorted_by"
+msgstr "ソート基準"
+
+# description
+msgid "naturalQuery.And_then"
+msgstr "そして選択されました"
+
+
+# description
+msgid "naturalQuery.by"
+msgstr "により"
+
+# description
+msgid "naturalQuery.And_then_determined"
+msgstr "そして毎日の次の成長を決定しました:"
+
+# description
+msgid "naturalQuery.And_then_determined2"
+msgstr "そして次の成長を決定しました:"
+
+# description
+msgid "naturalQuery.by_linking"
+msgstr "次から情報をリンクすることによる:"
+
+# description
+msgid "naturalQuery.and"
+msgstr "および"
+
+# description
+msgid "naturalQuery.tables_using"
+msgstr "使用しているテーブル"
+
+# description
+msgid "naturalQuery.relation"
+msgstr "関連"
+
+# description
+msgid "naturalQuery.in"
+msgstr "で"
+
+# description
+msgid "naturalQuery.order"
+msgstr "{order} 順で"
+
+# description
+msgid "naturalQuery.columnMeasures"
+msgstr "さらに {length} の列"
+
+# description
+msgid "naturalQuery.regionCount"
+msgstr "次に {topKeyword} {topCount} を選択しました"
+
+# description
+msgid "naturalQuery.more_columns"
+msgstr "さらに多くの列"
+
+# description
+msgid "naturalQuery.over_successive"
+msgstr "連続した {duration} にわたって"
+
+# description
+msgid "DataExplorerVisibleDependents.PINBOARD_ANSWER_BOOK"
+msgstr "ピンボード"
+
+# description
+msgid "DataExplorerVisibleDependents.QUESTION_ANSWER_BOOK"
+msgstr "回答"
+
+# description
+msgid "DataExplorerVisibleDependents.LOGICAL_TABLE.WORKSHEET"
+msgstr "ワークシート"
+
+# description
+msgid "DataExplorerVisibleDependents.LOGICAL_TABLE.AGGR_WORKSHEET"
+msgstr "ワークシート"
+
+# description
+msgid "DataExplorerVisibleDependents.LOGICAL_TABLE.ONE_TO_ONE_LOGICAL"
+msgstr "テーブル"
+
+# description
+msgid "DataExplorerVisibleDependents.LOGICAL_TABLE.USER_DEFINED"
+msgstr "テーブル"
+
+# description
+msgid "metricsRangeValidationErrorMessages.NON_NUMERIC_RANGE_BOUNDARY"
+msgstr "範囲の最小/最大値は数字である必要があります。"
+
+# description
+msgid "metricsRangeValidationErrorMessages.OVERLAPPING_RANGES"
+msgstr "範囲が重複することはできません。"
+
+# description
+msgid "metricsRangeValidationErrorMessages.INVALID_RANGE"
+msgstr "範囲の最小値は最大値未満である必要があります。"
+
+# description
+msgid "NO_METRICS_DEFINED_YET_MESSAGE"
+msgstr "まだ書式条件が定義されていません。新しいものを作成してください。"
+
+# description
+msgid "NULL_VALUE_PLACEHOLDER_LABEL"
+msgstr "{Null}"
+
+# description
+msgid "EMPTY_VALUE_PLACEHOLDER_LABEL"
+msgstr "{Empty}"
+
+# description
+msgid "OTHER_VALUE_PLACEHOLDER_LABEL"
+msgstr "{Other}"
+
+# description
+msgid "UNAVAILABLE_COLUMN_SAMPLE_VALUE"
+msgstr "N/A"
+
+# description
+msgid "sageDropdownSelectEvent.TAB_ON_INPUT"
+msgstr "TAB_ON_INPUT"
+
+# description
+msgid "sageDropdownSelectEvent.ENTER_ON_INPUT"
+msgstr "ENTER_ON_INPUT"
+
+# description
+msgid "joinWorkflow.titles.DEFINE_MAPPING"
+msgstr "マッピングを定義"
+
+# description
+msgid "joinWorkflow.titles.EDIT_MAPPING"
+msgstr "マッピングを編集"
+
+# description
+msgid "preferenceValues.panelState.EXPANDED"
+msgstr "拡大"
+
+# description
+msgid "preferenceValues.panelState.COLLAPSED"
+msgstr "折り畳み"
+
+# description
+msgid "preferenceValues.panelState.AUTO"
+msgstr "自動"
+
+# description
+msgid "pivotTable.Areas.COLUMN"
+msgstr "列"
+
+# description
+msgid "pivotTable.Areas.ROW"
+msgstr "行"
+
+# description
+msgid "pivotTable.Areas.DATA"
+msgstr "データ"
+
+# description
+msgid "pivotTable.ascendingSort"
+msgstr "昇順"
+
+# description
+msgid "pivotTable.descendingSort"
+msgstr "降順"
+
+# description
+msgid "pivotTable.OTHER_LABEL"
+msgstr "{Other}"
+
+# description
+msgid "searchDoctor.SIMILAR_SEARCHES_MESSAGE"
+msgstr "類似の保存された検索を表示"
+
+# description
+msgid "searchDoctor.EXPLORE_SEARCHES_MESSAGE"
+msgstr "保存された検索を検索"
+
+# description
+msgid "help.releaseNameComputationStatus.DETERMINING_VERSION"
+msgstr "バージョン判定中..."
+
+# description
+msgid "help.releaseNameComputationStatus.NOT_RELEASE_CLUSTER"
+msgstr "リリース クラスターではありません"
+
+# description
+msgid "help.releaseNameComputationStatus.ERROR"
+msgstr "残念です。バージョンの判定でエラーが発生しました。"
+
+# description
+msgid "help.mindTouchUrl.home.TITLE"
+msgstr "検索の動作方法"
+
+# description
+msgid "help.mindTouchUrl.keywords.TITLE"
+msgstr "キーワード"
+
+# description
+msgid "help.mindTouchUrl.releaseNotes.TITLE"
+msgstr "リリース ノート"
+
+# description
+msgid "help.mindTouchUrl.adminGuide.TITLE"
+msgstr "ドキュメント"
+
+# description
+msgid "help.mindTouchUrl.downloads.TITLE"
+msgstr "ダウンロード"
+
+# description
+msgid "help.DEFAULT_PAGE_PATH"
+msgstr "ホーム"
+
+# description
+msgid "help.noConnectionViewMessages.TITLE"
+msgstr "ヘルプ センターへようこそ"
+
+# description
+msgid "help.noConnectionViewMessages.INFO_MESSAGE"
+msgstr "オンラインであることが確認できません。ヘルプを完全に表示するには、インターネットに接続してください。"
+
+# description
+msgid "help.noConnectionViewMessages.KEYWORD_TITLE"
+msgstr "キーワード"
+
+# description
+msgid "help.noConnectionViewMessages.KEYWORD_DESCRIPTION"
+msgstr "検索で入力できる内容の例をいくつか確認する"
+
+# description
+msgid "userPropertiesKeys.EMAIL"
+msgstr "メール"
+
+# description
+msgid "sharePanel.ADD_USER_OR_GROUPS"
+msgstr "ユーザーまたはグループを追加"
+
+# description
+msgid "sharePanel.CLICK_TO_SAVE"
+msgstr "変更を保存するには [保存] をクリックしてください"
+
+# description
+msgid "sharePanel.ENTIRE_TABLE"
+msgstr "テーブル全体"
+
+# description
+msgid "sharePanel.FETCHING_PERMISSIONS"
+msgstr "権限取得中..."
+
+# description
+msgid "sharePanel.IS_OWNER"
+msgstr "所有者"
+
+# description
+msgid "sharePanel.SPECIFIC_COLUMN"
+msgstr "特定の列"
+
+# description
+msgid "sharePanel.TITLE"
+msgstr "共有"
+
+# description
+msgid "sharePanel.WHO_ACCESS"
+msgstr "アクセス所有者"
+
+# description
+msgid "loginConstants.LOGIN_WITH_SAML_MESSAGE"
+msgstr "シングル サインオンを使ってログイン"
+
+# description
+msgid "contextMenu.RELATED_ITEMS"
+msgstr "関連項目"
+
+# description
+msgid "importData.NAME_DESCRIPTION_ERROR"
+msgstr "名前/説明が空であることはできません。"
+
+# description
+msgid "importData.CONNECTION_ERROR"
+msgstr "接続が選択されていません。"
+
+# description
+msgid "importData.TABLE_ERROR"
+msgstr "少なくとも 1 つテーブルを選択してください"
+
+# description
+msgid "importData.BASIC_INFO"
+msgstr "基本情報"
+
+# description
+msgid "importData.SELECT_TABLES"
+msgstr "テーブルを選択"
+
+# description
+msgid "importData.FILTERS_TRANSFORMS"
+msgstr "変換"
+
+# description
+msgid "importData.LOAD_DATA"
+msgstr "データを読み込み"
+
+# description
+msgid "importData.ABORT_DATA_IMPORT"
+msgstr "新しいデータソースのインポートを中止"
+
+# description
+msgid "importData.ABORT_CONFIRMATION_MESSAGE"
+msgstr "本当に新しいデータソースのインポートを中止しますか?"
+
+# description
+msgid "importData.CANCEL_BTN_LABEL"
+msgstr "続行する"
+
+# description
+msgid "importData.CONFIRM_BTN_LABEL"
+msgstr "中止する"
+
+# description
+msgid "importData.NEXT"
+msgstr "次へ"
+
+# description
+msgid "importData.EDIT_SCHEMA_TEXT"
+msgstr "DDL コマンド"
+
+# description
+msgid "importData.DEFAULT_DS_NAME"
+msgstr "デフォルト"
+
+# description
+msgid "importData.SUCCESSFUL_STATUS"
+msgstr "成功"
+
+# description
+msgid "importData.FAILED_STATUS"
+msgstr "失敗"
+
+# description
+msgid "importData.DB_SCHEMA_NAME"
+msgstr "InformaticaDataBase.InformaticaSchema."
+
+# description
+msgid "importData.TRUNCATE_TABLES"
+msgstr "既存のテーブルのデータをトランケートします。"
+
+# description
+msgid "importData.ENABLE_EMAILS"
+msgstr "データ読み込みタスクの電子メール通知を有効化する"
+
+# description
+msgid "importData.DELETE_TABLES"
+msgstr "選択されたデータソースと関連付けられたテーブルを削除しますか?"
+
+# description
+msgid "importData.SCHEDULE"
+msgstr "スケジュール"
+
+# description
+msgid "importData.AVAILABLE_TABLES"
+msgstr "使用可能テーブル"
+
+# description
+msgid "importData.DELETE_DATASOURCE.TITLE"
+msgstr "削除を確認"
+
+# description
+msgid "importData.SELECTED_TABLES"
+msgstr "選択されたテーブル"
+
+# description
+msgid "importData.SELECT_CONNECTION_TYPE"
+msgstr "接続タイプを選択"
+
+# description
+msgid "importData.CREATING_DS"
+msgstr "データソース作成中"
+
+# description
+msgid "importData.EXECUTING_DDL"
+msgstr "スキーマ作成中"
+
+# description
+msgid "importData.LOADING_DATA"
+msgstr "データ読み込み中"
+
+# description
+msgid "importData.IMPORT_DISABLED_TIP"
+msgstr "データソースの名前を入力してください"
+
+# description
+msgid "importData.DATATYPE_NOT_SUPPORTED_TIP"
+msgstr "データタイプがサポートされていません。"
+
+# description
+msgid "importData.IMPORT_TIP"
+msgstr "インポートを開始するには、こちらをクリックしてください"
+
+# description
+msgid "importData.CLICK_TO_EDIT_SCHEMA"
+msgstr "<span class=\"bk-text-clickable\"><b>こちら</b></span>をクリックしてスキーマを編集するか、<b>[読み込み]</b> をクリックしてテーブルを読み込んでください。"
+
+# description
+msgid "importData.NO_SCHEMA_TO_EDIT"
+msgstr "編集するスキーマがありません。<b>[読み込み]</b> をクリックしてデータを読み込んでください。"
+
+# description
+msgid "importData.EDIT_SCHEMA"
+msgstr "スキーマを編集"
+
+# description
+msgid "importData.STATUS_PREFIX"
+msgstr "項目のステータス読み込みは: "
+
+# description
+msgid "importData.TITLE_NAME"
+msgstr "名前"
+
+# description
+msgid "importData.LAST_LOAD"
+msgstr "最終読み込み"
+
+# description
+msgid "importData.LOAD_STATUS"
+msgstr "読み込みステータス"
+
+# description
+msgid "importData.SELECT_CONN"
+msgstr "接続を選択"
+
+# description
+msgid "importData.CREATE_CONN"
+msgstr "接続を作成"
+
+# description
+msgid "importData.CONN_NAME"
+msgstr "接続名"
+
+# description
+msgid "importData.DELETE_CONN"
+msgstr "接続を削除"
+
+# description
+msgid "importData.EDIT_CONN"
+msgstr "接続を編集"
+
+# description
+msgid "importData.CANNOT_DELETE"
+msgstr "削除できません"
+
+# description
+msgid "importData.CANNOT_DELETE_TRANSFORMATION"
+msgstr "既存の変換は削除できません。"
+
+# description
+msgid "importData.TABLE_CONTAINS_UNSUPPORTED_COL.SINGLE_TABLE"
+msgstr "選択されたテーブル{1}にはサポートされないデータ タイプを持つ列が含まれています。これは自動的に削除されます。"
+
+# description
+msgid "importData.TABLE_CONTAINS_UNSUPPORTED_COL.MULTIPLE_TABLES"
+msgstr "インポートのために選択された次のテーブルには、サポートされないデータ タイプを持つ列が含まれています。"
+
+# description
+msgid "importData.CONN_DIALOG.TEST_AND_EDIT"
+msgstr "テスト & 編集"
+
+# description
+msgid "importData.CONN_DIALOG.TEST_AND_CREATE"
+msgstr "テスト & 作成"
+
+# description
+msgid "importData.UNSUPPORTED_COLUMN"
+msgstr "サポートされない列データ タイプ"
+
+# description
+msgid "importData.LINK_TO_EXISTING_DATA"
+msgstr "既存のデータにリンク"
+
+# description
+msgid "importData.ASK_A_QUESTION"
+msgstr "質問する"
+
+# description
+msgid "importData.TRY_OVER_AGAIN"
+msgstr "もう一度実行してください"
+
+# description
+msgid "importData.SUCCESS"
+msgstr "成功"
+
+# description
+msgid "importData.FAILED"
+msgstr "失敗"
+
+# description
+msgid "importData.INPROGRESS"
+msgstr "進行中"
+
+# description
+msgid "importData.SCHEDULED"
+msgstr "スケジュール済"
+
+# description
+msgid "importData.ETL_DISABLED"
+msgstr "現在管理者によって無効化されています。"
+
+# description
+msgid "importData.SESSION_LOG_CLICK_TEXT"
+msgstr "セッション ログを表示"
+
+# description
+msgid "importWizard.HEADER_QUESTION"
+msgstr "列名はすでにファイル ヘッダーで定義されていますか?"
+
+# description
+msgid "importWizard.DROP_APPEND_QUESTION"
+msgstr "既存のデータに追加しますか?上書きしますか?"
+
+# description
+msgid "importWizard.FIELD_SEPARATOR_QUESTION"
+msgstr "フィールドは何で分割されていますか?"
+
+# description
+msgid "importWizard.fieldSeparators.COMMA"
+msgstr "カンマ (,)"
+
+# description
+msgid "importWizard.fieldSeparators.SEMICOLON"
+msgstr "セミコロン (;)"
+
+# description
+msgid "importWizard.fieldSeparators.PIPE"
+msgstr "パイプ (|)"
+
+# description
+msgid "importWizard.fieldSeparators.SPACE"
+msgstr "スペース"
+
+# description
+msgid "importWizard.fieldSeparators.TAB"
+msgstr "タブ"
+
+# description
+msgid "importWizard.SELECT_TYPE"
+msgstr "タイプを選択"
+
+# description
+msgid "transformationEditor.TRANSFORM_ASSISTANT"
+msgstr "式アシスタント"
+
+# description
+msgid "transformationEditor.TRANSFORMATION"
+msgstr "式"
+
+# description
+msgid "transformationEditor.ADD_EXPRESSION"
+msgstr "式を追加"
+
+# description
+msgid "transformationEditor.ADD_COLUMN"
+msgstr "列を追加"
+
+# description
+msgid "transformationEditor.VALIDATE_COLUMN"
+msgstr "検証"
+
+# description
+msgid "transformationEditor.NO_TRANSFORMATIONS_DEFINED"
+msgstr "式が定義されていません。何か追加するには [追加] をクリックしてください。"
+
+# description
+msgid "transformationEditor.CANNOT_SAVE"
+msgstr "テーブルを選択して名前を付けたことを確認してください。"
+
+# description
+msgid "transformationEditor.TYPE_MISMATCH"
+msgstr "タイプが一致しません。予想された{1}が{2}を取得しました"
+
+# description
+msgid "transformationEditor.ADD_NEW_COLUMN"
+msgstr "新しい列を追加"
+
+# description
+msgid "transformationEditor.SELECT_COLUMN"
+msgstr "既存の列を選択"
+
+# description
+msgid "transformationEditor.SELECT_TABLE"
+msgstr "テーブルを選択"
+
+# description
+msgid "SAGE_SERVER_NAME"
+msgstr "ThoughtSpot"
+
+# description
+msgid "CALLOSUM_SERVER_NAME"
+msgstr "ThoughtSpot"
+
+# description
+msgid "SAGE_AND_CALLOSUM_SERVER_NAME"
+msgstr "ThoughtSpot"
+
+# description
+msgid "viewPermissionColName"
+msgstr "この権限ではこの列名の表示しか許可されません"
+
+# description
+msgid "VIZ_CORRUPTED_TITLE_NOT_EDITABLE_MESSAGE"
+msgstr "破損したビジュアリゼーションは変更できない可能性があります。"
+
+# description
+msgid "profilePic.UPLOAD_INSTRUCTIONS"
+msgstr ".png または .jpg ファイルをアップロードしてください (4MB未満)。正方形である必要があります (100x100など)。"
+
+# description
+msgid "layout.tileSizes.xs"
+msgstr "xs"
+
+# description
+msgid "layout.tileSizes.s"
+msgstr "s"
+
+# description
+msgid "layout.tileSizes.m"
+msgstr "m"
+
+# description
+msgid "layout.tileSizes.l"
+msgstr "l"
+
+# description
+msgid "apiErrorMessage.detail"
+msgstr "詳細"
+
+# description
+msgid "apiErrorMessage.errorCode"
+msgstr "コード"
+
+# description
+msgid "apiErrorMessage.incidentId"
+msgstr "インシデント ID"
+
+# description
+msgid "apiErrorMessage.downloadTrace"
+msgstr "トレースをダウンロード"
+
+# description
+msgid "apiErrorMessage.reportProblem"
+msgstr "問題を報告"
+
+# description
+msgid "dataDownload.DOWNLOAD"
+msgstr "{vizType} をダウンロード"
+
+# description
+msgid "dataDownload.DOWNLOAD_INSUFFICIENT_PERMISSION"
+msgstr "{vizType} をダウンロードするには、管理者にダウンロード権限を申請してください。"
+
+# description
+msgid "dataDownload.DOWNLOAD_MORE"
+msgstr "さらにダウンロードしますか?"
+
+# description
+msgid "dataDownload.DOWNLOAD_MORE_INSUFFICIENT_PERMISSION"
+msgstr "さらにダウンロードしますか? 管理者にダウンロード権限を申請してください。"
+
+# description
+msgid "metadataObjectMenuItems.save.label"
+msgstr "保存"
+
+# description
+msgid "metadataObjectMenuItems.update.label"
+msgstr "更新"
+
+# description
+msgid "metadataObjectMenuItems.update.disabledTooltip"
+msgstr "一致するヘッドラインが見つからなかったため、回答の更新は無効化されました。"
+
+# description
+msgid "metadataObjectMenuItems.saveUntitled.label"
+msgstr "保存"
+
+# description
+msgid "metadataObjectMenuItems.saveAsWorksheet.label"
+msgstr "ワークシートとして保存"
+
+# description
+msgid "metadataObjectMenuItems.makeACopy.label"
+msgstr "コピーを作成"
+
+# description
+msgid "metadataObjectMenuItems.copyLink.label"
+msgstr "リンクをコピー"
+
+# description
+msgid "metadataObjectMenuItems.pinboardSnapshot.label"
+msgstr "スナップショット"
+
+# description
+msgid "metadataObjectMenuItems.resetLayout.label"
+msgstr "レイアウトをリセット"
+
+# description
+msgid "metadataObjectMenuItems.schedule.label"
+msgstr "スケジュール"
+
+# description
+msgid "metadataObjectMenuItems.schedulesList.label"
+msgstr "スケジュールを管理"
+
+# description
+msgid "metadataObjectMenuItems.share.label"
+msgstr "共有"
+
+# description
+msgid "metadataObjectMenuItems.addFilter.label"
+msgstr "フィルターを追加"
+
+# description
+msgid "metadataObjectMenuItems.addFormula.label"
+msgstr "フォーミュラを追加"
+
+# description
+msgid "metadataObjectMenuItems.searchOnTop.label"
+msgstr "検索が成功しました"
+
+# description
+msgid "metadataObjectMenuItems.triggerA3.label"
+msgstr "自動分析"
+
+# description
+msgid "metadataObjectMenuItems.replaySearch.label"
+msgstr "検索をリプレイ"
+
+# description
+msgid "metadataObjectMenuItems.showUnderlyingData.label"
+msgstr "基礎となるデータを表示"
+
+# description
+msgid "metadataObjectMenuItems.download.label"
+msgstr "ダウンロード"
+
+# description
+msgid "metadataObjectMenuItems.downloadAsPdf.label"
+msgstr "PDF としてダウンロード"
+
+# description
+msgid "metadataObjectMenuItems.downloadAsCsv.label"
+msgstr "CSV としてダウンロード"
+
+# description
+msgid "metadataObjectMenuItems.downloadAsXlsx.label"
+msgstr "XLSX としてダウンロード"
+
+# description
+msgid "metadataObjectMenuItems.presentation.label"
+msgstr "存在"
+
+# description
+msgid "metadataObjectMenuItems.edit.label"
+msgstr "編集"
+
+# description
+msgid "metadataObjectMenuItems.remove.label"
+msgstr "削除"
+
+# description
+msgid "metadataObjectMenuItems.describe.label"
+msgstr "記述"
+
+# description
+msgid "adminSection.userManagement.addUserButtonLabel"
+msgstr "ユーザーを追加"
+
+# description
+msgid "adminSection.userManagement.addGroupButtonLabel"
+msgstr "グループを追加"
+
+# description
+msgid "adminSection.userManagement.addRoleButtonLabel"
+msgstr "ロールを追加"
+
+# description
+msgid "adminSection.userManagement.tabHeader"
+msgstr "ユーザー管理"
+
+# description
+msgid "adminSection.userManagement.tabUsers.name"
+msgstr "ユーザー"
+
+# description
+msgid "adminSection.userManagement.tabGroups.name"
+msgstr "グループ"
+
+# description
+msgid "adminSection.userManagement.tabRoles.name"
+msgstr "ロール"
+
+# description
+msgid "adminSection.userManagement.errors.emailNotValid"
+msgstr "電子メールが無効です。"
+
+# description
+msgid "adminSection.userManagement.errors.passwordNotMatching"
+msgstr "両方のパスワードは一致する必要があります"
+
+# description
+msgid "adminSection.userManagement.privilegesLabel"
+msgstr "権限"
+
+# description
+msgid "adminSection.dataManagement.tabHeader"
+msgstr "データ管理"
+
+# description
+msgid "adminSection.dataManagement.tabBusinessDataModel.name"
+msgstr "ビジネス データ モデル"
+
+# description
+msgid "adminSection.dataManagement.tabDataSecurity.name"
+msgstr "データ セキュリティ"
+
+# description
+msgid "adminSection.healthManagement.tabHeader"
+msgstr "システム ヘルス"
+
+# description
+msgid "adminSection.healthManagement.tabOverview.name"
+msgstr "概要"
+
+# description
+msgid "adminSection.healthManagement.tabData.name"
+msgstr "データ"
+
+# description
+msgid "adminSection.healthManagement.tabDatabase.name"
+msgstr "データ キャッシュ詳細"
+
+# description
+msgid "adminSection.healthManagement.tabAlert.name"
+msgstr "アラート & イベント"
+
+# description
+msgid "adminSection.healthManagement.tabCluster.name"
+msgstr "クラスターマネージャー"
+
+# description
+msgid "adminSection.styleCustomization.tabHeader"
+msgstr "スタイル カスタマイズ"
+
+# description
+msgid "adminSection.styleCustomization.tabRules.name"
+msgstr "ルール"
+
+# description
+msgid "adminSection.styleCustomization.tabResources.name"
+msgstr "リソース"
+
+# description
+msgid "adminSection.jobManagement.tabHeader"
+msgstr "ジョブ管理"
+
+# description
+msgid "adminSection.jobManagement.noRun"
+msgstr "このジョブに対する実行はありません。"
+
+# description
+msgid "alertService.DOWNLOAD_TRACE"
+msgstr "トレースをダウンロード"
+
+# description
+msgid "adminUI.DEFAULT_TIME_FORMAT"
+msgstr "MMM dd, yyyy hh:mm:ss a z"
+
+# description
+msgid "adminUI.tooltip.DELETE_USER"
+msgstr "ユーザーを削除"
+
+# description
+msgid "adminUI.tooltip.ADD_USER_TO_GROUP"
+msgstr "ユーザーをグループに追加"
+
+# description
+msgid "adminUI.messages.NOT_AVAILABLE_MESSAGE"
+msgstr "N/A"
+
+# description
+msgid "adminUI.messages.SEARCH_READY"
+msgstr "準備"
+
+# description
+msgid "adminUI.messages.SEARCH_BUILDING_READY"
+msgstr "構築して準備"
+
+# description
+msgid "adminUI.messages.SEARCH_BUILDING_NOT_READY"
+msgstr "構築して準備しない"
+
+# description
+msgid "adminUI.messages.SEARCH_ERROR"
+msgstr "エラー"
+
+# description
+msgid "adminUI.messages.EVENT_TITLE"
+msgstr "構成イベント"
+
+# description
+msgid "adminUI.messages.ALERT_TITLE"
+msgstr "重要アラート"
+
+# description
+msgid "adminUI.messages.ALERT_DETAIL_TITLE"
+msgstr "アラート"
+
+# description
+msgid "adminUI.messages.EVENT_DETAIL_TITLE"
+msgstr "構成イベント"
+
+# description
+msgid "adminUI.messages.NOTIFICATION_DETAIL_TITLE"
+msgstr "通知イベント"
+
+# description
+msgid "adminUI.messages.DATABASE_DETAIL_TITLE"
+msgstr "データ キャッシュ詳細"
+
+# description
+msgid "adminUI.messages.CLUSTER_DETAIL_INFO_TITLE"
+msgstr "クラスター詳細"
+
+# description
+msgid "adminUI.messages.CLUSTER_DETAIL_LOG_TITLE"
+msgstr "クラスター ログ"
+
+# description
+msgid "adminUI.messages.CLUSTER_DETAIL_SNAPSHOT_TITLE"
+msgstr "スナップショット リスト"
+
+# description
+msgid "adminUI.messages.PERIODIC_SNAPSHOT_FULL_MODE"
+msgstr "フル"
+
+# description
+msgid "adminUI.messages.PERIODIC_SNAPSHOT_DISABLED"
+msgstr "無効"
+
+# description
+msgid "adminUI.messages.SEARCH_DETAIL_TABLE_TITLE"
+msgstr "テーブル情報"
+
+# description
+msgid "adminUI.captions.CREATED_AT"
+msgstr "作成時間"
+
+# description
+msgid "adminUI.captions.NO_GROUPS"
+msgstr "グループがありません"
+
+# description
+msgid "adminUI.captions.NO_ROLES"
+msgstr "ロールがありません"
+
+# description
+msgid "adminUI.captions.GROUPS_TITLE"
+msgstr "{1} グループ {2}"
+
+# description
+msgid "adminUI.captions.NO_USERS"
+msgstr "ユーザーがありません"
+
+# description
+msgid "adminUI.captions.USERS_TITLE"
+msgstr "{1} ユーザー {2}"
+
+# description
+msgid "adminUI.captions.ROLES_TITLE"
+msgstr "{1} ロール {2}"
+
+# description
+msgid "adminUI.captions.USER_MENU"
+msgstr "ユーザー管理"
+
+# description
+msgid "adminUI.captions.GROUP_MENU"
+msgstr "グループ管理"
+
+# description
+msgid "adminUI.captions.DATA_MENU"
+msgstr "データ管理"
+
+# description
+msgid "adminUI.captions.USER_LABEL"
+msgstr "ユーザー"
+
+# description
+msgid "adminUI.captions.GROUP_LABEL"
+msgstr "グループ"
+
+# description
+msgid "adminUI.captions.FILE_UPLOAD_METADATA_LABEL"
+msgstr "ビジネス データ モデル"
+
+# description
+msgid "adminUI.captions.FILE_UPLOAD_SECURITY_LABEL"
+msgstr "データ セキュリティ"
+
+# description
+msgid "adminUI.captions.ADD_GROUP"
+msgstr "グループを追加"
+
+# description
+msgid "adminUI.captions.ADD_USER"
+msgstr "ユーザーを追加"
+
+# description
+msgid "adminUI.captions.ADD_ROLE"
+msgstr "ロールを追加"
+
+# description
+msgid "adminUI.captions.ADD_USER_TO_GROUP"
+msgstr "ユーザーをグループに追加"
+
+# description
+msgid "adminUI.captions.EDIT_USER"
+msgstr "ユーザーを編集"
+
+# description
+msgid "adminUI.captions.ADD_NEW_USER"
+msgstr "新規ユーザーを追加"
+
+# description
+msgid "adminUI.captions.ADD_NEW_GROUP"
+msgstr "新規グループを追加"
+
+# description
+msgid "adminUI.captions.ADD_NEW_ROLE"
+msgstr "新規ロールを追加"
+
+# description
+msgid "adminUI.captions.EDIT_GROUP"
+msgstr "グループを編集"
+
+# description
+msgid "adminUI.captions.SEARCH"
+msgstr "名前で検索"
+
+# description
+msgid "adminUI.captions.GROUPS_IN_GROUP.0"
+msgstr "グループにグループなし"
+
+# description
+msgid "adminUI.captions.GROUPS_IN_GROUP.1"
+msgstr "グループに 1 グループ"
+
+# description
+msgid "adminUI.captions.GROUPS_IN_GROUP.n"
+msgstr "グループに {1} グループ"
+
+# description
+msgid "adminUI.captions.USERS_IN_GROUP.0"
+msgstr "グループにユーザーなし"
+
+# description
+msgid "adminUI.captions.USERS_IN_GROUP.1"
+msgstr "グループに 1 ユーザー"
+
+# description
+msgid "adminUI.captions.USERS_IN_GROUP.n"
+msgstr "グループに {1} ユーザー"
+
+# description
+msgid "adminUI.captions.ROLES_IN_GROUP.0"
+msgstr "グループにロールが割り当てられていません"
+
+# description
+msgid "adminUI.captions.ROLES_IN_GROUP.1"
+msgstr "グループに 1 ロールが割り当てられました"
+
+# description
+msgid "adminUI.captions.ROLES_IN_GROUP.n"
+msgstr "グループに {1} ロールが割り当てられました"
+
+# description
+msgid "adminUI.captions.GROUPS_IN_ROLE.0"
+msgstr "ロールにグループが割り当てられていません"
+
+# description
+msgid "adminUI.captions.GROUPS_IN_ROLE.1"
+msgstr "ロールに 1 グループが割り当てられました"
+
+# description
+msgid "adminUI.captions.GROUPS_IN_ROLE.n"
+msgstr "ロールに {1} グループが割り当てられました"
+
+# description
+msgid "adminUI.captions.USERS_IN_ROLE.0"
+msgstr "ロールにユーザーが割り当てられていません"
+
+# description
+msgid "adminUI.captions.USERS_IN_ROLE.1"
+msgstr "ロールに 1 ユーザーが割り当てられました"
+
+# description
+msgid "adminUI.captions.USERS_IN_ROLE.n"
+msgstr "ロールに {1} ユーザーが割り当てられました"
+
+# description
+msgid "adminUI.captions.GROUPS_IN_USER.0"
+msgstr "ユーザーにグループが割り当てられていません"
+
+# description
+msgid "adminUI.captions.GROUPS_IN_USER.1"
+msgstr "ユーザーに 1 グループが割り当てられていません"
+
+# description
+msgid "adminUI.captions.GROUPS_IN_USER.n"
+msgstr "ユーザーに {1} グループが割り当てられました"
+
+# description
+msgid "adminUI.captions.ROLES_IN_USER.0"
+msgstr "ユーザーにロールが割り当てられていません"
+
+# description
+msgid "adminUI.captions.ROLES_IN_USER.1"
+msgstr "ユーザーに 1 ロールが割り当てられました"
+
+# description
+msgid "adminUI.captions.ROLES_IN_USER.n"
+msgstr "ユーザーに {1} ユーザーが割り当てられました"
+
+# description
+msgid "adminUI.captions.MANAGE_GROUPS_TAB"
+msgstr "グループを管理"
+
+# description
+msgid "adminUI.captions.MANAGE_USERS_TAB"
+msgstr "ユーザーを管理"
+
+# description
+msgid "adminUI.captions.MANAGE_ROLES_TAB"
+msgstr "ロールを管理"
+
+# description
+msgid "adminUI.captions.NAME"
+msgstr "名前"
+
+# description
+msgid "adminUI.captions.USERNAME"
+msgstr "ユーザー名"
+
+# description
+msgid "adminUI.captions.DESCRIPTION"
+msgstr "説明"
+
+# description
+msgid "adminUI.captions.DISPLAYED_NAME"
+msgstr "表示名"
+
+# description
+msgid "adminUI.captions.EMAIL"
+msgstr "電子メール"
+
+# description
+msgid "adminUI.captions.NEW_PASSWORD"
+msgstr "パスワード"
+
+# description
+msgid "adminUI.captions.PASSWORD"
+msgstr "パスワードを変更"
+
+# description
+msgid "adminUI.captions.PASSWORD_CONFIRMATION"
+msgstr "パスワードを確認"
+
+# description
+msgid "adminUI.captions.EDIT_ROLE"
+msgstr "ロールを編集"
+
+# description
+msgid "adminUI.captions.PRIVILEGES"
+msgstr "権限"
+
+# description
+msgid "adminUI.captions.PROPERTY"
+msgstr "プロパティ"
+
+# description
+msgid "adminUI.captions.CONTENT"
+msgstr "内容"
+
+# description
+msgid "adminUI.captions.CLUSTER_NAME"
+msgstr "クラスター名"
+
+# description
+msgid "adminUI.captions.CLUSTER_ID"
+msgstr "クラスター ID"
+
+# description
+msgid "adminUI.captions.RELEASE"
+msgstr "リリース"
+
+# description
+msgid "adminUI.captions.LAST_UPDATE_TIME"
+msgstr "最終更新時間"
+
+# description
+msgid "adminUI.captions.ZOOKEEPER_SERVERS"
+msgstr "Zookeeper サーバー"
+
+# description
+msgid "adminUI.captions.HDFS_NAME_NODES"
+msgstr "HDFS 名ノード"
+
+# description
+msgid "adminUI.captions.CLUSTER_ALERT_EMAIL"
+msgstr "クラスター アラート電子メール"
+
+# description
+msgid "adminUI.captions.SERVICE_ALERT_EMAIL"
+msgstr "サービス アラート電子メール"
+
+# description
+msgid "adminUI.captions.PERIODIC_SNAPSHOT_MODE"
+msgstr "定期スナップショット モード"
+
+# description
+msgid "adminUI.captions.EVENT_TYPE"
+msgstr "タイプ"
+
+# description
+msgid "adminUI.captions.EVENT_TIMESTAMP"
+msgstr "時間"
+
+# description
+msgid "adminUI.captions.EVENT_RELEASE"
+msgstr "リリース"
+
+# description
+msgid "adminUI.captions.SNAPSHOT_NAME"
+msgstr "名前"
+
+# description
+msgid "adminUI.captions.SNAPSHOT_REASON"
+msgstr "理由"
+
+# description
+msgid "adminUI.captions.SNAPSHOT_FINISH_TIME"
+msgstr "時間"
+
+# description
+msgid "adminUI.captions.SNAPSHOT_SIZE"
+msgstr "サイズ"
+
+# description
+msgid "adminUI.captions.DATABASE_NAME"
+msgstr "データベース"
+
+# description
+msgid "adminUI.captions.USER_SCHEMA_NAME"
+msgstr "ユーザー スキーマ"
+
+# description
+msgid "adminUI.captions.DATABASE_TABLE_GUID"
+msgstr "GUID"
+
+# description
+msgid "adminUI.captions.DATABASE_TABLE_NAME"
+msgstr "名前"
+
+# description
+msgid "adminUI.captions.DATABASE_TABLE_STATUS"
+msgstr "データベース ステータス"
+
+# description
+msgid "adminUI.captions.DATABASE_SERVING_TIMESTAMP"
+msgstr "稼働タイムスタンプ"
+
+# description
+msgid "adminUI.captions.DATABASE_SCHEMA_VERSION"
+msgstr "スキーマ バージョン"
+
+# description
+msgid "adminUI.captions.DATABASE_DATA_VERSION"
+msgstr "データ バージョン"
+
+# description
+msgid "adminUI.captions.DATABASE_CREATED_ON"
+msgstr "最終更新時間"
+
+# description
+msgid "adminUI.captions.DATABASE_NUM_ROWS"
+msgstr "合計行数"
+
+# description
+msgid "adminUI.captions.DATABASE_ROW_SKEW"
+msgstr "行数非対称"
+
+# description
+msgid "adminUI.captions.DATABASE_NUM_DELETED_ROWS"
+msgstr "削除された行"
+
+# description
+msgid "adminUI.captions.DATABASE_APPROXIMATE_SIZE_MB"
+msgstr "想定サイズ (MB)"
+
+# description
+msgid "adminUI.captions.DATABASE_APPROXIMATE_SIZE_MB_SKEW"
+msgstr "想定サイズ (MB) 非対称"
+
+# description
+msgid "adminUI.captions.DATABASE_TOTAL_SHARDS"
+msgstr "合計シャード"
+
+# description
+msgid "adminUI.captions.DATABASE_CLUSTER_SPACE_USED"
+msgstr "使用クラスター スペース (MB)"
+
+# description
+msgid "adminUI.captions.DATABASE_LAST_UPDATED_TIME"
+msgstr "最終更新タイムスタンプ"
+
+# description
+msgid "adminUI.captions.SEARCH_TABLE_GUID"
+msgstr "GUID"
+
+# description
+msgid "adminUI.captions.SEARCH_TABLE_NAME"
+msgstr "名前"
+
+# description
+msgid "adminUI.captions.SEARCH_TABLE_STATUS"
+msgstr "検索ステータス"
+
+# description
+msgid "adminUI.captions.SEARCH_DATABASE_VERSION"
+msgstr "データベース バージョン"
+
+# description
+msgid "adminUI.captions.SEARCH_BUILDING_VERSION"
+msgstr "ビルド バージョン"
+
+# description
+msgid "adminUI.captions.SEARCH_SERVING_VERSION"
+msgstr "稼働バージョン"
+
+# description
+msgid "adminUI.captions.SEARCH_LAST_BUILD_DURATION"
+msgstr "最終インデックス ビルド期間"
+
+# description
+msgid "adminUI.clusterSummaryViz.CLUSTER_TITLE"
+msgstr "クラスター サマリー"
+
+# description
+msgid "adminUI.clusterSummaryViz.CLUSTER_NAME"
+msgstr "クラスター名"
+
+# description
+msgid "adminUI.clusterSummaryViz.RELEASE"
+msgstr "リリース"
+
+# description
+msgid "adminUI.clusterSummaryViz.NUMBER_OF_NODES"
+msgstr "ノード数"
+
+# description
+msgid "adminUI.clusterSummaryViz.LAST_SNAPSHOT_TIME"
+msgstr "最終スナップショット時間"
+
+# description
+msgid "adminUI.databaseSummaryViz.DATABASE_TITLE"
+msgstr "リレーショナル データ キャッシュ"
+
+# description
+msgid "adminUI.databaseSummaryViz.LAST_DATA_UPDATE"
+msgstr "最終データ更新"
+
+# description
+msgid "adminUI.databaseSummaryViz.CONTENT_TITLES.TABLES_LOADED"
+msgstr "テーブルが読み込まれました"
+
+# description
+msgid "adminUI.databaseSummaryViz.CONTENT_TITLES.TABLES_BEING_UPDATED"
+msgstr "テーブルが読み込まれています"
+
+# description
+msgid "adminUI.databaseSummaryViz.CONTENT_TITLES.NEW_TABLES_BEING_LOADED"
+msgstr "新規テーブルが読み込まれています"
+
+# description
+msgid "adminUI.databaseSummaryViz.CONTENT_TITLES.ROWS"
+msgstr "行"
+
+# description
+msgid "adminUI.searchSummaryViz.SEARCH_TITLE"
+msgstr "リレーショナル検索エンジン"
+
+# description
+msgid "adminUI.searchSummaryViz.LAST_INDEXED"
+msgstr "最終インデックス"
+
+# description
+msgid "adminUI.searchSummaryViz.CONTENT_TITLES.TABLES_SEARCHABLE"
+msgstr "テーブルは検索可能です"
+
+# description
+msgid "adminUI.searchSummaryViz.CONTENT_TITLES.TABLES_BEING_INDEXED"
+msgstr "テーブルにインデックスが付与されています"
+
+# description
+msgid "adminUI.searchSummaryViz.CONTENT_TITLES.NEW_TABLES_BEING_INDEXED"
+msgstr "新規テーブルにインデックスが付与されています"
+
+# description
+msgid "adminUI.searchSummaryViz.CONTENT_TITLES.TOKENS_SEARCHABLE"
+msgstr "トークンは検索可能です"
+
+# description
+msgid "filtersPermission.READONLY"
+msgstr "読取専用"
+
+# description
+msgid "filtersPermission.EDITABLE"
+msgstr "編集可能"
+
+# description
+msgid "filtersMessages.READONLY"
+msgstr "あなたはこのフィルターの表示のみ実行できます"
+
+# description
+msgid "filtersMessages.CONFIGURE"
+msgstr "構成を変更"
+
+# description
+msgid "filtersMessages.checkboxFilter.DISALLOW_SELECT_ALL"
+msgstr "[すべて選択] は大量の値に対して無効化されました。一括オプションで値を追加してください"
+
+# description
+msgid "bulkFilters.ADD_VALUES_IN_BULK"
+msgstr "一括で値を追加"
+
+# description
+msgid "bulkFilters.TEXT_AREA_PLACEHOLDER"
+msgstr "値を分けるために , や ; 、ニューライン、タブを使用することができます。例: red, blue, green"
+
+# description
+msgid "bulkFilters.MATCH_ERROR"
+msgstr "フィルタしている列にこれらの値が見つかりませんでした。{1} エラーです。"
+
+# description
+msgid "bulkFilters.EXCEEDED_ONE_TIME_ADDITION"
+msgstr "一度に最大 {1} 個の値まで追加することができます。"
+
+# description
+msgid "bulkFilters.EXCEEDED_OVERALL_FILTER_VALUES"
+msgstr "バルク フィルタリングは、最大 {1} 個までの値をサポートします。"
+
+# description
+msgid "createSchema.UNKNOWN_ERROR"
+msgstr "不明なエラー"
+
+# description
+msgid "createSchema.CREATE_SCHEMA_DISABLED_TIP"
+msgstr "スキーマのインポートは管理者のみ許可されます。"
+
+# description
+msgid "createSchema.EXECUTE"
+msgstr "実行"
+
+# description
+msgid "createSchema.EXECUTE_TIP"
+msgstr "順番に SQL コマンドを実行します"
+
+# description
+msgid "createSchema.CONTINUE"
+msgstr "続行"
+
+# description
+msgid "createSchema.CONTINUE_TIP"
+msgstr "成功したコマンドは再実行されません"
+
+# description
+msgid "createSchema.RESET"
+msgstr "リセット"
+
+# description
+msgid "createSchema.CREATE_SCHEMA"
+msgstr "スキーマをアップロード"
+
+# description
+msgid "createSchema.SAVE_COMMANDS"
+msgstr "コマンドを保存"
+
+# description
+msgid "createSchema.SAVE_COMMANDS_TIP"
+msgstr "元のファイルは上書きされません"
+
+# description
+msgid "createSchema.VIEW_TABLES"
+msgstr "テーブルを表示"
+
+# description
+msgid "createSchema.WRITE_TQL"
+msgstr "TQL を書く"
+
+# description
+msgid "scheduler.SCHEDULE_OPTIONS"
+msgstr "スケジュールオプション"
+
+# description
+msgid "scheduler.STARTS"
+msgstr "開始:"
+
+# description
+msgid "scheduler.AT"
+msgstr "に"
+
+# description
+msgid "scheduler.COLON"
+msgstr ":"
+
+# description
+msgid "scheduler.TIMEZONE"
+msgstr "タイムゾーン:"
+
+# description
+msgid "scheduler.REPEATS"
+msgstr "繰り返し"
+
+# description
+msgid "scheduler.EVERY_N_MINUTS"
+msgstr "繰り返し頻度オプション: N分ごと"
+
+# description
+msgid "scheduler.RUN_EVERY"
+msgstr "タスク実行間隔:"
+
+# description
+msgid "scheduler.MINUTES_ON"
+msgstr "分:"
+
+# description
+msgid "scheduler.TIME_RANGE"
+msgstr "時間範囲:"
+
+# description
+msgid "scheduler.ALL_DAY"
+msgstr "一日中"
+
+# description
+msgid "scheduler.BETWEEN"
+msgstr "間"
+
+# description
+msgid "scheduler.AND"
+msgstr "および"
+
+# description
+msgid "scheduler.EACH_DAY"
+msgstr "毎日"
+
+# description
+msgid "scheduler.REPEAT_OPTIONS"
+msgstr "繰り返しオプション:"
+
+# description
+msgid "scheduler.REPEAT_INDEFINITELY"
+msgstr "無限に繰り返す"
+
+# description
+msgid "scheduler.REPEAT_UNTIL"
+msgstr "繰り返し期限:"
+
+# description
+msgid "scheduler.HOURLY"
+msgstr "繰り返し頻度オプション: 時間単位"
+
+# description
+msgid "scheduler.HOURS_ON"
+msgstr "時間:"
+
+# description
+msgid "scheduler.DAILY"
+msgstr "繰り返し頻度オプション: 日単位"
+
+# description
+msgid "scheduler.RUN_THE_TASK"
+msgstr "タスクを実行"
+
+# description
+msgid "scheduler.EVERY_DAY"
+msgstr "毎日"
+
+# description
+msgid "scheduler.EVERY_WEEKDAY"
+msgstr "各平日"
+
+# description
+msgid "scheduler.WEEKLY"
+msgstr "繰り返し頻度オプション: 週単位"
+
+# description
+msgid "scheduler.RUN_WEEK"
+msgstr "タスクを次の毎週実行:"
+
+# description
+msgid "scheduler.MONTHLY"
+msgstr "繰り返し頻度オプション: 月単位"
+
+# description
+msgid "scheduler.RUN_ON"
+msgstr "タスク実行日:"
+
+# description
+msgid "scheduler.DAY"
+msgstr "曜日"
+
+# description
+msgid "scheduler.OF_EVERY_MONTH"
+msgstr "毎月の"
+
+# description
+msgid "scheduler.THE"
+msgstr "その"
+
+# description
+msgid "scheduler.intervals.NONE"
+msgstr "繰り返さない"
+
+# description
+msgid "scheduler.intervals.MINUTELY"
+msgstr "N分ごと"
+
+# description
+msgid "scheduler.intervals.HOURLY"
+msgstr "時間単位"
+
+# description
+msgid "scheduler.intervals.DAILY"
+msgstr "日単位"
+
+# description
+msgid "scheduler.intervals.WEEKLY"
+msgstr "週単位"
+
+# description
+msgid "scheduler.intervals.MONTHLY"
+msgstr "月単位"
+
+# description
+msgid "scheduler.START_TIME_NULL_MSG"
+msgstr "開始時間が NULL であることはできません。"
+
+# description
+msgid "scheduler.START_TIME_ERROR"
+msgstr "開始時間が現在の時間より前であることはできません。"
+
+# description
+msgid "scheduler.END_TIME_ERROR"
+msgstr "開始時間が終了の時間より後であることはできません。"
+
+# description
+msgid "statusViewer.STATUS_VIEWER"
+msgstr "ステータス"
+
+# description
+msgid "statusViewer.DISABLE_SCHEDULE"
+msgstr "スケジュールを無効化"
+
+# description
+msgid "dataFilter.NO_FILTER_TEXT"
+msgstr "データ フィルターを定義するには、オブジェクトを選択し、フィールドを選択し、演算子を選択し、フィルター値を入力します。[OK] をクリックすると、データ フィルターがタスクに追加されます。"
+
+# description
+msgid "dataFilter.OBJECT"
+msgstr "テーブル:"
+
+# description
+msgid "dataFilter.FILTER"
+msgstr "フィルター基準:"
+
+# description
+msgid "dataFilter.ROW_LIMIT"
+msgstr "行制約"
+
+# description
+msgid "dataFilter.PROCESS_ALL_ROWS"
+msgstr "すべての行を処理"
+
+# description
+msgid "dataFilter.PROCESS_ONLY_THE_FIRST"
+msgstr "最初のみ処理"
+
+# description
+msgid "dataFilter.DATA_FILTERS"
+msgstr "データ フィルター"
+
+# description
+msgid "dataFilter.ADD_FILTER"
+msgstr "フィルターを追加"
+
+# description
+msgid "dataFilter.ROWS"
+msgstr "行"
+
+# description
+msgid "dataFilter.CREATE_FILTER_TEXT"
+msgstr "定義されたフィルターがありません。タスクはソースからの全データを処理します。"
+
+# description
+msgid "dataFilter.FILTER_TYPES.EQUALS.display"
+msgstr "等しい"
+
+# description
+msgid "dataFilter.FILTER_TYPES.NOT_EQUALS.display"
+msgstr "等しくない"
+
+# description
+msgid "dataFilter.FILTER_TYPES.LESS_THAN.display"
+msgstr "より小さい"
+
+# description
+msgid "dataFilter.FILTER_TYPES.LESS_THAN_OR_EQUALS.display"
+msgstr "以下"
+
+# description
+msgid "dataFilter.FILTER_TYPES.GREATER_THAN.display"
+msgstr "より大きい"
+
+# description
+msgid "dataFilter.FILTER_TYPES.GREATER_THAN_OR_EQUALS.display"
+msgstr "以上"
+
+# description
+msgid "dataFilter.FILTER_TYPES.STARTS_WITH.display"
+msgstr "開始"
+
+# description
+msgid "dataFilter.FILTER_TYPES.ENDS_WITH.display"
+msgstr "終了"
+
+# description
+msgid "dataFilter.FILTER_TYPES.CONTAINS.display"
+msgstr "含まない"
+
+# description
+msgid "dataFilter.FILTER_TYPES.IS_NULL.display"
+msgstr "NULL である"
+
+# description
+msgid "dataFilter.FILTER_TYPES.IS_NOT_NULL.display"
+msgstr "NULL でない"
+
+# description
+msgid "contactSupport.CONTACT_SUPPORT"
+msgstr "サポートに連絡してください。"
+
+# description
+msgid "debug.IS_ROOT"
+msgstr "は root です"
+
+# description
+msgid "debugging.messages.DEBUG_INFO_DOWNLOAD_LINK_MESSAGE_PREFIX"
+msgstr "クリックしてデバッグ ログをダウンロードしてください"
+
+# description
+msgid "debugging.messages.DEBUG_INFO_DOWNLOAD_LINK_MESSAGE_SUFFIX"
+msgstr "こちら"
+
+# description
+msgid "embed.embeddedObjectType.VISUALIZATION"
+msgstr "ビジュアリゼーション"
+
+# description
+msgid "embed.embeddedObjectType.PINBOARD"
+msgstr "ピンボード"
+
+# description
+msgid "embed.INVALID_EMBED_CONFIGURATION_MESSAGE"
+msgstr "この ThoughtSpot ビジュアリゼーションの構成が不正です。管理者に連絡して修正してください。"
+
+# description
+msgid "embed.EMBED_CONTROL_ACTION_MESSAGE"
+msgstr "以下のテキストをコピーすると、{embeddedObjectType} への直接リンクになります。"
+
+# description
+msgid "embed.MISSING_VISUALIZATIONS_MESSAGE"
+msgstr "ピンボードに 1 つ以上のビジュアリゼーションが見つかりませんでした。管理者に連絡して修正してください。"
+
+# description
+msgid "embed.control.TITLE"
+msgstr "リンクをコピー"
+
+# description
+msgid "print.INVALID_PRINT_CONFIGURATION_MESSAGE"
+msgstr "印刷構成が不正です。パラメータを確認してください。"
+
+# description
+msgid "timeBucketLabels.ms"
+msgstr "詳細"
+
+# description
+msgid "timeBucketLabels.h"
+msgstr "時間単位"
+
+# description
+msgid "timeBucketLabels.d"
+msgstr "日単位"
+
+# description
+msgid "timeBucketLabels.w"
+msgstr "週単位"
+
+# description
+msgid "timeBucketLabels.M"
+msgstr "月単位"
+
+# description
+msgid "timeBucketLabels.Q"
+msgstr "四半期単位"
+
+# description
+msgid "timeBucketLabels.y"
+msgstr "年単位"
+
+# description
+msgid "a3.TRIGGER_MESSAGE"
+msgstr "自動優良分析リクエストが送信されました。完了したら通知が届きます。"
+
+# description
+msgid "a3.ANALYSIS_COMPLETE"
+msgstr "自動優良分析が完了しました。"
+
+# description
+msgid "a3.OPEN_PINBOARD"
+msgstr "ピンボードを開くにはこちらをクリックしてください。"
+
+# description
+msgid "a3.ANALYSIS_FAILED"
+msgstr "分析が失敗しました。"
+
+# description
+msgid "appInitialization.APP_INITIALIZATION_FAILURE_MESSAGE"
+msgstr "ThoughtSpot の初期化が失敗しました。ページを再読み込みするか、問題が解消されない場合は管理者に連絡してください。"
+
+# description
+msgid "rangeSelect.ENTER_A_VALUE"
+msgstr "値を入力してください"
+
+# description
+msgid "rangeSelect.ENTER_MIN_VALUE"
+msgstr "最小値を入力してください"
+
+# description
+msgid "rangeSelect.ENTER_MAX_VALUE"
+msgstr "最大値を入力してください"
+
+# description
+msgid "checkboxFilter.emptyFilterTextPlaceholder"
+msgstr "(選択)"
+
+# description
+msgid "checkboxFilter.TYPE_A_VALUE"
+msgstr "値を入力してください"
+
+# description
+msgid "checkboxFilter.ALL"
+msgstr "すべて"
+
+# description
+msgid "checkboxFilter.SELECTED"
+msgstr "選択済"
+
+# description
+msgid "checkboxFilter.NO_SELECTED_FILTER"
+msgstr "選択されたフィルターがありません"
+
+# description
+msgid "checkboxFilter.THINKING"
+msgstr "大丈夫です。こちらで考えています。"
+
+# description
+msgid "checkboxFilter.TRY_REDUCING_VALUES"
+msgstr "{1}+ の値。入力して減らしてください"
+
+# description
+msgid "checkboxFilter.KEEP_TRYING"
+msgstr "まだ多すぎます...入力を続けてください!"
+
+# description
+msgid "checkboxFilter.SAMPLE_VALUES"
+msgstr "サンプル値"
+
+# description
+msgid "checkboxFilter.NO_MATCHES"
+msgstr "一致する値がありません。"
+
+# description
+msgid "pinboardFilter.ADD_FILTER"
+msgstr "フィルターを追加"
+
+# description
+msgid "pinboardFilter.NO_SOURCES_PLACEHOLDER"
+msgstr "フィルターの追加は、ワークシートでのみサポートされます。データソースは、ピン留めされたビジュアリゼーションに基づいて自動的に選択されます。"
+
+# description
+msgid "sageUserFeedback.DIALOG_TITLE"
+msgstr "クエリ提案フィードバック"
+
+# description
+msgid "sageUserFeedback.SELECT_A_RATING"
+msgstr "提案のレーティングを選択"
+
+# description
+msgid "sageUserFeedback.ENTER_DESCRIPTION_PLACEHOLDER"
+msgstr "ご迷惑をお掛けして申し訳ございません。問題を説明してください。"
+
+# description
+msgid "sageUserFeedback.GIVE_FEEDBACK"
+msgstr "有意義な提案が表示されませんか? ご意見を送信してください!"
+
+# description
+msgid "suggestions.ADDITIONAL_SOURCES"
+msgstr "追加のソースから提案"
+
+# description
+msgid "suggestions.SYNONYMS"
+msgstr "シノニムから提案"
+
+# description
+msgid "suggestions.SEARCH_HISTORY"
+msgstr "検索履歴から提案"
+
+# description
+msgid "fontPreview.PREVIEW_TEXT"
+msgstr "機敏な茶色のキツネは鈍重な犬を飛び越える"
+
+# description
+msgid "fontPreview.NO_FONT_FACE_MESSAGE"
+msgstr "フォント ファイルをアップロードしてください。"
+
+# description
+msgid "fontPreview.fontProperties.FAMILY"
+msgstr "名前"
+
+# description
+msgid "fontPreview.fontProperties.WEIGHT"
+msgstr "ウェイト"
+
+# description
+msgid "fontPreview.fontProperties.STYLE"
+msgstr "スタイル"
+
+# description
+msgid "fontPreview.fontProperties.SIZE"
+msgstr "サイズ (px)"
+
+# description
+msgid "fontPreview.fontProperties.UNICODE_RANGE"
+msgstr "ユニコード範囲"
+
+# description
+msgid "fontPreview.fontProperties.VARIANT"
+msgstr "分散"
+
+# description
+msgid "fontPreview.fontProperties.STRETCH"
+msgstr "拡大"
+
+# description
+msgid "fontPreview.fontProperties.COLOR"
+msgstr "色"
+
+# description
+msgid "fontSelector.EDIT_FONT_BUTTON_LABEL"
+msgstr "フォントを編集"
+
+# description
+msgid "fontSelector.ADD_NEW_FONT_BUTTON_LABEL"
+msgstr "フォントを追加"
+
+# description
+msgid "fontEditor.DEFAULT_FONT_FAMILY_NAME"
+msgstr "カスタム フォント"
+
+# description
+msgid "fontEditor.fontFaceWeight.NORMAL"
+msgstr "標準"
+
+# description
+msgid "fontEditor.fontFaceWeight.BOLD"
+msgstr "太字"
+
+# description
+msgid "fontEditor.fontFaceWeight.LIGHT"
+msgstr "ライト"
+
+# description
+msgid "fontEditor.fontFaceStyle.NORMAL"
+msgstr "標準"
+
+# description
+msgid "fontEditor.fontFaceStyle.ITALIC"
+msgstr "イタリック"
+
+# description
+msgid "fontEditor.fontFaceStyle.OBLIQUE"
+msgstr "斜体"
+
+# description
+msgid "customizableStyleProperties.FONT_FACE"
+msgstr "フォント"
+
+# description
+msgid "customizableStyleProperties.BACKGROUND_COLOR"
+msgstr "背景色"
+
+# description
+msgid "customizableStyleProperties.BACKGROUND_IMAGE"
+msgstr "背景画像"
+
+# description
+msgid "styleCustomizer.resetButton.LABEL"
+msgstr "リセット"
+
+# description
+msgid "styleCustomizer.appLogoSelector.HEADER"
+msgstr "アプリケーション ロゴ (デフォルト)"
+
+# description
+msgid "styleCustomizer.appLogoSelector.SUBTEXT"
+msgstr "推奨サイズ: 140px x 140px"
+
+# description
+msgid "styleCustomizer.wideAppLogoSelector.HEADER"
+msgstr "アプリケーション ロゴ (ワイド)"
+
+# description
+msgid "styleCustomizer.wideAppLogoSelector.SUBTEXT"
+msgstr "推奨サイズ: 440px x 100px"
+
+# description
+msgid "styleCustomizer.chartFontSelector.HEADER"
+msgstr "グラフ ビジュアリゼーション フォント"
+
+# description
+msgid "styleCustomizer.chartFontSelector.NO_SELECTION_PLACEHOLDER_MESSAGE"
+msgstr "フォントを選択"
+
+# description
+msgid "styleCustomizer.tableFontSelector.HEADER"
+msgstr "テーブル ビジュアリゼーション フォント"
+
+# description
+msgid "styleCustomizer.tableFontSelector.NO_SELECTION_PLACEHOLDER_MESSAGE"
+msgstr "フォントを選択"
+
+# description
+msgid "styleCustomizer.appBackgroundSelector.HEADER"
+msgstr "埋め込みアプリケーション背景"
+
+# description
+msgid "styleCustomizer.chartColorPaletteEditor.HEADER"
+msgstr "グラフ カラー パレット"
+
+# description
+msgid "styleCustomizer.customizableFeatures.table.CELL"
+msgstr "テーブル値セル"
+
+# description
+msgid "styleCustomizer.customizableFeatures.chart.X_AXIS_LABEL"
+msgstr "X 軸ラベル"
+
+# description
+msgid "styleCustomizer.customizableFeatures.chart.X_AXIS_TITLE"
+msgstr "X 軸タイトル"
+
+# description
+msgid "styleCustomizer.customizableFeatures.chart.Y_AXIS_LABEL"
+msgstr "Y 軸ラベル"
+
+# description
+msgid "styleCustomizer.customizableFeatures.chart.Y_AXIS_TITLE"
+msgstr "Y 軸タイトル"
+
+# description
+msgid "styleCustomizer.customizableFeatures.chart.TOOLTIP"
+msgstr "ツールチップ"
+
+# description
+msgid "styleCustomizer.customizableFeatures.chart.SCATTER_CHART"
+msgstr "散布グラフ データ ラベル"
+
+# description
+msgid "styleCustomizer.customizableFeatures.chart.PIE_CHART"
+msgstr "円グラフ データ ラベル"
+
+# description
+msgid "styleCustomizer.customizableFeatures.chart.LINE_CHART"
+msgstr "線グラフ データ ラベル"
+
+# description
+msgid "styleCustomizer.customizableFeatures.chart.COLUMN_CHART"
+msgstr "カラム チャート データ ラベル"
+
+# description
+msgid "styleCustomizer.customizableFeatures.chart.BAR_CHART"
+msgstr "棒グラフ データ ラベル"
+
+# description
+msgid "styleCustomizer.customizableFeatures.chart.AREA_CHART"
+msgstr "面グラフ データ ラベル"
+
+# description
+msgid "blobUploadService.blobTypeNames.FONT"
+msgstr "フォント"
+
+# description
+msgid "blobUploadService.blobTypeNames.IMAGE"
+msgstr "画像"
+
+# description
+msgid "blobUploadService.blobTypeNames.GENERIC"
+msgstr "汎用ファイル"
+
+# description
+msgid "blobUploadService.invalidFileMessages.INVALID_TYPE"
+msgstr "選択されたファイルは有効な {fileType} ではありません。"
+
+# description
+msgid "blobUploader.UPLOAD_NEW_FILE_BUTTON_LABEL"
+msgstr "新規ファイルをアップロード"
+
+# description
+msgid "charts.chartEditor.SHOW_Y_AXIS_AS_PERCENT"
+msgstr "Y 軸を%で表示"
+
+# description
+msgid "charts.chartEditor.SHOW_DATA_LABELS"
+msgstr "データ ラベルを表示"
+
+# description
+msgid "charts.chartEditor.OVERLAY_HEATMAP"
+msgstr "ヒートマップ モード"
+
+# description
+msgid "charts.seriesType.LINE"
+msgstr "ライン"
+
+# description
+msgid "migration.export.TITLE"
+msgstr "{pageType} をエクスポート"
+
+# description
+msgid "migration.export.EXPORT_URL"
+msgstr "エクスポート先 URL"
+
+# description
+msgid "migration.export.IMPORT_URL_LINK_TEXT"
+msgstr "ターゲット URL"
+
+# description
+msgid "migration.export.STEP.ONE"
+msgstr "手順 1"
+
+# description
+msgid "migration.export.STEP.TWO"
+msgstr "手順 2"
+
+# description
+msgid "migration.export.STEP.THREE"
+msgstr "手順 3"
+
+# description
+msgid "migration.export.STEP_INFO.ONE"
+msgstr "移動先 "
+
+# description
+msgid "migration.export.STEP_INFO.TWO"
+msgstr "インポート ボタンをクリックしてください"
+
+# description
+msgid "migration.export.STEP_INFO.THREE"
+msgstr "コピー & 貼り付け "
+
+# description
+msgid "migration.import.TITLE"
+msgstr "{pageType} をインポート"
+
+# description
+msgid "migration.import.IMPORT_FILE"
+msgstr "ファイル名を貼り付け"
+
+# description
+msgid "migration.import.STATUS_LABEL.SUMMARY"
+msgstr "サマリー"
+
+# description
+msgid "migration.import.STATUS_LABEL.IMPORTED"
+msgstr "インポートされた {pageType}"
+
+# description
+msgid "migration.import.STATUS_LABEL.UNIMPORTED"
+msgstr "未インポートの {pageType}"
+
+# description
+msgid "migration.import.STATUS_LABEL.NONE"
+msgstr "なし"
+
+# description
+msgid "migration.import.SUMMARY_INFO"
+msgstr "{importedCount} / {totalCount} がインポートされました。{genInfo}"
+
+# description
+msgid "migration.import.GENERIC_INFO"
+msgstr "ターゲット システムの関係する全データソースと関連は、ソース システムと同一である必要があります。"
+
+# description
+msgid "visualizationPinner.trigger.ADD_TO_PINBOARD"
+msgstr "ピン"
+
+# description
+msgid "visualizationPinner.modal.TITLE"
+msgstr "ピンボードに追加"
+
+# description
+msgid "visualizationPinner.modal.SEARCH_PLACEHOLDER"
+msgstr "ピンボードを検索"
+
+# description
+msgid "visualizationPinner.modal.ADD_PINBOARD"
+msgstr "追加"
+
+# description
+msgid "visualizationPinner.modal.CREATE_NEW_PINBOARD"
+msgstr "新規ピンボードを作成"
+
+# description
+msgid "visualizationPinner.modal.NEW_PINBOARD_NAME_PLACEHOLDER"
+msgstr "新規ピンボード名"
+
+# description
+msgid "report.jobStateString.SCHEDULED"
+msgstr "スケジュール済"
+
+# description
+msgid "report.jobStateString.PAUSED"
+msgstr "一時停止"
+
+# description
+msgid "report.jobRunStateString.DEFAULT"
+msgstr "デフォルト"
+
+# description
+msgid "report.jobRunStateString.RUNNING"
+msgstr "実行中"
+
+# description
+msgid "report.jobRunStateString.FAILED"
+msgstr "失敗"
+
+# description
+msgid "report.jobRunStateString.SUCCESS"
+msgstr "成功"
+
+# description
+msgid "report.jobRunStateString.DEADLINE"
+msgstr "期限"
+
+# description
+msgid "report.jobRunStateString.DOES_NOT_EXIST"
+msgstr "存在しません"
+
+# description
+msgid "report.csvWarning"
+msgstr "このピンボードのテーブルに対してのみ、CSVファイルが送信されます。"
+
+
+# description
+msgid "report.noTableWarning"
+msgstr "未加工のデータを送信することはできません。このピンボードにデータ テーブルが含まれていないためです。"
+
+# description
+msgid "report.name"
+msgstr "名前"
+
+# description
+msgid "report.serverTimeZone"
+msgstr "サーバー タイムゾーン"
+
+# description
+msgid "report.description"
+msgstr "説明"
+
+# description
+msgid "report.type"
+msgstr "タイプ"
+
+# description
+msgid "report.schedule"
+msgstr "スケジュール"
+
+# description
+msgid "report.save"
+msgstr "保存"
+
+# description
+msgid "report.cancel"
+msgstr "キャンセル"
+
+# description
+msgid "report.recipients"
+msgstr "受信者"
+
+# description
+msgid "report.addRecipients"
+msgstr "受信者を追加"
+
+# description
+msgid "report.nextOccurence"
+msgstr "次の発生"
+
+# description
+msgid "report.noDetail"
+msgstr ""
+
+# description
+msgid "report.startedAt"
+msgstr "ジョブが {1} に開始しました"
+
+#description
+msgid "report.noPermission"
+msgstr "ピンボードをスケジュールする権限がありません。管理者に支援を求めてください。"
+
+# description
+msgid "dataSourcePreview.FOOTER_TEXT"
+msgstr "さらに {1}。"
+
+# description
+msgid "vizContext.NO_MATCHING_HEADLINE"
+msgstr "一致するヘッドラインが見つからなかったため、回答の更新は無効化されました。"
+
+# description
+msgid "pinboardSnapshots.SEARCH_PLACEHOLDER"
+msgstr "検索スナップショット"
+
+# description
+msgid "pinboardSnapshots.TAKE_SNAPSHOT"
+msgstr "スナップショットを撮影"
+
+# description
+msgid "pinboardSnapshots.NEW_SNAPSHOT_NAME_PLACEHOLDER"
+msgstr "新規スナップショット名"
+
+# description
+msgid "pinboardSnapshots.NEW_SNAPSHOT_DESCRIPTION_PLACEHOLDER"
+msgstr "新規スナップショット説明"
+
+# Date string
+msgid "pinboardPage.DATE"
+msgstr "日付"
+
+# Title of the list showing pinboard filters
+msgid "pinboardPage.FILTER_HEADING"
+msgstr "ピンボード フィルタ"
+
+# description
+msgid "pinboardPage.PINBOARD_TAB"
+msgstr "ピンボード"
+
+# description
+msgid "pinboardPage.INSIGHTS_TAB"
+msgstr "分析情報"
+
+# Data view selector
+msgid "answerPage.vizTypeSelector.TABLE_SELECTOR_TOOLTIP"
+msgstr "データビュー"
+
+# Unsaved changes alert
+msgid "documentUnsavedChangesAlert.MESSAGE"
+msgstr "現在の {1} に保存されていない変更はありません。これらを破棄しますか?"
+
+# description
+msgid "documentUnsavedChangesAlert.UNSAVED_CHANGES"
+msgstr "保存されていない変更"
+
+# description
+msgid "documentUnsavedChangesAlert.STAY_HERE"
+msgstr "続行する"
+
+# description
+msgid "documentUnsavedChangesAlert.DISCARD"
+msgstr "破棄して終了"
+
+# description
+msgid "documentUnsavedChangesAlert.SAVE"
+msgstr "保存して終了"
+
+# description
+msgid "msg_code.10001.detail"
+msgstr "メタデータ ストアに接続できません。"
+
+# description
+msgid "msg_code.1206.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1205.summary"
+msgstr "グループを作成しました。"
+
+# description
+msgid "msg_code.160.summary"
+msgstr "集約ワークシートのリストを取得できません。"
+
+# description
+msgid "msg_code.804.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+#  {1} – name/link to pinboard
+msgid "msg_code.105.summary"
+msgstr "破損のため {1} から表現を削除できませんでした。"
+
+# description
+msgid "msg_code.112.summary"
+msgstr "ピンボードが削除されました。"
+
+# description
+msgid "msg_code.176.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.11008.summary"
+msgstr "データ エクスポートが失敗しました"
+
+# description
+msgid "msg_code.1601.summary"
+msgstr "データソース サンプル値を取得できません。"
+
+# description
+msgid "msg_code.809.summary"
+msgstr "電子メールが {adminEmail} に送信されました。問題を報告していただきありがとうございます!"
+
+# description
+msgid "msg_code.1231.summary"
+msgstr "ロールを削除できませんでした"
+
+# description
+msgid "msg_code.901.summary"
+msgstr "回答権限を取得できません。"
+
+# description
+msgid "msg_code.501.summary"
+msgstr "Excel データを取得できません。"
+
+# description
+msgid "msg_code.12707.summary"
+msgstr "ジョブの説明は提供されていません"
+
+#  {1} - action user is not authorized for
+msgid "msg_code.10003.action"
+msgstr "管理者からアクセスをリクエストしてください。"
+
+#  {1} – name of visualization
+#  {2} – name/link to pinboard
+msgid "msg_code.101.summary"
+msgstr "{1} を {2} へ追加できませんでした。"
+
+# description
+msgid "msg_code.12714.summary"
+msgstr "受信者ドメインはホワイトリストにありません"
+
+# description
+msgid "msg_code.13001.detail"
+msgstr "データベース スキーマ作成エラーです"
+
+# description
+msgid "msg_code.10009.summary"
+msgstr "グループを追加できません"
+
+# description
+msgid "msg_code.11004.summary"
+msgstr "無効なビジュアリゼーション識別子"
+
+# description
+msgid "msg_code.805.summary"
+msgstr "デバッグ情報を取得できません。"
+
+# description
+msgid "msg_code.506.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.12703.summary"
+msgstr "ピンボードが提供されていません"
+
+# description
+msgid "msg_code.10005.summary"
+msgstr "ベース オブジェクトが失われています。"
+
+#  {0} - received version number
+msgid "msg_code.13019.detail"
+msgstr "古いバージョンのスキーマ更新: {0}が受信され無視されました"
+
+# description
+msgid "msg_code.801.summary"
+msgstr "Memcache をクリアできません。"
+
+# description
+msgid "msg_code.1403.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.9001.detail"
+msgstr "トレース ファイルを {adminEmail} に電子メールで送信してください。"
+
+# description
+msgid "msg_code.1113.summary"
+msgstr "ジョブを更新できませんでした"
+
+# description
+msgid "msg_code.1609.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1223.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1817.summary"
+msgstr "申し訳ございません。この時点でオブジェクトをインポートできません!"
+
+# description
+msgid "msg_code.9007.summary"
+msgstr "申し訳ございません。このリクエストのデータ取得でエラーが発生しました。"
+
+# description
+msgid "msg_code.1806.summary"
+msgstr "クラスター管理サービスからログを取得できません。"
+
+# description
+msgid "msg_code.1813.summary"
+msgstr "申し訳ございません。この時点でフィードバックを送信できません!"
+
+# description
+msgid "msg_code.1406.summary"
+msgstr "ヘルス チェックが成功しませんでした。"
+
+# description
+msgid "msg_code.1006.summary"
+msgstr "データ行を取得できません。"
+
+# description
+msgid "msg_code.9003.summary"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。"
+
+# description
+msgid "msg_code.161.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+#  {0} - name of the user
+#  {1} - action user is not authorized for
+msgid "msg_code.10004.action"
+msgstr "管理者からアクセスをリクエストしてください。"
+
+# description
+msgid "msg_code.1802.summary"
+msgstr "データベース サービスからクラスター情報を取得できません。"
+
+# description
+msgid "msg_code.1402.summary"
+msgstr "ログアウトが成功しませんでした。"
+
+# description
+msgid "msg_code.121.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1600.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+#  {1} – name of aggregated worksheet
+msgid "msg_code.169.summary"
+msgstr "集約ワークシート {1} が作成されました。"
+
+# description
+msgid "msg_code.176.summary"
+msgstr "コメントを更新できません"
+
+# description
+msgid "msg_code.179.detail"
+msgstr "何が発生したのかはっきりしません。トレース ファイルを {adminEmail} に電子メールで送信してください。"
+
+# description
+msgid "msg_code.12712.detail"
+msgstr "受信者の最大数は 1000 です"
+
+# description
+msgid "msg_code.158.summary"
+msgstr "ピンボードのリストを取得できません。"
+
+# description
+msgid "msg_code.165.summary"
+msgstr "列のリストを取得できません。"
+
+#  {0} - identity of the object
+#  {1} - type of object
+msgid "msg_code.13004.detail"
+msgstr "オブジェクトと ID: タイプの {0}: {1} は無効な状態です"
+
+# description
+msgid "msg_code.9010.detail"
+msgstr "依存関係の一部にエラーがあるため、オブジェクトを開くことができません"
+
+# description
+msgid "msg_code.147.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+#  {1} - name of pinboard / link
+msgid "msg_code.139.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1618.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1232.detail"
+msgstr "ロールが更新されました"
+
+# description
+msgid "msg_code.1224.detail"
+msgstr "ユーザーをグループへ割り当てられませんでした"
+
+# description
+msgid "msg_code.147.summary"
+msgstr "ワークシートを保存できません。"
+
+# description
+msgid "msg_code.1629.summary"
+msgstr "接続が削除されました"
+
+# description
+msgid "msg_code.154.summary"
+msgstr "メタデータのリストを取得できません。"
+
+# description
+msgid "msg_code.115.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1229.summary"
+msgstr "ロールを作成できませんでした。"
+
+#  {1} – name/link to pinboard
+msgid "msg_code.107.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1200.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+#  {1} – name of answer
+msgid "msg_code.136.summary"
+msgstr "{1} が保存されました。"
+
+#  {1} – name of answer
+msgid "msg_code.143.summary"
+msgstr "{1} を保存できません。"
+
+# description
+msgid "msg_code.13022.summary"
+msgstr "無効なフィルター値: {values}"
+
+# description
+msgid "msg_code.1625.summary"
+msgstr "負荷タスクが正常に再起動しました。"
+
+# description
+msgid "msg_code.1218.summary"
+msgstr "グループを作成できません。"
+
+# description
+msgid "msg_code.170.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1004.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.125.summary"
+msgstr "テーブルの詳細にエラーが発生しました。"
+
+# description
+msgid "msg_code.132.summary"
+msgstr "テーブルが保存されました。"
+
+# description
+msgid "msg_code.1207.summary"
+msgstr "ユーザーが更新されました。"
+
+#  {0} - reason for failure
+msgid "msg_code.13011.summary"
+msgstr "回答生成が失敗しました"
+
+# description
+msgid "msg_code.1614.summary"
+msgstr "データソース接続属性を取得できません。"
+
+# description
+msgid "msg_code.1214.summary"
+msgstr "パスワードを更新できません。"
+
+# description
+msgid "msg_code.1621.summary"
+msgstr "SQL を実行できませんでした。"
+
+# description
+msgid "msg_code.10005.detail"
+msgstr "このオブジェクトに参照される基礎となるオブジェクトがストアで失われています。"
+
+# description
+msgid "msg_code.114.summary"
+msgstr "回答が削除されました。"
+
+# description
+msgid "msg_code.121.summary"
+msgstr "関連を更新できません。"
+
+# description
+msgid "msg_code.1603.summary"
+msgstr "DDL を実行できません。"
+
+# description
+msgid "msg_code.500.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1610.summary"
+msgstr "データソースを作成できません。"
+
+# description
+msgid "msg_code.1203.summary"
+msgstr "ユーザーが作成されました。"
+
+# description
+msgid "msg_code.1815.detail"
+msgstr "何が発生しましたか? {1}。"
+
+# description
+msgid "msg_code.510.summary"
+msgstr "ファイルがアップロードされました。"
+
+#  {1} – name/link to pinboard
+msgid "msg_code.103.summary"
+msgstr "成功しました。ビジュアリゼーションが{1}から削除されました。"
+
+# description
+msgid "msg_code.110.summary"
+msgstr "ステッカーが削除されました。"
+
+# description
+msgid "msg_code.164.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.10007.action"
+msgstr "管理者に連絡してください。"
+
+# description
+msgid "msg_code.156.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+#  {1} - Type of the object Table/Answer/Pinboard etc.
+msgid "msg_code.9504.summary"
+msgstr "{1}を開くことができません。"
+
+#  {0} - provider details
+msgid "msg_code.13013.detail"
+msgstr "使用できないサービスプロバイダ: {0}"
+
+# description
+msgid "msg_code.12712.summary"
+msgstr "受信者が多すぎます"
+
+# description
+msgid "msg_code.124.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1603.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.11002.summary"
+msgstr "無効なテーブル/クエリ結果セット"
+
+# description
+msgid "msg_code.11006.detail"
+msgstr "Falcon へのクエリ実行でエラーが発生しました"
+
+# description
+msgid "msg_code.803.summary"
+msgstr "ロガーを取得できません。"
+
+# description
+msgid "msg_code.12701.summary"
+msgstr "入力が無効です"
+
+# description
+msgid "msg_code.1407.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+#  {1} - action user is not authorized for
+msgid "msg_code.10003.summary"
+msgstr "残念ですがこれを実行できません。"
+
+# description
+msgid "msg_code.9005.detail"
+msgstr "トレース ファイルを {adminEmail} に電子メールで送信してください。"
+
+# description
+msgid "msg_code.1111.summary"
+msgstr "ジョブを作成できません。"
+
+# description
+msgid "msg_code.903.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1117.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1008.summary"
+msgstr "テーブル作成をキャンセルできません。"
+
+# description
+msgid "msg_code.9005.summary"
+msgstr "申し訳ございません。このリクエストのデータ取得でエラーが発生しました。"
+
+#  {1} – name of the formula
+msgid "msg_code.173.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.165.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1007.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1404.summary"
+msgstr "ログイン設定を取得できません。"
+
+# description
+msgid "msg_code.1811.summary"
+msgstr "アラート管理サービスからイベント情報を取得できません。"
+
+# description
+msgid "msg_code.1004.summary"
+msgstr "データを読み込めませんでした。"
+
+# description
+msgid "msg_code.9001.summary"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。"
+
+# description
+msgid "msg_code.1011.summary"
+msgstr "サンプル値を取得できません。"
+
+#  {0} - name of the user
+msgid "msg_code.10008.detail"
+msgstr "ユーザー {0} がストアに見つかりませんでした。"
+
+#  {1} – name of worksheet
+msgid "msg_code.141.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.133.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.13027.summary"
+msgstr "読み込みスケジュールを無効化できません。"
+
+# description
+msgid "msg_code.1612.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1800.summary"
+msgstr "検索サービスからクラスター情報を取得できません。"
+
+# description
+msgid "msg_code.178.summary"
+msgstr "ルールが保存されました。"
+
+# description
+msgid "msg_code.1400.summary"
+msgstr "セッション情報を取得できません。"
+
+# description
+msgid "msg_code.1000.summary"
+msgstr "データ キャッシュが成功しませんでした。"
+
+#  {0} - the invalid expression
+msgid "msg_code.13009.summary"
+msgstr "無効な Sage 質問です。"
+
+#  {0} - error details
+msgid "msg_code.13016.summary"
+msgstr "無効な物理スキーマ プロト"
+
+#  {1} – name of visualization
+#  {2} – name/link to pinboard
+msgid "msg_code.101.detail"
+msgstr "ビジュアリゼーションを {2} に追加できません。"
+
+# description
+msgid "msg_code.167.summary"
+msgstr "回答を取得できません。"
+
+# description
+msgid "msg_code.174.summary"
+msgstr "コメントを取得できません。"
+
+#  {0} - error details
+msgid "msg_code.13016.detail"
+msgstr "Falcon からの物理スキーマでの不整合: {0}"
+
+# description
+msgid "msg_code.181.summary"
+msgstr "ルールを削除できません。"
+
+#  {0} - column type
+msgid "msg_code.13008.detail"
+msgstr "Sage からの入力 - タイプの失われた列: {0}"
+
+# description
+msgid "msg_code.119.summary"
+msgstr "関連を作成できません。"
+
+# description
+msgid "msg_code.1400.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+#  {0} - identity of the object
+#  {1} - type of object
+msgid "msg_code.13005.summary"
+msgstr "オブジェクトはすでに存在しています。"
+
+# description
+msgid "msg_code.156.summary"
+msgstr "関連のリストを取得できません。"
+
+# description
+msgid "msg_code.163.summary"
+msgstr "DB ビューのリストを取得できません。"
+
+# description
+msgid "msg_code.170.summary"
+msgstr "集約ワークシートを作成できません。"
+
+# description
+msgid "msg_code.119.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.508.summary"
+msgstr "ヘッドライン データを取得できません。"
+
+# description
+msgid "msg_code.108.summary"
+msgstr "ステッカーが作成されました。"
+
+# description
+msgid "msg_code.11009.detail"
+msgstr "Callosum でのデータ生成でエラーが発生しました"
+
+# description
+msgid "msg_code.1212.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1204.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.152.summary"
+msgstr "ステッカーの割り当てを解除しました。"
+
+# description
+msgid "msg_code.802.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.504.summary"
+msgstr "グラフ データを取得できません。"
+
+# description
+msgid "msg_code.9008.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1008.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+#  {1} – name of worksheet
+msgid "msg_code.141.summary"
+msgstr "{1} を保存できません。"
+
+# description
+msgid "msg_code.1623.summary"
+msgstr "選択されたテーブルは読み込みのキューに登録されました。"
+
+# description
+msgid "msg_code.700.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1216.summary"
+msgstr "ユーザーを削除できません。"
+
+# description
+msgid "msg_code.1223.summary"
+msgstr "プロファイル写真をアップロードできません。"
+
+# description
+msgid "msg_code.808.summary"
+msgstr "{adminEmail} へ電子メールを送信できませんでした。"
+
+# description
+msgid "msg_code.1630.summary"
+msgstr "この接続の削除でエラーが発生しました。"
+
+# description
+msgid "msg_code.1230.summary"
+msgstr "ロールを削除しました"
+
+# description
+msgid "msg_code.900.summary"
+msgstr "テーブル権限を取得できません。"
+
+# description
+msgid "msg_code.10009.detail"
+msgstr "このグループは追加しようとしているグループにすでに所属しています"
+
+# description
+msgid "msg_code.10001.action"
+msgstr "管理者に連絡してください。"
+
+# description
+msgid "msg_code.130.summary"
+msgstr "ピンボードを開くことができません。"
+
+# description
+msgid "msg_code.1612.summary"
+msgstr "データソース接続フィールド情報を取得できません。"
+
+# description
+msgid "msg_code.504.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1212.summary"
+msgstr "グループを更新できません。"
+
+#  {1} - Type of the object Table/Answer/Pinboard etc.
+msgid "msg_code.9506.summary"
+msgstr "オブジェクトはシステムに存在しません。"
+
+# description
+msgid "msg_code.1116.summary"
+msgstr "ジョブは一時停止されました"
+
+# description
+msgid "msg_code.168.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1201.summary"
+msgstr "グループのリストを取得できません。"
+
+# description
+msgid "msg_code.12701.detail"
+msgstr "ジョブの定義が無効です"
+
+# description
+msgid "msg_code.1401.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.9502.summary"
+msgstr "ThoughtSpot に接続できません。再度実行してください。"
+
+# description
+msgid "msg_code.1615.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.128.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1607.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1221.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1809.summary"
+msgstr "イベント サービスからクラスター情報を取得できません。"
+
+# description
+msgid "msg_code.1816.summary"
+msgstr "オブジェクトがインポートされました。"
+
+# description
+msgid "msg_code.12710.summary"
+msgstr "ユーザー データが使用できません"
+
+#  {1} – name/link to pinboard
+msgid "msg_code.104.detail"
+msgstr "ビジュアリゼーションをピンボードから削除できません。"
+
+# description
+msgid "msg_code.1111.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1805.summary"
+msgstr "クラスター管理サービスから詳細情報を取得できません。"
+
+# description
+msgid "msg_code.10001.summary"
+msgstr "接続が失敗しました"
+
+# description
+msgid "msg_code.1001.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.10002.detail"
+msgstr "クライアントからサーバーへの入力が無効です"
+
+# description
+msgid "msg_code.805.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.701.summary"
+msgstr "列が依存される対象を取得できません。"
+
+# description
+msgid "msg_code.177.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.9010.summary"
+msgstr "オブジェクトを開くことができません。"
+
+# description
+msgid "msg_code.13029.summary"
+msgstr "データソース接続が編集されました"
+
+# description
+msgid "msg_code.153.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+#  {0} - reason for failure
+msgid "msg_code.13010.detail"
+msgstr "次の原因で論理メタデータの Sage への送信が失敗しました: {0}"
+
+#  {1} – name of pinboard
+msgid "msg_code.145.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.13002.detail"
+msgstr "ビューの作成でエラーが発生しました"
+
+#  {1} – name of answer
+msgid "msg_code.137.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1624.detail"
+msgstr "Thoughtspot データ タイプに対するソースのマッピングが見つかりませんでした。"
+
+# description
+msgid "msg_code.1616.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1002.summary"
+msgstr "キーを読み取れませんでした。"
+
+# description
+msgid "msg_code.1230.detail"
+msgstr "ロールを削除しました"
+
+# description
+msgid "msg_code.507.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+#  {1} - name of pinboard / link
+msgid "msg_code.139.summary"
+msgstr "{1} を保存できません。"
+
+#  {0} - cycle details
+msgid "msg_code.13018.summary"
+msgstr "循環関連"
+
+# description
+msgid "msg_code.13028.action"
+msgstr "データソースの編集を続行するには、以下の接続を編集して、有効なソース オブジェクトを取得してください。"
+
+# description
+msgid "msg_code.13025.summary"
+msgstr "式検証が失敗しました。"
+
+# description
+msgid "msg_code.1628.summary"
+msgstr "タスクが停止されました。"
+
+#  {1} - Type of the object Table/Answer/Pinboard etc.
+msgid "msg_code.9506.detail"
+msgstr "{1} はシステムに存在しません。"
+
+# description
+msgid "msg_code.113.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+#  {1} – name/link to pinboard
+msgid "msg_code.105.detail"
+msgstr "ピンボードに 1 つ以上の 無効なビジュアリゼーションがあるため、ビジュアリゼーションを削除できません。"
+
+# description
+msgid "msg_code.128.summary"
+msgstr "メタデータ項目詳細の取得でエラーが発生しました。"
+
+#  {0} - the invalid input
+msgid "msg_code.13007.summary"
+msgstr "無効な Sage 質問"
+
+# description
+msgid "msg_code.1617.summary"
+msgstr "SQL をパースできません。"
+
+# description
+msgid "msg_code.1404.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+#  {1} – name of aggregated worksheet
+msgid "msg_code.172.summary"
+msgstr "{1}を更新できませんでした。"
+
+# description
+msgid "msg_code.9002.detail"
+msgstr "もう一度ログインを実行してください"
+
+# description
+msgid "msg_code.1010.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.117.summary"
+msgstr "テーブルを削除できません。"
+
+#  {0} - identity of the object
+#  {1} - type of object
+msgid "msg_code.13003.summary"
+msgstr "オブジェクトがストアに見つかりません。"
+
+# description
+msgid "msg_code.1606.summary"
+msgstr "タスクを停止できません。"
+
+#  {0} - reason for failure
+msgid "msg_code.13010.summary"
+msgstr "論理メタデータの Sage への送信が失敗しました"
+
+# description
+msgid "msg_code.1216.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1208.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.161.summary"
+msgstr "インポートされたデータのリストを取得できません。"
+
+# description
+msgid "msg_code.900.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.506.summary"
+msgstr "ワークシート データを取得できません。"
+
+#  {1} – name/link to pinboard
+msgid "msg_code.106.summary"
+msgstr "{1} が作成されました。"
+
+# description
+msgid "msg_code.113.summary"
+msgstr "ピンボードを削除できません。"
+
+# description
+msgid "msg_code.11009.summary"
+msgstr "データ生成が失敗しました"
+
+# description
+msgid "msg_code.150.summary"
+msgstr "ステッカーが割り当てられました。"
+
+# description
+msgid "msg_code.1232.summary"
+msgstr "ロールが更新されました"
+
+# description
+msgid "msg_code.902.summary"
+msgstr "ピンボード権限を取得できません。"
+
+# description
+msgid "msg_code.12708.summary"
+msgstr "ピンボード データのエクスポート エラー"
+
+# description
+msgid "msg_code.502.summary"
+msgstr "ビジュアリゼーション データを取得できません。"
+
+#  {1} – name of visualization
+#  {2} – name/link to pinboard
+msgid "msg_code.102.summary"
+msgstr "破損のため {1} を {2} へ追加できませんでした。"
+
+# description
+msgid "msg_code.162.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.154.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.10005.action"
+msgstr "管理者に連絡してください。"
+
+# description
+msgid "msg_code.11005.summary"
+msgstr "データなし"
+
+# description
+msgid "msg_code.1221.summary"
+msgstr "プロファイル写真を取得できません。"
+
+# description
+msgid "msg_code.806.summary"
+msgstr "Memcache がクリアされました。"
+
+# description
+msgid "msg_code.508.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.130.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.12704.summary"
+msgstr "受信者が提供されていません"
+
+# description
+msgid "msg_code.1601.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1118.summary"
+msgstr "ジョブは再開されました"
+
+# description
+msgid "msg_code.10006.summary"
+msgstr "Zookeeper への接続が失敗しました。"
+
+# description
+msgid "msg_code.1210.summary"
+msgstr "ユーザーを更新できません。"
+
+# description
+msgid "msg_code.1114.summary"
+msgstr "ジョブが削除されました。"
+
+#  {0} - identity of the object
+#  {1} - type of object
+msgid "msg_code.13005.detail"
+msgstr "オブジェクトと ID: タイプの {0}: {1} はすでに存在しています。"
+
+# description
+msgid "msg_code.1233.detail"
+msgstr "ロールを更新できませんでした"
+
+# description
+msgid "msg_code.1818.summary"
+msgstr "データソース オブジェクトが削除されました"
+
+# description
+msgid "msg_code.9008.summary"
+msgstr "検索で何か問題が発生しました。"
+
+# description
+msgid "msg_code.9500.summary"
+msgstr "ThoughtSpot に接続できません。再度実行してください。"
+
+# description
+msgid "msg_code.1110.summary"
+msgstr "ジョブが作成されました。"
+
+# description
+msgid "msg_code.901.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1201.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1115.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1807.summary"
+msgstr "クラスター管理サービスからスナップショット リストを取得できません。"
+
+# description
+msgid "msg_code.1407.summary"
+msgstr "ヘルス ポータル トークンを取得できません。"
+
+# description
+msgid "msg_code.1814.summary"
+msgstr "オブジェクトがエクスポートされました。ファイルが {1} に見つかりませんでした。"
+
+# description
+msgid "msg_code.1007.summary"
+msgstr "ファイルを削除できません。"
+
+# description
+msgid "msg_code.9004.summary"
+msgstr "まだデータを読み込んでいます。まもなく終了します。"
+
+# description
+msgid "msg_code.1005.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1803.summary"
+msgstr "データベース サービスからテーブル詳細情報を取得できません。"
+
+# description
+msgid "msg_code.1403.summary"
+msgstr "クライアントの状態を保存できません。"
+
+# description
+msgid "msg_code.10006.detail"
+msgstr "Zookeeper に接続できません。"
+
+# description
+msgid "msg_code.501.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.159.summary"
+msgstr "ワークシートのリストを取得できません。"
+
+# description
+msgid "msg_code.166.summary"
+msgstr "ステッカーのリストを取得できません。"
+
+# description
+msgid "msg_code.157.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+#  {0} - name of the user
+msgid "msg_code.10008.action"
+msgstr "管理者に連絡してください。"
+
+# description
+msgid "msg_code.149.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.148.summary"
+msgstr "ステッカーが更新されました。"
+
+# description
+msgid "msg_code.155.summary"
+msgstr "テーブルのリストを取得できません。"
+
+# description
+msgid "msg_code.125.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.117.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1604.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.11007.detail"
+msgstr "Sage 入力用回答データ生成でエラーが発生しました"
+
+# description
+msgid "msg_code.1210.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1202.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+#  {1} – name of answer
+msgid "msg_code.137.summary"
+msgstr "{1} を保存できません。"
+
+#  {1} – name/link to pinboard
+msgid "msg_code.144.summary"
+msgstr "{1} が保存されました。"
+
+# description
+msgid "msg_code.1619.summary"
+msgstr "データソース接続が作成されました"
+
+# description
+msgid "msg_code.13023.summary"
+msgstr "関連の作成が失敗しました。"
+
+# description
+msgid "msg_code.1626.summary"
+msgstr "データソースに接続されました。"
+
+# description
+msgid "msg_code.1219.summary"
+msgstr "ユーザーがグループに割り当てられました。"
+
+# description
+msgid "msg_code.13030.summary"
+msgstr "接続テストが失敗しました。接続属性を確認してください。"
+
+# description
+msgid "msg_code.1408.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.9006.detail"
+msgstr "トレース ファイルを {adminEmail} に電子メールで送信してください。"
+
+# description
+msgid "msg_code.1100.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.126.summary"
+msgstr "データソースの詳細の取得でエラーが発生しました。"
+
+# description
+msgid "msg_code.1608.summary"
+msgstr "データソースからの読み込みが成功しませんでした。"
+
+# description
+msgid "msg_code.133.summary"
+msgstr "テーブルの保存で問題が発生しました。"
+
+#  {0} - reason for failure
+msgid "msg_code.13012.summary"
+msgstr "ワークシート生成が失敗しました"
+
+# description
+msgid "msg_code.1615.summary"
+msgstr "データソース接続を取得できません。"
+
+# description
+msgid "msg_code.1208.summary"
+msgstr "ユーザーを更新できません。"
+
+# description
+msgid "msg_code.1622.summary"
+msgstr "軽量のデータ キャッシュが無効化されました。"
+
+# description
+msgid "msg_code.1228.detail"
+msgstr "ロールが作成されました"
+
+# description
+msgid "msg_code.1215.summary"
+msgstr "ユーザーが削除されました。"
+
+# description
+msgid "msg_code.115.summary"
+msgstr "回答を削除できません。"
+
+# description
+msgid "msg_code.122.summary"
+msgstr "関連が削除されました。"
+
+# description
+msgid "msg_code.13001.summary"
+msgstr "スキーマ作成が失敗しました"
+
+# description
+msgid "msg_code.1604.summary"
+msgstr "スケジュールを更新できません。"
+
+# description
+msgid "msg_code.1611.summary"
+msgstr "データソース接続が成功しませんでした。"
+
+# description
+msgid "msg_code.1204.summary"
+msgstr "ユーザーを作成できません。"
+
+# description
+msgid "msg_code.511.summary"
+msgstr "ファイルをアップロードできませんでした。"
+
+# description
+msgid "msg_code.512.summary"
+msgstr "ピンボード データを PDF にエクスポートできませんでした。"
+
+#  {1} – name/link to pinboard
+msgid "msg_code.104.summary"
+msgstr "{1}から表現を削除できませんでした"
+
+# description
+msgid "msg_code.111.summary"
+msgstr "ステッカーを削除できません。"
+
+# description
+msgid "msg_code.174.detail"
+msgstr "クライアントの状態を保存できませんでした。"
+
+# description
+msgid "msg_code.9505.summary"
+msgstr "まだこのデータにインデックスを付与しています。後で改めて実行してください!"
+
+# description
+msgid "msg_code.166.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.11007.summary"
+msgstr "回答データ生成が失敗しました"
+
+# description
+msgid "msg_code.1600.summary"
+msgstr "データソース タイプを取得できません。"
+
+# description
+msgid "msg_code.12706.summary"
+msgstr "ジョブ名が提供されていません"
+
+# description
+msgid "msg_code.500.summary"
+msgstr "リーフ レベルのデータを取得できません。"
+
+# description
+msgid "msg_code.12713.summary"
+msgstr "添付ファイルのサイズが制限を超えました"
+
+#  {1} – name of visualization
+#  {2} – {name/link to pinboard}
+msgid "msg_code.100.summary"
+msgstr "成功しました。{1} が {2} に追加されました。"
+
+# description
+msgid "msg_code.1621.detail"
+msgstr "失敗するコマンドを確認してください。{1} ステートメントが正しく実行されました。"
+
+# description
+msgid "msg_code.1613.detail"
+msgstr "データソースの接続リストを取得できませんでした"
+
+# description
+msgid "msg_code.126.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.11003.summary"
+msgstr "無効な列識別子"
+
+#  {0} - name of the user
+msgid "msg_code.10008.summary"
+msgstr "ユーザーを見つけられません"
+
+# description
+msgid "msg_code.1605.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.804.summary"
+msgstr "LogLevel を設定できません。"
+
+# description
+msgid "msg_code.12702.summary"
+msgstr "作成者が提供されていません"
+
+#  {1} – name of visualization
+#  {2} – name/link to pinboard
+msgid "msg_code.102.detail"
+msgstr "ピンボードが 1 つ以上の無効なビジュアリゼーションを持っているため、{1} を {2} に追加できません。"
+
+#  {0} - name of the user
+#  {1} - action user is not authorized for
+msgid "msg_code.10004.summary"
+msgstr "ユーザーを認証できません。"
+
+#  {0} - list of duplicate column identities
+msgid "msg_code.13017.detail"
+msgstr "重複列: {0}"
+
+#  {0} - the invalid expression
+msgid "msg_code.13009.detail"
+msgstr "無効な Sage からの入力 - 無効な式: {0}"
+
+# description
+msgid "msg_code.800.summary"
+msgstr "Memcache の状態を取得できません。"
+
+# description
+msgid "msg_code.1229.detail"
+msgstr "ロールを作成できませんでした。"
+
+# description
+msgid "msg_code.10000.summary"
+msgstr "システム エラーが発生しました。"
+
+# description
+msgid "msg_code.1112.summary"
+msgstr "ジョブが更新されました。"
+
+# description
+msgid "msg_code.10000.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。管理者に連絡してください。"
+
+# description
+msgid "msg_code.1119.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1009.summary"
+msgstr "スキーマを作成できません。"
+
+# description
+msgid "msg_code.9006.summary"
+msgstr "申し訳ございません。このリクエストのデータ取得でエラーが発生しました。"
+
+# description
+msgid "msg_code.803.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.9009.detail"
+msgstr "トレース ファイルを {adminEmail} に電子メールで送信してください。"
+
+# description
+msgid "msg_code.175.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1812.summary"
+msgstr "フィードバックしていただきありがとうございます!"
+
+# description
+msgid "msg_code.1405.summary"
+msgstr "Slack 設定を取得できません。"
+
+# description
+msgid "msg_code.1009.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1005.summary"
+msgstr "テーブルを作成できません。"
+
+# description
+msgid "msg_code.9002.summary"
+msgstr "ユーザーを認証できません。"
+
+# description
+msgid "msg_code.701.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.10002.action"
+msgstr "管理者に連絡してください。"
+
+# description
+msgid "msg_code.151.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+#  {1} – name of answer
+msgid "msg_code.143.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1622.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1801.summary"
+msgstr "検索サービスからテーブル詳細情報を取得できません。"
+
+# description
+msgid "msg_code.179.summary"
+msgstr "ルールを保存できません。"
+
+# description
+msgid "msg_code.1401.summary"
+msgstr "ログインが成功しませんでした。"
+
+# description
+msgid "msg_code.1001.summary"
+msgstr "列を読み取れませんでした。"
+
+# description
+msgid "msg_code.505.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+#  {1} - Type of the object Table/Answer/Pinboard etc.
+msgid "msg_code.9504.detail"
+msgstr "次の依存関係でのエラーのため{1}を開くことができません"
+
+# description
+msgid "msg_code.111.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.168.summary"
+msgstr "ワークシートを取得できません。"
+
+# description
+msgid "msg_code.175.summary"
+msgstr "コメントを作成できません"
+
+#  {0} - cycle details
+msgid "msg_code.13018.detail"
+msgstr "削除されたサイクル: {0}"
+
+# description
+msgid "msg_code.1402.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.157.summary"
+msgstr "回答のリストを取得できません。"
+
+# description
+msgid "msg_code.164.summary"
+msgstr "データソースのリストを取得できません。"
+
+# description
+msgid "msg_code.9000.detail"
+msgstr "一部のオブジェクトが削除しようとしているデータに依存しています。"
+
+# description
+msgid "msg_code.129.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1608.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.509.summary"
+msgstr "自然クエリを取得できません。"
+
+# description
+msgid "msg_code.109.summary"
+msgstr "ステッカーを作成できません。"
+
+#  {1} – name/link to pinboard
+msgid "msg_code.105.action"
+msgstr "ピンボードから無効なビジュアリゼーションを削除して、再度実行してください"
+
+# description
+msgid "msg_code.1214.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.146.summary"
+msgstr "ワークシートが保存されました。"
+
+# description
+msgid "msg_code.153.summary"
+msgstr "ステッカーの割り当てを解除できません。"
+
+# description
+msgid "msg_code.1228.summary"
+msgstr "ロールが作成されました"
+
+# description
+msgid "msg_code.505.summary"
+msgstr "テーブル データを取得できません。"
+
+# description
+msgid "msg_code.135.summary"
+msgstr "ビジュアリゼーションを更新できませんでした。"
+
+#  {1} – name of answer
+msgid "msg_code.142.summary"
+msgstr "{1} が保存されました。"
+
+# description
+msgid "msg_code.1624.summary"
+msgstr "DataType 変換エラーです。"
+
+# description
+msgid "msg_code.1217.summary"
+msgstr "グループが削除されました。"
+
+# description
+msgid "msg_code.1631.summary"
+msgstr "DDL が実行されました"
+
+# description
+msgid "msg_code.1224.summary"
+msgstr "グループがグループに割り当てられました"
+
+# description
+msgid "msg_code.702.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.160.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1002.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.124.summary"
+msgstr "テーブルの詳細の取得でエラーが発生しました。"
+
+# description
+msgid "msg_code.131.summary"
+msgstr "ワークシートを開くことができませんでした"
+
+# description
+msgid "msg_code.1613.summary"
+msgstr "データソース接続リストを取得できません。"
+
+# description
+msgid "msg_code.1206.summary"
+msgstr "グループを作成できません。"
+
+#  {1} - action user is not authorized for
+msgid "msg_code.10003.detail"
+msgstr "{1}を実行する権限がありません。"
+
+# description
+msgid "msg_code.1620.summary"
+msgstr "正しく更新されたデータによってスケジュールが更新されます"
+
+# description
+msgid "msg_code.1213.summary"
+msgstr "パスワードが更新されました。"
+
+# description
+msgid "msg_code.1220.summary"
+msgstr "ユーザーをグループに割り当てられませんでした。"
+
+# description
+msgid "msg_code.9507.summary"
+msgstr "ThoughtSpot に接続できません。再度実行してください。"
+
+# description
+msgid "msg_code.120.summary"
+msgstr "関連が更新されました。"
+
+# description
+msgid "msg_code.1602.summary"
+msgstr "データソースを削除できません。"
+
+# description
+msgid "msg_code.1117.summary"
+msgstr "ジョブを一時停止できません"
+
+# description
+msgid "msg_code.1202.summary"
+msgstr "ユーザーとグループのリストを取得できません。"
+
+#  {0} - reason for failure
+msgid "msg_code.13011.detail"
+msgstr "回答生成が次の原因で失敗しました: {0}"
+
+#  {0} - identity of the object
+#  {1} - type of object
+msgid "msg_code.13003.detail"
+msgstr "オブジェクトと ID: タイプの {0}: {1} が見つかりませんでした"
+
+# description
+msgid "msg_code.9503.summary"
+msgstr "ThoughtSpot がタイムアウトしました。再度実行してください。"
+
+# description
+msgid "msg_code.1617.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1231.detail"
+msgstr "ロールを削除できませんでした"
+
+# description
+msgid "msg_code.12711.summary"
+msgstr "構成情報が使用できません"
+
+# description
+msgid "msg_code.11001.summary"
+msgstr "無効な行です"
+
+# description
+msgid "msg_code.802.summary"
+msgstr "Memcache を検索できません。"
+
+# description
+msgid "msg_code.1113.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.12700.summary"
+msgstr "データ ファイルのエクスポート中にエラーが発生しました"
+
+# description
+msgid "msg_code.1405.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.10002.summary"
+msgstr "入力が無効です。"
+
+# description
+msgid "msg_code.9003.detail"
+msgstr "トレース ファイルを {adminEmail} に電子メールで送信してください。"
+
+# description
+msgid "msg_code.1011.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1003.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+#  {0} - name of the user
+#  {1} - action user is not authorized for
+msgid "msg_code.10004.detail"
+msgstr "ユーザー {0} は {1} を実行するために認証されていません"
+
+# description
+msgid "msg_code.702.summary"
+msgstr "未完了の項目を取得できません。"
+
+#  {0} - relationship detail
+msgid "msg_code.13020.detail"
+msgstr "無効な関連を作成しようとしました: {0}"
+
+# description
+msgid "msg_code.163.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+#  {0} - reason for failure
+msgid "msg_code.13012.detail"
+msgstr "ワークシート生成が次の原因で失敗しました: {0}"
+
+# description
+msgid "msg_code.10006.action"
+msgstr "管理者に連絡してください。"
+
+# description
+msgid "msg_code.155.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1810.summary"
+msgstr "アラート管理サービスからアラート情報を取得できません。"
+
+# description
+msgid "msg_code.1003.summary"
+msgstr "関連を読み取れませんでした。"
+
+# description
+msgid "msg_code.9000.summary"
+msgstr "削除しようとしているデータにはいくつか依存関係があります。"
+
+# description
+msgid "msg_code.1010.summary"
+msgstr "テーブル モデルを取得できません。"
+
+# description
+msgid "msg_code.509.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+#  {0} - received version number
+msgid "msg_code.13019.summary"
+msgstr "古い物理スキーマ バージョンを受信しました"
+
+# description
+msgid "msg_code.131.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.13026.summary"
+msgstr "読み込みスケジュールが無効化されました。"
+
+# description
+msgid "msg_code.1610.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.123.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1602.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.177.summary"
+msgstr "コメントを削除できません"
+
+# description
+msgid "msg_code.11005.detail"
+msgstr "クエリ実行によるデータがありません"
+
+# description
+msgid "msg_code.129.summary"
+msgstr "回答を開くことができません。"
+
+#  {0} - column type
+msgid "msg_code.13008.summary"
+msgstr "無効な Sage 質問"
+
+# description
+msgid "msg_code.13015.summary"
+msgstr "物理モデルが読み込まれていません"
+
+# description
+msgid "msg_code.1618.summary"
+msgstr "SQL を実行できません。"
+
+# description
+msgid "msg_code.1406.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+#  {1} – name of the formula
+msgid "msg_code.173.summary"
+msgstr "{1}を更新できませんでした。"
+
+#  {1} - type of object
+msgid "msg_code.13006.detail"
+msgstr "無効なタイプ: {0} が提供されました"
+
+# description
+msgid "msg_code.180.summary"
+msgstr "ルールが削除されました。"
+
+# description
+msgid "msg_code.118.summary"
+msgstr "関連が作成されました。"
+
+#  {0} - identity of the object
+#  {1} - type of object
+msgid "msg_code.13004.summary"
+msgstr "オブジェクトは無効な状態です。"
+
+# description
+msgid "msg_code.1607.summary"
+msgstr "作成 DDL を取得できません。"
+
+# description
+msgid "msg_code.1218.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.162.summary"
+msgstr "システム テーブルのリストを取得できません。"
+
+# description
+msgid "msg_code.109.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.902.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.507.summary"
+msgstr "フィルター データを取得できません。"
+
+#  {1} – name/link to pinboard
+msgid "msg_code.107.summary"
+msgstr "{1} を作成できません。"
+
+# description
+msgid "msg_code.151.summary"
+msgstr "ステッカーを割り当てられませんでした。"
+
+# description
+msgid "msg_code.800.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1233.summary"
+msgstr "ロールを更新できませんでした"
+
+# description
+msgid "msg_code.903.summary"
+msgstr "メタデータ権限を取得できません。"
+
+# description
+msgid "msg_code.12709.summary"
+msgstr "ビジュアリゼーション データのエクスポート エラー"
+
+# description
+msgid "msg_code.503.summary"
+msgstr "ビジュアリゼーション データを取得できません。"
+
+#  {1} – name of aggregated worksheet
+msgid "msg_code.172.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1006.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.11006.summary"
+msgstr "クエリ実行が失敗しました"
+
+#  {1} – name of worksheet
+msgid "msg_code.140.summary"
+msgstr "{1} が保存されました。"
+
+# description
+msgid "msg_code.1222.summary"
+msgstr "プロファイルの写真がアップロードされました。"
+
+# description
+msgid "msg_code.807.summary"
+msgstr "ログ レベルが設定されました。"
+
+# description
+msgid "msg_code.10007.detail"
+msgstr "無効なパラメータ値: {0}。"
+
+# description
+msgid "msg_code.12705.summary"
+msgstr "このフォーマットはサポートされていません"
+
+# description
+msgid "msg_code.1611.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.10007.summary"
+msgstr "無効なパラメータがあります。"
+
+# description
+msgid "msg_code.1119.summary"
+msgstr "ジョブを再開できません"
+
+# description
+msgid "msg_code.502.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1211.summary"
+msgstr "グループが更新されました。"
+
+# description
+msgid "msg_code.1817.detail"
+msgstr "何が発生しましたか? {1}。"
+
+# description
+msgid "msg_code.158.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1115.summary"
+msgstr "ジョブを削除できません。"
+
+#  {0} - the invalid input
+msgid "msg_code.13007.detail"
+msgstr "不十分または無効な Sage からの入力: {0}"
+
+# description
+msgid "msg_code.1200.summary"
+msgstr "ユーザー リストを取得できません。"
+
+# description
+msgid "msg_code.9009.summary"
+msgstr "ThoughtSpot に接続できません。再度実行してください。"
+
+# description
+msgid "msg_code.9501.summary"
+msgstr "ThoughtSpot がタイムアウトしました。再度実行してください。"
+
+# description
+msgid "msg_code.60000.summary"
+msgstr "初期化できませんでした"
+
+#  {1} – name of visualization
+#  {2} – name/link to pinboard
+msgid "msg_code.102.action"
+msgstr "{2}から無効なビジュアリゼーションを削除して、再度実行してください"
+
+# description
+msgid "msg_code.1808.summary"
+msgstr "アラート管理サービスからクラスター情報を取得できません。"
+
+# description
+msgid "msg_code.1815.summary"
+msgstr "申し訳ございません。この時点でオブジェクトをエクスポートできません!"
+
+# description
+msgid "msg_code.1408.summary"
+msgstr "ヘルス ポータル リリース名を取得できません。"
+
+# description
+msgid "msg_code.1100.summary"
+msgstr "ジョブのリストです。"
+
+# description
+msgid "msg_code.801.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.181.detail"
+msgstr "何が発生したのかはっきりしません。トレース ファイルを {adminEmail} に電子メールで送信してください。"
+
+# description
+msgid "msg_code.9007.detail"
+msgstr "トレース ファイルを {adminEmail} に電子メールで送信してください。"
+
+# description
+msgid "msg_code.1804.summary"
+msgstr "クラスター管理サービスからクラスター情報を取得できません。"
+
+# description
+msgid "msg_code.511.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.512.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.503.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.700.summary"
+msgstr "テーブルが依存される対象を取得できません。"
+
+# description
+msgid "msg_code.167.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.159.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.149.summary"
+msgstr "ステッカーを更新できません。"
+
+# description
+msgid "msg_code.13028.summary"
+msgstr "接続から取得されたオブジェクトは、データソースの編集に対しては無効です。"
+
+# description
+msgid "msg_code.135.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1614.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.127.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1606.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.1220.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+#  {1} - name of pinboard / link
+msgid "msg_code.138.summary"
+msgstr "{1} が保存されました。"
+
+#  {0} - list of duplicate column identities
+msgid "msg_code.13017.summary"
+msgstr "無効な重複列"
+
+#  {1} – name of pinboard
+msgid "msg_code.145.summary"
+msgstr "{1} を保存できません。"
+
+# description
+msgid "msg_code.13024.summary"
+msgstr "スキーマの削除が失敗しました。{0}"
+
+# description
+msgid "msg_code.1627.summary"
+msgstr "データソースが作成されました。"
+
+# description
+msgid "msg_code.9000.action"
+msgstr "このデータを削除する前に依存関係が削除されます。"
+
+# description
+msgid "msg_code.127.summary"
+msgstr "データソースの詳細の取得でエラーが発生しました。"
+
+#  {1} - type of object
+msgid "msg_code.13006.summary"
+msgstr "無効なオブジェクト タイプ"
+
+# description
+msgid "msg_code.1609.summary"
+msgstr "データソース接続を作成できません。"
+
+# description
+msgid "msg_code.134.summary"
+msgstr "ビジュアリゼーションが更新されました。"
+
+#  {0} - provider details
+msgid "msg_code.13013.summary"
+msgstr "サービス プロバイダーが使用できません"
+
+# description
+msgid "msg_code.1616.summary"
+msgstr "データソース設定を取得できません。"
+
+# description
+msgid "msg_code.1209.summary"
+msgstr "ユーザーが更新されました。"
+
+#  {0} - relationship detail
+msgid "msg_code.13020.summary"
+msgstr "無効な関連"
+
+#  {1} – name of aggregated worksheet
+msgid "msg_code.171.summary"
+msgstr "{1}が更新されました。"
+
+# description
+msgid "msg_code.1000.detail"
+msgstr "申し訳ございません。何が発生したのかはっきりしません。[問題を報告] をクリックして、レポートを管理者の {adminEmail} に送信してください。"
+
+# description
+msgid "msg_code.116.summary"
+msgstr "テーブルが削除されました。"
+
+# description
+msgid "msg_code.123.summary"
+msgstr "関連を削除できません。"
+
+# description
+msgid "msg_code.13002.summary"
+msgstr "ビューの作成が失敗しました"
+
+# description
+msgid "msg_code.1605.summary"
+msgstr "タスクを再読み込みできません"
+
+# description
+msgid "alert.API_ERROR"
+msgstr "サーバーからのデータ取得エラーです!"
+
+# description
+msgid "alert.INVALID_DATA_IN_WORKSHEET"
+msgstr "基礎となるデータが削除されたため、このワークシートにはアクセスできません。"
+
+# description
+msgid "alert.SUCCESS_UPDATING_EXPOSED_PREFERENCES"
+msgstr "基本設定が更新されました。"
+
+# description
+msgid "alert.FAILURE_UPDATING_EXPOSED_PREFERENCES"
+msgstr "基本設定を更新できません。"
+
+# description
+msgid "alert.SERVER_UNREACHABLE_COUNTDOWN"
+msgstr "ThoughtSpot に接続できません。{0} 秒以内に再試行します。"
+
+# description
+msgid "alert.SERVER_UNREACHABLE_CONNECTING"
+msgstr "ThoughtSpot に接続できません。接続中..."
+
+# description
+msgid "alert.SERVER_UNREACHABLE_RETRY_TIMEOUT"
+msgstr "ThoughtSpot に接続できません。後で再試行するか、"
+
+# description
+msgid "alert.TRY_NOW"
+msgstr "今実行する"
+
+# description
+msgid "alert.UNDO"
+msgstr "元に戻す"
+
+# description
+msgid "alert.WE_ARE_BACK"
+msgstr "戻りました!"
+
+# description
+msgid "alert.FAILURE"
+msgstr "エラーが発生しました。"
+
+# description
+msgid "alert.PICTURE_FILE_TOO_BIG"
+msgstr "ファイルが大きすぎます"
+
+# description
+msgid "alert.GROUP_DELETE_DIALOG_TITLE"
+msgstr "削除を確認"
+
+# description
+msgid "alert.GROUP_DELETE_DIALOG_MESSAGE_SINGULAR"
+msgstr "本当にグループ {1} を削除しますか?"
+
+# description
+msgid "alert.GROUP_DELETE_DIALOG_MESSAGE_PLURAL"
+msgstr "本当にグループを削除しますか?"
+
+# description
+msgid "alert.USER_DELETE_DIALOG_TITLE"
+msgstr "削除を確認"
+
+# description
+msgid "alert.USER_DELETE_DIALOG_MESSAGE_SINGULAR"
+msgstr "本当にユーザー {1} を削除しますか?"
+
+# description
+msgid "alert.USER_DELETE_DIALOG_MESSAGE_PLURAL"
+msgstr "本当にユーザーを削除しますか?"
+
+# description
+msgid "alert.ROLE_DELETE_DIALOG_TITLE"
+msgstr "削除を確認"
+
+# description
+msgid "alert.ROLE_DELETE_DIALOG_MESSAGE_SINGULAR"
+msgstr "本当にロール {1} を削除しますか?"
+
+# description
+msgid "alert.ROLE_DELETE_DIALOG_MESSAGE_PLURAL"
+msgstr "本当にロールを削除しますか?"
+
+# description
+msgid "alert.PARTIAL_TABLE_DOWNLOAD_COMPLETE"
+msgstr "行が多すぎます。約 50,000 行のサンプルが提供されました。"
+
+# description
+msgid "alert.TABLE_DOWNLOAD_COMPLETE"
+msgstr "テーブルがダウンロードされました。"
+
+# description
+msgid "alert.FAILED_TO_BUILD_SEARCH_RESULT"
+msgstr "検索結果をビルドできませんでした。"
+
+# description
+msgid "alert.AD_HOC_TRANSFORMATION_FAILED"
+msgstr "アドホック変換できませんでした。"
+
+# description
+msgid "alert.dataDeletionAlertMessages.cannotDelete"
+msgstr "削除は許可されません"
+
+# description
+msgid "alert.dataDeletionAlertMessages.confirmDelete"
+msgstr "削除を確認"
+
+# description
+msgid "alert.dataDeletionAlertMessages.confirmBtnLabel"
+msgstr "削除"
+
+# description
+msgid "alert.dataDeletionAlertMessages.withoutContent.singular"
+msgstr "本当に \"{itemName}\" を削除しますか?"
+
+# description
+msgid "alert.dataDeletionAlertMessages.withoutContent.plural"
+msgstr "本当にこれらの選択された {itemType} を削除しますか?"
+
+# description
+msgid "alert.dataDeletionAlertMessages.withoutDependents.singular"
+msgstr "本当に \"{itemName}\" と内容のすべてを削除しますか?"
+
+# description
+msgid "alert.dataDeletionAlertMessages.withoutDependents.plural"
+msgstr "本当にこれらの \"{itemType}\" と内容のすべてを削除しますか?"
+
+# description
+msgid "alert.dataDeletionAlertMessages.withDependents.singular"
+msgstr "次のオブジェクトは \"{itemName}\" に依存しています。これを \"{itemName}\" から削除する必要があります。"
+
+# description
+msgid "alert.dataDeletionAlertMessages.withDependents.plural"
+msgstr "次のオブジェクトはこれらの {itemType} に依存しています。これを \"{itemType}\" から削除する必要があります。"
+
+# description
+msgid "alert.dataLoadMessages.SUCCESS_CREATE_CONN"
+msgstr "接続が作成されました"
+
+# description
+msgid "alert.dataLoadMessages.SUCCESS_CREATE_SCHEMA"
+msgstr "スキーマ作成が成功しました"
+
+# description
+msgid "alert.dataLoadMessages.SUCCESS_LOAD_DATA"
+msgstr "選択されたテーブルは読み込みのキューに登録されました。"
+
+# description
+msgid "alert.dataLoadMessages.SUCCESS_UPDATE_SCHEDULER"
+msgstr "スケジュールが更新されました。"
+
+# description
+msgid "alert.recoveryMessages.RECOVER_OBJECT"
+msgstr "{1} を回復"
+
+# description
+msgid "alert.dataSourceAlertMessages.alertText"
+msgstr "{sourceText} を削除すると、{clearedEntityName} がクリアされます。"
+
+# description
+msgid "alert.dataSourceAlertMessages.actionButtonText"
+msgstr "OK"
+
+# description
+msgid "alert.dataSourceAlertMessages.cancelButtonText.singular"
+msgstr "維持する"
+
+# description
+msgid "alert.dataSourceAlertMessages.cancelButtonText.plural"
+msgstr "維持する"
+
+# description
+msgid "alert.statusViewer.SUCCESS_RESTART"
+msgstr "選択されたタスクが再起動のキューに登録されました。"
+
+# description
+msgid "alert.statusViewer.SUCCESS_ABORT"
+msgstr "選択されたタスクが中止のキューに登録されました。"
+
+# description
+msgid "alert.worksheetBuilderFailedUserActions.transformationFailed"
+msgstr "サーバー エラーのため {userAction} が失敗しました。"
+
+# description
+msgid "alert.worksheetBuilderFailedUserActions.userActions.addColumn"
+msgstr "列追加"
+
+# description
+msgid "alert.worksheetBuilderFailedUserActions.userActions.editJoinPath"
+msgstr "列マッピング変更"
+
+# description
+msgid "alert.worksheetBuilderFailedUserActions.userActions.deleteColumn"
+msgstr "列削除"
+
+# description
+msgid "alert.worksheetBuilderFailedUserActions.userActions.addPrefix"
+msgstr "名前にプレフィクスを付けています"
+
+# description
+msgid "alert.sage.thriftConnectionErrors.timeout"
+msgstr "サーバー接続がタイムアウトしました。"
+
+# description
+msgid "alert.sage.thriftConnectionErrors.error"
+msgstr "不明なサーバー接続エラーです。"
+
+# description
+msgid "alert.sage.thriftConnectionErrors.abort"
+msgstr "サーバー接続が中止されました。"
+
+# description
+msgid "alert.sage.thriftConnectionErrors.parsererror"
+msgstr "サーバー応答をパースする時にプロトコル エラーが発生しました。"
+
+# description
+msgid "alert.sage.queryUpdates.tenSecondsMessage"
+msgstr "動作中..."
+
+# description
+msgid "alert.sage.queryUpdates.fortySecondsMessage"
+msgstr "残念ですが、長く時間がかかっています。さらに 20 秒かかると思われます..."
+
+# description
+msgid "alert.sage.queryUpdates.sixtySecondsMessage"
+msgstr "残念です。ボトルネックだと思われます。検索を中止しています。"
+
+# description
+msgid "alert.httpStatus.NOT_AUTHORIZED"
+msgstr "このアクションを実行する権限がありません。"
+
+# description
+msgid "alert.httpStatus.TIMED_OUT"
+msgstr "サーバーがタイムアウトしました。"
+
+# description
+msgid "alert.labelAlertMessages.labelNameEmpty"
+msgstr "空の名前は許可されません。"
+
+# description
+msgid "alert.labelAlertMessages.duplicateLabelName"
+msgstr "ラベル名はすでに存在しています。"
+
+# description
+msgid "alert.importWizardAlertMessages.serverErrorCodeToMessage.10002"
+msgstr "このファイルは無効であると思われます。空であるか許容されない形式である可能性があります。"
+
+# description
+msgid "alert.importWizardAlertMessages.serverErrorCodeToMessage.12503"
+msgstr "データ タイプをこの列の値から特定できません。"
+
+# description
+msgid "alert.importWizardAlertMessages.serverErrorCodeToMessage.12512"
+msgstr "このファイルには更新されているデータより少ない列しか存在しません。失われている列を追加してインポートを再起動してください。"
+
+# description
+msgid "alert.importWizardAlertMessages.serverErrorCodeToMessage.12513"
+msgstr "このファイルには更新されているデータより多くの列が存在しています。追加されている列を削除してインポートを再起動してください。"
+
+# description
+msgid "alert.importWizardAlertMessages.serverErrorCodeToMessage.13005"
+msgstr "同じ名前のファイルがすでに存在しています。ファイルの名前を変更するか、別のファイルをアップロードしてください。"
+
+# description
+msgid ""
+"alert.importWizardAlertMessages.serverErrorCodeToMessage.DATE_FORMAT_INVALID"
+
+# description
+msgid ""
+"alert.importWizardAlertMessages.serverErrorCodeToMessage.DATE_FORMAT_AMBIGUOUS"
+
+# description
+msgid "alert.importWizardAlertMessages.NO_FILE_UPLOAD_ERROR"
+msgstr "ファイルが見つかりませんでした! 続行する前にファイルをアップロードしてください。"
+
+# description
+msgid "alert.importWizardAlertMessages.NO_HEADER_QUES_ANSWERED_ERROR"
+msgstr "続行する前に赤く強調表示されているオプションに入力してください。"
+
+# description
+msgid "alert.importWizardAlertMessages.INVALID_COL_NAMES_ERROR"
+msgstr "続行する前に赤く強調表示されている無効な列を更新してください。列名が空であることはできません。また一意である必要があります。"
+
+# description
+msgid "alert.importWizardAlertMessages.EMPTY_COL_TYPES_ERROR"
+msgstr "続行する前に赤く強調表示されている各列のタイプを指定してください。"
+
+# description
+msgid "alert.importWizardAlertMessages.INVALID_COL_TYPES_ERROR"
+msgstr "列データとそのタイプの不一致が検出されました。続行する前に、列タイプを変更するかアップロードするデータを修正してください。"
+
+# description
+msgid "alert.importWizardAlertMessages.INVALID_COL_DATA_ERROR"
+msgstr "詳細を確認するには赤くマークされたセルにカーソルを合わせてください。データを変更してインポートを再開することができます。続行を選択する場合、誤りのある行は除外されます。"
+
+# description
+msgid "alert.importWizardAlertMessages.IRRECOVERABLE_ERROR"
+msgstr "回復不能のエラーが見つかりました。改めて開始してください。"
+
+# description
+msgid "alert.importWizardAlertMessages.MISSING_COLUMN_IN_ROW"
+msgstr "この列に対してこの行には値が存在しません。"
+
+# description
+msgid "alert.callosumErrorMessages.NO_JOIN_PATH"
+msgstr "テーブルを結合できません。"
+
+# description
+msgid "alert.callosumErrorMessages.OBJECT_NOT_FOUND"
+msgstr "オブジェクトが見つかりませんでした。"
+
+# description
+msgid "alert.callosumErrorMessages.NO_DATA"
+msgstr "データが見つかりませんでした。"
+
+# description
+msgid "alert.callosumErrorMessages.SAGE_INVALID_QUESTION"
+msgstr "質問に不整合があります。"
+
+# description
+msgid "alert.callosumErrorMessages.RESOURCE_EXCEEDED"
+msgstr "残念です。この検索は大きすぎます。フィルターを追加してみてください。"
+
+# description
+msgid "alert.callosumErrorMessages.CYCLIC_RELATIONSHIP"
+msgstr "既存のリンクと競合するため、このリンクは作成できません。"
+
+# description
+msgid "alert.leftPanel.COLUMN_ADDITION_NOT_ALLOWED"
+msgstr "申し訳ございません。列追加は許可されません"
+
+# description
+msgid "alert.leftPanel.TOO_MANY_COLUMNS"
+msgstr "最大列数の上限に到達しました。"
+
+# description
+msgid "alert.leftPanel.COMPLEX_QUERY"
+msgstr "検索バーでのみ編集できる複雑なクエリを使用しています。"
+
+# description
+msgid "alert.createSchema.FAILED_TO_EXECUTE"
+msgstr "一部のコマンドを実行できませんでした。確認してから続行してください。"
+
+# description
+msgid "alert.createSchema.LOAD_SUCCESSFULL"
+msgstr "{1} コマンドが読み込まれました。"
+
+# description
+msgid "alert.createSchema.EXECUTION_SUCCESSFUL"
+msgstr "すべてのコマンドが実行されました。"
+
+# description
+msgid "alert.FAILURE_UPLOADING_FILE"
+msgstr "ファイルをアップロードできません。"
+
+# description
+msgid "alert.alertMessageDownloadTrace"
+msgstr "<u><b>まず良くないニュースです:</b></u><br>どこかで問題が発生しました。<br><u><b>次に良いニュースです:</b></u><br>トレース ファイルをダウンロードして、<b>{email}</b> に電子メールで送信する場合。これは助けることができます。"
+
+
+
+
+
+# description
+msgid "displayRowNumber"
+msgstr "({topRow} - {bottomRow}/{totalRows} 行を表示)"
+
+# description
+msgid "getModelDataRowInfo"
+msgstr "ここには {modelDataLen} 行のみが表示されています。"
+
+# description
+msgid "resultsRowLimit"
+msgstr "結果は最初の {maxRows} 行に限定されます。"
+
+# description
+msgid "otherTokenForEditMapping"
+msgstr "他の \"{tokenForEditMapping}\" タイプを参照してください"
+
+# description
+msgid "rowsSkipped"
+msgstr "インポート中に {NumErrorRows} 行がスキップされました。"
+
+# description
+msgid "gitcommit2"
+msgstr "git-commit: {commit_Id}"
+
+# description
+msgid "gitbranch2"
+msgstr "git-branch: {git_Branch}"
+
+# description
+msgid "built_on2"
+msgstr "構築日: {timeStamp}"
+
+# description
+msgid "terminalToken_confirmation"
+msgstr "どの {terminal_Token} ですか?"
+
+# description
+msgid "Download_as2"
+msgstr "{item_id} としてダウンロード"
+
+# description
+msgid "Chart_page2"
+msgstr "グラフ ページ {pageNumber}"
+
+# description
+msgid "SelectedSourcesCount"
+msgstr "選択数 ({getCount})"
+
+# description
+msgid "search_by_name"
+msgstr "名前で検索"
+
+# description
+msgid "Destination_table"
+msgstr "ターゲット テーブル"
+
+# description
+msgid "Source_column"
+msgstr "ソース列"
+
+# description
+msgid "Destination_column"
+msgstr "ターゲット列"
+
+# description
+msgid "Enter_prefix"
+msgstr "プレフィクスを入力"
+
+# description
+msgid "Add_comment"
+msgstr "ここにコメントを追加"
+
+# description
+msgid "Search_table_name"
+msgstr "テーブル名を検索"
+
+# description
+msgid "Source_name"
+msgstr "'ソース名'"
+
+# description
+msgid "Select_a_connection"
+msgstr "接続を選択"
+
+# description
+msgid "new_column_name"
+msgstr "'新しい列名を入力'"
+
+# Title
+msgid "Memory_usage"
+msgstr "メモリ使用率"
+
+# Title
+msgid "Efficiency"
+msgstr "効率"
+
+# description
+msgid "Filter_by_ID"
+msgstr "ID でフィルタ"
+
+# description
+msgid "formula_name"
+msgstr "'式名を入力'"
+
+# description
+msgid "Search_Columns"
+msgstr "検索列"
+
+# description
+msgid "Filter_by_Name"
+msgstr "名前でフィルタ"
+
+# description
+msgid "Search_sources"
+msgstr "検索ソース"
+
+# description
+msgid "Add_a_comment"
+msgstr "コメントを追加"
+
+# description
+msgid "import_error_msg"
+msgstr "下のボタンをクリックして、インポートを再度試みてください。それでもうまくいかない場合は、ファイルを確認してください。ファイルにエラーがある可能性があります。"
+
+# description
+msgid "column_name"
+msgstr "'列名を入力'"
+
+# description
+msgid "x_axis_columns"
+msgstr "X 軸の列を選択"
+
+# description
+msgid "y_axis_columns"
+msgstr "Y 軸の列を選択"
+
+# description
+msgid "legend_columns"
+msgstr "凡例の列を選択"
+
+# description
+msgid "Chart_Type"
+msgstr "グラフ タイプを選択"
+
+# description
+msgid "SOURCE"
+msgstr "ソース"
+
+# description
+msgid "UPDATED"
+msgstr "更新済み"
+
+
+# description
+msgid "Configure_Chart"
+msgstr "グラフを構成"
+
+# description
+msgid "Zoom_into_chart"
+msgstr "グラフにズームイン"
+
+# description
+msgid "No_zoom_allowed"
+msgstr "ズームは許可されていません"
+
+# description
+msgid "Change_chart_config"
+msgstr "グラフ構成を変更"
+
+# description
+msgid "Config_change_not_allowed"
+msgstr "構成の変更は許可されていません"
+
+# description
+msgid "XAxis"
+msgstr "X 軸"
+
+# description
+msgid "YAxis"
+msgstr "Y 軸"
+
+# description
+msgid "Size"
+msgstr "サイズ"
+
+# description
+msgid "Legend"
+msgstr "凡例"
+
+# description
+msgid "Confirm_removal"
+msgstr "削除を確認"
+
+# description
+msgid "Are_you_sure2"
+msgstr "{vizType} を削除しますか"
+
+# description
+msgid "chartTypes.BAR"
+msgstr "棒グラフ"
+
+# description
+msgid "chartTypes.COLUMN"
+msgstr "列"
+
+# description
+msgid "chartTypes.STACKED_COLUMN"
+msgstr "積み上げ縦棒グラフ"
+
+# description
+msgid "chartTypes.PARETO"
+msgstr "パレート図"
+
+# description
+msgid "chartTypes.LINE"
+msgstr "ライン"
+
+# description
+msgid "chartTypes.AREA"
+msgstr "面グラフ"
+
+# description
+msgid "chartTypes.SCATTER"
+msgstr "散布図"
+
+# description
+msgid "chartTypes.BUBBLE"
+msgstr "バブル チャート"
+
+# description
+msgid "chartTypes.PIE"
+msgstr "円グラフ"
+
+# description
+msgid "chartTypes.GEO_AREA"
+msgstr "地域面グラフ"
+
+# description
+msgid "chartTypes.GEO_BUBBLE"
+msgstr "地域バブル チャート"
+
+# description
+msgid "chartTypes.GEO_HEATMAP"
+msgstr "地域ヒートマップ"
+
+# description
+msgid "chartTypes.GEO_EARTH_AREA"
+msgstr "ジオ アース面グラフ"
+
+# description
+msgid "chartTypes.GEO_EARTH_BUBBLE"
+msgstr "ジオ アース バブル チャート"
+
+# description
+msgid "chartTypes.GEO_EARTH_BAR"
+msgstr "ジオ アース棒グラフ"
+
+# description
+msgid "chartTypes.GEO_EARTH_HEATMAP"
+msgstr "ジオ アース ヒートマップ"
+
+# description
+msgid "chartTypes.GEO_EARTH_GRAPH"
+msgstr "ジオ アース グラフ"
+
+# description
+msgid "chartTypes.WATERFALL"
+msgstr "ウォーターフォール図"
+
+# description
+msgid "chartTypes.TREEMAP"
+msgstr "ツリーマップ図"
+
+# description
+msgid "chartTypes.HEATMAP"
+msgstr "ヒートマップ"
+
+# description
+msgid "chartTypes.STACKED_AREA"
+msgstr "積み上げ面グラフ"
+
+# description
+msgid "chartTypes.LINE_COLUMN"
+msgstr "折れ線 - 縦棒グラフ"
+
+# description
+msgid "chartTypes.FUNNEL"
+msgstr "じょうごグラフ"
+
+# description
+msgid "chartTypes.PIVOT_TABLE"
+msgstr "ピボット テーブル"
+
+# description
+msgid "chartTypes.LINE_STACKED_COLUMN"
+msgstr "折れ線 - 積み上げ縦棒グラフ"
+
+# description
+msgid "Administration_Group"
+msgstr "管理グループ"
+
+
+# description
+msgid "infoCard.TITLE"
+msgstr "表示内容"
+
+# description
+msgid "Abort_data_import"
+msgstr "データのインポートを中止"
+
+# description
+msgid "abort_confirmation"
+msgstr "データのインポートを中止しますか?"
+
+# description
+msgid "Stay_here"
+msgstr "続行する"
+
+# description
+msgid "Yes_abort"
+msgstr "中止する"
+
+
+# description
+msgid "Attention"
+msgstr "注意!"
+
+# description
+msgid "Overwrite_confirmation"
+msgstr "既存データを上書きするように選択しました。この操作は元に戻せません。実行してよろしいですか?"
+
+# description
+msgid "Upload_your_file"
+msgstr "ファイルをアップロード"
+
+
+# description
+msgid "Set_column_names"
+msgstr "列名を設定"
+
+
+# description
+msgid "Upload_csv_to_proceed"
+msgstr "続行するには、データが含まれている .csv ファイルをアップロードしてください。"
+
+# description
+msgid "contains_col_name"
+msgstr "成功しました! アップロードしたファイルに列名が含まれているかどうかを指定してください。"
+
+
+# description
+msgid "name_unique_col"
+msgstr "アップロードしたファイル内の列に名前を付けます。列名は一意である必要があります。"
+
+
+# description
+msgid "confirm_ignore_val_errors"
+msgstr "データ検証エラーを無視するように選択しました。この操作は元に戻せません。続行しますか?"
+
+
+# description
+msgid "Preview_and_import"
+msgstr "データのプレビューとインポート"
+
+# description
+msgid "Add_to_existing"
+msgstr "既存データに新しいデータを追加します"
+
+# description
+msgid "Irrecoverable_errors_msg"
+msgstr "回復不能のエラーが見つかりました。改めて開始してください。"
+
+# description
+msgid "address_errors_before_proceeding"
+msgstr "続行する前にエラーを解決してください"
+
+# description
+msgid "confirm_errors_and_proceed"
+msgstr "データ検証エラーを無視して続行するように選択しました。この操作は元に戻せません。実行してよろしいですか?"
+
+# description
+msgid "Set_column_types"
+msgstr "列のタイプを設定"
+
+# description
+msgid "Determine_column_interruption"
+msgstr "各列の値の解釈方法を決定してください。"
+
+# description
+msgid "Invalid_file_type_error"
+msgstr "ファイル タイプが無効です。サポートされるのは、次のタイプのみです: "
+
+# description
+msgid "Showing_underlying_data"
+msgstr "基礎となるデータを表示中"
+
+# description
+msgid "SUM"
+msgstr "合計"
+
+# description
+msgid "AVERAGE"
+msgstr "平均"
+
+# description
+msgid "MIN"
+msgstr "最小"
+
+# description
+msgid "MAX"
+msgstr "最大"
+
+# description
+msgid "COUNT"
+msgstr "合計数"
+
+# description
+msgid "COUNT_DISTINCT"
+msgstr "一意の数"
+
+# description
+msgid "STD_DEVIATION"
+msgstr "標準偏差"
+
+# description
+msgid "VARIANCE"
+msgstr "分散"
+
+# description
+msgid "RANGE"
+msgstr "範囲"
+
+# description
+msgid "pinboardSnapshots.CREATE_NEW_SNAPSHOT"
+msgstr "新しいスナップショットを作成"
+
+# description
+msgid "datatype_Text"
+msgstr "テキスト"
+
+# description
+msgid "datatype_Date"
+msgstr "日付"
+
+# description
+msgid "datatype_Datetime"
+msgstr "日時"
+
+# description
+msgid "datatype_Time"
+msgstr "時間"
+
+# description
+msgid "datatype_Numeric"
+msgstr "数値"
+
+# description
+msgid "datatype_Decimal"
+msgstr "10 進数"
+
+# description
+msgid "Can_View"
+msgstr "表示可能"
+
+# description
+msgid "Can_Edit"
+msgstr "編集可能"
+
+# description
+msgid "Varies"
+msgstr "変動"
+
+# description
+msgid "Untitled_Formula"
+msgstr "無題の式"
+
+# description
+msgid "start_point"
+msgstr "ここに式を入力"
+
+
+# description
+msgid "naturalQuery.Thoughtspot_compiled_a"
+msgstr "Thoughtspot は次のリストを作成しました:"
+
+# description
+msgid "data_type"
+msgstr "データ タイプ"
+
+# description
+msgid "column_type"
+msgstr "列タイプ"
+
+# description
+msgid "Additive"
+msgstr "追加"
+
+# description
+msgid "aggregation2"
+msgstr "集約"
+
+# description
+msgid "hidden"
+msgstr "非表示"
+
+# description
+msgid "Synonyms"
+msgstr "類義語"
+
+# description
+msgid "Index_Type"
+msgstr "インデックス タイプ"
+
+# description
+msgid "Geo_type"
+msgstr "地域タイプ"
+
+# description
+msgid "Index_Priority"
+msgstr "インデックスの優先度"
+
+# description
+msgid "Format_Pattern"
+msgstr "形式のパターン"
+
+# description
+msgid "Attribution_Dimension"
+msgstr "属性のディメンジョン"
+
+# description
+msgid "View_More"
+msgstr "'さらに表示'"
+
+# description
+msgid "lock_unlock_chart_config duh"
+msgstr "グラフの構成をロック/ロック解除"
+
+# description
+msgid "Returns_the_date"
+msgstr "指定日の日付部分を返します。"
+
+# description
+msgid "smith"
+msgstr "'smith'"
+
+# description
+msgid "units"
+msgstr "units"
+
+# description
+msgid "diffdays"
+msgstr "diff_days"
+
+# description
+msgid "complaint"
+msgstr "complaint"
+
+# description
+msgid "atan"
+msgstr "atan"
+
+# description
+msgid "cumulativesum"
+msgstr "cumulative_sum"
+
+# description
+msgid "cumulativemin"
+msgstr "cumulative_min"
+
+# description
+msgid "pow"
+msgstr "pow"
+
+# description
+msgid "hello_world"
+msgstr "'hello world'"
+
+# description
+msgid "emailed"
+msgstr "emailed"
+
+# description
+msgid "tobool"
+msgstr "to_bool"
+
+# description
+msgid "oregon"
+msgstr "'oregon'"
+
+# description
+msgid "Returns_the_hour"
+msgstr "指定日の時間を返します。"
+
+# description
+msgid "retail_price"
+msgstr "retail price"
+
+# description
+msgid "sum"
+msgstr "合計"
+
+# description
+msgid "min"
+msgstr "最小"
+
+# description
+msgid "todouble"
+msgstr "to_double"
+
+# description
+msgid "difftime"
+msgstr "diff_time"
+
+# description
+msgid "editdistance"
+msgstr "edit_distance"
+
+# description
+msgid "Returns_the_largest"
+msgstr "指定した値より小さい最大の整数を返します。"
+
+# description
+msgid "Returns_the_logarithm2"
+msgstr "底が 2 の対数 (バイナリ対数) を返します。"
+
+# description
+msgid "cube"
+msgstr "cube"
+
+# description
+msgid "Returns_the_year"
+msgstr "指定日の年を返します。"
+
+# description
+msgid "product"
+msgstr "product"
+
+# description
+msgid "log10"
+msgstr "log10"
+
+# description
+msgid "drafted_by"
+msgstr "drafted by"
+
+# description
+msgid "movingsum"
+msgstr "moving_sum"
+
+# description
+msgid "movingmin"
+msgstr "moving_min"
+
+# description
+msgid "Takes_a_measure14"
+msgstr "測定値、集計するウィンドウを定義する 2 つの整数、1 つ以上の属性を取ります。指定したウィンドウ内の測定値の最大値を返します。属性は、移動最大の計算に使用される順序付きの列です。ウィンドウは (current - Num1...Current + Num2) で表され、両端を含みます。たとえば、「1,1」の場合、ウィンドウ サイズは 3 になります。過去の期間を参照するには、「moving_max(sales, 1, -1, date)」のように、2 番目の端点に負の値を使用します。"
+
+# description
+msgid "Takes_a_measure13"
+msgstr "測定値、集計するウィンドウを定義する 2 つの整数、1 つ以上の属性を取ります。指定したウィンドウ内の測定値の最小値を返します。属性は、移動最小の計算に使用される順序付きの列です。ウィンドウは (current - Num1...Current + Num2) で表され、両端を含みます。たとえば、「1,1」の場合、ウィンドウ サイズは 3 になります。過去の期間を参照するには、「moving_min(sales, 1, -1, date)」のように、2 番目の端点に負の値を使用します。"
+
+# description
+msgid "latitude"
+msgstr "緯度"
+
+# description
+msgid "Takes_a_measure12"
+msgstr "測定値、集計するウィンドウを定義する 2 つの整数、1 つ以上の属性を取ります。指定したウィンドウ内の測定値の平均を返します。属性は、移動平均の計算に使用される順序付きの列です。ウィンドウは (current - Num1...Current + Num2) で表され、両端を含みます。たとえば、「1,1」の場合、ウィンドウ サイズは 3 になります。過去の期間を参照するには、「moving_average(sales, 1, -1, date)」のように、2 番目の端点に負の値を使用します。"
+
+# description
+msgid "Takes_a_measure11"
+msgstr "測定値、集計するウィンドウを定義する 2 つの整数、1 つ以上の属性を取ります。指定したウィンドウ内の測定値の合計を返します。属性は、移動合計の計算に使用される順序付きの列です。ウィンドウは (current - Num1...Current + Num2) で表され、両端を含みます。たとえば、「1,1」の場合、ウィンドウ サイズは 3 になります。過去の期間を参照するには、「moving_sum(sales, 1, -1, date)」のように、2 番目の端点に負の値を使用します。"
+
+# description
+msgid "strpos"
+msgstr "strpos"
+
+# description
+msgid "Takes_a_measure10"
+msgstr "測定値と 1 つ以上の属性を取ります。測定値を指定した順序で属性別に累積していき、その最大値を返します。"
+
+# description
+msgid "groupcount"
+msgstr "group_count"
+
+# description
+msgid "exp2"
+msgstr "exp2"
+
+# description
+msgid "similarity"
+msgstr "similarity"
+
+# description
+msgid "shipped"
+msgstr "shipped"
+
+# description
+msgid "safedivide"
+msgstr "safe_divide"
+
+# description
+msgid "Returns_1_if"
+msgstr "値が 0 より大きい場合は +1、0 より小さい場合は -1、0 の場合は 0 を返します。"
+
+# description
+msgid "customer_region"
+msgstr "customer region"
+
+# description
+msgid "state"
+msgstr "state"
+
+# description
+msgid "Returns_the_smallest"
+msgstr "指定した値以上の最小の整数を返します。"
+
+# description
+msgid "phone"
+msgstr "phone"
+
+# description
+msgid "cumulativeaverage"
+msgstr "cumulative_average"
+
+# description
+msgid "soundslike"
+msgstr "sounds_like"
+
+# description
+msgid "Takes_a_column2"
+msgstr "列名と 1 つ以上の属性を取ります。列内の一意の値の数を、属性別にグループ化して返します。"
+
+# description
+msgid "Returns_the_square"
+msgstr "数値の 2 乗を返します。"
+
+# description
+msgid "pokemon_go"
+msgstr "'pokemon go'"
+
+# description
+msgid "Accepts_a_document"
+msgstr "ドキュメント文字列と検索文字列を指定できます。ドキュメントに対する検索文字列の関連性スコア (0 ～ 100) を返します。関連性は編集距離、クエリ内のワード数、ドキュメント内に存在するクエリ内のワードの長さに基づいて決まります。2 つの文字列が完全に一致する場合は、100 を返します。"
+
+# description
+msgid "revenue"
+msgstr "revenue"
+
+# description
+msgid "Returns_Eulers_number"
+msgstr "オイラー数 (~2.718) を累乗した値を返します。"
+
+# description
+msgid "store_name"
+msgstr "store name"
+
+# description
+msgid "serviced"
+msgstr "serviced"
+
+# description
+msgid "hourofday"
+msgstr "hour_of_day"
+
+# description
+msgid "shipping"
+msgstr "shipping"
+
+# description
+msgid "Returns_the_smaller"
+msgstr "2 つの値のうち、小さい方を返します。"
+
+# description
+msgid "groupmax"
+msgstr "group_max"
+
+# description
+msgid "cbrt"
+msgstr "cbrt"
+
+# description
+msgid "variance"
+msgstr "分散"
+
+# description
+msgid "startofweek"
+msgstr "start_of_week"
+
+# description
+msgid "sq"
+msgstr "sq"
+
+# description
+msgid "minecraft_pixelmon"
+msgstr "'minecraft pixelmon'"
+
+# description
+msgid "owner"
+msgstr "owner"
+
+# description
+msgid "Accepts_a_document2"
+msgstr "ドキュメント文字列と検索文字列を指定できます。ドキュメントに対する検索文字列の関連性スコア (0 ～ 100) が 20 以上の場合は、true を返します。関連性は編集距離、クエリ内のワード数、ドキュメント内に存在するクエリ内のワードの長さに基づいて決まります。"
+
+# description
+msgid "bigger"
+msgstr "'bigger'"
+
+# description
+msgid "lastname"
+msgstr "lastname"
+
+# description
+msgid "Returns_the_month"
+msgstr "指定日の月を返します。"
+
+# description
+msgid "tostring"
+msgstr "to_string"
+
+# description
+msgid "joined"
+msgstr "joined"
+
+# description
+msgid "FY_2015"
+msgstr "FY 2015"
+
+# description
+msgid "atty"
+msgstr "'atty'"
+
+# description
+msgid "Returns_the_inverse"
+msgstr "逆正弦を度で返します。"
+
+# description
+msgid "Returns_the"
+msgstr "平方根を返します。"
+
+# description
+msgid "end_latitude"
+msgstr "end latitude"
+
+# description
+msgid "least"
+msgstr "least"
+
+# description
+msgid "Returns_the_length"
+msgstr "文字列の長さを返します。"
+
+# description
+msgid "Returns_the_portion"
+msgstr "指定した文字列の中から、指定した場所 (0 以降) で開始し、指定した長さだけ続く文字を取り出して返します。"
+
+# description
+msgid "q1_revenue"
+msgstr "q1 revenue"
+
+# description
+msgid "adddays"
+msgstr "add_days"
+
+# description
+msgid "false"
+msgstr "false"
+
+# description
+msgid "Returns_the_inverse3"
+msgstr "逆正接を度で返します。"
+
+# description
+msgid "Returns_the_inverse2"
+msgstr "逆余弦を度で返します。"
+
+# description
+msgid "January"
+msgstr "January"
+
+# description
+msgid "markup"
+msgstr "markup"
+
+# description
+msgid "startofmonth"
+msgstr "start_of_month"
+
+# description
+msgid "received"
+msgstr "received"
+
+# description
+msgid "Returns_the_minimum"
+msgstr "列の最小値を返します。"
+
+# description
+msgid "promoter"
+msgstr "promoter"
+
+# description
+msgid "customer"
+msgstr "customer"
+
+# description
+msgid "Returns_2_raised"
+msgstr "2 を累乗した値を返します。"
+
+# description
+msgid "region"
+msgstr "region"
+
+# description
+msgid "stddev"
+msgstr "stddev"
+
+# description
+msgid "cos"
+msgstr "cos"
+
+# description
+msgid "daynumberofyear"
+msgstr "day_number_of_year"
+
+# description
+msgid "Takes_a_column"
+msgstr "列名と 1 つ以上の属性を取ります。列内の値の総数を、属性別にグループ化して返します。"
+
+# description
+msgid "Returns_the_remainder"
+msgstr "最初の数値を 2 番目の数値で除算した場合の剰余を返します。"
+
+# description
+msgid "cumulativemax"
+msgstr "cumulative_max"
+
+# description
+msgid "lawyer"
+msgstr "'lawyer'"
+
+# description
+msgid "tointeger"
+msgstr "to_integer"
+
+# description
+msgid "max"
+msgstr "最大"
+
+# description
+msgid "abs"
+msgstr "abs"
+
+# description
+msgid "time"
+msgstr "時間"
+
+# description
+msgid "spellslike"
+msgstr "spells_like"
+
+# description
+msgid "tweet2"
+msgstr "tweet2"
+
+# description
+msgid "width"
+msgstr "幅"
+
+# description
+msgid "tweet1"
+msgstr "tweet1"
+
+# description
+msgid "or"
+msgstr "or"
+
+# description
+msgid "dayofweek"
+msgstr "day_of_week"
+
+# description
+msgid "Returns_the_number6"
+msgstr "列内の一意の値の数を返します。"
+
+# description
+msgid "Returns_the_number5"
+msgstr "この列を含むテーブル内の行数を返します。"
+
+# description
+msgid "Aggregate"
+msgstr "集計"
+
+# description
+msgid "Used_to_calculate"
+msgstr "地球上の 2 つの地点間の距離を、地球の球形を考慮に入れて計算する場合に使用します。2 つの座標を spherical_distance (latitude_1, longitude_1, latitude_2, longitude_2) の形式で指定できます。2 つの地点間の距離を m で返します。"
+
+# description
+msgid "Returns_the_number4"
+msgstr "指定日の月を表す数字 (1 ～ 12) を返します。"
+
+# description
+msgid "Returns_the_number3"
+msgstr "指定日の日を表す数字 (1 ～ 366) を返します。"
+
+# description
+msgid "Returns_the_number2"
+msgstr "指定日の曜日を表す数字 (1 ～ 7) を返します ( 1 が月曜、7 が日曜)。"
+
+# description
+msgid "Returns_true_when"
+msgstr "両方の条件が満たされている場合は true、それ以外の場合は false を返します。"
+
+# description
+msgid "area"
+msgstr "面グラフ"
+
+# description
+msgid "Returns_the_result6"
+msgstr "指定した日数を指定日に加算した結果を返します。"
+
+# description
+msgid "Returns_the_result5"
+msgstr "最初の数値を 2 番目の数値で除算した結果を返します。2 番目の値が 0 の場合は、NaN (非数) ではなく 0 を返します。"
+
+# description
+msgid "Returns_the_result4"
+msgstr "最初の数値を 2 番目の数値で除算した結果を返します。2 番目の値が 0 の場合は、NaN (非数) を返します。"
+
+# description
+msgid "Returns_the_result3"
+msgstr "両方の数値を乗算した結果を返します。"
+
+# description
+msgid "Returns_the_result2"
+msgstr "最初の数値から 2 番目の数値を引いた結果を返します。"
+
+# description
+msgid "Returns_the_cosine"
+msgstr "角度 (度で指定) の余弦を返します。"
+
+# description
+msgid "call_began"
+msgstr "call began"
+
+# description
+msgid "beam_angle"
+msgstr "beam angle"
+
+# description
+msgid "trial_version"
+msgstr "'trial version'"
+
+# description
+msgid "california"
+msgstr "'california'"
+
+# description
+msgid "attorney"
+msgstr "'attorney'"
+
+# description
+msgid "movingmax"
+msgstr "moving_max"
+
+# description
+msgid "tansatelliteangle"
+msgstr "tan-satellite-angle"
+
+# description
+msgid "married"
+msgstr "married"
+
+# description
+msgid "floor"
+msgstr "floor"
+
+# description
+msgid "sign"
+msgstr "sign"
+
+# description
+msgid "room"
+msgstr "'room'"
+
+# description
+msgid "clicked"
+msgstr "clicked"
+
+# description
+msgid "not_bigger"
+msgstr "'not bigger'"
+
+# description
+msgid "monthnumber"
+msgstr "month_number"
+
+# description
+msgid "supplier"
+msgstr "supplier"
+
+# description
+msgid "Number"
+msgstr "数値"
+
+# description
+msgid "persnickety"
+msgstr "'persnickety'"
+
+# description
+msgid "exp"
+msgstr "exp"
+
+# description
+msgid "Date"
+msgstr "日付"
+
+# description
+msgid "firstname"
+msgstr "first_name"
+
+# description
+msgid "Accepts_two_text4"
+msgstr "2 つの文字列を指定できます。発音が似ている場合は true、似ていない場合は false を返します。"
+
+# description
+msgid "Accepts_two_text3"
+msgstr "2 つの文字列を指定できます。スペルが似ている場合は true、似ていない場合は false を返します。指定できる最大文字数は 1023 です。"
+
+# description
+msgid "Accepts_two_text2"
+msgstr "2 つの文字列と、編集距離 (一方の文字列を他方の文字列に変換するために必要な最小の操作回数) の上限を指定する 1 つの整数を指定できます。編集距離が指定した上限以下の場合は、編集距離を返します。編集距離が上限より大きい場合は、上限に 1 を加えた値を返します。指定できる最大文字数は 1023 です。"
+
+# description
+msgid "month"
+msgstr "月"
+
+# description
+msgid "growth_rate"
+msgstr "成長率"
+
+# description
+msgid "Returns_the_average"
+msgstr "列内のすべての値の平均を返します。"
+
+# description
+msgid "taxrate"
+msgstr "taxrate"
+
+# description
+msgid "ln"
+msgstr "ln"
+
+# description
+msgid "Returns_the_tangent"
+msgstr "角度 (度で指定) の正接を返します。"
+
+# description
+msgid "Accepts_an_integer"
+msgstr "整数または文字列、および strptime 形式の日付を指定できます。入力を日付として返します。エポック形式の日付を入力として指定することはできません。"
+
+# description
+msgid "Friday"
+msgstr "Friday"
+
+# description
+msgid "Returns_the_cube"
+msgstr "数値の 3 乗を返します。"
+
+# description
+msgid "Returns_the_first4"
+msgstr "最初の数値を、2 番目の数値の精度 (デフォルトは 1 ) に丸めた値を返します。"
+
+# description
+msgid "Returns_the_first3"
+msgstr "最初の数値に 2 番目の数値を累乗した値を返します。"
+
+# description
+msgid "Returns_the_first2"
+msgstr "最初の数値に 2 番目の数値を累乗した値を返します。"
+
+# description
+msgid "growth"
+msgstr "成長"
+
+# description
+msgid "movingaverage"
+msgstr "moving_average"
+
+# description
+msgid "Conditional_operator"
+msgstr "条件演算子。"
+
+# description
+msgid "sin"
+msgstr "sin"
+
+# description
+msgid "purchased"
+msgstr "purchased"
+
+# description
+msgid "strlen"
+msgstr "strlen"
+
+# description
+msgid "now"
+msgstr "now"
+
+# description
+msgid "read"
+msgstr "'read'"
+
+# description
+msgid "substr"
+msgstr "substr"
+
+# description
+msgid "not"
+msgstr "not"
+
+# description
+msgid "groupuniquecount"
+msgstr "group_unique_count"
+
+# description
+msgid "Q3_FY"
+msgstr "Q3 FY 2015"
+
+# description
+msgid "campaign"
+msgstr "campaign"
+
+# description
+msgid "date"
+msgstr "日付"
+
+# description
+msgid "complaints"
+msgstr "complaints"
+
+# description
+msgid "Returns_the_day"
+msgstr "指定日の曜日を返します。"
+
+# description
+msgid "approve"
+msgstr "'approve'"
+
+# description
+msgid "distributor"
+msgstr "distributor"
+
+# description
+msgid "Returns_true_if9"
+msgstr "最初の値が 2 番目の値以下の場合は、true を返します。"
+
+# description
+msgid "Subtracts_the_second2"
+msgstr "最初の日付から 2 番目の日付を引いて、結果を秒数で返します。"
+
+# description
+msgid "Returns_true_if8"
+msgstr "最初の値が 2 番目の値以上の場合は、true を返します。"
+
+# description
+msgid "Returns_true_if7"
+msgstr "最初の値が 2 番目の値未満の場合は、true を返します。"
+
+# description
+msgid "Returns_the_standard"
+msgstr "列内のすべての値の標準偏差を返します。"
+
+# description
+msgid "Returns_true_if6"
+msgstr "最初の値が 2 番目より大きい場合は、true を返します。"
+
+# description
+msgid "Returns_true_if5"
+msgstr "最初の値が 2 番目と等しい場合は、true を返します。"
+
+# description
+msgid "Returns_the_number"
+msgstr "指定日の日を表す数字 (1 ～ 31) を返します。"
+
+# description
+msgid "tax"
+msgstr "tax"
+
+# description
+msgid "Returns_true_if4"
+msgstr "最初の文字列に 2 番目の文字列が含まれている場合は、true を返します。それ以外の場合は、false を返します。"
+
+# description
+msgid "Returns_true_if3"
+msgstr "指定日が土曜または日曜の場合は、true を返します。"
+
+# description
+msgid "totalcost"
+msgstr "total_cost"
+
+# description
+msgid "Returns_true_if2"
+msgstr "値が null の場合は true を返します。"
+
+# description
+msgid "Returns_the_cube2"
+msgstr "数値の立方根を返します。"
+
+# description
+msgid "tan"
+msgstr "tan"
+
+# description
+msgid "length"
+msgstr "length"
+
+# description
+msgid "hello_swirl"
+msgstr "'hello swirl'"
+
+# description
+msgid "start_latitude"
+msgstr "start latitude"
+
+# description
+msgid "Jan_FY"
+msgstr "Jan FY 2015"
+
+# description
+msgid "Returns_the_sine"
+msgstr "角度 (度で指定) の正弦を返します。"
+
+# description
+msgid "round"
+msgstr "round"
+
+# description
+msgid "thoughtspot"
+msgstr "'thoughtspot'"
+
+# description
+msgid "hay"
+msgstr "'hay'"
+
+# description
+msgid "Returns_true_when2"
+msgstr "いずれかの条件が満たされている場合は true、それ以外の場合は false を返します。"
+
+# description
+msgid "start_longitude"
+msgstr "start longitude"
+
+# description
+msgid "if"
+msgstr "if"
+
+# description
+msgid "count"
+msgstr "数"
+
+# description
+msgid "average"
+msgstr "平均"
+
+# description
+msgid "texas"
+msgstr "'texas'"
+
+# description
+msgid "day"
+msgstr "曜日"
+
+# description
+msgid "year"
+msgstr "年"
+
+# description
+msgid "invoiced"
+msgstr "invoiced"
+
+# description
+msgid "Returns_the_two"
+msgstr "2 つの値を連結した文字列として返します。"
+
+# description
+msgid "event"
+msgstr "event"
+
+# description
+msgid "quantity"
+msgstr "quantity"
+
+# description
+msgid "thouhgtspot"
+msgstr "'thouhgtspot'"
+
+# description
+msgid "distance"
+msgstr "distance"
+
+# description
+msgid "haystack"
+msgstr "'haystack'"
+
+# description
+msgid "groupstddev"
+msgstr "group_stddev"
+
+# description
+msgid "burning_man"
+msgstr "'burning man'"
+
+# description
+msgid "startofyear"
+msgstr "start_of_year"
+
+# description
+msgid "haystackwithneedle"
+msgstr "'haystack_with_needle'"
+
+# description
+msgid "q2_revenue"
+msgstr "q2 revenue"
+
+# description
+msgid "todate"
+msgstr "to_date"
+
+# description
+msgid "price"
+msgstr "price"
+
+# description
+msgid "atan2"
+msgstr "atan2"
+
+# description
+msgid "broomstick"
+msgstr "'broomstick'"
+
+# description
+msgid "order_date"
+msgstr "order date"
+
+# description
+msgid "Returns_the_variance"
+msgstr "列内のすべての値の分散を返します。"
+
+# description
+msgid "sold"
+msgstr "sold"
+
+# description
+msgid "Takes_a_measure9"
+msgstr "測定値と 1 つ以上の属性を取ります。測定値を指定した順序で属性別に累積していき、その最小値を返します。"
+
+# description
+msgid "Takes_a_measure8"
+msgstr "測定値と 1 つ以上の属性を取ります。測定値を指定した順序で属性別に累積していき、その平均を返します。"
+
+# description
+msgid "Takes_a_measure7"
+msgstr "測定値と 1 つ以上の属性を取ります。測定値を指定した順序で属性別に累積していき、その合計を返します。"
+
+# description
+msgid "Takes_a_measure6"
+msgstr "測定値と 1 つ以上の属性を取ります。測定値を属性別にグループ化して、その最大値を返します。"
+
+# description
+msgid "Takes_a_measure5"
+msgstr "測定値と 1 つ以上の属性を取ります。測定値を属性別にグループ化して、その最小値を返します。"
+
+# description
+msgid "Takes_a_measure4"
+msgstr "測定値と 1 つ以上の属性を取ります。測定値を属性別にグループ化して、その標準偏差を返します。"
+
+# description
+msgid "ifnull"
+msgstr "ifnull"
+
+# description
+msgid "Takes_a_measure3"
+msgstr "測定値と 1 つ以上の属性を取ります。測定値を属性別にグループ化して、その分散を返します。"
+
+# description
+msgid "Takes_a_measure2"
+msgstr "測定値と 1 つ以上の属性を取ります。測定値を属性別にグループ化して、その平均を返します。"
+
+# description
+msgid "Conversion"
+msgstr "変換"
+
+# description
+msgid "Returns_the4"
+msgstr "現在のタイムスタンプを返します。"
+
+# description
+msgid "Returns_the3"
+msgstr "自然対数を返します。"
+
+# description
+msgid "Returns_the2"
+msgstr "絶対値を返します。"
+
+# description
+msgid "submitted"
+msgstr "submitted"
+
+# description
+msgid "acos"
+msgstr "acos"
+
+# description
+msgid "snicket"
+msgstr "'snicket'"
+
+# description
+msgid "true"
+msgstr "true"
+
+# description
+msgid "Returns_the_maximum"
+msgstr "列の最大値を返します。"
+
+# description
+msgid "Returns_the_logarithm"
+msgstr "底が 10 の対数を返します。"
+
+# description
+msgid "Returns_the_first"
+msgstr "最初の値が null でない場合は、最初の値を返します。最初の値が null の場合は、2 番目の値を返します。"
+
+# description
+msgid "Returns_the_larger"
+msgstr "2 つの値のうち、大きい方を返します。"
+
+# description
+msgid "Subtracts_the_second"
+msgstr "最初の日付から 2 番目の日付を引いて、結果を日数で返します (端数は切り捨てます)。"
+
+# description
+msgid "Returns_the_date5"
+msgstr "指定日を含む週の最初の日付を返します。"
+
+# description
+msgid "Returns_the_date4"
+msgstr "指定日を含む月の最初の日付を返します。"
+
+# description
+msgid "date_ordered"
+msgstr "date ordered"
+
+# description
+msgid "Returns_the_date3"
+msgstr "指定日を含む四半期の最初の日付を返します。"
+
+# description
+msgid "Returns_the_date2"
+msgstr "指定日を含む年の最初の日付を返します。"
+
+# description
+msgid "Returns_the_input"
+msgstr "入力をブール値 (true または false) として返します。"
+
+# description
+msgid "Returns_a_random"
+msgstr "0 ～ 1 の乱数を返します。"
+
+# description
+msgid "Returns_the_time"
+msgstr "指定日の時刻を返します。"
+
+# description
+msgid "Text2"
+msgstr "テキスト"
+
+# description
+msgid "mod"
+msgstr "mod"
+
+# description
+msgid "Mixed"
+msgstr "混合"
+
+# description
+msgid "ceil"
+msgstr "ceil"
+
+# description
+msgid "Accepts_two_text"
+msgstr "2 つの文字列を指定できます。編集距離 (一方の文字列を他方の文字列に変換するために必要な最小の操作回数) を整数として返します。指定できる最大文字数は 1023 です。"
+
+# description
+msgid "unknown"
+msgstr "'unknown'"
+
+# description
+msgid "isweekend"
+msgstr "is_weekend"
+
+# description
+msgid "datesold"
+msgstr "date_sold"
+
+# description
+msgid "stack"
+msgstr "'stack'"
+
+# description
+msgid "groupvariance"
+msgstr "group_variance"
+
+# description
+msgid "isnull"
+msgstr "isnull"
+
+# description
+msgid "editdistancewithcap"
+msgstr "edit_distance_with_cap"
+
+# description
+msgid "Returns_true_if10"
+msgstr "最初の値が 2 番目と等しくない場合は、true を返します。"
+
+# description
+msgid "lastname2"
+msgstr "last_name"
+
+# description
+msgid "flag"
+msgstr "'flag'"
+
+# description
+msgid "daynumberofweek"
+msgstr "day_number_of_week"
+
+# description
+msgid "color"
+msgstr "色"
+
+# description
+msgid "sinsatelliteangle"
+msgstr "sin-satellite-angle"
+
+# description
+msgid "Returns_the_numeric"
+msgstr "最初の文字列内に 2 番目の文字列が最初に出現した位置を数値 (0 で開始) で返します。最初の文字列内に 2 番目の文字列が含まれていない場合は、-1 を返します。"
+
+# description
+msgid "studio"
+msgstr "studio"
+
+# description
+msgid "cost"
+msgstr "cost"
+
+# description
+msgid "current_team"
+msgstr "current team"
+
+# description
+msgid "log2"
+msgstr "log2"
+
+# description
+msgid "groupsum"
+msgstr "group_sum"
+
+# description
+msgid "groupmin"
+msgstr "group_min"
+
+# description
+msgid "end_longitude"
+msgstr "end longitude"
+
+# description
+msgid "cossatelliteangle"
+msgstr "cos-satellite-angle"
+
+# description
+msgid "Operators"
+msgstr "演算子"
+
+# description
+msgid "longitude"
+msgstr "経度"
+
+# description
+msgid "volume"
+msgstr "ボリューム"
+
+# description
+msgid "then"
+msgstr "then"
+
+# description
+msgid "home_visit"
+msgstr "home visit"
+
+# description
+msgid "Returns_the_input4"
+msgstr "入力を文字列として返します。日付または時刻を変換するには、strptime で使用する形式を持つ 2 番目のパラメータを追加します。たとえば、to_string(12/01/2014, \"%y-%m-%d\") は 14-12-01 を返します。"
+
+# description
+msgid "Returns_the_input3"
+msgstr "入力を整数として返します。"
+
+# description
+msgid "Returns_the_input2"
+msgstr "入力を double として返します。"
+
+# description
+msgid "sphericaldistance"
+msgstr "spherical_distance"
+
+# description
+msgid "Takes_a_measure"
+msgstr "測定値と 1 つ以上の属性を取ります。測定値を属性別にグループ化して、その合計を返します。"
+
+# description
+msgid "key_05302015_Week"
+msgstr "05/30/2015 Week"
+
+# description
+msgid "greatest"
+msgstr "greatest"
+
+# description
+msgid "sales"
+msgstr "sales"
+
+# description
+msgid "unique_count"
+msgstr "一意の数"
+
+# description
+msgid "defects"
+msgstr "defects"
+
+# description
+msgid "where_is_the"
+msgstr "'where is the burning man concert'"
+
+# description
+msgid "concat"
+msgstr "concat"
+
+# description
+msgid "groupaverage"
+msgstr "group_average"
+
+# description
+msgid "sqrt"
+msgstr "sqrt"
+
+# description
+msgid "Ymd"
+msgstr "'%Y-%m-%d'"
+
+# description
+msgid "red"
+msgstr "'red'"
+
+# description
+msgid "asin"
+msgstr "asin"
+
+# description
+msgid "Returns_true_if"
+msgstr "条件が false の場合は true、それ以外の場合は false を返します。"
+
+# description
+msgid "clicks"
+msgstr "clicks"
+
+# description
+msgid "needle"
+msgstr "'needle'"
+
+# description
+msgid "else"
+msgstr "else"
+
+# description
+msgid "profit"
+msgstr "profit"
+
+# description
+msgid "contains"
+msgstr "含まない"
+
+# description
+msgid "random"
+msgstr "random"
+
+# description
+msgid "similarto"
+msgstr "similar_to"
+
+# description
+msgid "Returns_the_sum"
+msgstr "列内のすべての値の合計を返します。"
+
+# description
+msgid "Returns_the_result"
+msgstr "両方の数値を加算した結果を返します。"
+
+# description
+msgid "startofquarter"
+msgstr "start_of_quarter"
+

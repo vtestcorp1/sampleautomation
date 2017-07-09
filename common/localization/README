@@ -1,0 +1,11 @@
+This directory contains files related to localization within the ThoughtSpot application.
+
+messages_codes.proto contains the definition of message codes used within components and
+exposed to users.
+
+message_codes contains the full list of all messages in the system conforming to the
+definition in messages_codes.proto. All components will read this file.
+
+For each language, we will have a message_codes file with an appropriate suffix
+e.g. message_codes_fr for French.
+

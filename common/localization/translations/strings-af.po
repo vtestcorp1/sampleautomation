@@ -1,0 +1,7980 @@
+msgid ""
+msgstr ""
+
+msgid "LOGIN"
+msgstr "_Login_"
+
+msgid "PASSWORD"
+msgstr "_Password_"
+
+msgid "Enter_Now"
+msgstr "_Enter Now_"
+
+msgid "Remember_me"
+msgstr "_Remember me_"
+
+msgid "Upload_the_modeling_file"
+msgstr "_Upload the modeling file (.xls, size < 50MB)_"
+
+msgid "Upload_the_security_file"
+msgstr "_Upload the security file (.xls, size < 50MB)_"
+
+msgid "Are_you_sure"
+msgstr "_Are you sure you want to remove this visualization from the pinboard?_"
+
+msgid "Choose_the_worksheet"
+msgstr "_Choose the worksheet join rule:_"
+
+msgid "Cancel"
+msgstr "_Cancel_"
+
+msgid "Both_passwords_need"
+msgstr "_Both passwords need to match_"
+
+msgid "Emails"
+msgstr "_Emails:_"
+
+msgid "Results_are_limited"
+msgstr "_Results are limited to first_"
+
+msgid "Choose_the"
+msgstr "_Choose the inclusion rule:_"
+
+msgid "This_content_will"
+msgstr "_This content will inherit red color from left-panel-content css rule._"
+
+msgid "Select_an"
+msgstr "_Select an area_"
+
+msgid "Show_Data"
+msgstr "_Show Data Labels_"
+
+msgid "Are_you_sure3"
+msgstr "_Are you sure you want remove this sticker?_"
+
+msgid "Did_you2"
+msgstr "_Did you mean?_"
+
+msgid "All"
+msgstr "_All_"
+
+msgid "Float_is_a"
+msgstr ""
+
+msgid "Color"
+msgstr "_/* Color */_"
+
+msgid "Pinboard_name"
+msgstr "_Pinboard name:_"
+
+msgid "Zoom_options"
+msgstr "_Zoom options_"
+
+msgid "want_to"
+msgstr "_want to use it._"
+
+msgid "Set_the_column"
+msgstr "_Set the column names and copy your data into the cells._"
+
+msgid "Granularity"
+msgstr "_Granularity:_"
+
+msgid "Existing_data"
+msgstr "_Existing data_"
+
+msgid "Update_my3"
+msgstr "_Update my preferences_"
+
+msgid "You_can_do"
+msgstr ""
+
+msgid "Update_my2"
+msgstr "_Update my password_"
+
+msgid "Type"
+msgstr "_Type:_"
+
+msgid "rows"
+msgstr "_rows._"
+
+msgid "Javascript_class"
+msgstr "_Javascript class name:_"
+
+msgid "ThoughtSpot_Style"
+msgstr "_ThoughtSpot Style Guide_"
+
+msgid "Update_my"
+msgstr "_Update my picture_"
+
+msgid "Add_a_column"
+msgstr ""
+
+msgid "Logical_version"
+msgstr "_Logical version:_"
+
+msgid "Upload_your"
+msgstr "_Upload your schema_"
+
+msgid "Knowing_your_data"
+msgstr ""
+
+msgid "Used_when_we2"
+msgstr ""
+
+msgid "No_values"
+msgstr "_No values available_"
+
+msgid "No_matches"
+msgstr "_No matches_"
+
+msgid "Upload_Picture"
+msgstr "_Upload Picture_"
+
+msgid "Other_tips"
+msgstr "_Other tips and tricks:_"
+
+msgid "clearfix"
+msgstr "_clearfix_"
+
+msgid "is_used"
+msgstr "_is used on a_"
+
+msgid "Formulas"
+msgstr "_Formulas_"
+
+msgid "No_matched"
+msgstr "_No matched data._"
+
+msgid "Profile"
+msgstr "_Profile_"
+
+msgid "View_Keywords"
+msgstr "_View Keywords_"
+
+msgid "Add_a"
+msgstr "_Add a filter on_"
+
+msgid "Memory_used"
+msgstr "_Memory used:_"
+
+msgid "Done"
+msgstr "_Done_"
+
+msgid "Selected"
+msgstr "_Selected (_"
+
+msgid "to"
+msgstr "_to_"
+
+msgid "Updating"
+msgstr "_Updating ..._"
+
+msgid "In_progress"
+msgstr "_In progress_"
+
+msgid "I_didnt"
+msgstr "_I didn't get that._"
+
+msgid "Download_the2"
+msgstr "_Download the security file_"
+
+msgid "No_sources"
+msgstr "_No sources selected_"
+
+msgid "did_you"
+msgstr "_did you mean?_"
+
+msgid "comments_are"
+msgstr "_comments are loaded._"
+
+msgid "By_default_all"
+msgstr "_By default all elements are static._"
+
+msgid "Still_need"
+msgstr "_Still need help?_"
+
+msgid "Static"
+msgstr "_Static_"
+
+msgid "Error_in"
+msgstr "_Error in generating preview._"
+
+msgid "Positioning"
+msgstr "_Positioning_"
+
+msgid "incomplete"
+msgstr "_incomplete_"
+
+msgid "Advanced_settings"
+msgstr "_Advanced settings_"
+
+msgid "Click_on_the"
+msgstr "_Click on the button to download the modeling file._"
+
+msgid "Share_with"
+msgstr "_Share with Channel_"
+
+msgid "showing"
+msgstr "_( showing rows_"
+
+msgid "Did_you"
+msgstr "_Did you mean:_"
+
+msgid "Conditional_Formatting2"
+msgstr "_Conditional Formatting_"
+
+msgid "You_have"
+msgstr "_You have selected:_"
+
+msgid "Scroll_down_to"
+msgstr "_Scroll down to load comments._"
+
+msgid "a_property"
+msgstr "_- a property, like name, address or id number._"
+
+msgid "Slack_TeamName"
+msgstr "_Slack TeamName :_"
+
+msgid "Select_All"
+msgstr "_Select All_"
+
+msgid "Users_or"
+msgstr "_Users or groups_"
+
+msgid "Yes"
+msgstr "_Yes_"
+
+msgid "Left"
+msgstr "_Left_"
+
+msgid "Text_colors"
+msgstr "_Text colors:_"
+
+msgid "Add_test_prefix"
+msgstr ""
+
+msgid "Installed_version"
+msgstr "_Installed version:_"
+
+msgid "over_successive"
+msgstr "_over successive_"
+
+msgid "Text_transformation"
+msgstr "_Text transformation:_"
+
+msgid "While_implementing_the"
+msgstr ""
+
+msgid "Drill_down"
+msgstr "_Drill down_"
+
+msgid "Integrate_Slack"
+msgstr "_Integrate Slack_"
+
+msgid "Fixed"
+msgstr "_Fixed_"
+
+msgid "only"
+msgstr "_only_"
+
+msgid "Use_unsecured"
+msgstr "_Use unsecured_"
+
+msgid "Create_a_pinboard"
+msgstr "_Create a pinboard to have it appear here_"
+
+msgid "more_columns"
+msgstr "_more columns_"
+
+msgid "Name2"
+msgstr "_Name_"
+
+msgid "dib2"
+msgstr "_.dib;_"
+
+msgid "more_metrics"
+msgstr "_more metrics_"
+
+msgid "Relationship_Name"
+msgstr "_Relationship Name_"
+
+msgid "After_your_file"
+msgstr ""
+
+msgid "Get_to_know"
+msgstr "_Get to know your data._"
+
+msgid "We_try_to"
+msgstr ""
+
+msgid "Text_sizing"
+msgstr "_Text sizing:_"
+
+msgid "Name"
+msgstr "_Name:_"
+
+msgid "dib"
+msgstr "_dib_"
+
+msgid "Table"
+msgstr "_Table_"
+
+msgid "on_Pinboard"
+msgstr "_on Pinboard_"
+
+msgid "Float_right"
+msgstr "_Float right this element_"
+
+msgid "Absolute"
+msgstr "_Absolute_"
+
+msgid "Data_read"
+msgstr "_Data read:_"
+
+msgid "Clearfix"
+msgstr "_Clearfix_"
+
+msgid "Password"
+msgstr "_Password_"
+
+msgid "Display2"
+msgstr "_/* Display & Box Model */_"
+
+msgid "Phone"
+msgstr "_Phone:_"
+
+msgid "Email_me"
+msgstr "_Email me sharing notifications_"
+
+msgid "mam"
+msgstr "_.mam;_"
+
+msgid "Copied_to"
+msgstr "_Copied to clipboard_"
+
+msgid "Empty_Pinboard"
+msgstr "_Empty Pinboard_"
+
+msgid "Inline"
+msgstr "_Inline_"
+
+msgid "Explore_all"
+msgstr "_Explore all data_"
+
+msgid "Positioning3"
+msgstr "_/* Positioning */_"
+
+msgid "Absolutely_positioned"
+msgstr "_Absolutely positioned element_"
+
+msgid "Positioning2"
+msgstr "_Positioning:_"
+
+msgid "of"
+msgstr "_of_"
+
+msgid "Add_Derived"
+msgstr "_Add Derived Column:_"
+
+msgid "Maintain_the_order"
+msgstr ""
+
+msgid "Unlink_Slack"
+msgstr "_Unlink Slack_"
+
+msgid "Add"
+msgstr "_Add_"
+
+msgid "never"
+msgstr "_never_"
+
+msgid "Floats_the_element"
+msgstr "_Floats the element to left._"
+
+msgid "DESTINATION_COLUMN"
+msgstr "_DESTINATION COLUMN_"
+
+msgid "Only_add_prefix"
+msgstr "_Only add prefix to columns with conflicting names._"
+
+msgid "Help"
+msgstr "_Help_"
+
+msgid "Overwrite"
+msgstr "_Overwrite_"
+
+msgid "element_when"
+msgstr "_element when it's_"
+
+msgid "Current_version"
+msgstr "_Current version:_"
+
+msgid "Connections"
+msgstr "_Connections:_"
+
+msgid "Block"
+msgstr "_Block_"
+
+msgid "Filter"
+msgstr "_Filter:_"
+
+msgid "rows_have"
+msgstr "_rows have been imported._"
+
+msgid "top_0"
+msgstr "_top: 0;_"
+
+msgid "Select_a"
+msgstr "_Select a column_"
+
+msgid "SELECT_A_COUNTRY"
+msgstr "_Select a country_"
+
+msgid "It_took_too"
+msgstr ""
+
+msgid "Floats_the_element2"
+msgstr "_Floats the element to right._"
+
+msgid "Underlying_Data"
+msgstr "_Underlying Data_"
+
+msgid "Measure_or"
+msgstr "_Measure or attribute_"
+
+msgid "Only_show"
+msgstr "_Only show \"_"
+
+msgid "Relationships"
+msgstr "_Relationships_"
+
+msgid "Edited"
+msgstr "_(Edited)_"
+
+msgid "More"
+msgstr "_More..._"
+
+msgid "Show_hidden"
+msgstr "_Show hidden_"
+
+msgid "Inline_block"
+msgstr "_Inline block_"
+
+msgid "Back2"
+msgstr "_...Back_"
+
+msgid "Whats_your"
+msgstr "_What’s your source?_"
+
+msgid "TEST"
+msgstr "_TEST_"
+
+msgid "Its_positioned_relative"
+msgstr ""
+
+msgid "Cannot_Deselect_Already"
+msgstr "_Cannot Deselect. Already in use._"
+
+msgid "Other"
+msgstr "_/* Other */_"
+
+msgid "NO_DATA"
+msgstr "_NO DATA_"
+
+msgid "Data"
+msgstr "_Data_"
+
+msgid "CSS_templates"
+msgstr "_CSS templates_"
+
+msgid "Your_uploaded"
+msgstr "_Your uploaded data_"
+
+msgid "Apply"
+msgstr "_Apply_"
+
+msgid "Select_the_column"
+msgstr "_Select the column you want to link with the data you are uploading._"
+
+msgid "Copy_to"
+msgstr "_Copy to clipboard_"
+
+msgid "tables_using"
+msgstr "_tables using_"
+
+msgid "Congratulations"
+msgstr "_Congratulations!_"
+
+msgid "Timeout"
+msgstr "_Timeout:_"
+
+msgid "Configuration_Options"
+msgstr "_Configuration Options_"
+
+msgid "Examples"
+msgstr "_Examples:_"
+
+msgid "Reset_zoom"
+msgstr "_Reset zoom_"
+
+msgid "Existing_pinboards_answers"
+msgstr ""
+
+msgid "You_dont_have"
+msgstr "_You don't have access to any data._"
+
+msgid "Ready_for"
+msgstr "_Ready for advanced searches?_"
+
+msgid "To_begin_a"
+msgstr ""
+
+msgid "Slack_Integration"
+msgstr "_Slack Integration_"
+
+msgid "No_Pinboards"
+msgstr "_No Pinboards_"
+
+msgid "important_important_overrides"
+msgstr ""
+
+msgid "Browse"
+msgstr "_Browse_"
+
+msgid "Failed"
+msgstr "_Failed_"
+
+msgid "selector"
+msgstr "_.selector {_"
+
+msgid "Select_an_entity"
+msgstr "_Select an entity above to see help_"
+
+msgid "Refresh"
+msgstr "_REFRESH_"
+
+msgid "SOURCE_COLUMN"
+msgstr "_SOURCE COLUMN_"
+
+msgid "See_other"
+msgstr "_See other \"_"
+
+msgid "key_1_8005087008"
+msgstr "_+1 800-508-7008 Ext. 1_"
+
+msgid "Support"
+msgstr "_Support_"
+
+msgid "cursor_pointer"
+msgstr "_cursor: pointer;_"
+
+msgid "No_prefix_required"
+msgstr ""
+
+msgid "Readonly"
+msgstr "_Read-only_"
+
+msgid "rows_here"
+msgstr "_rows here._"
+
+msgid "right_0"
+msgstr "_right: 0;_"
+
+msgid "Border"
+msgstr "_Border:_"
+
+msgid "Conditional_Formatting"
+msgstr "_Conditional Formatting ..._"
+
+msgid "zindex_10"
+msgstr "_z-index: 10;_"
+
+msgid "Invalid_loginpassword"
+msgstr "_Invalid login/password!_"
+
+msgid "Physical_version"
+msgstr "_Physical version:_"
+
+msgid "Example2"
+msgstr "_Example:_"
+
+msgid "No_suggestions_from"
+msgstr "_No suggestions from the selected sources_"
+
+msgid "Flex"
+msgstr "_Flex_"
+
+msgid "Could_not_reach"
+msgstr "_Could not reach server. Try again later._"
+
+msgid "attribute"
+msgstr "_attribute_"
+
+msgid "I_didnt_get"
+msgstr "_I didn't get that. Did you mean:_"
+
+msgid "CSS"
+msgstr "_CSS:_"
+
+msgid "Confirm_Password"
+msgstr "_Confirm Password_"
+
+msgid "Totally_removes_the"
+msgstr "_Totally removes the element from the page._"
+
+msgid "Used_when_we"
+msgstr ""
+
+msgid "column_from_table"
+msgstr "_\"{columnName}\" from \"{tableName}\"_"
+
+msgid "Row_security"
+msgstr "_Row security_"
+
+msgid "Worksheet_join_rule"
+msgstr "_Worksheet join rule is set to:_"
+
+msgid "pam"
+msgstr "_.pam;_"
+
+msgid "in"
+msgstr "_in_"
+
+msgid "Exclude"
+msgstr "_Exclude \"_"
+
+msgid "CLICK_TO_RESET"
+msgstr "_Click to reset_"
+
+msgid "Call"
+msgstr "_Call:_"
+
+msgid "download_sage"
+msgstr "_download sage metadata_"
+
+msgid "Some_columns_names"
+msgstr ""
+
+msgid "measure"
+msgstr "_measure_"
+
+msgid "Data_written"
+msgstr "_Data written:_"
+
+msgid "Chart_axes"
+msgstr "_Chart axes_"
+
+msgid "has"
+msgstr "_has_"
+
+msgid "Slack_Username"
+msgstr "_Slack Username:_"
+
+msgid "Description"
+msgstr "_Description_"
+
+msgid "Right"
+msgstr "_Right_"
+
+msgid "Oops_There_was"
+msgstr "_Oops! There was an error in loading your data sources._"
+
+msgid "gitcommit"
+msgstr "_git-commit:_"
+
+msgid "rows_while"
+msgstr "_rows while importing._"
+
+msgid "from_the"
+msgstr "_from the pinboard?_"
+
+msgid "child"
+msgstr "_child_"
+
+msgid "CSS_classname"
+msgstr "_CSS classname nomenclature_"
+
+msgid "Email"
+msgstr "_Email:_"
+
+msgid "Dependency"
+msgstr "_Dependency:_"
+
+msgid "Clear_Selections"
+msgstr "_Clear Selections_"
+
+msgid "Keyword"
+msgstr "_Keyword_"
+
+msgid "types"
+msgstr "_\" types_"
+
+msgid "parent"
+msgstr "_parent_"
+
+msgid "Add_js_prefix"
+msgstr ""
+
+msgid "gitbranch"
+msgstr "_git-branch:_"
+
+msgid "Please_contact_your"
+msgstr "_Please contact your system administrator._"
+
+msgid "pa2"
+msgstr "_.pa;_"
+
+msgid "a_numeric"
+msgstr ""
+
+msgid "Aggregation"
+msgstr "_Aggregation_"
+
+msgid "Successful"
+msgstr "_Successful_"
+
+msgid "Style_class"
+msgstr "_Style class name:_"
+
+msgid "Tables"
+msgstr "_Tables_"
+
+msgid "No"
+msgstr "_No_"
+
+msgid "Oops_Sorry_there"
+msgstr "_Oops! Sorry, there were some errors._"
+
+msgid "Confirm_Changes"
+msgstr "_Confirm Changes_"
+
+msgid "Inclusion_rule_is"
+msgstr "_Inclusion rule is set to:_"
+
+msgid "Formula_Assistant"
+msgstr "_Formula Assistant_"
+
+msgid "Append"
+msgstr "_Append_"
+
+msgid "Debug"
+msgstr "_Debug_"
+
+msgid "Relationship_Builder"
+msgstr "_Relationship Builder_"
+
+msgid "Incomplete_only"
+msgstr "_Incomplete only_"
+
+msgid "ADD"
+msgstr "_ADD_"
+
+msgid "Multiple_matches"
+msgstr "_Multiple matches. Select one:_"
+
+msgid "Less"
+msgstr "_...Less_"
+
+msgid "Press_escape_to"
+msgstr "_Press escape to exit replay_"
+
+msgid "Display"
+msgstr "_Display_"
+
+msgid "Objects_count"
+msgstr "_Objects count:_"
+
+msgid "None"
+msgstr "_None_"
+
+msgid "Destination_Table"
+msgstr "_Destination Table_"
+
+msgid "from"
+msgstr "_from_"
+
+msgid "Chart_page"
+msgstr "_Chart page_"
+
+msgid "How_to_structure"
+msgstr "_How to structure my LESS?_"
+
+msgid "Search_memcache"
+msgstr "_Search memcache:_"
+
+msgid "Save"
+msgstr "_Save_"
+
+msgid "Float_left"
+msgstr "_Float left this element_"
+
+msgid "Grouping_of"
+msgstr "_Grouping of css properties:_"
+
+msgid "Headings"
+msgstr "_Headings:_"
+
+msgid "The_new_data"
+msgstr "_The new data will not be linked to the existing data in ThoughtSpot._"
+
+msgid "Editing_Visualization"
+msgstr "_Editing Visualization_"
+
+msgid "SORT"
+msgstr "_SORT_"
+
+msgid "Are_you"
+msgstr "_Are you new here?_"
+
+msgid "Tip_In"
+msgstr "_Tip: In most cases_"
+
+msgid "Clear_cache"
+msgstr "_Clear cache_"
+
+msgid "Download_Trace"
+msgstr "_Download Trace_"
+
+msgid "Comment_List"
+msgstr "_Comment List_"
+
+msgid "Summary"
+msgstr "_Summary_"
+
+msgid "Columns"
+msgstr "_Columns_"
+
+msgid "Text"
+msgstr "_/* Text */_"
+
+msgid "colorreddefault"
+msgstr "_color:@red-default_"
+
+msgid "dn"
+msgstr "_dn_"
+
+msgid "Release_Notes"
+msgstr "_Release Notes_"
+
+msgid "There_is_no"
+msgstr "_There is no data in the system yet._"
+
+msgid "di"
+msgstr "_di_"
+
+msgid "Back"
+msgstr "_Back_"
+
+msgid "db"
+msgstr "_db_"
+
+msgid "Click_on_the2"
+msgstr "_Click on the button to download the security file._"
+
+msgid "Which"
+msgstr "_Which_"
+
+msgid "questionText"
+msgstr "_{questionText}_"
+
+msgid "Showing_only"
+msgstr "_Showing only_"
+
+msgid "Buttons"
+msgstr "_Buttons:_"
+
+msgid "Show_me"
+msgstr "_Show me_"
+
+msgid "Example"
+msgstr "_Example_"
+
+msgid "A3_Analysis"
+msgstr "_A3 Analysis_"
+
+msgid "Not_Searchable"
+msgstr "_Not Searchable_"
+
+msgid "This_content_will2"
+msgstr ""
+
+msgid "statements_were"
+msgstr "_statements were executed._"
+
+msgid "built_on"
+msgstr "_built on:_"
+
+msgid "Floats"
+msgstr "_Floats_"
+
+msgid "Add_charts_or"
+msgstr "_Add charts or tables to this pinboard_"
+
+msgid "Relative"
+msgstr "_Relative_"
+
+msgid "Preferences"
+msgstr "_Preferences_"
+
+msgid "ofhidden"
+msgstr "_.of-hidden;_"
+
+msgid "Add_a_prefix"
+msgstr "_Add a prefix to the selected columns._"
+
+msgid "Similar_to_inline"
+msgstr ""
+
+msgid "and"
+msgstr "_and_"
+
+msgid "Version"
+msgstr "_Version:_"
+
+msgid "No_preview"
+msgstr "_No preview available._"
+
+msgid "Download_the"
+msgstr "_Download the modeling file_"
+
+msgid "Add_to"
+msgstr "_Add to search_"
+
+msgid "Update_Password"
+msgstr "_Update Password_"
+
+msgid "E2E_and_Unit"
+msgstr "_E2E and Unit class name:_"
+
+msgid "Applied_on_the"
+msgstr ""
+
+msgid "Id"
+msgstr "_Id:_"
+
+msgid "Download_as"
+msgstr "_Download as_"
+
+msgid "Scroll_for"
+msgstr "_Scroll for more suggestions_"
+
+msgid "Background_colors"
+msgstr "_Background colors & box model:_"
+
+msgid "Class_name"
+msgstr "_Class name -_"
+
+msgid "complete"
+msgstr "_complete_"
+
+msgid "supportthoughtspotcom"
+msgstr "_support@thoughtspot.com_"
+
+msgid "relation"
+msgstr "_relation_"
+
+msgid "Optional"
+msgstr "_(Optional)_"
+
+msgid "Clear"
+msgstr "_Clear_"
+
+msgid "Sources"
+msgstr "_Sources_"
+
+msgid "SOURCE_TYPE"
+msgstr "_SOURCE TYPE:_"
+
+msgid "Update_the"
+msgstr "_Update the file_"
+
+msgid "order"
+msgstr "_order_"
+
+msgid "This_video_shows"
+msgstr ""
+
+msgid "Upload_your2"
+msgstr "_Upload your data_"
+
+msgid "FILTER"
+msgstr "_FILTER ..._"
+
+msgid "This_filter_type"
+msgstr "_This filter type can only be edited in the search bar._"
+
+msgid "Version_info"
+msgstr "_Version info:_"
+
+msgid "Layouts_templates"
+msgstr "_Layouts templates_"
+
+msgid "Show_underlying"
+msgstr "_Show underlying data_"
+
+msgid "Update_Preferences"
+msgstr "_Update Preferences_"
+
+msgid "Dependents"
+msgstr "_Dependents_"
+
+msgid "Enter_The"
+msgstr "_Enter The Revolution_"
+
+msgid "HTML"
+msgstr "_HTML:_"
+
+msgid "Data_type"
+msgstr "_Data type_"
+
+msgid "INVALID_PRINT_CONFIGURATION_MESSAGE"
+msgstr ""
+
+msgid "SCHEDULE_PINBOARD_CREATE"
+msgstr "_Add a schedule for _"
+
+msgid "SCHEDULE_PINBOARD_UPDATE"
+msgstr "_Edit schedule {1} for pinboard _"
+
+msgid "jobStatusViewerTitle"
+msgstr "_{1} Runs for job {2}_"
+
+msgid "PINBOARD"
+msgstr "_Pinboard_"
+
+msgid "ANSWER"
+msgstr "_Answer_"
+
+msgid "TABLE"
+msgstr "_Table_"
+
+msgid "COLUMN"
+msgstr "_Column_"
+
+msgid "WIDTH"
+msgstr "_width_"
+
+msgid "WORKSHEETS"
+msgstr "_Worksheets_"
+
+msgid "IMPORTED_DATA"
+msgstr "_Imported Data_"
+
+msgid "TABLES"
+msgstr "_Tables_"
+
+msgid "UNTITLED_OBJECT_NAME"
+msgstr "_Untitled_"
+
+msgid "SEARCH"
+msgstr "_search_"
+
+msgid "CHART_VIZ_DISPLAY_NAME"
+msgstr "_Chart_"
+
+msgid "SUBMIT"
+msgstr "_Submit_"
+
+msgid "CANCEL"
+msgstr "_Cancel_"
+
+msgid "CREATE"
+msgstr "_Create_"
+
+msgid "CREATE_YOUR_WORKSHEET"
+msgstr "_Create your worksheet_"
+
+msgid "OK"
+msgstr "_OK_"
+
+msgid "ALL"
+msgstr "_All_"
+
+msgid "BY"
+msgstr "_by_"
+
+msgid "AND"
+msgstr "_and_"
+
+msgid "SAVE"
+msgstr "_Save_"
+
+msgid "SAVING"
+msgstr "_Saving_"
+
+msgid "MAKE_A_COPY"
+msgstr "_Make a copy_"
+
+msgid "COPY_OF"
+msgstr "_Copy of {1}_"
+
+msgid "YES"
+msgstr "_Yes_"
+
+msgid "NO"
+msgstr "_No_"
+
+msgid "UPDATE"
+msgstr "_Update_"
+
+msgid "DONE"
+msgstr "_Done_"
+
+msgid "COLLAPSE"
+msgstr "_collapse_"
+
+msgid "EDIT"
+msgstr "_Edit_"
+
+msgid "REFRESH"
+msgstr "_Refresh_"
+
+msgid "DOWNLOAD"
+msgstr "_Download_"
+
+msgid "UPLOAD"
+msgstr "_Upload_"
+
+msgid "DOWNLOAD_TRACE"
+msgstr "_Download Trace_"
+
+msgid "REQUIRED_FIELD"
+msgstr "_* Required field_"
+
+msgid "BROWSE_YOUR_FILES"
+msgstr "_Browse your files_"
+
+msgid "MAX_FILE_SIZE_MESSAGE"
+msgstr "_Maximum upload file size: {size}_"
+
+msgid "DELETE"
+msgstr "_Delete_"
+
+msgid "ADD_COLUMNS"
+msgstr "_Add Columns_"
+
+msgid "IMPORT"
+msgstr "_Import_"
+
+msgid "BACK"
+msgstr "_Back_"
+
+msgid "CONFIRM"
+msgstr "_Confirm_"
+
+msgid "FILTERS"
+msgstr "_Filters_"
+
+msgid "CLOSE"
+msgstr "_Close_"
+
+msgid "ADD_AND_SAVE"
+msgstr "_Add & Save_"
+
+msgid "NEW_PINBOARD"
+msgstr "_New pinboard_"
+
+msgid "ACTIONS"
+msgstr "_Actions_"
+
+msgid "SEARCH_COLUMN"
+msgstr "_Search columns_"
+
+msgid "SEARCH_YOUR_DATA"
+msgstr "_Search your data_"
+
+msgid "PAUSED_JOB"
+msgstr "_Paused_"
+
+msgid "SCHEDULED_JOB"
+msgstr "_Scheduled_"
+
+msgid "STOPPED_JOB"
+msgstr "_Stopped_"
+
+msgid "JOB"
+msgstr "_Schedule_"
+
+msgid "JOBS"
+msgstr "_Schedules_"
+
+msgid "NO_JOB"
+msgstr "_No Schedule_"
+
+msgid "READ_MORE"
+msgstr "_Read Details_"
+
+msgid "HIDE_DETAILS"
+msgstr "_Hide Details_"
+
+msgid "metadataListSearchPlaceholder"
+msgstr "_Search by name_"
+
+msgid "exploreDataTitle"
+msgstr "_Explore Data_"
+
+msgid "exploreAllData"
+msgstr "_Explore all data_"
+
+msgid "chooseSources"
+msgstr "_Choose Sources_"
+
+msgid "alerts.WHAT_HAPPENED"
+msgstr "_What Happened ?_"
+
+msgid "primaryNavigation.SEARCH"
+msgstr "_Search_"
+
+msgid "primaryNavigation.ANSWERS"
+msgstr "_Answers_"
+
+msgid "primaryNavigation.PINBOARDS"
+msgstr "_Pinboards_"
+
+msgid "primaryNavigation.MANAGE_DATA"
+msgstr "_Data_"
+
+msgid "primaryNavigation.ADMIN"
+msgstr "_Admin_"
+
+msgid "primaryNavigation.HELP"
+msgstr "_Help_"
+
+msgid "primaryNavigation.DISABLED_ANSWER_RELEASE_VERSION"
+msgstr "_3.4_"
+
+msgid "primaryNavigation.userMenu.PROFILE"
+msgstr "_Profile_"
+
+msgid "primaryNavigation.userMenu.SIGN_OUT"
+msgstr "_Sign out_"
+
+msgid "activityFeed.VIEW_ACTIVITY"
+msgstr "_View activity_"
+
+msgid "activityFeed.RECENT_ACTIVITY"
+msgstr "_Recent Activity_"
+
+msgid "activityFeed.NO_ITEMS_TO_DISPLAY"
+msgstr "_No items to display_"
+
+msgid "emptyRelationshipsMessage"
+msgstr "_No relationships to display_"
+
+msgid "editPinboardDetails"
+msgstr "_Edit pinboard details_"
+
+msgid "basicActionMessages.OK"
+msgstr "_OK_"
+
+msgid "blinkList.NAME"
+msgstr "_NAME_"
+
+msgid "blinkList.AUTHOR"
+msgstr "_AUTHOR_"
+
+msgid "blinkList.MODIFIED"
+msgstr "_MODIFIED_"
+
+msgid "blinkList.DESCRIPTION"
+msgstr "_DESCRIPTION_"
+
+msgid "schemaType.TABLE"
+msgstr "_table_"
+
+msgid "schemaType.WORKSHEET"
+msgstr "_worksheet_"
+
+msgid "schemaType.ANSWER"
+msgstr "_answer_"
+
+msgid "schemaViewer.backToTables"
+msgstr "_< BACK TO DATA MANAGEMENT_"
+
+msgid "schemaViewer.backToSchema"
+msgstr "_< BACK TO SCHEMA VIEWER_"
+
+msgid "schemaViewer.HAS_ERRORS"
+msgstr "_Something went wrong.._"
+
+msgid "schemaViewer.WKS_COLUMNS_TABLE_KEY"
+msgstr "_WKSTABLECOLUMS_"
+
+msgid "schemaViewer.WKS_GROUP_KEY"
+msgstr "_WKSGROUP_"
+
+msgid "schemaViewer.TITLE"
+msgstr "_View schema_"
+
+msgid "schemaViewer.LEGEND_TITLE"
+msgstr "_Legend_"
+
+msgid "schemaViewer.CLOSE_LEGEND"
+msgstr "_Hide Legend_"
+
+msgid "schemaViewer.SHOW_LEGEND"
+msgstr "_Show Legend_"
+
+msgid "schemaViewer.TABLE_TITLE"
+msgstr "_Table_"
+
+msgid "schemaViewer.WKS_TITLE"
+msgstr "_Worksheet columns_"
+
+msgid "schemaViewer.ANSWER_TITLE"
+msgstr "_ANSWER_"
+
+msgid "schemaViewer.tableType.WORKSHEET"
+msgstr "_Worksheet_"
+
+msgid "schemaViewer.tableType.USER_DEFINED"
+msgstr "_Table_"
+
+msgid "schemaViewer.tableType.ONE_TO_ONE_LOGICAL"
+msgstr "_Table_"
+
+msgid "schemaViewer.tableType.AGGR_WORKSHEET"
+msgstr "_Worksheet_"
+
+msgid "schemaViewer.relationships.GENERIC"
+msgstr "_Generic_"
+
+msgid "schemaViewer.relationships.PK_FK"
+msgstr "_PK->FK_"
+
+msgid "schemaViewer.relationships.USER_DEFINED"
+msgstr "_User Defined_"
+
+msgid "schemaViewer.tooltip.common.NAME"
+msgstr "_NAME_"
+
+msgid "schemaViewer.tooltip.common.TYPE"
+msgstr "_TYPE_"
+
+msgid "schemaViewer.tooltip.common.CREATED_AT"
+msgstr "_CREATED AT_"
+
+msgid "schemaViewer.tooltip.common.UPDATED_AT"
+msgstr "_UPDATED AT_"
+
+msgid "schemaViewer.tooltip.common.NO_DATA"
+msgstr "_N/A_"
+
+msgid "schemaViewer.tooltip.common.ID"
+msgstr "_ID_"
+
+msgid "schemaViewer.tooltip.join.JOIN_TYPE"
+msgstr "_JOIN_TYPE_"
+
+msgid "schemaViewer.tooltip.join.DESTINATION_TABLE"
+msgstr "_DESTINATION TABLE_"
+
+msgid "schemaViewer.tooltip.join.SOURCE_TABLE"
+msgstr "_SOURCE TABLE_"
+
+msgid "schemaViewer.tooltip.join.SOURCE_COLUMNS"
+msgstr "_SOURCE COLUMNS_"
+
+msgid "schemaViewer.tooltip.join.DESTINATION_COLUMNS"
+msgstr "_DESTINATION COLUMNS_"
+
+msgid "schemaViewer.tooltip.join.GENERIC_EXPRESSION"
+msgstr "_GENERIC_EXPRESSION_"
+
+msgid "metadataListPage.headerTitle.SCHEDULE"
+msgstr "_Your schedules for {1}_"
+
+msgid "metadataListPage.captions.NAME"
+msgstr "_Name_"
+
+msgid "metadataListPage.captions.CRON_SCHEDULE"
+msgstr "_Schedule_"
+
+msgid "metadataListPage.captions.DESCRIPTION"
+msgstr "_Description_"
+
+msgid "metadataListPage.captions.DISPLAYED_NAME"
+msgstr "_Display Name_"
+
+msgid "metadataListPage.captions.CREATED_AT"
+msgstr "_Created At_"
+
+msgid "metadataListPage.captions.CREATED"
+msgstr "_Created_"
+
+msgid "metadataListPage.captions.MODIFIED"
+msgstr "_Modified_"
+
+msgid "metadataListPage.captions.AUTHOR"
+msgstr "_Author_"
+
+msgid "metadataListPage.captions.RECIPIENT"
+msgstr "_Recipient_"
+
+msgid "metadataListPage.captions.STICKERS"
+msgstr "_Stickers_"
+
+msgid "metadataListPage.captions.SOURCE"
+msgstr "_Source_"
+
+msgid "metadataListPage.captions.DATA_SOURCE_TYPE"
+msgstr "_Type_"
+
+msgid "metadataListPage.captions.DATA_SOURCE_SCHEDULED"
+msgstr "_Scheduled_"
+
+msgid "metadataListPage.captions.DATA_SOURCE_LOAD_STATUS"
+msgstr "_Load Status_"
+
+msgid "metadataListPage.captions.START_TIME"
+msgstr "_Started at_"
+
+msgid "metadataListPage.captions.END_TIME"
+msgstr "_Ended at_"
+
+msgid "metadataListPage.captions.STATE"
+msgstr "_Status_"
+
+msgid "metadataListPage.captions.STATUS_VIEWER_LOAD_STATUS"
+msgstr "_Load Status_"
+
+msgid "metadataListPage.captions.DATA_FILTER_TABLE"
+msgstr "_Table_"
+
+msgid "metadataListPage.captions.DATA_FILTER_COLUMN"
+msgstr "_Column_"
+
+msgid "metadataListPage.captions.DATA_FILTER_CONDITION"
+msgstr "_Condition_"
+
+msgid "metadataListPage.captions.DATA_FILTER_TEXT"
+msgstr "_Value_"
+
+msgid "metadataListPage.captions.TRANSFORMATION_EDITOR_COLUMN"
+msgstr "_Column Name_"
+
+msgid "metadataListPage.captions.TRANSFORMATION_EDITOR_TABLE"
+msgstr "_Table Name_"
+
+msgid "metadataListPage.captions.TRANSFORMATION_EDITOR_EXPRESSION"
+msgstr "_Expression_"
+
+msgid "metadataListPage.users.title"
+msgstr "_Users_"
+
+msgid "metadataListPage.users.noItems"
+msgstr "_No Users_"
+
+msgid "metadataListPage.users.listTitle"
+msgstr "_Users {1}-{2}_"
+
+msgid "metadataListPage.groups.title"
+msgstr "_Groups_"
+
+msgid "metadataListPage.groups.noItems"
+msgstr "_No Groups_"
+
+msgid "metadataListPage.groups.listTitle"
+msgstr "_Groups {1}-{2}_"
+
+msgid "metadataListPage.roles.title"
+msgstr "_Roles_"
+
+msgid "metadataListPage.roles.noItems"
+msgstr "_No Roles_"
+
+msgid "metadataListPage.roles.listTitle"
+msgstr "_Roles {1}-{2}_"
+
+msgid "metadataListPage.answers.title"
+msgstr "_Answers_"
+
+msgid "metadataListPage.answers.noItems"
+msgstr "_No Answers_"
+
+msgid "metadataListPage.answers.listTitle"
+msgstr "_Answers {1}-{2}_"
+
+msgid "metadataListPage.answers.disableAnswerAlert.TITLE"
+msgstr "_Answers_"
+
+msgid "metadataListPage.answers.disableAnswerAlert.MESSAGE"
+msgstr "_Want to share or save your answers? Add it to a pinboard!_"
+
+msgid "metadataListPage.answers.disableAnswerAlert.CONFIRM_BUTTON_LABEL"
+msgstr "_Got it_"
+
+msgid "metadataListPage.pinboards.title"
+msgstr "_Pinboards_"
+
+msgid "metadataListPage.pinboards.noItems"
+msgstr "_No Pinboards_"
+
+msgid "metadataListPage.pinboards.listTitle"
+msgstr "_Pinboards {1}-{2}_"
+
+msgid "metadataListPage.pinboards.button.title"
+msgstr "_New Pinboard_"
+
+msgid "metadataListPage.relatedLinks.title"
+msgstr "_Related Links_"
+
+msgid "metadataListPage.relatedLinks.noItems"
+msgstr "_No Related Links_"
+
+msgid "metadataListPage.relatedLinks.button.title"
+msgstr "_New Related Link_"
+
+msgid "metadataListPage.dataManagement.title"
+msgstr "_Data Management_"
+
+msgid "metadataListPage.dataManagement.tables.tabHeader"
+msgstr "_Tables_"
+
+msgid "metadataListPage.dataManagement.tables.noItems"
+msgstr "_No Tables_"
+
+msgid "metadataListPage.dataManagement.tables.listTitle"
+msgstr "_Tables {1}-{2}_"
+
+msgid "metadataListPage.dataManagement.dataSources.tabHeader"
+msgstr "_Data Sources_"
+
+msgid "metadataListPage.dataManagement.dataSources.noItems"
+msgstr "_No Data Sources_"
+
+msgid "metadataListPage.dataManagement.dataSources.listTitle"
+msgstr "_Data Sources {1}-{2}_"
+
+msgid "metadataListPage.jobs.button.title"
+msgstr "_New schedule_"
+
+msgid "metadataListPage.jobs.recipients.one"
+msgstr "_1 Recipient_"
+
+msgid ""metadataListPage.jobs.noContentMessage"
+msgstr "_Add a schedule to this pinboard_"
+
+msgid "metadataListPage.jobs.recipients.more"
+msgstr "_{1} Recipients_"
+
+msgid "metadataListPage.actions.share.text"
+msgstr "_Share_"
+
+msgid "metadataListPage.actions.delete.text"
+msgstr "_Delete_"
+
+msgid "metadataListPage.actions.tag.text"
+msgstr "_Apply Sticker_"
+
+msgid "metadataListPage.actions.reset.text"
+msgstr "_Restart_"
+
+msgid "metadataListPage.actions.abort.text"
+msgstr "_Abort_"
+
+msgid "metadataListPage.actions.schedule.text"
+msgstr "_Schedule report_"
+
+msgid "metadataListPage.actions.pause.text"
+msgstr "_Pause_"
+
+msgid "metadataListPage.actions.resume.text"
+msgstr "_Resume_"
+
+msgid "metadataListPage.actions.export.text"
+msgstr "_Export_"
+
+msgid "metadataListPage.actions.import.text"
+msgstr "_Import_"
+
+msgid "metadataListPage.actions.download.text"
+msgstr "_Download_"
+
+msgid "metadataListPage.actions.sendEmail.text"
+msgstr "_Send by email_"
+
+msgid "sharableItem.INVALID_ITEM_NAME_MESSAGE"
+msgstr "_Name Invalid_"
+
+msgid "filterInputDataType.DEFAULT_PLACE_HOLDER"
+msgstr "_Enter value here_"
+
+msgid "filterInputDataType.DATE"
+msgstr "_MM/DD/YYYY_"
+
+msgid "filterInputDataType.DATE_TIME"
+msgstr "_MM/DD/YYYY HH24:MI:SS_"
+
+msgid "walkMe.deploymentTypes.TRIAL"
+msgstr "_trial_"
+
+msgid "walkMe.deploymentTypes.STANDARD"
+msgstr "_standard_"
+
+msgid "replayAnswer.REPLAY_TITLE"
+msgstr "_Replay Search_"
+
+msgid "replayAnswer.CANNOT_REPLAY_TITLE"
+msgstr "_Cannot replay search_"
+
+msgid "replayAnswer.CANNOT_REPLAY_MESSAGE"
+msgstr ""
+
+msgid "replayAnswer.CANNOT_REPLAY_CONFIRM"
+msgstr "_See Answer_"
+
+msgid "replayAnswer.REPLAY_CONFIRM"
+msgstr "_Start Replay_"
+
+msgid "replayAnswer.REPLAY_CANCEL"
+msgstr "_Record Replay_"
+
+msgid "replayAnswer.REPLAY_CANCEL_TOOLTIP"
+msgstr "_Admin users on Firefox can record._"
+
+msgid "replayAnswer.REPLAY_CANCEL_TOOLTIP_ENABLED"
+msgstr "_Download video after replay or press esc to stop early._"
+
+msgid "replayAnswer.NAME_PREFIX"
+msgstr "_ThoughtSpot tutorial _"
+
+msgid "replayAnswer.FINISHED_TITLE"
+msgstr "_Replay finished_"
+
+msgid "replayAnswer.RE_REPLAY"
+msgstr "_Replay_"
+
+msgid "replayAnswer.EDIT_ANSWER"
+msgstr "_Edit Search_"
+
+msgid "replayAnswer.NAME_LABEL"
+msgstr "_Answer name_"
+
+msgid "replayAnswer.DESCRIPTION_LABEL"
+msgstr "_Answer description_"
+
+msgid "replayAnswer.LAST_MODIFIED_LABEL"
+msgstr "_Last modified_"
+
+msgid "replayAnswer.AUTHOR_LABEL"
+msgstr "_Author_"
+
+msgid "replayAnswer.EXIT_WARNING_TITLE"
+msgstr "_Replay in Progress_"
+
+msgid "replayAnswer.EXIT_WARNING_MESSAGE"
+msgstr "_Are you sure you want to end the replay?_"
+
+msgid "replayAnswer.EXIT_WARNING_CONFIRM"
+msgstr "_Yes, end replay_"
+
+msgid "replayAnswer.EXIT_WARNING_CANCEL"
+msgstr "_Resume replay_"
+
+msgid "screenRecorder.PROCESSING_VIDEO"
+msgstr "_Making video_"
+
+msgid "screenRecorder.DL_TITLE"
+msgstr "_Download Tutorial_"
+
+msgid "screenRecorder.DL_MESSAGE"
+msgstr "_Please download your video tutorial._"
+
+msgid "screenRecorder.DL_CONFIRM"
+msgstr "_Download_"
+
+msgid "screenRecorder.DL_CANCEL"
+msgstr "_Delete Video_"
+
+msgid "screenRecorder.ERROR_TITLE"
+msgstr "_Could not create video_"
+
+msgid "screenRecorder.ERROR_MESSAGE"
+msgstr ""
+
+msgid "screenRecorder.CANNOT_RECORD_TITLE"
+msgstr "_Cannot record screen_"
+
+msgid "screenRecorder.CANNOT_RECORD_MESSAGE"
+msgstr ""
+
+msgid "screenRecorder.DEFAULT_VIDEO_NAME"
+msgstr "_ThoughtSpot screencast_"
+
+msgid "metadataExplorer.title"
+msgstr "_Data management_"
+
+msgid "metadataExplorer.selectValueMessage"
+msgstr "_Select value_"
+
+msgid "metadataExplorer.dataValidationErrorMessage"
+msgstr "_Select a value for the unselected items_"
+
+msgid "metadataExplorer.dataLoadingMessage"
+msgstr "_Fetching Data_"
+
+msgid "metadataExplorer.cannotToggleMessage"
+msgstr "_Cannot toggle additive for this type_"
+
+msgid "metadataExplorer.clickToEdit"
+msgstr "_Click to edit_"
+
+msgid "metadataExplorer.createWorksheet"
+msgstr "_Create worksheet_"
+
+msgid "metadataExplorer.importData"
+msgstr "_Upload data_"
+
+msgid "metadataExplorer.newDataSource"
+msgstr "_New data source_"
+
+msgid "metadataExplorer.importPermissionTip"
+msgstr "_You do not have permission to import data_"
+
+msgid "metadataExplorer.createWorksheetTip"
+msgstr "_You do not have permission to create worksheet_"
+
+msgid "metadataExplorer.cannotDeleteReason"
+msgstr "_Your selection contains these system tables which cannot be deleted:_"
+
+msgid "metadataExplorer.cannotDelete"
+msgstr "_Cannot Delete_"
+
+msgid "metadataExplorer.cannotEdit"
+msgstr "_Cannot Edit for Worksheets_"
+
+msgid "metadataExplorer.rlsNeedsAdmin"
+msgstr "_Access to row level security is only available to administrators._"
+
+msgid "metadataExplorer.rlsDisabledWS"
+msgstr "_Row level security is currently not supported for Worksheets._"
+
+msgid "metadataExplorer.profileDisabledWS"
+msgstr "_Data profiling is not supported for Worksheets._"
+
+msgid "metadataExplorer.needsUnderlyingAccess"
+msgstr ""
+
+msgid "metadataExplorer.types.USER_DEFINED"
+msgstr "_Imported_"
+
+msgid "metadataExplorer.types.WORKSHEET"
+msgstr "_Worksheet_"
+
+msgid "metadataExplorer.types.AGGR_WORKSHEET"
+msgstr "_Worksheet_"
+
+msgid "metadataExplorer.types.ONE_TO_ONE_LOGICAL"
+msgstr "_System Table_"
+
+msgid "metadataExplorer.currencyEditor.NONE"
+msgstr "_None_"
+
+msgid "metadataExplorer.currencyEditor.FROM_BROWSER"
+msgstr "_Infer From Browser_"
+
+msgid "metadataExplorer.currencyEditor.FROM_COLUMN"
+msgstr "_From a column_"
+
+msgid "metadataExplorer.currencyEditor.FROM_ISO_CODE"
+msgstr "_Specify ISO Code_"
+
+msgid "metadataExplorer.currencyEditor.SELECT_COLUMN"
+msgstr "_Select a column_"
+
+msgid "metadataExplorer.currencyEditor.SELECT_ISO_CODE"
+msgstr "_Select currency code_"
+
+msgid "metadataExplorer.currencyEditor.DIALOG_TITLE"
+msgstr "_Specify Currency Type_"
+
+msgid "metadataExplorer.currencyEditor.CURRENCY_TYPE"
+msgstr "_Currency Type_"
+
+msgid "metadataExplorer.geoConfigEditor.GEO_CONFIG"
+msgstr "_Geo Config_"
+
+msgid "metadataExplorer.geoConfigEditor.EDIT_GEO_CONFIG"
+msgstr "_Specify Geographic Configuration_"
+
+msgid "metadataExplorer.geoConfigEditor.NONE"
+msgstr "_None_"
+
+msgid "metadataExplorer.geoConfigEditor.LATITUDE"
+msgstr "_Latitude_"
+
+msgid "metadataExplorer.geoConfigEditor.LONGITUDE"
+msgstr "_Longitude_"
+
+msgid "metadataExplorer.geoConfigEditor.COUNTRY"
+msgstr "_Country_"
+
+msgid "metadataExplorer.geoConfigEditor.SUB_NATION"
+msgstr "_Sub-nation region (State/County/Zip Code etc.)_"
+
+msgid "metadataExplorer.geoConfigEditor.SUB_DIVISION_NAME.REGION"
+msgstr "_Region_"
+
+msgid "metadataExplorer.geoConfigEditor.SUB_DIVISION_NAME.DEPARTMENT"
+msgstr "_Department_"
+
+msgid "metadataExplorer.geoConfigEditor.SUB_DIVISION_NAME.STATE"
+msgstr "_State_"
+
+msgid "metadataExplorer.geoConfigEditor.SUB_DIVISION_NAME.COUNTY"
+msgstr "_County_"
+
+msgid "metadataExplorer.geoConfigEditor.SUB_DIVISION_NAME.MUNICIPALITY"
+msgstr "_Municipality_"
+
+msgid "metadataExplorer.geoConfigEditor.SUB_DIVISION_NAME.DISTRICT"
+msgstr "_District_"
+
+msgid "metadataExplorer.geoConfigEditor.SUB_DIVISION_NAME.ZIP_CODE"
+msgstr "_Zip Code_"
+
+msgid "metadataExplorer.geoConfigEditor.SUB_DIVISION_NAME.UK_FIRST_LEVEL"
+msgstr "_County and Unitary Authority_"
+
+msgid "metadataExplorer.geoConfigEditor.SUB_DIVISION_NAME.UK_SECOND_LEVEL"
+msgstr "_Local Authority District_"
+
+msgid "metadataExplorer.geoConfigEditor.ADMIN_LEVEL_1"
+msgstr "_First level subdivision_"
+
+msgid "metadataExplorer.geoConfigEditor.ADMIN_LEVEL_2"
+msgstr "_Second level subdivision_"
+
+msgid "metadataExplorer.relationshipEditorMessages.ADD_KEY"
+msgstr "_Add Key_"
+
+msgid "metadataExplorer.relationshipEditorMessages.ADD_RELATIONSHIP"
+msgstr "_Add Relationship_"
+
+msgid "privilegesLabels.ADMINISTRATION"
+msgstr "_Has administration privileges_"
+
+msgid "privilegesLabels.USERDATAUPLOADING"
+msgstr "_Can upload user data_"
+
+msgid "privilegesLabels.DATADOWNLOADING"
+msgstr "_Can download data_"
+
+msgid "privilegesLabels.SHAREWITHALL"
+msgstr "_Can share with all users_"
+
+msgid "privilegesLabels.DATAMANAGEMENT"
+msgstr "_Can manage data_"
+
+msgid "privilegesLabels.JOBSCHEDULING"
+msgstr "_Can schedule pinboards_"
+
+msgid "privilegesLabels.A3ANALYSIS"
+msgstr "_Can auto analyze_"
+
+msgid "listFilterLabels.TAG_LABEL_UI_NAME"
+msgstr "_sticker_"
+
+msgid "listFilterLabels.selectStickerMessage"
+msgstr "_Select sticker_"
+
+msgid "listFilterLabels.tableTypeFilterLabel"
+msgstr "_Type_"
+
+msgid "listFilterLabels.tableTypeFilterValueAll"
+msgstr "_All types_"
+
+msgid "listFilterLabels.tableTypeFilterValueImported"
+msgstr "_Imported_"
+
+msgid "listFilterLabels.tableTypeFilterValueTables"
+msgstr "_Tables_"
+
+msgid "listFilterLabels.tableTypeFilterValueWorksheets"
+msgstr "_Worksheets_"
+
+msgid "listFilterLabels.authorFilterLabel"
+msgstr "_Created By_"
+
+msgid "listFilterLabels.authorFilterValueAll"
+msgstr "_All_"
+
+msgid "listFilterLabels.authorFilterValueYou"
+msgstr "_Yours_"
+
+msgid "dataSources.USER_DEFINED"
+msgstr "_Imported_"
+
+msgid "dataSources.ONE_TO_ONE_LOGICAL"
+msgstr "_Default_"
+
+msgid "disabledChartTypeSelectorTooltips.BAR"
+msgstr "_Your search needs at least 1 attribute and 1 measure._"
+
+msgid "disabledChartTypeSelectorTooltips.COLUMN"
+msgstr "_Your search needs at least 1 attribute and 1 measure._"
+
+msgid "disabledChartTypeSelectorTooltips.STACKED_COLUMN"
+msgstr "_Your search needs at least 2 attributes and 1 measure._"
+
+msgid "disabledChartTypeSelectorTooltips.PARETO"
+msgstr "_Your search needs at least 1 attribute and 1 measure._"
+
+msgid "disabledChartTypeSelectorTooltips.LINE"
+msgstr "_Your search needs at least 1 attribute and 1 measure._"
+
+msgid "disabledChartTypeSelectorTooltips.AREA"
+msgstr "_Your search needs at least 1 attribute and 1 measure._"
+
+msgid "disabledChartTypeSelectorTooltips.SCATTER"
+msgstr "_Your search needs at least 1 attribute and 1 measure._"
+
+msgid "disabledChartTypeSelectorTooltips.BUBBLE"
+msgstr "_Your search needs at least 1 attribute and 2 measures._"
+
+msgid "disabledChartTypeSelectorTooltips.PIE"
+msgstr "_Your search needs at least 1 attribute and 1 measure._"
+
+msgid "disabledChartTypeSelectorTooltips.GEO_AREA"
+msgstr "_Your search needs 1 Geographical column of granularity higher than Zip Code._"
+
+msgid "disabledChartTypeSelectorTooltips.GEO_BUBBLE"
+msgstr ""
+
+msgid "disabledChartTypeSelectorTooltips.GEO_HEATMAP"
+msgstr ""
+
+msgid "disabledChartTypeSelectorTooltips.HEATMAP"
+msgstr "_Your search needs at least 2 attributes and 1 measure_"
+
+msgid "disabledChartTypeSelectorTooltips.TREEMAP"
+msgstr "_Your search needs at least 1 attribute and 2 measures _"
+
+msgid "disabledChartTypeSelectorTooltips.WATERFALL"
+msgstr "_Your search needs at least 1 attribute and 1 measure._"
+
+msgid "disabledChartTypeSelectorTooltips.STACKED_AREA"
+msgstr "_Your search needs at least 2 attributes and 1 measure._"
+
+msgid "disabledChartTypeSelectorTooltips.LINE_COLUMN"
+msgstr "_Your search needs at least 1 attribute and 2 measures._"
+
+msgid "disabledChartTypeSelectorTooltips.FUNNEL"
+msgstr "_Your search needs at least 1 attribute and 1 measure._"
+
+msgid "disabledChartTypeSelectorTooltips.LINE_STACKED_COLUMN"
+msgstr "_Your search needs at least 2 attributes and 2 measures._"
+
+msgid "disabledChartTypeSelectorTooltips.PIVOT_TABLE"
+msgstr ""
+
+msgid "dataDisabledChartExplanation.PARETO"
+msgstr ""
+
+msgid "dataDisabledChartExplanation.CARDINALITY"
+msgstr "_Your search needs an attribute containing {1} or less values._"
+
+msgid "dataDisabledChartExplanation.UNIQUE_X_VALUES_PER_SERIES"
+msgstr ""
+
+msgid "dataDisabledChartExplanation.UNIQUE_X_VALUES_ALL_DATA"
+msgstr "_Your search needs to have unique y-axis values for each x-axis value._"
+
+msgid "dataDisabledChartExplanation.ONLY_ONE_Y_AXIS_COLUMN_SUPPORTED"
+msgstr "_Your search may have only one column on y-axis._"
+
+msgid "dataDisabledChartExplanation.NON_NEGATIVE_VALUES_NEEDED"
+msgstr ""
+
+msgid "dataDisabledChartExplanation.SD_AND_VARIANCE_PIVOT"
+msgstr ""
+
+msgid "dataDisabledChartExplanation.DATA_INCOMPLETE_PIVOT"
+msgstr ""
+
+msgid "chartEditorErrorExplanation.ATLEAST_ONE_X_COLUMN"
+msgstr "_At least one x-axis column required._"
+
+msgid "chartEditorErrorExplanation.ATLEAST_ONE_Y_COLUMN"
+msgstr "_At least one y-axis column required._"
+
+msgid "chartEditorErrorExplanation.SIZE_REQUIRED"
+msgstr "_Size column must be specified_"
+
+msgid "chartEditorErrorExplanation.NON_NUMERIC_Y_AXIS_LINKING"
+msgstr "_Cannot share with attributes_"
+
+msgid "chartEditorErrorExplanation.MULTIPLE_NON_NUMERIC_ON_Y"
+msgstr ""
+
+msgid "chartEditorErrorExplanation.ONLY_ATTRIBUTES_ON_LEGEND"
+msgstr "_Only attributes allowed on legend._"
+
+msgid "chartEditorErrorExplanation.UNSUPPORTED_LEGEND_WITH_MULTIPLE_Y"
+msgstr "_Legend is not allowed when there are multiple columns on y-axis._"
+
+msgid "chartEditorErrorExplanation.COLUMN_ALREADY_ON_X"
+msgstr "_{1} is already an x-axis column._"
+
+msgid "chartEditorErrorExplanation.COLUMN_ALREADY_ON_Y"
+msgstr "_{1} is already a y-axis column._"
+
+msgid "chartEditorErrorExplanation.NUMERIC_SIZE_COLUMN"
+msgstr "_Size column must be numeric._"
+
+msgid "chartEditorErrorExplanation.COLUMN_ALREADY_USED"
+msgstr "_{1} is already in use._"
+
+msgid "chartEditorErrorExplanation.INVALID_AXIS_SHARING"
+msgstr "_Columns with different currency settings cannot share y-axis._"
+
+msgid "smartCheckboxCollection.CLEAR_SELECTED_ITEMS"
+msgstr "_Clear all_"
+
+msgid "smartCheckboxCollection.SELECT_ALL_ITEMS"
+msgstr "_Select all_"
+
+msgid "smartCheckboxCollection.CHECKBOX_SEARCH_PLACEHOLDER"
+msgstr "_Search by name_"
+
+msgid "smartCheckboxCollection.SEARCH_TO_REFINE_ITEMS_FURTHER"
+msgstr "_Continue typing to refine further._"
+
+msgid "smartCheckboxCollection.SEARCH_TO_FIND_MORE_READ_ONLY_ITEMS"
+msgstr "_Search to refine items._"
+
+msgid "smartCheckboxCollection.SEARCH_TO_FIND_MORE_ITEMS"
+msgstr "_Search to refine items._"
+
+msgid "smartCheckboxCollection.SEARCH_TO_FIND_MORE_SELECTED_ITEMS"
+msgstr "_Search to refine items._"
+
+msgid "SAVE_AS_DIALOG_TITLE"
+msgstr "_Save {1} as_"
+
+msgid "NAME_BEFORE_SHARING_DIALOG_TITLE"
+msgstr "_Name the {1} before sharing_"
+
+msgid "LOADING_MSG"
+msgstr "_Loading_"
+
+msgid "LOADING_FAILED_MSG"
+msgstr "_Loading Failed_"
+
+msgid "UPLOADING_MSG"
+msgstr "_Uploading_"
+
+msgid "NO_MATCH_MSG"
+msgstr "_No matches found_"
+
+msgid "MORE_ITEMS_MSG"
+msgstr "_Please refine your search..._"
+
+msgid "UPGRADING_ANSWER_MSG"
+msgstr "_Upgrading answer_"
+
+msgid "CALLOSUM_CODE_CANCELED"
+msgstr "_CANCELLED_"
+
+msgid "DRILL_TYPE_VIZ_LEVEL"
+msgstr "_viz-level_"
+
+msgid "dataPanel.SOURCES_TITLE"
+msgstr "_Sources_"
+
+msgid "dataPanel.COLUMNS_TITLE"
+msgstr "_Columns_"
+
+msgid "dataPanel.FILTERS_TITLE"
+msgstr "_Filters_"
+
+msgid "dataPanel.FORMULAE_TITLE"
+msgstr "_Formulas_"
+
+msgid "dataPanel.SELECTED_SOURCES"
+msgstr "_Selected Sources_"
+
+msgid "dataPanel.SELECTED_SUBTITLE"
+msgstr "_{1} selected_"
+
+msgid "dataPanel.TOO_MANY_COLUMNS"
+msgstr ""
+
+msgid "dataPanel.COMPLEX_QUERY"
+msgstr ""
+
+msgid "dataPanel.MISSING_UNDERLYING_ACCESS"
+msgstr ""
+
+msgid "dataPanel.CREATE_FORMULA_TOOLTIP"
+msgstr "_Create a new formula_"
+
+msgid "dataPanel.TITLE"
+msgstr "_Data_"
+
+msgid "dataPanel.popover.DONT_SHOW_AGAIN"
+msgstr "_Don\'t show me this again._"
+
+msgid "dataPanel.popover.ADD_SOURCES"
+msgstr "_Add sources to start_"
+
+msgid "dataPanel.popover.SELECT_DATA_SOURCES"
+msgstr "_Select data sources to explore_"
+
+msgid "dataProfile.metrics.NULL"
+msgstr "_Null values_"
+
+msgid "dataProfile.NOT_AVAILABLE"
+msgstr "_N/A_"
+
+msgid "expressionEditorPanel.EXPRESSION_VALID"
+msgstr "_Good to go!_"
+
+msgid "expressionEditorPanel.EXPRESSION_INCOMPLETE"
+msgstr "_Expression is incomplete_"
+
+msgid "formulaEditor.FORMULA_ASSISTANT"
+msgstr "_Formula Assistant_"
+
+msgid "rlsRuleEditor.RULES"
+msgstr "_Rules_"
+
+msgid "rlsRuleEditor.ADD_RULE"
+msgstr "_Add row security_"
+
+msgid "rlsRuleEditor.RULE_ASSISTANT"
+msgstr "_Rule Assistant_"
+
+msgid "rlsRuleEditor.RULE_NAME_PLACEHOLDER"
+msgstr "_Enter Rule name_"
+
+msgid "rlsRuleEditor.EDIT_JOIN_PATH"
+msgstr "_Change how the rule joins to the table._"
+
+msgid "rlsRuleEditor.RLS_DESCRIPTION"
+msgstr ""
+
+msgid "rlsRuleEditor.EXPLAIN_RLS"
+msgstr "_With row security, control which groups have access to specific rows._"
+
+msgid "rlsRuleEditor.EXAMPLE1"
+msgstr ""
+
+msgid "queryJoinType.labels.INNER"
+msgstr "_Exclude empty rows_"
+
+msgid "queryJoinType.labels.LEFT_OUTER"
+msgstr "_Apply left outer join_"
+
+msgid "queryJoinType.labels.RIGHT_OUTER"
+msgstr "_Apply right outer join_"
+
+msgid "queryJoinType.labels.FULL_OUTER"
+msgstr "_Apply full outer join_"
+
+msgid "queryJoinType.descriptions.INNER"
+msgstr "_Inner join_"
+
+msgid "queryJoinType.descriptions.LEFT_OUTER"
+msgstr "_Left outer join_"
+
+msgid "queryJoinType.descriptions.RIGHT_OUTER"
+msgstr "_Right outer join_"
+
+msgid "queryJoinType.descriptions.FULL_OUTER"
+msgstr "_Full outer join_"
+
+msgid "worksheetType.labels.VIEW"
+msgstr "_Apply all joins_"
+
+msgid "worksheetType.labels.CONTAINER"
+msgstr "_Apply joins progressively (recommended for most cases)_"
+
+msgid "worksheets.ADD_PREFIX"
+msgstr "_Add prefix_"
+
+msgid "worksheets.MULTIPLE_COL_SAME_NAME_WARNING"
+msgstr ""
+
+msgid "worksheets.SAME_COLUMNS_ADDED_WITH_NEW_COLS_WARNING"
+msgstr ""
+
+msgid "worksheets.SAME_COLUMNS_ADDED_NO_NEW_COLS_WARNING"
+msgstr "_The columns you want to add already exist in this worksheet._"
+
+msgid "worksheets.corruptWorksheetWarning.PREFIX"
+msgstr ""
+
+msgid "worksheets.corruptWorksheetWarning.LINK_ACTION"
+msgstr "_remove_"
+
+msgid "worksheets.corruptWorksheetWarning.SUFFIX"
+msgstr "_these worksheet columns._"
+
+msgid "worksheets.upgrade.UPGRADE_IN_PROGRESS_MESSAGE"
+msgstr "_upgrading_"
+
+msgid "worksheets.upgrade.UPGRADE_FAILURE_MESSAGE"
+msgstr "_Error in worksheet upgrade, sage refresh failed ({errorCode})_"
+
+msgid "worksheets.updating"
+msgstr "_updating_"
+
+msgid "worksheets.verifying"
+msgstr "_verifying_"
+
+msgid "worksheets.source"
+msgstr "_Source_"
+
+msgid "worksheets.sources"
+msgstr "_Sources_"
+
+msgid "worksheets.noSources"
+msgstr "_This column has no sources_"
+
+msgid "worksheets.brokenColumnDeleteDialog.title"
+msgstr "_Really delete broken columns ?_"
+
+msgid "worksheets.brokenColumnDeleteDialog.message"
+msgstr "_Deleting broken columns will fix the worksheet. To fix the worksheet without deleting broken columns please contact your admin._"
+
+msgid "vizContext.title"
+msgstr "_<span class=\"bk-header-title\">Editing Visualization <span class=\"bk-element-name\">{vizName}</span> on Pinboard <span class=\"bk-element-name\">{pinboardModel}</span></span>_"
+
+msgid "naturalQuery.aggregateMetricMeasures"
+msgstr "_and {length} more metrics_"
+
+msgid "naturalQuery.groupingClause"
+msgstr "_and {length} more columns_"
+
+msgid "naturalQuery.Thoughtspot_computed"
+msgstr "_Thoughtspot computed_"
+
+msgid "naturalQuery.for_each"
+msgstr "_for each_"
+
+msgid "naturalQuery.combination_of"
+msgstr "_combination of_"
+
+msgid "naturalQuery.Thoughtspot_compiled_a"
+msgstr "_Thoughtspot compiled a list of_"
+
+msgid "naturalQuery.filtered_on"
+msgstr "_filtered on_"
+
+msgid "naturalQuery.sorted_by"
+msgstr "_sorted by_"
+
+msgid "naturalQuery.And_then"
+msgstr "_And then picked_"
+
+msgid "naturalQuery.by"
+msgstr "_by_"
+
+msgid "naturalQuery.And_then_determined"
+msgstr "_And then determined daily growth of_"
+
+msgid "naturalQuery.And_then_determined2"
+msgstr "_And then determined growth of_"
+
+msgid "naturalQuery.by_linking"
+msgstr "_by linking information from_"
+
+msgid "naturalQuery.and"
+msgstr "_and_"
+
+msgid "naturalQuery.tables_using"
+msgstr "_tables using_"
+
+msgid "naturalQuery.relation"
+msgstr "_relation_"
+
+msgid "naturalQuery.in"
+msgstr "_in_"
+
+msgid "naturalQuery.order"
+msgstr "_in {order} order_"
+
+msgid "naturalQuery.columnMeasures"
+msgstr "_and {length} more columns_"
+
+msgid "naturalQuery.regionCount"
+msgstr "_And then picked {topKeyword} {topCount}_"
+
+msgid "naturalQuery.more_columns"
+msgstr "_more columns_"
+
+msgid "naturalQuery.over_successive"
+msgstr "_over successive {duration}_"
+
+msgid "DataExplorerVisibleDependents.PINBOARD_ANSWER_BOOK"
+msgstr "_Pinboard_"
+
+msgid "DataExplorerVisibleDependents.QUESTION_ANSWER_BOOK"
+msgstr "_Answer_"
+
+msgid "DataExplorerVisibleDependents.LOGICAL_TABLE.WORKSHEET"
+msgstr "_Worksheet_"
+
+msgid "DataExplorerVisibleDependents.LOGICAL_TABLE.AGGR_WORKSHEET"
+msgstr "_Worksheet_"
+
+msgid "DataExplorerVisibleDependents.LOGICAL_TABLE.ONE_TO_ONE_LOGICAL"
+msgstr "_Table_"
+
+msgid "DataExplorerVisibleDependents.LOGICAL_TABLE.USER_DEFINED"
+msgstr "_Table_"
+
+msgid "metricsRangeValidationErrorMessages.NON_NUMERIC_RANGE_BOUNDARY"
+msgstr "_Range min/max values must be numbers._"
+
+msgid "metricsRangeValidationErrorMessages.OVERLAPPING_RANGES"
+msgstr "_Ranges may not overlap._"
+
+msgid "metricsRangeValidationErrorMessages.INVALID_RANGE"
+msgstr "_Range\'s min should be smaller than the max._"
+
+msgid "NO_METRICS_DEFINED_YET_MESSAGE"
+msgstr "_No formatting conditions defined yet. Create a new one._"
+
+msgid "NULL_VALUE_PLACEHOLDER_LABEL"
+msgstr "_{Null}_"
+
+msgid "EMPTY_VALUE_PLACEHOLDER_LABEL"
+msgstr "_{Empty}_"
+
+msgid "OTHER_VALUE_PLACEHOLDER_LABEL"
+msgstr "_{Other}_"
+
+msgid "UNAVAILABLE_COLUMN_SAMPLE_VALUE"
+msgstr "_N/A_"
+
+msgid "sageDropdownSelectEvent.TAB_ON_INPUT"
+msgstr "_TAB_ON_INPUT_"
+
+msgid "sageDropdownSelectEvent.ENTER_ON_INPUT"
+msgstr "_ENTER_ON_INPUT_"
+
+msgid "joinWorkflow.titles.DEFINE_MAPPING"
+msgstr "_Define mapping_"
+
+msgid "joinWorkflow.titles.EDIT_MAPPING"
+msgstr "_Edit mapping_"
+
+msgid "preferenceValues.panelState.EXPANDED"
+msgstr "_EXPANDED_"
+
+msgid "preferenceValues.panelState.COLLAPSED"
+msgstr "_COLLAPSED_"
+
+msgid "preferenceValues.panelState.AUTO"
+msgstr "_AUTO_"
+
+msgid "pivotTable.Areas.COLUMN"
+msgstr "_column_"
+
+msgid "pivotTable.Areas.ROW"
+msgstr "_row_"
+
+msgid "pivotTable.Areas.DATA"
+msgstr "_data_"
+
+msgid "pivotTable.ascendingSort"
+msgstr "_asc_"
+
+msgid "pivotTable.descendingSort"
+msgstr "_desc_"
+
+msgid "pivotTable.OTHER_LABEL"
+msgstr "_{Other}_"
+
+msgid "searchDoctor.SIMILAR_SEARCHES_MESSAGE"
+msgstr "_View similar saved searches_"
+
+msgid "searchDoctor.EXPLORE_SEARCHES_MESSAGE"
+msgstr "_Explore some saved searches_"
+
+msgid "help.releaseNameComputationStatus.DETERMINING_VERSION"
+msgstr "_Determining version ..._"
+
+msgid "help.releaseNameComputationStatus.NOT_RELEASE_CLUSTER"
+msgstr "_Not a release cluster_"
+
+msgid "help.releaseNameComputationStatus.ERROR"
+msgstr "_Oops, there was an error determining version._"
+
+msgid "help.mindTouchUrl.home.TITLE"
+msgstr "_How search works_"
+
+msgid "help.mindTouchUrl.keywords.TITLE"
+msgstr "_Keywords_"
+
+msgid "help.mindTouchUrl.releaseNotes.TITLE"
+msgstr "_Release notes_"
+
+msgid "help.mindTouchUrl.adminGuide.TITLE"
+msgstr "_Documentation_"
+
+msgid "help.mindTouchUrl.downloads.TITLE"
+msgstr "_Downloads_"
+
+msgid "help.DEFAULT_PAGE_PATH"
+msgstr "_home_"
+
+msgid "help.noConnectionViewMessages.TITLE"
+msgstr "_Welcome to our Help Center_"
+
+msgid "help.noConnectionViewMessages.INFO_MESSAGE"
+msgstr ""
+
+msgid "help.noConnectionViewMessages.KEYWORD_TITLE"
+msgstr "_Keywords_"
+
+msgid "help.noConnectionViewMessages.KEYWORD_DESCRIPTION"
+msgstr "_Take a look at few examples of what you can type in the search_"
+
+msgid "userPropertiesKeys.EMAIL"
+msgstr "_mail_"
+
+msgid "sharePanel.ADD_USER_OR_GROUPS"
+msgstr "_Add users or groups_"
+
+msgid "sharePanel.CLICK_TO_SAVE"
+msgstr "_Click save to save your changes_"
+
+msgid "sharePanel.ENTIRE_TABLE"
+msgstr "_Entire Table_"
+
+msgid "sharePanel.FETCHING_PERMISSIONS"
+msgstr "_Fetching permissions..._"
+
+msgid "sharePanel.IS_OWNER"
+msgstr "_Is owner_"
+
+msgid "sharePanel.SPECIFIC_COLUMN"
+msgstr "_Specific Columns_"
+
+msgid "sharePanel.TITLE"
+msgstr "_SHARE_"
+
+msgid "sharePanel.WHO_ACCESS"
+msgstr "_Who has access_"
+
+msgid "sharePanel.READ_ONLY"
+msgstr "_Can View_"
+
+msgid "sharePanel.MODIFY"
+msgstr "_Can Edit_"
+
+msgid "sharePanel.VARIES"
+msgstr "_Varies_"
+
+msgid "loginConstants.LOGIN_WITH_SAML_MESSAGE"
+msgstr "_Login using Single Sign On_"
+
+msgid "contextMenu.RELATED_ITEMS"
+msgstr "_Related items_"
+
+msgid "importData.NAME_DESCRIPTION_ERROR"
+msgstr "_Name/Description cannot be empty._"
+
+msgid "importData.CONNECTION_ERROR"
+msgstr "_No connection is chosen._"
+
+msgid "importData.TABLE_ERROR"
+msgstr "_Select at least one table_"
+
+msgid "importData.BASIC_INFO"
+msgstr "_Basic Info_"
+
+msgid "importData.SELECT_TABLES"
+msgstr "_Select Tables_"
+
+msgid "importData.FILTERS_TRANSFORMS"
+msgstr "_Transformations_"
+
+msgid "importData.LOAD_DATA"
+msgstr "_Load data_"
+
+msgid "importData.ABORT_DATA_IMPORT"
+msgstr "_Abort new data source import_"
+
+msgid "importData.ABORT_CONFIRMATION_MESSAGE"
+msgstr "_Are you sure you want to abort new data source import?_"
+
+msgid "importData.CANCEL_BTN_LABEL"
+msgstr "_Stay here_"
+
+msgid "importData.CONFIRM_BTN_LABEL"
+msgstr "_Yes, abort_"
+
+msgid "importData.NEXT"
+msgstr "_Next_"
+
+msgid "importData.EDIT_SCHEMA_TEXT"
+msgstr "_DDL Commands_"
+
+msgid "importData.DEFAULT_DS_NAME"
+msgstr "_Default_"
+
+msgid "importData.SUCCESSFUL_STATUS"
+msgstr "_Successful_"
+
+msgid "importData.FAILED_STATUS"
+msgstr "_Failed_"
+
+msgid "importData.DB_SCHEMA_NAME"
+msgstr "_InformaticaDataBase.InformaticaSchema._"
+
+msgid "importData.TRUNCATE_TABLES"
+msgstr "_Truncate data in the existing tables._"
+
+msgid "importData.ENABLE_EMAILS"
+msgstr "_Enable email notifications for data load tasks_"
+
+msgid "importData.DELETE_TABLES"
+msgstr "_Delete tables associated with selected data source(s)?_"
+
+msgid "importData.SCHEDULE"
+msgstr "_Schedule_"
+
+msgid "importData.AVAILABLE_TABLES"
+msgstr "_Available Tables_"
+
+msgid "importData.DELETE_DATASOURCE.TITLE"
+msgstr "_Confirm delete_"
+
+msgid "importData.SELECTED_TABLES"
+msgstr "_Selected Tables_"
+
+msgid "importData.SELECT_CONNECTION_TYPE"
+msgstr "_Select connection type_"
+
+msgid "importData.CREATING_DS"
+msgstr "_Creating data source_"
+
+msgid "importData.EXECUTING_DDL"
+msgstr "_Creating Schemas_"
+
+msgid "importData.LOADING_DATA"
+msgstr "_Loading data_"
+
+msgid "importData.IMPORT_DISABLED_TIP"
+msgstr "_Enter a name for the datasource_"
+
+msgid "importData.DATATYPE_NOT_SUPPORTED_TIP"
+msgstr "_Data type is not supported_"
+
+msgid "importData.IMPORT_TIP"
+msgstr "_Click here to start importing_"
+
+msgid "importData.CLICK_TO_EDIT_SCHEMA"
+msgstr ""
+
+msgid "importData.NO_SCHEMA_TO_EDIT"
+msgstr "_No schema to edit. Click <b>Load</b> to load data._"
+
+msgid "importData.EDIT_SCHEMA"
+msgstr "_Edit Schema_"
+
+msgid "importData.STATUS_PREFIX"
+msgstr "_Loading status for the item is: _"
+
+msgid "importData.TITLE_NAME"
+msgstr "_NAME_"
+
+msgid "importData.LAST_LOAD"
+msgstr "_LAST LOAD_"
+
+msgid "importData.LOAD_STATUS"
+msgstr "_LOAD STATUS_"
+
+msgid "importData.SELECT_CONN"
+msgstr "_Select connection_"
+
+msgid "importData.CREATE_CONN"
+msgstr "_Create connection_"
+
+msgid "importData.CONN_NAME"
+msgstr "_Connection name_"
+
+msgid "importData.DELETE_CONN"
+msgstr "_Delete connection_"
+
+msgid "importData.EDIT_CONN"
+msgstr "_Edit connection_"
+
+msgid "importData.CANNOT_DELETE"
+msgstr "_Cannot delete_"
+
+msgid "importData.CANNOT_DELETE_TRANSFORMATION"
+msgstr "_Cannot delete existing transformations._"
+
+msgid "importData.TABLE_CONTAINS_UNSUPPORTED_COL.SINGLE_TABLE"
+msgstr ""
+
+msgid "importData.TABLE_CONTAINS_UNSUPPORTED_COL.MULTIPLE_TABLES"
+msgstr ""
+
+msgid "importData.CONN_DIALOG.TEST_AND_EDIT"
+msgstr "_Test & Edit_"
+
+msgid "importData.CONN_DIALOG.TEST_AND_CREATE"
+msgstr "_Test & Create_"
+
+msgid "importData.UNSUPPORTED_COLUMN"
+msgstr "_Unsupported column data-type_"
+
+msgid "importData.LINK_TO_EXISTING_DATA"
+msgstr "_Link to existing data_"
+
+msgid "importData.ASK_A_QUESTION"
+msgstr "_Ask a question_"
+
+msgid "importData.TRY_OVER_AGAIN"
+msgstr "_Try over again_"
+
+msgid "importData.SUCCESS"
+msgstr "_Success_"
+
+msgid "importData.FAILED"
+msgstr "_Failed_"
+
+msgid "importData.INPROGRESS"
+msgstr "_In Progress_"
+
+msgid "importData.SCHEDULED"
+msgstr "_Scheduled_"
+
+msgid "importData.ETL_DISABLED"
+msgstr "_Currently disabled by your administrator._"
+
+msgid "importData.SESSION_LOG_CLICK_TEXT"
+msgstr "_View session logs_"
+
+msgid "importData.ACCORDION.PRE_SCRIPT.TITLE"
+msgstr "_Add pre-script_"
+
+msgid "importData.ACCORDION.POST_SCRIPT.TITLE"
+msgstr "_Add post-script_"
+
+msgid "importData.ACCORDION.SCHEDULE.TITLE"
+msgstr "_Set schedule_"
+
+msgid "importData.ACCORDION.PRE_SCRIPT.DESCRIPTION"
+msgstr "_Add a TQL script that will run before data upload (optional)_"
+
+msgid "importData.ACCORDION.POST_SCRIPT.DESCRIPTION"
+msgstr "_Add a TQL script that will run after data upload (optional)_"
+
+msgid "importWizard.HEADER_QUESTION"
+msgstr "_Are the column names already defined in the file header?_"
+
+msgid "importWizard.DROP_APPEND_QUESTION"
+msgstr "_Do you want to append to the existing data or overwrite it?_"
+
+msgid "importWizard.FIELD_SEPARATOR_QUESTION"
+msgstr "_Are the fields separated by?_"
+
+msgid "importWizard.fieldSeparators.COMMA"
+msgstr "_Comma(,)_"
+
+msgid "importWizard.fieldSeparators.SEMICOLON"
+msgstr "_Semicolon(;)_"
+
+msgid "importWizard.fieldSeparators.PIPE"
+msgstr "_Pipe(|)_"
+
+msgid "importWizard.fieldSeparators.SPACE"
+msgstr "_Space_"
+
+msgid "importWizard.fieldSeparators.TAB"
+msgstr "_Tab_"
+
+msgid "importWizard.SELECT_TYPE"
+msgstr "_Select type_"
+
+msgid "transformationEditor.TRANSFORM_ASSISTANT"
+msgstr "_Expression assistant_"
+
+msgid "transformationEditor.TRANSFORMATION"
+msgstr "_Expressions_"
+
+msgid "transformationEditor.ADD_EXPRESSION"
+msgstr "_Add expression_"
+
+msgid "transformationEditor.ADD_COLUMN"
+msgstr "_Add Column_"
+
+msgid "transformationEditor.VALIDATE_COLUMN"
+msgstr "_Validate_"
+
+msgid "transformationEditor.NO_TRANSFORMATIONS_DEFINED"
+msgstr "_No expressions are defined, click Add to add one._"
+
+msgid "transformationEditor.CANNOT_SAVE"
+msgstr "_Please make sure you have picked a table and given a name._"
+
+msgid "transformationEditor.TYPE_MISMATCH"
+msgstr "_Type mismatch, Expected {1} got {2}_"
+
+msgid "transformationEditor.ADD_NEW_COLUMN"
+msgstr "_Add new column_"
+
+msgid "transformationEditor.SELECT_COLUMN"
+msgstr "_Select existing column_"
+
+msgid "transformationEditor.SELECT_TABLE"
+msgstr "_Select a table_"
+
+msgid "SAGE_SERVER_NAME"
+msgstr "_ThoughtSpot_"
+
+msgid "CALLOSUM_SERVER_NAME"
+msgstr "_ThoughtSpot_"
+
+msgid "SAGE_AND_CALLOSUM_SERVER_NAME"
+msgstr "_ThoughtSpot_"
+
+msgid "viewPermissionColName"
+msgstr "_Your permissions only allow you to view this column\'s name_"
+
+msgid "VIZ_CORRUPTED_TITLE_NOT_EDITABLE_MESSAGE"
+msgstr "_The title of a corrupted visualization may not be changed._"
+
+msgid "profilePic.UPLOAD_INSTRUCTIONS"
+msgstr ""
+
+msgid "layout.tileSizes.xs"
+msgstr "_xs_"
+
+msgid "layout.tileSizes.s"
+msgstr "_s_"
+
+msgid "layout.tileSizes.m"
+msgstr "_m_"
+
+msgid "layout.tileSizes.l"
+msgstr "_l_"
+
+msgid "apiErrorMessage.detail"
+msgstr "_Detail_"
+
+msgid "apiErrorMessage.errorCode"
+msgstr "_Code_"
+
+msgid "apiErrorMessage.incidentId"
+msgstr "_Incident Id_"
+
+msgid "apiErrorMessage.downloadTrace"
+msgstr "_Download Trace_"
+
+msgid "apiErrorMessage.reportProblem"
+msgstr "_Report Problem_"
+
+msgid "dataDownload.DOWNLOAD"
+msgstr "_Download {vizType}_"
+
+msgid "dataDownload.DOWNLOAD_INSUFFICIENT_PERMISSION"
+msgstr "_To download {vizType} ask administrator for download privilege._"
+
+msgid "dataDownload.DOWNLOAD_MORE"
+msgstr "_Download more?_"
+
+msgid "dataDownload.DOWNLOAD_MORE_INSUFFICIENT_PERMISSION"
+msgstr "_Download more? Ask administrator for download privilege._"
+
+msgid "metadataObjectMenuItems.save.label"
+msgstr "_Save_"
+
+msgid "metadataObjectMenuItems.update.label"
+msgstr "_Update_"
+
+msgid "metadataObjectMenuItems.update.disabledTooltip"
+msgstr "_Updating answer disabled as no matching headline found._"
+
+msgid "metadataObjectMenuItems.saveUntitled.label"
+msgstr "_Save_"
+
+msgid "metadataObjectMenuItems.saveAsWorksheet.label"
+msgstr "_Save as worksheet_"
+
+msgid "metadataObjectMenuItems.makeACopy.label"
+msgstr "_Make a copy_"
+
+msgid "metadataObjectMenuItems.copyLink.label"
+msgstr "_Copy link_"
+
+msgid "metadataObjectMenuItems.pinboardSnapshot.label"
+msgstr "_Snapshot_"
+
+msgid "metadataObjectMenuItems.resetLayout.label"
+msgstr "_Auto layout_"
+
+msgid "metadataObjectMenuItems.schedule.label"
+msgstr "_Schedule_"
+
+msgid "metadataObjectMenuItems.schedulesList.label"
+msgstr "_Manage schedules_"
+
+msgid "metadataObjectMenuItems.share.label"
+msgstr "_Share_"
+
+msgid "metadataObjectMenuItems.addFilter.label"
+msgstr "_Add filters_"
+
+msgid "metadataObjectMenuItems.addFormula.label"
+msgstr "_Add formula_"
+
+msgid "metadataObjectMenuItems.searchOnTop.label"
+msgstr "_Search on top_"
+
+msgid "metadataObjectMenuItems.triggerA3.label"
+msgstr "_Auto Analyze_"
+
+msgid "metadataObjectMenuItems.replaySearch.label"
+msgstr "_Replay search_"
+
+msgid "metadataObjectMenuItems.showUnderlyingData.label"
+msgstr "_Show underlying data_"
+
+msgid "metadataObjectMenuItems.download.label"
+msgstr "_Download_"
+
+msgid "metadataObjectMenuItems.downloadAsPdf.label"
+msgstr "_Download as PDF_"
+
+msgid "metadataObjectMenuItems.downloadAsPdf.dropdownItemTooltip"
+msgstr "_Please save your changes to download PDF_"
+
+msgid "metadataObjectMenuItems.downloadAsCsv.label"
+msgstr "_Download as CSV_"
+
+msgid "metadataObjectMenuItems.downloadAsXlsx.label"
+msgstr "_Download as XLSX_"
+
+msgid "metadataObjectMenuItems.presentation.label"
+msgstr "_Present_"
+
+msgid "metadataObjectMenuItems.edit.label"
+msgstr "_Edit_"
+
+msgid "metadataObjectMenuItems.remove.label"
+msgstr "_Delete_"
+
+msgid "metadataObjectMenuItems.describe.label"
+msgstr "_Describe_"
+
+msgid "metadataObjectMenuItems.relate.label"
+msgstr "_Relate_"
+
+msgid "adminSection.userManagement.addUserButtonLabel"
+msgstr "_Add User_"
+
+msgid "adminSection.userManagement.addGroupButtonLabel"
+msgstr "_Add Group_"
+
+msgid "adminSection.userManagement.addRoleButtonLabel"
+msgstr "_Add Role_"
+
+msgid "adminSection.userManagement.tabHeader"
+msgstr "_User Management_"
+
+msgid "adminSection.userManagement.tabUsers.name"
+msgstr "_Users_"
+
+msgid "adminSection.userManagement.tabGroups.name"
+msgstr "_Groups_"
+
+msgid "adminSection.userManagement.tabRoles.name"
+msgstr "_Roles_"
+
+msgid "adminSection.userManagement.errors.emailNotValid"
+msgstr "_Email is not valid_"
+
+msgid "adminSection.userManagement.errors.passwordNotMatching"
+msgstr "_Both passwords need to match_"
+
+msgid "adminSection.userManagement.privilegesLabel"
+msgstr "_Privileges_"
+
+msgid "adminSection.dataManagement.tabHeader"
+msgstr "_Data Management_"
+
+msgid "adminSection.dataManagement.tabBusinessDataModel.name"
+msgstr "_Business Data Model_"
+
+msgid "adminSection.dataManagement.tabDataSecurity.name"
+msgstr "_Data Security_"
+
+msgid "adminSection.healthManagement.tabHeader"
+msgstr "_System Health_"
+
+msgid "adminSection.healthManagement.tabOverview.name"
+msgstr "_Overview_"
+
+msgid "adminSection.healthManagement.tabData.name"
+msgstr "_Data_"
+
+msgid "adminSection.healthManagement.tabDatabase.name"
+msgstr "_Datacache Detail_"
+
+msgid "adminSection.healthManagement.tabAlert.name"
+msgstr "_Alerts & Events_"
+
+msgid "adminSection.healthManagement.tabCluster.name"
+msgstr "_Cluster Manager_"
+
+msgid "adminSection.styleCustomization.tabHeader"
+msgstr "_Style Customization_"
+
+msgid "adminSection.styleCustomization.tabRules.name"
+msgstr "_Rules_"
+
+msgid "adminSection.styleCustomization.tabResources.name"
+msgstr "_Resources_"
+
+msgid "adminSection.jobManagement.tabHeader"
+msgstr "_Jobs Management_"
+
+msgid "adminSection.jobManagement.noRun"
+msgstr "_There are no runs for this job._"
+
+msgid "alertService.DOWNLOAD_TRACE"
+msgstr "_Download Trace_"
+
+msgid "adminUI.DEFAULT_TIME_FORMAT"
+msgstr "_MMM dd, yyyy hh:mm:ss a z_"
+
+msgid "adminUI.tooltip.DELETE_USER"
+msgstr "_Delete Users_"
+
+msgid "adminUI.tooltip.ADD_USER_TO_GROUP"
+msgstr "_Add Users to Groups_"
+
+msgid "adminUI.messages.NOT_AVAILABLE_MESSAGE"
+msgstr "_N/A_"
+
+msgid "adminUI.messages.SEARCH_READY"
+msgstr "_READY_"
+
+msgid "adminUI.messages.SEARCH_BUILDING_READY"
+msgstr "_BUILDING AND READY_"
+
+msgid "adminUI.messages.SEARCH_BUILDING_NOT_READY"
+msgstr "_BUILDING AND NOT READY_"
+
+msgid "adminUI.messages.SEARCH_ERROR"
+msgstr "_ERROR_"
+
+msgid "adminUI.messages.EVENT_TITLE"
+msgstr "_Configuration Events_"
+
+msgid "adminUI.messages.ALERT_TITLE"
+msgstr "_Critical Alerts_"
+
+msgid "adminUI.messages.ALERT_DETAIL_TITLE"
+msgstr "_Alerts_"
+
+msgid "adminUI.messages.EVENT_DETAIL_TITLE"
+msgstr "_Configuration Events_"
+
+msgid "adminUI.messages.NOTIFICATION_DETAIL_TITLE"
+msgstr "_Notification Events_"
+
+msgid "adminUI.messages.DATABASE_DETAIL_TITLE"
+msgstr "_Datacache Detail_"
+
+msgid "adminUI.messages.CLUSTER_DETAIL_INFO_TITLE"
+msgstr "_Cluster Details_"
+
+msgid "adminUI.messages.CLUSTER_DETAIL_LOG_TITLE"
+msgstr "_Cluster Logs_"
+
+msgid "adminUI.messages.CLUSTER_DETAIL_SNAPSHOT_TITLE"
+msgstr "_List of Snapshots_"
+
+msgid "adminUI.messages.PERIODIC_SNAPSHOT_FULL_MODE"
+msgstr "_full_"
+
+msgid "adminUI.messages.PERIODIC_SNAPSHOT_DISABLED"
+msgstr "_disabled_"
+
+msgid "adminUI.messages.SEARCH_DETAIL_TABLE_TITLE"
+msgstr "_Table Information_"
+
+msgid "adminUI.captions.CREATED_AT"
+msgstr "_CREATED AT_"
+
+msgid "adminUI.captions.NO_GROUPS"
+msgstr "_No Groups_"
+
+msgid "adminUI.captions.NO_ROLES"
+msgstr "_No Roles_"
+
+msgid "adminUI.captions.GROUPS_TITLE"
+msgstr "_{1} Group{2}_"
+
+msgid "adminUI.captions.NO_USERS"
+msgstr "_No Users_"
+
+msgid "adminUI.captions.USERS_TITLE"
+msgstr "_{1} User{2}_"
+
+msgid "adminUI.captions.ROLES_TITLE"
+msgstr "_{1} Role{2}_"
+
+msgid "adminUI.captions.USER_MENU"
+msgstr "_User management_"
+
+msgid "adminUI.captions.GROUP_MENU"
+msgstr "_Group management_"
+
+msgid "adminUI.captions.DATA_MENU"
+msgstr "_Data management_"
+
+msgid "adminUI.captions.USER_LABEL"
+msgstr "_Users_"
+
+msgid "adminUI.captions.GROUP_LABEL"
+msgstr "_Groups_"
+
+msgid "adminUI.captions.FILE_UPLOAD_METADATA_LABEL"
+msgstr "_Business Data Model_"
+
+msgid "adminUI.captions.FILE_UPLOAD_SECURITY_LABEL"
+msgstr "_Data security_"
+
+msgid "adminUI.captions.ADD_GROUP"
+msgstr "_Add Group_"
+
+msgid "adminUI.captions.ADD_USER"
+msgstr "_Add User_"
+
+msgid "adminUI.captions.ADD_ROLE"
+msgstr "_Add Role_"
+
+msgid "adminUI.captions.ADD_USER_TO_GROUP"
+msgstr "_Add Users to Group_"
+
+msgid "adminUI.captions.EDIT_USER"
+msgstr "_Edit User_"
+
+msgid "adminUI.captions.ADD_NEW_USER"
+msgstr "_Add a new User_"
+
+msgid "adminUI.captions.ADD_NEW_GROUP"
+msgstr "_Add a new Group_"
+
+msgid "adminUI.captions.ADD_NEW_ROLE"
+msgstr "_Add a new Role_"
+
+msgid "adminUI.captions.EDIT_GROUP"
+msgstr "_Edit Group_"
+
+msgid "adminUI.captions.SEARCH"
+msgstr "_Search by name_"
+
+msgid "adminUI.captions.GROUPS_IN_GROUP.0"
+msgstr "_No Groups in Group_"
+
+msgid "adminUI.captions.GROUPS_IN_GROUP.1"
+msgstr "_1 Group in Group_"
+
+msgid "adminUI.captions.GROUPS_IN_GROUP.n"
+msgstr "_{1} Groups in Group_"
+
+msgid "adminUI.captions.USERS_IN_GROUP.0"
+msgstr "_No User in Group_"
+
+msgid "adminUI.captions.USERS_IN_GROUP.1"
+msgstr "_1 User in Group_"
+
+msgid "adminUI.captions.USERS_IN_GROUP.n"
+msgstr "_{1} Users in Group_"
+
+msgid "adminUI.captions.ROLES_IN_GROUP.0"
+msgstr "_No Role assigned to Group_"
+
+msgid "adminUI.captions.ROLES_IN_GROUP.1"
+msgstr "_1 Role assigned to Group_"
+
+msgid "adminUI.captions.ROLES_IN_GROUP.n"
+msgstr "_{1} Roles assigned to Group_"
+
+msgid "adminUI.captions.GROUPS_IN_ROLE.0"
+msgstr "_No Group assigned to Role_"
+
+msgid "adminUI.captions.GROUPS_IN_ROLE.1"
+msgstr "_1 Group assigned to Role_"
+
+msgid "adminUI.captions.GROUPS_IN_ROLE.n"
+msgstr "_{1} Groups assigned to Role_"
+
+msgid "adminUI.captions.USERS_IN_ROLE.0"
+msgstr "_No User assigned to Role_"
+
+msgid "adminUI.captions.USERS_IN_ROLE.1"
+msgstr "_1 User assigned to Role_"
+
+msgid "adminUI.captions.USERS_IN_ROLE.n"
+msgstr "_{1} Users assigned to Role_"
+
+msgid "adminUI.captions.GROUPS_IN_USER.0"
+msgstr "_No Group assigned to User_"
+
+msgid "adminUI.captions.GROUPS_IN_USER.1"
+msgstr "_1 Group assigned to User_"
+
+msgid "adminUI.captions.GROUPS_IN_USER.n"
+msgstr "_{1} Groups assigned to User_"
+
+msgid "adminUI.captions.ROLES_IN_USER.0"
+msgstr "_No Roles assigned to User_"
+
+msgid "adminUI.captions.ROLES_IN_USER.1"
+msgstr "_1 Role assigned to User_"
+
+msgid "adminUI.captions.ROLES_IN_USER.n"
+msgstr "_{1} Users assigned to User_"
+
+msgid "adminUI.captions.MANAGE_GROUPS_TAB"
+msgstr "_Manage Groups_"
+
+msgid "adminUI.captions.MANAGE_USERS_TAB"
+msgstr "_Manage Users_"
+
+msgid "adminUI.captions.MANAGE_ROLES_TAB"
+msgstr "_Manage Roles_"
+
+msgid "adminUI.captions.NAME"
+msgstr "_Name_"
+
+msgid "adminUI.captions.USERNAME"
+msgstr "_Username_"
+
+msgid "adminUI.captions.DESCRIPTION"
+msgstr "_Description_"
+
+msgid "adminUI.captions.DISPLAYED_NAME"
+msgstr "_Display Name_"
+
+msgid "adminUI.captions.EMAIL"
+msgstr "_Email_"
+
+msgid "adminUI.captions.NEW_PASSWORD"
+msgstr "_Password_"
+
+msgid "adminUI.captions.PASSWORD"
+msgstr "_Change Password_"
+
+msgid "adminUI.captions.PASSWORD_CONFIRMATION"
+msgstr "_Confirm Password_"
+
+msgid "adminUI.captions.EDIT_ROLE"
+msgstr "_Edit Role_"
+
+msgid "adminUI.captions.PRIVILEGES"
+msgstr "_Privileges_"
+
+msgid "adminUI.captions.PROPERTY"
+msgstr "_Property_"
+
+msgid "adminUI.captions.CONTENT"
+msgstr "_Content_"
+
+msgid "adminUI.captions.CLUSTER_NAME"
+msgstr "_Cluster Name_"
+
+msgid "adminUI.captions.CLUSTER_ID"
+msgstr "_Cluster ID_"
+
+msgid "adminUI.captions.RELEASE"
+msgstr "_Release_"
+
+msgid "adminUI.captions.LAST_UPDATE_TIME"
+msgstr "_Last Update Time_"
+
+msgid "adminUI.captions.ZOOKEEPER_SERVERS"
+msgstr "_Zookeeper Servers_"
+
+msgid "adminUI.captions.HDFS_NAME_NODES"
+msgstr "_HDFS Name Nodes_"
+
+msgid "adminUI.captions.CLUSTER_ALERT_EMAIL"
+msgstr "_Cluster Alert Email_"
+
+msgid "adminUI.captions.SERVICE_ALERT_EMAIL"
+msgstr "_Service Alert Email_"
+
+msgid "adminUI.captions.PERIODIC_SNAPSHOT_MODE"
+msgstr "_Periodic Snapshot Mode_"
+
+msgid "adminUI.captions.EVENT_TYPE"
+msgstr "_Type_"
+
+msgid "adminUI.captions.EVENT_TIMESTAMP"
+msgstr "_Time_"
+
+msgid "adminUI.captions.EVENT_RELEASE"
+msgstr "_Release_"
+
+msgid "adminUI.captions.SNAPSHOT_NAME"
+msgstr "_Name_"
+
+msgid "adminUI.captions.SNAPSHOT_REASON"
+msgstr "_Reason_"
+
+msgid "adminUI.captions.SNAPSHOT_FINISH_TIME"
+msgstr "_Time_"
+
+msgid "adminUI.captions.SNAPSHOT_SIZE"
+msgstr "_Size_"
+
+msgid "adminUI.captions.DATABASE_NAME"
+msgstr "_Database_"
+
+msgid "adminUI.captions.USER_SCHEMA_NAME"
+msgstr "_User Schema_"
+
+msgid "adminUI.captions.DATABASE_TABLE_GUID"
+msgstr "_GUID_"
+
+msgid "adminUI.captions.DATABASE_TABLE_NAME"
+msgstr "_Name_"
+
+msgid "adminUI.captions.DATABASE_TABLE_STATUS"
+msgstr "_Database Status_"
+
+msgid "adminUI.captions.DATABASE_SERVING_TIMESTAMP"
+msgstr "_Serving Timestamp_"
+
+msgid "adminUI.captions.DATABASE_SCHEMA_VERSION"
+msgstr "_Schema Version_"
+
+msgid "adminUI.captions.DATABASE_DATA_VERSION"
+msgstr "_Data Version_"
+
+msgid "adminUI.captions.DATABASE_CREATED_ON"
+msgstr "_Last Updated Time_"
+
+msgid "adminUI.captions.DATABASE_NUM_ROWS"
+msgstr "_Total Row Count_"
+
+msgid "adminUI.captions.DATABASE_ROW_SKEW"
+msgstr "_Row Count Skew_"
+
+msgid "adminUI.captions.DATABASE_NUM_DELETED_ROWS"
+msgstr "_Deleted Rows_"
+
+msgid "adminUI.captions.DATABASE_APPROXIMATE_SIZE_MB"
+msgstr "_Estimated Size (MB)_"
+
+msgid "adminUI.captions.DATABASE_APPROXIMATE_SIZE_MB_SKEW"
+msgstr "_Estimated Size (MB) Skew_"
+
+msgid "adminUI.captions.DATABASE_TOTAL_SHARDS"
+msgstr "_Total Shards_"
+
+msgid "adminUI.captions.DATABASE_CLUSTER_SPACE_USED"
+msgstr "_Cluster Space Used (MB)_"
+
+msgid "adminUI.captions.DATABASE_LAST_UPDATED_TIME"
+msgstr "_Last Updated Timestamp_"
+
+msgid "adminUI.captions.SEARCH_TABLE_GUID"
+msgstr "_GUID_"
+
+msgid "adminUI.captions.SEARCH_TABLE_NAME"
+msgstr "_Name_"
+
+msgid "adminUI.captions.SEARCH_TABLE_STATUS"
+msgstr "_Search Status_"
+
+msgid "adminUI.captions.SEARCH_DATABASE_VERSION"
+msgstr "_Database Version_"
+
+msgid "adminUI.captions.SEARCH_BUILDING_VERSION"
+msgstr "_Building Version_"
+
+msgid "adminUI.captions.SEARCH_SERVING_VERSION"
+msgstr "_Serving Version_"
+
+msgid "adminUI.captions.SEARCH_LAST_BUILD_DURATION"
+msgstr "_Last Index Build Duration_"
+
+msgid "adminUI.clusterSummaryViz.CLUSTER_TITLE"
+msgstr "_Cluster Summary_"
+
+msgid "adminUI.clusterSummaryViz.CLUSTER_NAME"
+msgstr "_CLUSTER NAME_"
+
+msgid "adminUI.clusterSummaryViz.RELEASE"
+msgstr "_RELEASE_"
+
+msgid "adminUI.clusterSummaryViz.NUMBER_OF_NODES"
+msgstr "_NUMBER OF NODES_"
+
+msgid "adminUI.clusterSummaryViz.LAST_SNAPSHOT_TIME"
+msgstr "_LAST SNAPSHOT TIME_"
+
+msgid "adminUI.databaseSummaryViz.DATABASE_TITLE"
+msgstr "_Relational Data Cache_"
+
+msgid "adminUI.databaseSummaryViz.LAST_DATA_UPDATE"
+msgstr "_Last data update_"
+
+msgid "adminUI.databaseSummaryViz.CONTENT_TITLES.TABLES_LOADED"
+msgstr "_TABLES LOADED_"
+
+msgid "adminUI.databaseSummaryViz.CONTENT_TITLES.TABLES_BEING_UPDATED"
+msgstr "_TABLES BEING UPDATED_"
+
+msgid "adminUI.databaseSummaryViz.CONTENT_TITLES.NEW_TABLES_BEING_LOADED"
+msgstr "_NEW TABLES BEING LOADED_"
+
+msgid "adminUI.databaseSummaryViz.CONTENT_TITLES.ROWS"
+msgstr "_ROWS_"
+
+msgid "adminUI.searchSummaryViz.SEARCH_TITLE"
+msgstr "_Relational Search Engine_"
+
+msgid "adminUI.searchSummaryViz.LAST_INDEXED"
+msgstr "_Last indexed_"
+
+msgid "adminUI.searchSummaryViz.CONTENT_TITLES.TABLES_SEARCHABLE"
+msgstr "_TABLES SEARCHABLE_"
+
+msgid "adminUI.searchSummaryViz.CONTENT_TITLES.TABLES_BEING_INDEXED"
+msgstr "_TABLES BEING INDEXED_"
+
+msgid "adminUI.searchSummaryViz.CONTENT_TITLES.NEW_TABLES_BEING_INDEXED"
+msgstr "_NEW TABLES BEING INDEXED_"
+
+msgid "adminUI.searchSummaryViz.CONTENT_TITLES.TOKENS_SEARCHABLE"
+msgstr "_TOKENS SEARCHABLE_"
+
+msgid "filtersPermission.READONLY"
+msgstr "_readonly_"
+
+msgid "filtersPermission.EDITABLE"
+msgstr "_editable_"
+
+msgid "filtersMessages.READONLY"
+msgstr "_You can only view this filter_"
+
+msgid "filtersMessages.CONFIGURE"
+msgstr "_Change configuration_"
+
+msgid "filtersMessages.checkboxFilter.DISALLOW_SELECT_ALL"
+msgstr ""
+
+msgid "bulkFilters.ADD_VALUES_IN_BULK"
+msgstr "_Add values in bulk_"
+
+msgid "bulkFilters.TEXT_AREA_PLACEHOLDER"
+msgstr ""
+
+msgid "bulkFilters.MATCH_ERROR"
+msgstr ""
+
+msgid "bulkFilters.EXCEEDED_ONE_TIME_ADDITION"
+msgstr "_We can only add up to {1} values at a time._"
+
+msgid "bulkFilters.EXCEEDED_OVERALL_FILTER_VALUES"
+msgstr "_Bulk filtering only supports up to {1} values._"
+
+msgid "createSchema.UNKNOWN_ERROR"
+msgstr "_Unknown error_"
+
+msgid "createSchema.CREATE_SCHEMA_DISABLED_TIP"
+msgstr "_Only admins are allowed to import schemas_"
+
+msgid "createSchema.EXECUTE"
+msgstr "_Execute_"
+
+msgid "createSchema.EXECUTE_TIP"
+msgstr "_Execute the SQL commands in order_"
+
+msgid "createSchema.CONTINUE"
+msgstr "_Continue_"
+
+msgid "createSchema.CONTINUE_TIP"
+msgstr "_Successful commands will not be re-executed_"
+
+msgid "createSchema.RESET"
+msgstr "_Reset_"
+
+msgid "createSchema.CREATE_SCHEMA"
+msgstr "_Upload schema_"
+
+msgid "createSchema.SAVE_COMMANDS"
+msgstr "_Save commands_"
+
+msgid "createSchema.SAVE_COMMANDS_TIP"
+msgstr "_Original file will NOT be overwritten_"
+
+msgid "createSchema.VIEW_TABLES"
+msgstr "_View Tables_"
+
+msgid "createSchema.WRITE_TQL"
+msgstr "_Write TQL_"
+
+msgid "scheduler.SCHEDULE_OPTIONS"
+msgstr "_Schedule Options_"
+
+msgid "scheduler.STARTS"
+msgstr "_Starts:_"
+
+msgid "scheduler.AT"
+msgstr "_at_"
+
+msgid "scheduler.COLON"
+msgstr "_:_"
+
+msgid "scheduler.TIMEZONE"
+msgstr "_Timezone:_"
+
+msgid "scheduler.REPEATS"
+msgstr "_Repeats_"
+
+msgid "scheduler.EVERY_N_MINUTS"
+msgstr "_Repeat Frequency Options : Every N Minutes_"
+
+msgid "scheduler.RUN_EVERY"
+msgstr "_Run the task every_"
+
+msgid "scheduler.MINUTES_ON"
+msgstr "_minutes on:_"
+
+msgid "scheduler.TIME_RANGE"
+msgstr "_Time Range:_"
+
+msgid "scheduler.ALL_DAY"
+msgstr "_All day_"
+
+msgid "scheduler.BETWEEN"
+msgstr "_Between_"
+
+msgid "scheduler.AND"
+msgstr "_and_"
+
+msgid "scheduler.EACH_DAY"
+msgstr "_each day_"
+
+msgid "scheduler.REPEAT_OPTIONS"
+msgstr "_Repeat Options:_"
+
+msgid "scheduler.REPEAT_INDEFINITELY"
+msgstr "_Repeat Indefinitely_"
+
+msgid "scheduler.REPEAT_UNTIL"
+msgstr "_Repeat until_"
+
+msgid "scheduler.HOURLY"
+msgstr "_Repeat Frequency Options : Hourly_"
+
+msgid "scheduler.HOURS_ON"
+msgstr "_hour(s) on:_"
+
+msgid "scheduler.DAILY"
+msgstr "_Repeat Frequency Options : Daily_"
+
+msgid "scheduler.RUN_THE_TASK"
+msgstr "_Run the task_"
+
+msgid "scheduler.EVERY_DAY"
+msgstr "_Every day_"
+
+msgid "scheduler.EVERY_WEEKDAY"
+msgstr "_Every weekday_"
+
+msgid "scheduler.WEEKLY"
+msgstr "_Repeat Frequency Options : Weekly_"
+
+msgid "scheduler.RUN_WEEK"
+msgstr "_Run the task every week on_"
+
+msgid "scheduler.MONTHLY"
+msgstr "_Repeat Frequency Options : Monthly_"
+
+msgid "scheduler.RUN_ON"
+msgstr "_Run the task on_"
+
+msgid "scheduler.DAY"
+msgstr "_Day_"
+
+msgid "scheduler.OF_EVERY_MONTH"
+msgstr "_of every month_"
+
+msgid "scheduler.THE"
+msgstr "_The_"
+
+msgid "scheduler.intervals.NONE"
+msgstr "_Does Not Repeat_"
+
+msgid "scheduler.intervals.MINUTELY"
+msgstr "_Every N Minutes_"
+
+msgid "scheduler.intervals.HOURLY"
+msgstr "_Hourly_"
+
+msgid "scheduler.intervals.DAILY"
+msgstr "_Daily_"
+
+msgid "scheduler.intervals.WEEKLY"
+msgstr "_Weekly_"
+
+msgid "scheduler.intervals.MONTHLY"
+msgstr "_Monthly_"
+
+msgid "scheduler.START_TIME_NULL_MSG"
+msgstr "_Start time cannot be null._"
+
+msgid "scheduler.START_TIME_ERROR"
+msgstr "_Start time cannot be set before current time._"
+
+msgid "scheduler.END_TIME_ERROR"
+msgstr "_Start time cannot be set after end time._"
+
+msgid "statusViewer.STATUS_VIEWER"
+msgstr "_Status_"
+
+msgid "statusViewer.DISABLE_SCHEDULE"
+msgstr "_Disable schedule_"
+
+msgid "dataFilter.NO_FILTER_TEXT"
+msgstr ""
+
+msgid "dataFilter.OBJECT"
+msgstr "_Table :_"
+
+msgid "dataFilter.FILTER"
+msgstr "_Filter by :_"
+
+msgid "dataFilter.ROW_LIMIT"
+msgstr "_Row Limit_"
+
+msgid "dataFilter.PROCESS_ALL_ROWS"
+msgstr "_Process All Rows_"
+
+msgid "dataFilter.PROCESS_ONLY_THE_FIRST"
+msgstr "_Process only the first_"
+
+msgid "dataFilter.DATA_FILTERS"
+msgstr "_Data Filters_"
+
+msgid "dataFilter.ADD_FILTER"
+msgstr "_Add filter_"
+
+msgid "dataFilter.ROWS"
+msgstr "_Rows_"
+
+msgid "dataFilter.CREATE_FILTER_TEXT"
+msgstr ""
+
+msgid "dataFilter.FILTER_TYPES.EQUALS.display"
+msgstr "_EQUALS_"
+
+msgid "dataFilter.FILTER_TYPES.NOT_EQUALS.display"
+msgstr "_NOT EQUALS_"
+
+msgid "dataFilter.FILTER_TYPES.LESS_THAN.display"
+msgstr "_LESS THAN_"
+
+msgid "dataFilter.FILTER_TYPES.LESS_THAN_OR_EQUALS.display"
+msgstr "_LESS THAN OR EQUALS_"
+
+msgid "dataFilter.FILTER_TYPES.GREATER_THAN.display"
+msgstr "_GREATER THAN_"
+
+msgid "dataFilter.FILTER_TYPES.GREATER_THAN_OR_EQUALS.display"
+msgstr "_GREATER THAN OR EQUALS_"
+
+msgid "dataFilter.FILTER_TYPES.STARTS_WITH.display"
+msgstr "_STARTS WITH_"
+
+msgid "dataFilter.FILTER_TYPES.ENDS_WITH.display"
+msgstr "_ENDS WITH_"
+
+msgid "dataFilter.FILTER_TYPES.CONTAINS.display"
+msgstr "_CONTAINS_"
+
+msgid "dataFilter.FILTER_TYPES.IS_NULL.display"
+msgstr "_IS NULL_"
+
+msgid "dataFilter.FILTER_TYPES.IS_NOT_NULL.display"
+msgstr "_IS NOT NULL_"
+
+msgid "contactSupport.CONTACT_SUPPORT"
+msgstr "_Contact support._"
+
+msgid "debug.IS_ROOT"
+msgstr "_is root_"
+
+msgid "debugging.messages.DEBUG_INFO_DOWNLOAD_LINK_MESSAGE_PREFIX"
+msgstr "_Please download the debug log by clicking_"
+
+msgid "debugging.messages.DEBUG_INFO_DOWNLOAD_LINK_MESSAGE_SUFFIX"
+msgstr "_here_"
+
+msgid "embed.embeddedObjectType.VISUALIZATION"
+msgstr "_Visualization_"
+
+msgid "embed.embeddedObjectType.PINBOARD"
+msgstr "_Pinboard_"
+
+msgid "embed.INVALID_EMBED_CONFIGURATION_MESSAGE"
+msgstr ""
+
+msgid "embed.EMBED_CONTROL_ACTION_MESSAGE"
+msgstr "_Copy the text below to get a direct link to the {embeddedObjectType}._"
+
+msgid "embed.MISSING_VISUALIZATIONS_MESSAGE"
+msgstr ""
+
+msgid "embed.control.TITLE"
+msgstr "_Copy Link_"
+
+msgid "print.INVALID_PRINT_CONFIGURATION_MESSAGE"
+msgstr "_Print configuration is incorrect. Please verify the parameters._"
+
+msgid "timeBucketLabels.ms"
+msgstr "_DETAILED_"
+
+msgid "timeBucketLabels.h"
+msgstr "_HOURLY_"
+
+msgid "timeBucketLabels.d"
+msgstr "_DAILY_"
+
+msgid "timeBucketLabels.w"
+msgstr "_WEEKLY_"
+
+msgid "timeBucketLabels.M"
+msgstr "_MONTHLY_"
+
+msgid "timeBucketLabels.Q"
+msgstr "_QUARTERLY_"
+
+msgid "timeBucketLabels.y"
+msgstr "_YEARLY_"
+
+msgid "a3.TRIGGER_MESSAGE"
+msgstr ""
+
+msgid "a3.ANALYSIS_COMPLETE"
+msgstr "_Auto Awesome Analysis compete._"
+
+msgid "a3.OPEN_PINBOARD"
+msgstr "_Click here to open pinboard._"
+
+msgid "a3.ANALYSIS_FAILED"
+msgstr "_Analysis failed._"
+
+msgid "appInitialization.APP_INITIALIZATION_FAILURE_MESSAGE"
+msgstr ""
+
+msgid "rangeSelect.ENTER_A_VALUE"
+msgstr "_Enter a value_"
+
+msgid "rangeSelect.ENTER_MIN_VALUE"
+msgstr "_Enter min value_"
+
+msgid "rangeSelect.ENTER_MAX_VALUE"
+msgstr "_Enter max value_"
+
+msgid "checkboxFilter.emptyFilterTextPlaceholder"
+msgstr "_(Select)_"
+
+msgid "checkboxFilter.TYPE_A_VALUE"
+msgstr "_Type a value_"
+
+msgid "checkboxFilter.ALL"
+msgstr "_ALL_"
+
+msgid "checkboxFilter.SELECTED"
+msgstr "_SELECTED_"
+
+msgid "checkboxFilter.NO_SELECTED_FILTER"
+msgstr "_No selected filter_"
+
+msgid "checkboxFilter.THINKING"
+msgstr "_Shh. I\'m thinking over here._"
+
+msgid "checkboxFilter.TRY_REDUCING_VALUES"
+msgstr "_{1}+ values. Type to reduce_"
+
+msgid "checkboxFilter.KEEP_TRYING"
+msgstr "_Still too many... Keep Typing!_"
+
+msgid "checkboxFilter.SAMPLE_VALUES"
+msgstr "_Sample Values_"
+
+msgid "checkboxFilter.NO_MATCHES"
+msgstr "_No matched values._"
+
+msgid "pinboardFilter.ADD_FILTER"
+msgstr "_Add filters_"
+
+msgid "pinboardFilter.NO_SOURCES_PLACEHOLDER"
+msgstr ""
+
+msgid "sageUserFeedback.DIALOG_TITLE"
+msgstr "_Query Suggestions Feedback_"
+
+msgid "sageUserFeedback.SELECT_A_RATING"
+msgstr "_Select suggestions rating_"
+
+msgid "sageUserFeedback.ENTER_DESCRIPTION_PLACEHOLDER"
+msgstr "_Sorry for the inconvenience. Please describe the problem._"
+
+msgid "sageUserFeedback.GIVE_FEEDBACK"
+msgstr "_Don\'t see any useful suggestion? Share your wrath!_"
+
+msgid "suggestions.ADDITIONAL_SOURCES"
+msgstr "_Suggestions from additional sources_"
+
+msgid "suggestions.SYNONYMS"
+msgstr "_Suggestions from synonyms_"
+
+msgid "suggestions.SEARCH_HISTORY"
+msgstr "_Suggestions from search history_"
+
+msgid "fontPreview.PREVIEW_TEXT"
+msgstr "_The quick brown fox jumps over the lazy dog_"
+
+msgid "fontPreview.NO_FONT_FACE_MESSAGE"
+msgstr "_Please upload a font file._"
+
+msgid "fontPreview.fontProperties.FAMILY"
+msgstr "_Name_"
+
+msgid "fontPreview.fontProperties.WEIGHT"
+msgstr "_Weight_"
+
+msgid "fontPreview.fontProperties.STYLE"
+msgstr "_Style_"
+
+msgid "fontPreview.fontProperties.SIZE"
+msgstr "_Size (px)_"
+
+msgid "fontPreview.fontProperties.UNICODE_RANGE"
+msgstr "_Unicode Range_"
+
+msgid "fontPreview.fontProperties.VARIANT"
+msgstr "_Variant_"
+
+msgid "fontPreview.fontProperties.STRETCH"
+msgstr "_Stretch_"
+
+msgid "fontPreview.fontProperties.COLOR"
+msgstr "_Color_"
+
+msgid "fontSelector.EDIT_FONT_BUTTON_LABEL"
+msgstr "_Edit Font_"
+
+msgid "fontSelector.ADD_NEW_FONT_BUTTON_LABEL"
+msgstr "_Add Font_"
+
+msgid "fontEditor.DEFAULT_FONT_FAMILY_NAME"
+msgstr "_Custom Font_"
+
+msgid "fontEditor.fontFaceWeight.NORMAL"
+msgstr "_Normal_"
+
+msgid "fontEditor.fontFaceWeight.BOLD"
+msgstr "_Bold_"
+
+msgid "fontEditor.fontFaceWeight.LIGHT"
+msgstr "_Light_"
+
+msgid "fontEditor.fontFaceStyle.NORMAL"
+msgstr "_Normal_"
+
+msgid "fontEditor.fontFaceStyle.ITALIC"
+msgstr "_Italic_"
+
+msgid "fontEditor.fontFaceStyle.OBLIQUE"
+msgstr "_Oblique_"
+
+msgid "customizableStyleProperties.FONT_FACE"
+msgstr "_Font_"
+
+msgid "customizableStyleProperties.BACKGROUND_COLOR"
+msgstr "_Background Color_"
+
+msgid "customizableStyleProperties.BACKGROUND_IMAGE"
+msgstr "_Background Image_"
+
+msgid "styleCustomizer.resetButton.LABEL"
+msgstr "_Reset_"
+
+msgid "styleCustomizer.appLogoSelector.HEADER"
+msgstr "_Application Logo (Default)_"
+
+msgid "styleCustomizer.appLogoSelector.SUBTEXT"
+msgstr "_Recommended size: 140px x 140px_"
+
+msgid "styleCustomizer.wideAppLogoSelector.HEADER"
+msgstr "_Application Logo (Wide)_"
+
+msgid "styleCustomizer.wideAppLogoSelector.SUBTEXT"
+msgstr "_Recommended size: 440px x 100px_"
+
+msgid "styleCustomizer.chartFontSelector.HEADER"
+msgstr "_Chart Visualization Fonts_"
+
+msgid "styleCustomizer.chartFontSelector.NO_SELECTION_PLACEHOLDER_MESSAGE"
+msgstr "_Select a font_"
+
+msgid "styleCustomizer.tableFontSelector.HEADER"
+msgstr "_Table Visualization Fonts_"
+
+msgid "styleCustomizer.tableFontSelector.NO_SELECTION_PLACEHOLDER_MESSAGE"
+msgstr "_Select a font_"
+
+msgid "styleCustomizer.appBackgroundSelector.HEADER"
+msgstr "_Embedded Application Background_"
+
+msgid "styleCustomizer.chartColorPaletteEditor.HEADER"
+msgstr "_Chart Color Palettes_"
+
+msgid "styleCustomizer.customizableFeatures.table.CELL"
+msgstr "_Table Value Cells_"
+
+msgid "styleCustomizer.customizableFeatures.chart.X_AXIS_LABEL"
+msgstr "_X Axis Labels_"
+
+msgid "styleCustomizer.customizableFeatures.chart.X_AXIS_TITLE"
+msgstr "_X Axis Title_"
+
+msgid "styleCustomizer.customizableFeatures.chart.Y_AXIS_LABEL"
+msgstr "_Y Axis Labels_"
+
+msgid "styleCustomizer.customizableFeatures.chart.Y_AXIS_TITLE"
+msgstr "_Y Axis Title_"
+
+msgid "styleCustomizer.customizableFeatures.chart.TOOLTIP"
+msgstr "_Tooltip_"
+
+msgid "styleCustomizer.customizableFeatures.chart.SCATTER_CHART"
+msgstr "_Scatter Chart Data Labels_"
+
+msgid "styleCustomizer.customizableFeatures.chart.PIE_CHART"
+msgstr "_Pie Chart Data Labels_"
+
+msgid "styleCustomizer.customizableFeatures.chart.LINE_CHART"
+msgstr "_Line Chart Data Labels_"
+
+msgid "styleCustomizer.customizableFeatures.chart.COLUMN_CHART"
+msgstr "_Column Chart Data Labels_"
+
+msgid "styleCustomizer.customizableFeatures.chart.BAR_CHART"
+msgstr "_Bar Chart Data Labels_"
+
+msgid "styleCustomizer.customizableFeatures.chart.AREA_CHART"
+msgstr "_Area Chart Data Labels_"
+
+msgid "blobUploadService.blobTypeNames.FONT"
+msgstr "_font_"
+
+msgid "blobUploadService.blobTypeNames.IMAGE"
+msgstr "_image_"
+
+msgid "blobUploadService.blobTypeNames.GENERIC"
+msgstr "_generic file_"
+
+msgid "blobUploadService.invalidFileMessages.INVALID_TYPE"
+msgstr "_The selected file is not a valid {fileType}._"
+
+msgid "blobUploader.UPLOAD_NEW_FILE_BUTTON_LABEL"
+msgstr "_Upload a new file_"
+
+msgid "charts.chartEditor.SHOW_Y_AXIS_AS_PERCENT"
+msgstr "_Show Y-Axis as %_"
+
+msgid "charts.chartEditor.SHOW_DATA_LABELS"
+msgstr "_Show Data Labels_"
+
+msgid "charts.chartEditor.OVERLAY_HEATMAP"
+msgstr "_Heatmap mode_"
+
+msgid "charts.chartEditor.Y_AXIS_RANGE"
+msgstr "_Y-Axis Range_"
+
+msgid "charts.chartEditor.ZOOM_DISABLED"
+msgstr "_Zoom functionality is unavailable with custom Y-Axis range. _"
+
+msgid "charts.seriesType.LINE"
+msgstr "_line_"
+
+msgid "migration.export.TITLE"
+msgstr "_Export {pageType}s_"
+
+msgid "migration.export.EXPORT_URL"
+msgstr "_URL to export to_"
+
+msgid "migration.export.IMPORT_URL_LINK_TEXT"
+msgstr "_Destination URL_"
+
+msgid "migration.export.STEP.ONE"
+msgstr "_Step 1_"
+
+msgid "migration.export.STEP.TWO"
+msgstr "_Step 2_"
+
+msgid "migration.export.STEP.THREE"
+msgstr "_Step 3_"
+
+msgid "migration.export.STEP_INFO.ONE"
+msgstr "_Navigate to _"
+
+msgid "migration.export.STEP_INFO.TWO"
+msgstr "_Click on import button_"
+
+msgid "migration.export.STEP_INFO.THREE"
+msgstr "_Copy and paste _"
+
+msgid "migration.import.TITLE"
+msgstr "_Import {pageType}s_"
+
+msgid "migration.import.IMPORT_FILE"
+msgstr "_Paste file name_"
+
+msgid "migration.import.STATUS_LABEL.SUMMARY"
+msgstr "_Summary_"
+
+msgid "migration.import.STATUS_LABEL.IMPORTED"
+msgstr "_Imported {pageType}s_"
+
+msgid "migration.import.STATUS_LABEL.UNIMPORTED"
+msgstr "_Unimported {pageType}s_"
+
+msgid "migration.import.STATUS_LABEL.NONE"
+msgstr "_None_"
+
+msgid "migration.import.SUMMARY_INFO"
+msgstr "_{importedCount} of {totalCount} successfully imported. {genInfo}_"
+
+msgid "migration.import.GENERIC_INFO"
+msgstr ""
+
+msgid "visualizationPinner.trigger.ADD_TO_PINBOARD"
+msgstr "_Pin_"
+
+msgid "visualizationPinner.modal.TITLE"
+msgstr "_Add to pinboard_"
+
+msgid "visualizationPinner.modal.SEARCH_PLACEHOLDER"
+msgstr "_Search a pinboard_"
+
+msgid "visualizationPinner.modal.ADD_PINBOARD"
+msgstr "_ADD_"
+
+msgid "visualizationPinner.modal.CREATE_NEW_PINBOARD"
+msgstr "_Create new pinboard_"
+
+msgid "visualizationPinner.modal.NEW_PINBOARD_NAME_PLACEHOLDER"
+msgstr "_New pinboard name_"
+
+msgid "report.jobStateString.SCHEDULED"
+msgstr "_Scheduled_"
+
+msgid "report.jobStateString.PAUSED"
+msgstr "_Paused_"
+
+msgid "report.jobRunStateString.DEFAULT"
+msgstr "_Default_"
+
+msgid "report.jobRunStateString.RUNNING"
+msgstr "_Running_"
+
+msgid "report.jobRunStateString.FAILED"
+msgstr "_Failed_"
+
+msgid "report.jobRunStateString.SUCCESS"
+msgstr "_Success_"
+
+msgid "report.jobRunStateString.DEADLINE"
+msgstr "_Deadline_"
+
+msgid "report.jobRunStateString.DOES_NOT_EXIST"
+msgstr "_Does not exist_"
+
+msgid "report.csvWarning"
+msgstr "_CSV files will be sent only for the tables in this pinboard._"
+
+msgid "report.noTableWarning"
+msgstr "_You cannot send raw data because this pinboard contains no data tables._"
+
+msgid "report.name"
+msgstr "_Name_"
+
+msgid "report.serverTimeZone"
+msgstr "_Server time zone_"
+
+msgid "report.description"
+msgstr "_Description_"
+
+msgid "report.type"
+msgstr "_Type_"
+
+msgid "report.schedule"
+msgstr "_Schedule_"
+
+msgid "report.save"
+msgstr "_Save_"
+
+msgid "report.cancel"
+msgstr "_Cancel_"
+
+msgid "report.recipients"
+msgstr "_Recipients_"
+
+msgid "report.addRecipients"
+msgstr "_Add Recipients_"
+
+msgid "report.nextOccurence"
+msgstr "_Next occurrence_"
+
+msgid "report.noDetail"
+msgstr ""
+
+msgid "report.startedAt"
+msgstr "_Job started at {1}_"
+
+msgid "report.noPermission"
+msgstr "_You do not have permission to schedule pinboards, please reach out to your admin for help._"
+
+msgid "dataSourcePreview.FOOTER_TEXT"
+msgstr "_and {1} more._"
+
+msgid "vizContext.NO_MATCHING_HEADLINE"
+msgstr "_Updating answer disabled as no matching headline found._"
+
+msgid "pinboardSnapshots.SEARCH_PLACEHOLDER"
+msgstr "_Search snapshots_"
+
+msgid "pinboardSnapshots.TAKE_SNAPSHOT"
+msgstr "_Take Snapshot_"
+
+msgid "pinboardSnapshots.NEW_SNAPSHOT_NAME_PLACEHOLDER"
+msgstr "_New snapshot name_"
+
+msgid "pinboardSnapshots.NEW_SNAPSHOT_DESCRIPTION_PLACEHOLDER"
+msgstr "_New snapshot description_"
+
+msgid "pinboardPage.DATE"
+msgstr "_Date_"
+
+msgid "pinboardPage.FILTER_HEADING"
+msgstr "_Pinboard filters_"
+
+msgid "pinboardPage.PINBOARD_TAB"
+msgstr "_Pinboard_"
+
+msgid "pinboardPage.INSIGHTS_TAB"
+msgstr "_Insights_"
+
+msgid "answerPage.vizTypeSelector.TABLE_SELECTOR_TOOLTIP"
+msgstr "_Data view_"
+
+msgid "documentUnsavedChangesAlert.MESSAGE"
+msgstr "_There are unsaved changes in the current {1}. Do you want to discard them?_"
+
+msgid "documentUnsavedChangesAlert.UNSAVED_CHANGES"
+msgstr "_Unsaved changes_"
+
+msgid "documentUnsavedChangesAlert.STAY_HERE"
+msgstr "_Stay Here_"
+
+msgid "documentUnsavedChangesAlert.DISCARD"
+msgstr "_Discard & Exit_"
+
+msgid "documentUnsavedChangesAlert.SAVE"
+msgstr "_Save & Exit_"
+
+msgid "msg_code.10001.detail"
+msgstr "_The metadata store is not reachable._"
+
+msgid "msg_code.1206.detail"
+msgstr ""
+
+msgid "msg_code.1205.summary"
+msgstr "_Successfully created group._"
+
+msgid "msg_code.160.summary"
+msgstr "_The list of aggregated worksheets could not be retrieved._"
+
+msgid "msg_code.804.detail"
+msgstr ""
+
+msgid "msg_code.105.summary"
+msgstr "_Failure deleting visual from {1} due to corruption_"
+
+msgid "msg_code.112.summary"
+msgstr "_Pinboards deleted successfully._"
+
+msgid "msg_code.176.detail"
+msgstr ""
+
+msgid "msg_code.11008.summary"
+msgstr "_Data export failed_"
+
+msgid "msg_code.1601.summary"
+msgstr "_The data source sample values could not be retrieved._"
+
+msgid "msg_code.809.summary"
+msgstr ""
+
+msgid "msg_code.1231.summary"
+msgstr "_Failed to delete role_"
+
+msgid "msg_code.901.summary"
+msgstr "_The answer permissions could not be retrieved._"
+
+msgid "msg_code.501.summary"
+msgstr "_The excel data could not be retrieved._"
+
+msgid "msg_code.12707.summary"
+msgstr "_No job description provided_"
+
+msgid "msg_code.10003.action"
+msgstr "_Please request access from your administrator._"
+
+msgid "msg_code.101.summary"
+msgstr "_Failure adding {1} to {2}._"
+
+msgid "msg_code.12714.summary"
+msgstr "_Recipient domain is not whitelisted_"
+
+msgid "msg_code.13001.detail"
+msgstr "_Error creating database schema_"
+
+msgid "msg_code.10009.summary"
+msgstr "_Cannot add group_"
+
+msgid "msg_code.11004.summary"
+msgstr "_Invalid visualization identifier_"
+
+msgid "msg_code.805.summary"
+msgstr "_The debug info could not be retrieved._"
+
+msgid "msg_code.506.detail"
+msgstr ""
+
+msgid "msg_code.12703.summary"
+msgstr "_No pinboard provided_"
+
+msgid "msg_code.10005.summary"
+msgstr "_The base object is missing._"
+
+msgid "msg_code.13019.detail"
+msgstr "_Schema update for older version: {0} received and ignored_"
+
+msgid "msg_code.801.summary"
+msgstr "_The MemCache could not be cleared._"
+
+msgid "msg_code.1403.detail"
+msgstr ""
+
+msgid "msg_code.9001.detail"
+msgstr "_Please email the trace file to {adminEmail}._"
+
+msgid "msg_code.1113.summary"
+msgstr "_The job could not be updated_"
+
+msgid "msg_code.1609.detail"
+msgstr ""
+
+msgid "msg_code.1223.detail"
+msgstr ""
+
+msgid "msg_code.1817.summary"
+msgstr "_Sorry! Unable to import objects at this moment!_"
+
+msgid "msg_code.9007.summary"
+msgstr "_Uh oh. We’re having trouble getting data for this request._"
+
+msgid "msg_code.1806.summary"
+msgstr "_The log from cluster management service could not be retrieved._"
+
+msgid "msg_code.1813.summary"
+msgstr "_Sorry! Unable to submit the feedback at this moment!_"
+
+msgid "msg_code.1406.summary"
+msgstr "_The health check was unsuccessful._"
+
+msgid "msg_code.1006.summary"
+msgstr "_The data rows could not be retrieved._"
+
+msgid "msg_code.9003.summary"
+msgstr "_Uh oh. We’re not sure what happened._"
+
+msgid "msg_code.161.detail"
+msgstr ""
+
+msgid "msg_code.10004.action"
+msgstr "_Please request access from your administrator_"
+
+msgid "msg_code.1802.summary"
+msgstr "_The cluster information from database service could not be retrieved._"
+
+msgid "msg_code.1402.summary"
+msgstr "_Logging out was unsuccessful._"
+
+msgid "msg_code.121.detail"
+msgstr ""
+
+msgid "msg_code.1600.detail"
+msgstr ""
+
+msgid "msg_code.169.summary"
+msgstr "_Aggregated worksheet {1} created._"
+
+msgid "msg_code.176.summary"
+msgstr "_The comment was unable to update_"
+
+msgid "msg_code.179.detail"
+msgstr ""
+
+msgid "msg_code.12712.detail"
+msgstr "_The max number of recipients is 1000_"
+
+msgid "msg_code.158.summary"
+msgstr "_The list of pinboards could not be retrieved._"
+
+msgid "msg_code.165.summary"
+msgstr "_The list of columns could not be retrieved._"
+
+msgid "msg_code.13004.detail"
+msgstr "_Object with Id: {0} of type: {1} in invalid state_"
+
+msgid "msg_code.9010.detail"
+msgstr "_Object cannot be opened due to errors in some of its dependencies_"
+
+msgid "msg_code.147.detail"
+msgstr ""
+
+msgid "msg_code.139.detail"
+msgstr ""
+
+msgid "msg_code.1618.detail"
+msgstr ""
+
+msgid "msg_code.1232.detail"
+msgstr "_Successfully updated role_"
+
+msgid "msg_code.1224.detail"
+msgstr "_Failed to assign user to group_"
+
+msgid "msg_code.147.summary"
+msgstr "_The worksheet could not be saved._"
+
+msgid "msg_code.1629.summary"
+msgstr "_Successfully deleted the connection_"
+
+msgid "msg_code.154.summary"
+msgstr "_The list of metadata could not be retrieved._"
+
+msgid "msg_code.115.detail"
+msgstr ""
+
+msgid "msg_code.1229.summary"
+msgstr "_Failed to create role_"
+
+msgid "msg_code.107.detail"
+msgstr ""
+
+msgid "msg_code.1200.detail"
+msgstr ""
+
+msgid "msg_code.136.summary"
+msgstr "_{1} saved._"
+
+msgid "msg_code.143.summary"
+msgstr "_{1} could not be saved._"
+
+msgid "msg_code.13022.summary"
+msgstr "_Invalid filter values: {values}_"
+
+msgid "msg_code.1625.summary"
+msgstr "_Load task(s) re-started successfully._"
+
+msgid "msg_code.1218.summary"
+msgstr "_The groups could not be deleted._"
+
+msgid "msg_code.170.detail"
+msgstr ""
+
+msgid "msg_code.1004.detail"
+msgstr ""
+
+msgid "msg_code.125.summary"
+msgstr "_There was a failure details for the tables._"
+
+msgid "msg_code.132.summary"
+msgstr "_Table saved successfully._"
+
+msgid "msg_code.1207.summary"
+msgstr "_Successfully updated user._"
+
+msgid "msg_code.13011.summary"
+msgstr "_Answer generation failed_"
+
+msgid "msg_code.1614.summary"
+msgstr "_The data source connection attributes could not be retrieved._"
+
+msgid "msg_code.1214.summary"
+msgstr "_The password could not be updated._"
+
+msgid "msg_code.1621.summary"
+msgstr "_The sql failed to execute._"
+
+msgid "msg_code.10005.detail"
+msgstr "_An underlying object referenced by this object is missing in store._"
+
+msgid "msg_code.114.summary"
+msgstr "_Answers deleted successfully._"
+
+msgid "msg_code.121.summary"
+msgstr "_The relationship could not be updated._"
+
+msgid "msg_code.1603.summary"
+msgstr "_The DDL could not be executed._"
+
+msgid "msg_code.500.detail"
+msgstr ""
+
+msgid "msg_code.1610.summary"
+msgstr "_The data source could not be created._"
+
+msgid "msg_code.1203.summary"
+msgstr "_Successfully created user._"
+
+msgid "msg_code.1815.detail"
+msgstr "_What happened? {1}._"
+
+msgid "msg_code.510.summary"
+msgstr "_File upload successful._"
+
+msgid "msg_code.103.summary"
+msgstr "_Success. The visualization has been deleted from {1}._"
+
+msgid "msg_code.110.summary"
+msgstr "_Sticker deleted successfully._"
+
+msgid "msg_code.164.detail"
+msgstr ""
+
+msgid "msg_code.10007.action"
+msgstr "_Please contact your administrator._"
+
+msgid "msg_code.156.detail"
+msgstr ""
+
+msgid "msg_code.9504.summary"
+msgstr "_{1} cannot be opened._"
+
+msgid "msg_code.13013.detail"
+msgstr "_Service provider unavailable: {0}_"
+
+msgid "msg_code.12712.summary"
+msgstr "_There are too many recipients_"
+
+msgid "msg_code.124.detail"
+msgstr ""
+
+msgid "msg_code.1603.detail"
+msgstr ""
+
+msgid "msg_code.11002.summary"
+msgstr "_Invalid table/query resultset_"
+
+msgid "msg_code.11006.detail"
+msgstr "_Error in query execution to Falcon_"
+
+msgid "msg_code.803.summary"
+msgstr "_The Loggers could not be retrieved._"
+
+msgid "msg_code.12701.summary"
+msgstr "_Invalid input_"
+
+msgid "msg_code.1407.detail"
+msgstr ""
+
+msgid "msg_code.10003.summary"
+msgstr "_Unfortunately, you can't do that._"
+
+msgid "msg_code.9005.detail"
+msgstr "_Please email the trace file to {adminEmail}._"
+
+msgid "msg_code.1111.summary"
+msgstr "_The job could not be created._"
+
+msgid "msg_code.903.detail"
+msgstr ""
+
+msgid "msg_code.1117.detail"
+msgstr ""
+
+msgid "msg_code.1008.summary"
+msgstr "_The table creation could not be canceled._"
+
+msgid "msg_code.9005.summary"
+msgstr "_Uh oh. We’re having trouble getting data for this request._"
+
+msgid "msg_code.173.detail"
+msgstr ""
+
+msgid "msg_code.165.detail"
+msgstr ""
+
+msgid "msg_code.1007.detail"
+msgstr ""
+
+msgid "msg_code.1404.summary"
+msgstr "_The login config could not be retrieved._"
+
+msgid "msg_code.1811.summary"
+msgstr ""
+
+msgid "msg_code.1004.summary"
+msgstr "_The data failed to load._"
+
+msgid "msg_code.9001.summary"
+msgstr "_Uh oh. We’re not sure what happened._"
+
+msgid "msg_code.1011.summary"
+msgstr "_The sample values could not be retrieved._"
+
+msgid "msg_code.10008.detail"
+msgstr "_User {0} not found in store._"
+
+msgid "msg_code.141.detail"
+msgstr ""
+
+msgid "msg_code.133.detail"
+msgstr ""
+
+msgid "msg_code.13027.summary"
+msgstr "_Load schedule could not be disabled._"
+
+msgid "msg_code.1612.detail"
+msgstr ""
+
+msgid "msg_code.1800.summary"
+msgstr "_The cluster information from search service could not be retrieved._"
+
+msgid "msg_code.178.summary"
+msgstr "_Rule saved successfully._"
+
+msgid "msg_code.1400.summary"
+msgstr "_The session info could not be retrieved._"
+
+msgid "msg_code.1000.summary"
+msgstr "_The Data caching was unsuccessful._"
+
+msgid "msg_code.13009.summary"
+msgstr "_Invalid Sage question._"
+
+msgid "msg_code.13016.summary"
+msgstr "_Invalid physical schema proto_"
+
+msgid "msg_code.101.detail"
+msgstr "_The visualization could not be added to {2}._"
+
+msgid "msg_code.167.summary"
+msgstr "_The answer could not be retrieved._"
+
+msgid "msg_code.174.summary"
+msgstr "_The comments could not be retrieved._"
+
+msgid "msg_code.13016.detail"
+msgstr "_Inconsistency in physical schema from Falcon: {0}_"
+
+msgid "msg_code.181.summary"
+msgstr "_Rule could not be deleted._"
+
+msgid "msg_code.13008.detail"
+msgstr "_Input from Sage - missing columns of type: {0}_"
+
+msgid "msg_code.119.summary"
+msgstr "_The relationship could not be created._"
+
+msgid "msg_code.1400.detail"
+msgstr ""
+
+msgid "msg_code.13005.summary"
+msgstr "_Object already exists_"
+
+msgid "msg_code.156.summary"
+msgstr "_The list of relationships could not be retrieved._"
+
+msgid "msg_code.163.summary"
+msgstr "_The list of DB views could not be retrieved._"
+
+msgid "msg_code.170.summary"
+msgstr "_The Aggregated Worksheet could not be created._"
+
+msgid "msg_code.119.detail"
+msgstr ""
+
+msgid "msg_code.508.summary"
+msgstr "_The headline data could not be retrieved._"
+
+msgid "msg_code.108.summary"
+msgstr "_Sticker created successfully._"
+
+msgid "msg_code.11009.detail"
+msgstr "_Error in data generation in Callosum_"
+
+msgid "msg_code.1212.detail"
+msgstr ""
+
+msgid "msg_code.1204.detail"
+msgstr ""
+
+msgid "msg_code.152.summary"
+msgstr "_Successfully unassigned sticker._"
+
+msgid "msg_code.802.detail"
+msgstr ""
+
+msgid "msg_code.504.summary"
+msgstr "_The chart data could not be retrieved._"
+
+msgid "msg_code.9008.detail"
+msgstr ""
+
+msgid "msg_code.1008.detail"
+msgstr ""
+
+msgid "msg_code.141.summary"
+msgstr "_{1} could not be saved._"
+
+msgid "msg_code.1623.summary"
+msgstr "_Selected tables are queued for loading._"
+
+msgid "msg_code.700.detail"
+msgstr ""
+
+msgid "msg_code.1216.summary"
+msgstr "_The users could not be deleted._"
+
+msgid "msg_code.1223.summary"
+msgstr "_The profile pic could not be uploaded._"
+
+msgid "msg_code.808.summary"
+msgstr "_Failed to send email to {adminEmail}._"
+
+msgid "msg_code.1630.summary"
+msgstr "_There was an error deleting this connection._"
+
+msgid "msg_code.1230.summary"
+msgstr "_Successfully delete role_"
+
+msgid "msg_code.900.summary"
+msgstr "_The table permissions could not be retrieved._"
+
+msgid "msg_code.10009.detail"
+msgstr "_This group already belongs to the group you are trying to add_"
+
+msgid "msg_code.10001.action"
+msgstr "_Please contact your administrator._"
+
+msgid "msg_code.130.summary"
+msgstr "_The pinboard could not be opened._"
+
+msgid "msg_code.1612.summary"
+msgstr "_The data source connection field info could not be retrieved._"
+
+msgid "msg_code.504.detail"
+msgstr ""
+
+msgid "msg_code.1212.summary"
+msgstr "_The group could not be updated._"
+
+msgid "msg_code.9506.summary"
+msgstr "_The object is not present in the system._"
+
+msgid "msg_code.1116.summary"
+msgstr "_The job was paused_"
+
+msgid "msg_code.168.detail"
+msgstr ""
+
+msgid "msg_code.1201.summary"
+msgstr "_The groups list could not be retrieved._"
+
+msgid "msg_code.12701.detail"
+msgstr "_The definition of the job is invalid_"
+
+msgid "msg_code.1401.detail"
+msgstr ""
+
+msgid "msg_code.9502.summary"
+msgstr "_Cannot connect to ThoughtSpot. Please try again soon._"
+
+msgid "msg_code.1615.detail"
+msgstr ""
+
+msgid "msg_code.128.detail"
+msgstr ""
+
+msgid "msg_code.1607.detail"
+msgstr ""
+
+msgid "msg_code.1221.detail"
+msgstr ""
+
+msgid "msg_code.1809.summary"
+msgstr "_The cluster information from event service could not be retrieved._"
+
+msgid "msg_code.1816.summary"
+msgstr "_Successfully imported objects._"
+
+msgid "msg_code.12710.summary"
+msgstr "_User data unavailable_"
+
+msgid "msg_code.104.detail"
+msgstr "_The visualization could not be deleted from the pinboard._"
+
+msgid "msg_code.1111.detail"
+msgstr ""
+
+msgid "msg_code.1805.summary"
+msgstr ""
+
+msgid "msg_code.10001.summary"
+msgstr "_Connection failed_"
+
+msgid "msg_code.1001.detail"
+msgstr ""
+
+msgid "msg_code.10002.detail"
+msgstr "_Input from client to server is invalid_"
+
+msgid "msg_code.805.detail"
+msgstr ""
+
+msgid "msg_code.701.summary"
+msgstr "_The column's dependents could not be retrieved._"
+
+msgid "msg_code.177.detail"
+msgstr ""
+
+msgid "msg_code.9010.summary"
+msgstr "_The object could not be opened._"
+
+msgid "msg_code.13029.summary"
+msgstr "_Successfully edited data source connection_"
+
+msgid "msg_code.153.detail"
+msgstr ""
+
+msgid "msg_code.13010.detail"
+msgstr "_Sending logical metadata to Sage failed due to: {0}_"
+
+msgid "msg_code.145.detail"
+msgstr ""
+
+msgid "msg_code.13002.detail"
+msgstr "_Error creating view_"
+
+msgid "msg_code.137.detail"
+msgstr ""
+
+msgid "msg_code.1624.detail"
+msgstr "_No mapping found for source datatype to Thoughtspot datatype._"
+
+msgid "msg_code.1616.detail"
+msgstr ""
+
+msgid "msg_code.1002.summary"
+msgstr "_The keys could not be read._"
+
+msgid "msg_code.1230.detail"
+msgstr "_Successfully delete role_"
+
+msgid "msg_code.507.detail"
+msgstr ""
+
+msgid "msg_code.139.summary"
+msgstr "_{1} could not be saved._"
+
+msgid "msg_code.13018.summary"
+msgstr "_Cyclic relationship_"
+
+msgid "msg_code.13028.action"
+msgstr ""
+
+msgid "msg_code.13025.summary"
+msgstr "_Expression validation failed._"
+
+msgid "msg_code.1628.summary"
+msgstr "_Successfully stopped the tasks._"
+
+msgid "msg_code.9506.detail"
+msgstr "_The {1} is not present in the system._"
+
+msgid "msg_code.113.detail"
+msgstr ""
+
+msgid "msg_code.105.detail"
+msgstr ""
+
+msgid "msg_code.128.summary"
+msgstr "_There was a failure fetching details for the metadata items._"
+
+msgid "msg_code.13007.summary"
+msgstr "_Invalid Sage question_"
+
+msgid "msg_code.1617.summary"
+msgstr "_The sql could not be parsed._"
+
+msgid "msg_code.1404.detail"
+msgstr ""
+
+msgid "msg_code.172.summary"
+msgstr "_{1} was unable to update._"
+
+msgid "msg_code.9002.detail"
+msgstr "_Try logging in again_"
+
+msgid "msg_code.1010.detail"
+msgstr ""
+
+msgid "msg_code.117.summary"
+msgstr "_The tables could not be deleted._"
+
+msgid "msg_code.13003.summary"
+msgstr "_The object cannot be found in store._"
+
+msgid "msg_code.1606.summary"
+msgstr "_The tasks could not be stopped._"
+
+msgid "msg_code.13010.summary"
+msgstr "_Sending logical metadata to Sage failed_"
+
+msgid "msg_code.1216.detail"
+msgstr ""
+
+msgid "msg_code.1208.detail"
+msgstr ""
+
+msgid "msg_code.161.summary"
+msgstr "_The list of imported data could not be retrieved._"
+
+msgid "msg_code.900.detail"
+msgstr ""
+
+msgid "msg_code.506.summary"
+msgstr "_The worksheet data could not be retrieved._"
+
+msgid "msg_code.106.summary"
+msgstr "_{1} created successfully._"
+
+msgid "msg_code.113.summary"
+msgstr "_The pinboards could not be deleted_"
+
+msgid "msg_code.11009.summary"
+msgstr "_Data generation failed_"
+
+msgid "msg_code.150.summary"
+msgstr "_Successfully assigned sticker._"
+
+msgid "msg_code.1232.summary"
+msgstr "_Successfully updated role_"
+
+msgid "msg_code.902.summary"
+msgstr "_The pinboard permissions could not be retrieved._"
+
+msgid "msg_code.12708.summary"
+msgstr "_Pinboard data export error_"
+
+msgid "msg_code.502.summary"
+msgstr "_The visualization data could not be retrieved._"
+
+msgid "msg_code.102.summary"
+msgstr "_Failure adding {1} to {2} due to corruption._"
+
+msgid "msg_code.162.detail"
+msgstr ""
+
+msgid "msg_code.154.detail"
+msgstr ""
+
+msgid "msg_code.10005.action"
+msgstr "_Please contact your administrator_"
+
+msgid "msg_code.11005.summary"
+msgstr "_No data_"
+
+msgid "msg_code.1221.summary"
+msgstr "_The profile pic could not be retrieved._"
+
+msgid "msg_code.806.summary"
+msgstr "_Memcache cleared successfully._"
+
+msgid "msg_code.508.detail"
+msgstr ""
+
+msgid "msg_code.130.detail"
+msgstr ""
+
+msgid "msg_code.12704.summary"
+msgstr "_No recipients provided_"
+
+msgid "msg_code.1601.detail"
+msgstr ""
+
+msgid "msg_code.1118.summary"
+msgstr "_The job was resumed_"
+
+msgid "msg_code.10006.summary"
+msgstr "_The connection to Zookeeper has failed._"
+
+msgid "msg_code.1210.summary"
+msgstr "_The users could not be updated._"
+
+msgid "msg_code.1114.summary"
+msgstr "_Successfully deleted jobs._"
+
+msgid "msg_code.13005.detail"
+msgstr "_Object with Id: {0} of type: {1} already exists_"
+
+msgid "msg_code.1233.detail"
+msgstr "_Failed to update role_"
+
+msgid "msg_code.1818.summary"
+msgstr "_Successfully deleted data source object(s)_"
+
+msgid "msg_code.9008.summary"
+msgstr "_Something went wrong with your search._"
+
+msgid "msg_code.9500.summary"
+msgstr "_ThoughtSpot is unreachable. Please try again soon._"
+
+msgid "msg_code.1110.summary"
+msgstr "_Successfully created job._"
+
+msgid "msg_code.901.detail"
+msgstr ""
+
+msgid "msg_code.1201.detail"
+msgstr ""
+
+msgid "msg_code.1115.detail"
+msgstr ""
+
+msgid "msg_code.1807.summary"
+msgstr ""
+
+msgid "msg_code.1407.summary"
+msgstr "_The health portal token could not be retrieved._"
+
+msgid "msg_code.1814.summary"
+msgstr "_Successfully exported objects. File can be found at {1}._"
+
+msgid "msg_code.1007.summary"
+msgstr "_The files could not be deleted._"
+
+msgid "msg_code.9004.summary"
+msgstr "_Still loading data, come back soon_"
+
+msgid "msg_code.1005.detail"
+msgstr ""
+
+msgid "msg_code.1803.summary"
+msgstr ""
+
+msgid "msg_code.1403.summary"
+msgstr "_The client state could not be saved._"
+
+msgid "msg_code.10006.detail"
+msgstr "_Zookeeper is not reachable._"
+
+msgid "msg_code.501.detail"
+msgstr ""
+
+msgid "msg_code.159.summary"
+msgstr "_The list of worksheets could not be retrieved._"
+
+msgid "msg_code.166.summary"
+msgstr "_The list of stickers could not be retrieved._"
+
+msgid "msg_code.157.detail"
+msgstr ""
+
+msgid "msg_code.10008.action"
+msgstr "_Please contact your administrator_"
+
+msgid "msg_code.149.detail"
+msgstr ""
+
+msgid "msg_code.148.summary"
+msgstr "_Sticker updated._"
+
+msgid "msg_code.155.summary"
+msgstr "_The list of tables could not be retrieved._"
+
+msgid "msg_code.125.detail"
+msgstr ""
+
+msgid "msg_code.117.detail"
+msgstr ""
+
+msgid "msg_code.1604.detail"
+msgstr ""
+
+msgid "msg_code.11007.detail"
+msgstr "_Error in Answer data generation for Sage input_"
+
+msgid "msg_code.1210.detail"
+msgstr ""
+
+msgid "msg_code.1202.detail"
+msgstr ""
+
+msgid "msg_code.137.summary"
+msgstr "_{1} could not be saved._"
+
+msgid "msg_code.144.summary"
+msgstr "_{1} saved._"
+
+msgid "msg_code.1619.summary"
+msgstr "_Successfully created data source connection_"
+
+msgid "msg_code.13023.summary"
+msgstr "_Creating relationship failed._"
+
+msgid "msg_code.1626.summary"
+msgstr "_Successfully connected to data source._"
+
+msgid "msg_code.1219.summary"
+msgstr "_Successfully assigned users to groups._"
+
+msgid "msg_code.13030.summary"
+msgstr "_Connection test failed. Please verify connection attributes._"
+
+msgid "msg_code.1408.detail"
+msgstr ""
+
+msgid "msg_code.9006.detail"
+msgstr "_Please email the trace file to {adminEmail}._"
+
+msgid "msg_code.1100.detail"
+msgstr ""
+
+msgid "msg_code.126.summary"
+msgstr "_There was a failure fetching details for the datasource._"
+
+msgid "msg_code.1608.summary"
+msgstr "_The load from data source was unsuccessful._"
+
+msgid "msg_code.133.summary"
+msgstr "_There was a problem saving the table._"
+
+msgid "msg_code.13012.summary"
+msgstr "_Worksheet generation failed_"
+
+msgid "msg_code.1615.summary"
+msgstr "_The data source connections could not be retrieved._"
+
+msgid "msg_code.1208.summary"
+msgstr "_The user could not be updated._"
+
+msgid "msg_code.1622.summary"
+msgstr "_The lightweight data-cache is disabled_"
+
+msgid "msg_code.1228.detail"
+msgstr "_Successfully created role_"
+
+msgid "msg_code.1215.summary"
+msgstr "_Successfully deleted users._"
+
+msgid "msg_code.115.summary"
+msgstr "_The answers could not be deleted._"
+
+msgid "msg_code.122.summary"
+msgstr "_Relationship deleted successfully._"
+
+msgid "msg_code.13001.summary"
+msgstr "_Schema creation failed_"
+
+msgid "msg_code.1604.summary"
+msgstr "_The schedule could not be updated._"
+
+msgid "msg_code.1611.summary"
+msgstr "_The data source connection was unsuccessful._"
+
+msgid "msg_code.1204.summary"
+msgstr "_The user could not be created._"
+
+msgid "msg_code.511.summary"
+msgstr "_The file failed to upload._"
+
+msgid "msg_code.512.summary"
+msgstr "_The pinboard data could not be exported to pdf._"
+
+msgid "msg_code.104.summary"
+msgstr "_Failure deleting visual from {1}_"
+
+msgid "msg_code.111.summary"
+msgstr "_The sticker could not be deleted_"
+
+msgid "msg_code.174.detail"
+msgstr "_Failed to save client state_"
+
+msgid "msg_code.9505.summary"
+msgstr "_We’re still indexing this data, try again soon!_"
+
+msgid "msg_code.166.detail"
+msgstr ""
+
+msgid "msg_code.11007.summary"
+msgstr "_Answer data generation failed_"
+
+msgid "msg_code.1600.summary"
+msgstr "_The data source types could not be retrieved._"
+
+msgid "msg_code.12706.summary"
+msgstr "_No job name provided_"
+
+msgid "msg_code.500.summary"
+msgstr "_The leaf level data could not be retrieved._"
+
+msgid "msg_code.12713.summary"
+msgstr "_Attachment size limit exceeded_"
+
+msgid "msg_code.100.summary"
+msgstr "_Success. {1} has been added to {2}._"
+
+msgid "msg_code.1621.detail"
+msgstr ""
+
+msgid "msg_code.1613.detail"
+msgstr "_Failed to get connection list for data source_"
+
+msgid "msg_code.126.detail"
+msgstr ""
+
+msgid "msg_code.11003.summary"
+msgstr "_Invalid column identifier_"
+
+msgid "msg_code.10008.summary"
+msgstr "_The user cannot be found._"
+
+msgid "msg_code.1605.detail"
+msgstr ""
+
+msgid "msg_code.804.summary"
+msgstr "_The LogLevel could not be set._"
+
+msgid "msg_code.12702.summary"
+msgstr "_No author provided_"
+
+msgid "msg_code.102.detail"
+msgstr ""
+
+msgid "msg_code.10004.summary"
+msgstr "_The user could not be authorized._"
+
+msgid "msg_code.13017.detail"
+msgstr "_Duplicate columns: {0}_"
+
+msgid "msg_code.13009.detail"
+msgstr "_Invalid input from Sage - invalid expression: {0}_"
+
+msgid "msg_code.800.summary"
+msgstr "_The MemCache states could not be retrieved._"
+
+msgid "msg_code.1229.detail"
+msgstr "_Failed to create role_"
+
+msgid "msg_code.10000.summary"
+msgstr "_A system error has occurred._"
+
+msgid "msg_code.1112.summary"
+msgstr "_Successfully updated job._"
+
+msgid "msg_code.10000.detail"
+msgstr ""
+
+msgid "msg_code.1119.detail"
+msgstr ""
+
+msgid "msg_code.1009.summary"
+msgstr "_The schema could not be created._"
+
+msgid "msg_code.9006.summary"
+msgstr "_Uh oh. We’re having trouble getting data for this request._"
+
+msgid "msg_code.803.detail"
+msgstr ""
+
+msgid "msg_code.9009.detail"
+msgstr "_Please email the trace file to {adminEmail}._"
+
+msgid "msg_code.175.detail"
+msgstr ""
+
+msgid "msg_code.1812.summary"
+msgstr "_Thanks for your feedback!_"
+
+msgid "msg_code.1405.summary"
+msgstr "_The slack config could not be retrieved._"
+
+msgid "msg_code.1009.detail"
+msgstr ""
+
+msgid "msg_code.1005.summary"
+msgstr "_The table could not be created._"
+
+msgid "msg_code.9002.summary"
+msgstr "_The user could not be authorized._"
+
+msgid "msg_code.701.detail"
+msgstr ""
+
+msgid "msg_code.10002.action"
+msgstr "_Please contact your administrator_"
+
+msgid "msg_code.151.detail"
+msgstr ""
+
+msgid "msg_code.143.detail"
+msgstr ""
+
+msgid "msg_code.1622.detail"
+msgstr ""
+
+msgid "msg_code.1801.summary"
+msgstr ""
+
+msgid "msg_code.179.summary"
+msgstr "_Rule could not be saved._"
+
+msgid "msg_code.1401.summary"
+msgstr "_Login was unsuccessful._"
+
+msgid "msg_code.1001.summary"
+msgstr "_The columns could not be read._"
+
+msgid "msg_code.505.detail"
+msgstr ""
+
+msgid "msg_code.9504.detail"
+msgstr "_{1} cannot be opened due to errors in the following dependencies_"
+
+msgid "msg_code.111.detail"
+msgstr ""
+
+msgid "msg_code.168.summary"
+msgstr "_The worksheet could not be retrieved._"
+
+msgid "msg_code.175.summary"
+msgstr "_The comment cannot be created_"
+
+msgid "msg_code.13018.detail"
+msgstr "_Detected cycles: {0}_"
+
+msgid "msg_code.1402.detail"
+msgstr ""
+
+msgid "msg_code.157.summary"
+msgstr "_The list of answers could not be retrieved._"
+
+msgid "msg_code.164.summary"
+msgstr "_The list of data sources could not be retrieved._"
+
+msgid "msg_code.9000.detail"
+msgstr "_Some objects depend on the data you are trying to delete,_"
+
+msgid "msg_code.129.detail"
+msgstr ""
+
+msgid "msg_code.1608.detail"
+msgstr ""
+
+msgid "msg_code.509.summary"
+msgstr "_The natural query could not be retrieved._"
+
+msgid "msg_code.109.summary"
+msgstr "_The sticker could not be created._"
+
+msgid "msg_code.105.action"
+msgstr ""
+
+msgid "msg_code.1214.detail"
+msgstr ""
+
+msgid "msg_code.146.summary"
+msgstr "_Worksheet saved._"
+
+msgid "msg_code.153.summary"
+msgstr "_The sticker could not be unassigned._"
+
+msgid "msg_code.1228.summary"
+msgstr "_Successfully created role_"
+
+msgid "msg_code.505.summary"
+msgstr "_The table data could not be retrieved._"
+
+msgid "msg_code.135.summary"
+msgstr "_The visualization failed to update._"
+
+msgid "msg_code.142.summary"
+msgstr "_{1} saved._"
+
+msgid "msg_code.1624.summary"
+msgstr "_DataType conversion error._"
+
+msgid "msg_code.1217.summary"
+msgstr "_Successfully deleted groups._"
+
+msgid "msg_code.1631.summary"
+msgstr "_Successfully executed the DDL_"
+
+msgid "msg_code.1224.summary"
+msgstr "_Successfully assigned groups to group_"
+
+msgid "msg_code.702.detail"
+msgstr ""
+
+msgid "msg_code.160.detail"
+msgstr ""
+
+msgid "msg_code.1002.detail"
+msgstr ""
+
+msgid "msg_code.124.summary"
+msgstr "_There was a failure fetching details for the table._"
+
+msgid "msg_code.131.summary"
+msgstr "_Failure opening the worksheet_"
+
+msgid "msg_code.1613.summary"
+msgstr "_The data source connection list could not be retrieved._"
+
+msgid "msg_code.1206.summary"
+msgstr "_The group could not be created._"
+
+msgid "msg_code.10003.detail"
+msgstr "_You are not authorized to perform {1}._"
+
+msgid "msg_code.1620.summary"
+msgstr "_Successfully updated data upload schedule_"
+
+msgid "msg_code.1213.summary"
+msgstr "_Successfully updated password._"
+
+msgid "msg_code.1220.summary"
+msgstr "_The users could not be assigned to groups._"
+
+msgid "msg_code.9507.summary"
+msgstr "_ThoughtSpot is unreachable. Please try again soon._"
+
+msgid "msg_code.120.summary"
+msgstr "_Relationship updated successfully._"
+
+msgid "msg_code.1602.summary"
+msgstr "_The data source could not be deleted._"
+
+msgid "msg_code.1117.summary"
+msgstr "_The job could not be paused_"
+
+msgid "msg_code.1202.summary"
+msgstr "_The users and groups list could not be retrieved._"
+
+msgid "msg_code.13011.detail"
+msgstr "_Answer generation failed due to: {0}_"
+
+msgid "msg_code.13003.detail"
+msgstr "_Object with Id: {0} of type: {1} not found_"
+
+msgid "msg_code.9503.summary"
+msgstr "_ThoughtSpot has timed out. Please try again._"
+
+msgid "msg_code.1617.detail"
+msgstr ""
+
+msgid "msg_code.1231.detail"
+msgstr "_Failed to delete role_"
+
+msgid "msg_code.12711.summary"
+msgstr "_Configuration information unavailable_"
+
+msgid "msg_code.11001.summary"
+msgstr "_Invalid row_"
+
+msgid "msg_code.802.summary"
+msgstr "_The MemCache could not be searched._"
+
+msgid "msg_code.1113.detail"
+msgstr ""
+
+msgid "msg_code.12700.summary"
+msgstr "_Error while exporting data file_"
+
+msgid "msg_code.1405.detail"
+msgstr ""
+
+msgid "msg_code.10002.summary"
+msgstr "_The input is invalid._"
+
+msgid "msg_code.9003.detail"
+msgstr "_Please email the trace file to {adminEmail}._"
+
+msgid "msg_code.1011.detail"
+msgstr ""
+
+msgid "msg_code.1003.detail"
+msgstr ""
+
+msgid "msg_code.10004.detail"
+msgstr "_User {0} is not authorized to perform {1}_"
+
+msgid "msg_code.702.summary"
+msgstr "_The incomplete items could not be retrieved._"
+
+msgid "msg_code.13020.detail"
+msgstr "_Attempted to create invalid relationship: {0}_"
+
+msgid "msg_code.163.detail"
+msgstr ""
+
+msgid "msg_code.13012.detail"
+msgstr "_Worksheet generation failed due to: {0}_"
+
+msgid "msg_code.10006.action"
+msgstr "_Please contact your administrator._"
+
+msgid "msg_code.155.detail"
+msgstr ""
+
+msgid "msg_code.1810.summary"
+msgstr ""
+
+msgid "msg_code.1003.summary"
+msgstr "_The relationships could not be read._"
+
+msgid "msg_code.9000.summary"
+msgstr "_The data you are trying to delete has some dependencies._"
+
+msgid "msg_code.1010.summary"
+msgstr "_The table models could not be retrieved._"
+
+msgid "msg_code.509.detail"
+msgstr ""
+
+msgid "msg_code.13019.summary"
+msgstr "_Older physical schema version received_"
+
+msgid "msg_code.131.detail"
+msgstr ""
+
+msgid "msg_code.13026.summary"
+msgstr "_Load schedule successfully disabled._"
+
+msgid "msg_code.1610.detail"
+msgstr ""
+
+msgid "msg_code.123.detail"
+msgstr ""
+
+msgid "msg_code.1602.detail"
+msgstr ""
+
+msgid "msg_code.177.summary"
+msgstr "_The comment cannot be deleted_"
+
+msgid "msg_code.11005.detail"
+msgstr "_Query execution resulted in no data_"
+
+msgid "msg_code.129.summary"
+msgstr "_The answer could not be opened._"
+
+msgid "msg_code.13008.summary"
+msgstr "_Invalid Sage question_"
+
+msgid "msg_code.13015.summary"
+msgstr "_Physical model not loaded_"
+
+msgid "msg_code.1618.summary"
+msgstr "_The sql could not be executed._"
+
+msgid "msg_code.1406.detail"
+msgstr ""
+
+msgid "msg_code.173.summary"
+msgstr "_{1} was unable to update._"
+
+msgid "msg_code.13006.detail"
+msgstr "_Invalid type: {0} provided_"
+
+msgid "msg_code.180.summary"
+msgstr "_Rule deleted successfully._"
+
+msgid "msg_code.118.summary"
+msgstr "_Relationship created successfully._"
+
+msgid "msg_code.13004.summary"
+msgstr "_The object is in an invalid state._"
+
+msgid "msg_code.1607.summary"
+msgstr "_The creation DDL could not be retrieved._"
+
+msgid "msg_code.1218.detail"
+msgstr ""
+
+msgid "msg_code.162.summary"
+msgstr "_The list of system tables could not be retrieved._"
+
+msgid "msg_code.109.detail"
+msgstr ""
+
+msgid "msg_code.902.detail"
+msgstr ""
+
+msgid "msg_code.507.summary"
+msgstr "_The filter data could not be retrieved._"
+
+msgid "msg_code.107.summary"
+msgstr "_{1} could not be created._"
+
+msgid "msg_code.151.summary"
+msgstr "_The sticker could not be assigned._"
+
+msgid "msg_code.800.detail"
+msgstr ""
+
+msgid "msg_code.1233.summary"
+msgstr "_Failed to update role_"
+
+msgid "msg_code.903.summary"
+msgstr "_The metadata permissions could not be retrieved._"
+
+msgid "msg_code.12709.summary"
+msgstr "_Visualization data export error_"
+
+msgid "msg_code.503.summary"
+msgstr "_The visualization data could not be retrieved._"
+
+msgid "msg_code.172.detail"
+msgstr ""
+
+msgid "msg_code.1006.detail"
+msgstr ""
+
+msgid "msg_code.11006.summary"
+msgstr "_Query execution failed_"
+
+msgid "msg_code.140.summary"
+msgstr "_{1} saved._"
+
+msgid "msg_code.1222.summary"
+msgstr "_Successfully uploaded profile pic._"
+
+msgid "msg_code.807.summary"
+msgstr "_Log level set successfully._"
+
+msgid "msg_code.10007.detail"
+msgstr "_Invalid parameter values: {0}._"
+
+msgid "msg_code.12705.summary"
+msgstr "_This format is not supported_"
+
+msgid "msg_code.1611.detail"
+msgstr ""
+
+msgid "msg_code.10007.summary"
+msgstr "_There's invalid parameter(s)._"
+
+msgid "msg_code.1119.summary"
+msgstr "_The job could not be resumed_"
+
+msgid "msg_code.502.detail"
+msgstr ""
+
+msgid "msg_code.1211.summary"
+msgstr "_Successfully updated group._"
+
+msgid "msg_code.1817.detail"
+msgstr "_What happened? {1}._"
+
+msgid "msg_code.158.detail"
+msgstr ""
+
+msgid "msg_code.1115.summary"
+msgstr "_The job could not be deleted._"
+
+msgid "msg_code.183.summary"
+msgstr "_The item could not be deleted._"
+
+msgid "msg_code.182.summary"
+msgstr "_Item has been successfully deleted._"
+
+msgid "msg_code.13007.detail"
+msgstr "_Insufficient or invalid input from Sage: {0}_"
+
+msgid "msg_code.1200.summary"
+msgstr "_The user list could not be retrieved._"
+
+msgid "msg_code.9009.summary"
+msgstr "_ThoughtSpot is unreachable. Please try again._"
+
+msgid "msg_code.9501.summary"
+msgstr "_ThoughtSpot has timed out. Please try again._"
+
+msgid "msg_code.60000.summary"
+msgstr "_Failed to initialize_"
+
+msgid "msg_code.102.action"
+msgstr "_Please try again after removing the invalid visualization(s) from {2}_"
+
+msgid "msg_code.1808.summary"
+msgstr ""
+
+msgid "msg_code.1815.summary"
+msgstr "_Sorry! Unable to export objects at this moment!_"
+
+msgid "msg_code.1408.summary"
+msgstr "_The health portal release name could not be retrieved._"
+
+msgid "msg_code.1100.summary"
+msgstr "_The list of jobs._"
+
+msgid "msg_code.801.detail"
+msgstr ""
+
+msgid "msg_code.181.detail"
+msgstr ""
+
+msgid "msg_code.9007.detail"
+msgstr "_Please email the trace file to {adminEmail}._"
+
+msgid "msg_code.1804.summary"
+msgstr ""
+
+msgid "msg_code.511.detail"
+msgstr ""
+
+msgid "msg_code.512.detail"
+msgstr ""
+
+msgid "msg_code.503.detail"
+msgstr ""
+
+msgid "msg_code.700.summary"
+msgstr "_The table's dependents could not be retrieved._"
+
+msgid "msg_code.167.detail"
+msgstr ""
+
+msgid "msg_code.159.detail"
+msgstr ""
+
+msgid "msg_code.149.summary"
+msgstr "_The sticker could not be updated._"
+
+msgid "msg_code.13028.summary"
+msgstr ""
+
+msgid "msg_code.135.detail"
+msgstr ""
+
+msgid "msg_code.1614.detail"
+msgstr ""
+
+msgid "msg_code.127.detail"
+msgstr ""
+
+msgid "msg_code.1606.detail"
+msgstr ""
+
+msgid "msg_code.1220.detail"
+msgstr ""
+
+msgid "msg_code.138.summary"
+msgstr "_{1} saved._"
+
+msgid "msg_code.13017.summary"
+msgstr "_Invalid duplicate columns_"
+
+msgid "msg_code.145.summary"
+msgstr "_{1} could not be saved._"
+
+msgid "msg_code.13024.summary"
+msgstr "_Deleting schema failed. {0}_"
+
+msgid "msg_code.1627.summary"
+msgstr "_Successfully created data source._"
+
+msgid "msg_code.9000.action"
+msgstr "_delete the dependencies before deleting this data._"
+
+msgid "msg_code.127.summary"
+msgstr "_There was a failure fetching details for datasources._"
+
+msgid "msg_code.13006.summary"
+msgstr "_Invalid object type_"
+
+msgid "msg_code.1609.summary"
+msgstr "_The data source connection could not be created._"
+
+msgid "msg_code.134.summary"
+msgstr "_Visualization update successfully._"
+
+msgid "msg_code.13013.summary"
+msgstr "_Service provider unavailable_"
+
+msgid "msg_code.1616.summary"
+msgstr "_The data source config could not be retrieved._"
+
+msgid "msg_code.1209.summary"
+msgstr "_Successfully updated users._"
+
+msgid "msg_code.13020.summary"
+msgstr "_Invalid relationship_"
+
+msgid "msg_code.171.summary"
+msgstr "_{1} updated._"
+
+msgid "msg_code.1000.detail"
+msgstr ""
+
+msgid "msg_code.116.summary"
+msgstr "_Tables deleted successfully._"
+
+msgid "msg_code.123.summary"
+msgstr "_The relationship could not be deleted._"
+
+msgid "msg_code.13002.summary"
+msgstr "_Views creation failed_"
+
+msgid "msg_code.1605.summary"
+msgstr "_The tasks could not be reloaded_"
+
+msgid "alert.API_ERROR"
+msgstr "_Error getting data from server!_"
+
+msgid "alert.INVALID_DATA_IN_WORKSHEET"
+msgstr ""
+
+msgid "alert.SUCCESS_UPDATING_EXPOSED_PREFERENCES"
+msgstr "_Preferences have been updated._"
+
+msgid "alert.FAILURE_UPDATING_EXPOSED_PREFERENCES"
+msgstr "_Preferences could not be updated._"
+
+msgid "alert.SERVER_UNREACHABLE_COUNTDOWN"
+msgstr "_Thoughtspot unreachable. Retrying in {0} seconds._"
+
+msgid "alert.SERVER_UNREACHABLE_CONNECTING"
+msgstr "_Thoughtspot unreachable. Connecting..._"
+
+msgid "alert.SERVER_UNREACHABLE_RETRY_TIMEOUT"
+msgstr "_Thoughtspot unreachable. Try connecting later or_"
+
+msgid "alert.TRY_NOW"
+msgstr "_Try now_"
+
+msgid "alert.UNDO"
+msgstr "_Undo_"
+
+msgid "alert.WE_ARE_BACK"
+msgstr "_We're back!_"
+
+msgid "alert.FAILURE"
+msgstr "_Error occured._"
+
+msgid "alert.PICTURE_FILE_TOO_BIG"
+msgstr "_File too large_"
+
+msgid "alert.GROUP_DELETE_DIALOG_TITLE"
+msgstr "_Confirm delete_"
+
+msgid "alert.GROUP_DELETE_DIALOG_MESSAGE_SINGULAR"
+msgstr "_Are you sure you want to delete group {1}?_"
+
+msgid "alert.GROUP_DELETE_DIALOG_MESSAGE_PLURAL"
+msgstr "_Are you sure you want to delete groups?_"
+
+msgid "alert.USER_DELETE_DIALOG_TITLE"
+msgstr "_Confirm delete_"
+
+msgid "alert.USER_DELETE_DIALOG_MESSAGE_SINGULAR"
+msgstr "_Are you sure you want to delete user {1}?_"
+
+msgid "alert.USER_DELETE_DIALOG_MESSAGE_PLURAL"
+msgstr "_Are you sure you want to delete users?_"
+
+msgid "alert.ROLE_DELETE_DIALOG_TITLE"
+msgstr "_Confirm delete_"
+
+msgid "alert.ROLE_DELETE_DIALOG_MESSAGE_SINGULAR"
+msgstr "_Are you sure you want to delete role {1}?_"
+
+msgid "alert.ROLE_DELETE_DIALOG_MESSAGE_PLURAL"
+msgstr "_Are you sure you want to delete roles?_"
+
+msgid "alert.PARTIAL_TABLE_DOWNLOAD_COMPLETE"
+msgstr "_Too many rows. A sample of about 50,000 rows provided._"
+
+msgid "alert.TABLE_DOWNLOAD_COMPLETE"
+msgstr "_Table downloaded._"
+
+msgid "alert.FAILED_TO_BUILD_SEARCH_RESULT"
+msgstr "_Failed to build search result._"
+
+msgid "alert.AD_HOC_TRANSFORMATION_FAILED"
+msgstr "_Ad Hoc Transformation Failed._"
+
+msgid "alert.dataDeletionAlertMessages.cannotDelete"
+msgstr "_Deletion not allowed_"
+
+msgid "alert.dataDeletionAlertMessages.confirmDelete"
+msgstr "_Confirm Delete_"
+
+msgid "alert.dataDeletionAlertMessages.confirmBtnLabel"
+msgstr "_Delete_"
+
+msgid "alert.dataDeletionAlertMessages.withoutContent.singular"
+msgstr "_Really delete \"{itemName}\" ?_"
+
+msgid "alert.dataDeletionAlertMessages.withoutContent.plural"
+msgstr "_Really delete these selected {itemType}s ?_"
+
+msgid "alert.dataDeletionAlertMessages.withoutDependents.singular"
+msgstr "_Really delete \"{itemName}\" and all of its contents?_"
+
+msgid "alert.dataDeletionAlertMessages.withoutDependents.plural"
+msgstr "_Really delete these {itemType}s and all of their contents?_"
+
+msgid "alert.dataDeletionAlertMessages.withDependents.singular"
+msgstr ""
+
+msgid "alert.dataDeletionAlertMessages.withDependents.plural"
+msgstr ""
+
+msgid "alert.dataLoadMessages.SUCCESS_CREATE_CONN"
+msgstr "_Connection created successfully_"
+
+msgid "alert.dataLoadMessages.SUCCESS_CREATE_SCHEMA"
+msgstr "_Schema creation successful_"
+
+msgid "alert.dataLoadMessages.SUCCESS_LOAD_DATA"
+msgstr "_Selected tables were queued for loading_"
+
+msgid "alert.dataLoadMessages.SUCCESS_UPDATE_SCHEDULER"
+msgstr "_Schedule updated successfully_"
+
+msgid "alert.recoveryMessages.RECOVER_OBJECT"
+msgstr "_Recover {1}_"
+
+msgid "alert.dataSourceAlertMessages.alertText"
+msgstr "_Removing {sourceText} will clear your {clearedEntityName}._"
+
+msgid "alert.dataSourceAlertMessages.actionButtonText"
+msgstr "_OK_"
+
+msgid "alert.dataSourceAlertMessages.cancelButtonText.singular"
+msgstr "_Keep it_"
+
+msgid "alert.dataSourceAlertMessages.cancelButtonText.plural"
+msgstr "_Keep them_"
+
+msgid "alert.statusViewer.SUCCESS_RESTART"
+msgstr "_Selected tasks queued for restart._"
+
+msgid "alert.statusViewer.SUCCESS_ABORT"
+msgstr "_Selected tasks queued to abort._"
+
+msgid "alert.worksheetBuilderFailedUserActions.transformationFailed"
+msgstr "_{userAction} failed due to server error._"
+
+msgid "alert.worksheetBuilderFailedUserActions.userActions.addColumn"
+msgstr "_Column addition_"
+
+msgid "alert.worksheetBuilderFailedUserActions.userActions.editJoinPath"
+msgstr "_Change in column mapping_"
+
+msgid "alert.worksheetBuilderFailedUserActions.userActions.deleteColumn"
+msgstr "_Column deletion_"
+
+msgid "alert.worksheetBuilderFailedUserActions.userActions.addPrefix"
+msgstr "_Prefixing name_"
+
+msgid "alert.sage.thriftConnectionErrors.timeout"
+msgstr "_Server connection timed out._"
+
+msgid "alert.sage.thriftConnectionErrors.error"
+msgstr "_Unknown connection error with server._"
+
+msgid "alert.sage.thriftConnectionErrors.abort"
+msgstr "_Server connection aborted._"
+
+msgid "alert.sage.thriftConnectionErrors.parsererror"
+msgstr "_Protocol error occurred when parsing server response._"
+
+msgid "alert.sage.queryUpdates.tenSecondsMessage"
+msgstr "_Still working..._"
+
+msgid "alert.sage.queryUpdates.fortySecondsMessage"
+msgstr "_Gosh, this is taking a long time. Will give it another 20 seconds..._"
+
+msgid "alert.sage.queryUpdates.sixtySecondsMessage"
+msgstr "_Sigh. Looks like I\'ve become the bottleneck. Abandoning the search._"
+
+msgid "alert.httpStatus.NOT_AUTHORIZED"
+msgstr "_You are not authorized to perform this action._"
+
+msgid "alert.httpStatus.TIMED_OUT"
+msgstr "_Server timed out._"
+
+msgid "alert.labelAlertMessages.labelNameEmpty"
+msgstr "_Empty name not allowed._"
+
+msgid "alert.labelAlertMessages.duplicateLabelName"
+msgstr "_Label name already exists._"
+
+msgid "alert.importWizardAlertMessages.serverErrorCodeToMessage.10002"
+msgstr ""
+
+msgid "alert.importWizardAlertMessages.serverErrorCodeToMessage.12503"
+msgstr "_The data type cannot be identified from the values in this column._"
+
+msgid "alert.importWizardAlertMessages.serverErrorCodeToMessage.12512"
+msgstr ""
+
+msgid "alert.importWizardAlertMessages.serverErrorCodeToMessage.12513"
+msgstr ""
+
+msgid "alert.importWizardAlertMessages.serverErrorCodeToMessage.13005"
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid "alert.importWizardAlertMessages.NO_FILE_UPLOAD_ERROR"
+msgstr "_No file found! Please upload a file before proceeding._"
+
+msgid "alert.importWizardAlertMessages.NO_HEADER_QUES_ANSWERED_ERROR"
+msgstr "_Please complete the option highlighted in red before continuing._"
+
+msgid "alert.importWizardAlertMessages.INVALID_COL_NAMES_ERROR"
+msgstr ""
+
+msgid "alert.importWizardAlertMessages.EMPTY_COL_TYPES_ERROR"
+msgstr ""
+
+msgid "alert.importWizardAlertMessages.INVALID_COL_TYPES_ERROR"
+msgstr ""
+
+msgid "alert.importWizardAlertMessages.INVALID_COL_DATA_ERROR"
+msgstr ""
+
+msgid "alert.importWizardAlertMessages.IRRECOVERABLE_ERROR"
+msgstr "_Irrecoverable errors found. Please start again._"
+
+msgid "alert.importWizardAlertMessages.MISSING_COLUMN_IN_ROW"
+msgstr "_This row does not have any values for this column._"
+
+msgid "alert.callosumErrorMessages.NO_JOIN_PATH"
+msgstr "_Unable to join tables._"
+
+msgid "alert.callosumErrorMessages.OBJECT_NOT_FOUND"
+msgstr "_Object not found._"
+
+msgid "alert.callosumErrorMessages.NO_DATA"
+msgstr "_No data found._"
+
+msgid "alert.callosumErrorMessages.SAGE_INVALID_QUESTION"
+msgstr "_Question has inconsistencies._"
+
+msgid "alert.callosumErrorMessages.RESOURCE_EXCEEDED"
+msgstr "_Woah, there! This search is too big for me. Try adding a filter._"
+
+msgid "alert.callosumErrorMessages.CYCLIC_RELATIONSHIP"
+msgstr "_Cannot create this link because it conflicts with an existing link._"
+
+msgid "alert.leftPanel.COLUMN_ADDITION_NOT_ALLOWED"
+msgstr "_We are sorry. Column addition is not allowed_"
+
+msgid "alert.leftPanel.TOO_MANY_COLUMNS"
+msgstr "_You\'ve hit the limit for maximum number of columns._"
+
+msgid "alert.leftPanel.COMPLEX_QUERY"
+msgstr "_You are using a complex query that can only be edited in search bar._"
+
+msgid "alert.createSchema.FAILED_TO_EXECUTE"
+msgstr "_Some commands failed to execute, please check them and continue._"
+
+msgid "alert.createSchema.LOAD_SUCCESSFULL"
+msgstr "_{1} commands loaded successfully._"
+
+msgid "alert.createSchema.EXECUTION_SUCCESSFUL"
+msgstr "_All commands executed successfully._"
+
+msgid "alert.FAILURE_UPLOADING_FILE"
+msgstr "_File could not be uploaded._"
+
+msgid "alert.alertMessageDownloadTrace"
+msgstr ""
+
+msgid "displayRowNumber"
+msgstr ""
+
+msgid "getModelDataRowInfo"
+msgstr ""
+
+msgid "resultsRowLimit"
+msgstr ""
+
+msgid "otherTokenForEditMapping"
+msgstr ""
+
+msgid "rowsSkipped"
+msgstr ""
+
+msgid "gitcommit2"
+msgstr "_git-commit: {commit_Id}_"
+
+msgid "gitbranch2"
+msgstr "_git-branch: {git_Branch}_"
+
+msgid "built_on2"
+msgstr "_built on: {timeStamp}_"
+
+msgid "terminalToken_confirmation"
+msgstr "_Which {terminal_Token} did you mean?_"
+
+msgid "Download_as2"
+msgstr "_Download as {item_id}_"
+
+msgid "Chart_page2"
+msgstr "_Chart page {pageNumber}_"
+
+msgid "SelectedSourcesCount"
+msgstr "_Selected ({getCount})_"
+
+msgid "search_by_name"
+msgstr "_search by name_"
+
+msgid "Destination_table"
+msgstr "_Destination table_"
+
+msgid "Source_column"
+msgstr "_Source column_"
+
+msgid "Destination_column"
+msgstr "_Destination column_"
+
+msgid "Enter_prefix"
+msgstr "_Enter prefix_"
+
+msgid "Add_comment"
+msgstr "_Add your comment here_"
+
+msgid "Search_table_name"
+msgstr "_Search table name_"
+
+msgid "Source_name"
+msgstr "_\'Source name\'_"
+
+msgid "Select_a_connection"
+msgstr "_Select a connection_"
+
+msgid "new_column_name"
+msgstr "_\'Enter new column name\'_"
+
+msgid "Memory_usage"
+msgstr "_Memory usage_"
+
+msgid "Efficiency"
+msgstr "_Efficiency_"
+
+msgid "Filter_by_ID"
+msgstr "_Filter by ID_"
+
+msgid "formula_name"
+msgstr "_\'Enter formula name\'_"
+
+msgid "Search_Columns"
+msgstr "_Search Columns_"
+
+msgid "Filter_by_Name"
+msgstr "_Filter by Name_"
+
+msgid "Search_sources"
+msgstr "_Search sources_"
+
+msgid "Add_a_comment"
+msgstr "_Add a comment_"
+
+msgid "import_error_msg"
+msgstr "_Try the import again by clicking the button below. If it still doesn\'t work, check your file. There might be some errors in the file._"
+
+msgid "column_name"
+msgstr "_\'Enter column name\'_"
+
+msgid "x_axis_columns"
+msgstr "_select column(s) for x-axis_"
+
+msgid "y_axis_columns"
+msgstr "_select column(s) for y-axis_"
+
+msgid "legend_columns"
+msgstr "_select column(s) for legend_"
+
+msgid "Chart_Type"
+msgstr "_Select Chart Type_"
+
+msgid "SOURCE"
+msgstr "_SOURCE_"
+
+msgid "UPDATED"
+msgstr "_UPDATED_"
+
+msgid "CHANGE_VISUALIZATION"
+msgstr "_Change Visualization_"
+
+msgid "EDIT_CHART_CONFIGURATION"
+msgstr "_Edit chart configuration_"
+
+msgid "chart.chartEditor.chartAxisLocker.ICON_TOOLTIP"
+msgstr "_lock/unlock chart configuration_"
+
+msgid "chart.chartEditor.chartAxisConfigurator.X_AXIS"
+msgstr "_X-Axis_"
+
+msgid "chart.chartEditor.chartAxisConfigurator.Y_AXIS"
+msgstr "_Y-Axis_"
+
+msgid "chart.chartEditor.chartAxisConfigurator.LEGEND"
+msgstr "_Legend_"
+
+msgid "chart.chartEditor.chartAxisConfigurator.RADIAL"
+msgstr "_Size_"
+
+msgid "chart.chartEditor.chartAxisConfigurator.X_AXIS_PLACEHOLDER"
+msgstr "_select column(s) for x-axis_"
+
+msgid "chart.chartEditor.chartAxisConfigurator.Y_AXIS_PLACEHOLDER"
+msgstr "_select column(s) for y-axis_"
+
+msgid "chart.chartEditor.chartAxisConfigurator.LEGEND_AXIS_PLACEHOLDER"
+msgstr "_select column(s) for legend_"
+
+msgid "chart.chartEditor.chartAxisConfigurator.RADIAL_AXIS_PLACEHOLDER"
+msgstr "_select column for size_"
+
+msgid "chart.chartEditor.chartAxisConfigurator.LINK_Y_AXIS"
+msgstr "_enable/disable shared y-axis_"
+
+msgid "chart.chartEditor.chartAxisConfigurator.CONFIG_INVALID_FOR_CHART_TYPE"
+msgstr "_This config is invalid for current chart type. Pressing Done will change the chart type._"
+
+msgid "chart.chartEditor.chartConfigurator.SELECT_AN_AREA"
+msgstr "_Select an area_"
+
+msgid "chart.chartEditor.chartConfigurator.RESET_ZOOM"
+msgstr "_Reset zoom_"
+
+msgid "slack.thanks_for_registering"
+msgstr "_Thanks for registering as a slack user. Happy chatting with @spotgirl._"
+
+msgid "Configure_Chart"
+msgstr "_Configure Chart_"
+
+msgid "Zoom_into_chart"
+msgstr "_Zoom into chart_"
+
+msgid "No_zoom_allowed"
+msgstr "_No zoom allowed_"
+
+msgid "Change_chart_config"
+msgstr "_Change chart configuration_"
+
+msgid "Config_change_not_allowed"
+msgstr "_Configuration change not allowed_"
+
+msgid "XAxis"
+msgstr "_X-Axis_"
+
+msgid "YAxis"
+msgstr "_Y-Axis_"
+
+msgid "Size"
+msgstr "_Size_"
+
+msgid "Legend"
+msgstr "_Legend_"
+
+msgid "Confirm_removal"
+msgstr "_Confirm removal_"
+
+msgid "Are_you_sure2"
+msgstr "_Are you sure you want to remove {vizType}_"
+
+msgid "chartTypes.BAR"
+msgstr "_Bar_"
+
+msgid "chartTypes.COLUMN"
+msgstr "_Column_"
+
+msgid "chartTypes.STACKED_COLUMN"
+msgstr "_Stacked Column_"
+
+msgid "chartTypes.PARETO"
+msgstr "_Pareto_"
+
+msgid "chartTypes.LINE"
+msgstr "_Line_"
+
+msgid "chartTypes.AREA"
+msgstr "_Area_"
+
+msgid "chartTypes.SCATTER"
+msgstr "_Scatter_"
+
+msgid "chartTypes.BUBBLE"
+msgstr "_Bubble_"
+
+msgid "chartTypes.PIE"
+msgstr "_Pie_"
+
+msgid "chartTypes.GEO_AREA"
+msgstr "_Geo Area_"
+
+msgid "chartTypes.GEO_BUBBLE"
+msgstr "_Geo Bubble_"
+
+msgid "chartTypes.GEO_HEATMAP"
+msgstr "_Geo Heatmap_"
+
+msgid "chartTypes.GEO_EARTH_AREA"
+msgstr "_Geo Earth Area_"
+
+msgid "chartTypes.GEO_EARTH_BUBBLE"
+msgstr "_Geo Earth Bubble_"
+
+msgid "chartTypes.GEO_EARTH_BAR"
+msgstr "_Geo Earth Bar_"
+
+msgid "chartTypes.GEO_EARTH_HEATMAP"
+msgstr "_Geo Earth Heatmap_"
+
+msgid "chartTypes.GEO_EARTH_GRAPH"
+msgstr "_Geo Earth Graph_"
+
+msgid "chartTypes.WATERFALL"
+msgstr "_Waterfall_"
+
+msgid "chartTypes.TREEMAP"
+msgstr "_Treemap_"
+
+msgid "chartTypes.HEATMAP"
+msgstr "_Heatmap_"
+
+msgid "chartTypes.STACKED_AREA"
+msgstr "_Stacked Area_"
+
+msgid "chartTypes.LINE_COLUMN"
+msgstr "_Line Column_"
+
+msgid "chartTypes.FUNNEL"
+msgstr "_Funnel_"
+
+msgid "chartTypes.PIVOT_TABLE"
+msgstr "_Pivot Table_"
+
+msgid "chartTypes.LINE_STACKED_COLUMN"
+msgstr "_Line Stacked Column_"
+
+msgid "Administration_Group"
+msgstr "_Administration Group_"
+
+msgid "infoCard.TITLE"
+msgstr "_What am I looking at ?_"
+
+msgid "Abort_data_import"
+msgstr "_Abort data import_"
+
+msgid "abort_confirmation"
+msgstr "_Are you sure you want to abort data import?_"
+
+msgid "Stay_here"
+msgstr "_Stay here_"
+
+msgid "Yes_abort"
+msgstr "_Yes, abort_"
+
+msgid "Attention"
+msgstr "_Attention!_"
+
+msgid "Overwrite_confirmation"
+msgstr "_You have chosen to overwrite your existing data. This cannot be undone. Are you sure?_"
+
+msgid "Upload_your_file"
+msgstr "_Upload your file_"
+
+msgid "Set_column_names"
+msgstr "_Set column names_"
+
+msgid "Upload_csv_to_proceed"
+msgstr "_To proceed, please upload a .csv file containing your data._"
+
+msgid "contains_col_name"
+msgstr "_Success! Now indicate whether the uploaded file contains column names._"
+
+msgid "name_unique_col"
+msgstr "_Name the columns in the uploaded file. Remember, the column names must be unique._"
+
+msgid "confirm_ignore_val_errors"
+msgstr "_You have chosen to ignore data validation errors. This can not be undone. Are you sure you want to proceed anyway?_"
+
+msgid "Preview_and_import"
+msgstr "_Preview & import data_"
+
+msgid "Add_to_existing"
+msgstr "_Add the new data to the existing data_"
+
+msgid "Irrecoverable_errors_msg"
+msgstr "_Irrecoverable errors found. Please start again._"
+
+msgid "address_errors_before_proceeding"
+msgstr "_Please address the errors before proceeding_"
+
+msgid "confirm_errors_and_proceed"
+msgstr "_You have chosen to ignore data validation errors and proceed further. This can not be undone. Are you sure?_"
+
+msgid "Set_column_types"
+msgstr "_Set column types_"
+
+msgid "Determine_column_interruption"
+msgstr "_Determine how each column value should be interpreted._"
+
+msgid "Invalid_file_type_error"
+msgstr "_Invalid file type. We only support the following types: _"
+
+msgid "Showing_underlying_data"
+msgstr "_Showing underlying data_"
+
+msgid "SUM"
+msgstr "_TOTAL_"
+
+msgid "AVERAGE"
+msgstr "_AVG_"
+
+msgid "MIN"
+msgstr "_MIN_"
+
+msgid "MAX"
+msgstr "_MAX_"
+
+msgid "COUNT"
+msgstr "_TOTAL COUNT_"
+
+msgid "COUNT_DISTINCT"
+msgstr "_UNIQUE COUNT_"
+
+msgid "STD_DEVIATION"
+msgstr "_STD DEVIATION_"
+
+msgid "VARIANCE"
+msgstr "_VARIANCE_"
+
+msgid "RANGE"
+msgstr "_RANGE_"
+
+msgid "pinboardSnapshots.CREATE_NEW_SNAPSHOT"
+msgstr "_Create New Snapshot_"
+
+msgid "datatype_Text"
+msgstr "_Text_"
+
+msgid "datatype_Date"
+msgstr "_Date_"
+
+msgid "datatype_Datetime"
+msgstr "_Datetime_"
+
+msgid "datatype_Time"
+msgstr "_Time_"
+
+msgid "datatype_Numeric"
+msgstr "_Numeric_"
+
+msgid "datatype_Decimal"
+msgstr "_Decimal_"
+
+msgid "Can_View"
+msgstr "_Can View_"
+
+msgid "Can_Edit"
+msgstr "_Can Edit_"
+
+msgid "Varies"
+msgstr "_Varies_"
+
+msgid "start"
+msgstr "_Start_"
+
+msgid "end"
+msgstr "_End_"
+
+msgid "Untitled_Formula"
+msgstr "_Untitled Formula_"
+
+msgid "start_point"
+msgstr "_start typing your formula here_"
+
+msgid "naturalQuery.Thoughtspot_compiled_a"
+msgstr "_Thoughtspot compiled a list of_"
+
+msgid "data_type"
+msgstr "_data type_"
+
+msgid "column_type"
+msgstr "_column type_"
+
+msgid "Additive"
+msgstr "_Additive_"
+
+msgid "aggregation2"
+msgstr "_aggregation_"
+
+msgid "hidden"
+msgstr "_hidden_"
+
+msgid "Synonyms"
+msgstr "_Synonyms_"
+
+msgid "Index_Type"
+msgstr "_Index Type_"
+
+msgid "Geo_type"
+msgstr "_Geo type_"
+
+msgid "Index_Priority"
+msgstr "_Index Priority_"
+
+msgid "Format_Pattern"
+msgstr "_Format Pattern_"
+
+msgid "Attribution_Dimension"
+msgstr "_Attribution Dimension_"
+
+msgid "View_More"
+msgstr "_'View More'_"
+
+msgid "lock_unlock_chart_config duh"
+msgstr ""
+
+msgid "Returns_the_date"
+msgstr "_Returns the date portion of a given date._"
+
+msgid "smith"
+msgstr "_'smith'_"
+
+msgid "units"
+msgstr "_units_"
+
+msgid "diffdays"
+msgstr "_diff_days_"
+
+msgid "complaint"
+msgstr "_complaint_"
+
+msgid "atan"
+msgstr "_atan_"
+
+msgid "cumulativesum"
+msgstr "_cumulative_sum_"
+
+msgid "cumulativemin"
+msgstr "_cumulative_min_"
+
+msgid "pow"
+msgstr "_pow_"
+
+msgid "hello_world"
+msgstr "_'hello world'_"
+
+msgid "emailed"
+msgstr "_emailed_"
+
+msgid "tobool"
+msgstr "_to_bool_"
+
+msgid "oregon"
+msgstr "_'oregon'_"
+
+msgid "Returns_the_hour"
+msgstr "_Returns the hour of the day for a given date._"
+
+msgid "retail_price"
+msgstr "_retail price_"
+
+msgid "sum"
+msgstr "_sum_"
+
+msgid "min"
+msgstr "_min_"
+
+msgid "todouble"
+msgstr "_to_double_"
+
+msgid "difftime"
+msgstr "_diff_time_"
+
+msgid "editdistance"
+msgstr "_edit_distance_"
+
+msgid "Returns_the_largest"
+msgstr "_Returns the largest previous integer._"
+
+msgid "Returns_the_logarithm2"
+msgstr "_Returns the logarithm with base 2, or binary logarithm._"
+
+msgid "cube"
+msgstr "_cube_"
+
+msgid "Returns_the_year"
+msgstr "_Returns the year from a given date._"
+
+msgid "product"
+msgstr "_product_"
+
+msgid "log10"
+msgstr "_log10_"
+
+msgid "drafted_by"
+msgstr "_drafted by_"
+
+msgid "movingsum"
+msgstr "_moving_sum_"
+
+msgid "movingmin"
+msgstr "_moving_min_"
+
+msgid "Takes_a_measure14"
+msgstr ""
+
+msgid "Takes_a_measure13"
+msgstr ""
+
+msgid "latitude"
+msgstr "_latitude_"
+
+msgid "Takes_a_measure12"
+msgstr ""
+
+msgid "Takes_a_measure11"
+msgstr ""
+
+msgid "strpos"
+msgstr "_strpos_"
+
+msgid "Takes_a_measure10"
+msgstr ""
+
+msgid "groupcount"
+msgstr "_group_count_"
+
+msgid "exp2"
+msgstr "_exp2_"
+
+msgid "similarity"
+msgstr "_similarity_"
+
+msgid "shipped"
+msgstr "_shipped_"
+
+msgid "safedivide"
+msgstr "_safe_divide_"
+
+msgid "Returns_1_if"
+msgstr ""
+
+msgid "customer_region"
+msgstr "_customer region_"
+
+msgid "state"
+msgstr "_state_"
+
+msgid "Returns_the_smallest"
+msgstr "_Returns the smallest following integer._"
+
+msgid "phone"
+msgstr "_phone_"
+
+msgid "cumulativeaverage"
+msgstr "_cumulative_average_"
+
+msgid "soundslike"
+msgstr "_sounds_like_"
+
+msgid "Takes_a_column2"
+msgstr ""
+
+msgid "Returns_the_square"
+msgstr "_Returns the square of a numeric value._"
+
+msgid "pokemon_go"
+msgstr "_'pokemon go'_"
+
+msgid "Accepts_a_document"
+msgstr ""
+
+msgid "revenue"
+msgstr "_revenue_"
+
+msgid "Returns_Eulers_number"
+msgstr "_Returns Euler's number (~2.718) raised to a power._"
+
+msgid "store_name"
+msgstr "_store name_"
+
+msgid "serviced"
+msgstr "_serviced_"
+
+msgid "hourofday"
+msgstr "_hour_of_day_"
+
+msgid "shipping"
+msgstr "_shipping_"
+
+msgid "Returns_the_smaller"
+msgstr "_Returns the smaller of the values._"
+
+msgid "groupmax"
+msgstr "_group_max_"
+
+msgid "cbrt"
+msgstr "_cbrt_"
+
+msgid "variance"
+msgstr "_variance_"
+
+msgid "startofweek"
+msgstr "_start_of_week_"
+
+msgid "sq"
+msgstr "_sq_"
+
+msgid "minecraft_pixelmon"
+msgstr "_'minecraft pixelmon'_"
+
+msgid "owner"
+msgstr "_owner_"
+
+msgid "Accepts_a_document2"
+msgstr ""
+
+msgid "bigger"
+msgstr "_'bigger'_"
+
+msgid "lastname"
+msgstr "_lastname_"
+
+msgid "Returns_the_month"
+msgstr "_Returns the month from a given date._"
+
+msgid "tostring"
+msgstr "_to_string_"
+
+msgid "joined"
+msgstr "_joined_"
+
+msgid "FY_2015"
+msgstr "_FY 2015_"
+
+msgid "atty"
+msgstr "_'atty'_"
+
+msgid "Returns_the_inverse"
+msgstr "_Returns the inverse sine in degrees._"
+
+msgid "Returns_the"
+msgstr "_Returns the square root._"
+
+msgid "end_latitude"
+msgstr "_end latitude_"
+
+msgid "least"
+msgstr "_least_"
+
+msgid "Returns_the_length"
+msgstr "_Returns the length of the text._"
+
+msgid "Returns_the_portion"
+msgstr ""
+
+msgid "q1_revenue"
+msgstr "_q1 revenue_"
+
+msgid "adddays"
+msgstr "_add_days_"
+
+msgid "false"
+msgstr "_false_"
+
+msgid "Returns_the_inverse3"
+msgstr "_Returns the inverse tangent in degrees._"
+
+msgid "Returns_the_inverse2"
+msgstr "_Returns the inverse cosine in degrees._"
+
+msgid "January"
+msgstr "_January_"
+
+msgid "markup"
+msgstr "_markup_"
+
+msgid "startofmonth"
+msgstr "_start_of_month_"
+
+msgid "received"
+msgstr "_received_"
+
+msgid "Returns_the_minimum"
+msgstr "_Returns the minimum value of a column._"
+
+msgid "promoter"
+msgstr "_promoter_"
+
+msgid "customer"
+msgstr "_customer_"
+
+msgid "Returns_2_raised"
+msgstr "_Returns 2 raised to a power._"
+
+msgid "region"
+msgstr "_region_"
+
+msgid "stddev"
+msgstr "_stddev_"
+
+msgid "cos"
+msgstr "_cos_"
+
+msgid "daynumberofyear"
+msgstr "_day_number_of_year_"
+
+msgid "Takes_a_column"
+msgstr ""
+
+msgid "Returns_the_remainder"
+msgstr "_Returns the remainder of first number divided by the second number._"
+
+msgid "cumulativemax"
+msgstr "_cumulative_max_"
+
+msgid "lawyer"
+msgstr "_'lawyer'_"
+
+msgid "tointeger"
+msgstr "_to_integer_"
+
+msgid "max"
+msgstr "_max_"
+
+msgid "abs"
+msgstr "_abs_"
+
+msgid "time"
+msgstr "_time_"
+
+msgid "spellslike"
+msgstr "_spells_like_"
+
+msgid "tweet2"
+msgstr "_tweet2_"
+
+msgid "width"
+msgstr "_width_"
+
+msgid "tweet1"
+msgstr "_tweet1_"
+
+msgid "or"
+msgstr "_or_"
+
+msgid "dayofweek"
+msgstr "_day_of_week_"
+
+msgid "Returns_the_number6"
+msgstr "_Returns the number of unique values of a column._"
+
+msgid "Returns_the_number5"
+msgstr "_Returns the number of rows in the table containing the column._"
+
+msgid "Aggregate"
+msgstr "_Aggregate_"
+
+msgid "Used_to_calculate"
+msgstr ""
+
+msgid "Returns_the_number4"
+msgstr "_Returns the number (1-12) of the month from a given date._"
+
+msgid "Returns_the_number3"
+msgstr "_Returns the number (1-366) of the day in a year from a given date._"
+
+msgid "Returns_the_number2"
+msgstr ""
+
+msgid "Returns_true_when"
+msgstr "_Returns true when both conditions are true, otherwise returns false._"
+
+msgid "area"
+msgstr "_area_"
+
+msgid "Returns_the_result6"
+msgstr ""
+
+msgid "Returns_the_result5"
+msgstr ""
+
+msgid "Returns_the_result4"
+msgstr ""
+
+msgid "Returns_the_result3"
+msgstr "_Returns the result of multiplying both numbers._"
+
+msgid "Returns_the_result2"
+msgstr "_Returns the result of subtracting the second number from the first._"
+
+msgid "Returns_the_cosine"
+msgstr "_Returns the cosine of an angle (specified in degrees)._"
+
+msgid "call_began"
+msgstr "_call began_"
+
+msgid "beam_angle"
+msgstr "_beam angle_"
+
+msgid "trial_version"
+msgstr "_'trial version'_"
+
+msgid "california"
+msgstr "_'california'_"
+
+msgid "attorney"
+msgstr "_'attorney'_"
+
+msgid "movingmax"
+msgstr "_moving_max_"
+
+msgid "tansatelliteangle"
+msgstr "_tan-satellite-angle_"
+
+msgid "married"
+msgstr "_married_"
+
+msgid "floor"
+msgstr "_floor_"
+
+msgid "sign"
+msgstr "_sign_"
+
+msgid "room"
+msgstr "_'room'_"
+
+msgid "clicked"
+msgstr "_clicked_"
+
+msgid "not_bigger"
+msgstr "_'not bigger'_"
+
+msgid "monthnumber"
+msgstr "_month_number_"
+
+msgid "supplier"
+msgstr "_supplier_"
+
+msgid "Number"
+msgstr "_Number_"
+
+msgid "persnickety"
+msgstr "_'persnickety'_"
+
+msgid "exp"
+msgstr "_exp_"
+
+msgid "Date"
+msgstr "_Date_"
+
+msgid "firstname"
+msgstr "_first_name_"
+
+msgid "Accepts_two_text4"
+msgstr ""
+
+msgid "Accepts_two_text3"
+msgstr ""
+
+msgid "Accepts_two_text2"
+msgstr ""
+
+msgid "month"
+msgstr "_month_"
+
+msgid "growth_rate"
+msgstr "_growth rate_"
+
+msgid "Returns_the_average"
+msgstr "_Returns the average of all the values of a column._"
+
+msgid "taxrate"
+msgstr "_taxrate_"
+
+msgid "ln"
+msgstr "_ln_"
+
+msgid "Returns_the_tangent"
+msgstr "_Returns the tangent of an angle (specified in degrees)._"
+
+msgid "Accepts_an_integer"
+msgstr ""
+
+msgid "Friday"
+msgstr "_Friday_"
+
+msgid "Returns_the_cube"
+msgstr "_Returns the cube of a number._"
+
+msgid "Returns_the_first4"
+msgstr ""
+
+msgid "Returns_the_first3"
+msgstr "_Returns the first number raised to the power of the second number._"
+
+msgid "Returns_the_first2"
+msgstr "_Returns the first number raised to the power of the second._"
+
+msgid "growth"
+msgstr "_growth_"
+
+msgid "movingaverage"
+msgstr "_moving_average_"
+
+msgid "Conditional_operator"
+msgstr "_Conditional operator._"
+
+msgid "sin"
+msgstr "_sin_"
+
+msgid "purchased"
+msgstr "_purchased_"
+
+msgid "strlen"
+msgstr "_strlen_"
+
+msgid "now"
+msgstr "_now_"
+
+msgid "read"
+msgstr "_'read'_"
+
+msgid "substr"
+msgstr "_substr_"
+
+msgid "not"
+msgstr "_not_"
+
+msgid "groupuniquecount"
+msgstr "_group_unique_count_"
+
+msgid "Q3_FY"
+msgstr "_Q3 FY 2015_"
+
+msgid "campaign"
+msgstr "_campaign_"
+
+msgid "date"
+msgstr "_date_"
+
+msgid "complaints"
+msgstr "_complaints_"
+
+msgid "Returns_the_day"
+msgstr "_Returns the day of the week for the given date._"
+
+msgid "approve"
+msgstr "_'approve'_"
+
+msgid "distributor"
+msgstr "_distributor_"
+
+msgid "Returns_true_if9"
+msgstr ""
+
+msgid "Subtracts_the_second2"
+msgstr ""
+
+msgid "Returns_true_if8"
+msgstr ""
+
+msgid "Returns_true_if7"
+msgstr "_Returns true if the first value is less than the second value._"
+
+msgid "Returns_the_standard"
+msgstr "_Returns the standard deviation of all values of a column._"
+
+msgid "Returns_true_if6"
+msgstr "_Returns true if the first value is greater than the second value._"
+
+msgid "Returns_true_if5"
+msgstr "_Returns true if the first value is equal to the second value._"
+
+msgid "Returns_the_number"
+msgstr "_Returns the number (1-31) of the day from a given date._"
+
+msgid "tax"
+msgstr "_tax_"
+
+msgid "Returns_true_if4"
+msgstr ""
+
+msgid "Returns_true_if3"
+msgstr "_Returns true if the given date falls on a Saturday or Sunday._"
+
+msgid "totalcost"
+msgstr "_total_cost_"
+
+msgid "Returns_true_if2"
+msgstr "_Returns true if the value is null._"
+
+msgid "Returns_the_cube2"
+msgstr "_Returns the cube root of a number._"
+
+msgid "tan"
+msgstr "_tan_"
+
+msgid "length"
+msgstr "_length_"
+
+msgid "hello_swirl"
+msgstr "_'hello swirl'_"
+
+msgid "start_latitude"
+msgstr "_start latitude_"
+
+msgid "Jan_FY"
+msgstr "_Jan FY 2015_"
+
+msgid "Returns_the_sine"
+msgstr "_Returns the sine of an angle (specified in degrees)._"
+
+msgid "round"
+msgstr "_round_"
+
+msgid "thoughtspot"
+msgstr "_'thoughtspot'_"
+
+msgid "hay"
+msgstr "_'hay'_"
+
+msgid "Returns_true_when2"
+msgstr "_Returns true when either condition is true, otherwise returns false._"
+
+msgid "start_longitude"
+msgstr "_start longitude_"
+
+msgid "if"
+msgstr "_if_"
+
+msgid "count"
+msgstr "_count_"
+
+msgid "average"
+msgstr "_average_"
+
+msgid "texas"
+msgstr "_'texas'_"
+
+msgid "day"
+msgstr "_day_"
+
+msgid "year"
+msgstr "_year_"
+
+msgid "invoiced"
+msgstr "_invoiced_"
+
+msgid "Returns_the_two"
+msgstr "_Returns the two values as a concatenated text string._"
+
+msgid "event"
+msgstr "_event_"
+
+msgid "quantity"
+msgstr "_quantity_"
+
+msgid "thouhgtspot"
+msgstr "_'thouhgtspot'_"
+
+msgid "distance"
+msgstr "_distance_"
+
+msgid "haystack"
+msgstr "_'haystack'_"
+
+msgid "groupstddev"
+msgstr "_group_stddev_"
+
+msgid "burning_man"
+msgstr "_'burning man'_"
+
+msgid "startofyear"
+msgstr "_start_of_year_"
+
+msgid "haystackwithneedle"
+msgstr "_'haystack_with_needle'_"
+
+msgid "q2_revenue"
+msgstr "_q2 revenue_"
+
+msgid "todate"
+msgstr "_to_date_"
+
+msgid "price"
+msgstr "_price_"
+
+msgid "atan2"
+msgstr "_atan2_"
+
+msgid "broomstick"
+msgstr "_'broomstick'_"
+
+msgid "order_date"
+msgstr "_order date_"
+
+msgid "Returns_the_variance"
+msgstr "_Returns the variance of all the values of a column._"
+
+msgid "sold"
+msgstr "_sold_"
+
+msgid "Takes_a_measure9"
+msgstr ""
+
+msgid "Takes_a_measure8"
+msgstr ""
+
+msgid "Takes_a_measure7"
+msgstr ""
+
+msgid "Takes_a_measure6"
+msgstr ""
+
+msgid "Takes_a_measure5"
+msgstr ""
+
+msgid "Takes_a_measure4"
+msgstr ""
+
+msgid "ifnull"
+msgstr "_ifnull_"
+
+msgid "Takes_a_measure3"
+msgstr ""
+
+msgid "Takes_a_measure2"
+msgstr ""
+
+msgid "Conversion"
+msgstr "_Conversion_"
+
+msgid "Returns_the4"
+msgstr "_Returns the current timestamp._"
+
+msgid "Returns_the3"
+msgstr "_Returns the natural logarithm._"
+
+msgid "Returns_the2"
+msgstr "_Returns the absolute value._"
+
+msgid "submitted"
+msgstr "_submitted_"
+
+msgid "acos"
+msgstr "_acos_"
+
+msgid "snicket"
+msgstr "_'snicket'_"
+
+msgid "true"
+msgstr "_true_"
+
+msgid "Returns_the_maximum"
+msgstr "_Returns the maximum value of a column._"
+
+msgid "Returns_the_logarithm"
+msgstr "_Returns the logarithm with base 10._"
+
+msgid "Returns_the_first"
+msgstr ""
+
+msgid "Returns_the_larger"
+msgstr "_Returns the larger of the values._"
+
+msgid "Subtracts_the_second"
+msgstr ""
+
+msgid "Returns_the_date5"
+msgstr "_Returns the date for the first day of the week for the given date._"
+
+msgid "Returns_the_date4"
+msgstr "_Returns the date for the first day of the month for the given date._"
+
+msgid "date_ordered"
+msgstr "_date ordered_"
+
+msgid "Returns_the_date3"
+msgstr "_Returns the date for the first day of the quarter for the given date._"
+
+msgid "Returns_the_date2"
+msgstr "_Returns the date for the first day of the year for the given date._"
+
+msgid "Returns_the_input"
+msgstr "_Returns the input as a boolean (true or false)._"
+
+msgid "Returns_a_random"
+msgstr "_Returns a random number between 0 and 1._"
+
+msgid "Returns_the_time"
+msgstr "_Returns the time portion of a given date._"
+
+msgid "Text2"
+msgstr "_Text_"
+
+msgid "mod"
+msgstr "_mod_"
+
+msgid "Mixed"
+msgstr "_Mixed_"
+
+msgid "ceil"
+msgstr "_ceil_"
+
+msgid "Accepts_two_text"
+msgstr ""
+
+msgid "unknown"
+msgstr "_'unknown'_"
+
+msgid "isweekend"
+msgstr "_is_weekend_"
+
+msgid "datesold"
+msgstr "_date_sold_"
+
+msgid "stack"
+msgstr "_'stack'_"
+
+msgid "groupvariance"
+msgstr "_group_variance_"
+
+msgid "isnull"
+msgstr "_isnull_"
+
+msgid "editdistancewithcap"
+msgstr "_edit_distance_with_cap_"
+
+msgid "Returns_true_if10"
+msgstr "_Returns true if the first value is not equal to the second value._"
+
+msgid "lastname2"
+msgstr "_last_name_"
+
+msgid "flag"
+msgstr "_'flag'_"
+
+msgid "daynumberofweek"
+msgstr "_day_number_of_week_"
+
+msgid "color"
+msgstr "_color_"
+
+msgid "sinsatelliteangle"
+msgstr "_sin-satellite-angle_"
+
+msgid "Returns_the_numeric"
+msgstr ""
+
+msgid "studio"
+msgstr "_studio_"
+
+msgid "cost"
+msgstr "_cost_"
+
+msgid "current_team"
+msgstr "_current team_"
+
+msgid "log2"
+msgstr "_log2_"
+
+msgid "groupsum"
+msgstr "_group_sum_"
+
+msgid "groupmin"
+msgstr "_group_min_"
+
+msgid "end_longitude"
+msgstr "_end longitude_"
+
+msgid "cossatelliteangle"
+msgstr "_cos-satellite-angle_"
+
+msgid "Operators"
+msgstr "_Operators_"
+
+msgid "longitude"
+msgstr "_longitude_"
+
+msgid "volume"
+msgstr "_volume_"
+
+msgid "then"
+msgstr "_then_"
+
+msgid "home_visit"
+msgstr "_home visit_"
+
+msgid "Returns_the_input4"
+msgstr ""
+
+msgid "Returns_the_input3"
+msgstr "_Returns the input as an integer._"
+
+msgid "Returns_the_input2"
+msgstr "_Returns the input as a double._"
+
+msgid "sphericaldistance"
+msgstr "_spherical_distance_"
+
+msgid "Takes_a_measure"
+msgstr ""
+
+msgid "key_05302015_Week"
+msgstr "_05/30/2015 Week_"
+
+msgid "greatest"
+msgstr "_greatest_"
+
+msgid "sales"
+msgstr "_sales_"
+
+msgid "unique_count"
+msgstr "_unique count_"
+
+msgid "defects"
+msgstr "_defects_"
+
+msgid "where_is_the"
+msgstr "_'where is the burning man concert'_"
+
+msgid "concat"
+msgstr "_concat_"
+
+msgid "groupaverage"
+msgstr "_group_average_"
+
+msgid "sqrt"
+msgstr "_sqrt_"
+
+msgid "Ymd"
+msgstr "_'%Y-%m-%d'_"
+
+msgid "red"
+msgstr "_'red'_"
+
+msgid "asin"
+msgstr "_asin_"
+
+msgid "Returns_true_if"
+msgstr "_Returns true if the condition is false, otherwise returns false._"
+
+msgid "clicks"
+msgstr "_clicks_"
+
+msgid "needle"
+msgstr "_'needle'_"
+
+msgid "else"
+msgstr "_else_"
+
+msgid "profit"
+msgstr "_profit_"
+
+msgid "contains"
+msgstr "_contains_"
+
+msgid "random"
+msgstr "_random_"
+
+msgid "similarto"
+msgstr "_similar_to_"
+
+msgid "Returns_the_sum"
+msgstr "_Returns the sum of all the values of a column._"
+
+msgid "Returns_the_result"
+msgstr "_Returns the result of adding both numbers._"
+
+msgid "startofquarter"
+msgstr "_start_of_quarter_"
+
+msgid "saved_ans_asked"
+msgstr "_asked a question_"
+
+msgid "saved_ans_edited"
+msgstr "_edited a question_"
+
+msgid "pinboard_created"
+msgstr "_created a pinboard_"
+
+msgid "pinboard_edited"
+msgstr "_edited a pinboard_"
+
+msgid "worksheet_created"
+msgstr "_created a worksheet_"
+
+msgid "worksheet_edited"
+msgstr "_edited a worksheet_"
+
+msgid "imported_some_data"
+msgstr "_imported some data_"
+
+msgid "imported_data_edited"
+msgstr "_edited imported data_"
+
+msgid "SAGE_FSM_0018"
+msgstr ""
+
+msgid "SAGE_FSM_0017"
+msgstr ""
+
+msgid "SAGE_FSM_0049"
+msgstr ""
+
+msgid "SAGE_FSM_0016"
+msgstr ""
+
+msgid "SAGE_FSM_0048"
+msgstr ""
+
+msgid "SAGE_FSM_0015"
+msgstr ""
+
+msgid "SAGE_FSM_0047"
+msgstr ""
+
+msgid "SAGE_FSM_0014"
+msgstr ""
+
+msgid "SAGE_FSM_0046"
+msgstr ""
+
+msgid "SAGE_FSM_0013"
+msgstr ""
+
+msgid "SAGE_FSM_0045"
+msgstr ""
+
+msgid "SAGE_FSM_0012"
+msgstr ""
+
+msgid "SAGE_FSM_0044"
+msgstr ""
+
+msgid "SAGE_FSM_0011"
+msgstr ""
+
+msgid "SAGE_FSM_0043"
+msgstr ""
+
+msgid "SAGE_FSM_0010"
+msgstr ""
+
+msgid "SAGE_FSM_0042"
+msgstr ""
+
+msgid "SAGE_FSM_0041"
+msgstr ""
+
+msgid "SAGE_FSM_0040"
+msgstr ""
+
+msgid "SAGE_FSM_0009"
+msgstr ""
+
+msgid "SAGE_FSM_0008"
+msgstr ""
+
+msgid "SAGE_FSM_0007"
+msgstr ""
+
+msgid "SAGE_FSM_0039"
+msgstr ""
+
+msgid "SAGE_FSM_0006"
+msgstr ""
+
+msgid "SAGE_FSM_0038"
+msgstr ""
+
+msgid "SAGE_FSM_0005"
+msgstr ""
+
+msgid "SAGE_FSM_0037"
+msgstr "_Please enter a column name you want the data to be sorted by._"
+
+msgid "SAGE_FSM_0004"
+msgstr ""
+
+msgid "SAGE_FSM_0036"
+msgstr ""
+
+msgid "SAGE_FSM_0003"
+msgstr ""
+
+msgid "SAGE_FSM_0035"
+msgstr ""
+
+msgid "SAGE_FSM_0002"
+msgstr ""
+
+msgid "SAGE_FSM_0034"
+msgstr ""
+
+msgid "SAGE_FSM_0001"
+msgstr ""
+
+msgid "SAGE_FSM_0033"
+msgstr ""
+
+msgid "SAGE_FSM_0032"
+msgstr ""
+
+msgid "SAGE_FSM_0031"
+msgstr ""
+
+msgid "SAGE_FSM_0030"
+msgstr ""
+
+msgid "SAGE_FSM_0029"
+msgstr ""
+
+msgid "SAGE_FSM_0028"
+msgstr ""
+
+msgid "SAGE_FSM_0027"
+msgstr ""
+
+msgid "SAGE_FSM_0026"
+msgstr "_Here you can add a Double value_"
+
+msgid "SAGE_FSM_0025"
+msgstr "_Here you can add an Integer value_"
+
+msgid "SAGE_FSM_0024"
+msgstr ""
+
+msgid "SAGE_FSM_0023"
+msgstr ""
+
+msgid "SAGE_FSM_0022"
+msgstr ""
+
+msgid "SAGE_FSM_0021"
+msgstr ""
+
+msgid "SAGE_FSM_0020"
+msgstr ""
+
+msgid "SAGE_FSM_0050"
+msgstr ""
+
+msgid "SAGE_FSM_0019"
+msgstr ""
+
+msgid "SAGE_FSM_Usage_Template_0013"
+msgstr ""
+
+msgid "SAGE_FSM_Usage_Template_0012"
+msgstr ""
+
+msgid "SAGE_FSM_Usage_Template_0011"
+msgstr ""
+
+msgid "SAGE_FSM_Keyword_0009"
+msgstr "_before_"
+
+msgid "SAGE_FSM_Usage_Template_0010"
+msgstr ""
+
+msgid "SAGE_FSM_Keyword_0008"
+msgstr "_for_"
+
+msgid "SAGE_FSM_Keyword_0007"
+msgstr "_within_"
+
+msgid "SAGE_FSM_Keyword_0039"
+msgstr "_monthly_"
+
+msgid "SAGE_FSM_Keyword_0006"
+msgstr "_from_"
+
+msgid "SAGE_FSM_Keyword_0038"
+msgstr "_quarterly_"
+
+msgid "SAGE_FSM_Keyword_0005"
+msgstr "_meters_"
+
+msgid "SAGE_FSM_Keyword_0037"
+msgstr "_yearly_"
+
+msgid "SAGE_FSM_Keyword_0004"
+msgstr "_km_"
+
+msgid "SAGE_FSM_Keyword_0036"
+msgstr "_ranked by_"
+
+msgid "SAGE_FSM_Keyword_0003"
+msgstr "_miles_"
+
+msgid "SAGE_FSM_Keyword_0035"
+msgstr "_bottom_"
+
+msgid "SAGE_FSM_Keyword_0002"
+msgstr "_farther than_"
+
+msgid "SAGE_FSM_Keyword_0034"
+msgstr "_top_"
+
+msgid "SAGE_FSM_Keyword_0001"
+msgstr "_near_"
+
+msgid "SAGE_FSM_Keyword_0033"
+msgstr "_sort by_"
+
+msgid "SAGE_FSM_Keyword_0032"
+msgstr "_pivot_"
+
+msgid "SAGE_FSM_Keyword_0031"
+msgstr "_for each_"
+
+msgid "SAGE_FSM_Keyword_0030"
+msgstr "_by_"
+
+msgid "SAGE_FSM_Usage_Template_0009"
+msgstr ""
+
+msgid "SAGE_FSM_Usage_Template_0008"
+msgstr ""
+
+msgid "SAGE_FSM_Usage_Template_0007"
+msgstr ""
+
+msgid "SAGE_FSM_Usage_Template_0006"
+msgstr ""
+
+msgid "SAGE_FSM_Usage_Template_0005"
+msgstr ""
+
+msgid "SAGE_FSM_Usage_Template_0004"
+msgstr ""
+
+msgid "SAGE_FSM_Usage_Template_0003"
+msgstr ""
+
+msgid "SAGE_FSM_Usage_Template_0002"
+msgstr ""
+
+msgid "SAGE_FSM_Usage_Template_0001"
+msgstr ""
+
+msgid "SAGE_FSM_Keyword_0029"
+msgstr "_variance_"
+
+msgid "SAGE_FSM_Keyword_0028"
+msgstr "_standard deviation_"
+
+msgid "SAGE_FSM_Keyword_0027"
+msgstr "_average_"
+
+msgid "SAGE_FSM_Keyword_0058"
+msgstr "_worst_"
+
+msgid "SAGE_FSM_Keyword_0026"
+msgstr "_unique count_"
+
+msgid "SAGE_FSM_Keyword_0057"
+msgstr "_best_"
+
+msgid "SAGE_FSM_Keyword_0025"
+msgstr "_count_"
+
+msgid "SAGE_FSM_Keyword_0056"
+msgstr "_growth_"
+
+msgid "SAGE_FSM_Keyword_0024"
+msgstr "_total count_"
+
+msgid "SAGE_FSM_Keyword_0055"
+msgstr "_year-over-year_"
+
+msgid "SAGE_FSM_Keyword_0023"
+msgstr "_max_"
+
+msgid "SAGE_FSM_Keyword_0054"
+msgstr "_ascending_"
+
+msgid "SAGE_FSM_Keyword_0022"
+msgstr "_min_"
+
+msgid "SAGE_FSM_Keyword_0053"
+msgstr "_descending_"
+
+msgid "SAGE_FSM_Keyword_0021"
+msgstr "_sum_"
+
+msgid "SAGE_FSM_Keyword_0052"
+msgstr "_hour_"
+
+msgid "SAGE_FSM_Keyword_0020"
+msgstr "_not ends with_"
+
+msgid "SAGE_FSM_Keyword_0051"
+msgstr "_day_"
+
+msgid "SAGE_FSM_Keyword_0050"
+msgstr "_week_"
+
+msgid "SAGE_FSM_Keyword_0019"
+msgstr "_ends with_"
+
+msgid "SAGE_FSM_Keyword_0018"
+msgstr "_not begins with_"
+
+msgid "SAGE_FSM_Keyword_0049"
+msgstr "_month_"
+
+msgid "SAGE_FSM_Keyword_0017"
+msgstr "_begins with_"
+
+msgid "SAGE_FSM_Keyword_0048"
+msgstr "_quarter_"
+
+msgid "SAGE_FSM_Keyword_0016"
+msgstr "_not similar to_"
+
+msgid "SAGE_FSM_Keyword_0047"
+msgstr "_year_"
+
+msgid "SAGE_FSM_Keyword_0015"
+msgstr "_similar to_"
+
+msgid "SAGE_FSM_Keyword_0046"
+msgstr "_avg_"
+
+msgid "SAGE_FSM_Keyword_0014"
+msgstr "_not contains_"
+
+msgid "SAGE_FSM_Keyword_0045"
+msgstr "_growth of_"
+
+msgid "SAGE_FSM_Keyword_0013"
+msgstr "_contains_"
+
+msgid "SAGE_FSM_Keyword_0044"
+msgstr "_detailed_"
+
+msgid "SAGE_FSM_Keyword_0012"
+msgstr "_and_"
+
+msgid "SAGE_FSM_Keyword_0043"
+msgstr "_day of week_"
+
+msgid "SAGE_FSM_Keyword_0011"
+msgstr "_between_"
+
+msgid "SAGE_FSM_Keyword_0042"
+msgstr "_hourly_"
+
+msgid "SAGE_FSM_Keyword_0010"
+msgstr "_after_"
+
+msgid "SAGE_FSM_Keyword_0041"
+msgstr "_daily_"
+
+msgid "SAGE_FSM_Keyword_0040"
+msgstr "_weekly_"
+
+msgid "SAGE_FORMULA_FSM_0001"
+msgstr "_Function {{function_name}} expects {{std::to_string(arg_position + 1)}}-th argument to be {{STLUtils::Join(rg_data_types.begin(), arg_data_types.end(), \" or \", DataTypeName)}}._"
+
+msgid "SAGE_FORMULA_FSM_0002"
+msgstr "_Function {{function_name}} expects {{std::to_string(num_arguments)}} arguments, found {{std::to_string(arg_position)}}._"
+
+msgid "SAGE_FORMULA_FSM_0003"
+msgstr "_Function {{function_name}} expects only {{std::to_string(num_arguments)}} arguments._"
+
+msgid "SAGE_FORMULA_FSM_0004"
+msgstr "_Expecting  a {{DataTypeName(data_type_)}} token._"
+
+msgid "SAGE_FSM_Data_Keyword_0019"
+msgstr "_q3_"
+
+msgid "SAGE_FSM_Data_Keyword_0018"
+msgstr "_q2_"
+
+msgid "SAGE_FSM_Data_Keyword_0017"
+msgstr "_q1_"
+
+msgid "SAGE_FSM_Data_Keyword_0016"
+msgstr "_saturday_"
+
+msgid "SAGE_FSM_Data_Keyword_0015"
+msgstr "_friday_"
+
+msgid "SAGE_FSM_Data_Keyword_0014"
+msgstr "_thursday_"
+
+msgid "SAGE_FSM_Data_Keyword_0013"
+msgstr "_wednesday_"
+
+msgid "SAGE_FSM_Data_Keyword_0045"
+msgstr "_to date_"
+
+msgid "SAGE_FSM_Data_Keyword_0012"
+msgstr "_tuesday_"
+
+msgid "SAGE_FSM_Data_Keyword_0044"
+msgstr "_ago_"
+
+msgid "SAGE_FSM_Data_Keyword_0011"
+msgstr "_monday_"
+
+msgid "SAGE_FSM_Data_Keyword_0043"
+msgstr "_minutes_"
+
+msgid "SAGE_FSM_Data_Keyword_0010"
+msgstr "_sunday_"
+
+msgid "SAGE_FSM_Data_Keyword_0042"
+msgstr "_hours_"
+
+msgid "SAGE_FSM_Data_Keyword_0041"
+msgstr "_days_"
+
+msgid "SAGE_FSM_Data_Keyword_0040"
+msgstr "_weeks_"
+
+msgid "SAGE_FSM_Data_Keyword_0009"
+msgstr "_year_"
+
+msgid "SAGE_FSM_Data_Keyword_0008"
+msgstr "_quarter_"
+
+msgid "SAGE_FSM_Data_Keyword_0007"
+msgstr "_month_"
+
+msgid "SAGE_FSM_Data_Keyword_0039"
+msgstr "_months_"
+
+msgid "SAGE_FSM_Data_Keyword_0006"
+msgstr "_week_"
+
+msgid "SAGE_FSM_Data_Keyword_0038"
+msgstr "_quarters_"
+
+msgid "SAGE_FSM_Data_Keyword_0005"
+msgstr "_tomorrow_"
+
+msgid "SAGE_FSM_Data_Keyword_0037"
+msgstr "_years_"
+
+msgid "SAGE_FSM_Data_Keyword_0004"
+msgstr "_today_"
+
+msgid "SAGE_FSM_Data_Keyword_0036"
+msgstr "_minute_"
+
+msgid "SAGE_FSM_Data_Keyword_0003"
+msgstr "_yesterday_"
+
+msgid "SAGE_FSM_Data_Keyword_0035"
+msgstr "_hour_"
+
+msgid "SAGE_FSM_Data_Keyword_0002"
+msgstr "_next_"
+
+msgid "SAGE_FSM_Data_Keyword_0034"
+msgstr "_day_"
+
+msgid "SAGE_FSM_Data_Keyword_0001"
+msgstr "_last_"
+
+msgid "SAGE_FSM_Data_Keyword_0033"
+msgstr "_this_"
+
+msgid "SAGE_FSM_Data_Keyword_0032"
+msgstr "_december_"
+
+msgid "SAGE_FSM_Data_Keyword_0031"
+msgstr "_november_"
+
+msgid "SAGE_FSM_Data_Keyword_0030"
+msgstr "_october_"
+
+msgid "SAGE_FSM_Data_Keyword_0029"
+msgstr "_september_"
+
+msgid "SAGE_FSM_Data_Keyword_0028"
+msgstr "_august_"
+
+msgid "SAGE_FSM_Data_Keyword_0027"
+msgstr "_july_"
+
+msgid "SAGE_FSM_Data_Keyword_0026"
+msgstr "_june_"
+
+msgid "SAGE_FSM_Data_Keyword_0025"
+msgstr "_may_"
+
+msgid "SAGE_FSM_Data_Keyword_0024"
+msgstr "_april_"
+
+msgid "SAGE_FSM_Data_Keyword_0023"
+msgstr "_march_"
+
+msgid "SAGE_FSM_Data_Keyword_0022"
+msgstr "_february_"
+
+msgid "SAGE_FSM_Data_Keyword_0021"
+msgstr "_january_"
+
+msgid "SAGE_FSM_Data_Keyword_0020"
+msgstr "_q4_"
+
+msgid "relatedLink.Invalid_Configuration_Message"
+msgstr ""
+
+msgid "relatedLink.Select_Row_As_Runtime_Filter"
+msgstr "_Select a row to apply as runtime filter_"
+
+msgid "relatedLink.relatedLinkName"
+msgstr "_Related Link_"
+
+msgid "relatedLink.onRelatedLink"
+msgstr "_You are on Related Link_"
+
+msgid "relatedLink.createLink"
+msgstr "_New Related Link_"
+
+msgid "relatedLink.relatedLinkEditor"
+msgstr "_Related Link editor_"
+
+msgid "relatedLink.relatedLinkViewer"
+msgstr "_Related Links_"
+
+msgid "relatedLink.destination"
+msgstr "_Destination_"
+
+msgid "relatedLink.selectVisualization"
+msgstr "_Select Visualization_"
+
+msgid "relatedLink.selectedVisualization"
+msgstr "_Destination VisualizationId: _"
+
+msgid "relatedLink.destinationToolTip"
+msgstr "_Id of the selected visualization in destination pinboard. _"
+
+msgid "relatedLink.selectedRuntimeFilter"
+msgstr "_Selected Filter: _"
+
+msgid "relatedLink.sourceColumn"
+msgstr "_Source Column_"
+
+msgid "relatedLink.destinationType"
+msgstr "_Destination Type_"
+
+msgid "relatedLink.operator"
+msgstr "_Operator_"
+
+msgid "relatedLink.destinationColumn"
+msgstr "_Destination Column_"
+
+msgid "relatedLink.action"
+msgstr "_Action_"
+
+msgid "relatedLink.title"
+msgstr "_<span class=\"bk-header-title\"> {operation} of Visualization <span class=\"bk-element-name\">{vizName}</span> on {bookType} <span class=\"bk-element-name\">{reportModel}</span></span>_"
+
+msgid "relatedLink.mappings"
+msgstr "_Available Filter Mappings_"
+
+msgid "relatedLink.mappingsFromSource"
+msgstr "_Filters (generated from related link LinkName):_"
+
+msgid "relatedLink.destinationOfLink"
+msgstr "_Destination of Link:_"
+
+msgid "relatedLink.addMapping"
+msgstr "_Add Mapping_"
+
+msgid "relatedLink.availableFilters"
+msgstr "_Available Filters_"
+
+msgid "relatedLink.generatedFrom"
+msgstr "_generated from related link_"
+
+msgid "relatedLink.selectRunTimeFilter"
+msgstr "_A filter is not selected from available list. Please select one from available filters._"
+
+msgid "relatedLink.relatedLinksCount"
+msgstr "_ Related Links: _"
+
+msgid "relatedLink.relatedLinkHelpMessage"
+msgstr "_Related link enables a user to 'drill across' pinboards. _"
+
+msgid "relatedLink.relatedLinkCanvasLandingHelpMessage"
+msgstr "_You are on destination of a Related link. _"
+
+msgid "msg_code.184.summary"
+msgstr "_Related link created successfully._"
+
+msgid "msg_code.185.summary"
+msgstr "_Related link could not be created._"
+
+msgid "msg_code.186.summary"
+msgstr "_Related link updated successfully._"
+
+msgid "msg_code.187.summary"
+msgstr "_Related link could not be updated._"
+
+msgid "msg_code.188.summary"
+msgstr "_Related link deleted successfully._"
+
+msgid "msg_code.189.summary"
+msgstr "_Related link could not be deleted._"
+
+msgid "msg_code.190.summary"
+msgstr "_Related link detail fetched successfully._"
+
+msgid "msg_code.191.summary"
+msgstr "_Related link detail could not be fetched._"
+

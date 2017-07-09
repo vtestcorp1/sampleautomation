@@ -2,7 +2,6 @@
 app/.tmp/*
 app/all.css
 app/index.html
-app/lib/gen-files/*
 app/lib/min/thrift.min.js
 app/lib/src/thrift/gen-files/*
 app/pattern.html

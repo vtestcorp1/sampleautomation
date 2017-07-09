@@ -2,7 +2,6 @@
 
 'use strict';
 
-var generateSources = require('./scripts/generate-sources.js').generateSources;
 var generateStrings = require('./scripts/generate-strings');
 var fs = require('fs-extra');
 var os = require('os');
@@ -488,7 +487,6 @@ module.exports = function (grunt) {
         },
         clean: {
             target: 'target/',
-            genFiles: ['app/lib/gen-files/'],
             html2js: 'test/unit/natural-query-templates.js',
             tmp: 'app/.tmp/',
             simulatejs: 'target/app/lib',
@@ -519,18 +517,6 @@ module.exports = function (grunt) {
                 options: {
                     spawn: false
                 }
-            },
-            genFiles: {
-                files: [
-                    '../callosum/client/preference.proto',
-                    '../net/rpc/info.proto',
-                    '../net/trace/trace.proto',
-                    '../net/trace/trace_vault.proto',
-                    '../sage/public/auto_complete.proto',
-                    '../sage/a3/public/sage_a3_interface.proto',
-                    '../orion/timely/job.proto',
-                    '../orion/timely/job_manager_interface.proto'                ] ,
-                tasks: ['generate-sources']
             },
             genStrings: {
                 files: ['../common/localization/strings.po'],
@@ -688,9 +674,6 @@ module.exports = function (grunt) {
                 }, {
                     grunt: true,
                     args: ['clean:target']
-                }, {
-                    grunt: true,
-                    args: ['clean:genFiles']
                 }]
             },
             packageGenerate: {
@@ -700,9 +683,6 @@ module.exports = function (grunt) {
                 tasks: [{
                     grunt: true,
                     args: ['less']
-                }, {
-                    grunt: true,
-                    args: ['generate-sources']
                 }, {
                     grunt: true,
                     args: ['html2js:templates']
@@ -1002,9 +982,7 @@ module.exports = function (grunt) {
 
     // run proxy etc on a separate set of ports so that e2e tests can run without stopping the main web task
     grunt.registerTask('buildDevServer', [
-        'clean:genFiles',
         'clean:tmp',
-        'generate-sources',
         'generate-strings',
         'shell:generateBinaryMessagingResource',
         'generateDevCss',
@@ -1016,7 +994,6 @@ module.exports = function (grunt) {
 
     // Unit test task
     grunt.registerTask('unit', [
-        'generate-sources',
         'generate-strings',
         'shell:generateBinaryMessagingResource',
         'html2js:templates',
@@ -1050,18 +1027,14 @@ module.exports = function (grunt) {
     grunt.registerTask('e2eDataConnect', ['buildDevServer', 'testServer', 'e2eDataConnectWrapper']);
     grunt.registerTask('e2eGolden', ['buildDevServer', 'testServer', 'protractor-golden-wrapper']);
     grunt.registerTask('e2eQAProtractor', ['buildDevServer', 'testServer', 'protractor-e2eQA-wrapper']);
-    grunt.registerTask('perfDogfood', ['generate-sources', 'perfDogfoodWrapper']);
-    grunt.registerTask('perfSchwab', ['generate-sources', 'perfSchwabWrapper']);
-    grunt.registerTask('perfTPCH', ['generate-sources', 'perfTPCHWrapper']);
-    grunt.registerTask('perfSage', ['generate-sources', 'perfSageWrapper']);
+    grunt.registerTask('perfDogfood', ['perfDogfoodWrapper']);
+    grunt.registerTask('perfSchwab', ['perfSchwabWrapper']);
+    grunt.registerTask('perfTPCH', ['perfTPCHWrapper']);
+    grunt.registerTask('perfSage', ['perfSageWrapper']);
 
     // Test tasks (e2e tests with fries and soda)
     grunt.registerTask('test', ['lint', 'unit', 'e2e']);
     grunt.registerTask('test-prod', ['lint', 'unit', 'package', 'e2eProtractor']);
-
-    grunt.registerTask('generate-sources', function () {
-        generateSources('./app/lib/gen-files/');
-    });
 
     grunt.registerTask('generate-strings', function () {
         var done = this.async();

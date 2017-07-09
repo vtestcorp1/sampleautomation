@@ -1,0 +1,8 @@
+#
+msgid ""
+msgstr ""
+
+# description
+msgid "LOGIN"
+msgstr "Login"
+

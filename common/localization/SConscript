@@ -1,0 +1,5 @@
+import scons.sconsbuild
+br = scons.sconsbuild.BuildRules('common/localization')
+
+br.ProtoLibrary(src = 'message_codes.proto')
+

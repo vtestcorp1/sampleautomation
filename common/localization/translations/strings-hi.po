@@ -1,0 +1,7782 @@
+#
+msgid ""
+msgstr ""
+
+# description
+msgid "LOGIN"
+msgstr "लॉगिन"
+
+# description
+msgid "PASSWORD"
+msgstr "पासवर्ड"
+
+# description
+msgid "Enter_Now"
+msgstr "अब दर्ज करें"
+
+# description
+msgid "Remember_me"
+msgstr "याद है मुझे"
+
+# description
+msgid "Upload_the_modeling_file"
+msgstr ""
+"मॉडलिंग फ़ाइल अपलोड करें (. xls, <"
+" 50 MB आकार)"
+
+# description
+msgid "Upload_the_security_file"
+msgstr ""
+"सुरक्षा फ़ाइल अपलोड करें (. xls, <"
+" 50 MB आकार)"
+
+# description
+msgid "Are_you_sure"
+msgstr ""
+"क्या वाकई आप से pinboard इस "
+"दृश्यावलोकन को निकालना "
+"चाहते हैं?"
+
+# description
+msgid "Choose_the_worksheet"
+msgstr ""
+"कार्यपत्रक सम्मिलित हों "
+"नियम चुनें:"
+
+# description
+msgid "Cancel"
+msgstr "रद्द करें"
+
+# description
+msgid "Both_passwords_need"
+msgstr ""
+"मैच के लिए दोनों पासवर्ड की "
+"आवश्यकता"
+
+# description
+msgid "Emails"
+msgstr "ईमेल:"
+
+# description
+msgid "Results_are_limited"
+msgstr ""
+"परिणाम पहली करने के लिए "
+"सीमित कर रहे हैं"
+
+# description
+msgid "Choose_the"
+msgstr ""
+"शामिल किए जाने के नियम का चयन "
+"करें:"
+
+# description
+msgid "This_content_will"
+msgstr ""
+"इस सामग्री लाल रंग से बाईं ओर "
+"कक्ष सामग्री सीएसएस नियम "
+"वारिस होगा।"
+
+# description
+msgid "by_linking"
+msgstr "जानकारी से जोड़कर"
+
+# description
+msgid "Select_an"
+msgstr "एक क्षेत्र का चयन करें"
+
+# description
+msgid "Show_Data"
+msgstr "डेटा लेबल दिखाएँ"
+
+# description
+msgid "Are_you_sure3"
+msgstr ""
+"क्या वाकई आप इस स्टीकर "
+"निकालना चाहते हैं?"
+
+# description
+msgid "Are_you_sure2"
+msgstr ""
+"क्या वाकई आप निकालना चाहते "
+"हैं"
+
+# description
+msgid "Did_you2"
+msgstr "आप मतलब था?"
+
+# description
+msgid "All"
+msgstr "सभी"
+
+# description
+msgid "Float_is_a"
+msgstr ""
+"नाव एक सीएसएस स्थिति "
+"निर्धारण गुण है। पृष्ठ "
+"तत्वों के सीएसएस फ्लोट "
+"संपत्ति उन्हें लागू साथ "
+"मुद्रण लेआउट में छवियों की "
+"तरह ही जहाँ पाठ उन्हें चारों "
+"ओर बहती हैं। जारी तत्वों वेब "
+"पृष्ठ के प्रवाह का एक हिस्सा "
+"बने।"
+
+# description
+msgid "for_each"
+msgstr "प्रत्येक के लिए"
+
+# description
+msgid "Color"
+msgstr "/ * रंग * /"
+
+# description
+msgid "Pinboard_name"
+msgstr "Pinboard नाम:"
+
+# description
+msgid "Zoom_options"
+msgstr "ज़ूम विकल्प"
+
+# description
+msgid "want_to"
+msgstr ""
+"यह का उपयोग करने के लिए चाहते "
+"हैं।"
+
+# description
+msgid "Set_the_column"
+msgstr ""
+"स्तंभ नाम सेट करें और आपके "
+"डेटा में कक्षों की प्रतिलिपि"
+" बनाएँ।"
+
+# description
+msgid "Granularity"
+msgstr "ग्रैनुलैरिटी:"
+
+# description
+msgid "Existing_data"
+msgstr "मौजूदा डेटा"
+
+# description
+msgid "Update_my3"
+msgstr ""
+"मेरी प्राथमिकताएँ अद्यतन "
+"करें"
+
+# description
+msgid "You_can_do"
+msgstr ""
+"आप खोजशब्दों का उपयोग कर ThoughtSpot"
+" में और अधिक जटिल खोज कर सकते "
+"हैं। इन शक्तिशाली खोजशब्दों "
+"के साथ प्रयोग आप दिलचस्प "
+"अंतर्दृष्टि दे सकते हैं।"
+
+# description
+msgid "Update_my2"
+msgstr "मेरा पासवर्ड अद्यतन करें"
+
+# description
+msgid "Type"
+msgstr "प्रकार:"
+
+# description
+msgid "rows"
+msgstr "पंक्तियाँ।"
+
+# description
+msgid "Javascript_class"
+msgstr ""
+"जावास्क्रिप्ट वर्ग का नाम:"
+
+# description
+msgid "ThoughtSpot_Style"
+msgstr "ThoughtSpot शैली गाइड"
+
+# description
+msgid "Update_my"
+msgstr "मेरे चित्र अद्यतन करें"
+
+# description
+msgid "Add_a_column"
+msgstr ""
+"डेटा लिंक करने के लिए अनन्य "
+"मानों वाला कोई स्तंभ जोड़ें।"
+" आप स्वतंत्र रूप से अपलोड किए "
+"गए डेटा का विश्लेषण करने के "
+"लिए जारी रख सकते हैं।"
+
+# description
+msgid "Logical_version"
+msgstr "तार्किक संस्करण:"
+
+# description
+msgid "Upload_your"
+msgstr "अपलोड अपने स्कीमा"
+
+# description
+msgid "Knowing_your_data"
+msgstr ""
+"अपने डेटा को जानने आप आप के "
+"लिए देख रहे हैं जवाब मिल "
+"बेहतर मदद कर सकते हैं। "
+"उपलब्ध स्तंभों में अपने डेटा"
+" का अन्वेषण करें करने के लिए "
+"डेटा कक्ष में स्तंभों का "
+"उपयोग करें।"
+
+# description
+msgid "Used_when_we2"
+msgstr ""
+"जब हम एक तत्व शरीर की (ऊपर) "
+"पृष्ठ के कोने छोड़ दिया करने "
+"के लिए सापेक्ष स्थिति "
+"निर्धारित करने के लिए चाहते "
+"हैं का उपयोग किया। आपको "
+"स्थान सेट करने के लिए "
+"पोजिशनिंग विशेषताएँ ऊपर, "
+"नीचे छोड़ दिया और सही का "
+"उपयोग करें। ये मान संबंधित "
+"(या निरपेक्ष) स्थिति के साथ "
+"अगले पैरेंट तत्व के सापेक्ष "
+"हो जाएगा"
+
+# description
+msgid "No_values"
+msgstr "कोई मान उपलब्ध"
+
+# description
+msgid "No_matches"
+msgstr "कोई मेल नहीं"
+
+# description
+msgid "Upload_Picture"
+msgstr "चित्र अपलोड करें"
+
+# description
+msgid "Other_tips"
+msgstr ""
+"अन्य युक्तियाँ और ट्रिक्स:"
+
+# description
+msgid "clearfix"
+msgstr "clearfix"
+
+# description
+msgid "is_used"
+msgstr "पर उपयोग किया जाता है एक"
+
+# description
+msgid "Formulas"
+msgstr "सूत्र"
+
+# description
+msgid "No_matched"
+msgstr "कोई मिलान डेटा।"
+
+# description
+msgid "Profile"
+msgstr "प्रोफ़ाइल"
+
+# description
+msgid "View_Keywords"
+msgstr "देखें कीवर्ड"
+
+# description
+msgid "Add_a"
+msgstr "पर कोई फ़िल्टर जोड़ें"
+
+# description
+msgid "Memory_used"
+msgstr "स्मृति का इस्तेमाल किया:"
+
+# description
+msgid "Done"
+msgstr "किया"
+
+# description
+msgid "Selected"
+msgstr "चयनित ("
+
+# description
+msgid "to"
+msgstr "करने के लिए"
+
+# description
+msgid "Updating"
+msgstr "अद्यतन कर रहा है..."
+
+# description
+msgid "In_progress"
+msgstr "प्रगति में"
+
+# description
+msgid "I_didnt"
+msgstr "मैं जो नहीं मिला।"
+
+# description
+msgid "Download_the2"
+msgstr ""
+"सुरक्षा फ़ाइल को डाउनलोड "
+"करें"
+
+# description
+msgid "No_sources"
+msgstr "कोई स्रोत चयनित"
+
+# description
+msgid "did_you"
+msgstr "आप मतलब था?"
+
+# description
+msgid "comments_are"
+msgstr ""
+"टिप्पणियाँ लोड किए गए हैं।"
+
+# description
+msgid "By_default_all"
+msgstr ""
+"डिफ़ॉल्ट रूप से सभी तत्वों "
+"स्थिर रहे हैं।"
+
+# description
+msgid "Still_need"
+msgstr "अभी भी मदद चाहिए?"
+
+# description
+msgid "Static"
+msgstr "स्थैतिक"
+
+# description
+msgid "Error_in"
+msgstr ""
+"पूर्वावलोकन जनरेट करने में "
+"त्रुटि।"
+
+# description
+msgid "Positioning"
+msgstr "स्थिति निर्धारण"
+
+# description
+msgid "incomplete"
+msgstr "अपूर्ण"
+
+# description
+msgid "Advanced_settings"
+msgstr "उन्नत सेटिंग्स"
+
+# description
+msgid "Click_on_the"
+msgstr ""
+"मॉडलिंग फ़ाइल डाउनलोड करने "
+"के लिए बटन पर क्लिक करें।"
+
+# description
+msgid "Share_with"
+msgstr "चैनल के साथ साझा करें"
+
+# description
+msgid "showing"
+msgstr ""
+"(पंक्तियाँ दिखाई जा रही हैं"
+
+# description
+msgid "Did_you"
+msgstr "आप मतलब था:"
+
+# description
+msgid "Conditional_Formatting2"
+msgstr "सशर्त स्वरूपण"
+
+# description
+msgid "You_have"
+msgstr "आपने चयन किया है:"
+
+# description
+msgid "Scroll_down_to"
+msgstr ""
+"लोड टिप्पणी के लिए नीचे "
+"स्क्रॉल करें।"
+
+# description
+msgid "a_property"
+msgstr ""
+"-एक गुण, जैसे नाम, पता या id "
+"संख्या।"
+
+# description
+msgid "Slack_TeamName"
+msgstr "सुस्त TeamName:"
+
+# description
+msgid "Select_All"
+msgstr "सभी का चयन करें"
+
+# description
+msgid "Users_or"
+msgstr "उपयोगकर्ता या समूह"
+
+# description
+msgid "Yes"
+msgstr "हाँ"
+
+# description
+msgid "Left"
+msgstr "बाईं ओर"
+
+# description
+msgid "Text_colors"
+msgstr "पाठ रंग:"
+
+# description
+msgid "Add_test_prefix"
+msgstr ""
+"उपसर्ग 'परीक्षण' केवल "
+"जावास्क्रिप्ट में उपयोग किए "
+"जाने वाले सभी वर्ग के लिए "
+"जोड़ें। Ex: .test-className"
+
+# description
+msgid "Installed_version"
+msgstr "स्थापित संस्करण:"
+
+# description
+msgid "over_successive"
+msgstr "पर क्रमिक"
+
+# description
+msgid "combination_of"
+msgstr "का संयोजन"
+
+# description
+msgid "Text_transformation"
+msgstr "पाठ परिवर्तन:"
+
+# description
+msgid "Thoughtspot_compiled_a"
+msgstr "Thoughtspot की सूची तैयार"
+
+# description
+msgid "While_implementing_the"
+msgstr ""
+"पहले दृष्टिकोण को लागू करते "
+"हुए, हम इसी तरह सीएसएस गुण "
+"प्रकार पठनीयता उद्देश्य के "
+"लिए एक साथ समूहीकृत करने के "
+"लिए प्रयास करें।"
+
+# description
+msgid "Drill_down"
+msgstr "ड्रिल डाउन"
+
+# description
+msgid "Integrate_Slack"
+msgstr "सुस्त एकीकृत"
+
+# description
+msgid "Fixed"
+msgstr "ठीक किया गया"
+
+# description
+msgid "only"
+msgstr "केवल"
+
+# description
+msgid "Use_unsecured"
+msgstr "असुरक्षित उपयोग"
+
+# description
+msgid "Create_a_pinboard"
+msgstr ""
+"यह यहाँ प्रकट करने के लिए एक "
+"pinboard बनाने"
+
+# description
+msgid "more_columns"
+msgstr "अधिक स्तंभ"
+
+# description
+msgid "Name2"
+msgstr "नाम"
+
+# description
+msgid "dib2"
+msgstr ". dib;"
+
+# description
+msgid "more_metrics"
+msgstr "अधिक मैट्रिक्स"
+
+# description
+msgid "Relationship_Name"
+msgstr "संबंध नाम"
+
+# description
+msgid "After_your_file"
+msgstr ""
+"अपनी फाइल तैयार होने के बाद, "
+"बस खींचें और इसे नीचे दिए गए "
+"क्षेत्र में रखें या इसे "
+"प्राप्त करने के लिए बटन पर "
+"क्लिक करें।"
+
+# description
+msgid "Get_to_know"
+msgstr ""
+"अपने डेटा पता करने के लिए "
+"मिलता है।"
+
+# description
+msgid "We_try_to"
+msgstr ""
+"हम हर बार एक नए मॉड्यूल बनाया "
+"है नई सीएसएस नियम बनाने से "
+"बचने की कोशिश करो। लेकिन "
+"वहाँ हमेशा एक मामले में जहां "
+"हम एक नया नियम बनाने के लिए "
+"होगा। तो, हम किसी भी मॉड्यूल "
+"शैली के लिए 2 तरीके का उपयोग "
+"करें।"
+
+# description
+msgid "Text_sizing"
+msgstr "पाठ आकार:"
+
+# description
+msgid "Name"
+msgstr "नाम:"
+
+# description
+msgid "dib"
+msgstr "dib"
+
+# description
+msgid "Table"
+msgstr "तालिका"
+
+# description
+msgid "on_Pinboard"
+msgstr "पर Pinboard"
+
+# description
+msgid "sorted_by"
+msgstr "आधार पर छाँटे"
+
+# description
+msgid "Float_right"
+msgstr "सही यह तत्व फ़्लोट करें"
+
+# description
+msgid "Absolute"
+msgstr "निरपेक्ष"
+
+# description
+msgid "Data_read"
+msgstr "डेटा को पढ़ने:"
+
+# description
+msgid "Clearfix"
+msgstr "Clearfix"
+
+# description
+msgid "Password"
+msgstr "पासवर्ड"
+
+# description
+msgid "Display2"
+msgstr "/ * प्रदर्शन & बॉक्स मॉडल * /"
+
+# description
+msgid "Phone"
+msgstr "फोन:"
+
+# description
+msgid "Email_me"
+msgstr ""
+"ईमेल मुझे सूचनाएं साझा करना"
+
+# description
+msgid "mam"
+msgstr ".mam;"
+
+# description
+msgid "Copied_to"
+msgstr ""
+"क्लिपबोर्ड पर प्रतिलिपि "
+"बनाई गई"
+
+# description
+msgid "Empty_Pinboard"
+msgstr "खाली Pinboard"
+
+# description
+msgid "Inline"
+msgstr "इनलाइन"
+
+# description
+msgid "Explore_all"
+msgstr "सभी डेटा का अन्वेषण करें"
+
+# description
+msgid "Positioning3"
+msgstr "/ * पोजिशनिंग * /"
+
+# description
+msgid "Absolutely_positioned"
+msgstr "पूर्ण रूप से स्थित तत्व"
+
+# description
+msgid "Positioning2"
+msgstr "स्थिति:"
+
+# description
+msgid "of"
+msgstr "के"
+
+# description
+msgid "Add_Derived"
+msgstr "Derived स्तंभ जोड़ें:"
+
+# description
+msgid "Maintain_the_order"
+msgstr ""
+"वे नेत्रहीन डिजाइन में प्रकट"
+" के रूप में html में तत्वों के "
+"क्रम को बनाए रखने"
+
+# description
+msgid "And_then"
+msgstr "और फिर उठाया"
+
+# description
+msgid "Unlink_Slack"
+msgstr "सुस्त अनलिंक करें"
+
+# description
+msgid "Add"
+msgstr "जोड़ें"
+
+# description
+msgid "never"
+msgstr "कभी नहीं"
+
+# description
+msgid "Floats_the_element"
+msgstr "बाईं ओर के तत्व मंगाई।"
+
+# description
+msgid "DESTINATION_COLUMN"
+msgstr "गंतव्य स्तंभ"
+
+# description
+msgid "Only_add_prefix"
+msgstr ""
+"केवल परस्पर विरोधी के नाम के "
+"साथ स्तंभ उपसर्ग जोड़ें।"
+
+# description
+msgid "Help"
+msgstr "मदद"
+
+# description
+msgid "Overwrite"
+msgstr "अधिलेखित करें"
+
+# description
+msgid "element_when"
+msgstr "यह है जब तत्व"
+
+# description
+msgid "Current_version"
+msgstr "वर्तमान संस्करण:"
+
+# description
+msgid "Connections"
+msgstr "कनेक्शन:"
+
+# description
+msgid "Block"
+msgstr "ब्लॉक"
+
+# description
+msgid "Filter"
+msgstr "फ़िल्टर करें:"
+
+# description
+msgid "rows_have"
+msgstr ""
+"पंक्तियाँ आयात किया गया है।"
+
+# description
+msgid "top_0"
+msgstr "टॉप: 0;"
+
+# description
+msgid "Select_a"
+msgstr "एक स्तंभ का चयन करें"
+
+# description
+msgid "It_took_too"
+msgstr ""
+"यह क्वेरी पूर्ण करने के लिए "
+"काफी समय लिया। आप अब आंशिक "
+"रूप से परिकलित परिणाम देख "
+"रहे हैं।"
+
+# description
+msgid "Floats_the_element2"
+msgstr ""
+"सही करने के लिए तत्व मंगाई।"
+
+# description
+msgid "Underlying_Data"
+msgstr "अंतर्निहित डेटा"
+
+# description
+msgid "Measure_or"
+msgstr "उपाय या विशेषता"
+
+# description
+msgid "Only_show"
+msgstr "केवल दिखाएँ\""
+
+# description
+msgid "Relationships"
+msgstr "रिश्ते"
+
+# description
+msgid "Edited"
+msgstr "(संपादित)"
+
+# description
+msgid "More"
+msgstr "और अधिक..."
+
+# description
+msgid "Show_hidden"
+msgstr "छुपी हुई दिखाएँ"
+
+# description
+msgid "Inline_block"
+msgstr "इनलाइन ब्लॉक"
+
+# description
+msgid "Back2"
+msgstr "... वापस"
+
+# description
+msgid "Whats_your"
+msgstr "अपने स्रोत क्या है?"
+
+# description
+msgid "TEST"
+msgstr "परीक्षण"
+
+# description
+msgid "Its_positioned_relative"
+msgstr ""
+"यह viewport, या ब्राउज़र विंडो के "
+"सापेक्ष स्थिति है। जब विंडो "
+"स्क्रॉल किया गया है viewport बदल "
+"नहीं है।"
+
+# description
+msgid "And_then_determined2"
+msgstr ""
+"और उसके बाद विकास की "
+"निर्धारित"
+
+# description
+msgid "Cannot_Deselect_Already"
+msgstr ""
+"अचयनित नहीं कर सकता। पहले से "
+"ही उपयोग में।"
+
+# description
+msgid "Other"
+msgstr "/ * अन्य * /"
+
+# description
+msgid "And_then_determined"
+msgstr ""
+"और उसके बाद के दैनिक विकास "
+"निर्धारित"
+
+# description
+msgid "NO_DATA"
+msgstr "कोई डेटा नहीं"
+
+# description
+msgid "Data"
+msgstr "डेटा"
+
+# description
+msgid "CSS_templates"
+msgstr "सीएसएस टेम्पलेट्स"
+
+# description
+msgid "Your_uploaded"
+msgstr "अपने अपलोड हुई डेटा"
+
+# description
+msgid "Apply"
+msgstr "लागू करें"
+
+# description
+msgid "Select_the_column"
+msgstr ""
+"आप अपलोड कर रहे हैं डेटा के "
+"साथ लिंक करने के लिए इच्छित "
+"स्तंभ का चयन करें।"
+
+# description
+msgid "Copy_to"
+msgstr ""
+"क्लिपबोर्ड पर प्रतिलिपि "
+"बनाएँ"
+
+# description
+msgid "tables_using"
+msgstr "तालिकाओं का उपयोग कर"
+
+# description
+msgid "Congratulations"
+msgstr "बधाइयाँ!"
+
+# description
+msgid "Timeout"
+msgstr "समयबाह्य:"
+
+# description
+msgid "Configuration_Options"
+msgstr "कॉन्फ़िगरेशन विकल्प"
+
+# description
+msgid "Examples"
+msgstr "उदाहरण:"
+
+# description
+msgid "Reset_zoom"
+msgstr "ज़ूम रीसेट करें"
+
+# description
+msgid "Existing_pinboards_answers"
+msgstr ""
+"मौजूदा pinboards, जवाब और डेटा "
+"स्रोत इस स्टीकर के साथ "
+"प्रभावित हो जाएगा।"
+
+# description
+msgid "You_dont_have"
+msgstr ""
+"आप किसी भी डेटा के लिए पहुँच "
+"नहीं है।"
+
+# description
+msgid "Ready_for"
+msgstr "उन्नत खोज के लिए तैयार हैं?"
+
+# description
+msgid "To_begin_a"
+msgstr ""
+"एक नई खोज शुरू करने के लिए, "
+"पहले चयन सूत्रों का उपयोग "
+"करके अपने डेटा स्रोत का चयन "
+"करें। खोज चयनित डेटा स्रोत "
+"के संदर्भ में होता है। लेकिन "
+"चिंता मत करो। आप कभी नहीं एक "
+"बात याद आती है, तो ThoughtSpot भी "
+"सुझाव अन्य डेटा स्रोतों से "
+"आप के लिए कर देगा।"
+
+# description
+msgid "Slack_Integration"
+msgstr "सुस्त एकीकरण"
+
+# description
+msgid "No_Pinboards"
+msgstr "कोई Pinboards"
+
+# description
+msgid "important_important_overrides"
+msgstr ""
+"! महत्वपूर्ण: महत्वपूर्ण "
+"ओवरराइड्स और अन्य सीएसएस "
+"नियम एक विशेष तत्व के लिए "
+"निर्धारित। हम"
+
+# description
+msgid "Browse"
+msgstr "ब्राउज़ करें"
+
+# description
+msgid "Failed"
+msgstr "में विफल रहा"
+
+# description
+msgid "selector"
+msgstr ".selector {"
+
+# description
+msgid "Select_an_entity"
+msgstr ""
+"इसके बाद के संस्करण देखने के "
+"लिए एक निकाय का चयन करें मदद"
+
+# description
+msgid "REFRESH"
+msgstr "ताज़ा करें"
+
+# description
+msgid "SOURCE_COLUMN"
+msgstr "स्रोत स्तंभ"
+
+# description
+msgid "See_other"
+msgstr "दूसरे को देख\""
+
+# description
+msgid "key_1_8005087008"
+msgstr "+1 800-508-7008 Ext. 1"
+
+# description
+msgid "Support"
+msgstr "समर्थन"
+
+# description
+msgid "cursor_pointer"
+msgstr "कर्सर: सूचक;"
+
+# description
+msgid "No_prefix_required"
+msgstr ""
+"यहाँ आवश्यक कोई उपसर्ग। एक "
+"वर्ग का नाम बनाएँ जो घटक और "
+"सीएसएस नियम सबसे अच्छा "
+"प्रतिनिधित्व करते हैं।"
+
+# description
+msgid "Readonly"
+msgstr "केवल पढ़ने के लिए"
+
+# description
+msgid "rows_here"
+msgstr "पंक्तियाँ यहाँ।"
+
+# description
+msgid "right_0"
+msgstr "सही: 0;"
+
+# description
+msgid "filtered_on"
+msgstr "पर फ़िल्टर किया गया"
+
+# description
+msgid "Border"
+msgstr "सीमा:"
+
+# description
+msgid "Conditional_Formatting"
+msgstr "सशर्त स्वरूपण..."
+
+# description
+msgid "zindex_10"
+msgstr "z-सूचकांक: 10;"
+
+# description
+msgid "Invalid_loginpassword"
+msgstr "अमान्य लॉगिन/पासवर्ड!"
+
+# description
+msgid "Physical_version"
+msgstr "भौतिक संस्करण:"
+
+# description
+msgid "Example2"
+msgstr "उदाहरण:"
+
+# description
+msgid "No_suggestions_from"
+msgstr ""
+"चयनित स्रोतों से कोई सुझाव"
+
+# description
+msgid "Flex"
+msgstr "फ्लेक्स"
+
+# description
+msgid "Could_not_reach"
+msgstr ""
+"सर्वर तक नहीं पहुँच सकता। "
+"बाद में पुन: प्रयास करें।"
+
+# description
+msgid "attribute"
+msgstr "विशेषता"
+
+# description
+msgid "I_didnt_get"
+msgstr ""
+"मैं जो नहीं मिला। आप मतलब था:"
+
+# description
+msgid "CSS"
+msgstr "सीएसएस:"
+
+# description
+msgid "Confirm_Password"
+msgstr "पासवर्ड की पुष्टि करें"
+
+# description
+msgid "Totally_removes_the"
+msgstr ""
+"पूरी तरह से पृष्ठ तत्व "
+"निकालता है।"
+
+# description
+msgid "Used_when_we"
+msgstr ""
+"जब हम किसी तत्व अपनी मूल "
+"स्थिति के सापेक्ष स्थिति "
+"निर्धारित करने के लिए चाहते "
+"हैं का उपयोग किया। आपको "
+"स्थान सेट करने के लिए "
+"पोजिशनिंग विशेषताएँ ऊपर, "
+"नीचे छोड़ दिया और सही का "
+"उपयोग करें।"
+
+# description
+msgid "key_2_from"
+msgstr "{3} से {2}"
+
+# description
+msgid "Row_security"
+msgstr "पंक्ति सुरक्षा"
+
+# description
+msgid "Worksheet_join_rule"
+msgstr ""
+"कार्यपत्रक सम्मिलित हों "
+"नियम करने के लिए सेट है:"
+
+# description
+msgid "pam"
+msgstr ".pam;"
+
+# description
+msgid "Thoughtspot_computed"
+msgstr "Thoughtspot गणना"
+
+# description
+msgid "in"
+msgstr "में"
+
+# description
+msgid "Exclude"
+msgstr "को शामिल न करें\""
+
+# description
+msgid "CLICK_TO"
+msgstr ""
+"रीसेट करने के लिए क्लिक करें"
+
+# description
+msgid "Call"
+msgstr "कॉल करें:"
+
+# description
+msgid "download_sage"
+msgstr "ऋषि मेटाडेटा डाउनलोड"
+
+# description
+msgid "Some_columns_names"
+msgstr ""
+"कुछ स्तंभ नाम पहले से ही "
+"मौजूद हैं। आप आप जोड़ रहे हैं "
+"नए स्तंभों के लिए एक उपसर्ग "
+"जोड़ सकते हैं।"
+
+# description
+msgid "measure"
+msgstr "उपाय"
+
+# description
+msgid "Data_written"
+msgstr "डेटा लिखा:"
+
+# description
+msgid "Chart_axes"
+msgstr "चार्ट अक्ष"
+
+# description
+msgid "has"
+msgstr "है"
+
+# description
+msgid "Slack_Username"
+msgstr "सुस्त उपयोगकर्ता नाम:"
+
+# description
+msgid "Description"
+msgstr "विवरण"
+
+# description
+msgid "Right"
+msgstr "अधिकार"
+
+# description
+msgid "Oops_There_was"
+msgstr ""
+"उफ़! आपके डेटा स्रोत लोड करने "
+"में कोई त्रुटि आई।"
+
+# description
+msgid "gitcommit"
+msgstr "git-कमिट:"
+
+# description
+msgid "rows_while"
+msgstr "पंक्तियाँ आयात करते समय।"
+
+# description
+msgid "from_the"
+msgstr "pinboard से?"
+
+# description
+msgid "child"
+msgstr "बच्चे"
+
+# description
+msgid "CSS_classname"
+msgstr "सीएसएस classname नामकरण"
+
+# description
+msgid "Email"
+msgstr "ईमेल:"
+
+# description
+msgid "Dependency"
+msgstr "निर्भरता:"
+
+# description
+msgid "Clear_Selections"
+msgstr "/ / साफ़ चयन"
+
+# description
+msgid "Keyword"
+msgstr "कीवर्ड"
+
+# description
+msgid "types"
+msgstr "\"प्रकार"
+
+# description
+msgid "parent"
+msgstr "माता-पिता"
+
+# description
+msgid "Add_js_prefix"
+msgstr ""
+"'जे एस' उपसर्ग केवल "
+"जावास्क्रिप्ट में उपयोग किए "
+"जाने वाले सभी वर्ग के लिए "
+"जोड़ें। Ex:. js-className"
+
+# description
+msgid "gitbranch"
+msgstr "git-शाखा:"
+
+# description
+msgid "Please_contact_your"
+msgstr ""
+"कृपया अपने सिस्टम "
+"व्यवस्थापक से संपर्क करें।"
+
+# description
+msgid "pa2"
+msgstr ". pa;"
+
+# description
+msgid "a_numeric"
+msgstr ""
+"-एक संख्यात्मक मान कि गणित, एक"
+" गिनती या माप की तरह का उपयोग "
+"की तुलना में कर सकते हैं।"
+
+# description
+msgid "Aggregation"
+msgstr "एकत्रीकरण"
+
+# description
+msgid "Successful"
+msgstr "सफल"
+
+# description
+msgid "Style_class"
+msgstr "शैली वर्ग का नाम:"
+
+# description
+msgid "Tables"
+msgstr "तालिकाएँ"
+
+# description
+msgid "No"
+msgstr "नहीं"
+
+# description
+msgid "Oops_Sorry_there"
+msgstr ""
+"उफ़! क्षमा करें, कुछ "
+"त्रुटियाँ थीं।"
+
+# description
+msgid "Confirm_Changes"
+msgstr "परिवर्तन की पुष्टि करें"
+
+# description
+msgid "Inclusion_rule_is"
+msgstr ""
+"शामिल किए जाने के नियम पर सेट "
+"है:"
+
+# description
+msgid "Formula_Assistant"
+msgstr "सूत्र सहायक"
+
+# description
+msgid "Append"
+msgstr "इसके पीछे जोड़ें"
+
+# description
+msgid "Debug"
+msgstr "डीबग करें"
+
+# description
+msgid "Relationship_Builder"
+msgstr "संबंध बिल्डर"
+
+# description
+msgid "Incomplete_only"
+msgstr "केवल अपूर्ण"
+
+# description
+msgid "ADD"
+msgstr "जोड़ें"
+
+# description
+msgid "Multiple_matches"
+msgstr ""
+"एक से अधिक मेल खाता है। एक का "
+"चयन करें:"
+
+# description
+msgid "Less"
+msgstr "... कम"
+
+# description
+msgid "Press_escape_to"
+msgstr ""
+"पुनरावृत्ति से बाहर निकलें "
+"करने के लिए escape दबाएँ"
+
+# description
+msgid "Display"
+msgstr "प्रदर्शन"
+
+# description
+msgid "Objects_count"
+msgstr "वस्तुओं की गणना:"
+
+# description
+msgid "None"
+msgstr "कोई नहीं"
+
+# description
+msgid "Destination_Table"
+msgstr "गंतव्य तालिका"
+
+# description
+msgid "from"
+msgstr "से"
+
+# description
+msgid "Chart_page"
+msgstr "चार्ट पृष्ठ"
+
+# description
+msgid "How_to_structure"
+msgstr ""
+"मेरी कम संरचना करने के लिए "
+"कैसे?"
+
+# description
+msgid "Search_memcache"
+msgstr "खोज memcache:"
+
+# description
+msgid "Save"
+msgstr "सहेजें"
+
+# description
+msgid "Float_left"
+msgstr "यह तत्व नाव छोड़ दिया"
+
+# description
+msgid "Grouping_of"
+msgstr "सीएसएस गुणों के समूह:"
+
+# description
+msgid "Headings"
+msgstr "शीर्षक:"
+
+# description
+msgid "The_new_data"
+msgstr ""
+"ThoughtSpot में मौजूदा डेटा को नए "
+"डेटा लिंक नहीं किया जाएगा।"
+
+# description
+msgid "Editing_Visualization"
+msgstr "संपादन दृश्य"
+
+# description
+msgid "SORT"
+msgstr "सॉर्ट करें"
+
+# description
+msgid "Are_you"
+msgstr "तुम यहाँ नए हो?"
+
+# description
+msgid "Tip_In"
+msgstr "टिप: अधिकांश मामलों में"
+
+# description
+msgid "Clear_cache"
+msgstr "कैशे साफ़ करें"
+
+# description
+msgid "Download_Trace"
+msgstr "ट्रेस डाउनलोड"
+
+# description
+msgid "Comment_List"
+msgstr "टिप्पणी सूची"
+
+# description
+msgid "Summary"
+msgstr "सारांश"
+
+# description
+msgid "Columns"
+msgstr "स्तंभ"
+
+# description
+msgid "Text"
+msgstr "/ * पाठ * /"
+
+# description
+msgid "colorreddefault"
+msgstr "color:@red-default"
+
+# description
+msgid "dn"
+msgstr "dn"
+
+# description
+msgid "Release_Notes"
+msgstr "नोट्स जारी करें"
+
+# description
+msgid "There_is_no"
+msgstr ""
+"इस प्रणाली में अभी तक कोई "
+"डेटा नहीं है।"
+
+# description
+msgid "di"
+msgstr "di"
+
+# description
+msgid "Back"
+msgstr "वापस"
+
+# description
+msgid "db"
+msgstr "db"
+
+# description
+msgid "Click_on_the2"
+msgstr ""
+"सुरक्षा फ़ाइल डाउनलोड करने "
+"के लिए बटन पर क्लिक करें।"
+
+# description
+msgid "Which"
+msgstr "जो"
+
+# description
+msgid "questionText"
+msgstr "{questionText}"
+
+# description
+msgid "Showing_only"
+msgstr "केवल दिखा रहा है"
+
+# description
+msgid "Buttons"
+msgstr "बटन:"
+
+# description
+msgid "Show_me"
+msgstr "मुझे बताओ"
+
+# description
+msgid "Example"
+msgstr "उदाहरण"
+
+# description
+msgid "A3_Analysis"
+msgstr "A3 विश्लेषण"
+
+# description
+msgid "Not_Searchable"
+msgstr "योग्य नहीं"
+
+# description
+msgid "This_content_will2"
+msgstr ""
+"इस सामग्री लाल रंग "
+"फ़ॉन्ट-लाल-डिफ़ॉल्ट सीएसएस "
+"नियम से इनहेरिट करेगी। हम "
+"किसी भी नए सीएसएस नियम बनाने "
+"से बचने के रूप में इस "
+"दृष्टिकोण बेहतर है, है।"
+
+# description
+msgid "statements_were"
+msgstr ""
+"कथन निष्पादित किया गया था।"
+
+# description
+msgid "built_on"
+msgstr "पर निर्मित:"
+
+# description
+msgid "Floats"
+msgstr "मंगाई"
+
+# description
+msgid "Add_charts_or"
+msgstr ""
+"इस pinboard करने के लिए चार्ट या "
+"तालिकाएँ जोड़ें"
+
+# description
+msgid "Relative"
+msgstr "रिश्तेदार"
+
+# description
+msgid "Preferences"
+msgstr "वरीयताएँ"
+
+# description
+msgid "ofhidden"
+msgstr ".of-छिपा;"
+
+# description
+msgid "Add_a_prefix"
+msgstr ""
+"एक उपसर्ग के लिए चयनित स्तंभ "
+"जोड़ें।"
+
+# description
+msgid "by"
+msgstr "द्वारा"
+
+# description
+msgid "Similar_to_inline"
+msgstr ""
+"इसी तरह इनलाइन करने के लिए "
+"सिवाय इसके कि आप एक चौड़ाई और "
+"ऊंचाई जो सम्मान किया जाएगा "
+"सेट करने के लिए कर सकते हैं।"
+
+# description
+msgid "and"
+msgstr "और"
+
+# description
+msgid "Version"
+msgstr "संस्करण:"
+
+# description
+msgid "No_preview"
+msgstr "पूर्वावलोकन उपलब्ध नहीं।"
+
+# description
+msgid "Download_the"
+msgstr ""
+"मॉडलिंग फ़ाइल को डाउनलोड "
+"करें"
+
+# description
+msgid "Add_to"
+msgstr "खोज करने के लिए जोड़ें"
+
+# description
+msgid "Update_Password"
+msgstr "पासवर्ड का अद्यतन करें"
+
+# description
+msgid "E2E_and_Unit"
+msgstr "E2E और इकाई वर्ग का नाम:"
+
+# description
+msgid "Applied_on_the"
+msgstr ""
+"और यह पैरेंट तत्व पर लागू का "
+"उपयोग करता है सीएसएस छद्म "
+"चयनकर्ता (: के बाद) तैरता साफ़ "
+"करने के लिए।"
+
+# description
+msgid "Id"
+msgstr "आईडी:"
+
+# description
+msgid "Download_as"
+msgstr "के रूप में डाउनलोड करें"
+
+# description
+msgid "Scroll_for"
+msgstr ""
+"अधिक सुझावों के लिए स्क्रॉल "
+"करें"
+
+# description
+msgid "Background_colors"
+msgstr "पृष्ठभूमि रंग & बॉक्स मॉडल:"
+
+# description
+msgid "Class_name"
+msgstr "वर्ग का नाम-"
+
+# description
+msgid "complete"
+msgstr "को पूरा"
+
+# description
+msgid "supportthoughtspotcom"
+msgstr "support@thoughtspot.com"
+
+# description
+msgid "relation"
+msgstr "संबंध"
+
+# description
+msgid "Optional"
+msgstr "(वैकल्पिक)"
+
+# description
+msgid "Clear"
+msgstr "स्पष्ट"
+
+# description
+msgid "Sources"
+msgstr "स्रोतों"
+
+# description
+msgid "SOURCE_TYPE"
+msgstr "स्रोत का प्रकार:"
+
+# description
+msgid "Update_the"
+msgstr "फ़ाइल अद्यतन"
+
+# description
+msgid "order"
+msgstr "आदेश"
+
+# description
+msgid "This_video_shows"
+msgstr ""
+"इस वीडियो के साथ खोज शुरू "
+"करने के लिए कैसे दिखाता है। "
+"आप यह देखने के लिए लगने के लिए"
+" 2 1/2 मिनट में एक विशेषज्ञ बन "
+"जाऊँगा।"
+
+# description
+msgid "Upload_your2"
+msgstr "अपना डेटा अपलोड करें"
+
+# description
+msgid "FILTER"
+msgstr "फ़िल्टर..."
+
+# description
+msgid "This_filter_type"
+msgstr ""
+"इस फ़ लि् टर प्रकार खोज पट्टी "
+"में केवल संपादित किया जा "
+"सकता।"
+
+# description
+msgid "Version_info"
+msgstr "संस्करण जानकारी:"
+
+# description
+msgid "Layouts_templates"
+msgstr "लेआउट टेम्पलेट"
+
+# description
+msgid "Show_underlying"
+msgstr "अंतर्निहित डेटा दिखाएँ"
+
+# description
+msgid "Update_Preferences"
+msgstr "प्राथमिकताएँ अद्यतन करें"
+
+# description
+msgid "Dependents"
+msgstr "आश्रितों"
+
+# description
+msgid "Enter_The"
+msgstr "क्रांति दर्ज करें"
+
+# description
+msgid "HTML"
+msgstr "HTML:"
+
+# description
+msgid "Data_type"
+msgstr "डेटा प्रकार"
+
+# description
+msgid "msg_code.10001.detail"
+msgstr ""
+"मेटाडेटा संग्रह पहुँच में "
+"नहीं है।"
+
+# description
+msgid "msg_code.1205.summary"
+msgstr ""
+"समूह सफलतापूर्वक बनाया गया।"
+
+# description
+msgid "msg_code.160.summary"
+msgstr ""
+"एकत्रित कार्यपत्रकों की "
+"सूची पुनर्प्राप्त नहीं की जा"
+" सकी।"
+
+# description
+msgid "msg_code.105.summary"
+msgstr ""
+"भ्रष्टाचार के कारण {1} से "
+"दृश्य को हटाने विफलता"
+
+# description
+msgid "msg_code.112.summary"
+msgstr "Pinboards सफलतापूर्वक हटा दिया।"
+
+# description
+msgid "msg_code.11008.summary"
+msgstr "डेटा निर्यात विफल रहा"
+
+# description
+msgid "msg_code.1601.summary"
+msgstr ""
+"डेटा स्रोत नमूना मान "
+"पुनर्प्राप्त नहीं किया जा "
+"सकता है।"
+
+# description
+msgid "msg_code.809.summary"
+msgstr ""
+"ईमेल सफलतापूर्वक {adminEmail} भेजा "
+"गया था। आप समस्या रिपोर्टिंग"
+" के लिए धन्यवाद!"
+
+# description
+msgid "msg_code.1231.summary"
+msgstr "भूमिका हटाने में विफल रहा"
+
+# description
+msgid "msg_code.901.summary"
+msgstr ""
+"उत्तर अनुमतियाँ प्राप्त "
+"नहीं किया जा सका।"
+
+# description
+msgid "msg_code.501.summary"
+msgstr ""
+"Excel डेटा पुनर्प्राप्त नहीं "
+"किया जा सकता है।"
+
+# description
+msgid "msg_code.10003.action"
+msgstr ""
+"कृपया का उपयोग आपके "
+"व्यवस्थापक से अनुरोध करें।"
+
+# description
+msgid "msg_code.101.summary"
+msgstr ""
+"{1} {2} के लिए जोड़ने में विफलता।"
+
+# description
+msgid "msg_code.13001.detail"
+msgstr ""
+"त्रुटि बनाने डेटाबेस स्कीमा"
+
+# description
+msgid "msg_code.10009.summary"
+msgstr "समूह नहीं जोड़ सकते"
+
+# description
+msgid "msg_code.11004.summary"
+msgstr "अमान्य दृश्य पहचानकर्ता"
+
+# description
+msgid "msg_code.805.summary"
+msgstr ""
+"डीबग जानकारी पुनर्प्राप्त "
+"नहीं की जा सकी।"
+
+# description
+msgid "msg_code.10005.summary"
+msgstr ""
+"आधार ऑब्जेक्ट अनुपलब्ध है।"
+
+# description
+msgid "msg_code.13019.detail"
+msgstr ""
+"पुराने संस्करण के लिए स्कीमा"
+" अद्यतन: {0} प्राप्त और पर ध्यान"
+" नहीं दिया"
+
+# description
+msgid "msg_code.801.summary"
+msgstr ""
+"MemCache साफ़ नहीं किया जा सकता "
+"है।"
+
+# description
+msgid "msg_code.9001.detail"
+msgstr ""
+"ट्रेस फ़ाइल {adminEmail} के लिए ईमेल "
+"कृपया।"
+
+# description
+msgid "msg_code.1817.summary"
+msgstr ""
+"क्षमा करें! इस समय ऑब्जेक्ट "
+"को आयात करने में असमर्थ!"
+
+# description
+msgid "msg_code.1806.summary"
+msgstr ""
+"क्लस्टर प्रबंधन सेवा से "
+"प्रवेश प्राप्त नहीं किया जा "
+"सका।"
+
+# description
+msgid "msg_code.1813.summary"
+msgstr ""
+"क्षमा करें! इस पल में "
+"प्रतिक्रिया सबमिट करने के "
+"लिए में असमर्थ!"
+
+# description
+msgid "msg_code.1406.summary"
+msgstr "स्वास्थ्य जाँच विफल रहा।"
+
+# description
+msgid "msg_code.1006.summary"
+msgstr ""
+"डेटा पंक्तियों "
+"पुनर्प्राप्त नहीं किया जा "
+"सकता है।"
+
+# description
+msgid "msg_code.10004.action"
+msgstr ""
+"कृपया अपने व्यवस्थापक से "
+"पहुँच का अनुरोध"
+
+# description
+msgid "msg_code.1802.summary"
+msgstr ""
+"क्लस्टर डेटाबेस सेवा से "
+"जानकारी पुनर्प्राप्त नहीं "
+"किया जा सकता है।"
+
+# description
+msgid "msg_code.1402.summary"
+msgstr "लॉग इन विफल रहा।"
+
+# description
+msgid "msg_code.169.summary"
+msgstr ""
+"एकत्रित कार्यपत्रक {1} बनाया।"
+
+# description
+msgid "msg_code.176.summary"
+msgstr ""
+"टिप्पणी अद्यतन करने में "
+"असमर्थ था"
+
+# description
+msgid "msg_code.179.detail"
+msgstr ""
+"हम सुनिश्चित नहीं हैं, क्या "
+"हुआ। ट्रेस फ़ाइल {adminEmail} के लिए "
+"ईमेल कृपया।"
+
+# description
+msgid "msg_code.158.summary"
+msgstr ""
+"Pinboards की सूची पुनर्प्राप्त "
+"नहीं किया जा सकता है।"
+
+# description
+msgid "msg_code.165.summary"
+msgstr ""
+"स्तंभों की सूची "
+"पुनर्प्राप्त नहीं की जा सकी।"
+
+# description
+msgid "msg_code.13004.detail"
+msgstr ""
+"ऑब्जेक्ट आईडी के साथ: प्रकार "
+"का {0}: {1} अमान्य स्थिति में"
+
+# description
+msgid "msg_code.9010.detail"
+msgstr ""
+"ऑब्जेक्ट इसके निर्भरताएँ "
+"में से कुछ में त्रुटियों के "
+"कारण खोला नहीं जा सकता"
+
+# description
+msgid "msg_code.1224.detail"
+msgstr ""
+"उपयोगकर्ता समूह के लिए असाइन"
+" करने के लिए विफल"
+
+# description
+msgid "msg_code.147.summary"
+msgstr ""
+"कार्यपत्रक को सहेजा नहीं जा "
+"सका।"
+
+# description
+msgid "msg_code.1629.summary"
+msgstr ""
+"कनेक्शन सफलतापूर्वक हटाया "
+"नहीं"
+
+# description
+msgid "msg_code.154.summary"
+msgstr ""
+"मेटाडेटा की सूची "
+"पुनर्प्राप्त नहीं किया जा "
+"सकता है।"
+
+# description
+msgid "msg_code.1229.summary"
+msgstr "भूमिका बनाने में विफल रहा"
+
+# description
+msgid "msg_code.107.detail"
+msgstr ""
+"उह ओह। हम सुनिश्चित नहीं हैं, "
+"क्या हुआ। कृपया 'रिपोर्ट "
+"करने के लिए अपने व्यवस्थापक "
+"करने के लिए, {adminEmail} एक रिपोर्ट "
+"ईमेल समस्या' पर क्लिक करें।"
+
+# description
+msgid "msg_code.136.summary"
+msgstr "{1} बचाया।"
+
+# description
+msgid "msg_code.13022.summary"
+msgstr "अमान्य फ़िल्टर मान: {मान}"
+
+# description
+msgid "msg_code.1625.summary"
+msgstr ""
+"सफलतापूर्वक कार्य शुरू कर "
+"दिया फिर से लोड करें।"
+
+# description
+msgid "msg_code.1218.summary"
+msgstr "समूह हटाया नहीं जा सका।"
+
+# description
+msgid "msg_code.125.summary"
+msgstr ""
+"एक विफलता विवरण तालिकाओं के "
+"लिए था।"
+
+# description
+msgid "msg_code.132.summary"
+msgstr ""
+"तालिका सफलतापूर्वक सहेजा "
+"गया।"
+
+# description
+msgid "msg_code.1207.summary"
+msgstr ""
+"उपयोगकर्ता सफलतापूर्वक "
+"अद्यतन किया।"
+
+# description
+msgid "msg_code.13011.summary"
+msgstr "उत्तर बनाना विफल रहा"
+
+# description
+msgid "msg_code.1614.summary"
+msgstr ""
+"डेटा स्रोत कनेक्शन गुण "
+"पुनर्प्राप्त नहीं किया जा "
+"सकता है।"
+
+# description
+msgid "msg_code.1214.summary"
+msgstr ""
+"पासवर्ड अद्यतन नहीं किया जा "
+"सका।"
+
+# description
+msgid "msg_code.1621.summary"
+msgstr ""
+"Sql निष्पादित करने में विफल।"
+
+# description
+msgid "msg_code.10005.detail"
+msgstr ""
+"इस ऑब्जेक्ट द्वारा संदर्भित "
+"अंतर्निहित ऑब्जेक्ट संग्रह "
+"में अनुपलब्ध है।"
+
+# description
+msgid "msg_code.114.summary"
+msgstr ""
+"जवाब सफलतापूर्वक हटा दिया।"
+
+# description
+msgid "msg_code.121.summary"
+msgstr ""
+"संबंध अद्यतन नहीं किया जा "
+"सका।"
+
+# description
+msgid "msg_code.1603.summary"
+msgstr ""
+"DDL निष्पादित नहीं किया जा "
+"सकता है।"
+
+# description
+msgid "msg_code.1610.summary"
+msgstr ""
+"डेटा स्रोत नहीं बनाया जा "
+"सका।"
+
+# description
+msgid "msg_code.1203.summary"
+msgstr ""
+"उपयोगकर्ता सफलतापूर्वक "
+"बनाया गया।"
+
+# description
+msgid "msg_code.1815.detail"
+msgstr "क्या हुआ? {1}।"
+
+# description
+msgid "msg_code.510.summary"
+msgstr "फ़ाइल अपलोड सफल।"
+
+# description
+msgid "msg_code.103.summary"
+msgstr ""
+"सफलता। दृश्य {1} से हटा दिया "
+"गया है।"
+
+# description
+msgid "msg_code.110.summary"
+msgstr ""
+"स्टीकर सफलतापूर्वक हटा "
+"दिया।"
+
+# description
+msgid "msg_code.9504.summary"
+msgstr "{1} खोला नहीं जा सकता।"
+
+# description
+msgid "msg_code.13013.detail"
+msgstr ""
+"सेवा प्रदाता उपलब्ध नहीं: {0}"
+
+# description
+msgid "msg_code.11002.summary"
+msgstr "अमान्य तालिका/क्वेरी resultset"
+
+# description
+msgid "msg_code.11006.detail"
+msgstr ""
+"बाज़ के लिए क्वेरी के "
+"निष्पादन में त्रुटि"
+
+# description
+msgid "msg_code.803.summary"
+msgstr ""
+"संग्रह करने वालों "
+"पुनर्प्राप्त नहीं किया जा "
+"सकता है।"
+
+# description
+msgid "msg_code.10003.summary"
+msgstr ""
+"दुर्भाग्य से, आप नहीं कर "
+"सकती।"
+
+# description
+msgid "msg_code.1008.summary"
+msgstr ""
+"तालिका निर्माण रद्द नहीं "
+"किया जा सकता है।"
+
+# description
+msgid "msg_code.9005.summary"
+msgstr ""
+"उह ओह। हम इस अनुरोध के लिए "
+"डेटा प्राप्त करने में समस्या"
+" हो रही।"
+
+# description
+msgid "msg_code.1404.summary"
+msgstr ""
+"लॉगिन config प्राप्त नहीं किया "
+"जा सका।"
+
+# description
+msgid "msg_code.1811.summary"
+msgstr ""
+"चेतावनी प्रबंधन सेवा से "
+"ईवेंट जानकारी पुनर्प्राप्त "
+"नहीं किया जा सकता है।"
+
+# description
+msgid "msg_code.1004.summary"
+msgstr "डेटा लोड करने में विफल।"
+
+# description
+msgid "msg_code.9001.summary"
+msgstr ""
+"उह ओह। हम सुनिश्चित नहीं हैं, "
+"क्या हुआ।"
+
+# description
+msgid "msg_code.1011.summary"
+msgstr ""
+"नमूना मान पुनर्प्राप्त नहीं "
+"किया जा सकता है।"
+
+# description
+msgid "msg_code.10008.detail"
+msgstr ""
+"उपयोगकर्ता {0} संग्रह में नहीं"
+" मिला।"
+
+# description
+msgid "msg_code.13027.summary"
+msgstr ""
+"लोड शेड्यूल अक्षम नहीं किया "
+"जा सकता।"
+
+# description
+msgid "msg_code.1800.summary"
+msgstr ""
+"खोज सेवा से क्लस्टर जानकारी "
+"पुनर्प्राप्त नहीं किया जा "
+"सकता है।"
+
+# description
+msgid "msg_code.178.summary"
+msgstr ""
+"नियम सफलतापूर्वक सहेजा गया।"
+
+# description
+msgid "msg_code.1400.summary"
+msgstr ""
+"सत्र जानकारी पुनर्प्राप्त "
+"नहीं की जा सकी।"
+
+# description
+msgid "msg_code.1000.summary"
+msgstr "डेटा कैशिंग असफल रहा था।"
+
+# description
+msgid "msg_code.13009.summary"
+msgstr "अमान्य ऋषि प्रश्न।"
+
+# description
+msgid "msg_code.13016.summary"
+msgstr "अमान्य भौतिक स्कीमा आद्य"
+
+# description
+msgid "msg_code.101.detail"
+msgstr ""
+"दृश्यावलोकन {2} को जोड़ा नहीं "
+"जा सका।"
+
+# description
+msgid "msg_code.167.summary"
+msgstr ""
+"जवाब प्राप्त नहीं किया जा "
+"सका।"
+
+# description
+msgid "msg_code.174.summary"
+msgstr ""
+"टिप्पणी प्राप्त नहीं किया जा"
+" सका।"
+
+# description
+msgid "msg_code.13016.detail"
+msgstr ""
+"बाज़ से भौतिक स्कीमा में "
+"विसंगति: {0}"
+
+# description
+msgid "msg_code.181.summary"
+msgstr "नियम को हटाया नहीं जा सका।"
+
+# description
+msgid "msg_code.13008.detail"
+msgstr ""
+"ऋषि से स्तंभ प्रकार की याद आ "
+"रही है-इनपुट: {0}"
+
+# description
+msgid "msg_code.119.summary"
+msgstr "संबंध बनाया नहीं जा सका।"
+
+# description
+msgid "msg_code.13005.summary"
+msgstr "ऑब्जेक्ट पहले से मौजूद है"
+
+# description
+msgid "msg_code.156.summary"
+msgstr ""
+"संबंधों की सूची "
+"पुनर्प्राप्त नहीं की जा सकी।"
+
+# description
+msgid "msg_code.163.summary"
+msgstr ""
+"DB दृश्यों की सूची "
+"पुनर्प्राप्त नहीं की जा सकी।"
+
+# description
+msgid "msg_code.170.summary"
+msgstr ""
+"एकत्रित की गई कार्यपत्रक "
+"नहीं बनाया जा सका।"
+
+# description
+msgid "msg_code.508.summary"
+msgstr ""
+"शीर्षक डेटा पुनर्प्राप्त "
+"नहीं किया जा सकता है।"
+
+# description
+msgid "msg_code.108.summary"
+msgstr ""
+"स्टीकर सफलतापूर्वक बनाया "
+"गया।"
+
+# description
+msgid "msg_code.11009.detail"
+msgstr ""
+"Callosum में डेटा पीढ़ी में त्रुटि"
+
+# description
+msgid "msg_code.152.summary"
+msgstr ""
+"सफलतापूर्वक अनअसाइन्ड "
+"स्टीकर।"
+
+# description
+msgid "msg_code.504.summary"
+msgstr ""
+"चार्ट डेटा पुनर्प्राप्त "
+"नहीं किया जा सकता है।"
+
+# description
+msgid "msg_code.1623.summary"
+msgstr ""
+"चयनित तालिकाएँ लोड करने के "
+"लिए कतार में हैं।"
+
+# description
+msgid "msg_code.1216.summary"
+msgstr ""
+"उपयोगकर्ताओं को हटाया नहीं "
+"जा सकता है।"
+
+# description
+msgid "msg_code.1223.summary"
+msgstr ""
+"प्रोफ़ाइल तस्वीर अपलोड नहीं "
+"किए जा सके।"
+
+# description
+msgid "msg_code.808.summary"
+msgstr ""
+"{AdminEmail} के लिए ईमेल भेजने में "
+"विफल रहा।"
+
+# description
+msgid "msg_code.1630.summary"
+msgstr ""
+"इस कनेक्शन को हटाने में कोई "
+"त्रुटि थी।"
+
+# description
+msgid "msg_code.1230.summary"
+msgstr "सफलतापूर्वक भूमिका हटाएँ"
+
+# description
+msgid "msg_code.900.summary"
+msgstr ""
+"तालिका अनुमतियाँ प्राप्त "
+"नहीं किया जा सका।"
+
+# description
+msgid "msg_code.10009.detail"
+msgstr ""
+"इस समूह को समूह में जोड़ने के "
+"लिए आप प्रयास कर रहे हैं पहले "
+"से ही संबंध रखता है"
+
+# description
+msgid "msg_code.10001.action"
+msgstr ""
+"कृपया अपने व्यवस्थापक से "
+"संपर्क करें।"
+
+# description
+msgid "msg_code.130.summary"
+msgstr "Pinboard खोला नहीं जा सका।"
+
+# description
+msgid "msg_code.1612.summary"
+msgstr ""
+"डेटा स्रोत कनेक्शन फ़ील्ड "
+"जानकारी पुनर्प्राप्त नहीं "
+"की जा सकी।"
+
+# description
+msgid "msg_code.1212.summary"
+msgstr ""
+"समूह अद्यतन नहीं किया जा "
+"सका।"
+
+# description
+msgid "msg_code.9506.summary"
+msgstr ""
+"ऑब्जेक्ट सिस्टम में मौजूद "
+"नहीं है।"
+
+# description
+msgid "msg_code.1201.summary"
+msgstr ""
+"समूह सूची पुनर्प्राप्त नहीं "
+"किया जा सकता है।"
+
+# description
+msgid "msg_code.9502.summary"
+msgstr ""
+"ThoughtSpot करने के लिए कनेक्ट नहीं "
+"कर सकता। कृपया शीघ्र ही पुन: "
+"प्रयास करें।"
+
+# description
+msgid "msg_code.1809.summary"
+msgstr ""
+"क्लस्टर इवेंट सेवा से "
+"जानकारी पुनर्प्राप्त नहीं "
+"किया जा सकता है।"
+
+# description
+msgid "msg_code.1816.summary"
+msgstr ""
+"सफलतापूर्वक आयातित "
+"वस्तुओं।"
+
+# description
+msgid "msg_code.104.detail"
+msgstr ""
+"दृश्यावलोकन pinboard से हटाया "
+"नहीं जा सका।"
+
+# description
+msgid "msg_code.1805.summary"
+msgstr ""
+"क्लस्टर प्रबंधन सेवा से "
+"विस्तार से जानकारी "
+"पुनर्प्राप्त नहीं किया जा "
+"सकता है।"
+
+# description
+msgid "msg_code.10001.summary"
+msgstr "कनेक्शन विफल"
+
+# description
+msgid "msg_code.10002.detail"
+msgstr ""
+"सर्वर के लिए क्लाइंट से "
+"इनपुट अमान्य है"
+
+# description
+msgid "msg_code.701.summary"
+msgstr ""
+"स्तंभ की आश्रितों "
+"पुनर्प्राप्त नहीं किया जा "
+"सकता है।"
+
+# description
+msgid "msg_code.9010.summary"
+msgstr ""
+"ऑब्जेक्ट को खोला नहीं जा "
+"सकता है।"
+
+# description
+msgid "msg_code.13029.summary"
+msgstr ""
+"डेटा स्रोत कनेक्शन को "
+"सफ़लतापूर्वक संपादित किया"
+
+# description
+msgid "msg_code.13010.detail"
+msgstr ""
+"कारण तार्किक मेटाडेटा करने "
+"के लिए ऋषि भेजना विफल रहा: {0}"
+
+# description
+msgid "msg_code.13002.detail"
+msgstr "दृश्य बनाने में त्रुटि"
+
+# description
+msgid "msg_code.1624.detail"
+msgstr ""
+"कोई मैपिंग करने के लिए Thoughtspot "
+"डेटा प्रकार स्रोत डेटा "
+"प्रकार के लिए मिला।"
+
+# description
+msgid "msg_code.1002.summary"
+msgstr "कुंजी को पढ़ा नहीं जा सका।"
+
+# description
+msgid "msg_code.13018.summary"
+msgstr "चक्रीय संबंध"
+
+# description
+msgid "msg_code.13028.action"
+msgstr ""
+"डेटा स्रोत संपादन के साथ आगे "
+"बढ़ने के लिए, कृपया मान्य "
+"स्रोत ऑब्जेक्ट्स fetch करने के "
+"लिए नीचे दिए गए कनेक्शन को "
+"संपादित करें।"
+
+# description
+msgid "msg_code.13025.summary"
+msgstr ""
+"अभिव्यक्ति सत्यापन विफल "
+"हुआ।"
+
+# description
+msgid "msg_code.1628.summary"
+msgstr ""
+"सफलतापूर्वक कार्य बंद कर "
+"दिया।"
+
+# description
+msgid "msg_code.9506.detail"
+msgstr ""
+"{1} सिस्टम में मौजूद नहीं है।"
+
+# description
+msgid "msg_code.105.detail"
+msgstr ""
+"Pinboard के रूप में एक या अधिक "
+"अमान्य दृश्यावलोकन "
+"दृश्यावलोकन {1} से हटाया नहीं "
+"जा सका।"
+
+# description
+msgid "msg_code.128.summary"
+msgstr ""
+"विवरण के लिए मेटाडेटा आइटम "
+"ला रहा है एक विफलता थी।"
+
+# description
+msgid "msg_code.13007.summary"
+msgstr "अमान्य ऋषि प्रश्न"
+
+# description
+msgid "msg_code.1617.summary"
+msgstr ""
+"Sql को पार्स नहीं किया जा सका।"
+
+# description
+msgid "msg_code.172.summary"
+msgstr ""
+"{1} का अद्यतन करने में असमर्थ "
+"था।"
+
+# description
+msgid "msg_code.9002.detail"
+msgstr ""
+"में फिर से प्रवेश करने का "
+"प्रयास करें"
+
+# description
+msgid "msg_code.117.summary"
+msgstr ""
+"तालिकाओं को हटाया नहीं जा "
+"सकता है।"
+
+# description
+msgid "msg_code.13003.summary"
+msgstr ""
+"ऑब्जेक्ट संग्रह में पाया जा "
+"सकता।"
+
+# description
+msgid "msg_code.1606.summary"
+msgstr ""
+"कार्य रोका नहीं जा सकता है।"
+
+# description
+msgid "msg_code.13010.summary"
+msgstr ""
+"तार्किक मेटाडेटा करने के लिए"
+" ऋषि भेजना विफल रहा"
+
+# description
+msgid "msg_code.161.summary"
+msgstr ""
+"आयातित डेटा की सूची "
+"पुनर्प्राप्त नहीं की जा सकी।"
+
+# description
+msgid "msg_code.506.summary"
+msgstr ""
+"कार्यपत्रक डेटा "
+"पुनर्प्राप्त नहीं किया जा "
+"सकता है।"
+
+# description
+msgid "msg_code.106.summary"
+msgstr "{1} सफलतापूर्वक बनाया गया।"
+
+# description
+msgid "msg_code.113.summary"
+msgstr "Pinboards को हटाया नहीं जा सकता"
+
+# description
+msgid "msg_code.11009.summary"
+msgstr "डेटा बनाना विफल रहा"
+
+# description
+msgid "msg_code.150.summary"
+msgstr ""
+"सफलतापूर्वक असाइन किए गए "
+"स्टीकर।"
+
+# description
+msgid "msg_code.1232.summary"
+msgstr ""
+"सफलतापूर्वक अद्यतन की गई "
+"भूमिका"
+
+# description
+msgid "msg_code.902.summary"
+msgstr ""
+"Pinboard अनुमतियाँ प्राप्त नहीं "
+"किया जा सका।"
+
+# description
+msgid "msg_code.502.summary"
+msgstr ""
+"दृश्य डेटा पुनर्प्राप्त "
+"नहीं किया जा सकता है।"
+
+# description
+msgid "msg_code.102.summary"
+msgstr ""
+"भ्रष्टाचार के कारण {2} के लिए {1} "
+"को जोड़ने में विफलता।"
+
+# description
+msgid "msg_code.11005.summary"
+msgstr "कोई डेटा नहीं"
+
+# description
+msgid "msg_code.1221.summary"
+msgstr ""
+"प्रोफ़ाइल तस्वीर प्राप्त "
+"नहीं किया जा सका।"
+
+# description
+msgid "msg_code.806.summary"
+msgstr ""
+"Memcache सफलतापूर्वक खाली कर "
+"दिया।"
+
+# description
+msgid "msg_code.10006.summary"
+msgstr ""
+"रूममेट के लिए कनेक्शन विफल "
+"हो गया।"
+
+# description
+msgid "msg_code.1210.summary"
+msgstr ""
+"उपयोगकर्ताओं को अद्यतन नहीं "
+"किया जा सका।"
+
+# description
+msgid "msg_code.13005.detail"
+msgstr ""
+"ऑब्जेक्ट आईडी के साथ: प्रकार "
+"का {0}: {1} पहले ही मौजूद है"
+
+# description
+msgid "msg_code.1818.summary"
+msgstr ""
+"सफलतापूर्वक हटाया गया डेटा "
+"स्रोत ऑब्जेक्ट्स"
+
+# description
+msgid "msg_code.9008.summary"
+msgstr ""
+"कुछ अपनी खोज के साथ गलत हो गया"
+" था।"
+
+# description
+msgid "msg_code.9500.summary"
+msgstr ""
+"ThoughtSpot पहुँच योग्य नहीं है। "
+"कृपया शीघ्र ही पुन: प्रयास "
+"करें।"
+
+# description
+msgid "msg_code.1807.summary"
+msgstr ""
+"क्लस्टर प्रबंधन सेवा से "
+"स्नैपशॉट सूची पुनर्प्राप्त "
+"नहीं किया जा सकता है।"
+
+# description
+msgid "msg_code.1407.summary"
+msgstr ""
+"स्वास्थ्य पोर्टल टोकन "
+"प्राप्त नहीं किया जा सका।"
+
+# description
+msgid "msg_code.1814.summary"
+msgstr ""
+"सफलतापूर्वक निर्यात किए गए "
+"ऑब्जेक्ट्स। फ़ाइल {1} पर पाया "
+"जा सकता है।"
+
+# description
+msgid "msg_code.1007.summary"
+msgstr ""
+"फ़ाइलें delet नहीं किया जा सकता "
+"है"
+
+# description
+msgid "msg_code.9004.summary"
+msgstr ""
+"अभी भी डेटा लोड हो रहा है, "
+"जल्दी वापस आ"
+
+# description
+msgid "msg_code.1803.summary"
+msgstr ""
+"Databse सेवा से तालिका विवरण "
+"जानकारी पुनर्प्राप्त नहीं "
+"किया जा सकता है।"
+
+# description
+msgid "msg_code.1403.summary"
+msgstr ""
+"क्लाइंट स्थिति सहेजा नहीं जा"
+" सका।"
+
+# description
+msgid "msg_code.10006.detail"
+msgstr "रूममेट पहुँच में नहीं है।"
+
+# description
+msgid "msg_code.159.summary"
+msgstr ""
+"कार्यपत्रकों की सूची "
+"प्राप्त नहीं किया जा सकता "
+"है।"
+
+# description
+msgid "msg_code.166.summary"
+msgstr ""
+"स्टिकर की सूची पुनर्प्राप्त "
+"नहीं किया जा सकता है।"
+
+# description
+msgid "msg_code.148.summary"
+msgstr "स्टीकर अद्यतन।"
+
+# description
+msgid "msg_code.155.summary"
+msgstr ""
+"तालिकाओं की सूची "
+"पुनर्प्राप्त नहीं की जा सकी।"
+
+# description
+msgid "msg_code.11007.detail"
+msgstr ""
+"ऋषि इनपुट के लिए उत्तर डेटा "
+"पीढ़ी में त्रुटि"
+
+# description
+msgid "msg_code.137.summary"
+msgstr "{1} को सहेजा नहीं जा सका।"
+
+# description
+msgid "msg_code.1619.summary"
+msgstr ""
+"डेटा स्रोत कनेक्शन "
+"सफलतापूर्वक बनाया गया"
+
+# description
+msgid "msg_code.13023.summary"
+msgstr "रिश्ते बनाना विफल।"
+
+# description
+msgid "msg_code.1626.summary"
+msgstr ""
+"सफलतापूर्वक डेटा स्रोत से "
+"कनेक्ट किया गया।"
+
+# description
+msgid "msg_code.1219.summary"
+msgstr ""
+"सफलतापूर्वक उपयोगकर्ता "
+"समूहों के लिए असाइन किया "
+"गया।"
+
+# description
+msgid "msg_code.13030.summary"
+msgstr ""
+"कनेक्शन परीक्षण विफल रहा। "
+"कृपया कनेक्शन विशेषताएँ "
+"सत्यापित करें।"
+
+# description
+msgid "msg_code.126.summary"
+msgstr ""
+"विवरण डेटा स्रोत के लिए ला "
+"रहा है एक विफलता थी।"
+
+# description
+msgid "msg_code.133.summary"
+msgstr ""
+"टेबल को सहेजने में कोई "
+"समस्या थी।"
+
+# description
+msgid "msg_code.1608.summary"
+msgstr ""
+"डेटा स्रोत से लोड विफल रहा।"
+
+# description
+msgid "msg_code.1208.summary"
+msgstr ""
+"उपयोगकर्ता अद्यतन नहीं किया "
+"जा सका।"
+
+# description
+msgid "msg_code.13012.summary"
+msgstr "कार्यपत्रक बनाना विफल रहा"
+
+# description
+msgid "msg_code.1615.summary"
+msgstr ""
+"डेटा स्रोत कनेक्शन "
+"पुनर्प्राप्त नहीं किया जा "
+"सकता है।"
+
+# description
+msgid "msg_code.1622.summary"
+msgstr ""
+"हल्के डेटा कैश अक्षम किया "
+"गया है"
+
+# description
+msgid "msg_code.1215.summary"
+msgstr ""
+"सफलतापूर्वक हटाया गया "
+"उपयोगकर्ता।"
+
+# description
+msgid "msg_code.115.summary"
+msgstr ""
+"जवाब को हटाया नहीं जा सकता "
+"है।"
+
+# description
+msgid "msg_code.122.summary"
+msgstr ""
+"रिश्ते सफलतापूर्वक हटा "
+"दिया।"
+
+# description
+msgid "msg_code.1604.summary"
+msgstr ""
+"शेड्यूल अद्यतन नहीं किया जा "
+"सका।"
+
+# description
+msgid "msg_code.13001.summary"
+msgstr "स्कीमा निर्माण विफल हुआ"
+
+# description
+msgid "msg_code.1204.summary"
+msgstr ""
+"उपयोगकर्ता को नहीं बनाया जा "
+"सकता है।"
+
+# description
+msgid "msg_code.1611.summary"
+msgstr ""
+"डेटा स्रोत कनेक्शन विफल रहा।"
+
+# description
+msgid "msg_code.511.summary"
+msgstr ""
+"फ़ाइल अपलोड करने में विफल।"
+
+# description
+msgid "msg_code.104.summary"
+msgstr "{1} से दृश्य को हटाने विफलता"
+
+# description
+msgid "msg_code.111.summary"
+msgstr "स्टीकर हटाया नहीं जा सका"
+
+# description
+msgid "msg_code.174.detail"
+msgstr ""
+"क्लाइंट राज्य सहेजने में "
+"विफल"
+
+# description
+msgid "msg_code.9505.summary"
+msgstr ""
+"हम अभी भी इस डेटा अनुक्रमण कर "
+"रहे हैं, जल्द ही फिर से प्रयास"
+" करें!"
+
+# description
+msgid "msg_code.1600.summary"
+msgstr ""
+"डेटा स्रोत प्रकार प्राप्त "
+"नहीं किया जा सका।"
+
+# description
+msgid "msg_code.11007.summary"
+msgstr "उत्तर डेटा बनाना विफल रहा"
+
+# description
+msgid "msg_code.500.summary"
+msgstr ""
+"पत्ता स्तर डेटा "
+"पुनर्प्राप्त नहीं किया जा "
+"सकता है।"
+
+# description
+msgid "msg_code.100.summary"
+msgstr ""
+"सफलता। {1} {2} के लिए जोड़ा गया "
+"है।"
+
+# description
+msgid "msg_code.1621.detail"
+msgstr ""
+"सफलतापूर्वक विफल कमान, मार "
+"डाला {1} बयानों की जाँच करें।"
+
+# description
+msgid "msg_code.1613.detail"
+msgstr ""
+"डेटा स्रोत के लिए कनेक्शन "
+"सूची प्राप्त करने में विफल"
+
+# description
+msgid "msg_code.11003.summary"
+msgstr "अमान्य स्तंभ पहचानकर्ता"
+
+# description
+msgid "msg_code.10008.summary"
+msgstr ""
+"उपयोगकर्ता ढूँढा नहीं जा "
+"सकता।"
+
+# description
+msgid "msg_code.804.summary"
+msgstr ""
+"LogLevel सेट नहीं किया जा सकता है।"
+
+# description
+msgid "msg_code.102.detail"
+msgstr ""
+"pinboard के रूप में एक या अधिक "
+"अमान्य दृश्यावलोकन {1} {2} को "
+"जोड़ा नहीं जा सका।"
+
+# description
+msgid "msg_code.13017.detail"
+msgstr "डुप्लिकेट स्तंभ: {0}"
+
+# description
+msgid "msg_code.13009.detail"
+msgstr ""
+"बाबा - अमान् य व् यंजक से "
+"अमान्य इनपुट: {0}"
+
+# description
+msgid "msg_code.800.summary"
+msgstr ""
+"MemCache राज्य अमेरिका "
+"पुनर्प्राप्त नहीं किया जा "
+"सकता है।"
+
+# description
+msgid "msg_code.10000.summary"
+msgstr ""
+"कोई सिस्टम त्रुटि उत्पन्न "
+"हुई।"
+
+# description
+msgid "msg_code.10000.detail"
+msgstr ""
+"उह ओह। हम सुनिश्चित नहीं हैं, "
+"क्या हुआ। कृपया अपने "
+"व्यवस्थापक से संपर्क करें।"
+
+# description
+msgid "msg_code.1009.summary"
+msgstr "स्कीमा नहीं बनाया जा सका।"
+
+# description
+msgid "msg_code.1812.summary"
+msgstr ""
+"आपकी प्रतिक्रिया के लिए "
+"धन्यवाद!"
+
+# description
+msgid "msg_code.1405.summary"
+msgstr ""
+"सुस्त config प्राप्त नहीं किया "
+"जा सका।"
+
+# description
+msgid "msg_code.1005.summary"
+msgstr "तालिका नहीं बनाई जा सकी।"
+
+# description
+msgid "msg_code.9002.summary"
+msgstr ""
+"उपयोगकर्ता अधिकृत नहीं किया "
+"जा सकता है।"
+
+# description
+msgid "msg_code.10002.action"
+msgstr ""
+"कृपया अपने व्यवस्थापक से "
+"संपर्क करें"
+
+# description
+msgid "msg_code.179.summary"
+msgstr "नियम सहेजे नहीं जा सके।"
+
+# description
+msgid "msg_code.1801.summary"
+msgstr ""
+"तालिका विवरण खोज सेवा से "
+"जानकारी पुनर्प्राप्त नहीं "
+"किया जा सकता है।"
+
+# description
+msgid "msg_code.1401.summary"
+msgstr "लॉग इन विफल रहा।"
+
+# description
+msgid "msg_code.1001.summary"
+msgstr ""
+"स्तंभों को पढ़ा नहीं जा सका।"
+
+# description
+msgid "msg_code.9504.detail"
+msgstr ""
+"{1} निम्न निर्भरताएँ में "
+"त्रुटियों के कारण खोला नहीं "
+"जा सकता"
+
+# description
+msgid "msg_code.168.summary"
+msgstr ""
+"कार्यपत्रक पुनर्प्राप्त "
+"नहीं किया जा सकता है।"
+
+# description
+msgid "msg_code.175.summary"
+msgstr ""
+"टिप्पणी नहीं बनाया जा सकता"
+
+# description
+msgid "msg_code.13018.detail"
+msgstr "चक्र का पता लगाया: {0}"
+
+# description
+msgid "msg_code.157.summary"
+msgstr ""
+"जवाब की सूची पुनर्प्राप्त "
+"नहीं किया जा सकता है।"
+
+# description
+msgid "msg_code.164.summary"
+msgstr ""
+"डेटा स्रोतों की सूची "
+"पुनर्प्राप्त नहीं की जा सकी।"
+
+# description
+msgid "msg_code.9000.detail"
+msgstr ""
+"कुछ ऑब्जेक्ट डेटा को हटाने "
+"के लिए आप प्रयास कर रहे हैं पर"
+" निर्भर करता है,"
+
+# description
+msgid "msg_code.509.summary"
+msgstr ""
+"प्राकृतिक क्वेरी "
+"पुनर्प्राप्त नहीं किया जा "
+"सकता है।"
+
+# description
+msgid "msg_code.109.summary"
+msgstr "स्टीकर बनाया नहीं जा सका।"
+
+# description
+msgid "msg_code.105.action"
+msgstr ""
+"कृपया फिर से अमान्य visualization(s) से "
+"pinboard के बाद निकालने का प्रयास "
+"करें"
+
+# description
+msgid "msg_code.146.summary"
+msgstr "कार्यपुस्तिका सहेजी।"
+
+# description
+msgid "msg_code.153.summary"
+msgstr ""
+"स्टीकर अनअसाइन्ड नहीं हो "
+"सकता है।"
+
+# description
+msgid "msg_code.1228.summary"
+msgstr ""
+"सफलतापूर्वक भूमिका बनाई थी"
+
+# description
+msgid "msg_code.505.summary"
+msgstr ""
+"तालिका डेटा पुनर्प्राप्त "
+"नहीं किया जा सकता है।"
+
+# description
+msgid "msg_code.135.summary"
+msgstr ""
+"दृश्य को अद्यतन करने में "
+"विफल।"
+
+# description
+msgid "msg_code.1217.summary"
+msgstr ""
+"समूह सफलतापूर्वक नष्ट कर "
+"दिया गया है।"
+
+# description
+msgid "msg_code.1624.summary"
+msgstr ""
+"डेटा प्रकार कनवर्ज़न "
+"त्रुटि।"
+
+# description
+msgid "msg_code.1224.summary"
+msgstr ""
+"समूह के लिए सफलतापूर्वक "
+"असाइन किया गया समूह"
+
+# description
+msgid "msg_code.1631.summary"
+msgstr "सफलतापूर्वक DDL मार डाला"
+
+# description
+msgid "msg_code.124.summary"
+msgstr ""
+"विवरण तालिका के लिए ला रहा है "
+"एक विफलता थी।"
+
+# description
+msgid "msg_code.131.summary"
+msgstr "कार्यपत्रक खोल विफलता"
+
+# description
+msgid "msg_code.1613.summary"
+msgstr ""
+"डेटा स्रोत कनेक्शन सूची "
+"पुनर्प्राप्त नहीं किया जा "
+"सकता है।"
+
+# description
+msgid "msg_code.1206.summary"
+msgstr "समूह नहीं बनाया जा सका।"
+
+# description
+msgid "msg_code.1620.summary"
+msgstr ""
+"सफलतापूर्वक डेटा अपलोड "
+"शेड्यूल अद्यतन"
+
+# description
+msgid "msg_code.1213.summary"
+msgstr ""
+"सफलतापूर्वक अद्यतन किया गया "
+"पासवर्ड।"
+
+# description
+msgid "msg_code.10003.detail"
+msgstr ""
+"आप {1} करने के लिए अधिकृत नहीं "
+"हैं।"
+
+# description
+msgid "msg_code.1220.summary"
+msgstr ""
+"उपयोगकर्ता समूहों के लिए "
+"असाइन नहीं किया जा सकता है।"
+
+# description
+msgid "msg_code.120.summary"
+msgstr ""
+"रिश्ते सफलतापूर्वक अद्यतन "
+"किया गया।"
+
+# description
+msgid "msg_code.1602.summary"
+msgstr ""
+"डेटा स्रोत को हटाया नहीं जा "
+"सकता है।"
+
+# description
+msgid "msg_code.1202.summary"
+msgstr ""
+"उपयोगकर्ताओं और समूहों की "
+"सूची पुनर्प्राप्त नहीं किया "
+"जा सकता है।"
+
+# description
+msgid "msg_code.13011.detail"
+msgstr ""
+"जवाब पीढ़ी के कारण विफल हुआ: {0}"
+
+# description
+msgid "msg_code.13003.detail"
+msgstr ""
+"ऑब्जेक्ट आईडी के साथ: प्रकार "
+"का {0}: {1} नहीं मिला"
+
+# description
+msgid "msg_code.11001.summary"
+msgstr "अमान्य पंक्ति"
+
+# description
+msgid "msg_code.802.summary"
+msgstr "MemCache खोजी नहीं जा सकी।"
+
+# description
+msgid "msg_code.10002.summary"
+msgstr "इनपुट अमान्य है।"
+
+# description
+msgid "msg_code.10004.detail"
+msgstr ""
+"उपयोगकर्ता {0} {1} करने के लिए "
+"अधिकृत नहीं है"
+
+# description
+msgid "msg_code.702.summary"
+msgstr ""
+"अपूर्ण आइटम पुनर्प्राप्त "
+"नहीं किया जा सकता है।"
+
+# description
+msgid "msg_code.13020.detail"
+msgstr ""
+"अमान्य संबंध बनाने का प्रयास"
+" किया: {0}"
+
+# description
+msgid "msg_code.13012.detail"
+msgstr ""
+"कार्यपत्रक पीढ़ी नियत करने "
+"में विफल: {0}"
+
+# description
+msgid "msg_code.1810.summary"
+msgstr ""
+"चेतावनी प्रबंधन सेवा से "
+"सूचनाएँ जानकारी "
+"पुनर्प्राप्त नहीं किया जा "
+"सकता है।"
+
+# description
+msgid "msg_code.1003.summary"
+msgstr ""
+"रिश्तों को पढ़ा नहीं जा सका।"
+
+# description
+msgid "msg_code.9000.summary"
+msgstr ""
+"डेटा को हटाने के लिए आप "
+"प्रयास कर रहे हैं कुछ "
+"निर्भरता है।"
+
+# description
+msgid "msg_code.1010.summary"
+msgstr ""
+"तालिका मॉडल प्राप्त नहीं "
+"किया जा सका।"
+
+# description
+msgid "msg_code.13019.summary"
+msgstr ""
+"पुराने शारीरिक स् कीमा संस् "
+"करण प्राप्त"
+
+# description
+msgid "msg_code.13026.summary"
+msgstr ""
+"शेड्यूल अक्षम किया गया "
+"सफलतापूर्वक लोड।"
+
+# description
+msgid "msg_code.177.summary"
+msgstr ""
+"टिप्पणी को हटाया नहीं जा "
+"सकता"
+
+# description
+msgid "msg_code.11005.detail"
+msgstr ""
+"क्वेरी निष्पादन में कोई डेटा"
+" नहीं हुई"
+
+# description
+msgid "msg_code.129.summary"
+msgstr "जवाब खोला नहीं जा सका।"
+
+# description
+msgid "msg_code.13015.summary"
+msgstr "शारीरिक मॉडल लोड नहीं"
+
+# description
+msgid "msg_code.1618.summary"
+msgstr ""
+"Sql निष्पादित नहीं किया जा "
+"सकता है।"
+
+# description
+msgid "msg_code.13006.detail"
+msgstr "अमान्य प्रकार: {0} प्रदान की"
+
+# description
+msgid "msg_code.180.summary"
+msgstr ""
+"नियम सफलतापूर्वक हटा दिया।"
+
+# description
+msgid "msg_code.118.summary"
+msgstr ""
+"सफलतापूर्वक बनाया गया "
+"संबंध।"
+
+# description
+msgid "msg_code.13004.summary"
+msgstr ""
+"ऑब्जेक्ट को अमान्य स्थिति "
+"में है।"
+
+# description
+msgid "msg_code.1607.summary"
+msgstr ""
+"निर्माण DDL पुनर्प्राप्त नहीं "
+"किया जा सकता है।"
+
+# description
+msgid "msg_code.162.summary"
+msgstr ""
+"सिस्टम तालिकाएँ की सूची "
+"प्राप्त नहीं किया जा सकता "
+"है।"
+
+# description
+msgid "msg_code.507.summary"
+msgstr ""
+"फ़िल्टर डेटा पुनर्प्राप्त "
+"नहीं किया जा सकता है।"
+
+# description
+msgid "msg_code.107.summary"
+msgstr "{1} बनाया नहीं जा सका।"
+
+# description
+msgid "msg_code.151.summary"
+msgstr ""
+"स्टीकर असाइन नहीं किया जा "
+"सकता है।"
+
+# description
+msgid "msg_code.1233.summary"
+msgstr ""
+"भूमिका का अद्यतन करने में "
+"विफल रहा"
+
+# description
+msgid "msg_code.903.summary"
+msgstr ""
+"मेटाडेटा अनुमतियाँ प्राप्त "
+"नहीं किया जा सका।"
+
+# description
+msgid "msg_code.11006.summary"
+msgstr "क्वेरी निष्पादन विफल"
+
+# description
+msgid "msg_code.1222.summary"
+msgstr ""
+"सफलतापूर्वक अपलोड की गई "
+"प्रोफ़ाइल तस्वीर।"
+
+# description
+msgid "msg_code.807.summary"
+msgstr "सफलतापूर्वक लॉग स्तर सेट।"
+
+# description
+msgid "msg_code.10007.detail"
+msgstr "अमान्य पैरामीटर मान: {0}।"
+
+# description
+msgid "msg_code.10007.summary"
+msgstr ""
+"अमान्य पैरामीटर (पैरामीटर्स)"
+" है।"
+
+# description
+msgid "msg_code.1211.summary"
+msgstr ""
+"सफलतापूर्वक अद्यतन किए गए "
+"समूह।"
+
+# description
+msgid "msg_code.13007.detail"
+msgstr ""
+"ऋषि से अपर्याप्त या अमान्य "
+"इनपुट: {0}"
+
+# description
+msgid "msg_code.1200.summary"
+msgstr ""
+"उपयोगकर्ता सूची "
+"पुनर्प्राप्त नहीं किया जा "
+"सकता है।"
+
+# description
+msgid "msg_code.9009.summary"
+msgstr ""
+"ThoughtSpot पहुँच योग्य नहीं है। "
+"कृपया पुन: प्रयास करें।"
+
+# description
+msgid "msg_code.9501.summary"
+msgstr ""
+"ThoughtSpot टाइम आउट हो गया है। "
+"कृपया पुन: प्रयास करें।"
+
+# description
+msgid "msg_code.60000.summary"
+msgstr "प्रारंभ करने में विफल"
+
+# description
+msgid "msg_code.102.action"
+msgstr ""
+"कृपया {2} से अमान्य visualization(s) "
+"हटाने के बाद पुन: प्रयास करें"
+
+# description
+msgid "msg_code.1808.summary"
+msgstr ""
+"चेतावनी प्रबंधन सेवा से "
+"क्लस्टर जानकारी "
+"पुनर्प्राप्त नहीं किया जा "
+"सकता है।"
+
+# description
+msgid "msg_code.1815.summary"
+msgstr ""
+"क्षमा करें! इस पल में "
+"ऑब्जेक्टों को निर्यात करने "
+"में असमर्थ!"
+
+# description
+msgid "msg_code.1408.summary"
+msgstr ""
+"स्वास्थ्य पोर्टल जारी नाम "
+"प्राप्त नहीं किया जा सकता "
+"है।"
+
+# description
+msgid "msg_code.1804.summary"
+msgstr ""
+"क्लस्टर क्लस्टर प्रबंधन "
+"सेवा से जानकारी "
+"पुनर्प्राप्त नहीं किया जा "
+"सकता है।"
+
+# description
+msgid "msg_code.700.summary"
+msgstr ""
+"तालिका के आश्रितों "
+"पुनर्प्राप्त नहीं किया जा "
+"सकता है।"
+
+# description
+msgid "msg_code.149.summary"
+msgstr ""
+"स्टीकर अद्यतन नहीं किया जा "
+"सका।"
+
+# description
+msgid "msg_code.13028.summary"
+msgstr ""
+"कौड़ी से कनेक्शन ऑब्जेक्ट "
+"अमान्य डेटा स्रोत संपादित "
+"करने के लिए कर रहे हैं"
+
+# description
+msgid "msg_code.13017.summary"
+msgstr "अमान्य डुप्लिकेट स्तंभ"
+
+# description
+msgid "msg_code.13024.summary"
+msgstr ""
+"स्कीमा को हटाने में विफल। {0}"
+
+# description
+msgid "msg_code.1627.summary"
+msgstr ""
+"डेटा स्रोत सफलतापूर्वक "
+"बनाया गया।"
+
+# description
+msgid "msg_code.127.summary"
+msgstr ""
+"विवरण datasources के लिए ला रहा है एक "
+"विफलता थी।"
+
+# description
+msgid "msg_code.9000.action"
+msgstr ""
+"इस डेटा को हटाने से पहले "
+"निर्भरताएँ हटाएँ।"
+
+# description
+msgid "msg_code.134.summary"
+msgstr ""
+"दृश्यावलोकन को सफलतापूर्वक "
+"अद्यतन।"
+
+# description
+msgid "msg_code.13006.summary"
+msgstr "अमान्य ऑब्जेक्ट प्रकार"
+
+# description
+msgid "msg_code.1609.summary"
+msgstr ""
+"डेटा स्रोत कनेक्शन बनाया "
+"नहीं जा सका।"
+
+# description
+msgid "msg_code.13013.summary"
+msgstr "सेवा प्रदाता उपलब्ध नहीं"
+
+# description
+msgid "msg_code.1616.summary"
+msgstr ""
+"डेटा स्रोत config प्राप्त नहीं "
+"किया जा सका।"
+
+# description
+msgid "msg_code.1209.summary"
+msgstr ""
+"उपयोगकर्ताओं को "
+"सफलतापूर्वक अद्यतन।"
+
+# description
+msgid "msg_code.13020.summary"
+msgstr "अमान्य संबंध"
+
+# description
+msgid "msg_code.171.summary"
+msgstr "{1} अद्यतन।"
+
+# description
+msgid "msg_code.116.summary"
+msgstr ""
+"तालिका सफलतापूर्वक हटा "
+"दिया।"
+
+# description
+msgid "msg_code.123.summary"
+msgstr ""
+"संबंध को हटाया नहीं जा सकता "
+"है।"
+
+# description
+msgid "msg_code.13002.summary"
+msgstr ""
+"बार देखे गए निर्माण विफल हुआ"
+
+# description
+msgid "msg_code.1605.summary"
+msgstr ""
+"कार्य पुनः लोड नहीं किया जा "
+"सकता है।"
+
+# description
+msgid "INVALID_PRINT_CONFIGURATION_MESSAGE"
+msgstr ""
+
+# description
+msgid "SCHEDULE_PINBOARD_CREATE"
+msgstr "जोड़ने के लिए एक शेड्यूल"
+
+# description
+msgid "SCHEDULE_PINBOARD_UPDATE"
+msgstr ""
+"Pinboard के लिए शेड्यूल {1} को "
+"संपादित करें"
+
+# description
+msgid "jobStatusViewerTitle"
+msgstr "कार्य {2} के लिए {1} रन"
+
+# description
+msgid "PINBOARD"
+msgstr "Pinboard"
+
+# description
+msgid "TABLE"
+msgstr "तालिका"
+
+# description
+msgid "COLUMN"
+msgstr "स्तंभ"
+
+# description
+msgid "WIDTH"
+msgstr "चौड़ाई"
+
+# description
+msgid "WORKSHEETS"
+msgstr "कार्यपत्रकों"
+
+# description
+msgid "IMPORTED_DATA"
+msgstr "आयातित डेटा"
+
+# description
+msgid "TABLES"
+msgstr "तालिकाएँ"
+
+# description
+msgid "UNTITLED_OBJECT_NAME"
+msgstr "अनामांकित"
+
+# description
+msgid "SEARCH"
+msgstr "खोज"
+
+# description
+msgid "CHART_VIZ_DISPLAY_NAME"
+msgstr "चार्ट"
+
+# description
+msgid "SUBMIT"
+msgstr "सबमिट करें"
+
+# description
+msgid "CANCEL"
+msgstr "रद्द करें"
+
+# description
+msgid "CREATE"
+msgstr "बनाएँ"
+
+# description
+msgid "OK"
+msgstr "ठीक है"
+
+# description
+msgid "ALL"
+msgstr "सभी"
+
+# description
+msgid "BY"
+msgstr "द्वारा"
+
+# description
+msgid "AND"
+msgstr "और"
+
+# description
+msgid "SAVE"
+msgstr "सहेजें"
+
+# description
+msgid "MAKE_A_COPY"
+msgstr "एक प्रतिलिपि बनाएँ"
+
+# description
+msgid "COPY_OF"
+msgstr "{1} की प्रतिलिपि"
+
+# description
+msgid "YES"
+msgstr "हाँ"
+
+# description
+msgid "NO"
+msgstr "नहीं"
+
+# description
+msgid "UPDATE"
+msgstr "अद्यतन"
+
+# description
+msgid "DONE"
+msgstr "किया"
+
+# description
+msgid "COLLAPSE"
+msgstr "संक्षिप्त करें"
+
+# description
+msgid "EDIT"
+msgstr "संपादित करें"
+
+# description
+msgid "REFRESH"
+msgstr "ताज़ा करें"
+
+# description
+msgid "DOWNLOAD"
+msgstr "डाउनलोड"
+
+# description
+msgid "UPLOAD"
+msgstr "अपलोड करें"
+
+# description
+msgid "DOWNLOAD_TRACE"
+msgstr "ट्रेस डाउनलोड"
+
+# description
+msgid "REQUIRED_FIELD"
+msgstr "* आवश्यक फ़ील्ड"
+
+# description
+msgid "BROWSE_YOUR_FILES"
+msgstr "अपनी फ़ाइलें ब्राउज़ करें"
+
+# description
+msgid "MAX_FILE_SIZE_MESSAGE"
+msgstr ""
+"अधिकतम अपलोड फ़ाइल का आकार: "
+"{आकार}"
+
+# description
+msgid "DELETE"
+msgstr "हटाएँ"
+
+# description
+msgid "ADD_COLUMNS"
+msgstr "स्तंभ जोड़ें"
+
+# description
+msgid "IMPORT"
+msgstr "आयात"
+
+# description
+msgid "BACK"
+msgstr "वापस"
+
+# description
+msgid "CONFIRM"
+msgstr "की पुष्टि करें"
+
+# description
+msgid "FILTERS"
+msgstr "फ़िल्टर"
+
+# description
+msgid "CLOSE"
+msgstr "बंद करें"
+
+# description
+msgid "ADD_AND_SAVE"
+msgstr "जोड़ें & सहेजें"
+
+# description
+msgid "NEW_PINBOARD"
+msgstr "नई pinboard"
+
+# description
+msgid "ACTIONS"
+msgstr "क्रियाएँ"
+
+# description
+msgid "SEARCH_COLUMN"
+msgstr "खोज स्तंभ"
+
+# description
+msgid "SEARCH_YOUR_DATA"
+msgstr "अपने डेटा खोज"
+
+# description
+msgid "PAUSED_JOB"
+msgstr "रुका हुआ"
+
+# description
+msgid "SCHEDULED_JOB"
+msgstr "शेड्यूल किया गया"
+
+# description
+msgid "STOPPED_JOB"
+msgstr "बंद कर दिया"
+
+# description
+msgid "JOB"
+msgstr "अनुसूची"
+
+# description
+msgid "JOBS"
+msgstr "कार्यक्रम"
+
+# description
+msgid "NO_JOB"
+msgstr "कोई शेड्यूल"
+
+# description
+msgid "READ_MORE"
+msgstr "विवरण पढ़ें"
+
+# description
+msgid "HIDE_DETAILS"
+msgstr "विवरण छुपाएँ"
+
+# description
+msgid "metadataListSearchPlaceholder"
+msgstr "नाम से खोजें"
+
+# description
+msgid "exploreDataTitle"
+msgstr "डेटा का अन्वेषण करें"
+
+# description
+msgid "exploreAllData"
+msgstr "सभी डेटा का अन्वेषण करें"
+
+# description
+msgid "chooseSources"
+msgstr "स्रोतों का चयन करें"
+
+# description
+msgid "alerts.WHAT_HAPPENED"
+msgstr "क्या हुआ?"
+
+# description
+msgid "primaryNavigation.SEARCH"
+msgstr "खोज"
+
+# description
+msgid "primaryNavigation.ANSWERS"
+msgstr "जवाब"
+
+# description
+msgid "primaryNavigation.PINBOARDS"
+msgstr "Pinboards"
+
+# description
+msgid "primaryNavigation.MANAGE_DATA"
+msgstr "डेटा"
+
+# description
+msgid "primaryNavigation.ADMIN"
+msgstr "व्यवस्थापक"
+
+# description
+msgid "primaryNavigation.HELP"
+msgstr "मदद"
+
+# description
+msgid "primaryNavigation.DISABLED_ANSWER_RELEASE_VERSION"
+msgstr "3.4"
+
+# description
+msgid "primaryNavigation.userMenu.PROFILE"
+msgstr "प्रोफ़ाइल"
+
+# description
+msgid "primaryNavigation.userMenu.SIGN_OUT"
+msgstr "साइन आउट करें"
+
+# description
+msgid "activityFeed.VIEW_ACTIVITY"
+msgstr "गतिविधि देखें"
+
+# description
+msgid "activityFeed.RECENT_ACTIVITY"
+msgstr "हाल की गतिविधि"
+
+# description
+msgid "activityFeed.NO_ITEMS_TO_DISPLAY"
+msgstr ""
+"कोई आइटम नहीं प्रदर्शित करने"
+" के लिए"
+
+# description
+msgid "emptyRelationshipsMessage"
+msgstr ""
+"प्रदर्शित करने के लिए कोई "
+"संबंध"
+
+# description
+msgid "editPinboardDetails"
+msgstr "Pinboard विवरण संपादित करें"
+
+# description
+msgid "basicActionMessages.OK"
+msgstr "ठीक है"
+
+# description
+msgid "blinkList.NAME"
+msgstr "नाम"
+
+# description
+msgid "blinkList.AUTHOR"
+msgstr "लेखक"
+
+# description
+msgid "blinkList.MODIFIED"
+msgstr "संशोधित"
+
+# description
+msgid "blinkList.DESCRIPTION"
+msgstr "विवरण"
+
+# description
+msgid "schemaType.TABLE"
+msgstr "तालिका"
+
+# description
+msgid "schemaType.WORKSHEET"
+msgstr "कार्यपत्रक"
+
+# description
+msgid "schemaType.ANSWER"
+msgstr "उत्तर"
+
+# description
+msgid "schemaViewer.backToTables"
+msgstr ""
+"< वापस करने के लिए डेटा "
+"प्रबंधन"
+
+# description
+msgid "schemaViewer.backToSchema"
+msgstr ""
+"< वापस करने के लिए स्कीमा "
+"दर्शक"
+
+# description
+msgid "schemaViewer.HAS_ERRORS"
+msgstr "कुछ गलत हुआ..."
+
+# description
+msgid "schemaViewer.WKS_COLUMNS_TABLE_KEY"
+msgstr "WKSTABLECOLUMS"
+
+# description
+msgid "schemaViewer.WKS_GROUP_KEY"
+msgstr "WKSGROUP"
+
+# description
+msgid "schemaViewer.TITLE"
+msgstr "देखें स्कीमा"
+
+# description
+msgid "schemaViewer.LEGEND_TITLE"
+msgstr "कथा"
+
+# description
+msgid "schemaViewer.CLOSE_LEGEND"
+msgstr "लेजेंड को छुपाने"
+
+# description
+msgid "schemaViewer.SHOW_LEGEND"
+msgstr "लेजेंड दिखाएँ"
+
+# description
+msgid "schemaViewer.TABLE_TITLE"
+msgstr "तालिका"
+
+# description
+msgid "schemaViewer.WKS_TITLE"
+msgstr "कार्यपत्रक स्तंभ"
+
+# description
+msgid "schemaViewer.ANSWER_TITLE"
+msgstr "उत्तर"
+
+# description
+msgid "schemaViewer.tableType.WORKSHEET"
+msgstr "कार्यपत्रक"
+
+# description
+msgid "schemaViewer.tableType.USER_DEFINED"
+msgstr "तालिका"
+
+# description
+msgid "schemaViewer.tableType.ONE_TO_ONE_LOGICAL"
+msgstr "तालिका"
+
+# description
+msgid "schemaViewer.tableType.AGGR_WORKSHEET"
+msgstr "कार्यपत्रक"
+
+# description
+msgid "schemaViewer.relationships.GENERIC"
+msgstr "जेनरिक"
+
+# description
+msgid "schemaViewer.relationships.PK_FK"
+msgstr "-> FK पीके"
+
+# description
+msgid "schemaViewer.relationships.USER_DEFINED"
+msgstr "उपयोगकर्ता परिभाषित"
+
+# description
+msgid "schemaViewer.tooltip.common.NAME"
+msgstr "नाम"
+
+# description
+msgid "schemaViewer.tooltip.common.TYPE"
+msgstr "प्रकार"
+
+# description
+msgid "schemaViewer.tooltip.common.CREATED_AT"
+msgstr "पर बनाया"
+
+# description
+msgid "schemaViewer.tooltip.common.UPDATED_AT"
+msgstr "पर अद्यतन"
+
+# description
+msgid "schemaViewer.tooltip.common.NO_DATA"
+msgstr "N/A"
+
+# description
+msgid "schemaViewer.tooltip.common.ID"
+msgstr "ID"
+
+# description
+msgid "schemaViewer.tooltip.join.JOIN_TYPE"
+msgstr "JOIN_TYPE"
+
+# description
+msgid "schemaViewer.tooltip.join.DESTINATION_TABLE"
+msgstr "गंतव्य तालिका"
+
+# description
+msgid "schemaViewer.tooltip.join.SOURCE_TABLE"
+msgstr "स्रोत तालिका"
+
+# description
+msgid "schemaViewer.tooltip.join.SOURCE_COLUMNS"
+msgstr "स्रोत स्तंभ"
+
+# description
+msgid "schemaViewer.tooltip.join.DESTINATION_COLUMNS"
+msgstr "गंतव्य स्तंभ"
+
+# description
+msgid "schemaViewer.tooltip.join.GENERIC_EXPRESSION"
+msgstr "GENERIC_EXPRESSION"
+
+# description
+msgid "metadataListPage.captions.NAME"
+msgstr "नाम"
+
+# description
+msgid "metadataListPage.captions.CRON_SCHEDULE"
+msgstr "अनुसूची"
+
+# description
+msgid "metadataListPage.captions.DESCRIPTION"
+msgstr "विवरण"
+
+# description
+msgid "metadataListPage.captions.DISPLAYED_NAME"
+msgstr "प्रदर्शन नाम"
+
+# description
+msgid "metadataListPage.captions.CREATED_AT"
+msgstr "पर बनाया"
+
+# description
+msgid "metadataListPage.captions.CREATED"
+msgstr "बनाया"
+
+# description
+msgid "metadataListPage.captions.MODIFIED"
+msgstr "संशोधित"
+
+# description
+msgid "metadataListPage.captions.AUTHOR"
+msgstr "लेखक"
+
+# description
+msgid "metadataListPage.captions.RECIPIENT"
+msgstr "प्राप्तकर्ता"
+
+# description
+msgid "metadataListPage.captions.STICKERS"
+msgstr "स्टिकर"
+
+# description
+msgid "metadataListPage.captions.SOURCE"
+msgstr "स्रोत"
+
+# description
+msgid "metadataListPage.captions.DATA_SOURCE_TYPE"
+msgstr "प्रकार"
+
+# description
+msgid "metadataListPage.captions.DATA_SOURCE_SCHEDULED"
+msgstr "शेड्यूल किया गया"
+
+# description
+msgid "metadataListPage.captions.DATA_SOURCE_LOAD_STATUS"
+msgstr "लोड स्थिति"
+
+# description
+msgid "metadataListPage.captions.START_TIME"
+msgstr "पर शुरू कर दिया"
+
+# description
+msgid "metadataListPage.captions.END_TIME"
+msgstr "पर समाप्त हो गया"
+
+# description
+msgid "metadataListPage.captions.STATE"
+msgstr "स्थिति"
+
+# description
+msgid "metadataListPage.captions.STATUS_VIEWER_LOAD_STATUS"
+msgstr "लोड स्थिति"
+
+# description
+msgid "metadataListPage.captions.DATA_FILTER_TABLE"
+msgstr "तालिका"
+
+# description
+msgid "metadataListPage.captions.DATA_FILTER_COLUMN"
+msgstr "स्तंभ"
+
+# description
+msgid "metadataListPage.captions.DATA_FILTER_CONDITION"
+msgstr "हालत"
+
+# description
+msgid "metadataListPage.captions.DATA_FILTER_TEXT"
+msgstr "मान"
+
+# description
+msgid "metadataListPage.captions.TRANSFORMATION_EDITOR_COLUMN"
+msgstr "स्तंभ नाम"
+
+# description
+msgid "metadataListPage.captions.TRANSFORMATION_EDITOR_TABLE"
+msgstr "तालिका नाम"
+
+# description
+msgid "metadataListPage.captions.TRANSFORMATION_EDITOR_EXPRESSION"
+msgstr "अभिव्यक्ति"
+
+# description
+msgid "metadataListPage.users.title"
+msgstr "उपयोगकर्ता"
+
+# description
+msgid "metadataListPage.users.noItems"
+msgstr "कोई उपयोगकर्ता"
+
+# description
+msgid "metadataListPage.users.listTitle"
+msgstr "उपयोगकर्ता {1} - {2}"
+
+# description
+msgid "metadataListPage.groups.title"
+msgstr "समूह"
+
+# description
+msgid "metadataListPage.groups.noItems"
+msgstr "कोई समूह"
+
+# description
+msgid "metadataListPage.groups.listTitle"
+msgstr "समूह {1}-{2}"
+
+# description
+msgid "metadataListPage.roles.title"
+msgstr "रोल्स"
+
+# description
+msgid "metadataListPage.roles.noItems"
+msgstr "कोई भूमिका"
+
+# description
+msgid "metadataListPage.roles.listTitle"
+msgstr "भूमिकाएँ {1}-{2}"
+
+# description
+msgid "metadataListPage.answers.title"
+msgstr "जवाब"
+
+# description
+msgid "metadataListPage.answers.noItems"
+msgstr "कोई जवाब नहीं"
+
+# description
+msgid "metadataListPage.answers.listTitle"
+msgstr "जवाब {1}-{2}"
+
+# description
+msgid "metadataListPage.answers.disableAnswerAlert.TITLE"
+msgstr "जवाब"
+
+# description
+msgid "metadataListPage.answers.disableAnswerAlert.MESSAGE"
+msgstr ""
+"साझा करें या सहेजें आपके "
+"उत्तरों के लिए चाहते हैं? यह "
+"एक pinboard करने के लिए जोड़ें!"
+
+# description
+msgid "metadataListPage.answers.disableAnswerAlert.CONFIRM_BUTTON_LABEL"
+msgstr "अब समझ में आया"
+
+# description
+msgid "metadataListPage.pinboards.title"
+msgstr "Pinboards"
+
+# description
+msgid "metadataListPage.pinboards.noItems"
+msgstr "कोई Pinboards"
+
+# description
+msgid "metadataListPage.pinboards.listTitle"
+msgstr "Pinboards {1}-{2}"
+
+# description
+msgid "metadataListPage.pinboards.button.title"
+msgstr "नई Pinboard"
+
+# description
+msgid "metadataListPage.dataManagement.title"
+msgstr "डेटा प्रबंधन"
+
+# description
+msgid "metadataListPage.dataManagement.tables.tabHeader"
+msgstr "तालिकाएँ"
+
+# description
+msgid "metadataListPage.dataManagement.tables.noItems"
+msgstr "कोई तालिका"
+
+# description
+msgid "metadataListPage.dataManagement.tables.listTitle"
+msgstr "तालिका {1}-{2}"
+
+# description
+msgid "metadataListPage.dataManagement.dataSources.tabHeader"
+msgstr "डेटा स्रोतों"
+
+# description
+msgid "metadataListPage.dataManagement.dataSources.noItems"
+msgstr "कोई डेटा स्रोत"
+
+# description
+msgid "metadataListPage.dataManagement.dataSources.listTitle"
+msgstr "डेटा स्रोत {1}-{2}"
+
+# description
+msgid "metadataListPage.jobs.button.title"
+msgstr "नया शेड्यूल"
+
+# description
+msgid "metadataListPage.jobs.recipients.one"
+msgstr "1 प्राप्तकर्ता"
+
+# description
+msgid "metadataListPage.jobs.recipients.more"
+msgstr "{1} प्राप्तकर्ताओं"
+
+# description
+msgid "metadataListPage.actions.share.text"
+msgstr "साझा करें"
+
+# description
+msgid "metadataListPage.actions.delete.text"
+msgstr "हटाएँ"
+
+# description
+msgid "metadataListPage.actions.tag.text"
+msgstr "स्टिकर लागू"
+
+# description
+msgid "metadataListPage.actions.reset.text"
+msgstr "पुनरारंभ करें"
+
+# description
+msgid "metadataListPage.actions.abort.text"
+msgstr "निरस्त करें"
+
+# description
+msgid "metadataListPage.actions.schedule.text"
+msgstr "रिपोर्ट शेड्यूल करें"
+
+# description
+msgid "metadataListPage.actions.pause.text"
+msgstr "विराम दें"
+
+# description
+msgid "metadataListPage.actions.resume.text"
+msgstr "फिर से शुरू"
+
+# description
+msgid "metadataListPage.actions.export.text"
+msgstr "निर्यात करें"
+
+# description
+msgid "metadataListPage.actions.import.text"
+msgstr "आयात"
+
+# description
+msgid "metadataListPage.actions.download.text"
+msgstr "डाउनलोड"
+
+# description
+msgid "metadataListPage.actions.sendEmail.text"
+msgstr "ईमेल द्वारा भेजें"
+
+# description
+msgid "sharableItem.INVALID_ITEM_NAME_MESSAGE"
+msgstr "नाम अमान्य"
+
+# description
+msgid "filterInputDataType.DEFAULT_PLACE_HOLDER"
+msgstr "यहाँ मान दर्ज करें"
+
+# description
+msgid "filterInputDataType.DATE"
+msgstr "MM/DD/YYYY"
+
+# description
+msgid "filterInputDataType.DATE_TIME"
+msgstr "MM/DD/YYYY HH24:MI:SS"
+
+# description
+msgid "walkMe.deploymentTypes.TRIAL"
+msgstr "परीक्षण"
+
+# description
+msgid "walkMe.deploymentTypes.STANDARD"
+msgstr "मानक"
+
+# description
+msgid "replayAnswer.REPLAY_TITLE"
+msgstr "पुनरावृत्ति खोज"
+
+# description
+msgid "replayAnswer.CANNOT_REPLAY_TITLE"
+msgstr "खोज replay नहीं कर सकता"
+
+# description
+msgid "replayAnswer.CANNOT_REPLAY_MESSAGE"
+msgstr ""
+"आपके पास पहुँच नहीं हो सकता "
+"है अंतर्निहित तालिका करने के"
+" लिए - जवाब देखने के लिए जाँच "
+"करें।"
+
+# description
+msgid "replayAnswer.CANNOT_REPLAY_CONFIRM"
+msgstr "उत्तर देखें।"
+
+# description
+msgid "replayAnswer.REPLAY_CONFIRM"
+msgstr "फिर से खेलना शुरू"
+
+# description
+msgid "replayAnswer.REPLAY_CANCEL"
+msgstr "रिकॉर्ड फिर से खेलना"
+
+# description
+msgid "replayAnswer.REPLAY_CANCEL_TOOLTIP"
+msgstr ""
+"Firefox पर व्यवस्थापक "
+"उपयोगकर्ताओं को रिकॉर्ड कर "
+"सकते हैं।"
+
+# description
+msgid "replayAnswer.REPLAY_CANCEL_TOOLTIP_ENABLED"
+msgstr ""
+"वीडियो फिर से खेलना बाद "
+"डाउनलोड करें या जल्दी बंद "
+"करने के लिए esc दबाएँ।"
+
+# description
+msgid "replayAnswer.NAME_PREFIX"
+msgstr "ThoughtSpot ट्यूटोरियल"
+
+# description
+msgid "replayAnswer.FINISHED_TITLE"
+msgstr "फिर से खेलना समाप्त"
+
+# description
+msgid "replayAnswer.RE_REPLAY"
+msgstr "फिर से खेलना"
+
+# description
+msgid "replayAnswer.EDIT_ANSWER"
+msgstr "खोज को संपादित करना"
+
+# description
+msgid "replayAnswer.NAME_LABEL"
+msgstr "उत्तर नाम"
+
+# description
+msgid "replayAnswer.DESCRIPTION_LABEL"
+msgstr "उत्तर विवरण"
+
+# description
+msgid "replayAnswer.LAST_MODIFIED_LABEL"
+msgstr "अंतिम बार संशोधित"
+
+# description
+msgid "replayAnswer.AUTHOR_LABEL"
+msgstr "लेखक"
+
+# description
+msgid "replayAnswer.EXIT_WARNING_TITLE"
+msgstr "प्रगति में फिर से खेलना"
+
+# description
+msgid "replayAnswer.EXIT_WARNING_MESSAGE"
+msgstr ""
+"क्या वाकई आप पुनरावृत्ति को "
+"समाप्त करने के लिए चाहते हैं?"
+
+# description
+msgid "replayAnswer.EXIT_WARNING_CONFIRM"
+msgstr "हाँ, अंत में फिर से खेलना"
+
+# description
+msgid "replayAnswer.EXIT_WARNING_CANCEL"
+msgstr ""
+"फिर से शुरू करें फिर से खेलना"
+
+# description
+msgid "screenRecorder.PROCESSING_VIDEO"
+msgstr "वीडियो बनाना"
+
+# description
+msgid "screenRecorder.DL_TITLE"
+msgstr "ट्यूटोरियल डाउनलोड"
+
+# description
+msgid "screenRecorder.DL_MESSAGE"
+msgstr ""
+"कृपया अपने ट्यूटोरियल "
+"वीडियो डाउनलोड करें।"
+
+# description
+msgid "screenRecorder.DL_CONFIRM"
+msgstr "डाउनलोड"
+
+# description
+msgid "screenRecorder.DL_CANCEL"
+msgstr "वीडियो हटाएँ"
+
+# description
+msgid "screenRecorder.ERROR_TITLE"
+msgstr "वीडियो नहीं बना सका"
+
+# description
+msgid "screenRecorder.ERROR_MESSAGE"
+msgstr ""
+"बहुत खेद है-त्रुटि उत्पन्न "
+"हुई, और अपने वीडियो उत्पादन "
+"नहीं किया जा सकता है।"
+
+# description
+msgid "screenRecorder.CANNOT_RECORD_TITLE"
+msgstr ""
+"स्क्रीन रिकॉर्ड नहीं कर सकता"
+
+# description
+msgid "screenRecorder.CANNOT_RECORD_MESSAGE"
+msgstr ""
+"कृपया URL पर \"के बारे में: config\" और "
+"\"media.getusermedia.screensharing.allowed_domains\" फ्लैग "
+"करने के लिए वर्तमान डोमेन "
+"(\"{1}\") जोड़ें। यह फ़ायरफ़ॉक्स "
+"(यह अभी भी रिकॉर्डिंग करने से "
+"पहले आपकी अनुमति पूछना होगा) "
+"अपनी स्क्रीन रिकॉर्ड करने के"
+" लिए अनुमति देगा।"
+
+# description
+msgid "screenRecorder.DEFAULT_VIDEO_NAME"
+msgstr "ThoughtSpot screencast"
+
+# description
+msgid "metadataExplorer.title"
+msgstr "डेटा प्रबंधन"
+
+# description
+msgid "metadataExplorer.selectValueMessage"
+msgstr "मान का चयन करें"
+
+# description
+msgid "metadataExplorer.dataValidationErrorMessage"
+msgstr ""
+"अचयनित आइटम के लिए एक मान का "
+"चयन करें"
+
+# description
+msgid "metadataExplorer.dataLoadingMessage"
+msgstr "डेटा लाना"
+
+# description
+msgid "metadataExplorer.cannotToggleMessage"
+msgstr ""
+"इस प्रकार के लिए additive टॉगल "
+"करें नहीं कर सकता"
+
+# description
+msgid "metadataExplorer.clickToEdit"
+msgstr ""
+"संपादित करने के लिए क्लिक "
+"करें"
+
+# description
+msgid "metadataExplorer.createWorksheet"
+msgstr "कार्यपत्रक बनाएँ"
+
+# description
+msgid "metadataExplorer.importData"
+msgstr "डेटा अपलोड करें"
+
+# description
+msgid "metadataExplorer.newDataSource"
+msgstr "नया डेटा स्रोत"
+
+# description
+msgid "metadataExplorer.importPermissionTip"
+msgstr ""
+"आप डेटा आयात करने के लिए "
+"अनुमति नहीं है"
+
+# description
+msgid "metadataExplorer.createWorksheetTip"
+msgstr ""
+"आप कार्यपत्रक बनाने के लिए "
+"अनुमति नहीं है"
+
+# description
+msgid "metadataExplorer.cannotDeleteReason"
+msgstr ""
+"अपने चयन में इन सिस्टम "
+"तालिकाएँ जो हटाए नहीं जा "
+"सकते हैं:"
+
+# description
+msgid "metadataExplorer.cannotDelete"
+msgstr "हटा नहीं सकता"
+
+# description
+msgid "metadataExplorer.cannotEdit"
+msgstr ""
+"कार्यपत्रकों के लिए संपादित "
+"नहीं कर सकते"
+
+# description
+msgid "metadataExplorer.rlsNeedsAdmin"
+msgstr ""
+"पंक्ति स्तर की सुरक्षा के "
+"लिए उपयोग केवल व्यवस्थापकों "
+"के लिए उपलब्ध है।"
+
+# description
+msgid "metadataExplorer.rlsDisabledWS"
+msgstr ""
+"पंक्ति स्तर सुरक्षा "
+"कार्यपत्रकों के लिए वर्तमान "
+"में समर्थित नहीं है।"
+
+# description
+msgid "metadataExplorer.profileDisabledWS"
+msgstr ""
+"डेटा profiling कार्यपत्रकों के लिए"
+" समर्थित नहीं है।"
+
+# description
+msgid "metadataExplorer.needsUnderlyingAccess"
+msgstr ""
+"कार्यपत्रक को संपादित करने "
+"के लिए, अपने व्यवस्थापक "
+"अंतर्निहित डेटा के लिए पहुँच"
+" के लिए पूछना"
+
+# description
+msgid "metadataExplorer.types.USER_DEFINED"
+msgstr "आयात"
+
+# description
+msgid "metadataExplorer.types.WORKSHEET"
+msgstr "कार्यपत्रक"
+
+# description
+msgid "metadataExplorer.types.AGGR_WORKSHEET"
+msgstr "कार्यपत्रक"
+
+# description
+msgid "metadataExplorer.types.ONE_TO_ONE_LOGICAL"
+msgstr "सिस्टम टेबल"
+
+# description
+msgid "metadataExplorer.currencyEditor.NONE"
+msgstr "कोई नहीं"
+
+# description
+msgid "metadataExplorer.currencyEditor.FROM_BROWSER"
+msgstr "ब्राउज़र से अनुमान"
+
+# description
+msgid "metadataExplorer.currencyEditor.FROM_COLUMN"
+msgstr "एक स्तंभ से"
+
+# description
+msgid "metadataExplorer.currencyEditor.FROM_ISO_CODE"
+msgstr "ISO कोड निर्दिष्ट करें"
+
+# description
+msgid "metadataExplorer.currencyEditor.SELECT_COLUMN"
+msgstr "एक स्तंभ का चयन करें"
+
+# description
+msgid "metadataExplorer.currencyEditor.SELECT_ISO_CODE"
+msgstr "मुद्रा कोड का चयन करें"
+
+# description
+msgid "metadataExplorer.currencyEditor.DIALOG_TITLE"
+msgstr ""
+"मुद्रा प्रकार निर्दिष्ट "
+"करें"
+
+# description
+msgid "metadataExplorer.currencyEditor.CURRENCY_TYPE"
+msgstr "मुद्रा प्रकार"
+
+# description
+msgid "metadataExplorer.relationshipEditorMessages.ADD_KEY"
+msgstr "कुंजी जोड़ें"
+
+# description
+msgid "metadataExplorer.relationshipEditorMessages.ADD_RELATIONSHIP"
+msgstr "संबंध जोड़ें"
+
+# description
+msgid "privilegesLabels.ADMINISTRATION"
+msgstr ""
+"व्यवस्थापन विशेषाधिकार है"
+
+# description
+msgid "privilegesLabels.USERDATAUPLOADING"
+msgstr ""
+"उपयोगकर्ता डेटा अपलोड कर "
+"सकते हैं"
+
+# description
+msgid "privilegesLabels.DATADOWNLOADING"
+msgstr "डेटा डाउनलोड कर सकते हैं"
+
+# description
+msgid "privilegesLabels.SHAREWITHALL"
+msgstr ""
+"सभी उपयोगकर्ताओं के साथ साझा"
+" कर सकते हैं"
+
+# description
+msgid "privilegesLabels.DATAMANAGEMENT"
+msgstr ""
+"डेटा को प्रबंधित कर सकते हैं"
+
+# description
+msgid "privilegesLabels.JOBSCHEDULING"
+msgstr "Pinboards शेड्यूल कर सकते हैं"
+
+# description
+msgid "listFilterLabels.TAG_LABEL_UI_NAME"
+msgstr "स्टीकर"
+
+# description
+msgid "listFilterLabels.selectStickerMessage"
+msgstr "स्टीकर का चयन करें"
+
+# description
+msgid "listFilterLabels.tableTypeFilterLabel"
+msgstr "प्रकार"
+
+# description
+msgid "listFilterLabels.tableTypeFilterValueAll"
+msgstr "सभी प्रकार"
+
+# description
+msgid "listFilterLabels.tableTypeFilterValueImported"
+msgstr "आयात"
+
+# description
+msgid "listFilterLabels.tableTypeFilterValueTables"
+msgstr "तालिकाएँ"
+
+# description
+msgid "listFilterLabels.tableTypeFilterValueWorksheets"
+msgstr "कार्यपत्रकों"
+
+# description
+msgid "listFilterLabels.authorFilterLabel"
+msgstr "के द्वारा बनाई गई"
+
+# description
+msgid "listFilterLabels.authorFilterValueAll"
+msgstr "सभी"
+
+# description
+msgid "listFilterLabels.authorFilterValueYou"
+msgstr "तुम्हारा"
+
+# description
+msgid "dataSources.USER_DEFINED"
+msgstr "आयात"
+
+# description
+msgid "dataSources.ONE_TO_ONE_LOGICAL"
+msgstr "डिफ़ॉल्ट"
+
+# description
+msgid "disabledChartTypeSelectorTooltips.BAR"
+msgstr ""
+"अपनी खोज में कम से कम 1 "
+"विशेषता और 1 उपाय की जरूरत है।"
+
+# description
+msgid "disabledChartTypeSelectorTooltips.COLUMN"
+msgstr ""
+"अपनी खोज में कम से कम 1 "
+"विशेषता और 1 उपाय की जरूरत है।"
+
+# description
+msgid "disabledChartTypeSelectorTooltips.STACKED_COLUMN"
+msgstr ""
+"अपनी खोज में कम से कम 2 "
+"विशेषताएँ और 1 उपाय की जरूरत "
+"है।"
+
+# description
+msgid "disabledChartTypeSelectorTooltips.PARETO"
+msgstr ""
+"अपनी खोज में कम से कम 1 "
+"विशेषता और 1 उपाय की जरूरत है।"
+
+# description
+msgid "disabledChartTypeSelectorTooltips.LINE"
+msgstr ""
+"अपनी खोज में कम से कम 1 "
+"विशेषता और 1 उपाय की जरूरत है।"
+
+# description
+msgid "disabledChartTypeSelectorTooltips.AREA"
+msgstr ""
+"अपनी खोज में कम से कम 1 "
+"विशेषता और 1 उपाय की जरूरत है।"
+
+# description
+msgid "disabledChartTypeSelectorTooltips.SCATTER"
+msgstr ""
+"अपनी खोज में कम से कम 1 "
+"विशेषता और 1 उपाय की जरूरत है।"
+
+# description
+msgid "disabledChartTypeSelectorTooltips.BUBBLE"
+msgstr ""
+"अपन�� खोज में कम से कम 1 "
+"विशेषता और 2 उपायों की जरूरत "
+"है।"
+
+# description
+msgid "disabledChartTypeSelectorTooltips.PIE"
+msgstr ""
+"अपनी खोज में कम से कम 1 "
+"विशेषता और 1 उपाय की जरूरत है।"
+
+# description
+msgid "disabledChartTypeSelectorTooltips.GEO_AREA"
+msgstr ""
+"1 भौगोलिक स्तंभ आपके खोज की "
+"जरूरत है।"
+
+# description
+msgid "disabledChartTypeSelectorTooltips.GEO_BUBBLE"
+msgstr ""
+"अपनी खोज 1 भौगोलिक स्तंभ या "
+"अक्षांश और देशांतर स्तंभों "
+"की एक जोड़ी की जरूरत है।"
+
+# description
+msgid "disabledChartTypeSelectorTooltips.GEO_HEATMAP"
+msgstr ""
+"अपनी खोज 1 भौगोलिक स्तंभ या "
+"अक्षांश और देशांतर स्तंभों "
+"की एक जोड़ी की जरूरत है।"
+
+# description
+msgid "disabledChartTypeSelectorTooltips.HEATMAP"
+msgstr ""
+"अपनी खोज की जरूरत कम से कम 2 "
+"विशेषताएँ और 1 उपाय"
+
+# description
+msgid "disabledChartTypeSelectorTooltips.TREEMAP"
+msgstr ""
+"अपनी खोज में कम से कम 1 "
+"विशेषता और 2 उपायों की जरूरत "
+"है"
+
+# description
+msgid "disabledChartTypeSelectorTooltips.WATERFALL"
+msgstr ""
+"अपनी खोज में कम से कम 1 "
+"विशेषता और 1 उपाय की जरूरत है।"
+
+# description
+msgid "disabledChartTypeSelectorTooltips.STACKED_AREA"
+msgstr ""
+"अपनी खोज में कम से कम 2 "
+"विशेषताएँ और 1 उपाय की जरूरत "
+"है।"
+
+# description
+msgid "disabledChartTypeSelectorTooltips.LINE_COLUMN"
+msgstr ""
+"अपनी खोज में कम से कम 1 "
+"विशेषता और 2 उपायों की जरूरत "
+"है।"
+
+# description
+msgid "disabledChartTypeSelectorTooltips.FUNNEL"
+msgstr ""
+"अपनी खोज में कम से कम 1 "
+"विशेषता और 1 उपाय की जरूरत है।"
+
+# description
+msgid "disabledChartTypeSelectorTooltips.LINE_STACKED_COLUMN"
+msgstr ""
+"अपनी खोज में कम से कम 2 "
+"विशेषताएँ और 2 उपायों की "
+"जरूरत है।"
+
+# description
+msgid "disabledChartTypeSelectorTooltips.PIVOT_TABLE"
+msgstr ""
+"1 उपाय, विचरण और मानक विचलन की "
+"अनुमति नहीं कर रहे हैं और कम "
+"से कम 1 विशेषता अपनी खोज की "
+"जरूरत है।"
+
+# description
+msgid "dataDisabledChartExplanation.PARETO"
+msgstr ""
+"अपनी खोज छोटी मूल्य शून्य से "
+"अधिक है, जहां कम से कम एक उपाय "
+"की जरूरत है।"
+
+# description
+msgid "dataDisabledChartExplanation.CARDINALITY"
+msgstr ""
+"अपनी खोज एक विशेषता {1} या कम "
+"मान वाले की जरूरत है।"
+
+# description
+msgid "dataDisabledChartExplanation.UNIQUE_X_VALUES_PER_SERIES"
+msgstr ""
+"अद्वितीय y-अक्ष मान x-अक्ष पर "
+"दिखाया गया डेटा की प्रत्येक "
+"श्रृंखला के लिए है करने के "
+"लिए अपने खोज की जरूरत है।"
+
+# description
+msgid "dataDisabledChartExplanation.UNIQUE_X_VALUES_ALL_DATA"
+msgstr ""
+"अद्वितीय y-अक्ष मान प्रत्येक "
+"x-अक्ष मान के लिए है करने के "
+"लिए अपने खोज की जरूरत है।"
+
+# description
+msgid "dataDisabledChartExplanation.ONLY_ONE_Y_AXIS_COLUMN_SUPPORTED"
+msgstr ""
+"अपनी खोज केवल एक स्तंभ y-अक्ष "
+"पर पड़ सकता है।"
+
+# description
+msgid "dataDisabledChartExplanation.NON_NEGATIVE_VALUES_NEEDED"
+msgstr ""
+"अपने खोज परिणाम नकारात्मक "
+"मान जो इस चार्ट प्रकार "
+"द्वारा समर्थित नहीं है।"
+
+# description
+msgid "dataDisabledChartExplanation.SD_AND_VARIANCE_PIVOT"
+msgstr ""
+"वर्तमान में मानक विचलन, और "
+"प्रसरण पिवट तालिका द्वारा "
+"समर्थित नहीं हैं।"
+
+# description
+msgid "dataDisabledChartExplanation.DATA_INCOMPLETE_PIVOT"
+msgstr ""
+"क्वेरी बहुत अधिक परिणाम "
+"लौटाए फ़िल्टर पिवट तालिका को"
+" सक्षम करने के लिए कृपया।"
+
+# description
+msgid "chartEditorErrorExplanation.ATLEAST_ONE_X_COLUMN"
+msgstr ""
+"कम से कम एक x-अक्ष स्तंभ की "
+"आवश्यकता।"
+
+# description
+msgid "chartEditorErrorExplanation.ATLEAST_ONE_Y_COLUMN"
+msgstr ""
+"कम से कम एक y-अक्ष स्तंभ की "
+"आवश्यकता।"
+
+# description
+msgid "chartEditorErrorExplanation.MULTIPLE_NON_NUMERIC_ON_Y"
+msgstr ""
+"जब y-अक्ष पर एक से अधिक स्तंभ "
+"हैं गैर सांख्यिक स्तंभ की "
+"अनुमति नहीं है।"
+
+# description
+msgid "chartEditorErrorExplanation.ONLY_ATTRIBUTES_ON_LEGEND"
+msgstr ""
+"केवल विशेषताएँ पर लेजेंड की "
+"अनुमति दी।"
+
+# description
+msgid "chartEditorErrorExplanation.UNSUPPORTED_LEGEND_WITH_MULTIPLE_Y"
+msgstr ""
+"जब y-अक्ष पर एक से अधिक स्तंभ "
+"हैं लेजेंड की अनुमति नहीं "
+"है।"
+
+# description
+msgid "chartEditorErrorExplanation.COLUMN_ALREADY_ON_X"
+msgstr ""
+"{1} पहले से ही एक x-अक्ष स्तंभ "
+"है।"
+
+# description
+msgid "chartEditorErrorExplanation.COLUMN_ALREADY_ON_Y"
+msgstr ""
+"{1} पहले से ही एक y-अक्ष स्तंभ "
+"है।"
+
+# description
+msgid "chartEditorErrorExplanation.NUMERIC_SIZE_COLUMN"
+msgstr ""
+"आकार स्तंभ सांख्यिक होना "
+"चाहिए।"
+
+# description
+msgid "chartEditorErrorExplanation.COLUMN_ALREADY_USED"
+msgstr "{1} पहले ही उपयोग में है।"
+
+# description
+msgid "chartEditorErrorExplanation.INVALID_AXIS_SHARING"
+msgstr ""
+"Y-अक्ष कॉलम अलग मुद्रा "
+"सेटिंग्स के साथ साझा नहीं कर "
+"सकता।"
+
+# description
+msgid "smartCheckboxCollection.CLEAR_SELECTED_ITEMS"
+msgstr "सभी को साफ़ करें"
+
+# description
+msgid "smartCheckboxCollection.SELECT_ALL_ITEMS"
+msgstr "सभी का चयन करें"
+
+# description
+msgid "smartCheckboxCollection.CHECKBOX_SEARCH_PLACEHOLDER"
+msgstr "नाम से खोजें"
+
+# description
+msgid "smartCheckboxCollection.SEARCH_TO_REFINE_ITEMS_FURTHER"
+msgstr ""
+"आगे रिफ़ाइन करने के लिए "
+"लिखना जारी रखें।"
+
+# description
+msgid "smartCheckboxCollection.SEARCH_TO_FIND_MORE_READ_ONLY_ITEMS"
+msgstr ""
+"खोज आइटम को परिष्कृत करने के "
+"लिए।"
+
+# description
+msgid "smartCheckboxCollection.SEARCH_TO_FIND_MORE_ITEMS"
+msgstr ""
+"खोज आइटम को परिष्कृत करने के "
+"लिए।"
+
+# description
+msgid "smartCheckboxCollection.SEARCH_TO_FIND_MORE_SELECTED_ITEMS"
+msgstr ""
+"खोज आइटम को परिष्कृत करने के "
+"लिए।"
+
+# description
+msgid "SAVE_AS_DIALOG_TITLE"
+msgstr "{1} के रूप में सहेजें"
+
+# description
+msgid "NAME_BEFORE_SHARING_DIALOG_TITLE"
+msgstr "{1} नाम साझा करने से पहले"
+
+# description
+msgid "LOADING_MSG"
+msgstr "लोड हो रहा है"
+
+# description
+msgid "LOADING_FAILED_MSG"
+msgstr "लोड करना विफ़ल"
+
+# description
+msgid "UPLOADING_MSG"
+msgstr "अपलोड"
+
+# description
+msgid "NO_MATCH_MSG"
+msgstr "कोई मेल नहीं मिले"
+
+# description
+msgid "MORE_ITEMS_MSG"
+msgstr ""
+"कृपया अपनी खोज परिशोधित "
+"करें..."
+
+# description
+msgid "UPGRADING_ANSWER_MSG"
+msgstr "उत्तर को नवीनीकृत करना"
+
+# description
+msgid "CALLOSUM_CODE_CANCELED"
+msgstr "रद्द कर दिया"
+
+# description
+msgid "DRILL_TYPE_VIZ_LEVEL"
+msgstr "अर्थात-स्तर"
+
+# description
+msgid "dataPanel.SOURCES_TITLE"
+msgstr "स्रोतों"
+
+# description
+msgid "dataPanel.COLUMNS_TITLE"
+msgstr "स्तंभ"
+
+# description
+msgid "dataPanel.FILTERS_TITLE"
+msgstr "फ़िल्टर"
+
+# description
+msgid "dataPanel.FORMULAE_TITLE"
+msgstr "सूत्र"
+
+# description
+msgid "dataPanel.SELECTED_SOURCES"
+msgstr "चयनित स्रोतों"
+
+# description
+msgid "dataPanel.SELECTED_SUBTITLE"
+msgstr "चयनित {1}"
+
+# description
+msgid "dataPanel.TOO_MANY_COLUMNS"
+msgstr ""
+"बधाई हो! You\\ सीमा स्तंभों के "
+"लिए + जोड़ें स्तंभ की अधिकतम "
+"संख्या के लिए मारा है"
+
+# description
+msgid "dataPanel.COMPLEX_QUERY"
+msgstr ""
+"अच्छा देख खोज! यह भी के लिए "
+"जट���ल + स्तंभ जोड़ें, लेकिन "
+"आप अभी भी खोज पट्टी में टाइप "
+"कर सकते हैं।"
+
+# description
+msgid "dataPanel.MISSING_UNDERLYING_ACCESS"
+msgstr ""
+"प्रश्न संपादित करने के लिए, "
+"अपने व्यवस्थापक अंतर्निहित "
+"डेटा के लिए पहुँच के लिए "
+"पूछना।"
+
+# description
+msgid "dataPanel.CREATE_FORMULA_TOOLTIP"
+msgstr "एक नया सूत्र बनाएँ"
+
+# description
+msgid "dataPanel.TITLE"
+msgstr "डेटा"
+
+# description
+msgid "dataPanel.popover.DONT_SHOW_AGAIN"
+msgstr ""
+"डॉन ' t मुझे यह फिर से दिखाएँ।"
+
+# description
+msgid "dataPanel.popover.ADD_SOURCES"
+msgstr ""
+"प्रारंभ करने के लिए सूत्रों "
+"को जोड़ने"
+
+# description
+msgid "dataPanel.popover.SELECT_DATA_SOURCES"
+msgstr ""
+"डेटा स्रोतों का पता लगाने के "
+"लिए का चयन करें"
+
+# description
+msgid "dataProfile.metrics.NULL"
+msgstr "नल मान"
+
+# description
+msgid "dataProfile.NOT_AVAILABLE"
+msgstr "N/A"
+
+# description
+msgid "expressionEditorPanel.EXPRESSION_VALID"
+msgstr "जाने के लिए अच्छा है!"
+
+# description
+msgid "expressionEditorPanel.EXPRESSION_INCOMPLETE"
+msgstr "अभिव्यक्ति अपूर्ण है"
+
+# description
+msgid "formulaEditor.FORMULA_ASSISTANT"
+msgstr "सूत्र सहायक"
+
+# description
+msgid "rlsRuleEditor.RULES"
+msgstr "नियम"
+
+# description
+msgid "rlsRuleEditor.ADD_RULE"
+msgstr "पंक्ति सुरक्षा जोड़ें"
+
+# description
+msgid "rlsRuleEditor.RULE_ASSISTANT"
+msgstr "नियम सहायक"
+
+# description
+msgid "rlsRuleEditor.RULE_NAME_PLACEHOLDER"
+msgstr "नियम का नाम दर्ज करें"
+
+# description
+msgid "rlsRuleEditor.EDIT_JOIN_PATH"
+msgstr ""
+"बदलें कैसे नियम करने के लिए "
+"तालिका में मिलती है।"
+
+# description
+msgid "rlsRuleEditor.RLS_DESCRIPTION"
+msgstr ""
+"<b>किसी भी</b> निम्नलिखित नियमों"
+" का कर रहे हैं, तो यह तालिका की "
+"पंक्तियाँ करने के लिए प्रदान"
+" करते हैं"
+
+# description
+msgid "rlsRuleEditor.EXPLAIN_RLS"
+msgstr ""
+"पंक्ति सुरक्षा के साथ, जो "
+"समूह विशिष्ट पंक्तियों तक "
+"पहुँच नियंत्रित करते हैं।"
+
+# description
+msgid "rlsRuleEditor.EXAMPLE1"
+msgstr ""
+"<b>उदाहरण</b> <br><br>प्रकार "
+"अभिव्यक्ति एक समूह के लिए एक "
+"स्तंभ से डेटा को लागू करने के "
+"लिए एक. <br> <br>उदाहरण के लिए, चलिए"
+" कहते हैं कि तुम एक समूह है "
+"\"EastSales\" कहा जाता है और एक समूह "
+"'WestSales' कहा जाता है। आप केवल "
+"उपयोगकर्ताओं और \"पश्चिम\" "
+"क्रमश: \"पूर्व\" के साथ "
+"पंक्तियों को देखने के लिए इन "
+"समूहों में चाहते हैं। "
+"<br>इसलिए, आप टाइप करेंगे: <br><br><span "
+"class=\"font-blue-default\"> concat</span> (<span class=\"font-purple-"
+"default\"> क्षेत्र</span>, \"विक्रय\") = इस "
+"तरह, \"पूर्व\" के साथ किसी भी "
+"पंक्ति में डेटा देखा जा होगा "
+"यदि उपयोगकर्ता \"EastSales\" करने के "
+"लिए संबंधित है, \"पश्चिम\" होगा "
+"देखा जा सकता है उपयोगकर्ता "
+"हैं, तो ts_groups <br><br><br>\"WestSales करने के "
+"लिए\"... आदि"
+
+# description
+msgid "queryJoinType.labels.INNER"
+msgstr ""
+"रिक्त पंक्तियों को शामिल न "
+"करें"
+
+# description
+msgid "queryJoinType.labels.LEFT_OUTER"
+msgstr "बाईं ओर बाहरी जोड़ने लागू"
+
+# description
+msgid "queryJoinType.labels.FULL_OUTER"
+msgstr "पूर्ण outer जोड़ने लागू"
+
+# description
+msgid "queryJoinType.descriptions.INNER"
+msgstr "भीतरी जोड़ने"
+
+# description
+msgid "queryJoinType.descriptions.LEFT_OUTER"
+msgstr "बाईं ओर बाहरी जोड़ने"
+
+# description
+msgid "queryJoinType.descriptions.FULL_OUTER"
+msgstr "पूर्ण outer जोड़ने"
+
+# description
+msgid "worksheetType.labels.VIEW"
+msgstr "सभी योग को लागू"
+
+# description
+msgid "worksheetType.labels.CONTAINER"
+msgstr ""
+"योग को उत्तरोत्तर लागू "
+"(अधिकांश मामलों के लिए "
+"अनुशंसित)"
+
+# description
+msgid "worksheets.ADD_PREFIX"
+msgstr "उपसर्ग जोड़ें"
+
+# description
+msgid "worksheets.MULTIPLE_COL_SAME_NAME_WARNING"
+msgstr ""
+"इस कार्यपत्रक में समान नाम "
+"वाले एकाधिक स्तंभ हों। सभी "
+"स्तंभ नाम अद्वितीय होना "
+"चाहिए।"
+
+# description
+msgid "worksheets.SAME_COLUMNS_ADDED_WITH_NEW_COLS_WARNING"
+msgstr ""
+"इस कार्यपत्रक में स्तंभों के"
+" बारे में पहले से जोड़ने के "
+"लिए कर रहे हैं में से कुछ "
+"मौजूद हैं।"
+
+# description
+msgid "worksheets.SAME_COLUMNS_ADDED_NO_NEW_COLS_WARNING"
+msgstr ""
+"पहले से जोड़ने के लिए इच्छित "
+"स्तंभ इस कार्यपत्रक में "
+"मौजूद हैं।"
+
+# description
+msgid "worksheets.corruptWorksheetWarning.PREFIX"
+msgstr ""
+"अंतर्निहित स्तंभ हाइलाइट "
+"किए गए कार्यपत्रक स्तंभों के"
+" लिए पहुँच योग्य नहीं हैं। "
+"कृपया"
+
+# description
+msgid "worksheets.corruptWorksheetWarning.LINK_ACTION"
+msgstr "निकालें"
+
+# description
+msgid "worksheets.corruptWorksheetWarning.SUFFIX"
+msgstr "ये कार्यपत्रक स्तंभ।"
+
+# description
+msgid "worksheets.upgrade.UPGRADE_IN_PROGRESS_MESSAGE"
+msgstr "उन्नयन"
+
+# description
+msgid "worksheets.upgrade.UPGRADE_FAILURE_MESSAGE"
+msgstr ""
+"कार्यपत्रक के उन्नयन, ऋषि "
+"ताजाकरण विफल हुआ (त्रुटि {}) "
+"में त्रुटि"
+
+# description
+msgid "worksheets.updating"
+msgstr "अद्यतन कर रहा है"
+
+# description
+msgid "worksheets.verifying"
+msgstr "का सत्यापन"
+
+# description
+msgid "worksheets.source"
+msgstr "स्रोत"
+
+# description
+msgid "worksheets.sources"
+msgstr "स्रोतों"
+
+# description
+msgid "worksheets.noSources"
+msgstr ""
+"इस स्तंभ में कोई स्रोत नहीं "
+"है"
+
+# description
+msgid "DataExplorerVisibleDependents.PINBOARD_ANSWER_BOOK"
+msgstr "Pinboard"
+
+# description
+msgid "DataExplorerVisibleDependents.QUESTION_ANSWER_BOOK"
+msgstr "उत्तर"
+
+# description
+msgid "DataExplorerVisibleDependents.LOGICAL_TABLE.WORKSHEET"
+msgstr "कार्यपत्रक"
+
+# description
+msgid "DataExplorerVisibleDependents.LOGICAL_TABLE.AGGR_WORKSHEET"
+msgstr "कार्यपत्रक"
+
+# description
+msgid "DataExplorerVisibleDependents.LOGICAL_TABLE.ONE_TO_ONE_LOGICAL"
+msgstr "तालिका"
+
+# description
+msgid "DataExplorerVisibleDependents.LOGICAL_TABLE.USER_DEFINED"
+msgstr "तालिका"
+
+# description
+msgid "metricsRangeValidationErrorMessages.NON_NUMERIC_RANGE_BOUNDARY"
+msgstr ""
+"सीमा न्यूनतम/अधिकतम मान नंबर"
+" होना आवश्यक है।"
+
+# description
+msgid "metricsRangeValidationErrorMessages.OVERLAPPING_RANGES"
+msgstr ""
+"श्रेणियाँ अधिव्याप्त नहीं "
+"हो सकती हैं।"
+
+# description
+msgid "metricsRangeValidationErrorMessages.INVALID_RANGE"
+msgstr ""
+"Range\\ की न्यूनतम अधिकतम से छोटा "
+"होना चाहिए।"
+
+# description
+msgid "NO_METRICS_DEFINED_YET_MESSAGE"
+msgstr ""
+"अभी तक परिभाषित कोई स्वरूपण "
+"शर्तों। एक नया बनाएँ।"
+
+# description
+msgid "NULL_VALUE_PLACEHOLDER_LABEL"
+msgstr "{नल}"
+
+# description
+msgid "EMPTY_VALUE_PLACEHOLDER_LABEL"
+msgstr "{खाली}"
+
+# description
+msgid "OTHER_VALUE_PLACEHOLDER_LABEL"
+msgstr "{अन्य}"
+
+# description
+msgid "UNAVAILABLE_COLUMN_SAMPLE_VALUE"
+msgstr "N/A"
+
+# description
+msgid "sageDropdownSelectEvent.TAB_ON_INPUT"
+msgstr "TAB_ON_INPUT"
+
+# description
+msgid "sageDropdownSelectEvent.ENTER_ON_INPUT"
+msgstr "ENTER_ON_INPUT"
+
+# description
+msgid "joinWorkflow.titles.DEFINE_MAPPING"
+msgstr "मैपिंग परिभाषित करें"
+
+# description
+msgid "joinWorkflow.titles.EDIT_MAPPING"
+msgstr "मैपिंग संपादित करें"
+
+# description
+msgid "preferenceValues.panelState.EXPANDED"
+msgstr "विस्तार"
+
+# description
+msgid "preferenceValues.panelState.COLLAPSED"
+msgstr "ढह गई"
+
+# description
+msgid "preferenceValues.panelState.AUTO"
+msgstr "ऑटो"
+
+# description
+msgid "pivotTable.Areas.COLUMN"
+msgstr "स्तंभ"
+
+# description
+msgid "pivotTable.Areas.ROW"
+msgstr "पंक्ति"
+
+# description
+msgid "pivotTable.Areas.DATA"
+msgstr "डेटा"
+
+# description
+msgid "pivotTable.ascendingSort"
+msgstr "ए एस सी"
+
+# description
+msgid "pivotTable.descendingSort"
+msgstr "desc"
+
+# description
+msgid "pivotTable.OTHER_LABEL"
+msgstr "{अन्य}"
+
+# description
+msgid "searchDoctor.SIMILAR_SEARCHES_MESSAGE"
+msgstr ""
+"सहेजी गई खोजों पर समान विचार "
+"होते"
+
+# description
+msgid "searchDoctor.EXPLORE_SEARCHES_MESSAGE"
+msgstr ""
+"कुछ सहेजी गई खोजों का "
+"अन्वेषण करें"
+
+# description
+msgid "help.releaseNameComputationStatus.DETERMINING_VERSION"
+msgstr "संस्करण का निर्धारण करने..."
+
+# description
+msgid "help.releaseNameComputationStatus.NOT_RELEASE_CLUSTER"
+msgstr "नहीं एक रिलीज क्लस्टर"
+
+# description
+msgid "help.releaseNameComputationStatus.ERROR"
+msgstr ""
+"उफ़, वहाँ संस्करण का "
+"निर्धारण करने में कोई त्रुटि"
+" थी।"
+
+# description
+msgid "help.mindTouchUrl.home.TITLE"
+msgstr "उड़ान खोजें"
+
+# description
+msgid "help.mindTouchUrl.keywords.TITLE"
+msgstr "कीवर्ड"
+
+# description
+msgid "help.mindTouchUrl.releaseNotes.TITLE"
+msgstr "नोट्स जारी करें"
+
+# description
+msgid "help.mindTouchUrl.adminGuide.TITLE"
+msgstr "प्रलेखन"
+
+# description
+msgid "help.mindTouchUrl.downloads.TITLE"
+msgstr "डाउनलोड"
+
+# description
+msgid "help.DEFAULT_PAGE_PATH"
+msgstr "घर"
+
+# description
+msgid "help.noConnectionViewMessages.TITLE"
+msgstr ""
+"करने के लिए हमारे सहायता "
+"केंद्र में आपका स्वागत है"
+
+# description
+msgid "help.noConnectionViewMessages.INFO_MESSAGE"
+msgstr ""
+"हमें यकीन है कि आप ऑनलाइन हो "
+"नहीं कर रहे हैं। पूर्ण मदद "
+"सामग्री देखने के लिए, कृपया "
+"इंटरनेट से कनेक्ट करें।"
+
+# description
+msgid "help.noConnectionViewMessages.KEYWORD_TITLE"
+msgstr "कीवर्ड"
+
+# description
+msgid "help.noConnectionViewMessages.KEYWORD_DESCRIPTION"
+msgstr ""
+"क्या आप खोज में टाइप कर सकते "
+"हैं के कुछ उदाहरण पर एक नज़र "
+"रखना"
+
+# description
+msgid "userPropertiesKeys.EMAIL"
+msgstr "मेल"
+
+# description
+msgid "sharePanel.ADD_USER_OR_GROUPS"
+msgstr "उपयोगकर्ता या समूह जोड़ें"
+
+# description
+msgid "sharePanel.CLICK_TO_SAVE"
+msgstr ""
+"अपने परिवर्तन सहेजने के लिए "
+"सहेजें क्लिक करें"
+
+# description
+msgid "sharePanel.ENTIRE_TABLE"
+msgstr "संपूर्ण तालिका"
+
+# description
+msgid "sharePanel.FETCHING_PERMISSIONS"
+msgstr "अनुमतियाँ ला रहा है..."
+
+# description
+msgid "sharePanel.IS_OWNER"
+msgstr "स्वामी है"
+
+# description
+msgid "sharePanel.SPECIFIC_COLUMN"
+msgstr "विशिष्ट स्तंभों"
+
+# description
+msgid "sharePanel.TITLE"
+msgstr "साझा करें"
+
+# description
+msgid "sharePanel.WHO_ACCESS"
+msgstr "जो तक पहुँच है"
+
+# description
+msgid "loginConstants.LOGIN_WITH_SAML_MESSAGE"
+msgstr ""
+"एकल साइन ऑन का उपयोग करके "
+"लॉगिन"
+
+# description
+msgid "contextMenu.RELATED_ITEMS"
+msgstr "संबंधित आइटम"
+
+# description
+msgid "importData.NAME_DESCRIPTION_ERROR"
+msgstr ""
+"नाम/विवरण रिक्त नहीं हो "
+"सकता।"
+
+# description
+msgid "importData.CONNECTION_ERROR"
+msgstr "कोई कनेक्शन नहीं चुना है।"
+
+# description
+msgid "importData.TABLE_ERROR"
+msgstr ""
+"कम से कम एक तालिका का चयन करें"
+
+# description
+msgid "importData.BASIC_INFO"
+msgstr "बुनियादी जानकारी"
+
+# description
+msgid "importData.SELECT_TABLES"
+msgstr "तालिकाओं का चयन करें"
+
+# description
+msgid "importData.FILTERS_TRANSFORMS"
+msgstr "ट्रांस्फ़ॉर्मेशन"
+
+# description
+msgid "importData.LOAD_DATA"
+msgstr "डेटा लोड"
+
+# description
+msgid "importData.ABORT_DATA_IMPORT"
+msgstr ""
+"नया डेटा स्रोत आयात निरस्त"
+
+# description
+msgid "importData.ABORT_CONFIRMATION_MESSAGE"
+msgstr ""
+"आप सुनिश्चित करें कि नया "
+"डेटा स्रोत को निरस्त करने के "
+"लिए आप आयात कर रहे हैं?"
+
+# description
+msgid "importData.CANCEL_BTN_LABEL"
+msgstr "यहाँ रहने"
+
+# description
+msgid "importData.CONFIRM_BTN_LABEL"
+msgstr "हाँ, निरस्त"
+
+# description
+msgid "importData.NEXT"
+msgstr "अगले"
+
+# description
+msgid "importData.EDIT_SCHEMA_TEXT"
+msgstr "DDL आदेश"
+
+# description
+msgid "importData.DEFAULT_DS_NAME"
+msgstr "डिफ़ॉल्ट"
+
+# description
+msgid "importData.SUCCESSFUL_STATUS"
+msgstr "सफल"
+
+# description
+msgid "importData.FAILED_STATUS"
+msgstr "में विफल रहा"
+
+# description
+msgid "importData.DB_SCHEMA_NAME"
+msgstr "InformaticaDataBase.InformaticaSchema."
+
+# description
+msgid "importData.TRUNCATE_TABLES"
+msgstr ""
+"मौजूदा तालिकाओं में डेटा कम "
+"करें।"
+
+# description
+msgid "importData.ENABLE_EMAILS"
+msgstr ""
+"डेटा लोड कार्यों के लिए ई-मेल "
+"सूचनाएँ सक्षम करें"
+
+# description
+msgid "importData.DELETE_TABLES"
+msgstr ""
+"चयनित डेटा स्रोत (स्रोतों) के "
+"साथ संबद्ध तालिकाओं को "
+"हटाएँ?"
+
+# description
+msgid "importData.SCHEDULE"
+msgstr "अनुसूची"
+
+# description
+msgid "importData.AVAILABLE_TABLES"
+msgstr "उपलब्ध तालिकाएँ"
+
+# description
+msgid "importData.DELETE_DATASOURCE.TITLE"
+msgstr "हटाने की पुष्टि करें"
+
+# description
+msgid "importData.SELECTED_TABLES"
+msgstr "चयनित तालिकाएँ"
+
+# description
+msgid "importData.SELECT_CONNECTION_TYPE"
+msgstr ""
+"कनेक्शन प्रकार का चयन करें"
+
+# description
+msgid "importData.CREATING_DS"
+msgstr "डेटा स्रोत बनाना"
+
+# description
+msgid "importData.EXECUTING_DDL"
+msgstr "स्कीमा बनाना"
+
+# description
+msgid "importData.LOADING_DATA"
+msgstr "डेटा लोड हो रहा है"
+
+# description
+msgid "importData.IMPORT_DISABLED_TIP"
+msgstr ""
+"डेटा स्रोत के लिए कोई नाम "
+"दर्ज करें"
+
+# description
+msgid "importData.DATATYPE_NOT_SUPPORTED_TIP"
+msgstr ""
+"डेटा प्रकार समर्थित नहीं है"
+
+# description
+msgid "importData.IMPORT_TIP"
+msgstr ""
+"आयात प्रारंभ करने के लिए "
+"यहाँ क्लिक करें।"
+
+# description
+msgid "importData.CLICK_TO_EDIT_SCHEMA"
+msgstr ""
+"क्लिक करें स्कीमा संपादित "
+"करें, या क्लिक करें तालिकाओं "
+"को लोड करने के लिए <b>लोड</b> करने"
+" के लिए <span class=\"bk-text-clickable\"> "
+"<b>यहाँ</b></span>।"
+
+# description
+msgid "importData.NO_SCHEMA_TO_EDIT"
+msgstr ""
+"संपादित करने के लिए कोई "
+"स्कीमा। डेटा को लोड करने के "
+"लिए <b>लोड</b> करें क्लिक करें।"
+
+# description
+msgid "importData.EDIT_SCHEMA"
+msgstr "स्कीमा को संपादित करें"
+
+# description
+msgid "importData.STATUS_PREFIX"
+msgstr ""
+"आइटम के लिए स्थिति लोड हो रहा "
+"है:"
+
+# description
+msgid "importData.TITLE_NAME"
+msgstr "नाम"
+
+# description
+msgid "importData.LAST_LOAD"
+msgstr "पिछले लोड"
+
+# description
+msgid "importData.LOAD_STATUS"
+msgstr "लोड स्थिति"
+
+# description
+msgid "importData.SELECT_CONN"
+msgstr "कनेक्शन का चयन करें"
+
+# description
+msgid "importData.CREATE_CONN"
+msgstr "कनेक्शन बनाएँ"
+
+# description
+msgid "importData.CONN_NAME"
+msgstr "कनेक्शन नाम"
+
+# description
+msgid "importData.DELETE_CONN"
+msgstr "कनेक्शन हटाएँ"
+
+# description
+msgid "importData.EDIT_CONN"
+msgstr "कनेक्शन संपादित करें"
+
+# description
+msgid "importData.CANNOT_DELETE"
+msgstr "हटा नहीं सकता"
+
+# description
+msgid "importData.CANNOT_DELETE_TRANSFORMATION"
+msgstr ""
+"मौजूदा रूपांतरणों को नहीं "
+"हटा सकते।"
+
+# description
+msgid "importData.TABLE_CONTAINS_UNSUPPORTED_COL.SINGLE_TABLE"
+msgstr ""
+"चयनित तालिका {1} स्तंभ "
+"असमर्थित डेटा प्रकारों के "
+"साथ-जो स्वचालित रूप से निकाल "
+"दिए जाएँगे, शामिल हैं।"
+
+# description
+msgid "importData.TABLE_CONTAINS_UNSUPPORTED_COL.MULTIPLE_TABLES"
+msgstr ""
+"संयुक्त राष्ट्र समर्थित "
+"डेटा प्रकार के साथ स्तंभों "
+"में निम्न तालिका आयात करने "
+"के लिए चयनित हो।"
+
+# description
+msgid "importData.CONN_DIALOG.TEST_AND_EDIT"
+msgstr "परीक्षण & संपादित करें"
+
+# description
+msgid "importData.CONN_DIALOG.TEST_AND_CREATE"
+msgstr "परीक्षण & बनाएँ"
+
+# description
+msgid "importData.UNSUPPORTED_COLUMN"
+msgstr ""
+"असमर्थित स्तंभ डेटा प्रकार"
+
+# description
+msgid "importData.LINK_TO_EXISTING_DATA"
+msgstr "मौजूदा डेटा से लिंक"
+
+# description
+msgid "importData.ASK_A_QUESTION"
+msgstr "एक प्रश्न पूछें"
+
+# description
+msgid "importData.TRY_OVER_AGAIN"
+msgstr "फिर से प्रयास करें"
+
+# description
+msgid "importData.SUCCESS"
+msgstr "सफलता"
+
+# description
+msgid "importData.FAILED"
+msgstr "में विफल रहा"
+
+# description
+msgid "importData.INPROGRESS"
+msgstr "प्रगति में"
+
+# description
+msgid "importData.SCHEDULED"
+msgstr "शेड्यूल किया गया"
+
+# description
+msgid "importData.ETL_DISABLED"
+msgstr ""
+"वर्तमान में आपके व्यवस्थापक "
+"द्वारा अक्षम किया गया।"
+
+# description
+msgid "importData.SESSION_LOG_CLICK_TEXT"
+msgstr "सत्र लॉग देखें"
+
+# description
+msgid "importWizard.HEADER_QUESTION"
+msgstr ""
+"स्तंभ नाम पहले से ही फ़ाइल "
+"शीर्ष लेख में परिभाषित कर "
+"रहे हैं?"
+
+# description
+msgid "importWizard.DROP_APPEND_QUESTION"
+msgstr ""
+"क्या आप मौजूदा डेटा के पीछे "
+"जोड़ें या इसे अधिलेखित करने "
+"के लिए चाहते हैं?"
+
+# description
+msgid "importWizard.FIELD_SEPARATOR_QUESTION"
+msgstr ""
+"फ़ील्ड द्वारा अलग कर रहे हैं?"
+
+# description
+msgid "importWizard.fieldSeparators.COMMA"
+msgstr "Comma(,)"
+
+# description
+msgid "importWizard.fieldSeparators.SEMICOLON"
+msgstr "Semicolon(;)"
+
+# description
+msgid "importWizard.fieldSeparators.PIPE"
+msgstr "Pipe(|)"
+
+# description
+msgid "importWizard.fieldSeparators.SPACE"
+msgstr "अंतरिक्ष"
+
+# description
+msgid "importWizard.fieldSeparators.TAB"
+msgstr "टैब"
+
+# description
+msgid "importWizard.SELECT_TYPE"
+msgstr "प्रकार का चयन करें"
+
+# description
+msgid "transformationEditor.TRANSFORM_ASSISTANT"
+msgstr "अभिव्यक्ति सहायक"
+
+# description
+msgid "transformationEditor.TRANSFORMATION"
+msgstr "अभिव्यक्तियाँ"
+
+# description
+msgid "transformationEditor.ADD_EXPRESSION"
+msgstr "अभिव्यक्ति जोड़ें"
+
+# description
+msgid "transformationEditor.ADD_COLUMN"
+msgstr "स्तंभ जोड़ें"
+
+# description
+msgid "transformationEditor.VALIDATE_COLUMN"
+msgstr "मान्य करें"
+
+# description
+msgid "transformationEditor.NO_TRANSFORMATIONS_DEFINED"
+msgstr ""
+"कोई भाव परिभाषित कर रहे हैं, "
+"एक जोड़ने के लिए जोड़ें "
+"क्लिक करें।"
+
+# description
+msgid "transformationEditor.CANNOT_SAVE"
+msgstr ""
+"कृपया सुनिश्चित करें कि आप "
+"एक तालिका उठाया और एक नाम "
+"दिया जाता है।"
+
+# description
+msgid "transformationEditor.TYPE_MISMATCH"
+msgstr ""
+"प्रकार बेमेल, अपेक्षित {1} {2} "
+"मिल गया"
+
+# description
+msgid "transformationEditor.ADD_NEW_COLUMN"
+msgstr "नया स्तंभ जोड़ें"
+
+# description
+msgid "transformationEditor.SELECT_COLUMN"
+msgstr "मौजूदा स्तंभ का चयन करें"
+
+# description
+msgid "transformationEditor.SELECT_TABLE"
+msgstr "किसी तालिका का चयन करें"
+
+# description
+msgid "SAGE_SERVER_NAME"
+msgstr "ThoughtSpot"
+
+# description
+msgid "CALLOSUM_SERVER_NAME"
+msgstr "ThoughtSpot"
+
+# description
+msgid "SAGE_AND_CALLOSUM_SERVER_NAME"
+msgstr "ThoughtSpot"
+
+# description
+msgid "viewPermissionColName"
+msgstr ""
+"अपनी अनुमतियाँ केवल इस column\\ का"
+" नाम देखने के लिए आप की अनुमति"
+" दें"
+
+# description
+msgid "VIZ_CORRUPTED_TITLE_NOT_EDITABLE_MESSAGE"
+msgstr ""
+"किसी दूषित दृश्य का शीर्षक "
+"परिवर्तित नहीं किया जा सकता "
+"है।"
+
+# description
+msgid "profilePic.UPLOAD_INSTRUCTIONS"
+msgstr ""
+". Png या. jpg फ़ाइल (कम से कम 4 MB) "
+"अपलोड करें। यह एक वर्ग "
+"स्वरूप (जैसे 100 x 100) में होना "
+"चाहिए।"
+
+# description
+msgid "layout.tileSizes.xs"
+msgstr "xs"
+
+# description
+msgid "layout.tileSizes.s"
+msgstr "s"
+
+# description
+msgid "layout.tileSizes.m"
+msgstr "एम"
+
+# description
+msgid "layout.tileSizes.l"
+msgstr "l"
+
+# description
+msgid "apiErrorMessage.detail"
+msgstr "विवरण"
+
+# description
+msgid "apiErrorMessage.errorCode"
+msgstr "कोड"
+
+# description
+msgid "apiErrorMessage.incidentId"
+msgstr "घटना Id"
+
+# description
+msgid "apiErrorMessage.downloadTrace"
+msgstr "ट्रेस डाउनलोड"
+
+# description
+msgid "apiErrorMessage.reportProblem"
+msgstr "समस्या रिपोर्ट"
+
+# description
+msgid "dataDownload.DOWNLOAD"
+msgstr "डाउनलोड {vizType}"
+
+# description
+msgid "dataDownload.DOWNLOAD_INSUFFICIENT_PERMISSION"
+msgstr ""
+"{VizType} डाउनलोड करने के लिए "
+"डाउनलोड विशेषाधिकार के लिए "
+"व्यवस्थापक से कहें।"
+
+# description
+msgid "dataDownload.DOWNLOAD_MORE"
+msgstr "अधिक डाउनलोड करें?"
+
+# description
+msgid "dataDownload.DOWNLOAD_MORE_INSUFFICIENT_PERMISSION"
+msgstr ""
+"अधिक डाउनलोड करें? "
+"व्यवस्थापक डाउनलोड "
+"विशेषाधिकार के लिए पूछना।"
+
+# description
+msgid "metadataObjectMenuItems.save.label"
+msgstr "सहेजें"
+
+# description
+msgid "metadataObjectMenuItems.update.label"
+msgstr "अद्यतन"
+
+# description
+msgid "metadataObjectMenuItems.update.disabledTooltip"
+msgstr ""
+"उत्तर मिला कोई मेल खाता "
+"शीर्षक के रूप में अक्षम किया "
+"गया अद्यतन कर रहा है।"
+
+# description
+msgid "metadataObjectMenuItems.saveUntitled.label"
+msgstr "सहेजें"
+
+# description
+msgid "metadataObjectMenuItems.saveAsWorksheet.label"
+msgstr ""
+"कार्यपत्रक के रूप में सहेजें"
+
+# description
+msgid "metadataObjectMenuItems.makeACopy.label"
+msgstr "एक प्रतिलिपि बनाएँ"
+
+# description
+msgid "metadataObjectMenuItems.copyLink.label"
+msgstr "प्रतिलिपि लिंक"
+
+# description
+msgid "metadataObjectMenuItems.pinboardSnapshot.label"
+msgstr "स्नैपशॉट"
+
+# description
+msgid "metadataObjectMenuItems.resetLayout.label"
+msgstr "लेआउट रीसेट करें"
+
+# description
+msgid "metadataObjectMenuItems.schedule.label"
+msgstr "अनुसूची"
+
+# description
+msgid "metadataObjectMenuItems.schedulesList.label"
+msgstr "दृश्य शेड्यूल"
+
+# description
+msgid "metadataObjectMenuItems.share.label"
+msgstr "साझा करें"
+
+# description
+msgid "metadataObjectMenuItems.addFilter.label"
+msgstr "फ़िल्टर्स जोड़ें"
+
+# description
+msgid "metadataObjectMenuItems.addFormula.label"
+msgstr "प्रपत्र जोड़ें"
+
+# description
+msgid "metadataObjectMenuItems.searchOnTop.label"
+msgstr "शीर्ष पर खोज"
+
+# description
+msgid "metadataObjectMenuItems.triggerA3.label"
+msgstr "ऑटो का विश्लेषण"
+
+# description
+msgid "metadataObjectMenuItems.replaySearch.label"
+msgstr "पुनरावृत्ति खोज"
+
+# description
+msgid "metadataObjectMenuItems.showUnderlyingData.label"
+msgstr "अंतर्निहित डेटा दिखाएँ"
+
+# description
+msgid "metadataObjectMenuItems.download.label"
+msgstr "डाउनलोड"
+
+# description
+msgid "metadataObjectMenuItems.downloadAsPdf.label"
+msgstr "पीडीएफ़ रूप डाउनलोड करें"
+
+# description
+msgid "metadataObjectMenuItems.downloadAsCsv.label"
+msgstr "CSV के रूप में डाउनलोड करें"
+
+# description
+msgid "metadataObjectMenuItems.downloadAsXlsx.label"
+msgstr "XLSX के रूप में डाउनलोड करें"
+
+# description
+msgid "metadataObjectMenuItems.presentation.label"
+msgstr "वर्तमान"
+
+# description
+msgid "metadataObjectMenuItems.edit.label"
+msgstr "संपादित करें"
+
+# description
+msgid "metadataObjectMenuItems.remove.label"
+msgstr "हटाएँ"
+
+# description
+msgid "metadataObjectMenuItems.describe.label"
+msgstr "का वर्णन"
+
+# description
+msgid "adminSection.userManagement.addUserButtonLabel"
+msgstr "उपयोगकर्ता जोड़ें"
+
+# description
+msgid "adminSection.userManagement.addGroupButtonLabel"
+msgstr "समूह जोड़ें"
+
+# description
+msgid "adminSection.userManagement.addRoleButtonLabel"
+msgstr "भूमिका जोड़ें"
+
+# description
+msgid "adminSection.userManagement.tabHeader"
+msgstr "उपयोगकर्ता प्रबंधन"
+
+# description
+msgid "adminSection.userManagement.tabUsers.name"
+msgstr "उपयोगकर्ता"
+
+# description
+msgid "adminSection.userManagement.tabGroups.name"
+msgstr "समूह"
+
+# description
+msgid "adminSection.userManagement.tabRoles.name"
+msgstr "रोल्स"
+
+# description
+msgid "adminSection.userManagement.errors.emailNotValid"
+msgstr "ईमेल मान्य नहीं है"
+
+# description
+msgid "adminSection.userManagement.errors.passwordNotMatching"
+msgstr ""
+"मैच के लिए दोनों पासवर्ड की "
+"आवश्यकता"
+
+# description
+msgid "adminSection.userManagement.privilegesLabel"
+msgstr "विशेषाधिकार"
+
+# description
+msgid "adminSection.dataManagement.tabHeader"
+msgstr "डेटा प्रबंधन"
+
+# description
+msgid "adminSection.dataManagement.tabBusinessDataModel.name"
+msgstr "व्यवसाय डेटा मॉडल"
+
+# description
+msgid "adminSection.dataManagement.tabDataSecurity.name"
+msgstr "डेटा सुरक्षा"
+
+# description
+msgid "adminSection.healthManagement.tabHeader"
+msgstr "सिस्टम स्वास्थ्य"
+
+# description
+msgid "adminSection.healthManagement.tabOverview.name"
+msgstr "अवलोकन"
+
+# description
+msgid "adminSection.healthManagement.tabData.name"
+msgstr "डेटा"
+
+# description
+msgid "adminSection.healthManagement.tabDatabase.name"
+msgstr "Datacache विस्तार"
+
+# description
+msgid "adminSection.healthManagement.tabAlert.name"
+msgstr "अलर्ट & घटनाक्रम"
+
+# description
+msgid "adminSection.healthManagement.tabCluster.name"
+msgstr "क्लस्टर प्रबंधक"
+
+# description
+msgid "adminSection.styleCustomization.tabHeader"
+msgstr "शैली अनुकूलन"
+
+# description
+msgid "adminSection.styleCustomization.tabRules.name"
+msgstr "नियम"
+
+# description
+msgid "adminSection.styleCustomization.tabResources.name"
+msgstr "संसाधन"
+
+# description
+msgid "adminSection.jobManagement.tabHeader"
+msgstr "कार्य प्रबंधन"
+
+# description
+msgid "alertService.DOWNLOAD_TRACE"
+msgstr "ट्रेस डाउनलोड"
+
+# description
+msgid "adminUI.DEFAULT_TIME_FORMAT"
+msgstr "MMM dd, yyyy hh:mm:ss एक z"
+
+# description
+msgid "adminUI.tooltip.DELETE_USER"
+msgstr "उपयोगकर्ताओं को हटाना"
+
+# description
+msgid "adminUI.tooltip.ADD_USER_TO_GROUP"
+msgstr ""
+"समूहों के लिए उपयोगकर्ताओं "
+"को जोड़ें"
+
+# description
+msgid "adminUI.messages.NOT_AVAILABLE_MESSAGE"
+msgstr "N/A"
+
+# description
+msgid "adminUI.messages.SEARCH_READY"
+msgstr "तैयार"
+
+# description
+msgid "adminUI.messages.SEARCH_BUILDING_READY"
+msgstr "निर्माण और के लिए तैयार"
+
+# description
+msgid "adminUI.messages.SEARCH_BUILDING_NOT_READY"
+msgstr "निर्माण और तैयार नहीं"
+
+# description
+msgid "adminUI.messages.SEARCH_ERROR"
+msgstr "त्रुटि"
+
+# description
+msgid "adminUI.messages.EVENT_TITLE"
+msgstr "कॉन्फ़िगरेशन घटनाओं"
+
+# description
+msgid "adminUI.messages.ALERT_TITLE"
+msgstr "महत्वपूर्ण सूचना"
+
+# description
+msgid "adminUI.messages.ALERT_DETAIL_TITLE"
+msgstr "अलर्ट"
+
+# description
+msgid "adminUI.messages.EVENT_DETAIL_TITLE"
+msgstr "कॉन्फ़िगरेशन घटनाओं"
+
+# description
+msgid "adminUI.messages.NOTIFICATION_DETAIL_TITLE"
+msgstr "सूचना इवेंट"
+
+# description
+msgid "adminUI.messages.DATABASE_DETAIL_TITLE"
+msgstr "Datacache विस्तार"
+
+# description
+msgid "adminUI.messages.CLUSTER_DETAIL_INFO_TITLE"
+msgstr "क्लस्टर विवरण"
+
+# description
+msgid "adminUI.messages.CLUSTER_DETAIL_LOG_TITLE"
+msgstr "क्लस्टर लॉग"
+
+# description
+msgid "adminUI.messages.CLUSTER_DETAIL_SNAPSHOT_TITLE"
+msgstr "स्नैपशॉट की सूची"
+
+# description
+msgid "adminUI.messages.PERIODIC_SNAPSHOT_FULL_MODE"
+msgstr "पूर्ण"
+
+# description
+msgid "adminUI.messages.PERIODIC_SNAPSHOT_DISABLED"
+msgstr "अक्षम किया गया"
+
+# description
+msgid "adminUI.messages.SEARCH_DETAIL_TABLE_TITLE"
+msgstr "तालिका जानकारी"
+
+# description
+msgid "adminUI.captions.CREATED_AT"
+msgstr "पर बनाया"
+
+# description
+msgid "adminUI.captions.NO_GROUPS"
+msgstr "कोई समूह"
+
+# description
+msgid "adminUI.captions.NO_ROLES"
+msgstr "कोई भूमिका"
+
+# description
+msgid "adminUI.captions.GROUPS_TITLE"
+msgstr "समूह {1} {2}"
+
+# description
+msgid "adminUI.captions.NO_USERS"
+msgstr "कोई उपयोगकर्ता"
+
+# description
+msgid "adminUI.captions.USERS_TITLE"
+msgstr "उपयोगकर्ता {1} {2}"
+
+# description
+msgid "adminUI.captions.ROLES_TITLE"
+msgstr "{1} भूमिका {2}"
+
+# description
+msgid "adminUI.captions.USER_MENU"
+msgstr "उपयोगकर्ता प्रबंधन"
+
+# description
+msgid "adminUI.captions.GROUP_MENU"
+msgstr "समूह प्रबंधन"
+
+# description
+msgid "adminUI.captions.DATA_MENU"
+msgstr "डेटा प्रबंधन"
+
+# description
+msgid "adminUI.captions.USER_LABEL"
+msgstr "उपयोगकर्ता"
+
+# description
+msgid "adminUI.captions.GROUP_LABEL"
+msgstr "समूह"
+
+# description
+msgid "adminUI.captions.FILE_UPLOAD_METADATA_LABEL"
+msgstr "व्यवसाय डेटा मॉडल"
+
+# description
+msgid "adminUI.captions.FILE_UPLOAD_SECURITY_LABEL"
+msgstr "डेटा सुरक्षा"
+
+# description
+msgid "adminUI.captions.ADD_GROUP"
+msgstr "समूह जोड़ें"
+
+# description
+msgid "adminUI.captions.ADD_USER"
+msgstr "उपयोगकर्ता जोड़ें"
+
+# description
+msgid "adminUI.captions.ADD_ROLE"
+msgstr "भूमिका जोड़ें"
+
+# description
+msgid "adminUI.captions.ADD_USER_TO_GROUP"
+msgstr ""
+"समूह में उपयोगकर्ता जोड़ें"
+
+# description
+msgid "adminUI.captions.EDIT_USER"
+msgstr "उपयोगकर्ता संपादित करें"
+
+# description
+msgid "adminUI.captions.ADD_NEW_USER"
+msgstr "एक नया उपयोगकर्ता जोड़ें"
+
+# description
+msgid "adminUI.captions.ADD_NEW_GROUP"
+msgstr "एक नया समूह जोड़ें"
+
+# description
+msgid "adminUI.captions.ADD_NEW_ROLE"
+msgstr "एक नई भूमिका जोड़ें"
+
+# description
+msgid "adminUI.captions.EDIT_GROUP"
+msgstr "समूह संपादित करें"
+
+# description
+msgid "adminUI.captions.SEARCH"
+msgstr "नाम से खोजें"
+
+# description
+msgid "adminUI.captions.GROUPS_IN_GROUP.0"
+msgstr "समूह में कोई समूह"
+
+# description
+msgid "adminUI.captions.GROUPS_IN_GROUP.1"
+msgstr "1 समूह समूह में"
+
+# description
+msgid "adminUI.captions.GROUPS_IN_GROUP.n"
+msgstr "{1} समूहों समूह में"
+
+# description
+msgid "adminUI.captions.USERS_IN_GROUP.0"
+msgstr "समूह में कोई उपयोगकर्ता"
+
+# description
+msgid "adminUI.captions.USERS_IN_GROUP.1"
+msgstr "1 उपयोगकर्ता समूह"
+
+# description
+msgid "adminUI.captions.USERS_IN_GROUP.n"
+msgstr ""
+"{1} उपयोगकर्ताओं के समूह में"
+
+# description
+msgid "adminUI.captions.ROLES_IN_GROUP.0"
+msgstr ""
+"कोई भूमिका समूह को असाइन "
+"किया गया"
+
+# description
+msgid "adminUI.captions.ROLES_IN_GROUP.1"
+msgstr ""
+"1 भूमिका समूह को असाइन किया "
+"गया"
+
+# description
+msgid "adminUI.captions.ROLES_IN_GROUP.n"
+msgstr ""
+"{1} भूमिका समूह को असाइन किया "
+"गया"
+
+# description
+msgid "adminUI.captions.GROUPS_IN_ROLE.0"
+msgstr ""
+"कोई समूह को भूमिका असाइन "
+"किया गया"
+
+# description
+msgid "adminUI.captions.GROUPS_IN_ROLE.1"
+msgstr ""
+"1 समूह को भूमिका असाइन किया "
+"गया"
+
+# description
+msgid "adminUI.captions.GROUPS_IN_ROLE.n"
+msgstr ""
+"{1} के लिए भूमिका समूह असाइन "
+"किया गया"
+
+# description
+msgid "adminUI.captions.USERS_IN_ROLE.0"
+msgstr ""
+"कोई उपयोगकर्ता भूमिका में "
+"असाइन किया गया"
+
+# description
+msgid "adminUI.captions.USERS_IN_ROLE.1"
+msgstr ""
+"1 उपयोगकर्ता भूमिका में "
+"असाइन किया गया"
+
+# description
+msgid "adminUI.captions.USERS_IN_ROLE.n"
+msgstr ""
+"{1} भूमिका करने के लिए "
+"उपयोगकर्ताओं को असाइन किया "
+"गया"
+
+# description
+msgid "adminUI.captions.GROUPS_IN_USER.0"
+msgstr ""
+"उपयोगकर्ता को असाइन किया गया"
+" कोई समूह"
+
+# description
+msgid "adminUI.captions.GROUPS_IN_USER.1"
+msgstr ""
+"1 उपयोगकर्ता के लिए असाइन "
+"किया गया समूह"
+
+# description
+msgid "adminUI.captions.GROUPS_IN_USER.n"
+msgstr ""
+"{1} के लिए उपयोगकर्ता को असाइन "
+"किया गया समूह"
+
+# description
+msgid "adminUI.captions.ROLES_IN_USER.0"
+msgstr ""
+"कोई उपयोगकर्ता को असाइन की "
+"गई भूमिकाएँ"
+
+# description
+msgid "adminUI.captions.ROLES_IN_USER.1"
+msgstr ""
+"1 उपयोगकर्ता के लिए असाइन की "
+"गई भूमिका"
+
+# description
+msgid "adminUI.captions.ROLES_IN_USER.n"
+msgstr ""
+"{1} के लिए उपयोगकर्ता असाइन "
+"किए गए उपयोगकर्ताओं"
+
+# description
+msgid "adminUI.captions.MANAGE_GROUPS_TAB"
+msgstr "समूहों को प्रबंधित करें"
+
+# description
+msgid "adminUI.captions.MANAGE_USERS_TAB"
+msgstr ""
+"उपयोगकर्ताओं को प्रबंधित "
+"करें"
+
+# description
+msgid "adminUI.captions.MANAGE_ROLES_TAB"
+msgstr "भूमिकाएँ प्रबंधित करें"
+
+# description
+msgid "adminUI.captions.NAME"
+msgstr "नाम"
+
+# description
+msgid "adminUI.captions.USERNAME"
+msgstr "उपयोगकर्ता नाम"
+
+# description
+msgid "adminUI.captions.DESCRIPTION"
+msgstr "विवरण"
+
+# description
+msgid "adminUI.captions.DISPLAYED_NAME"
+msgstr "प्रदर्शन नाम"
+
+# description
+msgid "adminUI.captions.EMAIL"
+msgstr "ई-मेल"
+
+# description
+msgid "adminUI.captions.NEW_PASSWORD"
+msgstr "पासवर्ड"
+
+# description
+msgid "adminUI.captions.PASSWORD"
+msgstr "पासवर्ड परिवर्तित करें"
+
+# description
+msgid "adminUI.captions.PASSWORD_CONFIRMATION"
+msgstr "पासवर्ड की पुष्टि करें"
+
+# description
+msgid "adminUI.captions.EDIT_ROLE"
+msgstr "भूमिका संपादित करें"
+
+# description
+msgid "adminUI.captions.PRIVILEGES"
+msgstr "विशेषाधिकार"
+
+# description
+msgid "adminUI.captions.PROPERTY"
+msgstr "गुण"
+
+# description
+msgid "adminUI.captions.CONTENT"
+msgstr "सामग्री"
+
+# description
+msgid "adminUI.captions.CLUSTER_NAME"
+msgstr "क्लस्टर नाम"
+
+# description
+msgid "adminUI.captions.CLUSTER_ID"
+msgstr "क्लस्टर ID"
+
+# description
+msgid "adminUI.captions.RELEASE"
+msgstr "रिलीज"
+
+# description
+msgid "adminUI.captions.LAST_UPDATE_TIME"
+msgstr "अंतिम अद्यतन समय"
+
+# description
+msgid "adminUI.captions.ZOOKEEPER_SERVERS"
+msgstr "रूममेट सर्वर"
+
+# description
+msgid "adminUI.captions.HDFS_NAME_NODES"
+msgstr "HDFS नाम नोड्स"
+
+# description
+msgid "adminUI.captions.CLUSTER_ALERT_EMAIL"
+msgstr "क्लस्टर चेतावनी ई-मेल"
+
+# description
+msgid "adminUI.captions.SERVICE_ALERT_EMAIL"
+msgstr "सेवा चेतावनी ई-मेल"
+
+# description
+msgid "adminUI.captions.PERIODIC_SNAPSHOT_MODE"
+msgstr "आवधिक स्नैपशॉट मोड"
+
+# description
+msgid "adminUI.captions.EVENT_TYPE"
+msgstr "प्रकार"
+
+# description
+msgid "adminUI.captions.EVENT_TIMESTAMP"
+msgstr "समय"
+
+# description
+msgid "adminUI.captions.EVENT_RELEASE"
+msgstr "रिलीज"
+
+# description
+msgid "adminUI.captions.SNAPSHOT_NAME"
+msgstr "नाम"
+
+# description
+msgid "adminUI.captions.SNAPSHOT_REASON"
+msgstr "कारण"
+
+# description
+msgid "adminUI.captions.SNAPSHOT_FINISH_TIME"
+msgstr "समय"
+
+# description
+msgid "adminUI.captions.SNAPSHOT_SIZE"
+msgstr "आकार"
+
+# description
+msgid "adminUI.captions.DATABASE_NAME"
+msgstr "डेटाबेस"
+
+# description
+msgid "adminUI.captions.USER_SCHEMA_NAME"
+msgstr "उपयोगकर्ता स्कीमा"
+
+# description
+msgid "adminUI.captions.DATABASE_TABLE_GUID"
+msgstr "GUID"
+
+# description
+msgid "adminUI.captions.DATABASE_TABLE_NAME"
+msgstr "नाम"
+
+# description
+msgid "adminUI.captions.DATABASE_TABLE_STATUS"
+msgstr "डेटाबेस स्थिति"
+
+# description
+msgid "adminUI.captions.DATABASE_SERVING_TIMESTAMP"
+msgstr "टाईमस्टैम्प सेवा"
+
+# description
+msgid "adminUI.captions.DATABASE_SCHEMA_VERSION"
+msgstr "स्कीमा संस्करण"
+
+# description
+msgid "adminUI.captions.DATABASE_DATA_VERSION"
+msgstr "डेटा संस्करण"
+
+# description
+msgid "adminUI.captions.DATABASE_CREATED_ON"
+msgstr "अंतिम अद्यतन समय"
+
+# description
+msgid "adminUI.captions.DATABASE_NUM_ROWS"
+msgstr "कुल पंक्ति संख्या"
+
+# description
+msgid "adminUI.captions.DATABASE_ROW_SKEW"
+msgstr "पंक्ति गणना तिरछा"
+
+# description
+msgid "adminUI.captions.DATABASE_NUM_DELETED_ROWS"
+msgstr "हटाई गई पंक्तियाँ"
+
+# description
+msgid "adminUI.captions.DATABASE_APPROXIMATE_SIZE_MB"
+msgstr "अनुमानित आकार (MB)"
+
+# description
+msgid "adminUI.captions.DATABASE_APPROXIMATE_SIZE_MB_SKEW"
+msgstr "अनुमानित आकार (MB) तिरछा"
+
+# description
+msgid "adminUI.captions.DATABASE_TOTAL_SHARDS"
+msgstr "कुल Shards"
+
+# description
+msgid "adminUI.captions.DATABASE_CLUSTER_SPACE_USED"
+msgstr ""
+"उपयोग किए गए क्लस्टर स्थान (MB)"
+
+# description
+msgid "adminUI.captions.DATABASE_LAST_UPDATED_TIME"
+msgstr "अंतिम अद्यतन टाइमस्टैम्प"
+
+# description
+msgid "adminUI.captions.SEARCH_TABLE_GUID"
+msgstr "GUID"
+
+# description
+msgid "adminUI.captions.SEARCH_TABLE_NAME"
+msgstr "नाम"
+
+# description
+msgid "adminUI.captions.SEARCH_TABLE_STATUS"
+msgstr "खोज स्थिति"
+
+# description
+msgid "adminUI.captions.SEARCH_DATABASE_VERSION"
+msgstr "डेटाबेस संस्करण"
+
+# description
+msgid "adminUI.captions.SEARCH_BUILDING_VERSION"
+msgstr "निर्माण संस्करण"
+
+# description
+msgid "adminUI.captions.SEARCH_SERVING_VERSION"
+msgstr "संस्करण की सेवा"
+
+# description
+msgid "adminUI.captions.SEARCH_LAST_BUILD_DURATION"
+msgstr ""
+"पिछले अनुक्रमणिका बिल्ड "
+"अवधि"
+
+# description
+msgid "adminUI.clusterSummaryViz.CLUSTER_TITLE"
+msgstr "क्लस्टर सारांश"
+
+# description
+msgid "adminUI.clusterSummaryViz.CLUSTER_NAME"
+msgstr "क्लस्टर नाम"
+
+# description
+msgid "adminUI.clusterSummaryViz.RELEASE"
+msgstr "रिलीज"
+
+# description
+msgid "adminUI.clusterSummaryViz.NUMBER_OF_NODES"
+msgstr "नोड्स की संख्या"
+
+# description
+msgid "adminUI.clusterSummaryViz.LAST_SNAPSHOT_TIME"
+msgstr "पिछली बार जब स्नैपशॉट"
+
+# description
+msgid "adminUI.databaseSummaryViz.DATABASE_TITLE"
+msgstr "संबंधपरक डेटा कैश"
+
+# description
+msgid "adminUI.databaseSummaryViz.LAST_DATA_UPDATE"
+msgstr "पिछले डेटा अद्यतन"
+
+# description
+msgid "adminUI.databaseSummaryViz.CONTENT_TITLES.TABLES_LOADED"
+msgstr "तालिकाएँ लोड"
+
+# description
+msgid "adminUI.databaseSummaryViz.CONTENT_TITLES.TABLES_BEING_UPDATED"
+msgstr "अद्यतन की जा रही तालिकाएँ"
+
+# description
+msgid "adminUI.databaseSummaryViz.CONTENT_TITLES.NEW_TABLES_BEING_LOADED"
+msgstr ""
+"नई तालिकाएँ लोड किया जा रहा"
+
+# description
+msgid "adminUI.databaseSummaryViz.CONTENT_TITLES.ROWS"
+msgstr "पंक्तियाँ"
+
+# description
+msgid "adminUI.searchSummaryViz.SEARCH_TITLE"
+msgstr "संबंधपरक खोज इंजन"
+
+# description
+msgid "adminUI.searchSummaryViz.LAST_INDEXED"
+msgstr "अंतिम बार अनुक्रमित"
+
+# description
+msgid "adminUI.searchSummaryViz.CONTENT_TITLES.TABLES_SEARCHABLE"
+msgstr "तालिकाएँ खोजा"
+
+# description
+msgid "adminUI.searchSummaryViz.CONTENT_TITLES.TABLES_BEING_INDEXED"
+msgstr ""
+"अनुक्रमित की जा रही तालिकाएँ"
+
+# description
+msgid "adminUI.searchSummaryViz.CONTENT_TITLES.NEW_TABLES_BEING_INDEXED"
+msgstr ""
+"नई तालिकाएँ अनुक्रमित किया "
+"जा रहा"
+
+# description
+msgid "adminUI.searchSummaryViz.CONTENT_TITLES.TOKENS_SEARCHABLE"
+msgstr "टोकन खोजा"
+
+# description
+msgid "filtersPermission.READONLY"
+msgstr "केवल पढने योग्य"
+
+# description
+msgid "filtersPermission.EDITABLE"
+msgstr "संपादन योग्य"
+
+# description
+msgid "filtersMessages.READONLY"
+msgstr ""
+"आप केवल इस फ़िल्टर को देख "
+"सकते हैं"
+
+# description
+msgid "filtersMessages.CONFIGURE"
+msgstr "परिवर्तन कॉन्फ़िगरेशन"
+
+# description
+msgid "filtersMessages.checkboxFilter.DISALLOW_SELECT_ALL"
+msgstr ""
+"मानों की बड़ी संख्या के लिए "
+"सभी का चयन करें अक्षम किया "
+"गया। कृपया उपयोग सामूहिक "
+"विकल्प में मान जोड़ें"
+
+# description
+msgid "bulkFilters.ADD_VALUES_IN_BULK"
+msgstr "थोक में मान जोड़ें"
+
+# description
+msgid "bulkFilters.TEXT_AREA_PLACEHOLDER"
+msgstr ""
+"आप उपयोग कर सकते हैं, newline "
+"मानों को अलग करने के लिए टैब "
+"क्लिक करें। उदाहरण के लिए, "
+"लाल, नीले, हरे।"
+
+# description
+msgid "bulkFilters.MATCH_ERROR"
+msgstr ""
+"हम couldn\\ ' t ढूँढें स्तंभ you\\ में "
+"ये मान रहे हैं फ़िल्टरिंग। {1} "
+"त्रुटियाँ।"
+
+# description
+msgid "bulkFilters.EXCEEDED_ONE_TIME_ADDITION"
+msgstr ""
+"हम केवल {1} मान करने के लिए एक "
+"समय में जोड़ सकते हैं।"
+
+# description
+msgid "bulkFilters.EXCEEDED_OVERALL_FILTER_VALUES"
+msgstr ""
+"थोक फ़िल्टरिंग केवल {1} मान तक "
+"का समर्थन करता है।"
+
+# description
+msgid "createSchema.UNKNOWN_ERROR"
+msgstr "अज्ञात त्रुटि"
+
+# description
+msgid "createSchema.CREATE_SCHEMA_DISABLED_TIP"
+msgstr ""
+"स्कीमा को आयात करने के लिए "
+"केवल व्यवस्थापक की अनुमति है"
+
+# description
+msgid "createSchema.EXECUTE"
+msgstr "निष्पादित करें"
+
+# description
+msgid "createSchema.EXECUTE_TIP"
+msgstr ""
+"SQL आदेश में आदेश निष्पादित "
+"करें"
+
+# description
+msgid "createSchema.CONTINUE"
+msgstr "जारी रखें"
+
+# description
+msgid "createSchema.CONTINUE_TIP"
+msgstr ""
+"सफल आदेश फिर से निष्पादित "
+"नहीं किया जाएगा"
+
+# description
+msgid "createSchema.RESET"
+msgstr "रीसेट करें"
+
+# description
+msgid "createSchema.CREATE_SCHEMA"
+msgstr "स्कीमा अपलोड करें"
+
+# description
+msgid "createSchema.SAVE_COMMANDS"
+msgstr "सहेजें आदेश"
+
+# description
+msgid "createSchema.SAVE_COMMANDS_TIP"
+msgstr ""
+"मूल फ़ाइल अधिलेखित नहीं किया"
+" जाएगा"
+
+# description
+msgid "createSchema.VIEW_TABLES"
+msgstr "तालिकाएँ देखें"
+
+# description
+msgid "createSchema.WRITE_TQL"
+msgstr "TQL लिखें"
+
+# description
+msgid "scheduler.SCHEDULE_OPTIONS"
+msgstr "शेड्यूल विकल्प"
+
+# description
+msgid "scheduler.STARTS"
+msgstr "शुरू होता है:"
+
+# description
+msgid "scheduler.AT"
+msgstr "पर"
+
+# description
+msgid "scheduler.COLON"
+msgstr ":"
+
+# description
+msgid "scheduler.TIMEZONE"
+msgstr "समय क्षेत्र:"
+
+# description
+msgid "scheduler.REPEATS"
+msgstr "दोहराता है"
+
+# description
+msgid "scheduler.EVERY_N_MINUTS"
+msgstr ""
+"दोहराने आवृत्ति विकल्प: हर N "
+"मिनट"
+
+# description
+msgid "scheduler.RUN_EVERY"
+msgstr "कार्य चलाएँ हर"
+
+# description
+msgid "scheduler.MINUTES_ON"
+msgstr "पर मिनट:"
+
+# description
+msgid "scheduler.TIME_RANGE"
+msgstr "समय सीमा:"
+
+# description
+msgid "scheduler.ALL_DAY"
+msgstr "सभी दिन"
+
+# description
+msgid "scheduler.BETWEEN"
+msgstr "के बीच"
+
+# description
+msgid "scheduler.AND"
+msgstr "और"
+
+# description
+msgid "scheduler.EACH_DAY"
+msgstr "प्रत्येक दिन"
+
+# description
+msgid "scheduler.REPEAT_OPTIONS"
+msgstr "विकल्प को दोहराएँ:"
+
+# description
+msgid "scheduler.REPEAT_INDEFINITELY"
+msgstr "अनंत बार दोहराने"
+
+# description
+msgid "scheduler.REPEAT_UNTIL"
+msgstr "जब तक दोहराएँ"
+
+# description
+msgid "scheduler.HOURLY"
+msgstr ""
+"आवृत्ति विकल्प दोहराएँ: "
+"प्रति घंटा"
+
+# description
+msgid "scheduler.HOURS_ON"
+msgstr "पर घंटे:"
+
+# description
+msgid "scheduler.DAILY"
+msgstr ""
+"आवृत्ति विकल्प दोहराएँ: "
+"दैनिक"
+
+# description
+msgid "scheduler.RUN_THE_TASK"
+msgstr "कार्य चलाएँ"
+
+# description
+msgid "scheduler.EVERY_DAY"
+msgstr "हर दिन"
+
+# description
+msgid "scheduler.EVERY_WEEKDAY"
+msgstr "प्रत्येक कार्य दिवस"
+
+# description
+msgid "scheduler.WEEKLY"
+msgstr ""
+"आवृत्ति विकल्प दोहराएँ: "
+"साप्ताहिक"
+
+# description
+msgid "scheduler.RUN_WEEK"
+msgstr "हर सप्ताह कार्य चलाने"
+
+# description
+msgid "scheduler.MONTHLY"
+msgstr ""
+"आवृत्ति विकल्प दोहराएँ: "
+"मासिक"
+
+# description
+msgid "scheduler.RUN_ON"
+msgstr "कार्य चलाने"
+
+# description
+msgid "scheduler.DAY"
+msgstr "दिन"
+
+# description
+msgid "scheduler.OF_EVERY_MONTH"
+msgstr "हर महीने का"
+
+# description
+msgid "scheduler.THE"
+msgstr "को"
+
+# description
+msgid "scheduler.intervals.NONE"
+msgstr "दोहराएँ नहीं"
+
+# description
+msgid "scheduler.intervals.MINUTELY"
+msgstr "हर N मिनट"
+
+# description
+msgid "scheduler.intervals.HOURLY"
+msgstr "प्रति घंटा"
+
+# description
+msgid "scheduler.intervals.DAILY"
+msgstr "दैनिक"
+
+# description
+msgid "scheduler.intervals.WEEKLY"
+msgstr "साप्ताहिक"
+
+# description
+msgid "scheduler.intervals.MONTHLY"
+msgstr "मासिक"
+
+# description
+msgid "scheduler.START_TIME_NULL_MSG"
+msgstr ""
+"प्रारंभ समय नल नहीं हो सकता।"
+
+# description
+msgid "scheduler.START_TIME_ERROR"
+msgstr ""
+"प्रारंभ समय से पहले वर्तमान "
+"समय सेट नहीं कर सकता।"
+
+# description
+msgid "scheduler.END_TIME_ERROR"
+msgstr ""
+"प्रारंभ समय समाप्ति समय के "
+"बाद सेट नहीं कर सकता।"
+
+# description
+msgid "statusViewer.STATUS_VIEWER"
+msgstr "स्थिति"
+
+# description
+msgid "statusViewer.DISABLE_SCHEDULE"
+msgstr "शेड्यूल को अक्षम करें"
+
+# description
+msgid "dataFilter.NO_FILTER_TEXT"
+msgstr ""
+"एक डेटा फ़िल्टर परिभाषित "
+"करने के लिए, किसी ऑब्जेक्ट का "
+"चयन करें, किसी फ़ील्ड का चयन "
+"करें, एक ऑपरेटर का चयन करें, "
+"और तब कोई फ़िल्टर मान दर्ज "
+"करें। कार्य करने के लिए डेटा "
+"फ़िल्टर जोड़ने के लिए ठीक "
+"क्लिक करें।"
+
+# description
+msgid "dataFilter.OBJECT"
+msgstr "तालिका:"
+
+# description
+msgid "dataFilter.FILTER"
+msgstr "के द्वारा छांटें:"
+
+# description
+msgid "dataFilter.ROW_LIMIT"
+msgstr "पंक्ति सीमा"
+
+# description
+msgid "dataFilter.PROCESS_ALL_ROWS"
+msgstr "सभी पंक्तियाँ संसाधित"
+
+# description
+msgid "dataFilter.PROCESS_ONLY_THE_FIRST"
+msgstr "प्रक्रिया केवल पहले"
+
+# description
+msgid "dataFilter.DATA_FILTERS"
+msgstr "डेटा फ़िल्टर्स"
+
+# description
+msgid "dataFilter.ADD_FILTER"
+msgstr "फ़िल्टर जोड़ें"
+
+# description
+msgid "dataFilter.ROWS"
+msgstr "पंक्तियाँ"
+
+# description
+msgid "dataFilter.CREATE_FILTER_TEXT"
+msgstr ""
+"वहाँ कोई फ़िल्टर परिभाषित कर"
+" रहे हैं। कार्य को स्रोत से "
+"सभी डेटा संसाधित करेगा।"
+
+# description
+msgid "dataFilter.FILTER_TYPES.EQUALS.display"
+msgstr "के बराबर होती है"
+
+# description
+msgid "dataFilter.FILTER_TYPES.NOT_EQUALS.display"
+msgstr "इसके बराबर नहीं है"
+
+# description
+msgid "dataFilter.FILTER_TYPES.LESS_THAN.display"
+msgstr "कम से कम"
+
+# description
+msgid "dataFilter.FILTER_TYPES.LESS_THAN_OR_EQUALS.display"
+msgstr "कम से कम या बराबर है"
+
+# description
+msgid "dataFilter.FILTER_TYPES.GREATER_THAN.display"
+msgstr "से अधिक"
+
+# description
+msgid "dataFilter.FILTER_TYPES.GREATER_THAN_OR_EQUALS.display"
+msgstr "इससे बड़ा या बराबर है"
+
+# description
+msgid "dataFilter.FILTER_TYPES.STARTS_WITH.display"
+msgstr "के साथ शुरू होता है"
+
+# description
+msgid "dataFilter.FILTER_TYPES.ENDS_WITH.display"
+msgstr "के साथ समाप्त होता है"
+
+# description
+msgid "dataFilter.FILTER_TYPES.CONTAINS.display"
+msgstr "जिसमें है"
+
+# description
+msgid "dataFilter.FILTER_TYPES.IS_NULL.display"
+msgstr "नल है"
+
+# description
+msgid "dataFilter.FILTER_TYPES.IS_NOT_NULL.display"
+msgstr "नल नहीं है"
+
+# description
+msgid "contactSupport.CONTACT_SUPPORT"
+msgstr "समर्थन से संपर्क करें।"
+
+# description
+msgid "debug.IS_ROOT"
+msgstr "जड़ है"
+
+# description
+msgid "debugging.messages.DEBUG_INFO_DOWNLOAD_LINK_MESSAGE_PREFIX"
+msgstr ""
+"कृपया डीबग लॉग पर क्लिक करके "
+"डाउनलोड करें"
+
+# description
+msgid "debugging.messages.DEBUG_INFO_DOWNLOAD_LINK_MESSAGE_SUFFIX"
+msgstr "यहाँ"
+
+# description
+msgid "embed.embeddedObjectType.VISUALIZATION"
+msgstr "दृश्यावलोकन"
+
+# description
+msgid "embed.embeddedObjectType.PINBOARD"
+msgstr "Pinboard"
+
+# description
+msgid "embed.INVALID_EMBED_CONFIGURATION_MESSAGE"
+msgstr ""
+"इस ThoughtSpot दृश्य के लिए "
+"कॉन्फ़िगरेशन गलत है। कृपया "
+"इसे ठीक करने के लिए "
+"व्यवस्थापक से संपर्क करें।"
+
+# description
+msgid "embed.EMBED_CONTROL_ACTION_MESSAGE"
+msgstr ""
+"{EmbeddedObjectType} के लिए एक सीधा लिंक "
+"प्राप्त करने के लिए नीचे दिए "
+"गए पाठ की प्रतिलिपि बनाएँ।"
+
+# description
+msgid "embed.MISSING_VISUALIZATIONS_MESSAGE"
+msgstr ""
+"एक या एक से अधिक दृश्यावलोकन "
+"Pinboard में हम"
+
+# description
+msgid "embed.control.TITLE"
+msgstr "लिंक की प्रतिलिपि बनाएँ"
+
+# description
+msgid "print.INVALID_PRINT_CONFIGURATION_MESSAGE"
+msgstr ""
+"प्रिंट कॉन्फ़िगरेशन गलत है। "
+"कृपया पैरामीटर की जाँच करें।"
+
+# description
+msgid "timeBucketLabels.ms"
+msgstr "विस्तृत"
+
+# description
+msgid "timeBucketLabels.h"
+msgstr "प्रति घंटा"
+
+# description
+msgid "timeBucketLabels.d"
+msgstr "दैनिक"
+
+# description
+msgid "timeBucketLabels.w"
+msgstr "साप्ताहिक"
+
+# description
+msgid "timeBucketLabels.M"
+msgstr "मासिक"
+
+# description
+msgid "timeBucketLabels.Q"
+msgstr "त्रैमासिक"
+
+# description
+msgid "timeBucketLabels.y"
+msgstr "वार्षिक"
+
+# description
+msgid "a3.TRIGGER_MESSAGE"
+msgstr ""
+"स्वत: बहुत बढ़िया विश्लेषण "
+"अनुरोध भेजा है। यह पूर्ण "
+"होने पर आपको सूचित किया "
+"जाएगा।"
+
+# description
+msgid "a3.ANALYSIS_COMPLETE"
+msgstr ""
+"प्रतिस्पर्धा स्वत: बहुत "
+"बढ़िया विश्लेषण।"
+
+# description
+msgid "a3.OPEN_PINBOARD"
+msgstr ""
+"Pinboard को खोलने के लिए यहाँ "
+"क्लिक करें।"
+
+# description
+msgid "a3.ANALYSIS_FAILED"
+msgstr "विश्लेषण विफल रहा।"
+
+# description
+msgid "appInitialization.APP_INITIALIZATION_FAILURE_MESSAGE"
+msgstr ""
+"ThoughtSpot प्रारंभ करना विफल। "
+"कृपया पृष्ठ reloading का प्रयास "
+"करें या यदि समस्या बनी रहती "
+"है, तो व्यवस्थापक से संपर्क "
+"करें।"
+
+# description
+msgid "rangeSelect.ENTER_A_VALUE"
+msgstr "एक मान दर्ज करें"
+
+# description
+msgid "rangeSelect.ENTER_MIN_VALUE"
+msgstr "न्यूनतम मान दर्ज करें"
+
+# description
+msgid "rangeSelect.ENTER_MAX_VALUE"
+msgstr "अधिकतम मान दर्ज करें"
+
+# description
+msgid "checkboxFilter.emptyFilterTextPlaceholder"
+msgstr "(का चयन करें)"
+
+# description
+msgid "checkboxFilter.TYPE_A_VALUE"
+msgstr "कोई मान दर्ज करें"
+
+# description
+msgid "checkboxFilter.ALL"
+msgstr "सभी"
+
+# description
+msgid "checkboxFilter.SELECTED"
+msgstr "चयनित"
+
+# description
+msgid "checkboxFilter.NO_SELECTED_FILTER"
+msgstr "कोई चयनित फ़िल्टर"
+
+# description
+msgid "checkboxFilter.THINKING"
+msgstr "श। मैं यहाँ सोच रहा हूँ।"
+
+# description
+msgid "checkboxFilter.TRY_REDUCING_VALUES"
+msgstr ""
+"{1} + मान। को कम करने के लिए "
+"प्रकार"
+
+# description
+msgid "checkboxFilter.KEEP_TRYING"
+msgstr ""
+"अभी भी बहुत सारे... लिखते रहो!"
+
+# description
+msgid "checkboxFilter.SAMPLE_VALUES"
+msgstr "नमूना मान"
+
+# description
+msgid "checkboxFilter.NO_MATCHES"
+msgstr "कोई मिलान मान।"
+
+# description
+msgid "pinboardFilter.ADD_FILTER"
+msgstr "फ़िल्टर्स जोड़ें"
+
+# description
+msgid "pinboardFilter.NO_SOURCES_PLACEHOLDER"
+msgstr ""
+"फ़िल्टर्स केवल "
+"कार्यपत्रकों के लिए समर्थन "
+"जोड़ने। डेटा स्रोत ऑटो के "
+"आधार पर पिन किया गया दृश्य का "
+"चयन किया।"
+
+# description
+msgid "sageUserFeedback.DIALOG_TITLE"
+msgstr "क्वेरी सुझाव प्रतिक्रिया"
+
+# description
+msgid "sageUserFeedback.SELECT_A_RATING"
+msgstr "सुझाव रेटिंग का चयन करें"
+
+# description
+msgid "sageUserFeedback.ENTER_DESCRIPTION_PLACEHOLDER"
+msgstr ""
+"असुविधा के लिए क्षमा करें। "
+"कृपया समस्या का वर्णन करें।"
+
+# description
+msgid "sageUserFeedback.GIVE_FEEDBACK"
+msgstr ""
+"डॉन ' t किसी भी उपयोगी सुझाव "
+"देखें? अपने क्रोध को साझा!"
+
+# description
+msgid "suggestions.ADDITIONAL_SOURCES"
+msgstr "अतिरिक्त स्रोतों से सुझाव"
+
+# description
+msgid "suggestions.SYNONYMS"
+msgstr "समानार्थी सुझाव"
+
+# description
+msgid "suggestions.SEARCH_HISTORY"
+msgstr "खोज इतिहास से सुझाव"
+
+# description
+msgid "fontPreview.PREVIEW_TEXT"
+msgstr ""
+"त्वरित भूरा fox से अच्छा "
+"हिंदोस्तां कूदता"
+
+# description
+msgid "fontPreview.NO_FONT_FACE_MESSAGE"
+msgstr ""
+"कृपया एक फ़ॉन्ट फ़ाइल अपलोड "
+"करें।"
+
+# description
+msgid "fontPreview.fontProperties.FAMILY"
+msgstr "नाम"
+
+# description
+msgid "fontPreview.fontProperties.WEIGHT"
+msgstr "वजन"
+
+# description
+msgid "fontPreview.fontProperties.STYLE"
+msgstr "शैली"
+
+# description
+msgid "fontPreview.fontProperties.SIZE"
+msgstr "आकार (px)"
+
+# description
+msgid "fontPreview.fontProperties.UNICODE_RANGE"
+msgstr "यूनिकोड रेंज"
+
+# description
+msgid "fontPreview.fontProperties.VARIANT"
+msgstr "संस्करण"
+
+# description
+msgid "fontPreview.fontProperties.STRETCH"
+msgstr "खिंचाव"
+
+# description
+msgid "fontPreview.fontProperties.COLOR"
+msgstr "रंग"
+
+# description
+msgid "fontSelector.EDIT_FONT_BUTTON_LABEL"
+msgstr "फ़ॉन्ट संपादित करें"
+
+# description
+msgid "fontSelector.ADD_NEW_FONT_BUTTON_LABEL"
+msgstr "फ़ॉन्ट जोड़ें"
+
+# description
+msgid "fontEditor.DEFAULT_FONT_FAMILY_NAME"
+msgstr "कस्टम फ़ॉन्ट"
+
+# description
+msgid "fontEditor.fontFaceWeight.NORMAL"
+msgstr "सामान्य"
+
+# description
+msgid "fontEditor.fontFaceWeight.BOLD"
+msgstr "बोल्ड"
+
+# description
+msgid "fontEditor.fontFaceWeight.LIGHT"
+msgstr "प्रकाश"
+
+# description
+msgid "fontEditor.fontFaceStyle.NORMAL"
+msgstr "सामान्य"
+
+# description
+msgid "fontEditor.fontFaceStyle.ITALIC"
+msgstr "इटैलिक"
+
+# description
+msgid "fontEditor.fontFaceStyle.OBLIQUE"
+msgstr "परोक्ष"
+
+# description
+msgid "customizableStyleProperties.FONT_FACE"
+msgstr "फ़ॉन्ट"
+
+# description
+msgid "customizableStyleProperties.BACKGROUND_COLOR"
+msgstr "पृष्ठभूमि रंग"
+
+# description
+msgid "customizableStyleProperties.BACKGROUND_IMAGE"
+msgstr "पृष्ठभूमि छवि"
+
+# description
+msgid "styleCustomizer.resetButton.LABEL"
+msgstr "रीसेट करें"
+
+# description
+msgid "styleCustomizer.appLogoSelector.HEADER"
+msgstr "अनुप्रयोग लोगो (डिफ़ॉल्ट)"
+
+# description
+msgid "styleCustomizer.appLogoSelector.SUBTEXT"
+msgstr "अनुशंसित आकार: 140px x 140px"
+
+# description
+msgid "styleCustomizer.wideAppLogoSelector.HEADER"
+msgstr "अनुप्रयोग लोगो (व्यापक)"
+
+# description
+msgid "styleCustomizer.wideAppLogoSelector.SUBTEXT"
+msgstr "अनुशंसित आकार: 440px x 100px"
+
+# description
+msgid "styleCustomizer.chartFontSelector.HEADER"
+msgstr ""
+"चार्ट विज़ुअलाइज़ेशन "
+"फ़ॉन्ट्स"
+
+# description
+msgid "styleCustomizer.chartFontSelector.NO_SELECTION_PLACEHOLDER_MESSAGE"
+msgstr "किसी फ़ॉन्ट का चयन करें"
+
+# description
+msgid "styleCustomizer.tableFontSelector.HEADER"
+msgstr "तालिका दृश्य फ़ॉन्ट्स"
+
+# description
+msgid "styleCustomizer.tableFontSelector.NO_SELECTION_PLACEHOLDER_MESSAGE"
+msgstr "किसी फ़ॉन्ट का चयन करें"
+
+# description
+msgid "styleCustomizer.appBackgroundSelector.HEADER"
+msgstr ""
+"एम्बेडेड अनुप्रयोग "
+"पृष्ठभूमि"
+
+# description
+msgid "styleCustomizer.chartColorPaletteEditor.HEADER"
+msgstr "चार्ट रंग पट्टियाँ"
+
+# description
+msgid "styleCustomizer.customizableFeatures.table.CELL"
+msgstr "तालिका मान वाले कक्षों"
+
+# description
+msgid "styleCustomizer.customizableFeatures.chart.X_AXIS_LABEL"
+msgstr "X अक्ष लेबल"
+
+# description
+msgid "styleCustomizer.customizableFeatures.chart.X_AXIS_TITLE"
+msgstr "X अक्ष शीर्षक"
+
+# description
+msgid "styleCustomizer.customizableFeatures.chart.Y_AXIS_LABEL"
+msgstr "Y अक्ष लेबल"
+
+# description
+msgid "styleCustomizer.customizableFeatures.chart.Y_AXIS_TITLE"
+msgstr "Y अक्ष शीर्षक"
+
+# description
+msgid "styleCustomizer.customizableFeatures.chart.TOOLTIP"
+msgstr "टूल टिप"
+
+# description
+msgid "styleCustomizer.customizableFeatures.chart.SCATTER_CHART"
+msgstr "स्कैटर चार्ट डेटा लेबल"
+
+# description
+msgid "styleCustomizer.customizableFeatures.chart.PIE_CHART"
+msgstr "पाइ चार्ट डेटा लेबल"
+
+# description
+msgid "styleCustomizer.customizableFeatures.chart.LINE_CHART"
+msgstr "रेखा चार्ट डेटा लेबल"
+
+# description
+msgid "styleCustomizer.customizableFeatures.chart.COLUMN_CHART"
+msgstr "स् तंभ चार्ट डेटा लेबल"
+
+# description
+msgid "styleCustomizer.customizableFeatures.chart.BAR_CHART"
+msgstr "पट्टी चार्ट डेटा लेबल"
+
+# description
+msgid "styleCustomizer.customizableFeatures.chart.AREA_CHART"
+msgstr "क्षेत्र चार्ट डेटा लेबल"
+
+# description
+msgid "blobUploadService.blobTypeNames.FONT"
+msgstr "फ़ॉन्ट"
+
+# description
+msgid "blobUploadService.blobTypeNames.IMAGE"
+msgstr "छवि"
+
+# description
+msgid "blobUploadService.blobTypeNames.GENERIC"
+msgstr "सामान्य फ़ाइल"
+
+# description
+msgid "blobUploadService.invalidFileMessages.INVALID_TYPE"
+msgstr ""
+"चयनित फ़ाइल एक मान्य {fileType} "
+"नहीं है।"
+
+# description
+msgid "blobUploader.UPLOAD_NEW_FILE_BUTTON_LABEL"
+msgstr "कोई नई फ़ाइल अपलोड करें"
+
+# description
+msgid "charts.chartEditor.SHOW_Y_AXIS_AS_PERCENT"
+msgstr "के रूप में % y-अक्ष दिखाएँ"
+
+# description
+msgid "charts.chartEditor.SHOW_DATA_LABELS"
+msgstr "डेटा लेबल दिखाएँ"
+
+# description
+msgid "charts.chartEditor.OVERLAY_HEATMAP"
+msgstr "Heatmap मोड"
+
+# description
+msgid "charts.seriesType.LINE"
+msgstr "रेखा"
+
+# description
+msgid "migration.export.TITLE"
+msgstr "{PageType} s निर्यात"
+
+# description
+msgid "migration.export.EXPORT_URL"
+msgstr ""
+"करने के लिए निर्यात करने के "
+"लिए URL"
+
+# description
+msgid "migration.export.IMPORT_URL_LINK_TEXT"
+msgstr "गंतव्य URL"
+
+# description
+msgid "migration.export.STEP.ONE"
+msgstr "चरण 1"
+
+# description
+msgid "migration.export.STEP.TWO"
+msgstr "चरण 2"
+
+# description
+msgid "migration.export.STEP.THREE"
+msgstr "चरण 3"
+
+# description
+msgid "migration.export.STEP_INFO.ONE"
+msgstr "करने के लिए नेविगेट करें"
+
+# description
+msgid "migration.export.STEP_INFO.TWO"
+msgstr ""
+"आयात करें बटन पर क्लिक करें"
+
+# description
+msgid "migration.export.STEP_INFO.THREE"
+msgstr ""
+"प्रतिलिपि बनाएँ और चिपकाएँ"
+
+# description
+msgid "migration.import.TITLE"
+msgstr "{PageType} s आयात करें"
+
+# description
+msgid "migration.import.IMPORT_FILE"
+msgstr "फ़ाइल नाम चिपकाएँ"
+
+# description
+msgid "migration.import.STATUS_LABEL.SUMMARY"
+msgstr "सारांश"
+
+# description
+msgid "migration.import.STATUS_LABEL.IMPORTED"
+msgstr "आयातित {pageType} s"
+
+# description
+msgid "migration.import.STATUS_LABEL.UNIMPORTED"
+msgstr "Unimported {pageType} s"
+
+# description
+msgid "migration.import.STATUS_LABEL.NONE"
+msgstr "कोई नहीं"
+
+# description
+msgid "migration.import.SUMMARY_INFO"
+msgstr ""
+"{importedCount} {totalCount के} सफलतापूर्वक "
+"आयात किए गए। {genInfo}"
+
+# description
+msgid "migration.import.GENERIC_INFO"
+msgstr ""
+"सभी प्रासंगिक डेटा स्रोत और "
+"लक्ष्य सिस्टम में रिश्ते उस "
+"स्रोत सिस्टम के लिए समान "
+"होना चाहिए।"
+
+# description
+msgid "visualizationPinner.trigger.ADD_TO_PINBOARD"
+msgstr "पिन"
+
+# description
+msgid "visualizationPinner.modal.TITLE"
+msgstr "Pinboard करने के लिए जोड़ें"
+
+# description
+msgid "visualizationPinner.modal.SEARCH_PLACEHOLDER"
+msgstr "एक pinboard खोज"
+
+# description
+msgid "visualizationPinner.modal.ADD_PINBOARD"
+msgstr "जोड़ें"
+
+# description
+msgid "visualizationPinner.modal.CREATE_NEW_PINBOARD"
+msgstr "नई pinboard बनाएँ"
+
+# description
+msgid "visualizationPinner.modal.NEW_PINBOARD_NAME_PLACEHOLDER"
+msgstr "नई pinboard नाम"
+
+# description
+msgid "report.jobStateString.SCHEDULED"
+msgstr "शेड्यूल किया गया"
+
+# description
+msgid "report.jobStateString.PAUSED"
+msgstr "रुका हुआ"
+
+# description
+msgid "report.jobRunStateString.DEFAULT"
+msgstr "डिफ़ॉल्ट"
+
+# description
+msgid "report.jobRunStateString.RUNNING"
+msgstr "चल रहा"
+
+# description
+msgid "report.jobRunStateString.FAILED"
+msgstr "में विफल रहा"
+
+# description
+msgid "report.jobRunStateString.SUCCESS"
+msgstr "सफलता"
+
+# description
+msgid "report.jobRunStateString.DEADLINE"
+msgstr "समय सीमा"
+
+# description
+msgid "report.jobRunStateString.DOES_NOT_EXIST"
+msgstr "मौजूद नहीं है"
+
+# description
+msgid "report.csvWarning"
+msgstr ""
+"CSV फ़ाइलें केवल इस pinboard में "
+"तालिकाओं के लिए भेजा जाएगा।"
+
+# description
+msgid "report.name"
+msgstr "नाम"
+
+# description
+msgid "report.serverTimeZone"
+msgstr "सर्वर समय ज़ोन"
+
+# description
+msgid "report.description"
+msgstr "विवरण"
+
+# description
+msgid "report.type"
+msgstr "प्रकार"
+
+# description
+msgid "report.schedule"
+msgstr "अनुसूची"
+
+# description
+msgid "report.save"
+msgstr "सहेजें"
+
+# description
+msgid "report.cancel"
+msgstr "रद्द करें"
+
+# description
+msgid "report.recipients"
+msgstr "प्राप्तकर्ताओं"
+
+# description
+msgid "report.addRecipients"
+msgstr "प्राप्तकर्ता जोड़ें"
+
+# description
+msgid "report.nextOccurence"
+msgstr "अगली पुनरावृत्ति"
+
+# description
+msgid "report.noDetail"
+msgstr "कार्य {1} पर प्रारंभ हुआ"
+
+# description
+msgid "report.startedAt"
+msgstr ""
+
+# description
+msgid "dataSourcePreview.FOOTER_TEXT"
+msgstr "और अधिक {1}।"
+
+# description
+msgid "vizContext.NO_MATCHING_HEADLINE"
+msgstr ""
+"उत्तर मिला कोई मेल खाता "
+"शीर्षक के रूप में अक्षम किया "
+"गया अद्यतन कर रहा है।"
+
+# description
+msgid "pinboardSnapshots.SEARCH_PLACEHOLDER"
+msgstr "खोज स्नैपशॉट"
+
+# description
+msgid "pinboardSnapshots.TAKE_SNAPSHOT"
+msgstr "स्नैपशॉट ले"
+
+# description
+msgid "pinboardSnapshots.NEW_SNAPSHOT_NAME_PLACEHOLDER"
+msgstr "नई स्नैपशॉट नाम"
+
+# description
+msgid "pinboardSnapshots.NEW_SNAPSHOT_DESCRIPTION_PLACEHOLDER"
+msgstr "नई स्नैपशॉट विवरण"
+
+# description
+msgid "pinboardPage.PINBOARD_TAB"
+msgstr "Pinboard"
+
+# description
+msgid "pinboardPage.INSIGHTS_TAB"
+msgstr "INSIGHT"

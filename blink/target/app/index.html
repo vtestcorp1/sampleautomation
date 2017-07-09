@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" ng-app="blink.app">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <meta name="description" content="">
+
+    <script type="text/javascript">
+        // Top level namespace var declaration
+        var blink = {};
+        blink.env = {
+            dev: false
+        };
+        blink.commitId = 'f73701d51ab1afb49bc19af81b9d8780c2a07f90';
+        blink.gitBranch = 'master';
+        blink.buildTimeStamp = 'Sun Jul 09 2017 13:22:16';
+        blink.translationsPath = 'app/resources/strings/translations/';
+    </script>
+
+    <link type="text/css" rel="stylesheet" href="resources/css/all.css">
+
+    <script src="js/lib.min.js"></script>
+    <script src="js/templates.js"></script>
+    <script src="js/resource-cache.js"></script>
+    <script>
+        var locale = blink.getAppLocale();
+        blink.localeSuffix = '.' + blink.commitId;
+        var translations =
+            blink.translationsPath + 'strings-' + locale + blink.localeSuffix + '.js';
+        System.config({
+            bundles: {
+                'js/system-app.min.js': [
+                    'app/src/base/bootstrap.js'
+                ],
+                'translations': ['app/src/base/bootstrap.js']
+            },
+            map: {
+                'src' : 'app/src',
+                'translations': translations
+            }
+        });
+        var systemImports = System.import('app/src/base/bootstrap.js');
+    </script>
+    <script src="js/all.min.js"></script>
+    <script>
+        systemImports.
+            then(function (bootstrap) {
+                bootstrap.start();
+                console.log('scripts loaded');
+            }, console.error.bind(console));
+    </script>
+</head>
+<body>
+    <app-controller class="bk-app-controller-container"></app-controller>
+</body>
+</html>
