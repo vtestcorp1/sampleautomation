@@ -24,13 +24,13 @@ var actionButtons = require('../actions-button.js');
 describe('Pinboard viz context pinning', function () {
     var pinboardName = 'pinboardScenariosTesting';
 
-    beforeEach(function () {
+   /*  beforeEach(function () {
         common.navigation.goToPinboardsSection();
-    });
+    }); */
 
-    afterEach(function () {
+   /*  afterEach(function () {
         pinboards.deletePinboard(pinboardName);
-    });
+    }); */
 
     it('should be edit the viz from viz context', function () {
         var query = 'revenue color';
@@ -109,6 +109,7 @@ describe('Pinboard viz context pinning', function () {
         var sources = ['LINEORDER', 'PART'];
         answer.doAdhocQuery(query, sources, charts.vizTypes.TABLE);
         answer.addShowingVizToNewPinboard(pinboardName);
+    
         common.navigation.goToPinboardsSection();
         pinboards.openPinboard(pinboardName);
         pinboards.openVizEditor();
@@ -241,4 +242,6 @@ describe('Pinboard viz context pinning', function () {
         dialog.waitForDisabledPrimaryButton();
         dialog.confirm();
     });
+
+    
 });

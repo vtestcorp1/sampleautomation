@@ -17,6 +17,7 @@ let selectors = {
 function dragRowFieldToColumnArea(rowFieldName) {
     let rowField = element(by.cssContainingText(selectors.FIELD, rowFieldName));
     util.dragAndDrop(rowField, 300, -50);
+     
 }
 
 function waitForVerticalHeaderRowsCountToBe(count) {

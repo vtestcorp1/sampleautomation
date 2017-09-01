@@ -41,13 +41,22 @@ describe('Viz pinning from answers', function () {
         var sources = ['Formula Worksheet'];
         var pinboardName = 'ReadOnlyPinboard';
         answer.doAdhocQuery('revenue by supplier suppkey', sources, charts.vizTypes.CHART);
+       
         answer.addShowingVizToNewPinboard(pinboardName);
+        
         common.navigation.goToPinboardsSection();
         pinboards.openPinboard(pinboardName);
         pinboards.openFilterPanel();
+
+ 
         leftPanel.waitForEnabledSource('Formula Worksheet');
+        browser.pause();
         leftPanel.expandSource('Formula Worksheet');
+
+        
         leftPanel.openFilter('Ship Mode');
+
+       
         filterDialog.clickDone();
 
         common.navigation.goToPinboardsSection();

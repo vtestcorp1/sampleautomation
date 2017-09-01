@@ -52,8 +52,12 @@ describe ("Users and groups admin section", function() {
             nav.goToAdminSection();
             adminUI.goToUserManagement();
             timestamp = new Date().getTime();
+            
             blinkList.clearSearchBox();
         });
+
+
+        it('function sample',function(){});
 
         it('should select all users', function() {
             var selector = blinkList.selectors.METADATA_LIST_ITEM_CONTAINER;

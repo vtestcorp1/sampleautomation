@@ -246,8 +246,11 @@ function deleteViz(vizElement) {
 
 function startSlideShow(vizElement) {
     vizElement = vizElement || element(locators.VIZ);
+    browser.sleep(5000);
     openVizDropdownMenu(vizElement);
+    browser.sleep(5000);
     $(selectors.START_SLIDE_SHOW_ON_VIZ).click();
+    browser.sleep(5000);
     return util.waitForElement(slideShow.selectors.SLIDE_SHOW_CONTAINER);
 }
 

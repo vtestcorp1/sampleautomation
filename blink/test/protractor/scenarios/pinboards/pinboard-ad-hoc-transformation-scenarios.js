@@ -52,6 +52,7 @@ describe('Pinboard ad-hoc transformation', function () {
         charts.waitForChartVizToLoad();
         var firstColumnElem = charts.getColumnRectangles(vizElem).get(0);
         common.util.rightClickElement(firstColumnElem);
+        
         common.util.waitForAndClick(contextMenu.locators.DRILL_DOWN);
         drillDown.typeTextInSearch('Datekey');
         common.util.waitForInvisibilityOf(drillDown.selectors.NO_MATCHES_ITEM);

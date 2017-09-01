@@ -71,6 +71,7 @@ describe('Home Page', function() {
         common.navigation.goToHome();
         uiSelect.changeSelection($(pinboards.selectors.HOME_PAGE_PINBOARD_PLUGIN),
             smallPinboardName, true);
+            browser.pause();
         pinboards.waitForVizCountToBe(1);
         $(home.selectors.HOME_PAGE_PINBOARD_SELECT).getSize().then(function(size) {
             expect(size.width).toEqual(MIN_DROPDOWN_WIDTH);

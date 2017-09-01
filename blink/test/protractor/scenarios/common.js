@@ -39,8 +39,7 @@ function getElement(selector) {
     if(typeof selector === 'string') {
         return $(selector);
     }
-    else if(!!selector.constructor &&
-        selector.constructor.name === 'ElementFinder') {
+    else if(!!selector.constructor &&  selector.constructor.name === 'ElementFinder') {
         return selector;
     } else {
         return element(selector);
@@ -342,9 +341,10 @@ var util = (function() {
         waitForElement: function (elem, optionalTimeout) {
             elem = getElement(elem);
             var EC = protractor.ExpectedConditions;
-            return browser.wait(EC.presenceOf(elem), WAIT_TIMEOUT);
+            return browser.wait(EC.presenceOf(elem), WAIT_TIMEOUT); 
         },
         waitForElementCountToBe: function(selector, count, optionalTimeout) {
+            
             var condition = EC.expectElementCountToBe(selector, count);
             return util.waitForCondition(condition, optionalTimeout);
         },

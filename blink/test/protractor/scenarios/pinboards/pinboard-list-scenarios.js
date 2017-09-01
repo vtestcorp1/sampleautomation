@@ -34,4 +34,13 @@ describe('Pinboard metadata list', function () {
         common.util.waitForElementToNotBePresent(common.util.selectors.ERROR_NOTIF);
         pinboards.deletePinboard(pinboardName);
     });
+    it ('should share thePinboard', function(){
+
+    //   pinboards.openPinboard('vtest-sample');
+    //   pinboards.deletePinboard('vtest-sample');
+
+
+      //pinboards.sharePinboard('demo1','[0username]','readonly');
+
+    });
 });

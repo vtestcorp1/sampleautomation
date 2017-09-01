@@ -305,5 +305,8 @@ describe('Pinboard filter scenarios', function () {
             var vizElement = pinboards.getVizElementAtIndex(0);
             table.waitForTableRowCountToBe(vizElement, 1);
         });
+
+      
+
     })
 });

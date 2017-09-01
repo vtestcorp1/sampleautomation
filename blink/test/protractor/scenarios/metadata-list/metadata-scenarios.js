@@ -76,6 +76,7 @@ describe('Metadata list', function () {
     it("[SMOKE] should go back to first page after performing filtering", function(){
         nav.goToUserDataSection();
         filter.filterOnAuthor(constants.everyone);
+        
         list.checkPagination('1 - 20');
         list.goToNextPage();
         list.checkPagination('21 - 40');

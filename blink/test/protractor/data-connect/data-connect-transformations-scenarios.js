@@ -20,6 +20,7 @@ describe('Data Connect', function() {
             props.existingConnections[props.dataConnectProvidersMap.sqlServer], tableValue);
     });
 
+    
     it('Should show add-filter dialog', function() {
         // Click on add-filter
         util.waitForAndClick(dataConnectTransformation.locators.ADD_FILTER_BUTTON);
@@ -27,7 +28,9 @@ describe('Data Connect', function() {
         dialog.waitForDialogTitle("Data Filter");
         // Verify the set of filter functions defined.
         props.FILTER_FUNCTIONS.map(function(filterFunction) {
+            browser.sleep(5000);
             uiSelect.openSelector(element(dataConnectTransformation.locators.EXPAND_FILTER_FUNCTIONS));
+            browser.pause();
             uiSelect.selectSingle(element(dataConnectTransformation.locators.EXPAND_FILTER_FUNCTIONS),
                 filterFunction , false);
         });

@@ -58,7 +58,7 @@ describe('Pinboard testing', function () {
     });
 
     // TODO(Priyanshi) Enable title editing when the new edit feature is implemented.
-    xit('[SMOKE] should be able to add and remove viz tile description', function() {
+    it('[SMOKE] should be able to add and remove viz tile description', function() {
         var query = 'revenue customer region';
         var sources = ['LINEORDER', 'CUSTOMER'];
         var description = 'Description text';
@@ -275,4 +275,6 @@ describe('Pinboard Label Testing', function () {
             pinboards.deletePinboard(pinboardName);
         });
     });
+
+
 });

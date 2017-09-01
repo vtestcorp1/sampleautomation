@@ -87,7 +87,10 @@ describe('Pinboard Rendering testing', function () {
         answer.addShowingVizToNewPinboard(pinboardName);
         common.navigation.goToPinboardsSection();
         pinboards.openPinboard(pinboardName);
+
+       
         charts.waitForLegendPickerToAppear();
+        
         charts.singularSelectLegendItem('algeria');
         charts.singularDeselectLegendItem('algeria');
         common.navigation.goToPinboardsSection();

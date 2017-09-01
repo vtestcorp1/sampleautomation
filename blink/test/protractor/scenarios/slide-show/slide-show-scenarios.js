@@ -31,6 +31,7 @@ describe('Slide show', function () {
         answer.addShowingVizToPinboard(pinboardName);
         common.navigation.goToPinboardsSection();
         pinboards.openPinboard(pinboardName);
+       
         pinboards.startSlideShow();
         var el = $$(charts.selectors.CHART_COLUMN).get(0);
         util.rightClickElement(el);

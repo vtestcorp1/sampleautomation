@@ -86,6 +86,7 @@ describe('Print view', function () {
         common.navigation.goToQuestionSection();
         answer.doAdhocQuery('revenue color',
             ['LINEORDER', 'geo_france_population_data'], charts.vizTypes.CHART);
+        //browser.pause();
         answer.addShowingVizToNewPinboard(pinboardName);
         answer.queryAndWaitForChart('revenue commit date');
         answer.selectTableType();
@@ -97,11 +98,13 @@ describe('Print view', function () {
         answer.addShowingVizToPinboard(pinboardName);
 
         printView.openPinboardInPrintView(pinboardName);
+         
         pinboards.getPinboard().getSize().then(function(size) {
             // 5 vizs and one cover page.
             expect(size.height).toEqual(6 * 792);
+            
         });
-
+         
         common.navigation.goToInAppPath('/');
         pinboards.deletePinboard(pinboardName);
     });

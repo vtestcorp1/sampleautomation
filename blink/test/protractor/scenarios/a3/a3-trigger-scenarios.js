@@ -56,11 +56,14 @@ describe('A3 trigger testing', function () {
         pinboards.closeVizEditor();
     });
 
-    it('should allow auto analysis from pinboard tile', function () {
+   it('should allow auto analysis from pinboard tile', function () {
         common.navigation.goToPinboardsSection();
         pinboards.openPinboard('Basic Pinboard 1');
+      
         var pinboardElement = pinboards.getVizElementByName('Visualization 1');
+       
         pinboards.autoAnalyzeViz(pinboardElement);
+         
         verifyTrigger();
     });
 

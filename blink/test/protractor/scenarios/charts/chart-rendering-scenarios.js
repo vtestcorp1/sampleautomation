@@ -27,7 +27,9 @@ describe('Chart rendering checks', function () {
 
     beforeEach(function () {
         answerListPage.goToAnswer();
+        browser.sleep(10000);
         answerPage.clearVizDisplayPreference();
+        browser.sleep(10000);
     });
 
     afterAll(function() {

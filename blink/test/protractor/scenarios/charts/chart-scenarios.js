@@ -55,6 +55,7 @@ describe('chart rendering', function() {
         sage.sageInputElement.enter(query);
         answerPage.navigateAndWaitForChartType('FUNNEL');
         expect(charts.getFunnelEntities().count()).toBe(7);
+        
     });
 
     it('should save chart with correct axis config', function() {
