@@ -14,6 +14,8 @@ var dialog = require('../dialog');
 var metricPanel = require('../metrics/metric-panel');
 var sage = require('../sage/sage');
 var table = require('../table/table');
+var pinboard = require('../pinboards/pinboards.js');
+var util = common.util;
 
 function expectCellToHaveBackgroundMatching(row, matchRegex) {
     var columnCellContent = $$(table.selectors.TABLE_ROW).get(row).$(table.selectors.TABLE_CELL_CONTENT);
@@ -42,9 +44,21 @@ function addEmptyMetrics() {
     metricPanel.applyMetrics();
 }
 
+function getMetricCssvalue(){
+    util.waitForElement(element(by.css(pinboard.selectors.BACK_COLOR)));
+    return element(by.css(pinboard.selectors.BACK_COLOR)).getCssValue('background-color');
+}
+
+function getMetricCssvalueBlank(){
+    util.waitForElement(element(by.css(pinboard.selectors.BLANK_COLOR)));
+    return element(by.css(pinboard.selectors.BLANK_COLOR)).getCssValue('background-color');
+}
+
 module.exports = {
     addEmptyMetrics: addEmptyMetrics,
     createAndAddMetrics: createAndAddMetrics,
     exceptCellToHaveBackgroundMatching: expectCellToHaveBackgroundMatching,
-    verifyMetricsApplied: verifyMetricsApplied
+    verifyMetricsApplied: verifyMetricsApplied,
+    getMetricCssvalue : getMetricCssvalue,
+    getMetricCssvalueBlank : getMetricCssvalueBlank
 };

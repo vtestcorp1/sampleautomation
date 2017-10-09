@@ -500,7 +500,12 @@ function getXAxisTitle() {
     return element(by.css(selectors.X_AXIS_TITLE)).getText();
 }
 
+function clickonXAxix() {
+    common.util.waitForElement(selectors.X_AXIS_TITLE);
+    element(by.css(selectors.X_AXIS_TITLE)).click();
+}
 function getXAxisTitleDetail() {
+    common.util.waitForElement(selectors.X_AXIS_TITLE_DETAIL);
     return $(selectors.X_AXIS_TITLE_DETAIL).isPresent().then(function (isPresent) {
         if (isPresent) {
             return $(selectors.X_AXIS_TITLE_DETAIL).getText();
@@ -733,6 +738,8 @@ module.exports = {
     isXAxisLabelsSortedDesc: isXAxisLabelsSortedDesc,
     isXAxisLabelsSortedAsc: isXAxisLabelsSortedAsc,
     singularSelectLegendItem: singularSelectLegendItem,
+    clickonXAxix : clickonXAxix,
+    columnMenuChooseFilter : columnMenuChooseFilter,
     singularDeselectLegendItem: singularDeselectLegendItem,
     chartEditor: {
         waitForChartAxisPanel: waitForChartAxisPanel,

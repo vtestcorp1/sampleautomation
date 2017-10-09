@@ -20,17 +20,17 @@ var dataSourcesPreview = require('../data-source-preview/data-source-preview');
 var pinboard = require('../pinboards/pinboards.js');
 var dialog = require('../dialog.js');
 var actionButtons = require('../actions-button.js');
+var blinklist=require('../list/blink-list.js');
 
 describe('Pinboard viz context pinning', function () {
     var pinboardName = 'pinboardScenariosTesting';
 
-   /*  beforeEach(function () {
+    beforeEach(function () {
         common.navigation.goToPinboardsSection();
-    }); */
+    });
 
-   /*  afterEach(function () {
-        pinboards.deletePinboard(pinboardName);
-    }); */
+    /* 
+     */
 
     it('should be edit the viz from viz context', function () {
         var query = 'revenue color';
@@ -109,7 +109,6 @@ describe('Pinboard viz context pinning', function () {
         var sources = ['LINEORDER', 'PART'];
         answer.doAdhocQuery(query, sources, charts.vizTypes.TABLE);
         answer.addShowingVizToNewPinboard(pinboardName);
-    
         common.navigation.goToPinboardsSection();
         pinboards.openPinboard(pinboardName);
         pinboards.openVizEditor();
@@ -243,5 +242,90 @@ describe('Pinboard viz context pinning', function () {
         dialog.confirm();
     });
 
+
+
+ //Verify vizualization is pinned  or not 
+
+it('Verify visualization is pinned to selected pinboard or not',function(){
+    var pinboardName='vtest_sample';
+    var query = 'revenue color';
+    var sources = ['LINEORDER', 'PART'];
+
+    answer.doAdhocQuery(query, sources, charts.vizTypes.TABLE);
+    answer.addShowingVizToNewPinboard(pinboardName);
+    common.navigation.goToPinboardsSection();
+    pinboards.openPinboard(pinboardName);
+    //verification of viz Elements present 
+    expect(pinboards.getAllVizs().count()).toBe(1);
+    common.navigation.goToPinboardsSection();
+    pinboard.deletePinboard(pinboardName);
+});
+
+
+//Test Script Two
+it('Enter and Verify the query', function () {
+    var sources = ['LINEORDER'];
+    var query = 'revenue color';
+    common.navigation.goToQuestionSection();
+    answer.doAdhocQuery(query, sources, charts.vizTypes.TABLE);
+    var elm = element(answer.locators.TOGGLE_VIZ_SELECTOR);
+    expect(elm.isEnabled()).toBe(true);  
+});
+
+//Test Script Three
+it('Pin the query', function () {
+    var query = 'revenue color';
+    var sources = ['LINEORDER'];
+    nav.goToQuestionSection();
+    answer.doAdhocQuery(query, sources, charts.vizTypes.TABLE);
+    //pin the query to new pinboard
+    answer.addShowingVizToNewPinboard(pinboardName);
+    common.navigation.goToPinboardsSection();
+    pinboards.openPinboard(pinboardName);
+    //assertion to verify  the pinboard
+    expect(pinboards.getAllVizs().count()).toBe(1);       
+});
+
+it('Verify The pinboard is Deleted or not',function(){
+    var pinboardName='vtest_sample';
+    pinboard.createPinboard(pinboardName);
+    common.navigation.goToPinboardsSection();
+    pinboards.deletePinboard(pinboardName);
+    //Assertion for pinboard is deleted or not
+    var totalpinbords= blinklist.getListItemNameElement(pinboardName);
+    expect(totalpinbords.isPresent()).toBe(true);
+});
+
+
+
+
+it('Verify-viz-layout of Pinboard',function(){
     
+    var pinboardName='vtest_sample';
+    var query = 'revenue color';
+    var sources = ['LINEORDER', 'PART'];
+    var vizName='Total Revenue by Color';
+    answer.doAdhocQuery(query, sources, charts.vizTypes.TABLE);
+    answer.addShowingVizToNewPinboard(pinboardName);
+    common.navigation.goToPinboardsSection();
+    pinboards.openPinboard(pinboardName);
+    var vizItem=pinboard.getVizElementByName(vizName);
+    var vizsize=vizItem.getSize();
+    pinboards.resizeViz(pinboards.sizeMenuIndex.SMALL);
+    pinboards.save();
+    common.navigation.goToPinboardsSection();
+    pinboard.openPinboard(pinboardName);
+    //asserting viz  layout  
+    expect(vizItem.getSize()).not.toBe(vizsize);
+    common.navigation.goToPinboardsSection();
+    pinboard.deletePinboard(pinboardName);
+});
+
+ 
+
+
+
+
+
+
 });

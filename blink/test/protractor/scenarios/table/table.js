@@ -33,6 +33,10 @@ var selectors = {
     TABLE_HEADER_ITEM: '.bk-tab-header .tab-header-item',
     LEAF_LEVEL_DATA_CONTAINER: '.bk-leaf-data-table-container',
     TABLE_HEADER_SORT_INDICATOR_ASC: '.slick-sort-indicator-asc',
+    ADD_COLUMN_BTN: '.add-columns-btn.bk-button-wrapper.ng-isolate-scope',
+    SEARCH_COLUMN_TXT: '.bk-search-input.bk-column-search.ng-pristine.ng-untouched.ng-valid.ng-empty',
+    COLUMN_CHECKBOX: '.bk-column-checkbox',
+    CONFIRM_CHANGES: '.bk-btn-blue.bk-btn-full-width.ng-binding',
     TABLE_HEADER_SORT_INDICATOR_DESC: '.slick-sort-indicator-desc'
 };
 
@@ -75,6 +79,14 @@ function resizeColumn(incrementWidthBy){
 function verifyTableHidden() {
     var tableElement = element(by.css(selectors.TABLE_HIDDEN));
     expect(tableElement.isPresent()).toBeTruthy();
+}
+
+function addColumn(colName){
+    common.util.waitForAndClick($(selectors.ADD_COLUMN_BTN));
+    common.util.waitForAndClick($(selectors.SEARCH_COLUMN_TXT));
+    $(selectors.SEARCH_COLUMN_TXT).sendKeys(colName);
+    common.util.waitForAndClick($(selectors.COLUMN_CHECKBOX));
+    common.util.waitForAndClick($(selectors.CONFIRM_CHANGES));
 }
 
 function waitForTable() {
@@ -254,5 +266,6 @@ module.exports = {
     openTableHeaderMenu: openTableHeaderMenu,
     verifyTableHeaders: verifyTableHeaders,
     verifyTableSubHeaders: verifyTableSubHeaders,
+    addColumn : addColumn,
     waitForTextToBePresentInCell: waitForTextToBePresentInCell
 };

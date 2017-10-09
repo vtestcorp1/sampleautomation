@@ -56,10 +56,11 @@ function fastType(query) {
     return browser.executeScript(cmd);
 }
 
+
 module.exports = {
-    selectors,
+    selectors : selectors,
     waitForDrillDownPopup,
     switchToColumnAndDrillOnFirstColumn,
-    selectDrillItem,
-    typeTextInSearch
+    selectDrillItem : selectDrillItem,
+    typeTextInSearch : typeTextInSearch
 };

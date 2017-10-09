@@ -40,6 +40,7 @@ function changeAggregation(columnName, aggregation) {
     var headline = getHeadline(columnName);
     // we need to manually open the ui-select, cause the selector is extracted from its
     // parent and appended to the body
+    common.util.waitForElement(headline);
     uiSelect.openSelector(headline);
     uiSelect.waitForList(element(by.tagName('body')));
     uiSelect.selectSingle(element(by.tagName('body')), aggregation);

@@ -192,10 +192,19 @@ describe('Chart Editing', function() {
         answerPage.queryAndWaitForChart('revenue customer region market segment');
         answerPage.openVizTypeSelectorPanel();
         expect(answerPage.isChartTypeOptionEnabled('STACKED_COLUMN')).toBe(true);
-
         common.navigation.goToQuestionSection();
         answerPage.queryAndWaitForChart('revenue customer region customer nation');
         answerPage.openVizTypeSelectorPanel();
         expect(answerPage.isChartTypeOptionEnabled('STACKED_COLUMN')).toBe(true);
     });
+
+    it('Verify Filters were added to chart',function(){
+        var sources = ['LINEORDER'];
+        var query = 'revenue color';
+        common.navigation.goToQuestionSection();
+        answerPage.doAdhocQuery(query, sources, charts.vizTypes.TABLE);
+        answerPage.openVizTypeSelectorPanel();
+        charts.waitForChartVizToLoad();
+        answerPage.navigateAndWaitForChartType(charts.chartTypes.AREA);
+     });
 });

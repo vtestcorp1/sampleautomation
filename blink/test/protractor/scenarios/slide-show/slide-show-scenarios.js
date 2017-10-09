@@ -1,4 +1,4 @@
-/**
+    /**
  * Copyright Thoughtspot Inc. 2016
  * Author: Ashish shubham (ashish.shubham@thoughtspot.com)
  */
@@ -12,6 +12,7 @@ var common = require('../common');
 var util = common.util;
 var answer = require('../viz-layout/answer/answer.js');
 var pivot = require('../pivot/pivot-po.js');
+var leftPanel = require('../sage/data-panel/data-panel');
 
 describe('Slide show', function () {
     afterAll(function(){
@@ -31,7 +32,6 @@ describe('Slide show', function () {
         answer.addShowingVizToPinboard(pinboardName);
         common.navigation.goToPinboardsSection();
         pinboards.openPinboard(pinboardName);
-       
         pinboards.startSlideShow();
         var el = $$(charts.selectors.CHART_COLUMN).get(0);
         util.rightClickElement(el);
@@ -41,6 +41,7 @@ describe('Slide show', function () {
         drill.waitForDrillDownPopup();
         drill.typeTextInSearch(columnName);
         drill.selectDrillItem(columnName);
+
 
         util.waitForElement(pinboards.selectors.RESET_TRANSFORMS);
         expect(charts.getColumnRectangles().count()).toBe(5);
@@ -76,4 +77,5 @@ describe('Slide show', function () {
         slideShow.closeSlideShow();
         pinboards.deletePinboard(pinboardName);
     });
+
 });

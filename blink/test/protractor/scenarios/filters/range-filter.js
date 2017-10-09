@@ -48,6 +48,7 @@ function clearFirstOperandValue() {
 }
 
 function setFirstOperandValue(value) {
+    util.waitForElement(selectors.FIRST_RANGE);
     $(util.joinSelectors(selectors.FIRST_RANGE, selectors.OPERAND_INPUT_BOX))
         .sendKeys(value);
 }
@@ -73,6 +74,7 @@ function changeSecondPredicate(predicateType) {
 }
 
 function setSecondOperandValue(value) {
+    util.waitForElement(selectors.SECOND_RANGE);
     $(util.joinSelectors(selectors.SECOND_RANGE, selectors.OPERAND_INPUT_BOX))
         .sendKeys(value);
 }

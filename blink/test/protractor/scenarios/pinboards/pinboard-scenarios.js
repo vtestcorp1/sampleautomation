@@ -16,7 +16,9 @@ var pivot = require('../pivot/pivot-po.js');
 var table = require('../table/table.js');
 
 describe('Pinboard testing', function () {
-    var pinboardName = 'pinboardScenariosTesting';
+    //var pinboardName = 'pinboardScenariosTesting';
+    var pinboardName = 'vtestSample';
+
 
     beforeAll(function () {
         answer.clearVizDisplayPreference();
@@ -27,8 +29,27 @@ describe('Pinboard testing', function () {
     });
 
     afterEach(function () {
+    });
+
+
+    it('should be able to edit or update pinboard headline', function () {
+        var query = 'product id sale cost';
+        var sources = ['SALES'];
+        var pinboardNameCreate = 'vtestSample_New_Pin';
+        var headlineColumn = 'Sale Cost';
+        var expectedValue = '2.17k';
+
         common.navigation.goToPinboardsSection();
-        pinboards.deletePinboard(pinboardName);
+        pinboards.createPinboard(pinboardNameCreate);
+        answer.doAdhocQuery(query, sources, charts.vizTypes.TABLE);
+        headline.pinHeadline(headlineColumn, pinboardNameCreate);
+        common.navigation.goToPinboardsSection();
+        pinboards.openPinboard(pinboardNameCreate);
+        pinboards.openVizEditor();
+        pinboards.changeAggregationToAverage();
+        pinboards.closeVizEditor();
+        expect(pinboards.getPinboardBoxText()).toBe(expectedValue);
+        pinboards.deletePinboard(pinboardNameCreate);
     });
 
     it('[SMOKE] should be able to load pinboard with chart,table and headline', function() {
@@ -58,7 +79,7 @@ describe('Pinboard testing', function () {
     });
 
     // TODO(Priyanshi) Enable title editing when the new edit feature is implemented.
-    it('[SMOKE] should be able to add and remove viz tile description', function() {
+    xit('[SMOKE] should be able to add and remove viz tile description', function() {
         var query = 'revenue customer region';
         var sources = ['LINEORDER', 'CUSTOMER'];
         var description = 'Description text';
@@ -126,7 +147,7 @@ describe('Pinboard testing', function () {
         browser.wait(function() {
             return remainingViz.getLocation().then((location) => {
                 return location.x === 40;
-            });
+        });
         });
     });
 
@@ -154,31 +175,31 @@ describe('Pinboard testing', function () {
 
     it('Should be able to pin pivot to pinboard', () => {
         let answerName = 'Pivot Answer';
-        answer.doAdhocQuery('revenue color customer region', ['LINEORDER'], charts.vizTypes.CHART);
-        answer.navigateAndWaitForChartType(charts.chartTypes.PIVOT_TABLE);
-        pivot.dragRowFieldToColumnArea('Color');
-        answer.openVizEditorPanel();
-        charts.waitForLegendAxisColumnsToMatch(['Customer Region', 'Color']);
-        answer.addShowingVizToNewPinboard(pinboardName);
-        common.navigation.goToPinboardsSection();
-        pinboards.openPinboard(pinboardName);
-        var vizElement = pinboards.getVizElementAtIndex(0);
-        pinboards.waitForChartCountToBe(1);
-    });
+    answer.doAdhocQuery('revenue color customer region', ['LINEORDER'], charts.vizTypes.CHART);
+    answer.navigateAndWaitForChartType(charts.chartTypes.PIVOT_TABLE);
+    pivot.dragRowFieldToColumnArea('Color');
+    answer.openVizEditorPanel();
+    charts.waitForLegendAxisColumnsToMatch(['Customer Region', 'Color']);
+    answer.addShowingVizToNewPinboard(pinboardName);
+    common.navigation.goToPinboardsSection();
+    pinboards.openPinboard(pinboardName);
+    var vizElement = pinboards.getVizElementAtIndex(0);
+    pinboards.waitForChartCountToBe(1);
+});
 
     it('Should be able to pin geo-area map to pinboard', () => {
         var query = 'county median household income state = ca ' +
             'sum median household income > 50000';
-        var sources = ['geo_usa_data'];
-        answer.doAdhocQuery(query, sources, charts.vizTypes.CHART);
-        answer.navigateAndWaitForChartType(charts.chartTypes.GEO_AREA);
-        charts.waitForChartVizToLoad();
-        answer.addShowingVizToNewPinboard(pinboardName);
-        common.navigation.goToPinboardsSection();
-        pinboards.openPinboard(pinboardName);
-        var vizElement = pinboards.getVizElementAtIndex(0);
-        pinboards.waitForChartCountToBe(1);
-    });
+    var sources = ['geo_usa_data'];
+    answer.doAdhocQuery(query, sources, charts.vizTypes.CHART);
+    answer.navigateAndWaitForChartType(charts.chartTypes.GEO_AREA);
+    charts.waitForChartVizToLoad();
+    answer.addShowingVizToNewPinboard(pinboardName);
+    common.navigation.goToPinboardsSection();
+    pinboards.openPinboard(pinboardName);
+    var vizElement = pinboards.getVizElementAtIndex(0);
+    pinboards.waitForChartCountToBe(1);
+});
 });
 
 describe('Pinboard Label Testing', function () {
@@ -275,6 +296,5 @@ describe('Pinboard Label Testing', function () {
             pinboards.deletePinboard(pinboardName);
         });
     });
-
 
 });

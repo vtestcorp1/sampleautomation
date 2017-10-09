@@ -13,12 +13,16 @@ var selectors= {
         HEADLINE_VALUE: '.bk-headline-value',
         ACTION_BUTTON: '.bk-secondary-button',
         ACTION_BUTTON_DROPDOWN: '.bk-action-button-dropdown',
+        ACTION_BUTTON_ON_EDIT:'.page-content .bk-button-icon-text .bk-icons.bk-style-icon-triangle-solid',
         ACTION_BUTTON_DROPDOWN_ITEM: '.bk-action-dropdown .bk-dropdown-item',
+        UPDATE_BTN: 'bk-dropdown-item.bk-action-update',
         IN_PROGRESS: '.bk-button-wrapper .bk-action-progress .bk-in-progress'
     },
     locators = {
         ACTION_BUTTON: by.css(selectors.ACTION_BUTTON),
         ACTION_BUTTON_DROPDOWN: by.css(selectors.ACTION_BUTTON_DROPDOWN),
+        ACTION_BUTTON_ON_EDIT: by.css(selectors.ACTION_BUTTON_ON_EDIT),
+        UPDATE_BTN: by.css(selectors.UPDATE_BTN),
         ACTION_BUTTON_DROPDOWN_ITEM: by.css(selectors.ACTION_BUTTON_DROPDOWN_ITEM)
 
     },
@@ -52,10 +56,18 @@ function openAndGetMenuItemLocator(actionLabel, containerSelector) {
     return by.cssContainingText(selectors.ACTION_BUTTON_DROPDOWN_ITEM, actionLabel);
 }
 
+function openAndGetMenuItemLocatorOnEditpop(actionLabel, containerSelector) {
+    var dropdownSelector = !!containerSelector
+        ? common.util.joinSelectors(containerSelector, selectors.ACTION_BUTTON_ON_EDIT)
+        : selectors.ACTION_BUTTON_ON_EDIT;
+    util.waitForAndClick(dropdownSelector);
+    return by.cssContainingText(selectors.ACTION_BUTTON_DROPDOWN_ITEM, actionLabel);
+}
 module.exports = {
     selectors: selectors,
     locators: locators,
     actionLabels: actionLabels,
+    openAndGetMenuItemLocatorOnEditpop: openAndGetMenuItemLocatorOnEditpop,
     selectActionButtonAction: function (actionLabel, containerSelector) {
         var menuItemLocator = openAndGetMenuItemLocator(actionLabel, containerSelector);
         return util.waitForAndClick(menuItemLocator);

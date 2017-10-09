@@ -10,12 +10,16 @@
 
 var answerPage = require('../viz-layout/answer/answer');
 var answerListPage = require('../answers/answer-list-page');
+var charts = require('../charts/charts.js');
 var common = require('../common');
 var dataPanel = require('../sage/data-panel/data-panel');
 var metricPanel = require('./metric-panel');
 var share = require('../share/share-ui');
 var table = require('../table/table');
-var tableMetrics = require('../table/table-metrics');
+//var tableMetrics = require('../table/table-metrics.js');
+var tableMetrics = require('./table-metrics.js');
+var headline = require('../viz-layout/headline/headline.js');
+var pinboard = require('../pinboards/pinboards.js');
 
 var util = common.util;
 var nav = common.navigation;
@@ -27,6 +31,11 @@ describe('Table metrics', function () {
     var METRIC_COLORS = [
         ['rgba(0, 0, 255, 0.8)', /rgba\(0, 0, 255,/, /rgba\(0, 0, 255/],
         ['rgba(0, 255, 255, 0.8)', /rgba\(0, 255, 255,/, /rgba\(0, 255, 255/]
+    ];
+
+    var METRIC_PARAMS = [
+        [0, 9000000, 'rgba(0, 0, 255, 1)'],
+        [10000000, 20000000, 'rgba(0, 0, 255, 1)']
     ];
 
     var METRICS = [
@@ -42,13 +51,40 @@ describe('Table metrics', function () {
 
     var SAVED_ANSWER_NAME = '[Chart Column Metrics Test]';
     var DEFAULT_CELL_COLOR_REGEX = /rgba\(0, 0, 0, 0\)/;
+    var DEFAULT_CELL_COLOR_REGEX_APPROX = /rgba\(0, 0, 255, 0.5\)/;
 
     beforeEach(function(){
         nav.goToQuestionSection();
         dataPanel.deselectAllSources();
-        dataPanel.openAndChooseSources(['CUSTOMER', 'LINEORDER', 'PART']);
+        // dataPanel.openAndChooseSources(['CUSTOMER', 'LINEORDER', 'PART']);
+        dataPanel.openAndChooseSources(['SALES']);
         dataPanel.clickDone();
         answerPage.clearVizDisplayPreference();
+    });
+
+    it('should be able to apply conditional formatting for table', function () {
+        var query = 'product id sale cost';
+        var sources = ['SALES'];
+        var columnName = 'Sale Cost';
+        var expectedColor = 'rgba(255, 0, 0, 0.5)';
+        var blankColorExpected = 'rgba(0, 0, 0, 0)';
+        var pinboardName = 'vtestSample_New_Pin';
+        var columnMenuItem = 'Conditional Formatting';
+
+        answerPage.doAdhocQuery(query, sources, charts.vizTypes.TABLE);
+        answerPage.addShowingVizToNewPinboard(pinboardName);
+        common.navigation.goToPinboardsSection();
+        pinboard.openPinboard(pinboardName);
+        table.openColumnMenu(columnName);
+        table.chooseColumnMenuItem(columnMenuItem);
+        metricPanel.addNewMetric(600, 8000, '#FF0000');
+        metricPanel.applyMetrics(true);
+        expect(tableMetrics.getMetricCssvalue()).toBe(expectedColor);
+        pinboard.save();
+        common.navigation.goToPinboardsSection();
+        pinboard.openPinboard(pinboardName);
+        expect(tableMetrics.getMetricCssvalueBlank()).toBe(blankColorExpected);
+        pinboard.deletePinboard(pinboardName);
     });
 
     it('[SMOKE][IE] should be able to apply metrics on a numeric column', function () {

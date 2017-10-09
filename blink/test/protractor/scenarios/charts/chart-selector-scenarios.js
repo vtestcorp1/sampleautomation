@@ -73,6 +73,7 @@ describe("Chart selector cases - basic", function(){
         });
     });
 
+
     afterAll(function(){
         common.navigation.goToQuestionSection();
         leftPanel.openAndChooseSources();

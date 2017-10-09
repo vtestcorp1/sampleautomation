@@ -14,12 +14,17 @@ var selectors = {};
 selectors.DROPDOWN = '.bk-context-menu';
 selectors.SUBMENU_TITLE = '.context-sub-menu-title-container';
 selectors.DISABLED_ITEM = '.bk-sub-menu-item-disabled';
-
+selectors.ADD_COLUMN = '.bk-primary-button';
+selectors.COMMIT_DATE = '.bk-filter-list-item.ng-scope.active';
 
 var locators = {
     EXCLUDE_SUBMENU_OPTION: by.cssContainingText(
         util.joinSelectors(selectors.DROPDOWN, selectors.SUBMENU_TITLE),
         'Exclude'
+    ),
+    INCLUDE_SUBMENU_OPTION: by.cssContainingText(
+        util.joinSelectors(selectors.DROPDOWN, selectors.SUBMENU_TITLE),
+        'Only include'
     ),
     UNDERLYING_DATA_OPTION: by.cssContainingText(
         util.joinSelectors(selectors.DROPDOWN, selectors.SUBMENU_TITLE),
@@ -69,9 +74,9 @@ function waitForContextMenu() {
 }
 
 module.exports = {
-    selectors,
-    locators,
-    showContextMenuForTableCell,
+    selectors : selectors,
+    locators : locators,
+    showContextMenuForTableCell : showContextMenuForTableCell,
     expectItemToBeDisabled,
     waitForContextMenu: waitForContextMenu
 };

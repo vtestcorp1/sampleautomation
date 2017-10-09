@@ -13,9 +13,6 @@ describe('Broken Pinboard', function () {
     it('Should show dropdown menu for broken tiles', function () {
         common.navigation.goToPinboardsSection();
         pinboards.openPinboard('Broken Pinboard 2');
-       
         pinboards.openVizDropdownMenu();
-
-         
     });
 });

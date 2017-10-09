@@ -147,6 +147,32 @@ describe('Headline rendering', function () {
         pinboard.openPinboard(pinboardName);
         pinboard.waitForLoaded();
         headline.waitForHeadlineWithValue('Color', UNIQUE_COLOR);
+
+        //this is comment
         pinboard.deletePinboard(pinboardName);
     });
+
+    /*it('Check datepicker module ', function(){
+
+        //from datepicker
+        select(element.by.xpath('html/body/div[4]/div[2]/div/div/column-control/div/blink-filter-v2/div/div/div/div/div[1]/blink-date-range-select/div/div[1]/input'));
+        //select from date from datepicker
+        select(element.by.xpath('html/body/div[5]/div[1]/table/tbody/tr[3]/td[2]'));
+
+        //To datepicker
+         select(element.by.xpath('html/body/div[4]/div[2]/div/div/column-control/div/blink-filter-v2/div/div/div/div/div[1]/blink-date-range-select/div/div[2]/input'));
+        //select to date from datepicker
+        select(element.by.xpath('html/body/div[5]/div[1]/table/tbody/tr[3]/td[4]'));
+
+        //click on done button
+        select(element.by.xpath('html/body/div[4]/div[2]/div/div/column-control/div/blink-filter-v2/div/div/div/div/div[2]/div/div[1]/div/div/div/div'));
+
+
+
+
+    });
+    */
+
+
+
 });

@@ -8,9 +8,11 @@
 'use strict';
 
 var answerPage = require('../viz-layout/answer/answer');
+var charts = require('../charts/charts');
 var common = require('../common');
 var leftPanel = require('../sage/data-panel/data-panel');
 var sage = require('../sage/sage');
+var pinboards = require('../pinboards/pinboards');
 
 describe('Ad-hoc answer url use cases', function () {
     beforeAll(function() {
@@ -22,6 +24,17 @@ describe('Ad-hoc answer url use cases', function () {
 
     beforeEach(function () {
         common.navigation.goToQuestionSection();
+    });
+
+    it('should be able to answer with hidden column is locked for user', function () {
+        var query = 'commit date daily discount';
+        var sources = ['LINEORDER'];
+        var saveAns = 'vtest_C6195';
+
+        answerPage.doAdhocQueryline(query, sources, charts.chartTypes.LINE);
+        pinboards.saveAction(saveAns);
+        common.navigation.goToAnswerSection();
+
     });
 
     it('should behave right with back and forward history navigation', function () {

@@ -31,9 +31,9 @@ describe('Pinboard filter scenarios', function () {
         answer.doAdhocQuery(query, sources, charts.vizTypes.TABLE);
         answer.addShowingVizToNewPinboard(pinboardName);
         common.navigation.goToPinboardsSection();
-        pinboards.openPinboard(pinboardName);
+        pinboards.openFilterPanelPinboard(pinboardName);
         pinboards.openFilterPanel();
-        leftPanel.waitForEnabledSource('Formula Worksheet');
+        leftPanel.waitForEnabledSourceledSource('Formula Worksheet');
         leftPanel.expandSource('Formula Worksheet');
         leftPanel.openFilter('Supplier Region');
         filterDialog.clickDone();
@@ -306,7 +306,35 @@ describe('Pinboard filter scenarios', function () {
             table.waitForTableRowCountToBe(vizElement, 1);
         });
 
-      
-
+   
+        
     })
+
+
+      it('Verify Filters were added to Table in pinboardSection',function(){
+       
+        var query = 'customer region discount';
+        var sources = ['Formula Worksheet'];
+        answer.doAdhocQuery(query, sources, charts.vizTypes.TABLE);
+        answer.addShowingVizToNewPinboard(pinboardName);
+        common.navigation.goToPinboardsSection();
+        pinboards.openPinboard(pinboardName);
+        var vizElement = pinboards.getVizElementAtIndex(0);
+        pinboards.openFilterPanel();
+        leftPanel.waitForEnabledSource('Formula Worksheet');
+        leftPanel.expandSource('Formula Worksheet');
+        leftPanel.openFilter('Customer Region');
+        checkboxFilter.toggleCheckboxState('europe');
+        checkboxFilter.toggleCheckboxState('middle east');
+        filterDialog.clickDone();
+        vizElement = pinboards.getVizElementAtIndex(0);
+        table.waitForTableRowCountToBe(vizElement, 2);
+        expect(table.getNthCell(0, 0).getText()).toBe('europe');
+        expect(table.getNthCell(1, 0).getText()).toBe('middle east');
+       });
+   
+        
+
+
+
 });

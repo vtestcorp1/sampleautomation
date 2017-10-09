@@ -15,7 +15,6 @@ describe('Pinboard unsaved changes alert', function () {
         common.navigation.goToPinboardsSection();
         pinboards.openPinboard('GenericJoin Pinboard 2');
         pinboards.switchToPinboard('Genericjoin Pinboard 1');
-     
         var firstViz = pinboards.getVizElementByName('Table 1');
         common.util.waitForElement(firstViz);
     });
@@ -41,7 +40,6 @@ describe('Pinboard unsaved changes alert', function () {
             nameAfterRename = 'unsavedAlertTestPinboard2';
         common.navigation.goToPinboardsSection();
         pinboards.createPinboard(name);
-        browser.pause();
         pinboards.rename(nameAfterRename);
         common.metadataItemSelector.waitForSelectedItemToBe(
             pinboards.selectors.PINBOARD_SELECTOR_DROPDOWN,

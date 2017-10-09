@@ -81,6 +81,11 @@ function selectTableType() {
     table.waitForTable();
 }
 
+function selectChartType() {
+    util.waitForAndClick(locators.CHART_TYPE);
+    //table.waitForTable();
+}
+
 function selectDefaultChartType() {
     util.waitForAndClick(selectors.TOGGLE_VIZ_SELECTOR);
     waitForChartToLoad();
@@ -139,6 +144,7 @@ function navigateToChartType(chartType) {
     if (chartType === 'TABLE') {
         $(table.selectors.TABLE_SELECTOR_BUTTON).click();
     } else {
+        //util.waitForElement(selectors.CHART_SELECTOR_PANEL_OPTION);
         $(sprintf(selectors.CHART_SELECTOR_PANEL_OPTION, chartType)).click();
     }
     closeVizTypeSelectorPanel();
@@ -205,6 +211,38 @@ function doAdhocQuery(query, sources, vizType) {
         navigateAndWaitForChartType(charts.chartTypes.COLUMN);
     } else {
         selectTableType();
+    }
+}
+
+function doAdhocQueryline(query, sources, vizType) {
+    common.navigation.goToQuestionSection();
+    common.util.waitForElement(by.css('.bk-sage'));
+    leftPanel.deselectAllSources();
+    leftPanel.openAndChooseSources(sources);
+    leftPanel.clickDone();
+    sage.sageInputElement.enter(query);
+    waitForAnswerToLoad();
+    sage.sageInputElement.hideDropdown();
+    if(vizType === charts.vizTypes.CHART) {
+        navigateAndWaitForChartType(charts.chartTypes.LINE);
+    } else {
+        selectDefaultChartType();
+    }
+}
+
+function doAdhocQueryPivotTable(query, sources, vizType) {
+    common.navigation.goToQuestionSection();
+    common.util.waitForElement(by.css('.bk-sage'));
+    leftPanel.deselectAllSources();
+    leftPanel.openAndChooseSources(sources);
+    leftPanel.clickDone();
+    sage.sageInputElement.enter(query);
+    waitForAnswerToLoad();
+    sage.sageInputElement.hideDropdown();
+    if(vizType === charts.vizTypes.CHART) {
+        navigateAndWaitForChartType(charts.chartTypes.PIVOT_TABLE);
+    } else {
+        selectDefaultChartType();
     }
 }
 
@@ -518,6 +556,7 @@ module.exports = {
     saveCurrentUnsavedAnswer: saveCurrentUnsavedAnswer,
     waitForAnswerTitle: waitForAnswerTitle,
     selectTableType: selectTableType,
+
     selectDefaultChartType: selectDefaultChartType,
     navigateAndWaitForChartType: navigateAndWaitForChartType,
     openVizTypeSelectorPanel: openVizTypeSelectorPanel,
@@ -538,6 +577,8 @@ module.exports = {
     addShowingVizToPinboard: addShowingVizToPinboard,
     waitForPinboardAbsentInPinningDropdown: waitForPinboardAbsentInPinningDropdown,
     doAdhocQuery: doAdhocQuery,
+    doAdhocQueryline : doAdhocQueryline,
+    doAdhocQueryPivotTable : doAdhocQueryPivotTable,
     doAdhocQueryFromPreSelectedSources: doAdhocQueryFromPreSelectedSources,
     queryFromAllTables: queryFromAllTables,
     queryFromAllWorksheets: queryFromAllWorksheets,
